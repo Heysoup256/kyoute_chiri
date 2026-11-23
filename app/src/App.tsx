@@ -12,6 +12,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { z } from 'zod';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
+import { SystematicGuideView } from './components/guide/SystematicGuideView';
 import { WorldRankingsView } from './components/guide/WorldRankingsView';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
 import { ReverseSearchDrawer } from './components/study/ReverseSearchDrawer';
@@ -27,6 +28,7 @@ import type {
   MapColorMode,
   PastExamsDataset,
   PlaceEntry,
+  SystematicGuideDataset,
   WorldRankingsDataset,
 } from './types/schema_v1';
 import {
@@ -63,6 +65,7 @@ export function App() {
   const [countriesData, setCountriesData] = useState<CountriesDataset | null>(null);
   const [pastExamsData, setPastExamsData] = useState<PastExamsDataset | null>(null);
   const [worldRankingsData, setWorldRankingsData] = useState<WorldRankingsDataset | null>(null);
+  const [systematicData, setSystematicData] = useState<SystematicGuideDataset | null>(null);
   const [countriesGeoJson, setCountriesGeoJson] = useState<FeatureCollection<
     Geometry,
     GeoCountryProperties
@@ -107,6 +110,7 @@ export function App() {
   const [searchOpen, setSearchOpen] = useState<boolean>(false);
   const [filters, setFilters] = useState<SearchFilterCriteria>(EMPTY_FILTERS);
   const [focusedRankingId, setFocusedRankingId] = useState<string | null>(null);
+  const [focusedSystematicId, setFocusedSystematicId] = useState<string | null>(null);
   const [rankingHighlight, setRankingHighlight] = useState<{
     label: string;
     iso3s: string[];
@@ -138,6 +142,7 @@ export function App() {
           tGridRes,
           placesRes,
           rankingsRes,
+          systematicRes,
           examsRes,
         ] = await Promise.all([
           fetch(`${base}data/countries_v1.json`),
@@ -151,6 +156,7 @@ export function App() {
           fetch(`${base}data/thematic_grid_v1.json`),
           fetch(`${base}data/places_v1.json`),
           fetch(`${base}data/world_rankings_v1.json`),
+          fetch(`${base}data/systematic_geography_v1.json`),
           IS_PUBLIC_MODE ? Promise.resolve(null) : fetch(`${base}data/past_exams_v1.json`),
         ]);
 
@@ -166,6 +172,7 @@ export function App() {
           !tGridRes.ok ||
           !placesRes.ok ||
           !rankingsRes.ok ||
+          !systematicRes.ok ||
           (!IS_PUBLIC_MODE && (!examsRes || !examsRes.ok))
         ) {
           throw new Error('静的データファイルの読み込みに失敗しました。');
@@ -183,6 +190,7 @@ export function App() {
           tGridJson,
           placesJson,
           rankingsJson,
+          systematicJson,
           examsJson,
         ] = await Promise.all([
           cRes.json(),
@@ -196,6 +204,7 @@ export function App() {
           tGridRes.json(),
           placesRes.json(),
           rankingsRes.json(),
+          systematicRes.json(),
           examsRes ? examsRes.json() : Promise.resolve(emptyPastExams),
         ]);
 
@@ -215,6 +224,7 @@ export function App() {
         setThematicGrid(tGridJson as ThematicGridData);
         setPlacesData((placesJson as { places?: PlaceEntry[] }).places ?? []);
         setWorldRankingsData(rankingsJson as WorldRankingsDataset);
+        setSystematicData(systematicJson as SystematicGuideDataset);
       } catch (err) {
         if (!cancelled) {
           setLoadError(err instanceof Error ? err.message : 'データ読込エラーが発生しました。');
@@ -253,6 +263,9 @@ export function App() {
 
   const handleFocusPlace = useCallback((place: PlaceEntry) => {
     setFocusedPlace(place);
+    if (!place.skipCameraMove) {
+      setActiveView('map');
+    }
   }, []);
 
   const handleClearFocusedPlace = useCallback(() => {
@@ -488,6 +501,7 @@ export function App() {
           markedCount={markedCount}
           isMarkedMode={mapColorMode === 'marked'}
           rankingItems={worldRankingsData?.items}
+          systematicTopics={systematicData?.topics}
           onToggleMarkedMode={() => {
             setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'));
             setActiveView('map');
@@ -502,6 +516,11 @@ export function App() {
           onSelectRanking={(itemId) => {
             setFocusedRankingId(itemId);
             setActiveView('rankings');
+            setSearchOpen(false);
+          }}
+          onSelectSystematic={(topicId) => {
+            setFocusedSystematicId(topicId);
+            setActiveView('systematic');
             setSearchOpen(false);
           }}
           onClose={() => setSearchOpen(false)}
@@ -585,16 +604,18 @@ export function App() {
           </div>
         )}
 
-        {/* 3. 系統地理マスタービュー（Phase 2aで完全実装予定） */}
+        {/* 3. 系統地理・地図/GIS・防災マスター図鑑ビュー */}
         {activeView === 'systematic' && (
-          <div className="flex h-full min-w-0 flex-1 flex-col items-center justify-center p-6 text-center">
-            <BookOpen className="h-10 w-10 text-indigo-400" />
-            <h2 className="mt-3 text-base font-extrabold text-slate-800">
-              系統地理・地図/GIS・防災マスター図鑑
-            </h2>
-            <p className="mt-1 max-w-md text-xs text-slate-500">
-              次のステップで河川小地形・プレート・土壌・農業工業立地・都市構造図鑑を追加します。
-            </p>
+          <div className="h-full min-w-0 flex-1">
+            <SystematicGuideView
+              key={focusedSystematicId ?? 'sys-default'}
+              dataset={systematicData}
+              countriesData={countriesData.countries}
+              placeMatcher={placeMatcher}
+              focusedTopicId={focusedSystematicId}
+              onFocusPlace={handleFocusPlace}
+              onSelectCountry={handleSelectCountry}
+            />
           </div>
         )}
 

@@ -1840,6 +1840,7 @@ export function WorldMap({
       return;
     }
 
+    map.resize();
     const curCenter = map.getCenter();
     const isLeftPanelCovering = controlsOpenRef.current && container.clientWidth >= 768;
     const visibleWorldLng = isPlaceComfortablyInViewport(
