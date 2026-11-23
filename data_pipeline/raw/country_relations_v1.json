@@ -413,6 +413,20 @@
       "category": "history",
       "direction": "mutual",
       "summary": "青ナイルの流域を共有し、エチオピア国境付近での国境難民往来とダム水量調整の当事国。"
+    },
+    {
+      "partnerIso3": "EGY",
+      "partnerNameJa": "エジプト",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "ナイル川下流と中流を共有し、エチオピア・ルネサンスダムをめぐる水資源利害や難民避難先として密接。"
+    },
+    {
+      "partnerIso3": "ARE",
+      "partnerNameJa": "アラブ首長国連邦（UAE）",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "スーダン産金・農畜産物の最大輸出先の一つであり、紅海港湾投資でも強い関係を持つ。"
     }
   ],
   "BRA": [
@@ -1323,6 +1337,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    },
+    {
+      "partnerIso3": "PAK",
+      "partnerNameJa": "パキスタン",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "国境線（デュランドライン）の両側にパシュトゥーン人が居住し、最大規模のアフガン難民の避難先かつ内陸貿易（カラチ港等）の玄関。"
+    },
+    {
+      "partnerIso3": "IRN",
+      "partnerNameJa": "イラン",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "同系のペルシャ語系文化やシーア派（ハザラ人）を通じて数百万人規模の難民・出稼ぎ労働者が流入する西隣国。"
     }
   ],
   "TZA": [
@@ -1339,6 +1367,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    },
+    {
+      "partnerIso3": "ZMB",
+      "partnerNameJa": "ザンビア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中国の支援で建設されたタンザン鉄道（TAZARA）で結ばれ、内陸国ザンビアの銅をダルエスサラーム港から輸出する玄関口。"
+    },
+    {
+      "partnerIso3": "KEN",
+      "partnerNameJa": "ケニア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "東アフリカ共同体（EAC）の中核隣国としてスワヒリ語圏・キリマンジャロ観光帯・地域貿易網を共有。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "history",
+      "direction": "incoming",
+      "summary": "タンザン鉄道建設以来の深い経済関係を持ち、港湾・交通インフラ整備と機械類の主要相手国。"
     }
   ],
   "ITA": [
@@ -1451,6 +1500,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "PNG-LNG（液化天然ガス）・銅鉱・木材・魚介類の主要輸出先であり、日本にとっても重要な資源パートナー。"
+    },
+    {
+      "partnerIso3": "IDN",
+      "partnerNameJa": "インドネシア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "ニューギニア島を東経141度の数理国境で東西に二分する隣国（西半はインドネシア領パプア諸州）。"
     }
   ],
   "MDG": [
@@ -1515,6 +1578,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    },
+    {
+      "partnerIso3": "BEL",
+      "partnerNameJa": "ベルギー",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "デビアス社との取引・国際流通センターであるアントワープ向けのダイヤモンド主要出荷先。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "ボツワナ産原石を輸入し世界で最も多くのダイヤモンド研磨加工を手掛けるスーラト等の連携パートナー。"
     }
   ],
   "KEN": [
@@ -1563,6 +1640,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "米州地域の主要貿易・投資パートナー。"
+    },
+    {
+      "partnerIso3": "ARG",
+      "partnerNameJa": "アルゼンチン",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "メルコスール加盟国かつパラナ＝ラプラタ水運の出口・ヤシレタダム共同相手国・移民移動先。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "戦前・戦後を通じた日系移住者がイグアス・ピラポ等で不耕起大豆栽培を発展させ、日系コミュニティが定着。"
     }
   ],
   "YEM": [
@@ -1627,6 +1718,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    },
+    {
+      "partnerIso3": "THA",
+      "partnerNameJa": "タイ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "メコン川越しに言語・仏教文化を共有し、水力ダム発電電力の最大購入国であり消費財輸入・出稼ぎ先の最重要隣国。"
+    },
+    {
+      "partnerIso3": "VNM",
+      "partnerNameJa": "ベトナム",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アンナン山脈を共有し海港アクセスの代替ルートおよび木材・農産物・水力電力輸出の密接な隣国。"
     }
   ],
   "ESH": [
@@ -1915,6 +2020,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    },
+    {
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "内戦後300万人超のシリア難民を受け入れた世界最大の難民保護先であり、北部国境地帯をめぐる主要当事国。"
+    },
+    {
+      "partnerIso3": "LBN",
+      "partnerNameJa": "レバノン",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "人口約500万人のレバノンに対し100万人規模のシリア難民が流入し社会・経済的負荷をもたらした西隣国。"
+    },
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "2015年以降の欧州難民危機でEU諸国中最大のシリア難民を受け入れた移住先。"
     }
   ],
   "NPL": [
@@ -2043,6 +2169,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "欧州域内貿易・観光・EU市場で交流。"
+    },
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "tourism",
+      "direction": "incoming",
+      "summary": "最大の貿易相手であるとともにアドリア海への夏季観光客の最大送出国、かつクロアチア若年層の主要移住先。"
+    },
+    {
+      "partnerIso3": "ITA",
+      "partnerNameJa": "イタリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アドリア海を挟んだ歴史的（ヴェネツィア影響）・現代最大の輸出入パートナーおよび観光客送出国。"
+    },
+    {
+      "partnerIso3": "SVN",
+      "partnerNameJa": "スロベニア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "同じくカトリック圏で旧ユーゴから早期離脱しEU・ユーロ・シェンゲン圏で一体化する北西隣国。"
     }
   ],
   "KHM": [
@@ -2091,6 +2238,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    },
+    {
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "同じテュルク系「一つの民族・二つの国家」として軍事・文化連携が深く、BTC石油パイプラインの経由・積出相手国。"
+    },
+    {
+      "partnerIso3": "ITA",
+      "partnerNameJa": "イタリア",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "南ガス回廊（TAP）経由でのアゼルバイジャン産原油・天然ガスの欧州最大輸入国。"
+    },
+    {
+      "partnerIso3": "ARM",
+      "partnerNameJa": "アルメニア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧ソ連構成国かつコーカサスの隣国同士だが、飛び地ナゴルノ・カラバフをめぐる領土紛争により国境が閉鎖。"
     }
   ],
   "AUT": [
@@ -2203,6 +2371,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    },
+    {
+      "partnerIso3": "SYR",
+      "partnerNameJa": "シリア",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "シリア内戦に伴いザータリ難民キャンプなど膨大な難民を受け入れ、水・雇用・都市インフラに大きな影響が及んだ。"
+    },
+    {
+      "partnerIso3": "SAU",
+      "partnerNameJa": "サウジアラビア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "エネルギー供給元である一方、高学歴なヨルダン人専門職・技術者の重要な出稼ぎ（海外送金）先。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "FTAを締結し、特定工業団地（QIZ）で生産される繊維衣類や肥料の最大輸出先・経済支援国。"
     }
   ],
   "PRT": [
@@ -2331,6 +2520,27 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "国内雇用不足を背景に大規模な移民が渡米し、本国へ送られる海外送金（GDP約2割）と農産物・アパレル輸出の圧倒的相手国。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "陸上国境を接し対米移動の中継路となるとともに、農産物やエネルギー・消費財の主要貿易相手。"
+    },
+    {
+      "partnerIso3": "SLV",
+      "partnerNameJa": "エルサルバドル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中米北部トライアングルの一角としてCAFTA・域内貿易・共通の中米移民課題を抱える隣国。"
     }
   ],
   "SRB": [
@@ -2347,6 +2557,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "欧州域内貿易・観光・EU市場で交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "「一帯一路」欧州の足掛かりとしてボル銅山や製鉄所買収、ベオグラード〜ブダペスト鉄道整備など巨額投資。"
+    },
+    {
+      "partnerIso3": "HRV",
+      "partnerNameJa": "クロアチア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "同じ南スラブ系言語を共有しつつ、正教・キリル文字（セルビア）とカトリック・ラテン文字（クロアチア）で旧ユーゴ解体以降に分離。"
     }
   ],
   "LTU": [
@@ -2475,6 +2699,20 @@
       "category": "trade",
       "direction": "mutual",
       "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    },
+    {
+      "partnerIso3": "NLD",
+      "partnerNameJa": "オランダ",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "ロッテルダム港を経由した欧州市場向けバナナ・パイナップル・医療機器の最重要玄関。"
+    },
+    {
+      "partnerIso3": "NIC",
+      "partnerNameJa": "ニカラグア",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "経済格差や政情不安を背景に隣国ニカラグアからコスタリカのプランテーション・建設業へ多くの季節・定住労働者が流入。"
     }
   ],
   "SVK": [

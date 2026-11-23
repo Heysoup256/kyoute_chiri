@@ -125,8 +125,13 @@ def main() -> None:
             errors.append(f"{iso3}: sectorShare 合計が100%ではありません ({sec_sum})")
         if len(st.get("agePyramid", [])) != 9:
             errors.append(f"{iso3}: agePyramid が9階級ではありません")
-        if not is_basic and len(c.get("topCities", [])) < 1:
-            errors.append(f"{iso3}: topCities が未登録です")
+        if not is_basic:
+            if len(c.get("topCities", [])) < 1:
+                errors.append(f"{iso3}: topCities が未登録です")
+            if not c.get("highlightVisuals"):
+                errors.append(f"{iso3}: highlightVisuals が未登録です")
+            if not c.get("specialRegions"):
+                errors.append(f"{iso3}: specialRegions が未登録です")
 
     raw_past_exams_dir = ROOT_DIR / "data_pipeline" / "raw" / "past_exams"
     raw_exam_files = list(raw_past_exams_dir.glob("*_v1.json"))
@@ -233,8 +238,10 @@ def main() -> None:
     wr = json.loads((DATA_DIR / "world_rankings_v1.json").read_text(encoding="utf-8"))
     sg = json.loads((DATA_DIR / "systematic_geography_v1.json").read_text(encoding="utf-8"))
     jg = json.loads((DATA_DIR / "japan_geography_v1.json").read_text(encoding="utf-8"))
-    if len(wr.get("items", [])) < 50 or len(wr.get("scatters", [])) < 4 or len(wr.get("comparisonCharts", [])) < 8 or len(wr.get("flowMaps", [])) < 5:
-        errors.append("world_rankings_v1.json の品目・散布図・比較グラフまたはフロー地図数が不足しています")
+    if detailed_count < 100 or total_cities < 127:
+        errors.append(f"詳細収録国数({detailed_count}<100)または気候都市数({total_cities}<127)が不足しています")
+    if len(wr.get("items", [])) < 80 or len(wr.get("scatters", [])) < 7 or len(wr.get("comparisonCharts", [])) < 16 or len(wr.get("flowMaps", [])) < 8:
+        errors.append("world_rankings_v1.json の品目(80以上)・散布図(7以上)・比較グラフ(16以上)またはフロー地図数(8以上)が不足しています")
     if len(sg.get("categories", [])) < 7 or len(sg.get("topics", [])) < 45:
         errors.append("systematic_geography_v1.json のカテゴリ数(7以上)またはトピック数(45以上)が不足しています")
     for tp in sg.get("topics", []):
@@ -242,8 +249,8 @@ def main() -> None:
             if not tp.get(req_k):
                 errors.append(f"systematic {tp.get('id')}: 必須項目 {req_k} が空または欠落しています")
     dom = jg.get("domesticStats") or {}
-    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 4 or len(dom.get("prefRankings", [])) < 8:
-        errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データが不足しています")
+    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 7 or len(dom.get("prefRankings", [])) < 14:
+        errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データ(グラフ7以上・県ランキング14以上)が不足しています")
     for sk in jg.get("mapSkills", []):
         if not sk.get("checkPoints"):
             errors.append(f"japan mapSkill {sk.get('id')}: checkPoints が空または欠落しています")
