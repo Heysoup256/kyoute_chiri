@@ -344,6 +344,12 @@ export function CountryDetailPanel({
   };
 
   const handleSheetPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (
+      (typeof window !== 'undefined' && window.innerWidth >= 768) ||
+      (e.target as HTMLElement).closest('button')
+    ) {
+      return;
+    }
     dragStateRef.current = {
       startY: e.clientY,
       startVh: mobileSheetVh,
@@ -397,60 +403,68 @@ export function CountryDetailPanel({
       } ${sheetEntered ? 'translate-y-0' : 'translate-y-full'} md:static md:inset-auto md:z-20 md:h-full md:w-[470px] md:shrink-0 md:translate-y-0 md:rounded-none md:border-l md:border-t-0 md:border-slate-200 lg:w-[540px]`}
       aria-label="国別詳細パネル"
     >
-      {/* スマホ用ボトムシート・ドラッグハンドル（上下ドラッグで地図との分割比を自由調整） */}
+      {/* パネルヘッダー（スマホ時はドラッグバー＋1行国名のみの極薄固定ヘッダー） */}
       <div
         onPointerDown={handleSheetPointerDown}
         onPointerMove={handleSheetPointerMove}
         onPointerUp={handleSheetPointerUp}
         onPointerCancel={handleSheetPointerUp}
-        className="flex cursor-ns-resize touch-none select-none flex-col items-center justify-center rounded-t-2xl bg-white pb-0.5 pt-1.5 md:hidden"
-        aria-label="上下にドラッグしてパネルの高さを調整"
+        className="touch-none select-none rounded-t-2xl border-b border-slate-200 bg-white px-2.5 pb-1 pt-1 md:touch-auto md:select-text md:rounded-none md:px-4 md:py-3"
       >
-        <div className="h-1.5 w-11 rounded-full bg-slate-300" />
-      </div>
+        <div
+          className="mb-1 flex justify-center md:hidden"
+          aria-label="上下にドラッグしてパネルの高さを調整"
+        >
+          <div className="h-1 w-9 rounded-full bg-slate-300" />
+        </div>
 
-      {/* パネルヘッダー */}
-      <div className="border-b border-slate-200 bg-white px-3 pb-1.5 pt-0.5 md:px-4 md:py-3">
-        <div className="flex items-start justify-between gap-2">
+        <div className="flex items-center justify-between gap-1.5 md:items-start md:gap-2">
           <div className="min-w-0 flex-1">
-            <div className="flex flex-wrap items-center gap-1.5 md:gap-2">
-              <h2 className="truncate text-base font-extrabold text-slate-900 md:text-xl">
+            <div className="flex flex-nowrap items-center gap-1.5 md:flex-wrap md:gap-2">
+              <h2 className="truncate text-sm font-extrabold text-slate-900 md:text-xl">
                 {country ? country.nameJa : (fallbackNameEn ?? iso3)}
               </h2>
-              <span className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-600 md:text-xs">
+              <span className="hidden rounded bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-600 md:inline-block">
                 {iso3}
               </span>
               {country && !country.isBasicEntry && (
-                <span
-                  className={`rounded-full border px-2 py-0.5 text-[10.5px] font-bold md:px-2.5 md:text-xs ${RANK_BADGE_CLASSES[country.examSummary.rank]}`}
-                >
-                  重要度 {RANK_LABELS[country.examSummary.rank]}
-                </span>
+                <>
+                  <span
+                    className={`shrink-0 rounded border px-1.5 py-0 text-[10px] font-extrabold md:hidden ${RANK_BADGE_CLASSES[country.examSummary.rank]}`}
+                  >
+                    {country.examSummary.rank}
+                  </span>
+                  <span
+                    className={`hidden rounded-full border px-2.5 py-0.5 text-xs font-bold md:inline-block ${RANK_BADGE_CLASSES[country.examSummary.rank]}`}
+                  >
+                    重要度 {RANK_LABELS[country.examSummary.rank]}
+                  </span>
+                </>
               )}
               {country?.isBasicEntry && (
-                <span className="rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[10.5px] font-bold text-slate-700 md:text-[11px]">
+                <span className="hidden rounded-full border border-slate-300 bg-slate-100 px-2 py-0.5 text-[11px] font-bold text-slate-700 md:inline-block">
                   基礎データ収録
                 </span>
               )}
             </div>
 
             {country ? (
-              <p className="mt-0.5 truncate text-[11px] text-slate-500 md:whitespace-normal md:text-xs">
+              <p className="mt-0.5 hidden text-xs text-slate-500 md:block">
                 {country.nameEn} ／ {country.region}（{country.subRegion}） ／ 首都：
                 <strong className="text-slate-700">{country.capital}</strong>
               </p>
             ) : (
-              <p className="mt-0.5 truncate text-[11px] text-slate-500 md:whitespace-normal md:text-xs">
+              <p className="mt-0.5 hidden text-xs text-slate-500 md:block">
                 {fallbackNameEn ?? ''}（詳細データ未登録）
               </p>
             )}
           </div>
 
-          <div className="flex shrink-0 items-center gap-1">
+          <div className="flex shrink-0 items-center gap-0.5 md:gap-1">
             <button
               type="button"
               onClick={() => onToggleMark(iso3)}
-              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-[11px] font-bold transition md:px-2.5 md:text-xs ${
+              className={`inline-flex items-center gap-1 rounded-lg border px-1.5 py-1 text-xs font-bold transition md:px-2.5 ${
                 isMarked
                   ? 'border-amber-400 bg-amber-50 text-amber-800 hover:bg-amber-100'
                   : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
@@ -458,7 +472,7 @@ export function CountryDetailPanel({
               title="地図上で★マークとして記録する"
             >
               <Star className={`h-3.5 w-3.5 ${isMarked ? 'fill-amber-400 text-amber-500' : ''}`} />
-              <span>{isMarked ? 'マーク済' : 'マーク'}</span>
+              <span className="hidden md:inline">{isMarked ? 'マーク済' : 'マーク'}</span>
             </button>
             <button
               type="button"
@@ -466,22 +480,20 @@ export function CountryDetailPanel({
               className="rounded-lg p-1 text-slate-500 hover:bg-slate-100 hover:text-slate-800 md:p-1.5"
               aria-label="パネルを閉じる"
             >
-              <X className="h-4.5 w-4.5 md:h-5 md:w-5" />
+              <X className="h-4 w-4 md:h-5 md:w-5" />
             </button>
           </div>
         </div>
 
-        {/* 出題履歴タグ・過去問ボタン */}
+        {/* 出題履歴タグ・過去問ボタン（PCのみ固定ヘッダー表示・スマホはスクロール領域へ移動） */}
         {country &&
           (!country.isBasicEntry ||
             country.examSummary.years.length > 0 ||
             relatedQuestions.length > 0) && (
-            <div className="mt-1.5 space-y-1.5 md:mt-2 md:space-y-2">
-              <div className="flex flex-nowrap items-center gap-1 overflow-x-auto pb-0.5 md:flex-wrap md:overflow-visible md:pb-0">
+            <div className="mt-2 hidden space-y-2 md:block">
+              <div className="flex flex-wrap items-center gap-1">
                 {country.examSummary.years.length > 0 && (
-                  <span className="shrink-0 whitespace-nowrap text-[9.5px] font-bold text-slate-500 md:text-[10px]">
-                    出題履歴
-                  </span>
+                  <span className="text-[10px] font-bold text-slate-500">出題履歴</span>
                 )}
                 {(showAllExamYears
                   ? [...country.examSummary.years].reverse()
@@ -489,7 +501,7 @@ export function CountryDetailPanel({
                 ).map((yr) => (
                   <span
                     key={yr}
-                    className="shrink-0 whitespace-nowrap rounded bg-slate-100 px-1 py-0.5 text-[9.5px] font-medium text-slate-700 md:px-1.5 md:text-[10px]"
+                    className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
                   >
                     {formatExamId(yr)}
                   </span>
@@ -498,7 +510,7 @@ export function CountryDetailPanel({
                   <button
                     type="button"
                     onClick={() => setShowAllExamYears((v) => !v)}
-                    className="shrink-0 whitespace-nowrap rounded bg-slate-200 px-1 py-0.5 text-[9.5px] font-bold text-slate-700 transition hover:bg-slate-300 md:px-1.5 md:text-[10px]"
+                    className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 transition hover:bg-slate-300"
                     title={country.examSummary.years.map(formatExamId).join('、')}
                   >
                     {showAllExamYears
@@ -510,7 +522,7 @@ export function CountryDetailPanel({
                   country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
                     <span
                       key={topic}
-                      className="hidden rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700 md:inline-flex"
+                      className="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700"
                     >
                       ★ {topic}
                     </span>
@@ -521,11 +533,11 @@ export function CountryDetailPanel({
                 <button
                   type="button"
                   onClick={() => onOpenExamModal()}
-                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-600 px-2.5 py-1.5 text-[11.5px] font-bold text-white shadow-xs transition hover:bg-indigo-700 md:rounded-xl md:px-3 md:py-2 md:text-sm"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-3 py-2 text-sm font-bold text-white shadow-xs transition hover:bg-indigo-700"
                 >
-                  <BookOpen className="h-3.5 w-3.5 md:h-4 md:w-4" />
+                  <BookOpen className="h-4 w-4" />
                   関連する過去問を見る・解く
-                  <span className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] md:text-xs">
+                  <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs">
                     {relatedQuestions.length}問
                   </span>
                 </button>
@@ -557,13 +569,13 @@ export function CountryDetailPanel({
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex flex-col items-center justify-center gap-0.5 border-b-2 px-0.5 py-1.5 text-[10px] font-bold transition md:gap-1 md:py-2.5 md:text-[11px] ${
+                  className={`flex flex-col items-center justify-center gap-0.5 border-b-2 px-0.5 py-1.5 text-[11px] font-bold transition md:gap-1 md:py-2.5 ${
                     isActive
                       ? 'border-indigo-600 bg-indigo-50/40 text-indigo-700'
                       : 'border-transparent text-slate-500 hover:bg-slate-50 hover:text-slate-800'
                   }`}
                 >
-                  <Icon className="h-3.5 w-3.5 shrink-0 md:h-4 md:w-4" />
+                  <Icon className="hidden h-4 w-4 shrink-0 md:block" />
                   <span className="sm:hidden">{tab.shortLabel}</span>
                   <span className="hidden truncate sm:inline">{tab.label}</span>
                 </button>
@@ -572,7 +584,60 @@ export function CountryDetailPanel({
           </div>
 
           {/* タブコンテンツ領域 */}
-          <div className="flex-1 overflow-y-auto p-3 md:p-4">
+          <div className="flex-1 overflow-y-auto p-2.5 md:p-4">
+            {/* スマホ専用：基礎情報・出題履歴・過去問ボタンをスクロール内最上部に収納 */}
+            <div className="mb-2.5 space-y-1.5 rounded-lg border border-slate-200 bg-white p-2 text-[11px] md:hidden">
+              <div className="text-slate-600">
+                <span className="font-mono text-[10px] text-slate-400">{iso3}</span>{' '}
+                {country.nameEn} ／ {country.region} ／ 首都：
+                <strong className="text-slate-800">{country.capital}</strong>
+              </div>
+
+              {country.examSummary.years.length > 0 && (
+                <div className="flex flex-nowrap items-center gap-1 overflow-x-auto pb-0.5">
+                  <span className="shrink-0 whitespace-nowrap text-[9.5px] font-bold text-slate-500">
+                    出題履歴
+                  </span>
+                  {(showAllExamYears
+                    ? [...country.examSummary.years].reverse()
+                    : [...country.examSummary.years].reverse().slice(0, 6)
+                  ).map((yr) => (
+                    <span
+                      key={yr}
+                      className="shrink-0 whitespace-nowrap rounded bg-slate-100 px-1 py-0.5 text-[9.5px] font-medium text-slate-700"
+                    >
+                      {formatExamId(yr)}
+                    </span>
+                  ))}
+                  {country.examSummary.years.length > 6 && (
+                    <button
+                      type="button"
+                      onClick={() => setShowAllExamYears((v) => !v)}
+                      className="shrink-0 whitespace-nowrap rounded bg-slate-200 px-1 py-0.5 text-[9.5px] font-bold text-slate-700"
+                    >
+                      {showAllExamYears
+                        ? '折りたたむ'
+                        : `+${country.examSummary.years.length - 6}回`}
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {onOpenExamModal && relatedQuestions.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => onOpenExamModal()}
+                  className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-2.5 py-1.5 text-[11.5px] font-bold text-white shadow-xs transition hover:bg-indigo-700"
+                >
+                  <BookOpen className="h-3.5 w-3.5" />
+                  関連する過去問を見る・解く
+                  <span className="rounded-full bg-white/20 px-1.5 py-0.5 text-[10px]">
+                    {relatedQuestions.length}問
+                  </span>
+                </button>
+              )}
+            </div>
+
             {/* 0. 概要・生活（初期表示タブ） */}
             {activeTab === 'overview' && (
               <div className="space-y-3 md:space-y-4">

@@ -205,6 +205,8 @@ export function BlankMapQuizCanvas({
   const mapRef = useRef<maplibregl.Map | null>(null);
   const readyRef = useRef(false);
   const hoverCountryIdRef = useRef<number | string | null>(null);
+  const pendingFlyTargetRef = useRef<FlyTargetData | null>(null);
+  const pendingFitBoundsRef = useRef<BoundsFitData | null>(null);
 
   const [edgeTicks, setEdgeTicks] = useState<TickState>({ latTicks: [], lngTicks: [] });
 
@@ -473,7 +475,7 @@ export function BlankMapQuizCanvas({
         paint: {
           'fill-color': [
             'case',
-            ['get', 'hasCustomColor'],
+            ['boolean', ['get', 'hasCustomColor'], false],
             ['get', 'quizColor'],
             ['boolean', ['feature-state', 'hover'], false],
             '#e0f2fe',
@@ -543,7 +545,7 @@ export function BlankMapQuizCanvas({
         layout: { 'line-cap': 'round', 'line-join': 'round' },
         paint: {
           'line-color': ['get', 'quizColor'],
-          'line-width': ['case', ['get', 'highlighted'], 6.0, 4.2],
+          'line-width': ['case', ['boolean', ['get', 'highlighted'], false], 6.0, 4.2],
           'line-opacity': 0.92,
         },
       });
@@ -555,10 +557,13 @@ export function BlankMapQuizCanvas({
         paint: {
           'circle-color': ['get', 'quizColor'],
           'circle-radius': [
-            'case',
-            ['get', 'highlighted'],
-            9,
-            ['interpolate', ['linear'], ['zoom'], 1, 5.2, 5, 8.2],
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            1,
+            ['case', ['boolean', ['get', 'highlighted'], false], 9, 5.2],
+            5,
+            ['case', ['boolean', ['get', 'highlighted'], false], 11, 8.2],
           ],
           'circle-stroke-color': '#ffffff',
           'circle-stroke-width': 2,
@@ -627,6 +632,29 @@ export function BlankMapQuizCanvas({
 
       readyRef.current = true;
       setEdgeTicks(computeEdgeTicks(map, container, showGraticuleRef.current));
+      if (pendingFitBoundsRef.current) {
+        const [w, s, e, n] = pendingFitBoundsRef.current.bounds;
+        pendingFitBoundsRef.current = null;
+        map.fitBounds(
+          [
+            [w, s],
+            [e, n],
+          ],
+          { padding: 28, maxZoom: 5.5, duration: 700 },
+        );
+      }
+      if (pendingFlyTargetRef.current) {
+        const ft = pendingFlyTargetRef.current;
+        pendingFlyTargetRef.current = null;
+        const bestLng = resolveShortestWorldLng(map.getCenter().lng, ft.lng);
+        map.flyTo({
+          center: [bestLng, ft.lat],
+          zoom: ft.zoom,
+          duration: 850,
+          curve: 1.35,
+          essential: true,
+        });
+      }
     });
 
     map.on('move', () => {
@@ -699,20 +727,34 @@ export function BlankMapQuizCanvas({
       if (curMode === 'feature_select') {
         const ptHits = map.queryRenderedFeatures(
           [
-            [e.point.x - 14, e.point.y - 14],
-            [e.point.x + 14, e.point.y + 14],
+            [e.point.x - 16, e.point.y - 16],
+            [e.point.x + 16, e.point.y + 16],
           ],
           { layers: ['blank-feature-points'] },
         );
-        const hit =
-          ptHits[0] ??
-          map.queryRenderedFeatures(
+        let hit = ptHits[0];
+        if (ptHits.length > 1) {
+          let bestDist = Infinity;
+          for (const cand of ptHits) {
+            if (cand.geometry.type === 'Point') {
+              const pt = map.project(cand.geometry.coordinates as [number, number]);
+              const d = Math.hypot(pt.x - e.point.x, pt.y - e.point.y);
+              if (d < bestDist) {
+                bestDist = d;
+                hit = cand;
+              }
+            }
+          }
+        }
+        if (!hit) {
+          hit = map.queryRenderedFeatures(
             [
-              [e.point.x - 11, e.point.y - 11],
-              [e.point.x + 11, e.point.y + 11],
+              [e.point.x - 12, e.point.y - 12],
+              [e.point.x + 12, e.point.y + 12],
             ],
             { layers: ['blank-feature-lines'] },
           )[0];
+        }
         const qid = (hit?.properties as { quizId?: string } | undefined)?.quizId;
         if (qid) onClickFeatureRef.current?.(qid);
         return;
@@ -790,8 +832,12 @@ export function BlankMapQuizCanvas({
   }, [showGraticule]);
 
   useEffect(() => {
+    if (!flyTarget) return;
     const map = mapRef.current;
-    if (!map || !readyRef.current || !flyTarget) return;
+    if (!map || !readyRef.current) {
+      pendingFlyTargetRef.current = flyTarget;
+      return;
+    }
     const bestLng = resolveShortestWorldLng(map.getCenter().lng, flyTarget.lng);
     map.flyTo({
       center: [bestLng, flyTarget.lat],
@@ -803,8 +849,12 @@ export function BlankMapQuizCanvas({
   }, [flyTarget]);
 
   useEffect(() => {
+    if (!fitBoundsTarget) return;
     const map = mapRef.current;
-    if (!map || !readyRef.current || !fitBoundsTarget) return;
+    if (!map || !readyRef.current) {
+      pendingFitBoundsRef.current = fitBoundsTarget;
+      return;
+    }
     const [w, s, e, n] = fitBoundsTarget.bounds;
     map.fitBounds(
       [

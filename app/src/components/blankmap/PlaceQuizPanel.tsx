@@ -100,7 +100,7 @@ const FEATURE_CAT_OPTIONS: { id: BlankFeatureCategory | 'weak'; label: string }[
   { id: 'landform_point', label: '特徴的地形（35）' },
   { id: 'ocean_current', label: '海流（24）' },
   { id: 'volcanoes', label: '主な火山（26）' },
-  { id: 'capitals_60', label: '主要首都（約60）' },
+  { id: 'capitals_60', label: '主要首都（102）' },
   { id: 'capitals_all', label: '全首都（198）' },
   { id: 'weak', label: '苦手のみ復習' },
 ];
