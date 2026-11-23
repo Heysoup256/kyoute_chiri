@@ -237,9 +237,16 @@ def main() -> None:
         errors.append("world_rankings_v1.json の品目・散布図・比較グラフまたはフロー地図数が不足しています")
     if len(sg.get("categories", [])) < 7 or len(sg.get("topics", [])) < 45:
         errors.append("systematic_geography_v1.json のカテゴリ数(7以上)またはトピック数(45以上)が不足しています")
+    for tp in sg.get("topics", []):
+        for req_k in ("title", "summary", "keyPoints", "examTraps", "tags"):
+            if not tp.get(req_k):
+                errors.append(f"systematic {tp.get('id')}: 必須項目 {req_k} が空または欠落しています")
     dom = jg.get("domesticStats") or {}
     if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 4 or len(dom.get("prefRankings", [])) < 8:
         errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データが不足しています")
+    for sk in jg.get("mapSkills", []):
+        if not sk.get("checkPoints"):
+            errors.append(f"japan mapSkill {sk.get('id')}: checkPoints が空または欠落しています")
 
     if errors:
         print("VALIDATION FAILED:")

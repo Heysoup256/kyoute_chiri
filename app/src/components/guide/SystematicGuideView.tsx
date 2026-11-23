@@ -62,7 +62,7 @@ export function SystematicGuideView({
     return dataset.topics.filter((t) => {
       if (kw) {
         const deepTxt = (t.deepDive ?? []).map((d) => `${d.heading} ${d.body}`).join(' ');
-        const hay = `${t.title} ${t.summary} ${t.keyPoints.join(' ')} ${t.examTraps.join(' ')} ${deepTxt} ${t.tags.join(' ')}`.toLowerCase();
+        const hay = `${t.title} ${t.summary} ${(t.keyPoints ?? []).join(' ')} ${(t.examTraps ?? []).join(' ')} ${deepTxt} ${(t.tags ?? []).join(' ')}`.toLowerCase();
         return hay.includes(kw);
       }
       return t.categoryId === selectedCategory;
@@ -204,7 +204,7 @@ export function SystematicGuideView({
                       <BookOpen className="h-3 w-3" />
                       {activeCatMeta?.label ?? '系統地理'}
                     </span>
-                    {activeTopic.tags.map((tg) => (
+                    {(activeTopic.tags ?? []).map((tg) => (
                       <span
                         key={tg}
                         className="rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600"
@@ -249,7 +249,7 @@ export function SystematicGuideView({
                     共テで100%押さえるべき仕組みと分類
                   </h3>
                   <ul className="mt-2.5 space-y-2">
-                    {activeTopic.keyPoints.map((pt, idx) => (
+                    {(activeTopic.keyPoints ?? []).map((pt, idx) => (
                       <li
                         key={idx}
                         className="flex items-start gap-2 text-xs leading-relaxed text-slate-800 md:text-[13px]"
@@ -342,27 +342,29 @@ export function SystematicGuideView({
                 ))}
 
                 {/* 共テ引っ掛け・鉄則 */}
-                <section className="rounded-2xl border border-amber-200 bg-amber-50/80 p-4">
-                  <div className="flex items-center gap-1.5 text-xs font-extrabold text-amber-900">
-                    <AlertTriangle className="h-4 w-4 text-amber-600" />
-                    共通テストのひっかけ・出題鉄則
-                  </div>
-                  <ul className="mt-2 space-y-1.5">
-                    {activeTopic.examTraps.map((tr, idx) => (
-                      <li
-                        key={idx}
-                        className="text-xs leading-relaxed text-amber-950 md:text-[13px]"
-                      >
-                        •{' '}
-                        <RichGeoText
-                          text={tr}
-                          placeMatcher={placeMatcher}
-                          onFocusPlace={onFocusPlace}
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </section>
+                {(activeTopic.examTraps ?? []).length > 0 && (
+                  <section className="rounded-2xl border border-amber-200 bg-amber-50/80 p-4">
+                    <div className="flex items-center gap-1.5 text-xs font-extrabold text-amber-900">
+                      <AlertTriangle className="h-4 w-4 text-amber-600" />
+                      共通テストのひっかけ・出題鉄則
+                    </div>
+                    <ul className="mt-2 space-y-1.5">
+                      {(activeTopic.examTraps ?? []).map((tr, idx) => (
+                        <li
+                          key={idx}
+                          className="text-xs leading-relaxed text-amber-950 md:text-[13px]"
+                        >
+                          •{' '}
+                          <RichGeoText
+                            text={tr}
+                            placeMatcher={placeMatcher}
+                            onFocusPlace={onFocusPlace}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
 
                 {/* 代表国ショートカット */}
                 {activeTopic.relatedCountries && activeTopic.relatedCountries.length > 0 && (

@@ -114,12 +114,16 @@ def build_systematic_guide(valid_iso3s: set[str]) -> list[str]:
         errors.append(f"systematic_geography_v1: topics count too low ({len(topics)})")
     chart_count = 0
     for t in topics:
+        tid = t.get("id", "?")
+        for req_key in ("title", "summary", "keyPoints", "examTraps", "tags"):
+            if not t.get(req_key):
+                errors.append(f"systematic {tid}: missing or empty required field '{req_key}'")
         for iso in t.get("relatedCountries", []):
             if iso not in valid_iso3s:
-                errors.append(f"systematic {t.get('id')}: unknown iso3 {iso}")
+                errors.append(f"systematic {tid}: unknown iso3 {iso}")
         t_charts = t.get("charts") or []
         chart_count += len(t_charts)
-        errors.extend(validate_guide_charts(f"systematic/{t.get('id')}", t_charts))
+        errors.extend(validate_guide_charts(f"systematic/{tid}", t_charts))
     if not errors:
         out = DATA_DIR / "systematic_geography_v1.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -142,6 +146,9 @@ def build_japan_guide(valid_iso3s: set[str]) -> list[str]:
         errors.append(f"japan_geography_v1: mapSkills count < 5 ({len(map_skills)})")
     if "JPN" not in valid_iso3s:
         errors.append("JPN missing in countries_v1.json")
+    for sk in map_skills:
+        if not sk.get("checkPoints"):
+            errors.append(f"japan_geography_v1 mapSkill {sk.get('id')}: missing checkPoints")
     dom = data.get("domesticStats") or {}
     errors.extend(validate_guide_charts("japan_domestic", dom.get("charts") or []))
     if not errors:
