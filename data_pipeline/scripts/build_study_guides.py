@@ -39,7 +39,7 @@ def build_world_rankings(valid_iso3s: set[str]) -> list[str]:
         if not iid or iid in seen_ids:
             errors.append(f"world_rankings_v1: duplicate or missing id {iid}")
         seen_ids.add(iid)
-        if item.get("category") not in ("agriculture", "resource", "industry"):
+        if item.get("category") not in ("agriculture", "resource", "industry", "society"):
             errors.append(f"world_rankings_v1 {iid}: invalid category {item.get('category')}")
         for bucket in ("primaryTop", "secondaryTop"):
             entries = item.get(bucket) or []
@@ -57,10 +57,22 @@ def build_world_rankings(valid_iso3s: set[str]) -> list[str]:
             if iso and iso not in valid_iso3s:
                 errors.append(f"world_rankings_v1 scatter {sc.get('id')}: unknown iso3 {iso}")
 
+    comp_charts = data.get("comparisonCharts", [])
+    flow_maps = data.get("flowMaps", [])
+    for fm in flow_maps:
+        for arc in fm.get("arcs", []):
+            for key in ("fromIso3", "toIso3"):
+                iso = arc.get(key)
+                if iso and iso not in valid_iso3s:
+                    errors.append(f"world_rankings_v1 flowMap {fm.get('id')} arc {arc.get('id')}: unknown {key}={iso}")
+
     if not errors:
         out = DATA_DIR / "world_rankings_v1.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Built {out.name}: items={len(items)}, scatters={len(scatters)}")
+        print(
+            f"Built {out.name}: items={len(items)}, scatters={len(scatters)}, "
+            f"comparisonCharts={len(comp_charts)}, flowMaps={len(flow_maps)}"
+        )
     return errors
 
 
@@ -103,7 +115,11 @@ def build_japan_guide(valid_iso3s: set[str]) -> list[str]:
     if not errors:
         out = DATA_DIR / "japan_geography_v1.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Built {out.name}: mapSkills={len(map_skills)}, regions={len(regions)}")
+        dom = data.get("domesticStats") or {}
+        print(
+            f"Built {out.name}: mapSkills={len(map_skills)}, regions={len(regions)}, "
+            f"domesticCharts={len(dom.get('charts', []))}, prefRankings={len(dom.get('prefRankings', []))}"
+        )
     return errors
 
 
