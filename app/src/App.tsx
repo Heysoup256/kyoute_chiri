@@ -613,6 +613,8 @@ export function App() {
             <WorldRankingsView
               key={focusedRankingId ?? 'all'}
               dataset={worldRankingsData}
+              countriesGeoJson={countriesGeoJson}
+              japanDomesticStats={japanData?.domesticStats ?? null}
               focusedItemId={focusedRankingId}
               onSelectCountry={handleSelectCountry}
               onHighlightCountries={handleHighlightFromRanking}

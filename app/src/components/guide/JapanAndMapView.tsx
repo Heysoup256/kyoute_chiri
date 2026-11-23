@@ -1,4 +1,5 @@
 import {
+  BarChart3,
   BookOpen,
   CheckCircle2,
   CloudSun,
@@ -15,6 +16,7 @@ import type { JapanGeographyDataset, PlaceEntry } from '../../types/schema_v1';
 import type { PlaceMatcher } from '../../utils/places';
 import { RichGeoText } from '../study/RichGeoText';
 import { GeoDiagramRenderer } from './GeoDiagrams';
+import { JapanDomesticStatsSection } from './JapanDomesticStatsSection';
 
 interface JapanAndMapViewProps {
   dataset: JapanGeographyDataset | null;
@@ -24,7 +26,7 @@ interface JapanAndMapViewProps {
   onOpenJapanCountry: () => void;
 }
 
-type JapanSubTab = 'regions' | 'map_skills';
+type JapanSubTab = 'regions' | 'map_skills' | 'domestic_stats';
 
 /**
  * 日本地理（9地方データマップ）＆ 第2問「地域調査・地形図・読図」マスタービュー
@@ -108,7 +110,7 @@ export function JapanAndMapView({
             <button
               type="button"
               onClick={() => setSubTab('regions')}
-              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold transition ${
+              className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold transition ${
                 subTab === 'regions'
                   ? 'border-emerald-600 bg-emerald-600 text-white shadow-2xs'
                   : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
@@ -116,6 +118,18 @@ export function JapanAndMapView({
             >
               <MapPin className="h-3.5 w-3.5" />
               日本9地方データマップ（{dataset.regions.length}）
+            </button>
+            <button
+              type="button"
+              onClick={() => setSubTab('domestic_stats')}
+              className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold transition ${
+                subTab === 'domestic_stats'
+                  ? 'border-emerald-600 bg-emerald-600 text-white shadow-2xs'
+                  : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
+              }`}
+            >
+              <BarChart3 className="h-3.5 w-3.5" />
+              日本国内統計
             </button>
             <button
               type="button"
@@ -127,21 +141,30 @@ export function JapanAndMapView({
             </button>
           </div>
 
-          <div className="relative w-full sm:w-64">
-            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
-            <input
-              type="text"
-              value={filterText}
-              onChange={(e) => setFilterText(e.target.value)}
-              placeholder="日本地方・地形図用語で絞り込み"
-              className="w-full rounded-lg border border-slate-300 bg-slate-50 py-1.5 pl-8 pr-2.5 text-xs font-medium text-slate-800 focus:border-emerald-500 focus:bg-white focus:outline-none"
-            />
-          </div>
+          {subTab !== 'domestic_stats' && (
+            <div className="relative w-full sm:w-64">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+              <input
+                type="text"
+                value={filterText}
+                onChange={(e) => setFilterText(e.target.value)}
+                placeholder="日本地方・地形図用語で絞り込み"
+                className="w-full rounded-lg border border-slate-300 bg-slate-50 py-1.5 pl-8 pr-2.5 text-xs font-medium text-slate-800 focus:border-emerald-500 focus:bg-white focus:outline-none"
+              />
+            </div>
+          )}
         </div>
       </div>
 
-      {/* メイン2ペイン */}
-      <div className="min-h-0 flex-1 overflow-y-auto md:overflow-hidden">
+      {/* メイン領域 */}
+      {subTab === 'domestic_stats' ? (
+        <div className="min-h-0 flex-1 overflow-y-auto p-3.5 md:p-6">
+          <div className="mx-auto max-w-6xl">
+            <JapanDomesticStatsSection domesticStats={dataset.domesticStats} />
+          </div>
+        </div>
+      ) : (
+        <div className="min-h-0 flex-1 overflow-y-auto md:overflow-hidden">
         <div className="mx-auto flex h-full max-w-6xl flex-col md:flex-row">
           {/* 左/上リスト */}
           <nav
@@ -394,7 +417,8 @@ export function JapanAndMapView({
             )}
           </div>
         </div>
-      </div>
+        </div>
+      )}
     </div>
   );
 }

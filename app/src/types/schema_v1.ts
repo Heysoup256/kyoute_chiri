@@ -314,6 +314,8 @@ export interface GeoCountryProperties {
   meanElevationM?: number;
   religionMain?: string;
   languageFamilyMain?: string;
+  populationDensity?: number;
+  gdpPerCapitaUsd?: number;
 }
 
 export interface PastExamQuestion {
@@ -379,12 +381,63 @@ export type MapColorMode =
   | 'elevation'
   | 'religion'
   | 'language'
+  | 'population_density'
+  | 'gdp_per_capita'
   | 'marked'
   | 'plain';
 
 export type AppViewMode = 'map' | 'rankings' | 'systematic' | 'japan';
 
-export type RankingCategory = 'agriculture' | 'resource' | 'industry';
+export type RankingCategory = 'agriculture' | 'resource' | 'industry' | 'society';
+
+export type GuideChartKind = 'stacked_bar' | 'grouped_bar' | 'line' | 'pie';
+
+export interface GuideChartSeries {
+  name: string;
+  color?: string;
+  values: number[];
+}
+
+export interface GuideChartSpec {
+  id: string;
+  kind: GuideChartKind;
+  title: string;
+  subtitle?: string;
+  unit: string;
+  categories?: string[];
+  series: GuideChartSeries[];
+  note?: string;
+  examPoint?: string;
+  source?: string;
+  dataYear?: string;
+}
+
+export interface WorldFlowArc {
+  id: string;
+  fromName: string;
+  fromIso3?: string;
+  fromCoords: [number, number];
+  toName: string;
+  toIso3?: string;
+  toCoords: [number, number];
+  value: number;
+  displayValue: string;
+  routeLabel?: string;
+  color?: string;
+  note: string;
+}
+
+export interface WorldFlowMap {
+  id: string;
+  title: string;
+  subtitle: string;
+  unit: string;
+  source: string;
+  dataYear: string;
+  centerMode: 'atlantic' | 'pacific';
+  examPoint: string;
+  arcs: WorldFlowArc[];
+}
 
 export interface RankingEntry {
   iso3: string;
@@ -435,12 +488,19 @@ export interface WorldRankingsDataset {
   generatedAt: string;
   items: WorldRankingItem[];
   scatters: WorldScatterChart[];
+  comparisonCharts?: GuideChartSpec[];
+  flowMaps?: WorldFlowMap[];
 }
 
 export interface SystematicTableData {
   caption?: string;
   headers: string[];
   rows: string[][];
+}
+
+export interface SystematicDeepDive {
+  heading: string;
+  body: string;
 }
 
 export interface SystematicTopic {
@@ -452,6 +512,8 @@ export interface SystematicTopic {
   keyPoints: string[];
   examTraps: string[];
   tables?: SystematicTableData[];
+  charts?: GuideChartSpec[];
+  deepDive?: SystematicDeepDive[];
   relatedCountries?: string[];
   tags: string[];
 }
@@ -493,9 +555,33 @@ export interface JapanRegionEntry {
   examPoints: string[];
 }
 
+export interface JapanPrefRankingEntry {
+  pref: string;
+  value: number;
+  sharePct?: number;
+  note?: string;
+}
+
+export interface JapanPrefRankingItem {
+  id: string;
+  category: string;
+  title: string;
+  unit: string;
+  dataYear: string;
+  source: string;
+  examTrap: string;
+  entries: JapanPrefRankingEntry[];
+}
+
+export interface JapanDomesticStats {
+  charts: GuideChartSpec[];
+  prefRankings: JapanPrefRankingItem[];
+}
+
 export interface JapanGeographyDataset {
   schemaVersion: string;
   generatedAt: string;
   mapSkills: JapanMapSkillTopic[];
   regions: JapanRegionEntry[];
+  domesticStats?: JapanDomesticStats;
 }

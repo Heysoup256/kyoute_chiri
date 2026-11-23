@@ -1,38 +1,57 @@
 import * as echarts from 'echarts';
+import type { FeatureCollection, Geometry } from 'geojson';
 import {
   AlertTriangle,
   BarChart3,
   Factory,
   Fuel,
+  LineChart,
+  Map as MapIcon,
   MapPin,
+  Route,
   Search,
-  Sparkles,
+  Users,
   Wheat,
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type {
+  GeoCountryProperties,
+  JapanDomesticStats,
   RankingCategory,
   RankingEntry,
   WorldRankingItem,
   WorldRankingsDataset,
   WorldScatterChart,
 } from '../../types/schema_v1';
+import { GuideChartCard } from './GuideChartCard';
+import { JapanDomesticStatsSection } from './JapanDomesticStatsSection';
+import { WorldFlowMapCard } from './WorldFlowMapCard';
 
 interface WorldRankingsViewProps {
   dataset: WorldRankingsDataset | null;
+  countriesGeoJson: FeatureCollection<Geometry, GeoCountryProperties>;
+  japanDomesticStats?: JapanDomesticStats | null;
   focusedItemId?: string | null;
   onSelectCountry: (iso3: string) => void;
   onHighlightCountries: (label: string, iso3s: string[]) => void;
 }
 
-type RankingsTab = 'all' | RankingCategory | 'scatter';
+type RankingsMainTab = 'rankings' | 'charts' | 'flows' | 'japan_stats';
+type CategoryFilter = 'all' | RankingCategory;
 
-const TAB_ITEMS: { id: RankingsTab; label: string; icon: typeof BarChart3 }[] = [
+const MAIN_TABS: { id: RankingsMainTab; label: string; icon: typeof BarChart3 }[] = [
+  { id: 'rankings', label: '品目ランキング', icon: BarChart3 },
+  { id: 'charts', label: '比較グラフ＆散布図', icon: LineChart },
+  { id: 'flows', label: '国際移動フロー地図', icon: Route },
+  { id: 'japan_stats', label: '日本国内統計', icon: MapIcon },
+];
+
+const CATEGORY_CHIPS: { id: CategoryFilter; label: string; icon: typeof BarChart3 }[] = [
   { id: 'all', label: 'すべて', icon: BarChart3 },
-  { id: 'agriculture', label: '農産・食料', icon: Wheat },
+  { id: 'agriculture', label: '農林水産', icon: Wheat },
   { id: 'resource', label: '資源・発電', icon: Fuel },
-  { id: 'industry', label: '工業・人口', icon: Factory },
-  { id: 'scatter', label: '4象限散布図', icon: Sparkles },
+  { id: 'industry', label: '工業・貿易', icon: Factory },
+  { id: 'society', label: '人口・生活・観光', icon: Users },
 ];
 
 const CATEGORY_META: Record<
@@ -50,9 +69,14 @@ const CATEGORY_META: Record<
     barColor: 'bg-amber-500',
   },
   industry: {
-    label: '工業・人口',
+    label: '工業・貿易',
     badgeClass: 'bg-indigo-100 text-indigo-800 border-indigo-200',
     barColor: 'bg-indigo-500',
+  },
+  society: {
+    label: '人口・生活・観光',
+    badgeClass: 'bg-rose-100 text-rose-800 border-rose-200',
+    barColor: 'bg-rose-500',
   },
 };
 
@@ -81,14 +105,15 @@ function ScatterPlotCard({
 
     const xs = chart.points.map((p) => p.x);
     const ys = chart.points.map((p) => p.y);
-    const minX = 0;
-    const maxX = Math.ceil(Math.max(...xs) * 1.12);
-    const minY = 0;
-    const maxY = Math.ceil(Math.max(...ys) * 1.15);
+    const minX = Math.min(0, Math.floor(Math.min(...xs) * 1.1));
+    const maxX = Math.ceil(Math.max(...xs) * 1.14);
+    const minY = Math.min(0, Math.floor(Math.min(...ys) * 1.1));
+    const maxY = Math.ceil(Math.max(...ys) * 1.16);
 
     const option: echarts.EChartsOption = {
       animationDuration: 300,
-      grid: { left: 48, right: 24, top: 36, bottom: 44 },
+      // 凡例と縦軸ラベル・横軸ラベルの重なりを防止するため十分な余白を確保
+      grid: { left: 64, right: 24, top: 48, bottom: 52 },
       tooltip: {
         trigger: 'item',
         formatter: (params: unknown) => {
@@ -105,7 +130,10 @@ function ScatterPlotCard({
         },
       },
       legend: {
-        top: 0,
+        top: 2,
+        left: 'center',
+        type: 'scroll',
+        pageIconSize: 10,
         textStyle: { fontSize: 10.5, color: '#334155' },
         itemWidth: 10,
         itemHeight: 10,
@@ -114,7 +142,7 @@ function ScatterPlotCard({
         type: 'value',
         name: chart.xLabel,
         nameLocation: 'middle',
-        nameGap: 26,
+        nameGap: 30,
         nameTextStyle: { fontSize: 10.5, fontWeight: 'bold', color: '#475569' },
         min: minX,
         max: maxX,
@@ -124,7 +152,10 @@ function ScatterPlotCard({
       yAxis: {
         type: 'value',
         name: chart.yLabel,
-        nameTextStyle: { fontSize: 10, fontWeight: 'bold', color: '#475569' },
+        nameLocation: 'middle',
+        nameRotate: 90,
+        nameGap: 48,
+        nameTextStyle: { fontSize: 10.5, fontWeight: 'bold', color: '#475569' },
         min: minY,
         max: maxY,
         axisLabel: { fontSize: 10, color: '#64748b' },
@@ -133,7 +164,7 @@ function ScatterPlotCard({
       series: Array.from(groups.entries()).map(([grp, pts]) => ({
         name: grp,
         type: 'scatter' as const,
-        symbolSize: 12,
+        symbolSize: 11,
         itemStyle: {
           color: pts[0]?.color ?? '#4f46e5',
           borderColor: '#ffffff',
@@ -149,6 +180,9 @@ function ScatterPlotCard({
           fontSize: 10,
           fontWeight: 'bold',
           color: '#1e293b',
+        },
+        labelLayout: {
+          hideOverlap: true,
         },
         data: pts.map((pt) => ({
           value: [pt.x, pt.y],
@@ -200,7 +234,7 @@ function ScatterPlotCard({
         </button>
       </div>
 
-      <div ref={elRef} className="mt-3 h-[320px] w-full md:h-[360px]" />
+      <div ref={elRef} className="mt-3 h-[330px] w-full md:h-[370px]" />
 
       {activePoint && (
         <div className="mt-2 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-indigo-200 bg-indigo-50/70 px-3 py-2 text-xs">
@@ -318,7 +352,7 @@ function RankingCard({
   onHighlightCountries: (label: string, iso3s: string[]) => void;
 }) {
   const [viewSet, setViewSet] = useState<'primary' | 'secondary'>('primary');
-  const meta = CATEGORY_META[item.category];
+  const meta = CATEGORY_META[item.category] ?? CATEGORY_META.industry;
   const hasSecondary = Boolean(item.secondaryTop && item.secondaryTop.length > 0);
   const currentEntries =
     viewSet === 'secondary' && item.secondaryTop ? item.secondaryTop : item.primaryTop;
@@ -417,16 +451,21 @@ function RankingCard({
 }
 
 /**
- * 共通テスト統計データブック＆ランキングビュー（生産vs輸出・発電特化・4象限散布図・地図連動）
+ * 共通テスト統計データブック＆ランキングビュー
+ * （52品目ランキング・主要国比較グラフ＆4象限散布図・太さ可変矢印の国際移動フロー地図・日本国内統計）
  */
 export function WorldRankingsView({
   dataset,
+  countriesGeoJson,
+  japanDomesticStats,
   focusedItemId,
   onSelectCountry,
   onHighlightCountries,
 }: WorldRankingsViewProps) {
-  const [activeTab, setActiveTab] = useState<RankingsTab>('all');
+  const [mainTab, setMainTab] = useState<RankingsMainTab>('rankings');
+  const [catFilter, setCatFilter] = useState<CategoryFilter>('all');
   const [filterText, setFilterText] = useState('');
+  const [selectedFlowId, setSelectedFlowId] = useState<string>('');
 
   useEffect(() => {
     if (!focusedItemId) return;
@@ -442,7 +481,7 @@ export function WorldRankingsView({
     if (!dataset) return [];
     const kw = filterText.trim().toLowerCase();
     return dataset.items.filter((item) => {
-      if (activeTab !== 'all' && activeTab !== 'scatter' && item.category !== activeTab) {
+      if (catFilter !== 'all' && item.category !== catFilter) {
         return false;
       }
       if (!kw) return true;
@@ -457,7 +496,7 @@ export function WorldRankingsView({
         .toLowerCase();
       return hay.includes(kw);
     });
-  }, [dataset, activeTab, filterText]);
+  }, [dataset, catFilter, filterText]);
 
   if (!dataset) {
     return (
@@ -467,43 +506,75 @@ export function WorldRankingsView({
     );
   }
 
+  const comparisonCharts = dataset.comparisonCharts ?? [];
+  const flowMaps = dataset.flowMaps ?? [];
+  const activeFlowMap =
+    flowMaps.find((fm) => fm.id === selectedFlowId) ?? flowMaps[0] ?? null;
+
   return (
     <div className="flex h-full flex-col bg-slate-50">
       {/* サブナビ＆絞り込みバー */}
       <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2.5 md:px-6">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
-            {TAB_ITEMS.map((tab) => {
-              const Icon = tab.icon;
-              const active = activeTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold transition ${
-                    active
-                      ? 'border-indigo-600 bg-indigo-600 text-white shadow-2xs'
-                      : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <Icon className="h-3.5 w-3.5" />
-                  {tab.label}
-                </button>
-              );
-            })}
+        <div className="mx-auto flex max-w-6xl flex-col gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
+              {MAIN_TABS.map((tab) => {
+                const Icon = tab.icon;
+                const active = mainTab === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    onClick={() => setMainTab(tab.id)}
+                    className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold transition ${
+                      active
+                        ? 'border-indigo-600 bg-indigo-600 text-white shadow-2xs'
+                        : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
+                    }`}
+                  >
+                    <Icon className="h-3.5 w-3.5" />
+                    {tab.label}
+                  </button>
+                );
+              })}
+            </div>
+
+            {mainTab === 'rankings' && (
+              <div className="relative w-full sm:w-64">
+                <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+                <input
+                  type="text"
+                  value={filterText}
+                  onChange={(e) => setFilterText(e.target.value)}
+                  placeholder="品目・国名で絞り込み（例: 小麦, 銅）"
+                  className="w-full rounded-lg border border-slate-300 bg-slate-50 py-1.5 pl-8 pr-2.5 text-xs font-medium text-slate-800 focus:border-indigo-500 focus:bg-white focus:outline-none"
+                />
+              </div>
+            )}
           </div>
 
-          {activeTab !== 'scatter' && (
-            <div className="relative w-full sm:w-64">
-              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
-              <input
-                type="text"
-                value={filterText}
-                onChange={(e) => setFilterText(e.target.value)}
-                placeholder="品目・国名で絞り込み（例: 小麦, 銅）"
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 py-1.5 pl-8 pr-2.5 text-xs font-medium text-slate-800 focus:border-indigo-500 focus:bg-white focus:outline-none"
-              />
+          {/* ランキング時のカテゴリ切替チップ */}
+          {mainTab === 'rankings' && (
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+              {CATEGORY_CHIPS.map((chip) => {
+                const Icon = chip.icon;
+                const active = catFilter === chip.id;
+                return (
+                  <button
+                    key={chip.id}
+                    type="button"
+                    onClick={() => setCatFilter(chip.id)}
+                    className={`inline-flex shrink-0 items-center gap-1 rounded-lg border px-2.5 py-0.5 text-[11px] font-bold transition ${
+                      active
+                        ? 'border-slate-800 bg-slate-800 text-white'
+                        : 'border-slate-200 bg-slate-50 text-slate-600 hover:bg-slate-100'
+                    }`}
+                  >
+                    <Icon className="h-3 w-3" />
+                    {chip.label}
+                  </button>
+                );
+              })}
             </div>
           )}
         </div>
@@ -512,32 +583,7 @@ export function WorldRankingsView({
       {/* メインコンテンツ */}
       <div className="flex-1 overflow-y-auto p-3 md:p-6">
         <div className="mx-auto max-w-6xl space-y-6">
-          {(activeTab === 'all' || activeTab === 'scatter') && (
-            <div className="space-y-4">
-              {activeTab === 'all' && (
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
-                    共テ必須・4象限散布図分析
-                  </h2>
-                  <span className="text-[11px] text-slate-500">
-                    点をクリックすると該当国の詳細が開きます
-                  </span>
-                </div>
-              )}
-              <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-                {dataset.scatters.map((sc) => (
-                  <ScatterPlotCard
-                    key={sc.id}
-                    chart={sc}
-                    onSelectCountry={onSelectCountry}
-                    onHighlightAll={onHighlightCountries}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-
-          {activeTab !== 'scatter' && (
+          {mainTab === 'rankings' && (
             <div className="space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h2 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
@@ -566,6 +612,95 @@ export function WorldRankingsView({
                 </div>
               )}
             </div>
+          )}
+
+          {mainTab === 'charts' && (
+            <div className="space-y-6">
+              {comparisonCharts.length > 0 && (
+                <section className="space-y-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h2 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
+                      主要国・世界地域 構成比＆時系列比較グラフ（{comparisonCharts.length}本）
+                    </h2>
+                    <span className="text-[11px] text-slate-500">
+                      棒グラフ・折れ線にカーソル／タップで詳細値表示
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
+                    {comparisonCharts.map((ch) => (
+                      <GuideChartCard key={ch.id} spec={ch} />
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              <section className="space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h2 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
+                    共テ必須・4象限散布図分析（{dataset.scatters.length}本）
+                  </h2>
+                  <span className="text-[11px] text-slate-500">
+                    点をクリックすると該当国の詳細が開きます
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
+                  {dataset.scatters.map((sc) => (
+                    <ScatterPlotCard
+                      key={sc.id}
+                      chart={sc}
+                      onSelectCountry={onSelectCountry}
+                      onHighlightAll={onHighlightCountries}
+                    />
+                  ))}
+                </div>
+              </section>
+            </div>
+          )}
+
+          {mainTab === 'flows' && (
+            <div className="space-y-4">
+              {flowMaps.length === 0 ? (
+                <div className="rounded-xl border border-dashed border-slate-300 bg-white p-8 text-center text-xs text-slate-500">
+                  国際移動フロー地図データを読み込み中です...
+                </div>
+              ) : (
+                <>
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    {flowMaps.map((fm) => {
+                      const active = activeFlowMap?.id === fm.id;
+                      return (
+                        <button
+                          key={fm.id}
+                          type="button"
+                          onClick={() => setSelectedFlowId(fm.id)}
+                          className={`rounded-xl border px-3 py-1.5 text-xs font-bold transition ${
+                            active
+                              ? 'border-indigo-600 bg-indigo-50 text-indigo-900 ring-1 ring-indigo-300'
+                              : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-100'
+                          }`}
+                        >
+                          {fm.title.split('（')[0]}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {activeFlowMap && (
+                    <WorldFlowMapCard
+                      key={activeFlowMap.id}
+                      flowMap={activeFlowMap}
+                      countriesGeoJson={countriesGeoJson}
+                      onSelectCountry={onSelectCountry}
+                      onHighlightCountries={onHighlightCountries}
+                    />
+                  )}
+                </>
+              )}
+            </div>
+          )}
+
+          {mainTab === 'japan_stats' && (
+            <JapanDomesticStatsSection domesticStats={japanDomesticStats} />
           )}
         </div>
       </div>

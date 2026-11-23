@@ -525,6 +525,8 @@ export function WorldMap({
             isMarked: markedSet.has(iso3),
             isHighlighted: highlightSet ? highlightSet.has(iso3) : false,
             isFilterActive: Boolean(highlightSet),
+            populationDensity: detail?.stats?.populationDensity ?? -1,
+            gdpPerCapitaUsd: detail?.stats?.gdpPerCapitaUsd ?? -1,
           },
         };
       }),
@@ -1395,6 +1397,16 @@ export function WorldMap({
             } else {
               modeLabel = props.languageFamilyMain ?? '-';
             }
+          } else if (cm === 'population_density') {
+            modeLabel =
+              props.populationDensity !== undefined && props.populationDensity >= 0
+                ? `人口密度：約${Number(props.populationDensity).toLocaleString()}人/km²`
+                : 'データなし';
+          } else if (cm === 'gdp_per_capita') {
+            modeLabel =
+              props.gdpPerCapitaUsd !== undefined && props.gdpPerCapitaUsd >= 0
+                ? `1人あたりGDP：約$${Math.round(Number(props.gdpPerCapitaUsd)).toLocaleString()}`
+                : 'データなし';
           }
           setHoveredInfo({
             x: e.point.x,
@@ -1987,11 +1999,10 @@ export function WorldMap({
             left: `${t.leftPx}px`,
             '--lng-bottom': mobileBottomOffsetVh > 0 ? `calc(${mobileBottomOffsetVh}vh + 6px)` : '4px',
           } as React.CSSProperties}
-          className={`pointer-events-none absolute bottom-[var(--lng-bottom)] z-10 -translate-x-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none shadow-2xs md:bottom-1 ${
-            t.isPrime
-              ? 'border border-slate-400/80 bg-white/92 font-extrabold text-slate-800'
-              : 'border border-slate-300/70 bg-white/85 font-semibold text-slate-600'
-          }`}
+          className={`pointer-events-none absolute bottom-[var(--lng-bottom)] z-10 -translate-x-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none shadow-2xs md:bottom-1 ${t.isPrime
+            ? 'border border-slate-400/80 bg-white/92 font-extrabold text-slate-800'
+            : 'border border-slate-300/70 bg-white/85 font-semibold text-slate-600'
+            }`}
         >
           {t.label}
         </div>
@@ -2464,6 +2475,44 @@ function computeEdgeTicks(
 }
 
 function getFillColorExpr(colorMode: MapColorMode): maplibregl.ExpressionSpecification {
+  if (colorMode === 'population_density') {
+    return [
+      'step',
+      ['coalesce', ['get', 'populationDensity'], -1],
+      '#e2e8f0',
+      0,
+      '#fef9c3',
+      10,
+      '#fde047',
+      50,
+      '#fb923c',
+      150,
+      '#f97316',
+      300,
+      '#dc2626',
+      600,
+      '#7f1d1d',
+    ];
+  }
+  if (colorMode === 'gdp_per_capita') {
+    return [
+      'step',
+      ['coalesce', ['get', 'gdpPerCapitaUsd'], -1],
+      '#e2e8f0',
+      0,
+      '#fef2f2',
+      2000,
+      '#fde68a',
+      6000,
+      '#86efac',
+      15000,
+      '#2dd4bf',
+      30000,
+      '#2563eb',
+      50000,
+      '#312e81',
+    ];
+  }
   if (colorMode === 'marked') {
     return ['case', ['get', 'isMarked'], '#f59e0b', '#e2e8f0'];
   }
@@ -2489,6 +2538,9 @@ function getFillColorExpr(colorMode: MapColorMode): maplibregl.ExpressionSpecifi
 }
 
 function getFillOpacityExpr(colorMode: MapColorMode): maplibregl.ExpressionSpecification {
+  if (colorMode === 'population_density' || colorMode === 'gdp_per_capita') {
+    return ['case', ['boolean', ['feature-state', 'hover'], false], 0.85, 0.72];
+  }
   if (REGIONAL_RASTER_MODE_SET.has(colorMode)) {
     return ['case', ['boolean', ['feature-state', 'hover'], false], 0.14, 0.01];
   }
