@@ -249,7 +249,7 @@ export function ReverseSearchDrawer({
                 )}
               </div>
               <span className="shrink-0 text-[11px] font-semibold text-slate-400">
-                過去問 {country.examSummary.appearanceCount}回
+                出題 {country.examSummary.appearanceCount}回
               </span>
             </button>
           ))

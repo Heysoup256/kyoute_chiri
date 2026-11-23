@@ -37,7 +37,10 @@ jobs:
         working-directory: app
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
-        run: npm run build
+          VITE_PUBLIC_MODE: "true"
+        run: |
+          npm run build
+          rm -f dist/data/past_exams_v1.json
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

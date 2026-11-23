@@ -29,7 +29,11 @@ import type {
   PastExamsDataset,
   PlaceEntry,
 } from './types/schema_v1';
-import { DEFAULT_LAYER_VISIBILITY, normalizeKoppen13 } from './utils/constants';
+import {
+  DEFAULT_LAYER_VISIBILITY,
+  IS_PUBLIC_MODE,
+  normalizeKoppen13,
+} from './utils/constants';
 import {
   EMPTY_FILTERS,
   hasActiveFilters,
@@ -105,30 +109,35 @@ export function App() {
     async function loadAll() {
       try {
         const base = import.meta.env.BASE_URL;
+        const emptyPastExams: PastExamsDataset = {
+          schemaVersion: '1.0.0',
+          generatedAt: '',
+          questions: [],
+        };
         const [
           cRes,
           geoRes,
           layersRes,
           platesRes,
-          examsRes,
           capsRes,
           volsRes,
           phenomRes,
           tRegRes,
           tGridRes,
           placesRes,
+          examsRes,
         ] = await Promise.all([
           fetch(`${base}data/countries_v1.json`),
           fetch(`${base}data/geo_countries_v1.geojson`),
           fetch(`${base}data/geo_layers_v1.geojson`),
           fetch(`${base}data/plate_boundaries_v1.geojson`),
-          fetch(`${base}data/past_exams_v1.json`),
           fetch(`${base}data/capitals_v1.geojson`),
           fetch(`${base}data/volcanoes_v1.geojson`),
           fetch(`${base}data/climate_phenomena_v1.geojson`),
           fetch(`${base}data/thematic_regions_v1.geojson`),
           fetch(`${base}data/thematic_grid_v1.json`),
           fetch(`${base}data/places_v1.json`),
+          IS_PUBLIC_MODE ? Promise.resolve(null) : fetch(`${base}data/past_exams_v1.json`),
         ]);
 
         if (
@@ -136,13 +145,13 @@ export function App() {
           !geoRes.ok ||
           !layersRes.ok ||
           !platesRes.ok ||
-          !examsRes.ok ||
           !capsRes.ok ||
           !volsRes.ok ||
           !phenomRes.ok ||
           !tRegRes.ok ||
           !tGridRes.ok ||
-          !placesRes.ok
+          !placesRes.ok ||
+          (!IS_PUBLIC_MODE && (!examsRes || !examsRes.ok))
         ) {
           throw new Error('静的データファイルの読み込みに失敗しました。');
         }
@@ -152,25 +161,25 @@ export function App() {
           geoJson,
           layersJson,
           platesJson,
-          examsJson,
           capsJson,
           volsJson,
           phenomJson,
           tRegJson,
           tGridJson,
           placesJson,
+          examsJson,
         ] = await Promise.all([
           cRes.json(),
           geoRes.json(),
           layersRes.json(),
           platesRes.json(),
-          examsRes.json(),
           capsRes.json(),
           volsRes.json(),
           phenomRes.json(),
           tRegRes.json(),
           tGridRes.json(),
           placesRes.json(),
+          examsRes ? examsRes.json() : Promise.resolve(emptyPastExams),
         ]);
 
         CountriesBasicSchema.parse(cJson);
@@ -352,7 +361,9 @@ export function App() {
                 共テ地理ナビ
               </h1>
               <p className="hidden text-[11px] text-slate-500 xl:block">
-                地理総合・地理探究 対策マップ（{totalCountriesCount}カ国・{pastExamsData.questions.length}問連動）
+                {IS_PUBLIC_MODE
+                  ? `地理総合・地理探究 対策マップ（全${totalCountriesCount}カ国・${countriesData.examCoverage.length}回出題分析）`
+                  : `地理総合・地理探究 対策マップ（${totalCountriesCount}カ国・${pastExamsData.questions.length}問連動）`}
               </p>
             </div>
           </div>
@@ -362,11 +373,10 @@ export function App() {
             <button
               type="button"
               onClick={() => setSearchOpen((v) => !v)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
-                searchOpen || highlightedIso3s
-                  ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
-                  : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
-              }`}
+              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${searchOpen || highlightedIso3s
+                ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
+                : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+                }`}
             >
               <Filter className="h-3.5 w-3.5" />
               逆引き検索
@@ -389,26 +399,27 @@ export function App() {
               2都市グラフ比較
             </button>
 
-            <button
-              type="button"
-              onClick={() => {
-                setExamModalInitialId(undefined);
-                setExamModalMode('archive');
-              }}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
-            >
-              <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
-              過去問演習 ({pastExamsData.questions.length})
-            </button>
+            {!IS_PUBLIC_MODE && (
+              <button
+                type="button"
+                onClick={() => {
+                  setExamModalInitialId(undefined);
+                  setExamModalMode('archive');
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
+              >
+                <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+                過去問演習 ({pastExamsData.questions.length})
+              </button>
+            )}
 
             <button
               type="button"
               onClick={() => setBlindMode((v) => !v)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
-                blindMode
-                  ? 'border-amber-400 bg-amber-50 text-amber-800'
-                  : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
-              }`}
+              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${blindMode
+                ? 'border-amber-400 bg-amber-50 text-amber-800'
+                : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+                }`}
             >
               {blindMode ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
               暗記モード {blindMode ? 'ON' : 'OFF'}
@@ -420,11 +431,10 @@ export function App() {
                 onClick={() =>
                   setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
                 }
-                className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
-                  mapColorMode === 'marked'
-                    ? 'border-amber-400 bg-amber-100 text-amber-900'
-                    : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
-                }`}
+                className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${mapColorMode === 'marked'
+                  ? 'border-amber-400 bg-amber-100 text-amber-900'
+                  : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
+                  }`}
                 title="★マークを付けた国を地図上で強調表示切替"
               >
                 ★ マーク ({markedCount})
@@ -459,11 +469,10 @@ export function App() {
             <button
               type="button"
               onClick={() => setBlindMode((v) => !v)}
-              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1.5 text-xs font-bold lg:hidden ${
-                blindMode
-                  ? 'border-amber-400 bg-amber-50 text-amber-800'
-                  : 'border-slate-300 bg-white text-slate-700'
-              }`}
+              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1.5 text-xs font-bold lg:hidden ${blindMode
+                ? 'border-amber-400 bg-amber-50 text-amber-800'
+                : 'border-slate-300 bg-white text-slate-700'
+                }`}
               aria-label="暗記モード切替"
             >
               {blindMode ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
@@ -477,11 +486,10 @@ export function App() {
           <button
             type="button"
             onClick={() => setSearchOpen((v) => !v)}
-            className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${
-              searchOpen || highlightedIso3s
-                ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
-                : 'border-slate-300 bg-white text-slate-700'
-            }`}
+            className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${searchOpen || highlightedIso3s
+              ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
+              : 'border-slate-300 bg-white text-slate-700'
+              }`}
           >
             <Filter className="h-3 w-3" />
             検索{highlightedIso3s ? `(${highlightedIso3s.length})` : ''}
@@ -499,17 +507,19 @@ export function App() {
             都市比較
           </button>
 
-          <button
-            type="button"
-            onClick={() => {
-              setExamModalInitialId(undefined);
-              setExamModalMode('archive');
-            }}
-            className="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700"
-          >
-            <BookOpen className="h-3 w-3 text-indigo-600" />
-            過去問{pastExamsData.questions.length}問
-          </button>
+          {!IS_PUBLIC_MODE && (
+            <button
+              type="button"
+              onClick={() => {
+                setExamModalInitialId(undefined);
+                setExamModalMode('archive');
+              }}
+              className="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700"
+            >
+              <BookOpen className="h-3 w-3 text-indigo-600" />
+              過去問{pastExamsData.questions.length}問
+            </button>
+          )}
 
           {markedCount > 0 && (
             <button
@@ -517,11 +527,10 @@ export function App() {
               onClick={() =>
                 setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
               }
-              className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${
-                mapColorMode === 'marked'
-                  ? 'border-amber-400 bg-amber-100 text-amber-900'
-                  : 'border-amber-200 bg-amber-50 text-amber-800'
-              }`}
+              className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${mapColorMode === 'marked'
+                ? 'border-amber-400 bg-amber-100 text-amber-900'
+                : 'border-amber-200 bg-amber-50 text-amber-800'
+                }`}
             >
               ★ {markedCount}
             </button>
@@ -590,7 +599,9 @@ export function App() {
           {!selectedIso3 && !searchOpen && (
             <div className="pointer-events-none absolute inset-x-0 bottom-16 z-10 flex justify-center px-3 sm:bottom-5">
               <div className="rounded-full border border-slate-200 bg-white/95 px-4 py-1.5 text-center text-[11px] font-semibold text-slate-700 shadow-md backdrop-blur-xs md:text-xs">
-                地図上の国・地形・首都・火山をタップして詳細・雨温図・過去問切り抜きを表示
+                {IS_PUBLIC_MODE
+                  ? '地図上の国・地形・首都・火山をタップして詳細・雨温図・出題履歴を表示'
+                  : '地図上の国・地形・首都・火山をタップして詳細・雨温図・過去問切り抜きを表示'}
               </div>
             </div>
           )}
@@ -617,14 +628,14 @@ export function App() {
                 setPanelMinimized(false);
                 setFocusedPlace(null);
               }}
-              onOpenExamModal={handleOpenCountryExamModal}
+              onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
             />
           </div>
         )}
       </main>
 
       {/* 過去問閲覧・4択演習モーダル */}
-      {examModalMode !== 'closed' && (
+      {!IS_PUBLIC_MODE && examModalMode !== 'closed' && (
         <PastExamModal
           isOpen={true}
           titleLabel={examModalTitle}

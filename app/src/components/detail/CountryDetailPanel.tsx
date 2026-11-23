@@ -65,7 +65,7 @@ interface CountryDetailPanelProps {
   onCompareCity: (cityId: string) => void;
   onSelectCountry: (iso3: string) => void;
   onClose: () => void;
-  onOpenExamModal: (initialQuestionId?: string) => void;
+  onOpenExamModal?: (initialQuestionId?: string) => void;
 }
 
 type DetailTab = 'overview' | 'nature' | 'climate' | 'industry' | 'population' | 'culture';
@@ -110,7 +110,7 @@ function KnowledgeItemCard({
   forceReveal: boolean;
   placeMatcher?: PlaceMatcher | null;
   onFocusPlace: (place: PlaceEntry) => void;
-  onOpenQuestion: (questionId?: string) => void;
+  onOpenQuestion?: (questionId?: string) => void;
 }) {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
@@ -189,17 +189,27 @@ function KnowledgeItemCard({
 
         {item.examMeta.pastExamRefs.length > 0 && (
           <div className="flex flex-wrap gap-1">
-            {item.examMeta.pastExamRefs.map((ref, idx) => (
-              <button
-                key={`${ref.examId}-${idx}`}
-                type="button"
-                onClick={() => onOpenQuestion(ref.questionId)}
-                className="inline-flex items-center gap-1 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-0.5 text-[11px] font-semibold text-indigo-700 hover:bg-indigo-100"
-              >
-                <BookOpen className="h-3 w-3" />
-                {formatExamId(ref.examId)} {ref.questionLabel}
-              </button>
-            ))}
+            {item.examMeta.pastExamRefs.map((ref, idx) =>
+              onOpenQuestion ? (
+                <button
+                  key={`${ref.examId}-${idx}`}
+                  type="button"
+                  onClick={() => onOpenQuestion(ref.questionId)}
+                  className="inline-flex items-center gap-1 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-0.5 text-[11px] font-semibold text-indigo-700 hover:bg-indigo-100"
+                >
+                  <BookOpen className="h-3 w-3" />
+                  {formatExamId(ref.examId)} {ref.questionLabel}
+                </button>
+              ) : (
+                <span
+                  key={`${ref.examId}-${idx}`}
+                  className="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600"
+                >
+                  <BookOpen className="h-3 w-3 text-slate-400" />
+                  {formatExamId(ref.examId)} {ref.questionLabel}
+                </span>
+              ),
+            )}
           </div>
         )}
       </div>
@@ -234,6 +244,7 @@ export function CountryDetailPanel({
   const [forceReveal, setForceReveal] = useState(false);
   const [zoomPhoto, setZoomPhoto] = useState<DailyLifePhoto | null>(null);
   const [failedPhotoUrls, setFailedPhotoUrls] = useState<Record<string, boolean>>({});
+  const [showAllExamYears, setShowAllExamYears] = useState(false);
 
   if (!iso3) {
     return null;
@@ -333,15 +344,21 @@ export function CountryDetailPanel({
           </div>
         </div>
 
-        {/* 暗記確認操作・過去問タグ・過去問ボタン */}
-        {country && (!country.isBasicEntry || relatedQuestions.length > 0) && (
-          <div className="mt-2.5 space-y-2">
-            <div className="flex flex-wrap items-center justify-between gap-1.5">
-              <div className="flex flex-wrap items-center gap-1">
-                {[...country.examSummary.years]
-                  .reverse()
-                  .slice(0, 6)
-                  .map((yr) => (
+        {/* 暗記確認操作・出題履歴タグ・過去問ボタン */}
+        {country &&
+          (!country.isBasicEntry ||
+            country.examSummary.years.length > 0 ||
+            relatedQuestions.length > 0) && (
+            <div className="mt-2.5 space-y-2">
+              <div className="flex flex-wrap items-center justify-between gap-1.5">
+                <div className="flex flex-wrap items-center gap-1">
+                  {country.examSummary.years.length > 0 && (
+                    <span className="text-[10px] font-bold text-slate-500">出題履歴</span>
+                  )}
+                  {(showAllExamYears
+                    ? [...country.examSummary.years].reverse()
+                    : [...country.examSummary.years].reverse().slice(0, 6)
+                  ).map((yr) => (
                     <span
                       key={yr}
                       className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
@@ -349,52 +366,56 @@ export function CountryDetailPanel({
                       {formatExamId(yr)}
                     </span>
                   ))}
-                {country.examSummary.years.length > 6 && (
-                  <span
-                    className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-600"
-                    title={country.examSummary.years.map(formatExamId).join('、')}
-                  >
-                    +{country.examSummary.years.length - 6}回
-                  </span>
-                )}
-                {!country.isBasicEntry &&
-                  country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
-                    <span
-                      key={topic}
-                      className="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700"
+                  {country.examSummary.years.length > 6 && (
+                    <button
+                      type="button"
+                      onClick={() => setShowAllExamYears((v) => !v)}
+                      className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 transition hover:bg-slate-300"
+                      title={country.examSummary.years.map(formatExamId).join('、')}
                     >
-                      ★ {topic}
-                    </span>
-                  ))}
+                      {showAllExamYears
+                        ? '折りたたむ'
+                        : `+${country.examSummary.years.length - 6}回`}
+                    </button>
+                  )}
+                  {!country.isBasicEntry &&
+                    country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
+                      <span
+                        key={topic}
+                        className="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700"
+                      >
+                        ★ {topic}
+                      </span>
+                    ))}
+                </div>
+
+                {blindMode && (
+                  <button
+                    type="button"
+                    onClick={() => setForceReveal((v) => !v)}
+                    className="inline-flex items-center gap-1 rounded-md border border-amber-300 bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-800 hover:bg-amber-100"
+                  >
+                    {forceReveal ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
+                    {forceReveal ? '隠す' : '全開示'}
+                  </button>
+                )}
               </div>
 
-              {blindMode && (
+              {onOpenExamModal && relatedQuestions.length > 0 && (
                 <button
                   type="button"
-                  onClick={() => setForceReveal((v) => !v)}
-                  className="inline-flex items-center gap-1 rounded-md border border-amber-300 bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-800 hover:bg-amber-100"
+                  onClick={() => onOpenExamModal()}
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-3 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-indigo-700 md:text-sm"
                 >
-                  {forceReveal ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
-                  {forceReveal ? '隠す' : '全開示'}
+                  <BookOpen className="h-4 w-4" />
+                  関連する過去問を見る・解く
+                  <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs">
+                    {relatedQuestions.length}問
+                  </span>
                 </button>
               )}
             </div>
-
-            {relatedQuestions.length > 0 && (
-              <button
-                type="button"
-                onClick={() => onOpenExamModal()}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-3 py-2 text-xs font-bold text-white shadow-xs transition hover:bg-indigo-700 md:text-sm"
-              >
-                <BookOpen className="h-4 w-4" />
-                関連する過去問を見る・解く
-                <span className="rounded-full bg-white/20 px-2 py-0.5 text-xs">
-                  {relatedQuestions.length}問
-                </span>
-              </button>
-            )}
-          </div>
-        )}
+          )}
       </div>
 
       {/* データ未収録地域の表示 */}

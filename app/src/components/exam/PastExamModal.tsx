@@ -188,11 +188,10 @@ export function PastExamModal({
                       key={q.questionId}
                       type="button"
                       onClick={() => handleSelectQuestion(q.questionId)}
-                      className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition ${
-                        active
-                          ? 'border-indigo-600 bg-indigo-600 text-white'
-                          : 'border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100'
-                      }`}
+                      className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition ${active
+                        ? 'border-indigo-600 bg-indigo-600 text-white'
+                        : 'border-slate-300 bg-slate-50 text-slate-700 hover:bg-slate-100'
+                        }`}
                     >
                       {formatExamId(q.examId)} 第{q.daimon ?? ''}問 問{q.toi ?? ''}
                     </button>
@@ -218,9 +217,8 @@ export function PastExamModal({
               <button
                 type="button"
                 onClick={() => setMode('solve')}
-                className={`inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-medium transition ${
-                  mode === 'solve' ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600'
-                }`}
+                className={`inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-medium transition ${mode === 'solve' ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600'
+                  }`}
               >
                 <PenTool className="h-3.5 w-3.5" />
                 解く
@@ -228,9 +226,8 @@ export function PastExamModal({
               <button
                 type="button"
                 onClick={() => setMode('view')}
-                className={`inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-medium transition ${
-                  mode === 'view' ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600'
-                }`}
+                className={`inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-medium transition ${mode === 'view' ? 'bg-white text-indigo-700 shadow-xs' : 'text-slate-600'
+                  }`}
               >
                 <Eye className="h-3.5 w-3.5" />
                 答えを見る
@@ -302,11 +299,6 @@ export function PastExamModal({
                 </div>
               ) : (
                 <div className="rounded-xl border border-indigo-100 bg-indigo-50/50 p-4">
-                  {activeClipUrl && failedClipUrls[activeClipUrl] && (
-                    <p className="mb-1.5 text-[11px] font-semibold text-amber-800">
-                      ※ 著作権保護のため公開版では問題切り抜き画像を非表示にしています（ローカル環境では切り抜き画像が表示されます）
-                    </p>
-                  )}
                   <p className="mt-1 text-sm leading-relaxed text-slate-800">
                     {activeQuestion.promptSummary}
                   </p>

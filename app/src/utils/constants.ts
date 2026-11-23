@@ -5,6 +5,9 @@ import type {
   MapColorMode,
 } from '../types/schema_v1';
 
+/** 公開版（GitHub Pages等）ビルド時は出題履歴のみ表示する */
+export const IS_PUBLIC_MODE = import.meta.env.VITE_PUBLIC_MODE === 'true';
+
 /** 重要度ランク別の地図ポリゴン塗り色（ヒートマップ用） */
 export const RANK_FILL_COLORS: Record<ImportanceRank | 'NONE', string> = {
   S: '#ef4444', // 赤: 最頻出
