@@ -3,12 +3,13 @@ import {
   BarChart3,
   BookOpen,
   Compass,
+  Dices,
   Globe2,
   Loader2,
   MapPin,
   Search,
 } from 'lucide-react';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { z } from 'zod';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
@@ -121,6 +122,21 @@ export function App() {
   } | null>(null);
   const [examModalMode, setExamModalMode] = useState<'closed' | 'country' | 'archive'>('closed');
   const [examModalInitialId, setExamModalInitialId] = useState<string | undefined>(undefined);
+  const [flyToCountryRequest, setFlyToCountryRequest] = useState<{
+    iso3: string;
+    nonce: number;
+  } | null>(null);
+  const [isDiceRolling, setIsDiceRolling] = useState<boolean>(false);
+  const recentRandomIso3sRef = useRef<string[]>([]);
+  const diceTimerRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (diceTimerRef.current !== null) {
+        window.clearTimeout(diceTimerRef.current);
+      }
+    };
+  }, []);
 
   const { markedIso3s, markedCount, isMarked, toggleMark } = useMarkedCountries();
 
@@ -271,6 +287,47 @@ export function App() {
     setActiveView('map');
   }, []);
 
+  const handleRandomCountry = useCallback(() => {
+    if (!countriesData) return;
+    const allList = Object.values(countriesData.countries);
+    const detailedList = allList.filter((c) => !c.isBasicEntry).map((c) => c.iso3);
+    const pool = detailedList.length > 0 ? detailedList : allList.map((c) => c.iso3);
+    if (pool.length === 0) return;
+
+    const excludeSet = new Set<string>(recentRandomIso3sRef.current);
+    if (selectedIso3) excludeSet.add(selectedIso3);
+    let candidates = pool.filter((iso) => !excludeSet.has(iso));
+    if (candidates.length === 0) {
+      recentRandomIso3sRef.current = [];
+      candidates = pool.filter((iso) => iso !== selectedIso3);
+      if (candidates.length === 0) candidates = pool;
+    }
+
+    const picked = candidates[Math.floor(Math.random() * candidates.length)];
+    recentRandomIso3sRef.current = [...recentRandomIso3sRef.current.slice(-11), picked];
+
+    if (diceTimerRef.current !== null) {
+      window.clearTimeout(diceTimerRef.current);
+    }
+    setIsDiceRolling(true);
+    diceTimerRef.current = window.setTimeout(() => {
+      setIsDiceRolling(false);
+    }, 480);
+
+    setSelectedIso3(picked);
+    setFallbackNameEn(undefined);
+    setFocusedPlace(null);
+    setSearchOpen(false);
+    setActiveView('map');
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      setMobileSheetVh((prev) => (prev > 46 ? 44 : prev));
+    }
+    setFlyToCountryRequest((prev) => ({
+      iso3: picked,
+      nonce: Math.max(Date.now(), (prev?.nonce ?? 0) + 1),
+    }));
+  }, [countriesData, selectedIso3]);
+
   const handleFocusPlace = useCallback((place: PlaceEntry) => {
     setFocusedPlace(place);
     if (!place.skipCameraMove) {
@@ -400,14 +457,14 @@ export function App() {
     <div className="flex h-full w-full flex-col bg-slate-50">
       {/* 1行ヘッダー：サイト名 ＋ 4ビュー切替（地図・統計・系統・日本） ＋ コンパクト検索ボタン */}
       <header className="z-20 shrink-0 border-b border-slate-200 bg-white shadow-2xs">
-        <div className="flex h-12 items-center justify-between gap-1.5 px-2.5 md:h-13 md:gap-3 md:px-5">
+        <div className="flex h-12 items-center justify-between gap-1 px-2 md:h-13 md:gap-3 md:px-5">
           {/* サイト名 */}
-          <div className="flex shrink-0 items-center gap-1.5 md:gap-2">
+          <div className="flex shrink-0 items-center gap-1 md:gap-2">
             <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white md:h-8 md:w-8">
               <Compass className="h-3.5 w-3.5 md:h-5 md:w-5" />
             </div>
             <div>
-              <h1 className="text-[13px] font-extrabold tracking-tight text-slate-900 md:text-base">
+              <h1 className="text-[12.5px] font-extrabold tracking-tight text-slate-900 md:text-base">
                 共テ地理ナビ
               </h1>
               <p className="hidden text-[11px] text-slate-500 xl:block">
@@ -431,7 +488,7 @@ export function App() {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveView(tab.id)}
-                  className={`inline-flex items-center gap-1 rounded-lg px-2 py-1 text-[11.5px] font-extrabold transition md:px-3 md:py-1.5 md:text-xs ${
+                  className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[11px] font-extrabold transition md:px-3 md:py-1.5 md:text-xs ${
                     active
                       ? 'bg-white text-indigo-700 shadow-xs'
                       : 'text-slate-600 hover:text-slate-900'
@@ -444,8 +501,23 @@ export function App() {
             })}
           </nav>
 
-          {/* 右側ツール：検索ボタン等 */}
-          <div className="flex shrink-0 items-center gap-1.5">
+          {/* 右側ツール：サイコロ・検索ボタン等 */}
+          <div className="flex shrink-0 items-center gap-1 md:gap-1.5">
+            <button
+              type="button"
+              onClick={handleRandomCountry}
+              aria-label="ランダムな国へ飛ぶ"
+              title="サイコロを振ってランダムな国へ飛ぶ"
+              className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-2 py-1.5 text-xs font-bold text-indigo-700 transition hover:bg-indigo-100 active:scale-95 md:px-2.5"
+            >
+              <Dices
+                className={`h-3.5 w-3.5 transition-transform duration-500 ${
+                  isDiceRolling ? 'rotate-[360deg] scale-110' : ''
+                }`}
+              />
+              <span className="hidden md:inline">ランダム</span>
+            </button>
+
             <button
               type="button"
               onClick={() => setSearchOpen((v) => !v)}
@@ -573,6 +645,7 @@ export function App() {
               climateOverlay={climateOverlay}
               onChangeClimateOverlay={setClimateOverlay}
               focusedPlace={focusedPlace}
+              flyToCountryRequest={flyToCountryRequest}
               mobileBottomOffsetVh={selectedIso3 ? mobileSheetVh : 0}
               onClearFocusedPlace={handleClearFocusedPlace}
               onClearSearchHighlight={() => {

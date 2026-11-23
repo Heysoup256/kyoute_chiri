@@ -70,6 +70,7 @@ interface WorldMapProps {
   climateOverlay: ClimateOverlayState;
   onChangeClimateOverlay: (next: ClimateOverlayState) => void;
   focusedPlace: PlaceEntry | null;
+  flyToCountryRequest?: { iso3: string; nonce: number } | null;
   highlightBannerLabel?: string | null;
   mobileBottomOffsetVh?: number;
   onClearFocusedPlace: () => void;
@@ -292,6 +293,83 @@ function resolveShortestWorldLng(currentCenterLng: number, targetLng: number): n
   return currentCenterLng + delta;
 }
 
+function getCountryZoomByArea(areaKm2: number): number {
+  if (areaKm2 >= 5_000_000) return 3.0;
+  if (areaKm2 >= 1_500_000) return 3.6;
+  if (areaKm2 >= 400_000) return 4.3;
+  if (areaKm2 >= 80_000) return 5.0;
+  return 5.7;
+}
+
+function resolveCountryFlyTarget(
+  iso3: string,
+  countriesData: Record<string, CountryData>,
+  capitalsGeoJson: FeatureCollection<Geometry>,
+  countriesGeoJson: FeatureCollection<Geometry, GeoCountryProperties>,
+): { lng: number; lat: number; zoom: number } | null {
+  const country = countriesData[iso3];
+  const zoom = getCountryZoomByArea(country?.stats?.areaKm2 ?? 0);
+
+  const topCity = country?.topCities?.[0];
+  if (topCity && Number.isFinite(topCity.lng) && Number.isFinite(topCity.lat)) {
+    return { lng: topCity.lng, lat: topCity.lat, zoom };
+  }
+
+  const climateCity = country?.climate?.cities?.[0];
+  if (climateCity && Number.isFinite(climateCity.lng) && Number.isFinite(climateCity.lat)) {
+    return { lng: climateCity.lng, lat: climateCity.lat, zoom };
+  }
+
+  const capFeat = capitalsGeoJson.features.find(
+    (f) =>
+      (f.properties as { iso3?: string } | null)?.iso3 === iso3 &&
+      f.geometry?.type === 'Point',
+  );
+  if (capFeat && capFeat.geometry.type === 'Point') {
+    const [lng, lat] = capFeat.geometry.coordinates;
+    if (Number.isFinite(lng) && Number.isFinite(lat)) {
+      return { lng, lat, zoom };
+    }
+  }
+
+  const countryFeat = countriesGeoJson.features.find(
+    (f) => f.properties?.iso3 === iso3,
+  );
+  if (!countryFeat?.geometry) return null;
+
+  const rings: number[][][] =
+    countryFeat.geometry.type === 'Polygon'
+      ? [countryFeat.geometry.coordinates[0]]
+      : countryFeat.geometry.type === 'MultiPolygon'
+        ? countryFeat.geometry.coordinates.map((poly) => poly[0])
+        : [];
+
+  let bestScore = -1;
+  let bestCenter: { lng: number; lat: number } | null = null;
+  for (const ring of rings) {
+    if (!ring || ring.length === 0) continue;
+    let minLng = Infinity;
+    let maxLng = -Infinity;
+    let minLat = Infinity;
+    let maxLat = -Infinity;
+    for (const pt of ring) {
+      if (pt[0] < minLng) minLng = pt[0];
+      if (pt[0] > maxLng) maxLng = pt[0];
+      if (pt[1] < minLat) minLat = pt[1];
+      if (pt[1] > maxLat) maxLat = pt[1];
+    }
+    const spanScore = (maxLng - minLng) * (maxLat - minLat);
+    if (spanScore > bestScore) {
+      bestScore = spanScore;
+      bestCenter = {
+        lng: (minLng + maxLng) / 2,
+        lat: (minLat + maxLat) / 2,
+      };
+    }
+  }
+  return bestCenter ? { lng: bestCenter.lng, lat: bestCenter.lat, zoom } : null;
+}
+
 function isPlaceComfortablyInViewport(
   map: maplibregl.Map,
   container: HTMLDivElement,
@@ -475,6 +553,7 @@ export function WorldMap({
   climateOverlay,
   onChangeClimateOverlay,
   focusedPlace,
+  flyToCountryRequest,
   highlightBannerLabel,
   mobileBottomOffsetVh = 0,
   onClearFocusedPlace,
@@ -486,6 +565,8 @@ export function WorldMap({
   const popupRef = useRef<maplibregl.Popup | null>(null);
   const isStyleReadyRef = useRef(false);
   const hoveredIdRef = useRef<number | string | null>(null);
+  const pendingFlyToRef = useRef<{ iso3: string; nonce: number } | null>(null);
+  const flyRafRef = useRef<number | null>(null);
 
   const onSelectCountryRef = useRef(onSelectCountry);
 
@@ -546,6 +627,9 @@ export function WorldMap({
   const layerVisRef = useRef(layerVisibility);
   const climateOverlayRef = useRef(climateOverlay);
   const selectedIso3Ref = useRef(selectedIso3);
+  const countriesDataRef = useRef(countriesData);
+  const countriesGeoJsonRef = useRef(countriesGeoJson);
+  const mobileBottomOffsetVhRef = useRef(mobileBottomOffsetVh);
 
   useEffect(() => {
     onSelectCountryRef.current = onSelectCountry;
@@ -595,6 +679,77 @@ export function WorldMap({
   useEffect(() => {
     controlsOpenRef.current = controlsOpen;
   }, [controlsOpen]);
+  useEffect(() => {
+    countriesDataRef.current = countriesData;
+  }, [countriesData]);
+  useEffect(() => {
+    countriesGeoJsonRef.current = countriesGeoJson;
+  }, [countriesGeoJson]);
+  useEffect(() => {
+    mobileBottomOffsetVhRef.current = mobileBottomOffsetVh;
+  }, [mobileBottomOffsetVh]);
+
+  const executeFlyToCountry = (iso3: string) => {
+    const map = mapRef.current;
+    const container = mapContainerRef.current;
+    if (!map || !container || !isStyleReadyRef.current) return;
+
+    const target = resolveCountryFlyTarget(
+      iso3,
+      countriesDataRef.current,
+      capitalsGeoJsonRef.current,
+      countriesGeoJsonRef.current,
+    );
+    if (!target) return;
+
+    popupRef.current?.remove();
+    if (flyRafRef.current !== null) {
+      window.cancelAnimationFrame(flyRafRef.current);
+    }
+    flyRafRef.current = window.requestAnimationFrame(() => {
+      flyRafRef.current = null;
+      const m = mapRef.current;
+      const c = mapContainerRef.current;
+      if (!m || !c || !isStyleReadyRef.current) return;
+
+      m.resize();
+      const curCenter = m.getCenter();
+      const bestLng = resolveShortestWorldLng(curCenter.lng, target.lng);
+      const distDeg = Math.hypot(bestLng - curCenter.lng, target.lat - curCenter.lat);
+      const duration = Math.round(Math.min(1800, Math.max(950, 850 + distDeg * 7)));
+
+      const isMobile = c.clientWidth < 768;
+      const padding = isMobile
+        ? {
+            top: 48,
+            left: 24,
+            right: 24,
+            bottom: Math.min(
+              Math.round(c.clientHeight * 0.62),
+              Math.round((window.innerHeight * mobileBottomOffsetVhRef.current) / 100) + 12,
+            ),
+          }
+        : {
+            top: 48,
+            bottom: 40,
+            left: controlsOpenRef.current ? 310 : 40,
+            right: 40,
+          };
+
+      m.flyTo({
+        center: [bestLng, target.lat],
+        zoom: target.zoom,
+        padding,
+        duration,
+        curve: 1.45,
+        essential: true,
+      });
+    });
+  };
+  const executeFlyToCountryRef = useRef(executeFlyToCountry);
+  useEffect(() => {
+    executeFlyToCountryRef.current = executeFlyToCountry;
+  });
 
   // 地図初期化
   useEffect(() => {
@@ -1272,6 +1427,11 @@ export function WorldMap({
 
         isStyleReadyRef.current = true;
         setEdgeTicks(computeEdgeTicks(map, container, showGraticuleRef.current));
+        if (pendingFlyToRef.current) {
+          const pending = pendingFlyToRef.current;
+          pendingFlyToRef.current = null;
+          executeFlyToCountryRef.current(pending.iso3);
+        }
       });
 
       map.on('move', () => {
@@ -1938,6 +2098,24 @@ export function WorldMap({
       },
     );
   }, [focusedPlace, onClearFocusedPlace]);
+
+  // サイコロボタン等によるランダム国アニメーション飛行
+  useEffect(() => {
+    if (!flyToCountryRequest) return;
+    if (!mapRef.current || !isStyleReadyRef.current) {
+      pendingFlyToRef.current = flyToCountryRequest;
+      return;
+    }
+    executeFlyToCountryRef.current(flyToCountryRequest.iso3);
+  }, [flyToCountryRequest]);
+
+  useEffect(() => {
+    return () => {
+      if (flyRafRef.current !== null) {
+        window.cancelAnimationFrame(flyRafRef.current);
+      }
+    };
+  }, []);
 
   const activeModeMeta =
     MAP_COLOR_MODES.find((m) => m.id === mapColorMode) ?? MAP_COLOR_MODES[0];
