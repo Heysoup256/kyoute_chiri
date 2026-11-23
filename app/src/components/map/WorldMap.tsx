@@ -70,6 +70,7 @@ interface WorldMapProps {
   climateOverlay: ClimateOverlayState;
   onChangeClimateOverlay: (next: ClimateOverlayState) => void;
   focusedPlace: PlaceEntry | null;
+  highlightBannerLabel?: string | null;
   mobileBottomOffsetVh?: number;
   onClearFocusedPlace: () => void;
   onClearSearchHighlight?: () => void;
@@ -474,6 +475,7 @@ export function WorldMap({
   climateOverlay,
   onChangeClimateOverlay,
   focusedPlace,
+  highlightBannerLabel,
   mobileBottomOffsetVh = 0,
   onClearFocusedPlace,
   onClearSearchHighlight,
@@ -1937,11 +1939,15 @@ export function WorldMap({
     <div className="relative h-full w-full overflow-hidden bg-blue-50">
       <div ref={mapContainerRef} className="h-full w-full" />
 
-      {/* 検索ヒット中バナー（主題図色を消さず枠線ハイライト） */}
+      {/* 検索／統計ランキングヒット中バナー（主題図色を消さず枠線ハイライト） */}
       {highlightedIso3s && (
-        <div className="absolute left-3 top-14 z-10 flex items-center gap-2 rounded-full border border-cyan-400 bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-800 shadow-md backdrop-blur-xs md:left-1/2 md:top-3 md:-translate-x-1/2">
-          <span className="inline-block h-2.5 w-2.5 rounded-full border-2 border-cyan-600 bg-cyan-200" />
-          <span>検索一致: {highlightedIso3s.length}カ国</span>
+        <div className="absolute left-3 top-14 z-10 flex max-w-[calc(100%-24px)] items-center gap-2 rounded-full border border-cyan-400 bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-800 shadow-md backdrop-blur-xs md:left-1/2 md:top-3 md:max-w-lg md:-translate-x-1/2">
+          <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full border-2 border-cyan-600 bg-cyan-200" />
+          <span className="truncate">
+            {highlightBannerLabel
+              ? `${highlightBannerLabel}（${highlightedIso3s.length}カ国）`
+              : `検索一致: ${highlightedIso3s.length}カ国`}
+          </span>
           {onClearSearchHighlight && (
             <button
               type="button"

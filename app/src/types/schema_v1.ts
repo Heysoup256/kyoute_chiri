@@ -381,3 +381,121 @@ export type MapColorMode =
   | 'language'
   | 'marked'
   | 'plain';
+
+export type AppViewMode = 'map' | 'rankings' | 'systematic' | 'japan';
+
+export type RankingCategory = 'agriculture' | 'resource' | 'industry';
+
+export interface RankingEntry {
+  iso3: string;
+  nameJa: string;
+  value: number;
+  sharePct?: number;
+  note?: string;
+}
+
+export interface WorldRankingItem {
+  id: string;
+  category: RankingCategory;
+  title: string;
+  unit: string;
+  dataYear: string;
+  source: string;
+  examTrap: string;
+  primaryLabel: string;
+  primaryTop: RankingEntry[];
+  secondaryLabel?: string;
+  secondaryTop?: RankingEntry[];
+  tags: string[];
+}
+
+export interface ScatterPlotPoint {
+  iso3: string;
+  nameJa: string;
+  x: number;
+  y: number;
+  group: string;
+  color: string;
+  note?: string;
+}
+
+export interface WorldScatterChart {
+  id: string;
+  title: string;
+  subtitle: string;
+  xLabel: string;
+  yLabel: string;
+  quadrants: [string, string, string, string];
+  examPoint: string;
+  points: ScatterPlotPoint[];
+}
+
+export interface WorldRankingsDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  items: WorldRankingItem[];
+  scatters: WorldScatterChart[];
+}
+
+export interface SystematicTableData {
+  caption?: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface SystematicTopic {
+  id: string;
+  categoryId: string;
+  title: string;
+  summary: string;
+  diagramId?: string;
+  keyPoints: string[];
+  examTraps: string[];
+  tables?: SystematicTableData[];
+  relatedCountries?: string[];
+  tags: string[];
+}
+
+export interface SystematicCategory {
+  id: string;
+  label: string;
+  description: string;
+}
+
+export interface SystematicGuideDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  categories: SystematicCategory[];
+  topics: SystematicTopic[];
+}
+
+export interface JapanMapSkillTopic {
+  id: string;
+  title: string;
+  badge: string;
+  diagramId?: string;
+  summary: string;
+  checkPoints: string[];
+  comparisonTable?: SystematicTableData;
+}
+
+export interface JapanRegionEntry {
+  id: string;
+  name: string;
+  prefectures: string;
+  lng: number;
+  lat: number;
+  zoom: number;
+  climateNote: string;
+  agricultureNote: string;
+  industryNote: string;
+  urbanAndDisasterNote: string;
+  examPoints: string[];
+}
+
+export interface JapanGeographyDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  mapSkills: JapanMapSkillTopic[];
+  regions: JapanRegionEntry[];
+}

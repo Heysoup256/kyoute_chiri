@@ -1,20 +1,23 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import {
+  BarChart3,
   BookOpen,
   Compass,
-  Filter,
+  Globe2,
   Loader2,
+  MapPin,
   Search,
-  X,
 } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { z } from 'zod';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
+import { WorldRankingsView } from './components/guide/WorldRankingsView';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
 import { ReverseSearchDrawer } from './components/study/ReverseSearchDrawer';
 import { useMarkedCountries } from './hooks/useMarkedCountries';
 import type {
+  AppViewMode,
   ClimateOverlayState,
   CountriesDataset,
   GeoCountryProperties,
@@ -24,6 +27,7 @@ import type {
   MapColorMode,
   PastExamsDataset,
   PlaceEntry,
+  WorldRankingsDataset,
 } from './types/schema_v1';
 import {
   DEFAULT_LAYER_VISIBILITY,
@@ -48,9 +52,17 @@ const PastExamsBasicSchema = z.object({
   questions: z.array(z.any()),
 });
 
+const HEADER_VIEW_TABS: { id: AppViewMode; label: string; icon: typeof Globe2 }[] = [
+  { id: 'map', label: '地図', icon: Globe2 },
+  { id: 'rankings', label: '統計', icon: BarChart3 },
+  { id: 'systematic', label: '系統', icon: BookOpen },
+  { id: 'japan', label: '日本', icon: MapPin },
+];
+
 export function App() {
   const [countriesData, setCountriesData] = useState<CountriesDataset | null>(null);
   const [pastExamsData, setPastExamsData] = useState<PastExamsDataset | null>(null);
+  const [worldRankingsData, setWorldRankingsData] = useState<WorldRankingsDataset | null>(null);
   const [countriesGeoJson, setCountriesGeoJson] = useState<FeatureCollection<
     Geometry,
     GeoCountryProperties
@@ -73,6 +85,7 @@ export function App() {
   const [placesData, setPlacesData] = useState<PlaceEntry[]>([]);
 
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [activeView, setActiveView] = useState<AppViewMode>('map');
   const [selectedIso3, setSelectedIso3] = useState<string | null>(null);
   const [fallbackNameEn, setFallbackNameEn] = useState<string | undefined>(undefined);
   const [mobileSheetVh, setMobileSheetVh] = useState<number>(52);
@@ -90,9 +103,14 @@ export function App() {
     cyclone: false,
   });
 
-  // 検索・フィルターパネル＆過去問モーダル状態
+  // 検索・統計連動ハイライト・過去問モーダル状態
   const [searchOpen, setSearchOpen] = useState<boolean>(false);
   const [filters, setFilters] = useState<SearchFilterCriteria>(EMPTY_FILTERS);
+  const [focusedRankingId, setFocusedRankingId] = useState<string | null>(null);
+  const [rankingHighlight, setRankingHighlight] = useState<{
+    label: string;
+    iso3s: string[];
+  } | null>(null);
   const [examModalMode, setExamModalMode] = useState<'closed' | 'country' | 'archive'>('closed');
   const [examModalInitialId, setExamModalInitialId] = useState<string | undefined>(undefined);
 
@@ -119,6 +137,7 @@ export function App() {
           tRegRes,
           tGridRes,
           placesRes,
+          rankingsRes,
           examsRes,
         ] = await Promise.all([
           fetch(`${base}data/countries_v1.json`),
@@ -131,6 +150,7 @@ export function App() {
           fetch(`${base}data/thematic_regions_v1.geojson`),
           fetch(`${base}data/thematic_grid_v1.json`),
           fetch(`${base}data/places_v1.json`),
+          fetch(`${base}data/world_rankings_v1.json`),
           IS_PUBLIC_MODE ? Promise.resolve(null) : fetch(`${base}data/past_exams_v1.json`),
         ]);
 
@@ -145,6 +165,7 @@ export function App() {
           !tRegRes.ok ||
           !tGridRes.ok ||
           !placesRes.ok ||
+          !rankingsRes.ok ||
           (!IS_PUBLIC_MODE && (!examsRes || !examsRes.ok))
         ) {
           throw new Error('静的データファイルの読み込みに失敗しました。');
@@ -161,6 +182,7 @@ export function App() {
           tRegJson,
           tGridJson,
           placesJson,
+          rankingsJson,
           examsJson,
         ] = await Promise.all([
           cRes.json(),
@@ -173,6 +195,7 @@ export function App() {
           tRegRes.json(),
           tGridRes.json(),
           placesRes.json(),
+          rankingsRes.json(),
           examsRes ? examsRes.json() : Promise.resolve(emptyPastExams),
         ]);
 
@@ -191,6 +214,7 @@ export function App() {
         setThematicRegionsGeoJson(tRegJson as FeatureCollection<Geometry>);
         setThematicGrid(tGridJson as ThematicGridData);
         setPlacesData((placesJson as { places?: PlaceEntry[] }).places ?? []);
+        setWorldRankingsData(rankingsJson as WorldRankingsDataset);
       } catch (err) {
         if (!cancelled) {
           setLoadError(err instanceof Error ? err.message : 'データ読込エラーが発生しました。');
@@ -203,6 +227,16 @@ export function App() {
     };
   }, []);
 
+  // 地図タブに戻ったときに MapLibre コンテナの再計算を促す
+  useEffect(() => {
+    if (activeView === 'map') {
+      const id = window.requestAnimationFrame(() => {
+        window.dispatchEvent(new Event('resize'));
+      });
+      return () => window.cancelAnimationFrame(id);
+    }
+  }, [activeView]);
+
   const handleToggleLayer = useCallback((layerType: GeoLayerType) => {
     setLayerVisibility((prev) => ({
       ...prev,
@@ -214,6 +248,7 @@ export function App() {
     setSelectedIso3(iso3);
     setFallbackNameEn(nameEn);
     setFocusedPlace(null);
+    setActiveView('map');
   }, []);
 
   const handleFocusPlace = useCallback((place: PlaceEntry) => {
@@ -233,7 +268,7 @@ export function App() {
     return pastExamsData.questions.filter((q) => q.relatedCountries.includes(selectedIso3));
   }, [selectedIso3, pastExamsData]);
 
-  // 87気候都市ポイント GeoJSON（ケッペン気候区分モードで重ねて表示）
+  // 気候都市ポイント GeoJSON（ケッペン気候区分モードで重ねて表示）
   const citiesGeoJson = useMemo<FeatureCollection<Geometry>>(() => {
     if (!countriesData) return { type: 'FeatureCollection', features: [] };
     const features: Feature<Geometry>[] = [];
@@ -266,16 +301,31 @@ export function App() {
     return searchCountries(countriesData.countries, filters);
   }, [countriesData, filters]);
 
+  const searchActive = hasActiveFilters(filters);
   const highlightedIso3s = useMemo(() => {
-    if (!hasActiveFilters(filters)) return null;
-    return searchHits.map((h) => h.country.iso3);
-  }, [filters, searchHits]);
+    if (searchActive) return searchHits.map((h) => h.country.iso3);
+    if (rankingHighlight) return rankingHighlight.iso3s;
+    return null;
+  }, [searchActive, searchHits, rankingHighlight]);
 
-  const activeFilterCount =
-    Number(Boolean(filters.koppenCode)) +
-    Number(Boolean(filters.rank)) +
-    Number(Boolean(filters.integration)) +
-    Number(Boolean(filters.examYear));
+  const highlightBannerLabel = searchActive
+    ? null
+    : (rankingHighlight?.label ?? null);
+
+  const handleChangeFilters = useCallback((next: SearchFilterCriteria) => {
+    setFilters(next);
+    if (hasActiveFilters(next)) {
+      setRankingHighlight(null);
+    }
+  }, []);
+
+  const handleHighlightFromRanking = useCallback((label: string, iso3s: string[]) => {
+    setFilters(EMPTY_FILTERS);
+    setRankingHighlight({ label, iso3s });
+    setSelectedIso3(null);
+    setSearchOpen(false);
+    setActiveView('map');
+  }, []);
 
   const handleOpenCountryExamModal = useCallback((initialQuestionId?: string) => {
     setExamModalInitialId(initialQuestionId);
@@ -325,15 +375,16 @@ export function App() {
 
   return (
     <div className="flex h-full w-full flex-col bg-slate-50">
-      {/* トップヘッダー（スマホ: サイト名とすぐ入力できる検索バーのみ / PC: サイト名＋検索バー＋検索ボタン等） */}
+      {/* 1行ヘッダー：サイト名 ＋ 4ビュー切替（地図・統計・系統・日本） ＋ コンパクト検索ボタン */}
       <header className="z-20 shrink-0 border-b border-slate-200 bg-white shadow-2xs">
-        <div className="flex h-13 items-center justify-between gap-2.5 px-3 md:px-5">
-          <div className="flex shrink-0 items-center gap-2">
-            <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white md:h-8 md:w-8">
-              <Compass className="h-4 w-4 md:h-5 md:w-5" />
+        <div className="flex h-12 items-center justify-between gap-1.5 px-2.5 md:h-13 md:gap-3 md:px-5">
+          {/* サイト名 */}
+          <div className="flex shrink-0 items-center gap-1.5 md:gap-2">
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white md:h-8 md:w-8">
+              <Compass className="h-3.5 w-3.5 md:h-5 md:w-5" />
             </div>
             <div>
-              <h1 className="text-sm font-extrabold text-slate-900 md:text-base">
+              <h1 className="text-[13px] font-extrabold tracking-tight text-slate-900 md:text-base">
                 共テ地理ナビ
               </h1>
               <p className="hidden text-[11px] text-slate-500 xl:block">
@@ -344,102 +395,89 @@ export function App() {
             </div>
           </div>
 
-          {/* すぐ入力できる検索バー（タップで入力開始と同時にフィルター＆候補パネルを展開） */}
-          <div className="flex min-w-0 flex-1 items-center justify-end gap-2">
-            <div className="relative min-w-0 flex-1 md:max-w-md">
-              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
-              <input
-                type="text"
-                aria-label="国名・地名・特産品・気候を検索"
-                value={filters.query}
-                onFocus={() => setSearchOpen(true)}
-                onClick={() => setSearchOpen(true)}
-                onChange={(e) => {
-                  setFilters((prev) => ({ ...prev, query: e.target.value }));
-                  setSearchOpen(true);
-                }}
-                placeholder="国名・地名・気候・特産品を検索..."
-                className={`w-full rounded-full border py-1.5 pl-8 pr-14 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none ${
-                  searchOpen || highlightedIso3s
-                    ? 'border-cyan-500 bg-cyan-50/40'
-                    : 'border-slate-300 bg-slate-50'
-                }`}
-              />
-              <div className="absolute right-1.5 top-1/2 flex -translate-y-1/2 items-center gap-1">
-                {activeFilterCount > 0 && (
-                  <span className="rounded-full bg-cyan-600 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">
-                    {activeFilterCount}
-                  </span>
-                )}
-                {filters.query && (
-                  <button
-                    type="button"
-                    onClick={() => setFilters((prev) => ({ ...prev, query: '' }))}
-                    className="rounded-full p-0.5 text-slate-400 hover:bg-slate-200 hover:text-slate-700"
-                    aria-label="検索語句をクリア"
-                  >
-                    <X className="h-3.5 w-3.5" />
-                  </button>
-                )}
-              </div>
-            </div>
+          {/* 4ビュー切替セグメント（地図 / 統計 / 系統 / 日本） */}
+          <nav
+            aria-label="学習モード切替"
+            className="inline-flex shrink-0 items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5"
+          >
+            {HEADER_VIEW_TABS.map((tab) => {
+              const Icon = tab.icon;
+              const active = activeView === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveView(tab.id)}
+                  className={`inline-flex items-center gap-1 rounded-lg px-2 py-1 text-[11.5px] font-extrabold transition md:px-3 md:py-1.5 md:text-xs ${
+                    active
+                      ? 'bg-white text-indigo-700 shadow-xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  <Icon className="hidden h-3.5 w-3.5 sm:block" />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </nav>
 
-            {/* PC表示用ボタン群（「検索」ボタン等） */}
-            <div className="hidden items-center gap-1.5 md:flex">
+          {/* 右側ツール：検索ボタン等 */}
+          <div className="flex shrink-0 items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setSearchOpen((v) => !v)}
+              aria-label="検索"
+              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1.5 text-xs font-bold transition md:px-2.5 ${
+                searchOpen || searchActive
+                  ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
+                  : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+              }`}
+            >
+              <Search className="h-3.5 w-3.5" />
+              <span className="hidden md:inline">検索</span>
+              {searchActive && (
+                <span className="rounded-full bg-cyan-600 px-1.5 text-[10px] text-white">
+                  {searchHits.length}
+                </span>
+              )}
+            </button>
+
+            {!IS_PUBLIC_MODE && (
               <button
                 type="button"
-                onClick={() => setSearchOpen((v) => !v)}
-                className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
-                  searchOpen || highlightedIso3s
-                    ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
-                    : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
-                }`}
+                onClick={() => {
+                  setExamModalInitialId(undefined);
+                  setExamModalMode('archive');
+                }}
+                className="hidden items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50 lg:inline-flex"
               >
-                <Filter className="h-3.5 w-3.5" />
-                検索
-                {highlightedIso3s && (
-                  <span className="rounded-full bg-cyan-600 px-1.5 py-0.2 text-[10px] text-white">
-                    {highlightedIso3s.length}
-                  </span>
-                )}
+                <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+                過去問演習 ({pastExamsData.questions.length})
               </button>
+            )}
 
-              {!IS_PUBLIC_MODE && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setExamModalInitialId(undefined);
-                    setExamModalMode('archive');
-                  }}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
-                >
-                  <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
-                  過去問演習 ({pastExamsData.questions.length})
-                </button>
-              )}
-
-              {markedCount > 0 && (
-                <button
-                  type="button"
-                  onClick={() =>
-                    setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
-                  }
-                  className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
-                    mapColorMode === 'marked'
-                      ? 'border-amber-400 bg-amber-100 text-amber-900'
-                      : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
-                  }`}
-                  title="★マークを付けた国を地図上で強調表示切替"
-                >
-                  ★ マーク ({markedCount})
-                </button>
-              )}
-            </div>
+            {markedCount > 0 && (
+              <button
+                type="button"
+                onClick={() => {
+                  setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'));
+                  setActiveView('map');
+                }}
+                className={`hidden items-center gap-1 rounded-lg border px-2 py-1.5 text-xs font-bold transition md:inline-flex ${
+                  mapColorMode === 'marked'
+                    ? 'border-amber-400 bg-amber-100 text-amber-900'
+                    : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
+                }`}
+                title="★マークを付けた国を地図上で強調表示切替"
+              >
+                ★ {markedCount}
+              </button>
+            )}
           </div>
         </div>
       </header>
 
-      {/* メインワークスペース：左(検索・フィルターパネル) ＋ 中央(地図) ＋ 右/下(国別詳細パネル) */}
+      {/* メインワークスペース */}
       <main className="relative flex min-h-0 flex-1 overflow-hidden">
         <ReverseSearchDrawer
           isOpen={searchOpen}
@@ -449,69 +487,127 @@ export function App() {
           examCoverage={countriesData.examCoverage}
           markedCount={markedCount}
           isMarkedMode={mapColorMode === 'marked'}
-          onToggleMarkedMode={() =>
-            setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
-          }
-          onChangeFilters={setFilters}
+          rankingItems={worldRankingsData?.items}
+          onToggleMarkedMode={() => {
+            setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'));
+            setActiveView('map');
+          }}
+          onChangeFilters={handleChangeFilters}
           onSelectCountry={(iso) => {
             handleSelectCountry(iso);
             if (typeof window !== 'undefined' && window.innerWidth < 768) {
               setSearchOpen(false);
             }
           }}
+          onSelectRanking={(itemId) => {
+            setFocusedRankingId(itemId);
+            setActiveView('rankings');
+            setSearchOpen(false);
+          }}
           onClose={() => setSearchOpen(false)}
         />
 
-        <div className="relative h-full min-w-0 flex-1">
-          <WorldMap
-            countriesGeoJson={countriesGeoJson}
-            layersGeoJson={layersGeoJson}
-            plateBoundariesGeoJson={plateBoundariesGeoJson}
-            citiesGeoJson={citiesGeoJson}
-            capitalsGeoJson={capitalsGeoJson}
-            volcanoesGeoJson={volcanoesGeoJson}
-            climatePhenomenaGeoJson={climatePhenomenaGeoJson}
-            thematicRegionsGeoJson={thematicRegionsGeoJson}
-            thematicGrid={thematicGrid}
-            countriesData={countriesData.countries}
-            selectedIso3={selectedIso3}
-            mapColorMode={mapColorMode}
-            onChangeMapColorMode={setMapColorMode}
-            highlightedIso3s={highlightedIso3s}
-            markedIso3s={markedIso3s}
-            layerVisibility={layerVisibility}
-            onToggleLayer={handleToggleLayer}
-            climateOverlay={climateOverlay}
-            onChangeClimateOverlay={setClimateOverlay}
-            focusedPlace={focusedPlace}
-            mobileBottomOffsetVh={selectedIso3 ? mobileSheetVh : 0}
-            onClearFocusedPlace={handleClearFocusedPlace}
-            onClearSearchHighlight={() => setFilters(EMPTY_FILTERS)}
-            onSelectCountry={handleSelectCountry}
-          />
+        {/* 1. 世界地図ビュー（タイル状態を保持するためアンマウントせず表示切替） */}
+        <div
+          className={
+            activeView === 'map'
+              ? 'relative flex h-full min-w-0 flex-1'
+              : 'hidden'
+          }
+        >
+          <div className="relative h-full min-w-0 flex-1">
+            <WorldMap
+              countriesGeoJson={countriesGeoJson}
+              layersGeoJson={layersGeoJson}
+              plateBoundariesGeoJson={plateBoundariesGeoJson}
+              citiesGeoJson={citiesGeoJson}
+              capitalsGeoJson={capitalsGeoJson}
+              volcanoesGeoJson={volcanoesGeoJson}
+              climatePhenomenaGeoJson={climatePhenomenaGeoJson}
+              thematicRegionsGeoJson={thematicRegionsGeoJson}
+              thematicGrid={thematicGrid}
+              countriesData={countriesData.countries}
+              selectedIso3={selectedIso3}
+              mapColorMode={mapColorMode}
+              onChangeMapColorMode={setMapColorMode}
+              highlightedIso3s={highlightedIso3s}
+              highlightBannerLabel={highlightBannerLabel}
+              markedIso3s={markedIso3s}
+              layerVisibility={layerVisibility}
+              onToggleLayer={handleToggleLayer}
+              climateOverlay={climateOverlay}
+              onChangeClimateOverlay={setClimateOverlay}
+              focusedPlace={focusedPlace}
+              mobileBottomOffsetVh={selectedIso3 ? mobileSheetVh : 0}
+              onClearFocusedPlace={handleClearFocusedPlace}
+              onClearSearchHighlight={() => {
+                setFilters(EMPTY_FILTERS);
+                setRankingHighlight(null);
+              }}
+              onSelectCountry={handleSelectCountry}
+            />
+          </div>
+
+          {selectedIso3 && (
+            <CountryDetailPanel
+              key={selectedIso3}
+              iso3={selectedIso3}
+              fallbackNameEn={fallbackNameEn}
+              country={selectedCountry}
+              allCountries={countriesData.countries}
+              relatedQuestions={relatedQuestions}
+              isMarked={isMarked(selectedIso3)}
+              placeMatcher={placeMatcher}
+              mobileSheetVh={mobileSheetVh}
+              onChangeMobileSheetVh={setMobileSheetVh}
+              onFocusPlace={handleFocusPlace}
+              onToggleMark={toggleMark}
+              onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
+              onClose={() => {
+                setSelectedIso3(null);
+                setFocusedPlace(null);
+              }}
+              onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
+            />
+          )}
         </div>
 
-        {selectedIso3 && (
-          <CountryDetailPanel
-            key={selectedIso3}
-            iso3={selectedIso3}
-            fallbackNameEn={fallbackNameEn}
-            country={selectedCountry}
-            allCountries={countriesData.countries}
-            relatedQuestions={relatedQuestions}
-            isMarked={isMarked(selectedIso3)}
-            placeMatcher={placeMatcher}
-            mobileSheetVh={mobileSheetVh}
-            onChangeMobileSheetVh={setMobileSheetVh}
-            onFocusPlace={handleFocusPlace}
-            onToggleMark={toggleMark}
-            onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
-            onClose={() => {
-              setSelectedIso3(null);
-              setFocusedPlace(null);
-            }}
-            onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
-          />
+        {/* 2. 世界統計ランキング＆データブックビュー */}
+        {activeView === 'rankings' && (
+          <div className="h-full min-w-0 flex-1">
+            <WorldRankingsView
+              dataset={worldRankingsData}
+              focusedItemId={focusedRankingId}
+              onSelectCountry={handleSelectCountry}
+              onHighlightCountries={handleHighlightFromRanking}
+            />
+          </div>
+        )}
+
+        {/* 3. 系統地理マスタービュー（Phase 2aで完全実装予定） */}
+        {activeView === 'systematic' && (
+          <div className="flex h-full min-w-0 flex-1 flex-col items-center justify-center p-6 text-center">
+            <BookOpen className="h-10 w-10 text-indigo-400" />
+            <h2 className="mt-3 text-base font-extrabold text-slate-800">
+              系統地理・地図/GIS・防災マスター図鑑
+            </h2>
+            <p className="mt-1 max-w-md text-xs text-slate-500">
+              次のステップで河川小地形・プレート・土壌・農業工業立地・都市構造図鑑を追加します。
+            </p>
+          </div>
+        )}
+
+        {/* 4. 日本地理・地域調査ビュー（Phase 2bで完全実装予定） */}
+        {activeView === 'japan' && (
+          <div className="flex h-full min-w-0 flex-1 flex-col items-center justify-center p-6 text-center">
+            <MapPin className="h-10 w-10 text-emerald-500" />
+            <h2 className="mt-3 text-base font-extrabold text-slate-800">
+              日本地理・地域調査＆地形図マスター
+            </h2>
+            <p className="mt-1 max-w-md text-xs text-slate-500">
+              次のステップで地形図新旧比較・地域調査手法・日本9地方データマップを追加します。
+            </p>
+          </div>
         )}
       </main>
 
