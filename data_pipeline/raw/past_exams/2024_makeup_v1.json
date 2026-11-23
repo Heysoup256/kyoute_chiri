@@ -1,0 +1,1067 @@
+{
+  "examId": "2024_makeup",
+  "year": 2024,
+  "session": "makeup",
+  "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2024_makeup_d1_q1",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 4,
+      "questionLabel": "第1問 問1（問番号1）",
+      "title": "第1問 問1: 第1問 世界の自然環境と自然災害に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第1問 世界の自然環境と自然災害に関する次の問い（問1～6）に答えよ。 （配点 20） 問1地震の発生頻度や震源の深さは，プレートの動きと関わりがある。次の図1 中のアとイは，後の図2中のＡとＢのいずれかの範囲＊における火山と， 地震＊＊の震源の分布を示したものである。図1中の震源は，50km を基準とし て深さ別に示しており，空欄ｍとｎには浅いと深いのいずれかが当てはまる。 空欄ｍに当てはまる語句と，Ｂに該当する記号との正しい組...",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "pb_japan_trench"
+      ],
+      "topicTags": [
+        "プレート",
+        "火山",
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d1_q2",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（問番号2）",
+      "title": "第1問 問2: 問2次の図3は，図2中のｓとｔの範囲＊における，(5)月と(6)月の風向と風速の 分布を示...",
+      "promptSummary": "問2次の図3は，図2中のｓとｔの範囲＊における，(5)月と(6)月の風向と風速の 分布を示したものである。ｓの(5)月に該当するものを，図3中の(1)～(4)のうち から一つ選べ。 2 ＊緯度15度，経度10度の範囲。 Ǐ ǐ Ǒ ǒ ｓまたはｔの範囲 1 月 ま た は 7 月 矢印の長さは風速を示す。矢印がない部分は弱風域である。 1981～2010年の平均値。NOAA の資料により作成。 図 3",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d1_q3",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 4,
+      "questionLabel": "第1問 問3（問番号3）",
+      "title": "第1問 問3 日本列島の植生垂直分布と氷期の森林限界",
+      "promptSummary": "本州北部から九州にかけての垂直的な植生分布（常緑広葉樹林帯・落葉広葉樹林帯・針葉樹林帯）および氷期における森林限界の低下を問う問題。",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "植生帯",
+        "垂直分布",
+        "常緑広葉樹林",
+        "針葉樹林",
+        "森林限界",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d1_q4",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（問番号4）",
+      "title": "第1問 問4: 問4次の図5は，いくつかの地形について，地形の形成にかかる時間スケールと 地形の広がる空間...",
+      "promptSummary": "問4次の図5は，いくつかの地形について，地形の形成にかかる時間スケールと 地形の広がる空間スケールを模式的に示したものである。また，後の文サ～ス は，図5中のＪ～Ｌのいずれかに該当する地形について説明したものである。 Ｊ～Ｌとサ～スとの組合せとして最も適当なものを，後の(1)～(2)のうちから一 つ選べ。 4 1 m 10 m 100 m 1 km 10 km 100 km 1000 km 数日 1年 10 2 年10 4 年10...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d1_q5",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（問番号5）",
+      "title": "第1問 問5: 問5次の図6中のタ～ツは，1981年から2020年の期間において東南アジアと南 アジアで発...",
+      "promptSummary": "問5次の図6中のタ～ツは，1981年から2020年の期間において東南アジアと南 アジアで発生した，火山噴火，地震，暴風雨のいずれかによる自然災害の発生 数＊を，国別に示したものである。災害をもたらした自然現象名とタ～ツとの 正しい組合せを，後の(1)～(2)のうちから一つ選べ。 5 ＊死者10名以上，被災者100名以上，非常事態宣言の発令，国際援助の要請のいずれ かの状況をもたらした自然災害の報告数の合計。 タ チ ツ 300 1...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d1_q6",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（問番号6）",
+      "title": "第1問 問6: 問6次の図7は，日本のある河川における水位の観測地点Ｐ～Ｒを示したもので ある",
+      "promptSummary": "問6次の図7は，日本のある河川における水位の観測地点Ｐ～Ｒを示したもので ある。また，図8は，この河川で1976年に堤防が決壊した際における，観測 地点Ｐ～Ｒの水位の変化を示したものであり，マ～ムは，図7中のＰ～Ｒのい ずれかに該当する。図7と図8に関することがらについて述べた文ｘとｙの正 誤の組合せとして正しいものを，後の(1)～(4)のうちから一つ選べ。 6 観測地点 流下方向 海岸線 主な支流 本流 20 km 0 R Q ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q1",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（問番号7）",
+      "title": "第2問 問1: 第2問 ナオさんたちは，地理の授業で，持続可能な資源利用と産業のあり方につ いて探究した",
+      "promptSummary": "第2問 ナオさんたちは，地理の授業で，持続可能な資源利用と産業のあり方につ いて探究した。この探究に関する次の問い（問1～6）に答えよ。（配点 20） 問1ナオさんたちは，授業の冒頭で配られた次の図1を用いて，世界の資源と産 業をめぐる現状と課題を考えることにした。図1は，工業出荷額といくつかの 指標について，世界の上位20か国・地域を示したものであり，ａ～ｃは，石 油生産量，二酸化炭素排出量，農産物の生産量＊のいずれかである。指...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q2",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 4,
+      "questionLabel": "第2問 問2（問番号8）",
+      "title": "第2問 問2: 問2ナオさんは，エネルギー資源の需給の状況を考えるため，資源の大消費国で あり原油産出国で...",
+      "promptSummary": "問2ナオさんは，エネルギー資源の需給の状況を考えるため，資源の大消費国で あり原油産出国でもあるアメリカ合衆国の統計を調べた。次の図2は，アメリ カ合衆国における石油の生産量，消費量，輸入量，輸出量の推移を示したもの である。図2に関することがらについて述べた文として下線部が最も適当なも のを，後の(1)～(2)のうちから一つ選べ。 8 25 百万バレル/日 20 15 10 5 0 1970 1980 1990 2000 輸出量...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "原油",
+        "再生可能エネルギー"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q3",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（問番号9）",
+      "title": "第2問 問3: 問3タクさんは，工業と資源利用の関係を考えるため，各国の工業生産の割合と その背景について調べた",
+      "promptSummary": "問3タクさんは，工業と資源利用の関係を考えるため，各国の工業生産の割合と その背景について調べた。次の図3は，いくつかの国における工業付加価値 額＊の内訳を示したものであり，Ａ～Ｃは，日本，インド，オーストラリアの いずれかである。また，後の文章ア～ウは，Ａ～Ｃのいずれかにおける工業の 特徴をまとめたものである。Ａ～Ｃとア～ウとの組合せとして最も適当なもの を，後の(1)～(2)のうちから一つ選べ。 9 ＊生産額から賃金以外の生産...",
+      "relatedCountries": [
+        "JPN",
+        "IND",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q4",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 4,
+      "questionLabel": "第2問 問4（問番号10）",
+      "title": "第2問 問4: 問4ナオさんは，世界における農産物の需給について考えるため，食料の輸出入 を調べた",
+      "promptSummary": "問4ナオさんは，世界における農産物の需給について考えるため，食料の輸出入 を調べた。次の図4は，いくつかの品目について，世界における2019年の(1) 国・地域間の輸出入量の上位(2)件を示したものであり，カ～クは，果実類，牛 肉，穀物のいずれかである。品目名とカ～クとの正しい組合せを，後の(3)～(4) のうちから一つ選べ。 10 ホンコン カ キ ク 1～3 位 4～6 位 7～9 位 輸 出 先 輸 出 元 中国の数値には台...",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q5",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（問番号11）",
+      "title": "第2問 問5: 問5タクさんは，経済活動に伴う人々の健康被害を考えるため，光化学スモッグ について調べた",
+      "promptSummary": "問5タクさんは，経済活動に伴う人々の健康被害を考えるため，光化学スモッグ について調べた。次の図5は，関東平野における1972年から1975年までの， 光化学スモッグによる重度の健康被害＊が発生した地域を示したものである。 また，図6は，東京都における1970年度から2020年度にかけての，光化学ス モッグの健康被害者数と注意報発令日数の推移を示したものである。図5と図 6に関することがらについて述べた文章中の下線部(1)～(2)...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d2_q6",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（問番号12）",
+      "title": "第2問 問6: 問6ナオさんたちは，これまでの探究を振り返り，話し合った",
+      "promptSummary": "問6ナオさんたちは，これまでの探究を振り返り，話し合った。ナオさんたちと 先生との会話文中の下線部(1)～(2)のうちから，世界の持続可能な資源利用や産 業のあり方としては誤りを含むものを一つ選べ。 12 先 生「世界の持続可能な資源利用や産業のあり方として，どのような取組みが 必要でしょうか」 ナ オ「産業革命以降，工業化が進んできました。これまでの反省をふまえ，現 在，世界の国々では，工業化と環境保全の両立を目指しています」 ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q1",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（問番号13）",
+      "title": "第3問 問1: 第3問 都市と人口，生活文化に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問 都市と人口，生活文化に関する次の問い（問1～6）に答えよ。（配点 20） ちようかん 問1次の図1は，新大陸のある都市における19世紀後半の様子を描いた鳥瞰図 である。図1に関することがらについて述べた文として最も適当なものを，後 の(1)～(2)のうちから一つ選べ。 13 州の図書館の資料により作成。 図 1 (1) 海岸線が入り組んでおり，入り江に多くの船着き場と停泊地を設けたこと が，都市の発展につながった。 (3)...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q2",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 4,
+      "questionLabel": "第3問 問2（問番号14）",
+      "title": "第3問 問2: 問2次の図2は，ある県のいくつかの市町村における，65歳以上人口の割合 と，他市区町村への...",
+      "promptSummary": "問2次の図2は，ある県のいくつかの市町村における，65歳以上人口の割合 と，他市区町村への通勤率を示したものである。また，後の文ア～ウは，図2 中のＡ～Ｃのいずれかの市町村の特徴について述べたものである。Ａ～Ｃと ア～ウとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。 14 0 10 20 30 40 50 他 市 区 町 村 へ の 通 勤 率 60 0 10 20 40 30 65 歳以上人口の割合 6...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q3",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（問番号15）",
+      "title": "第3問 問3 シカゴ市のアフリカ系住民分布と文化（ブルース）の立地変化",
+      "promptSummary": "アメリカ合衆国シカゴ市における地区別アフリカ系住民割合と、アフリカ系文化から誕生したブルース演奏飲食店の立地変化を読み取る問題。",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人種・民族",
+        "アメリカ都市",
+        "シカゴ",
+        "生活文化",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q4",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（問番号16）",
+      "title": "第3問 問4: 問4次の表1は，いくつかの国における外国籍人口を男女別に示したものであ り，ＥとＦは男性と...",
+      "promptSummary": "問4次の表1は，いくつかの国における外国籍人口を男女別に示したものであ り，ＥとＦは男性と女性のいずれか，カ～クはアラブ首長国連邦，ギリシャ， ドイツのいずれかである。女性とドイツとの正しい組合せを，後の(1)～(5)のう ちから一つ選べ。 16 表 1 （単位：万人） Ｅ Ｆ カ 593 250 キ 309 308 ク 52 43 統計年次は，アラブ首長国連邦とギリシャが2010年， ドイツが2011年。 国際連合の資料により作...",
+      "relatedCountries": [
+        "ARE",
+        "DEU"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q5",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（問番号17）",
+      "title": "第3問 問5: 問5次の図4は，2010年から2015年にかけて，東京都，大阪府，広島県の間で 居住地を変...",
+      "promptSummary": "問5次の図4は，2010年から2015年にかけて，東京都，大阪府，広島県の間で 居住地を変えた人の数を年齢＊別に示したものである。図4中のＪとＫは20～ 24歳と60～64歳のいずれか，サ～スは東京都，大阪府，広島県のいずれかで ある。20～24歳と広島県との正しい組合せを，後の(1)～(2)のうちから一つ選 べ。 17 ＊2015年時点の年齢。 J サ シ ス 1466 2370 968 479 5241 2709 K サ シ ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d3_q6",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 4,
+      "questionLabel": "第3問 問6（問番号18）",
+      "title": "第3問 問6: 問6次の図5は，世界のいくつかの地域におけるキリスト教の人口について，宗 派別に示したものである",
+      "promptSummary": "問6次の図5は，世界のいくつかの地域におけるキリスト教の人口について，宗 派別に示したものである。図5中の(1)～(2)は，アフリカ，北アメリカ，中央・ 南アメリカ，ヨーロッパのいずれかである。アフリカに該当するものを，図5 中の(1)～(2)のうちから一つ選べ。 18 プロテスタント カトリック 正教 その他 0 2 4 6 8 億人 ǒ Ǐ ǐ Ǒ ヨーロッパの数値にはロシアを含む。統計年次は2022年。 The World ...",
+      "relatedCountries": [
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "キリスト教"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q1",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（問番号19）",
+      "title": "第4問 問1: 第4問 南アメリカに関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第4問 南アメリカに関する次の問い（問1～6）に答えよ。（配点 20） 問1次の図1は，南アメリカの標高分布といくつかの地点を示したものであり， 図2中のア～ウは，図1中の地点Ａ～Ｃのいずれかにおける月平均気温と月降 水量を示したものである。Ａ～Ｃとア～ウとの正しい組合せを，後の(1)～(2)の うちから一つ選べ。 19 A B C 色の濃い部分ほど標高の高い地域を 示している。 国土地理院の資料により作成。 図 1 ア イ ウ ...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q2",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 4,
+      "questionLabel": "第4問 問2（問番号20）",
+      "title": "第4問 問2: 問2次の図3は，南アメリカの12か国＊における国土面積といくつかの指標の 数値について，面...",
+      "promptSummary": "問2次の図3は，南アメリカの12か国＊における国土面積といくつかの指標の 数値について，面積で比較できるように示したカルトグラムであり，カ～ク は，人口，森林面積，日本への輸出総額のいずれかである。指標名とカ～クと の正しい組合せを，後の(1)～(2)のうちから一つ選べ。 20 ＊フランス領ギアナを含まない。 アルゼンチン コロンビア ブラジル チリ パラグアイ ボリビア ペルー エクアドル ウルグアイ ベネズエラ ガイアナ スリ...",
+      "relatedCountries": [
+        "JPN",
+        "FRA",
+        "USA",
+        "BRA",
+        "ARG",
+        "CHL",
+        "PER",
+        "COL",
+        "VEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q3",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（問番号21）",
+      "title": "第4問 問3: 問3次の図4中のＦとＧは，南アメリカにおけるコーヒー豆と大豆のいずれかの 作付面積の推移に...",
+      "promptSummary": "問3次の図4中のＦとＧは，南アメリカにおけるコーヒー豆と大豆のいずれかの 作付面積の推移について，2000年の値を100とした指数で示したものであ る。また，後の図5中のサとシは，南アメリカにおけるコーヒー豆と大豆のい ずれかの国別生産量について，上位(1)か国の割合を示したものである。コー ヒー豆に該当する記号の正しい組合せを，後の(2)～(3)のうちから一つ選べ。 21 0 50 100 150 200 250 300 198...",
+      "relatedCountries": [
+        "USA",
+        "BRA",
+        "ARG",
+        "PER",
+        "COL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "大豆"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q4",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 4,
+      "questionLabel": "第4問 問4（問番号22）",
+      "title": "第4問 問4: 問4次の図6は，南アメリカのいくつかの国について，アメリカ合衆国，EU， 自国以外の南アメ...",
+      "promptSummary": "問4次の図6は，南アメリカのいくつかの国について，アメリカ合衆国，EU， 自国以外の南アメリカの国々＊との間の輸出額と輸入額が，それぞれの国の輸 出総額と輸入総額に占める割合を示したものである。図6中のＬ～Ｎは，アル ゼンチン，コロンビア，ボリビアのいずれかである。国名とＬ～Ｎとの正しい 組合せを，後の(1)～(2)のうちから一つ選べ。 22 ＊フランス領ギアナを含まない。 自国以外の 南アメリカ 自国以外の 南アメリカ 自国以外...",
+      "relatedCountries": [
+        "FRA",
+        "USA",
+        "ARG",
+        "COL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q5",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（問番号23）",
+      "title": "第4問 問5: 問5次の表1は，南アメリカ＊におけるいくつかの資源について，2018年におけ る生産量が世...",
+      "promptSummary": "問5次の表1は，南アメリカ＊におけるいくつかの資源について，2018年におけ る生産量が世界に占める割合と，2000年から2018年の生産量の増加率を示し たものである。表1中の(1)～(2)は，原油，銅，ボーキサイト，リチウムのいず れかである。銅に該当するものを，表1中の(1)～(2)のうちから一つ選べ。 23 ＊フランス領ギアナを含まない。 表 1 （単位：％） 南アメリカの 生産量が世界に占める割合 南アメリカの 生産量の...",
+      "relatedCountries": [
+        "FRA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "原油"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d4_q6",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（問番号24）",
+      "title": "第4問 問6: 問6次の図7中のＰとＱは，アルゼンチンとブラジルのいずれかの首都を示した 地図である",
+      "promptSummary": "問6次の図7中のＰとＱは，アルゼンチンとブラジルのいずれかの首都を示した 地図である。図7に関することがらについて述べた文として下線部が最も適当 なものを，後の(1)～(2)のうちから一つ選べ。 24 2 km 0 2 km 0 P Q 主要道路 空港 大聖堂 水域 Schweizer Weltatlas, 2006などにより作成。 図 7 (1) Ｐでみられる大聖堂の南北に伸びる弧状の道路は，この都市の人口の増加 に伴い延伸され...",
+      "relatedCountries": [
+        "USA",
+        "BRA",
+        "ARG"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q1",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（問番号25）",
+      "title": "第5問 問1: いるま 第5問 東京都に住むアキラさんは，大都市圏郊外の変化に関心をもち，入間市を 含む埼...",
+      "promptSummary": "いるま 第5問 東京都に住むアキラさんは，大都市圏郊外の変化に関心をもち，入間市を 含む埼玉県南西部で地域調査を行った。この地域調査に関する次の問い（問1～6） に答えよ。（配点 20） 問1アキラさんは，現地調査に出発する前に入間市周辺の地形を確認した。次の 図1は，埼玉県南西部とその周辺の地形を分類して示したものであり，後の図 2中のア～ウは，図1中の線Ａ～Ｃのいずれかに沿った地形断面である。Ａ～ Ｃとア～ウとの正しい組合せを...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q2",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（問番号26）",
+      "title": "第5問 問2: 問2アキラさんは，入間市付近の丘陵にみられる森林に関心をもった",
+      "promptSummary": "問2アキラさんは，入間市付近の丘陵にみられる森林に関心をもった。次の写真 1は，この地域の雑木林の景観を撮影したものである。また，後の文章は，こ の地域の雑木林の役割や利用方法についてアキラさんがまとめたものである。 文章中の下線部Ｅの事例は後の文カとキのいずれか，下線部Ｆの事例は後の文 ａとｂのいずれかである。ＥとＦの事例を示した文の組合せとして最も適当な ものを，後の(1)～(2)のうちから一つ選べ。 26 写真 1 写真1の...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏",
+        "地球温暖化"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q3",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（問番号27）",
+      "title": "第5問 問3: 問3アキラさんは，入間市の台地で茶が生産されていることを知り，茶生産につ いて調べ，次の資...",
+      "promptSummary": "問3アキラさんは，入間市の台地で茶が生産されていることを知り，茶生産につ いて調べ，次の資料1を作成した。資料1に関することがらについて述べた文 章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。 27 資料 1 入間市の茶畑の様子 茶の生産量上位(3)県と埼玉県の 茶生産経営体数と生産量（2015年） 生産 経営体数 生産量 （トン） 鹿児島県 1，744 22，700 静岡県 9，617 31，800 埼玉県 6...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q4",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 4,
+      "questionLabel": "第5問 問4（問番号28）",
+      "title": "第5問 問4: 問4アキラさんは，入間市を通る高速道路に関心をもち，市役所の職員から話を 聞いた",
+      "promptSummary": "問4アキラさんは，入間市を通る高速道路に関心をもち，市役所の職員から話を 聞いた。次の図3は，関東地方における高速道路を開通時期別に示したもので ある。また，後の表1は，図3中の環状道路沿線地域と臨海地域における大規 模物流施設の立地数を，開設時期別に示したものである。図3と表1を見てア キラさんと職員が話し合った会話文中の空欄Ｊには，後の文タとチのいずれ か，空欄Ｋには，表1中のｓとｔのいずれかが当てはまる。空欄ＪとＫに当て は...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q5",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問5（問番号29）",
+      "title": "第5問 問5: 問5アキラさんは，この地域の土地利用の変化を把握するため，次の図4を入手 した",
+      "promptSummary": "問5アキラさんは，この地域の土地利用の変化を把握するため，次の図4を入手 した。図4は，入間市周辺における(1)時点の土地利用を表した新旧のメッシュ 図であり，ＸとＹは1976年と2016年のいずれか，凡例マとミは建物用地と農 地のいずれかである。2016年と建物用地との正しい組合せを，後の(2)～(3)の うちから一つ選べ。 29 2 km 0 2 km 0 都県界 市町界 鉄道 マ 森林 ミ その他 駅 X Y 国土交通省の資...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2024_makeup_d5_q6",
+      "examId": "2024_makeup",
+      "year": 2024,
+      "session": "makeup",
+      "sessionLabel": "2024年度 共通テスト 追試験（地理B）",
+      "daimon": 5,
+      "toi": 6,
+      "answerNo": 30,
+      "points": 4,
+      "questionLabel": "第5問 問6（問番号30）",
+      "title": "第5問 問6: 問6最後に，アキラさんは，大都市圏郊外の将来について考えるため，次の図5 と図6を作成した",
+      "promptSummary": "問6最後に，アキラさんは，大都市圏郊外の将来について考えるため，次の図5 と図6を作成した。図5は，入間市における1965年から2015年の人口と， 2020年から2040年までの推計人口を(1)年ごとに示したものである。また，図 6は，1995年と2015年における入間市の年齢別人口構成を示したものであ る。図5と図6から，この地域で今後生じると予想される問題と，それを食い 止める自治体の対策としては適当でないものを，後の(2)...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d5_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

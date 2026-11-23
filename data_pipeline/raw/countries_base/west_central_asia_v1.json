@@ -1,0 +1,908 @@
+{
+  "SAU": {
+    "iso3": "SAU",
+    "nameJa": "サウジアラビア",
+    "nameEn": "Saudi Arabia",
+    "region": "西アジア",
+    "subRegion": "アラビア半島",
+    "capital": "リヤド",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "世界最大級の原油埋蔵・輸出国（ガワール油田・OPEC）",
+        "海水淡水化プラントとセンターピボット灌漑（化石水枯渇問題）",
+        "イスラム教スンニ派・聖地メッカとメディナ・外国人労働者依存・ビジョン2030"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（アラビア楯状地・卓状地）"],
+      "summary": "西側の紅海縁辺に急峻な崖、東側（ペルシャ湾岸）に向けて緩やかに傾くケスタ状・卓状地構造で、広大なルブアルハリ砂漠（砂砂漠）を含む。",
+      "items": [
+        {
+          "id": "sau_desert_aquifer",
+          "category": "landform",
+          "label": "ルブアルハリ砂漠・ワジ（涸れ川）と化石水枯渇",
+          "detail": "常設河川（外来河川も）が一切ないため、太古に蓄えられた化石地下水（被圧地下水）と海水淡水化に依存。地下水位低下のため小麦の自給政策（センターピボット）は縮小方向。",
+          "clozeTerms": ["ワジ", "化石地下水", "海水淡水化"],
+          "tags": ["砂漠", "水資源", "センターピボット"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh"],
+      "summary": "北回帰線付近の亜熱帯高圧帯により国土のほぼ全域が極めて乾燥した砂漠気候（BWh）。夏の日中は45℃近く、冬は夜間冷え込む。",
+      "cities": [
+        {
+          "cityId": "SAU_RIYADH",
+          "nameJa": "リヤド",
+          "nameEn": "Riyadh",
+          "lat": 24.71,
+          "lng": 46.68,
+          "elevationM": 612,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["亜熱帯高圧帯（下降気流）", "年間降水量約100mm未満", "内陸高原のため気温の日較差・年較差が大きい"],
+          "monthlyTempC": [14.4, 17.3, 21.8, 27.4, 33.1, 35.9, 37.3, 37.0, 33.9, 28.5, 21.4, 16.0],
+          "monthlyPrecipMm": [12, 9, 24, 23, 5, 0, 0, 0, 0, 1, 8, 12],
+          "dataSource": "NCM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["遊牧", "オアシス農業（大規模灌漑）"],
+      "agriculture": [
+        {
+          "id": "sau_oasis_dates_pivot",
+          "label": "ナツメヤシ（デーツ）のオアシス農業とセンターピボット灌漑（小麦→飼料転換）",
+          "detail": "かつて化石水によるセンターピボット農法で小麦輸出まで行ったが、地下水枯渇のため国内小麦生産を抑制し穀物輸入（・海外農地投資）へ転換。",
+          "clozeTerms": ["ナツメヤシ", "センターピボット", "オアシス農業"],
+          "tags": ["オアシス農業", "センターピボット"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "sau_oil_opec_desal",
+          "label": "ガワール油田（世界最大級）とOPEC・海水淡水化世界1位",
+          "detail": "ペルシャ湾岸の背斜構造に豊富な原油・天然ガス。国営サウジアラムコを軸に原油輸出世界1位級。安価な石油エネルギーを使った海水淡水化プラントが飲料水の過半を供給。",
+          "worldRank": 1,
+          "worldRankNote": "原油輸出量 世界1位、海水淡水化生産量世界1位",
+          "clozeTerms": ["OPEC", "サウジアラムコ", "海水淡水化", "ガワール油田"],
+          "tags": ["原油", "OPEC", "海水淡水化"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "sau_jubail_vision2030",
+          "label": "ジュバイル・ヤンブーの石油化学工業と「ビジョン2030」（脱石油多角化）",
+          "detail": "石油依存経済からの脱却（経済多角化）のため、石油化学・観光（紅海・ネオム）・再エネ・エンタメ投資を加速。",
+          "clozeTerms": ["脱石油", "石油化学"],
+          "tags": ["原油", "経済多角化"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油", "石油精製品", "石油化学製品（プラスチック等）"],
+        "majorImports": ["自動車・機械類", "電気機器", "食料品（小麦・米等）"],
+        "majorPartners": ["中国", "インド", "日本", "韓国", "アメリカ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（セム語派：アラビア語）",
+      "officialLanguages": ["アラビア語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派：ワッハーブ派が国教）", "percent": 85 },
+        { "name": "イスラム教（シーア派：東部油田地帯等に居住）", "percent": 12 },
+        { "name": "その他（外国人労働者）", "percent": 3 }
+      ],
+      "ethnicGroups": ["アラブ系サウジ人（約6割）", "外国人労働者（約4割：インド・パキスタン・エジプト・フィリピン等）"],
+      "regionalIntegrations": ["OPEC", "GCC（湾岸協力会議）", "アラブ連盟", "OIC", "G20"],
+      "historicalContext": [
+        {
+          "id": "sau_mecca_foreign_workers",
+          "label": "二聖都メッカ・メディナ（ハッジ巡礼）と外国人労働力依存（自国民化政策）",
+          "detail": "世界中のイスラム教徒が巡礼（ハッジ）に訪れるメッカ・メディナを擁する。単純労働から技術職まで南・東南アジア等の外国人労働者に大きく依存（男性比率が高い歪んだ人口ピラミッドを形成）。",
+          "clozeTerms": ["メッカ", "ハッジ", "外国人労働者", "人口ピラミッド"],
+          "tags": ["イスラム教", "外国人労働者", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "IRN": {
+    "iso3": "IRN",
+    "nameJa": "イラン",
+    "nameEn": "Iran",
+    "region": "西アジア",
+    "subRegion": "イラン高原",
+    "capital": "テヘラン",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "イスラム教シーア派中心国・ペルシャ語（インド・ヨーロッパ語族）",
+        "カナート（地下水路）によるオアシス農業",
+        "ホルムズ海峡に面する海上交通の要衝と原油・天然ガス・経済制裁"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（ザグロス山脈・エルブルズ山脈・アルプス・ヒマラヤ造山帯）"],
+      "summary": "四方を山脈に囲まれた標高1000m超のイラン高原が中心で、活断層による大地震が多い。南岸はペルシャ湾とホルムズ海峡に面する。",
+      "items": [
+        {
+          "id": "irn_qanats_plateau",
+          "category": "landform",
+          "label": "山脈麓の扇状地と伝統的地下水路「カナート」・大塩漠",
+          "detail": "強い日射による蒸発を防ぐため、山脈麓の地下水を傾斜に沿って何kmも地下トンネル（カナート）でオアシス集落へ導く伝統技術が発達。",
+          "clozeTerms": ["カナート", "イラン高原", "新期造山帯"],
+          "tags": ["カナート", "オアシス農業", "新期造山帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BSk", "BWk", "BWh"],
+      "summary": "内陸盆地はステップ気候（BSk）・砂漠気候（BWk）。冬は高標高と寒気団でかなり冷え込み雪も降る。",
+      "cities": [
+        {
+          "cityId": "IRN_TEHRAN",
+          "nameJa": "テヘラン",
+          "nameEn": "Tehran",
+          "lat": 35.69,
+          "lng": 51.39,
+          "elevationM": 1191,
+          "koppenCode": "BSk",
+          "koppenNameJa": "ステップ気候",
+          "factors": ["標高約1200mで冬寒冷・夏酷暑乾燥", "冬〜春にわずかな地中海性パターンの降水（年約230mm）"],
+          "monthlyTempC": [3.8, 6.2, 11.1, 17.3, 22.8, 28.4, 31.3, 30.2, 26.0, 19.2, 11.5, 5.8],
+          "monthlyPrecipMm": [35, 34, 38, 30, 14, 3, 2, 2, 2, 12, 27, 34],
+          "dataSource": "IRIMO / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["オアシス農業", "遊牧"],
+      "agriculture": [
+        {
+          "id": "irn_pistachio_saffron",
+          "label": "ピスタチオ・サフラン・ナツメヤシ・小麦と移牧",
+          "detail": "カナート灌漑によるオアシス農業と、ザグロス山脈でのヤギ・ヒツジの遊牧（移牧）。ペルシャ絨毯（羊毛・絹）も伝統工芸。",
+          "worldRank": 1,
+          "worldRankNote": "サフラン生産世界1位、ピスタチオ世界有数",
+          "clozeTerms": ["ピスタチオ", "ペルシャ絨毯"],
+          "tags": ["オアシス農業", "遊牧"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "irn_hormuz_oil_gas",
+          "label": "原油・天然ガス世界有数（カスピ海・南西部）とホルムズ海峡",
+          "detail": "天然ガス埋蔵量はロシアに次ぐ世界2位級、原油も世界屈指（OPEC加盟）。世界の海上原油輸送の約2〜3割が通過するホルムズ海峡の北岸を抑える。",
+          "clozeTerms": ["ホルムズ海峡", "天然ガス", "OPEC"],
+          "tags": ["原油", "天然ガス", "ホルムズ海峡", "OPEC"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "irn_sanctions_auto",
+          "label": "石油化学・鉄鋼と経済制裁下の国内自動車生産",
+          "detail": "米欧の経済制裁により西側との貿易が制限され、中国・ロシア等との結びつきを強化。",
+          "clozeTerms": ["経済制裁"],
+          "tags": ["石油化学"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油・石油化学製品", "天然ガス", "鉄鋼・銅", "ピスタチオ・絨毯"],
+        "majorImports": ["機械類・自動車部品", "トウモロコシ・小麦", "医薬品"],
+        "majorPartners": ["中国", "イラク", "UAE", "トルコ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（インド・イラン語派：ペルシャ語）",
+      "officialLanguages": ["ペルシャ語（アラビア文字を使用）"],
+      "religions": [
+        { "name": "イスラム教（シーア派・十二イマーム派が国教）", "percent": 90 },
+        { "name": "イスラム教（スンニ派・主にクルド人等）", "percent": 9 }
+      ],
+      "ethnicGroups": ["ペルシャ人（約6割：アラブ人ではない！）", "アゼルバイジャン人（テュルク系）", "クルド人"],
+      "regionalIntegrations": ["OPEC", "BRICS（2024年加盟）", "上海協力機構（SCO）"],
+      "historicalContext": [
+        {
+          "id": "irn_shia_persian",
+          "label": "アラブ諸国との決定的違い：「ペルシャ系＋インド・ヨーロッパ語族＋シーア派」",
+          "detail": "共通テスト超頻出の引っ掛けポイント！西アジアにありながらアラブ人ではなくペルシャ人（インド・ヨーロッパ語族のペルシャ語）であり、イスラム世界最大のシーア派国家（1979年イラン・イスラム革命）。スンニ派盟主サウジアラビアとの対立構図が中東地政学の軸。",
+          "clozeTerms": ["シーア派", "ペルシャ語", "インド・ヨーロッパ語族", "イラン・イスラム革命"],
+          "tags": ["イスラム教シーア派", "言語", "中東紛争"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "IRQ": {
+    "iso3": "IRQ",
+    "nameJa": "イラク",
+    "nameEn": "Iraq",
+    "region": "西アジア",
+    "subRegion": "メソポタミア",
+    "capital": "バグダッド",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "外来河川ティグリス・ユーフラテス川と塩害（メソポタミア）",
+        "シーア派・スンニ派・クルド人の3層構成",
+        "世界有数の原油産出（OPEC）"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊とメソポタミア沖積低地（北部はザグロス山脈）"],
+      "summary": "トルコを源流とする2大外来河川（ティグリス川・ユーフラテス川）が南流しペルシャ湾へ注ぐ。",
+      "items": [
+        {
+          "id": "irq_tigris_euphrates",
+          "category": "river",
+          "label": "外来河川ティグリス川・ユーフラテス川と上流ダムによる水争い・塩害",
+          "detail": "上流トルコのダム開発（GAP計画）による流量減少と、乾燥地灌漑の塩害が課題。",
+          "clozeTerms": ["ティグリス川", "ユーフラテス川", "外来河川"],
+          "tags": ["外来河川", "塩害"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh", "BSh"],
+      "summary": "大部分が夏極めて高温（45℃前後）な砂漠気候（BWh）。冬にわずかな降水。",
+      "cities": [
+        {
+          "cityId": "IRQ_BAGHDAD",
+          "nameJa": "バグダッド",
+          "nameEn": "Baghdad",
+          "lat": 33.31,
+          "lng": 44.36,
+          "elevationM": 34,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["亜熱帯高圧帯で夏は全く無降水かつ44℃前後", "冬は地中海低気圧の影響でわずかに雨"],
+          "monthlyTempC": [9.8, 12.6, 17.5, 23.4, 29.5, 34.1, 36.6, 36.2, 32.0, 25.4, 17.1, 11.4],
+          "monthlyPrecipMm": [26, 23, 21, 15, 5, 0, 0, 0, 0, 4, 19, 22],
+          "dataSource": "WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["オアシス農業（灌漑農業）"],
+      "agriculture": [
+        {
+          "id": "irq_dates_wheat",
+          "label": "ナツメヤシとメソポタミア灌漑農業（ただし食料多くを輸入）",
+          "detail": "戦乱と塩害により農業生産力が低下し小麦・米を輸入。",
+          "clozeTerms": ["ナツメヤシ"],
+          "tags": ["オアシス農業"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "irq_oil_opec",
+          "label": "南部バスラ・北部キルクーク油田（OPEC第2位の産油量）",
+          "detail": "歳入・輸出の9割以上を原油に依存するモノカルチャー経済。",
+          "clozeTerms": ["OPEC", "キルクーク油田"],
+          "tags": ["原油", "OPEC"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "irq_oil_refining",
+          "label": "戦災からのインフラ再建途上",
+          "detail": "石油関連以外の製造業基盤が脆弱でインフラ復興が課題。",
+          "clozeTerms": ["モノカルチャー経済"],
+          "tags": ["原油"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油（輸出の95%以上）"],
+        "majorImports": ["食料品", "機械・輸送機器", "電力・精製燃料"],
+        "majorPartners": ["中国", "インド", "トルコ", "UAE", "アメリカ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語）／インド・ヨーロッパ語族（クルド語）",
+      "officialLanguages": ["アラビア語", "クルド語"],
+      "religions": [
+        { "name": "イスラム教（シーア派：南部中心・約6割）", "percent": 60 },
+        { "name": "イスラム教（スンニ派：中部アラブ・北部クルド人・約3.5割）", "percent": 37 },
+        { "name": "キリスト教ほか", "percent": 3 }
+      ],
+      "ethnicGroups": ["アラブ人（約75〜80%）", "クルド人（北部自治地域・約15〜20%）"],
+      "regionalIntegrations": ["OPEC", "アラブ連盟", "OIC"],
+      "historicalContext": [
+        {
+          "id": "irq_sectarian_kurds",
+          "label": "人工国境（サイクス・ピコ協定）とシーア派／スンニ派／クルド人の対立",
+          "detail": "旧オスマン帝国領から英仏により引かれた国境内に、南部シーア派アラブ・中部スンニ派アラブ・北部クルド人（国を持たない最大の民族）が混在し、湾岸戦争・イラク戦争後も政治的不安定が続く。",
+          "clozeTerms": ["クルド人", "シーア派", "スンニ派", "人工国境"],
+          "tags": ["民族問題", "イスラム教シーア派", "クルド人"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "TUR": {
+    "iso3": "TUR",
+    "nameJa": "トルコ",
+    "nameEn": "Turkey",
+    "region": "西アジア",
+    "subRegion": "アナトリア半島・東トラキア",
+    "capital": "アンカラ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ボスポラス・ダーダネルス海峡（欧州とアジアの架け橋）と新期造山帯地震",
+        "地中海式農業（オリーブ・ヘーゼルナッツ世界1位）と内陸ステップ小麦",
+        "EU関税同盟下の欧州向け自動車・繊維工場とテュルク語族・世俗主義・クルド問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アナトリア高原・アルプス・ヒマラヤ造山帯）"],
+      "summary": "北アナトリア断層など活断層が走り大地震（2023年トルコ・シリア地震等）が頻発。黒海と地中海を結ぶボスポラス海峡を擁する。",
+      "items": [
+        {
+          "id": "tur_straits_earthquake",
+          "category": "tectonic",
+          "label": "ボスポラス海峡・ダーダネルス海峡と北アナトリア断層の大地震",
+          "detail": "黒海沿岸諸国（ロシア・ウクライナ等）が外洋に出るための唯一の出口であり、地政学的に極めて重要。カッパドキアの凝灰岩侵食地形も著名。",
+          "clozeTerms": ["ボスポラス海峡", "ダーダネルス海峡", "アナトリア高原"],
+          "tags": ["新期造山帯", "地震", "海峡"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "BSk", "Cfb"],
+      "summary": "地中海・エーゲ海沿岸は夏乾燥の地中海性気候（Csa）、内陸アナトリア高原（アンカラ）は冬寒いステップ気候（BSk）、黒海沿岸は温暖湿潤。",
+      "cities": [
+        {
+          "cityId": "TUR_ISTANBUL",
+          "nameJa": "イスタンブール",
+          "nameEn": "Istanbul",
+          "lat": 41.01,
+          "lng": 28.98,
+          "elevationM": 39,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["夏は亜熱帯高圧帯で少雨", "冬は偏西風と黒海・地中海の低気圧で降水"],
+          "monthlyTempC": [6.0, 6.2, 8.2, 12.6, 17.5, 22.3, 24.8, 25.0, 21.3, 16.5, 12.0, 8.0],
+          "monthlyPrecipMm": [105, 80, 68, 45, 34, 38, 32, 36, 62, 92, 102, 120],
+          "dataSource": "MGM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "TUR_ANKARA",
+          "nameJa": "アンカラ",
+          "nameEn": "Ankara",
+          "lat": 39.93,
+          "lng": 32.86,
+          "elevationM": 891,
+          "koppenCode": "BSk",
+          "koppenNameJa": "ステップ気候",
+          "factors": ["アナトリア高原（標高約900m）の盆地で冬季0℃前後・年降水量約400mm"],
+          "monthlyTempC": [0.4, 2.0, 6.2, 11.4, 16.2, 20.4, 23.8, 23.8, 19.2, 13.4, 7.2, 2.3],
+          "monthlyPrecipMm": [40, 36, 40, 48, 52, 38, 16, 14, 18, 32, 34, 46],
+          "dataSource": "MGM / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "企業的牧畜・遊牧", "アジア式/欧州式畑作"],
+      "agriculture": [
+        {
+          "id": "tur_hazelnut_olive_cotton",
+          "label": "地中海式農業（オリーブ・ぶどう・柑橘）・ヘーゼルナッツ世界1位・GAP灌漑綿花",
+          "detail": "黒海沿岸のヘーゼルナッツは世界生産の約7割。南東部アナトリア計画（GAP）のダム灌漑により綿花も生産。小麦生産量も多い。",
+          "worldRank": 1,
+          "worldRankNote": "ヘーゼルナッツ・アンズ・さくらんぼ・イチジク生産 世界1位",
+          "clozeTerms": ["地中海式農業", "ヘーゼルナッツ", "GAP"],
+          "tags": ["地中海式農業", "オリーブ", "綿花"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "tur_chromium_boron",
+          "label": "クロム・ホウ素など鉱産資源と原油・天然ガスのパイプライン結節点",
+          "detail": "ホウ素埋蔵量世界1位、クロム有数。ロシア・アゼルバイジャンから欧州への天然ガスパイプラインの中継地。",
+          "clozeTerms": ["クロム", "パイプライン"],
+          "tags": ["レアメタル", "天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "tur_eu_customs_auto_textile",
+          "label": "EU関税同盟を活かした欧州向け自動車組立・家電・繊維工業（イスタンブール・ブルサ）",
+          "detail": "EUと関税同盟を結んでいるため、EU近隣の安価・良質な労働力を活かした欧州市場向け自動車（トヨタ・ルノー・フォード等）とアパレル輸出拠点。",
+          "clozeTerms": ["EU関税同盟", "自動車工業", "繊維工業"],
+          "tags": ["自動車", "衣類", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・部品", "機械・家電", "衣類・繊維", "鉄鋼", "果実・ナッツ"],
+        "majorImports": ["原油・天然ガス", "金・鉄鋼", "電子部品・機械"],
+        "majorPartners": ["ドイツ", "アメリカ", "イギリス", "イタリア", "イラク"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "テュルク語族（アルタイ系：トルコ語＝ローマ字表記）",
+      "officialLanguages": ["トルコ語"],
+      "religions": [
+        { "name": "イスラム教（主にスンニ派、世俗主義国家）", "percent": 98 },
+        { "name": "キリスト教ほか", "percent": 2 }
+      ],
+      "ethnicGroups": ["トルコ人（約75〜80%）", "クルド人（南東部中心・約18%）"],
+      "regionalIntegrations": ["NATO", "OECD", "G20", "EU関税同盟（EU加盟交渉停滞）"],
+      "historicalContext": [
+        {
+          "id": "tur_secularism_kurds_refugees",
+          "label": "ケマル・アタテュルクの世俗主義改革とEU加盟問題・シリア難民受入世界最多級",
+          "detail": "アラブ語でもペルシャ語でもないテュルク語族。政教分離（世俗主義）とローマ字採用で近代化したが、人権問題やキプロス問題・経済規模からEU加盟は実現していない。シリア難民（約300万人以上）の最大受入国であり、南東部クルド人分離問題も抱える。",
+          "clozeTerms": ["テュルク語族", "世俗主義", "シリア難民", "クルド人"],
+          "tags": ["難民", "言語", "EU", "クルド人"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ISR": {
+    "iso3": "ISR",
+    "nameJa": "イスラエル",
+    "nameEn": "Israel",
+    "region": "西アジア",
+    "subRegion": "東地中海（レバント）",
+    "capital": "エルサレム（国際的承認はテルアビブ中心に分かれる）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "点滴灌漑・ハイテク農業とシリコンワディ（スタートアップ国家）",
+        "ユダヤ教とパレスチナ問題・エルサレム（3宗教の聖地）",
+        "死海（大地溝帯延長）と水資源・海水淡水化"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["アフリカ・アラビアプレートの境界（ヨルダン地溝帯）"],
+      "summary": "地中海沿岸平野、中央山地、東側のヨルダン川・死海（海抜約-430mの地球陸地最低点）、南部のネゲブ砂漠からなる。",
+      "items": [
+        {
+          "id": "isr_dead_sea_drip",
+          "category": "landform",
+          "label": "ヨルダン地溝帯（死海）と節水型「点滴灌漑」・海水淡水化",
+          "detail": "東アフリカ大地溝帯から続く断層谷に塩湖の死海がある。水資源不足を克服するため、根元に直接少量の水・肥料を供給する「点滴灌漑」を開発しネゲブ砂漠を緑化。",
+          "clozeTerms": ["死海", "点滴灌漑", "ヨルダン地溝帯"],
+          "tags": ["地溝帯", "水資源", "乾燥帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "BSh", "BWh"],
+      "summary": "地中海沿岸（テルアビブ）は地中海性気候（Csa）、南部ネゲブ砂漠はBWh。",
+      "cities": [
+        {
+          "cityId": "ISR_TELAVIV",
+          "nameJa": "テルアビブ",
+          "nameEn": "Tel Aviv",
+          "lat": 32.09,
+          "lng": 34.78,
+          "elevationM": 15,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["夏（5〜9月）は亜熱帯高圧帯で完全な無降水", "冬（12〜2月）に偏西風低気圧で集中降雨"],
+          "monthlyTempC": [13.5, 14.0, 16.0, 19.0, 22.0, 24.8, 27.0, 27.7, 26.2, 23.1, 19.0, 15.1],
+          "monthlyPrecipMm": [140, 102, 56, 18, 3, 0, 0, 0, 1, 22, 78, 128],
+          "dataSource": "IMS / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "オアシス・ハイテク灌漑農業"],
+      "agriculture": [
+        {
+          "id": "isr_kibbutz_drip",
+          "label": "キブツ（協同農場）の歴史と点滴灌漑による柑橘類・野菜・切り花栽培",
+          "detail": "建国期の農業協同体キブツと点滴灌漑などの節水技術により、乾燥地ながら高い食料生産効率を実現。",
+          "clozeTerms": ["キブツ", "点滴灌漑"],
+          "tags": ["地中海式農業", "点滴灌漑"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "isr_med_gas_potash",
+          "label": "死海のカリウム（肥料）・臭素と地中海沖天然ガス（リヴァイアサンガス田）",
+          "detail": "地中海沖ガス田の発見でエネルギー純輸入国から輸出国へ転換。",
+          "clozeTerms": ["カリウム", "天然ガス"],
+          "tags": ["天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "isr_silicon_wadi",
+          "label": "「シリコンワディ」（テルアビブ周辺）のサイバーセキュリティ・半導体・ソフトウェア産業",
+          "detail": "高度な科学技術教育・軍のサイバー人材育成・外資R&D集積により、GDP比の研究開発費や1人あたりスタートアップ数が世界トップクラス。ダイヤモンド研磨加工も主要輸出品。",
+          "clozeTerms": ["シリコンワディ", "ICT", "ダイヤモンド加工"],
+          "tags": ["ICT", "ハイテク産業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["集積回路・電子部品", "研磨ダイヤモンド", "ソフトウェア・サイバーサービス", "医療精密機器"],
+        "majorImports": ["原石ダイヤモンド", "機械類・自動車", "原油・穀物"],
+        "majorPartners": ["アメリカ", "中国", "EU", "インド"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（セム語派：ヘブライ語・アラビア語）",
+      "officialLanguages": ["ヘブライ語（民族復活に伴い再公用化）"],
+      "religions": [
+        { "name": "ユダヤ教", "percent": 73 },
+        { "name": "イスラム教（アラブ系イスラエル人等）", "percent": 18 },
+        { "name": "キリスト教・ドゥルーズ派ほか", "percent": 9 }
+      ],
+      "ethnicGroups": ["ユダヤ人（世界各地からの帰還者）", "アラブ人（約21%）"],
+      "regionalIntegrations": ["OECD", "WTO"],
+      "historicalContext": [
+        {
+          "id": "isr_palestine_jerusalem",
+          "label": "パレスチナ問題（1948年建国）と3大一神教の聖地エルサレム",
+          "detail": "ユダヤ教（嘆きの壁）・キリスト教（聖墳墓教会）・イスラム教（岩のドーム）の3宗教すべての聖地であるエルサレムの帰属、ヨルダン川西岸地区の入植地問題、ガザ地区の封鎖・紛争が現代世界の最大の火種の一つ。",
+          "clozeTerms": ["エルサレム", "パレスチナ問題", "ユダヤ教", "ヨルダン川西岸"],
+          "tags": ["パレスチナ問題", "宗教", "紛争"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ARE": {
+    "iso3": "ARE",
+    "nameJa": "アラブ首長国連邦（UAE）",
+    "nameEn": "United Arab Emirates",
+    "region": "西アジア",
+    "subRegion": "アラビア半島（ペルシャ湾岸）",
+    "capital": "アブダビ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ドバイの「脱石油」経済多角化（金融・観光・ハブ空港・自由貿易区）",
+        "外国人労働者が人口の約88%を占める特殊な人口ピラミッド（20〜40代男性突出）",
+        "アブダビの原油・LNGとアルミ精錬・海水淡水化"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（アラビア砂漠低地とホルムズ海峡に面するムサンダム半島付近）"],
+      "summary": "ペルシャ湾に面する砂漠海岸地帯。ドバイのパームジュメイラ等、大規模な人工島開発が有名。",
+      "items": [
+        {
+          "id": "are_artificial_islands",
+          "category": "landform",
+          "label": "ペルシャ湾岸の砂漠と人工島（パームアイランド）・海水淡水化",
+          "detail": "自然河川がほぼ皆無なため飲用水の大部分を海水淡水化プラントに依存。",
+          "clozeTerms": ["海水淡水化", "人工島"],
+          "tags": ["砂漠", "水資源"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh"],
+      "summary": "年間降水量100mm前後・夏は湿度も高く40℃超の砂漠気候（BWh）。",
+      "cities": [
+        {
+          "cityId": "ARE_DUBAI",
+          "nameJa": "ドバイ",
+          "nameEn": "Dubai",
+          "lat": 25.2,
+          "lng": 55.27,
+          "elevationM": 5,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["亜熱帯高圧帯で4〜10月はほぼ無降水", "ペルシャ湾岸のため夏季は非常に蒸し暑い"],
+          "monthlyTempC": [19.4, 20.6, 23.4, 27.6, 31.8, 34.0, 35.8, 36.1, 33.6, 29.8, 25.2, 21.4],
+          "monthlyPrecipMm": [18, 24, 22, 6, 1, 0, 0, 0, 0, 1, 5, 16],
+          "dataSource": "NCM UAE / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["遊牧（伝統）・施設水耕栽培（極めて限定）"],
+      "agriculture": [
+        {
+          "id": "are_food_import",
+          "label": "食料の約8〜9割輸入（ナツメヤシのみ一部自給）",
+          "detail": "垂直農法や海外農地確保で食料安全保障を推進。",
+          "clozeTerms": ["食料輸入"],
+          "tags": ["砂漠"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "are_abudhabi_oil_solar",
+          "label": "アブダビ首長国の原油・天然ガス（OPEC）とマスダール太陽光・原発",
+          "detail": "原油埋蔵の大部分はアブダビ首長国に集中。安いエネルギーを利用したアルミニウム精錬も重要。",
+          "clozeTerms": ["OPEC", "アブダビ", "アルミニウム精錬"],
+          "tags": ["原油", "OPEC", "アルミ精錬"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "are_dubai_hub",
+          "label": "ドバイの「脱石油」戦略（中東の金融・中継貿易・観光・ハブ空港）",
+          "detail": "石油枯渇を見据え、ジュベルアリ自由貿易区（フリーゾーン）やエミレーツ航空（ドバイ国際空港＝欧州・アジア・アフリカ結節点）、ブルジュ・ハリファ等の観光開発により石油依存から脱却。",
+          "clozeTerms": ["脱石油", "自由貿易区", "ハブ空港", "中継貿易"],
+          "tags": ["経済多角化", "国際金融", "観光"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油・石油精製品", "金・ダイヤモンド（中継加工）", "アルミニウム", "中継再輸出"],
+        "majorImports": ["金・宝石", "電子機器・自動車", "機械類・食料"],
+        "majorPartners": ["インド", "中国", "日本", "サウジアラビア", "イラク"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語／実務は英語が広く通用）",
+      "officialLanguages": ["アラビア語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派多数）", "percent": 76 },
+        { "name": "ヒンドゥー教・キリスト教・仏教（外国人労働者）", "percent": 24 }
+      ],
+      "ethnicGroups": ["外国人居住者約88%（インド・パキスタン・バングラデシュ・フィリピン等）", "UAE国籍アラブ人約12%"],
+      "regionalIntegrations": ["OPEC", "GCC", "アラブ連盟", "BRICS（2024年加盟）"],
+      "historicalContext": [
+        {
+          "id": "are_population_pyramid",
+          "label": "極端な生産年齢男性突出型人口ピラミッド（7つの首長国の連邦制）",
+          "detail": "共通テストの人口ピラミッド判別で超定番！建設・サービス業に従事する南アジア系などの単身男性外国人労働者が人口の大多数を占めるため、20〜40歳代の男性割合が異常に高い歪なピラミッドになる。",
+          "clozeTerms": ["外国人労働者", "人口ピラミッド", "7首長国"],
+          "tags": ["人口ピラミッド", "外国人労働者", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "KAZ": {
+    "iso3": "KAZ",
+    "nameJa": "カザフスタン",
+    "nameEn": "Kazakhstan",
+    "region": "中央アジア",
+    "subRegion": "中央アジア北部",
+    "capital": "アスタナ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "世界最大の内陸国とステップ気候の小麦処女地開拓",
+        "アラル海縮小問題（シルダリア川灌漑）とカスピ海油田",
+        "ウラン産出世界1位・クロム・石炭とバイコヌール宇宙基地"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯縁辺・広大なステップと内陸湖（カスピ海・アラル海・バルハシ湖）"],
+      "summary": "日本の約7倍の面積を持つ世界最大の内陸国。北部は肥沃なステップ、南部は砂漠とアラル海・カスピ海の内陸流域。",
+      "items": [
+        {
+          "id": "kaz_aral_sea",
+          "category": "landform",
+          "label": "アラル海の劇的縮小とカスピ海（世界最大の塩湖）",
+          "detail": "ソ連時代にシルダリア川・アムダリア川から綿花や稲作のため大量取水したことで、アラル海がかつての面積の1割程度まで干上がり塩害・砂塵嵐が発生（北部小アラル海は堤防で一部回復）。",
+          "clozeTerms": ["アラル海", "世界最大の内陸国", "塩害", "シルダリア川"],
+          "tags": ["アラル海", "内陸国", "環境問題", "塩害"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BSk", "BWk", "Dfb"],
+      "summary": "海から遠く大陸性気候が顕著。首都アスタナは冬-14℃以下・夏+21℃の年較差が大きい。",
+      "cities": [
+        {
+          "cityId": "KAZ_ASTANA",
+          "nameJa": "アスタナ",
+          "nameEn": "Astana",
+          "lat": 51.16,
+          "lng": 71.47,
+          "elevationM": 347,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤・ステップ移行部",
+          "factors": ["世界最大内陸国の中心部（極端な隔海度）", "冬はシベリア寒気団で極寒"],
+          "monthlyTempC": [-14.2, -13.6, -5.6, 6.4, 14.3, 19.6, 21.0, 19.1, 12.7, 5.0, -4.6, -11.9],
+          "monthlyPrecipMm": [18, 17, 20, 22, 34, 40, 56, 31, 22, 27, 28, 25],
+          "dataSource": "Kazhydromet / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的穀物農業（大規模小麦）", "遊牧・牧畜"],
+      "agriculture": [
+        {
+          "id": "kaz_steppe_wheat",
+          "label": "北部ステップ（チェルノーゼム・栗色土）の春小麦栽培と羊・馬の牧畜",
+          "detail": "ソ連のフルシチョフ処女地開拓計画により広大な小麦輸出国になった。",
+          "clozeTerms": ["春小麦", "処女地開拓", "ステップ"],
+          "tags": ["小麦", "ステップ"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "kaz_uranium_oil",
+          "label": "ウラン産出世界1位（世界約4割）・カスピ海（テンギス/カシャガン油田）・クロム・石炭",
+          "detail": "原子力発電の燃料ウランで圧倒的世界首位。カスピ海周辺の原油・天然ガスをパイプラインで中国・欧州へ輸出。",
+          "worldRank": 1,
+          "worldRankNote": "ウラン生産 世界1位、クロム2位級",
+          "clozeTerms": ["ウラン", "カスピ海油田"],
+          "tags": ["ウラン", "原油", "カスピ海"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "kaz_karaganda_baikonur",
+          "label": "カラガンダ炭田の重工業とバイコヌール宇宙基地・一帯一路の陸上交通の要衝",
+          "detail": "ロシアが租借するバイコヌール宇宙基地。中国と欧州を結ぶ鉄道貨物（一帯一路）の通過点。",
+          "clozeTerms": ["バイコヌール", "一帯一路"],
+          "tags": ["石炭", "一帯一路"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油", "ウラン・銅・フェロアロイ", "小麦・小麦粉"],
+        "majorImports": ["機械・自動車", "電気機器", "医薬品"],
+        "majorPartners": ["中国", "イタリア", "ロシア", "オランダ", "トルコ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "テュルク語族（カザフ語）／インド・ヨーロッパ語族（ロシア語）",
+      "officialLanguages": ["カザフ語（国語・ラテン文字化移行中）", "ロシア語（公用）"],
+      "religions": [
+        { "name": "イスラム教（主にスンニ派）", "percent": 70 },
+        { "name": "キリスト教（ロシア正教）", "percent": 18 }
+      ],
+      "ethnicGroups": ["カザフ人（約7割）", "ロシア人（約15%：北部中心）"],
+      "regionalIntegrations": ["CIS", "ユーラシア経済連合（EAEU）", "上海協力機構（SCO）"],
+      "historicalContext": [
+        {
+          "id": "kaz_astana_capital_nuclear",
+          "label": "旧ソ連構成国・アスタナへの遷都（1997年）と非核化",
+          "detail": "最大都市アルマトイ（南部）から、ロシア人比率の高い北部統合と地震リスク回避のためステップの計画都市アスタナへ遷都。",
+          "clozeTerms": ["アスタナ", "旧ソ連", "テュルク語族"],
+          "tags": ["旧ソ連", "計画都市", "イスラム教"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "UZB": {
+    "iso3": "UZB",
+    "nameJa": "ウズベキスタン",
+    "nameEn": "Uzbekistan",
+    "region": "中央アジア",
+    "subRegion": "中央アジア南部",
+    "capital": "タシケント",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "「二重内陸国」（隣国もすべて内陸国）",
+        "アムダリア・シルダリア川の綿花大規模灌漑とアラル海縮小・塩害",
+        "シルクロードのオアシス都市（サマルカンド・ブハラ）"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["キジルクム砂漠とフェルガナ盆地（天山・パミール麓）"],
+      "summary": "リヒテンシュタインとともに世界で2カ国だけの「二重内陸国」（海に出るのに最低2回以上国境を越える必要がある）。",
+      "items": [
+        {
+          "id": "uzb_double_landlocked",
+          "category": "landform",
+          "label": "二重内陸国とアラル海環境問題（アムダリア・シルダリア川灌漑）",
+          "detail": "パミール高原・天山山脈を源流とする外来河川（アムダリア・シルダリア川）の水を大量取水したため、下流のアラル海が枯渇し塩害が深刻化。",
+          "clozeTerms": ["二重内陸国", "アムダリア川", "アラル海"],
+          "tags": ["内陸国", "アラル海", "外来河川"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWk", "BSk", "Csa"],
+      "summary": "夏は極めて乾燥・高温（35℃超）、冬〜春に山麓でわずかな降雨がある乾燥・地中海性移行気候。",
+      "cities": [
+        {
+          "cityId": "UZB_TASHKENT",
+          "nameJa": "タシケント",
+          "nameEn": "Tashkent",
+          "lat": 41.3,
+          "lng": 69.24,
+          "elevationM": 489,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候・ステップ移行部",
+          "factors": ["天山山脈西麓に位置し冬〜春（11〜4月）に降水、夏（7〜9月）はほぼ無降水"],
+          "monthlyTempC": [2.3, 4.4, 10.1, 16.5, 21.8, 26.8, 28.9, 27.1, 21.4, 14.5, 8.2, 3.6],
+          "monthlyPrecipMm": [56, 52, 66, 62, 34, 12, 3, 2, 5, 26, 46, 58],
+          "dataSource": "Uzhydromet / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["オアシス農業（大規模灌漑）", "遊牧"],
+      "agriculture": [
+        {
+          "id": "uzb_cotton_silk",
+          "label": "「白い金」綿花の灌漑栽培（原綿輸出から国内繊維加工へ転換）",
+          "detail": "ソ連時代に綿花モノカルチャー栽培が強要された。近年は国内の繊維・アパレル産業育成や果実・野菜栽培への多角化を進めている。",
+          "clozeTerms": ["綿花", "灌漑農業", "モノカルチャー"],
+          "tags": ["綿花", "オアシス農業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "uzb_gold_uranium_gas",
+          "label": "金（世界トップ10）・ウラン・天然ガス（中国向けパイプライン）",
+          "detail": "ムルンタウ金鉱山など世界有数の金産出と、豊富な天然ガス・ウランを有する。",
+          "clozeTerms": ["金", "天然ガス"],
+          "tags": ["金", "ウラン", "天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "uzb_auto_textile",
+          "label": "フェルガナ盆地・タシケントの繊維工業と自動車組立",
+          "detail": "中央アジア最多の人口（約3600万人）を活かした製造業育成。",
+          "clozeTerms": ["フェルガナ盆地"],
+          "tags": ["繊維工業"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["金", "繊維・綿製品", "銅・ウラン", "果実・野菜"],
+        "majorImports": ["機械類", "自動車部品", "鉄鋼・医薬品"],
+        "majorPartners": ["中国", "ロシア", "カザフスタン", "トルコ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "テュルク語族（ウズベク語：ラテン文字）",
+      "officialLanguages": ["ウズベク語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派）", "percent": 90 },
+        { "name": "ロシア正教ほか", "percent": 10 }
+      ],
+      "ethnicGroups": ["ウズベク人（約84%）", "タジク人・ロシア人・カザフ人"],
+      "regionalIntegrations": ["CIS", "上海協力機構（SCO）"],
+      "historicalContext": [
+        {
+          "id": "uzb_silk_road",
+          "label": "シルクロードのオアシス都市（サマルカンド・ブハラ）とロシア出稼ぎ",
+          "detail": "中世イスラム文化の華咲くサマルカンド（レギスタン広場等）を擁し観光人気が高い。ソ連解体後の若年層増加に伴いロシア等への出稼ぎ労働者も多い。",
+          "clozeTerms": ["サマルカンド", "シルクロード", "オアシス都市"],
+          "tags": ["シルクロード", "イスラム教", "出稼ぎ"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

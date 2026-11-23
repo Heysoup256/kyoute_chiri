@@ -1,0 +1,1733 @@
+[
+  {
+    "type": "Feature",
+    "id": "mr_andes",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -70.0,
+          10.0
+        ],
+        [
+          -74.0,
+          4.0
+        ],
+        [
+          -78.5,
+          -2.0
+        ],
+        [
+          -76.0,
+          -10.0
+        ],
+        [
+          -70.5,
+          -18.0
+        ],
+        [
+          -68.5,
+          -24.0
+        ],
+        [
+          -70.0,
+          -33.0
+        ],
+        [
+          -71.5,
+          -42.0
+        ],
+        [
+          -72.0,
+          -52.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_andes",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "アンデス山脈",
+      "relatedCountries": [
+        "CHL",
+        "PER",
+        "BOL",
+        "ARG",
+        "ECU",
+        "COL"
+      ],
+      "summary": "ナスカプレート沈み込みによる新期造山帯。銅鉱石・銀・リチウムが豊富。標高差による垂直的気候・農業区分。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_rocky",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -129.0,
+          59.0
+        ],
+        [
+          -118.0,
+          53.0
+        ],
+        [
+          -113.5,
+          48.0
+        ],
+        [
+          -109.5,
+          43.0
+        ],
+        [
+          -106.0,
+          39.5
+        ],
+        [
+          -105.5,
+          34.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_rocky",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "ロッキー山脈",
+      "relatedCountries": [
+        "CAN",
+        "USA"
+      ],
+      "summary": "北米西部の新期造山帯。偏西風が越えた東側（グレートプレーンズ）に雨蔭効果の乾燥をもたらす。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_sierra_madre",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -107.0,
+          29.0
+        ],
+        [
+          -105.0,
+          24.0
+        ],
+        [
+          -102.0,
+          20.0
+        ],
+        [
+          -97.0,
+          18.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_sierra_madre",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "シエラマドレ山脈",
+      "relatedCountries": [
+        "MEX"
+      ],
+      "summary": "メキシコ高原を挟み南北に走る新期造山帯。銀などの非鉄金属資源と火山を伴う。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_alps",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          5.5,
+          44.0
+        ],
+        [
+          7.0,
+          45.8
+        ],
+        [
+          9.5,
+          46.5
+        ],
+        [
+          12.5,
+          47.0
+        ],
+        [
+          15.5,
+          47.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_alps",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "アルプス山脈",
+      "relatedCountries": [
+        "FRA",
+        "ITA",
+        "CHE",
+        "AUT",
+        "DEU"
+      ],
+      "summary": "アフリカプレートとユーラシアプレートの衝突による新期造山帯。氷食地形（ホルン・U字谷）、移牧、水力発電。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_pyrenees",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -2.0,
+          43.2
+        ],
+        [
+          0.5,
+          42.7
+        ],
+        [
+          3.0,
+          42.4
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_pyrenees",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "ピレネー山脈",
+      "relatedCountries": [
+        "ESP",
+        "FRA"
+      ],
+      "summary": "フランスとスペインの国境をなす新期造山帯。バスク・カタルーニャ地域がまたがる。",
+      "importance": "B"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_atlas",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -9.0,
+          31.0
+        ],
+        [
+          -4.0,
+          33.5
+        ],
+        [
+          2.0,
+          35.5
+        ],
+        [
+          8.5,
+          36.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_atlas",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "アトラス山脈",
+      "relatedCountries": [
+        "MAR",
+        "DZA"
+      ],
+      "summary": "アフリカ北西端にある珍しい新期造山帯。地中海気候とサハラ砂漠の境界障壁。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_zagros",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          44.5,
+          36.0
+        ],
+        [
+          47.5,
+          33.0
+        ],
+        [
+          51.0,
+          30.0
+        ],
+        [
+          56.0,
+          27.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_zagros",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "ザグロス山脈",
+      "relatedCountries": [
+        "IRN",
+        "IRQ"
+      ],
+      "summary": "アラビアプレートとユーラシアプレートの衝突による新期造山帯。麓にペルシャ湾岸の背斜油田群やカナートが発達。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_himalaya",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          74.0,
+          35.5
+        ],
+        [
+          78.0,
+          32.0
+        ],
+        [
+          82.0,
+          29.5
+        ],
+        [
+          86.9,
+          27.9
+        ],
+        [
+          91.5,
+          27.8
+        ],
+        [
+          96.0,
+          28.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_himalaya",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "ヒマラヤ山脈",
+      "relatedCountries": [
+        "IND",
+        "CHN",
+        "PAK"
+      ],
+      "summary": "インド・オーストラリアプレートとユーラシアプレートの衝突で隆起。モンスーンを遮り南麓に多雨・チベットに乾燥をもたらす。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_southern_alps_nz",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          167.0,
+          -45.5
+        ],
+        [
+          170.0,
+          -43.5
+        ],
+        [
+          173.0,
+          -41.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_southern_alps_nz",
+      "layerType": "mountain_range",
+      "subType": "new_orogenic",
+      "nameJa": "南アルプス山脈（NZ）",
+      "relatedCountries": [
+        "NZL"
+      ],
+      "summary": "ニュージーランド南島を貫く新期造山帯。偏西風の風上西岸に超多雨とフィヨルド、風下東岸に少雨をもたらす。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_scandinavia",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          6.5,
+          59.5
+        ],
+        [
+          9.0,
+          62.5
+        ],
+        [
+          14.0,
+          66.0
+        ],
+        [
+          18.5,
+          68.5
+        ],
+        [
+          24.0,
+          70.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_scandinavia",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "スカンディナビア山脈（古期）",
+      "relatedCountries": [
+        "NOR",
+        "SWE"
+      ],
+      "summary": "古期造山帯だが氷期の氷食作用により西岸に急峻なフィヨルド群が形成された。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_pennine",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -2.3,
+          55.0
+        ],
+        [
+          -2.0,
+          54.0
+        ],
+        [
+          -1.8,
+          53.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_pennine",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "ペニン山脈（古期）",
+      "relatedCountries": [
+        "GBR"
+      ],
+      "summary": "イギリスの背骨となる古期造山帯。周辺炭田が産業革命の原動力となった。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_ural",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          60.5,
+          67.5
+        ],
+        [
+          59.5,
+          63.0
+        ],
+        [
+          59.0,
+          58.5
+        ],
+        [
+          58.5,
+          54.0
+        ],
+        [
+          57.5,
+          50.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_ural",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "ウラル山脈（古期）",
+      "relatedCountries": [
+        "RUS",
+        "KAZ"
+      ],
+      "summary": "ヨーロッパとアジアを分けるなだらかな古期造山帯。鉄鉱石など鉱産資源に富む。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_appalachian",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -86.5,
+          33.5
+        ],
+        [
+          -83.0,
+          36.0
+        ],
+        [
+          -79.5,
+          39.0
+        ],
+        [
+          -75.5,
+          42.0
+        ],
+        [
+          -71.0,
+          44.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_appalachian",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "アパラチア山脈（古期）",
+      "relatedCountries": [
+        "USA"
+      ],
+      "summary": "北米東部の古期造山帯。豊富なアパラチア炭田を有しピッツバーグ等の重工業を支えた。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_great_dividing",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          145.5,
+          -17.0
+        ],
+        [
+          149.0,
+          -24.0
+        ],
+        [
+          151.5,
+          -30.0
+        ],
+        [
+          149.5,
+          -35.0
+        ],
+        [
+          146.5,
+          -37.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_great_dividing",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "グレートディバイディング山脈（古期）",
+      "relatedCountries": [
+        "AUS"
+      ],
+      "summary": "オーストラリア東部の古期造山帯。南東貿易風を遮り東岸に多雨、西側内陸に乾燥と大鑽井盆地への地下水供給をもたらす。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "mr_drakensberg",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.5,
+          -24.0
+        ],
+        [
+          29.5,
+          -28.0
+        ],
+        [
+          28.0,
+          -31.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "mr_drakensberg",
+      "layerType": "mountain_range",
+      "subType": "old_orogenic",
+      "nameJa": "ドラケンスバーグ山脈（古期）",
+      "relatedCountries": [
+        "ZAF"
+      ],
+      "summary": "南アフリカ高原東縁の大崖（グレートエスカープメント）。インド洋からの湿潤風を遮る。",
+      "importance": "B"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_rhine",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          9.0,
+          46.6
+        ],
+        [
+          7.6,
+          47.6
+        ],
+        [
+          8.3,
+          49.5
+        ],
+        [
+          7.0,
+          51.0
+        ],
+        [
+          6.1,
+          51.8
+        ],
+        [
+          4.1,
+          51.9
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_rhine",
+      "layerType": "river",
+      "nameJa": "ライン川（国際河川）",
+      "relatedCountries": [
+        "CHE",
+        "FRA",
+        "DEU",
+        "NLD"
+      ],
+      "summary": "スイスに発しドイツ工業地帯を経てオランダ・ロッテルダムへ注ぐ欧州最大の国際水運河川。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_danube",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          8.5,
+          48.0
+        ],
+        [
+          12.1,
+          49.0
+        ],
+        [
+          16.4,
+          48.2
+        ],
+        [
+          19.0,
+          47.5
+        ],
+        [
+          20.5,
+          44.8
+        ],
+        [
+          24.0,
+          43.8
+        ],
+        [
+          29.5,
+          45.2
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_danube",
+      "layerType": "river",
+      "nameJa": "ドナウ川（国際河川）",
+      "relatedCountries": [
+        "DEU",
+        "AUT"
+      ],
+      "summary": "ドイツから中東欧10カ国を通過し黒海へ注ぐ世界最多の通過国数を持つ国際河川。マイン・ドナウ運河でライン川と連結。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_nile",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          32.5,
+          0.5
+        ],
+        [
+          31.6,
+          5.0
+        ],
+        [
+          32.5,
+          15.6
+        ],
+        [
+          32.9,
+          24.0
+        ],
+        [
+          31.2,
+          30.1
+        ],
+        [
+          31.0,
+          31.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_nile",
+      "layerType": "river",
+      "nameJa": "ナイル川（外来河川）",
+      "relatedCountries": [
+        "ETH",
+        "EGY"
+      ],
+      "summary": "エチオピア高原の青ナイル等が合流しサハラ砂漠を北流する世界最長級の外来河川。アスワンハイダムとナイルデルタ。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_congo",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          27.0,
+          -9.0
+        ],
+        [
+          25.2,
+          0.5
+        ],
+        [
+          21.0,
+          2.1
+        ],
+        [
+          16.5,
+          -1.5
+        ],
+        [
+          15.3,
+          -4.3
+        ],
+        [
+          12.4,
+          -6.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_congo",
+      "layerType": "river",
+      "nameJa": "コンゴ川",
+      "relatedCountries": [
+        "COD"
+      ],
+      "summary": "赤道を2度横切るため流量が極めて安定した熱帯大河川。急流が多く水力潜在力が世界トップ級。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_niger",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -10.0,
+          10.5
+        ],
+        [
+          -4.0,
+          14.5
+        ],
+        [
+          -1.0,
+          16.8
+        ],
+        [
+          3.5,
+          12.0
+        ],
+        [
+          6.7,
+          7.8
+        ],
+        [
+          6.3,
+          4.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_niger",
+      "layerType": "river",
+      "nameJa": "ニジェール川",
+      "relatedCountries": [
+        "NGA"
+      ],
+      "summary": "西アフリカを大湾曲してギニア湾へ注ぐ外来河川的性格を持つ大河。河口に原油を産するニジェールデルタを形成。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_tigris_euphrates",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          39.0,
+          38.5
+        ],
+        [
+          40.5,
+          35.5
+        ],
+        [
+          43.5,
+          33.5
+        ],
+        [
+          46.5,
+          31.0
+        ],
+        [
+          48.6,
+          30.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_tigris_euphrates",
+      "layerType": "river",
+      "nameJa": "ティグリス・ユーフラテス川（外来河川）",
+      "relatedCountries": [
+        "TUR",
+        "IRQ"
+      ],
+      "summary": "トルコを源流としメソポタミア砂漠を流れる外来河川。上流ダム開発と塩害が国際問題。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_indus",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          79.0,
+          32.5
+        ],
+        [
+          75.0,
+          34.5
+        ],
+        [
+          71.5,
+          31.0
+        ],
+        [
+          68.8,
+          27.5
+        ],
+        [
+          67.5,
+          24.0
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_indus",
+      "layerType": "river",
+      "nameJa": "インダス川（外来河川）",
+      "relatedCountries": [
+        "PAK",
+        "IND"
+      ],
+      "summary": "ヒマラヤ雪解け水を乾燥地パキスタンへ運ぶ外来河川。灌漑農業（綿花・小麦）の命脈だが塩害が深刻。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_ganges",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          78.5,
+          30.0
+        ],
+        [
+          82.0,
+          26.0
+        ],
+        [
+          86.0,
+          25.3
+        ],
+        [
+          89.5,
+          23.5
+        ],
+        [
+          90.6,
+          22.2
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_ganges",
+      "layerType": "river",
+      "nameJa": "ガンジス川",
+      "relatedCountries": [
+        "IND",
+        "BGD"
+      ],
+      "summary": "ヒマラヤに発し肥沃なヒンドゥスタン平野を流れ、世界最大のベンガルデルタ（稲作・ジュート・洪水多発）を形成。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_mekong",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          96.0,
+          32.0
+        ],
+        [
+          100.5,
+          21.5
+        ],
+        [
+          102.5,
+          18.0
+        ],
+        [
+          105.5,
+          14.5
+        ],
+        [
+          105.0,
+          11.5
+        ],
+        [
+          106.5,
+          9.8
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_mekong",
+      "layerType": "river",
+      "nameJa": "メコン川（国際河川）",
+      "relatedCountries": [
+        "CHN",
+        "MMR",
+        "THA",
+        "VNM"
+      ],
+      "summary": "チベット高原から東南アジア6カ国を貫流しメコンデルタ（ベトナム）で稲作を支える。上流ダムや塩害が論点。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_changjiang",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          97.0,
+          33.0
+        ],
+        [
+          102.0,
+          27.5
+        ],
+        [
+          106.5,
+          29.5
+        ],
+        [
+          111.0,
+          30.7
+        ],
+        [
+          114.3,
+          30.6
+        ],
+        [
+          118.8,
+          32.0
+        ],
+        [
+          121.9,
+          31.4
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_changjiang",
+      "layerType": "river",
+      "nameJa": "長江（揚子江）",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "summary": "アジア最長河川。中流に三峡ダム、流域に肥沃な稲作地帯・南水北調の起点・長江デルタ経済圏（上海）。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_huanghe",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          98.0,
+          34.5
+        ],
+        [
+          104.0,
+          36.0
+        ],
+        [
+          109.0,
+          40.5
+        ],
+        [
+          110.5,
+          35.0
+        ],
+        [
+          115.0,
+          35.5
+        ],
+        [
+          119.0,
+          37.7
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_huanghe",
+      "layerType": "river",
+      "nameJa": "黄河",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "summary": "黄土高原の黄土（レス）を運ぶため土砂が多く下流の華北平原では天井川化・洪水と断流が問題。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_mississippi",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -95.0,
+          47.0
+        ],
+        [
+          -91.0,
+          41.5
+        ],
+        [
+          -90.2,
+          38.6
+        ],
+        [
+          -90.0,
+          35.0
+        ],
+        [
+          -91.2,
+          31.0
+        ],
+        [
+          -89.2,
+          29.1
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_mississippi",
+      "layerType": "river",
+      "nameJa": "ミシシッピ川",
+      "relatedCountries": [
+        "USA"
+      ],
+      "summary": "中央平原のコーンベルト・穀倉地帯の穀物輸送（バージ水運）の動脈。河口に大規模な鳥趾状三角州を形成。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_amazon",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -73.5,
+          -4.5
+        ],
+        [
+          -69.0,
+          -4.2
+        ],
+        [
+          -64.0,
+          -3.5
+        ],
+        [
+          -60.0,
+          -3.1
+        ],
+        [
+          -55.0,
+          -2.3
+        ],
+        [
+          -49.5,
+          -0.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_amazon",
+      "layerType": "river",
+      "nameJa": "アマゾン川",
+      "relatedCountries": [
+        "PER",
+        "COL",
+        "BRA"
+      ],
+      "summary": "世界最大流域面積・流量。大型船がマナウスまで遡上でき、周囲に広大なセルバ（熱帯雨林）が広がる。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "rv_murray_darling",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          149.0,
+          -29.0
+        ],
+        [
+          145.0,
+          -32.0
+        ],
+        [
+          142.0,
+          -34.1
+        ],
+        [
+          139.0,
+          -35.5
+        ]
+      ]
+    },
+    "properties": {
+      "id": "rv_murray_darling",
+      "layerType": "river",
+      "nameJa": "マレー・ダーリング川",
+      "relatedCountries": [
+        "AUS"
+      ],
+      "summary": "グレートディバイディング山脈に発しオーストラリア南東部の小麦・羊混合農業地帯（灌漑）を潤す。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_sognefjord",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        5.5,
+        61.1
+      ]
+    },
+    "properties": {
+      "id": "lf_sognefjord",
+      "layerType": "landform_point",
+      "subType": "fjord",
+      "nameJa": "ソグネフィヨルド",
+      "relatedCountries": [
+        "NOR"
+      ],
+      "summary": "ノルウェー西岸の世界最大規模のフィヨルド。氷食U字谷の溺れ谷。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_milford_sound",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        167.9,
+        -44.6
+      ]
+    },
+    "properties": {
+      "id": "lf_milford_sound",
+      "layerType": "landform_point",
+      "subType": "fjord",
+      "nameJa": "ミルフォードサウンド（NZフィヨルド）",
+      "relatedCountries": [
+        "NZL"
+      ],
+      "summary": "ニュージーランド南島南西部の氷食フィヨルド海岸。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_patagonia_fjord",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -74.0,
+        -47.0
+      ]
+    },
+    "properties": {
+      "id": "lf_patagonia_fjord",
+      "layerType": "landform_point",
+      "subType": "fjord",
+      "nameJa": "チリ南部フィヨルド（サケ養殖海域）",
+      "relatedCountries": [
+        "CHL"
+      ],
+      "summary": "波静かで冷涼なフィヨルド地形を活用した世界第2位のサケ・マス養殖地。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_elbe_estuary",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        9.0,
+        53.85
+      ]
+    },
+    "properties": {
+      "id": "lf_elbe_estuary",
+      "layerType": "landform_point",
+      "subType": "estuary",
+      "nameJa": "エルベ川のエスチュアリー（ハンブルク）",
+      "relatedCountries": [
+        "DEU"
+      ],
+      "summary": "干満差の大きい北海に面するラッパ状の河口（三角江）。ハンブルク港が外洋船遡上で発展。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_thames_estuary",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        0.7,
+        51.5
+      ]
+    },
+    "properties": {
+      "id": "lf_thames_estuary",
+      "layerType": "landform_point",
+      "subType": "estuary",
+      "nameJa": "テムズ川のエスチュアリー（ロンドン）",
+      "relatedCountries": [
+        "GBR"
+      ],
+      "summary": "河口港ロンドンの発展を支えた典型的なエスチュアリー。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_nile_delta",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0,
+        31.1
+      ]
+    },
+    "properties": {
+      "id": "lf_nile_delta",
+      "layerType": "landform_point",
+      "subType": "delta",
+      "nameJa": "ナイル川デルタ（円弧状三角州）",
+      "relatedCountries": [
+        "EGY"
+      ],
+      "summary": "地中海の小さい潮汐で形成された扇形三角州。ダム建設後は海岸侵食と塩害が進行。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_mississippi_delta",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -89.2,
+        29.15
+      ]
+    },
+    "properties": {
+      "id": "lf_mississippi_delta",
+      "layerType": "landform_point",
+      "subType": "delta",
+      "nameJa": "ミシシッピ川デルタ（鳥趾状三角州）",
+      "relatedCountries": [
+        "USA"
+      ],
+      "summary": "波浪の弱いメキシコ湾に鳥の足指状に伸びる代表的な鳥趾状三角州。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_bengal_delta",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        90.3,
+        22.8
+      ]
+    },
+    "properties": {
+      "id": "lf_bengal_delta",
+      "layerType": "landform_point",
+      "subType": "delta",
+      "nameJa": "ガンジス川デルタ（ベンガルデルタ）",
+      "relatedCountries": [
+        "BGD",
+        "IND"
+      ],
+      "summary": "世界最大の三角州。稲作・ジュートが盛んだが洪水・サイクロン高潮・海面上昇の危機。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_mekong_delta",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        105.8,
+        9.9
+      ]
+    },
+    "properties": {
+      "id": "lf_mekong_delta",
+      "layerType": "landform_point",
+      "subType": "delta",
+      "nameJa": "メコン川デルタ",
+      "relatedCountries": [
+        "VNM"
+      ],
+      "summary": "ベトナム最大の米作地帯。上流ダムや海面上昇による塩害が課題。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_sanriku_rias",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        141.9,
+        39.4
+      ]
+    },
+    "properties": {
+      "id": "lf_sanriku_rias",
+      "layerType": "landform_point",
+      "subType": "rias",
+      "nameJa": "三陸海岸（リアス海岸）",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "summary": "河川のV字谷が沈水してできた複雑な入り江。養殖・漁港に適する一方、V字湾奥で津波が増幅されやすい。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_gbr",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        147.7,
+        -18.3
+      ]
+    },
+    "properties": {
+      "id": "lf_gbr",
+      "layerType": "landform_point",
+      "subType": "coral_reef",
+      "nameJa": "グレートバリアリーフ",
+      "relatedCountries": [
+        "AUS"
+      ],
+      "summary": "世界最大のサンゴ礁（堡礁）。海水温上昇による白化現象が課題。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_aral_sea",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        59.8,
+        45.0
+      ]
+    },
+    "properties": {
+      "id": "lf_aral_sea",
+      "layerType": "landform_point",
+      "subType": "environmental",
+      "nameJa": "アラル海（縮小した塩湖）",
+      "relatedCountries": [
+        "KAZ",
+        "UZB"
+      ],
+      "summary": "綿花等の過剰灌漑で面積が1割前後まで縮小した環境問題の象徴。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_polder",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        5.4,
+        52.5
+      ]
+    },
+    "properties": {
+      "id": "lf_polder",
+      "layerType": "landform_point",
+      "subType": "polder",
+      "nameJa": "オランダのポルダー（干拓地）",
+      "relatedCountries": [
+        "NLD"
+      ],
+      "summary": "海抜0m以下の干拓地。園芸農業・酪農と防潮堤（デルタ計画）。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_paris_cuesta",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        4.0,
+        49.0
+      ]
+    },
+    "properties": {
+      "id": "lf_paris_cuesta",
+      "layerType": "landform_point",
+      "subType": "cuesta",
+      "nameJa": "パリ盆地のケスタ地形",
+      "relatedCountries": [
+        "FRA"
+      ],
+      "summary": "硬軟の地層の差別侵食による階段状の非対称丘陵。シャンパーニュ等のぶどう畑・歴史防衛線。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_atacama",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -69.5,
+        -23.5
+      ]
+    },
+    "properties": {
+      "id": "lf_atacama",
+      "layerType": "landform_point",
+      "subType": "desert",
+      "nameJa": "アタカマ砂漠（海岸砂漠・リチウム塩湖）",
+      "relatedCountries": [
+        "CHL"
+      ],
+      "summary": "ペルー海流による世界最乾燥の海岸砂漠。塩湖のリチウム・銅鉱山が分布。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_guilin_karst",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        110.3,
+        25.2
+      ]
+    },
+    "properties": {
+      "id": "lf_guilin_karst",
+      "layerType": "landform_point",
+      "subType": "karst",
+      "nameJa": "桂林のタワーカルスト",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "summary": "高温多雨な華南の石灰岩溶食による塔状カルスト地形。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "lf_great_lakes",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -84.5,
+        45.0
+      ]
+    },
+    "properties": {
+      "id": "lf_great_lakes",
+      "layerType": "landform_point",
+      "subType": "glacial_lake",
+      "nameJa": "五大湖（氷食湖・ラストベルト）",
+      "relatedCountries": [
+        "USA",
+        "CAN"
+      ],
+      "summary": "大陸氷河が削った世界最大の淡水湖群。周辺は鉄鉱石（メサビ）と石炭を結ぶ重工業・酪農地帯。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_malacca",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        101.2,
+        2.5
+      ]
+    },
+    "properties": {
+      "id": "sc_malacca",
+      "layerType": "strait_canal",
+      "nameJa": "マラッカ海峡",
+      "relatedCountries": [
+        "MYS",
+        "IDN",
+        "SGP"
+      ],
+      "summary": "インド洋と南シナ海を結ぶ東アジア原油輸送の大動脈。要衝にシンガポールが位置。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_hormuz",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        56.3,
+        26.6
+      ]
+    },
+    "properties": {
+      "id": "sc_hormuz",
+      "layerType": "strait_canal",
+      "nameJa": "ホルムズ海峡",
+      "relatedCountries": [
+        "IRN",
+        "ARE",
+        "SAU"
+      ],
+      "summary": "ペルシャ湾の出口。世界の海上原油輸送の約2〜3割が通過する最重要エネルギー要衝。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_suez",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        32.35,
+        30.58
+      ]
+    },
+    "properties": {
+      "id": "sc_suez",
+      "layerType": "strait_canal",
+      "nameJa": "スエズ運河",
+      "relatedCountries": [
+        "EGY"
+      ],
+      "summary": "地中海と紅海を結ぶ水平式運河（閘門なし）。欧州〜アジア航路を大幅短縮。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_panama",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -79.9,
+        9.1
+      ]
+    },
+    "properties": {
+      "id": "sc_panama",
+      "layerType": "strait_canal",
+      "nameJa": "パナマ運河",
+      "relatedCountries": [
+        "USA"
+      ],
+      "summary": "太平洋と大西洋を結ぶ閘門式運河。エルニーニョ時の干ばつ（ガトゥン湖水位低下）による通航制限が時事論点。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_gibraltar",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -5.6,
+        35.97
+      ]
+    },
+    "properties": {
+      "id": "sc_gibraltar",
+      "layerType": "strait_canal",
+      "nameJa": "ジブラルタル海峡",
+      "relatedCountries": [
+        "ESP",
+        "MAR",
+        "GBR"
+      ],
+      "summary": "地中海と大西洋を結ぶ狭隘海峡。アフリカ〜欧州間の自動車物流や不法越境ルートの要衝。",
+      "importance": "A"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_bosphorus",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        29.07,
+        41.12
+      ]
+    },
+    "properties": {
+      "id": "sc_bosphorus",
+      "layerType": "strait_canal",
+      "nameJa": "ボスポラス海峡（イスタンブール）",
+      "relatedCountries": [
+        "TUR"
+      ],
+      "summary": "黒海と地中海を結びヨーロッパとアジアを分ける海峡。ウクライナ・ロシアの穀物・原油輸出の出口。",
+      "importance": "S"
+    }
+  },
+  {
+    "type": "Feature",
+    "id": "sc_dover",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        1.45,
+        51.05
+      ]
+    },
+    "properties": {
+      "id": "sc_dover",
+      "layerType": "strait_canal",
+      "nameJa": "ドーバー海峡（英仏海峡トンネル）",
+      "relatedCountries": [
+        "GBR",
+        "FRA"
+      ],
+      "summary": "イギリスとフランスを隔てる世界屈指の過密航路。海底トンネル（ユーロスター）で直結。",
+      "importance": "A"
+    }
+  }
+]

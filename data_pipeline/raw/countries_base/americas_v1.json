@@ -1,0 +1,1161 @@
+{
+  "USA": {
+    "iso3": "USA",
+    "nameJa": "アメリカ合衆国",
+    "nameEn": "United States",
+    "region": "北アメリカ",
+    "subRegion": "アングロアメリカ",
+    "capital": "ワシントンD.C.",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "南北3地形配列（ロッキー・中央平原/グレートプレーンズ・アパラチア）と西経100度線",
+        "適地適作の企業的農業帯（酪農・コーン・春/冬小麦・綿花・地中海式・牧畜）とアグリビジネス",
+        "ラストベルト（スノーベルト）からサンベルト（シリコンバレー等）への移動とシェール革命",
+        "サラダボウル・WASP・ヒスパニック急増・メガロポリス・インナーシティ・ジェントリフィケーション"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（ロッキー山脈・シエラネバダ・カスケード山脈・サンアンドレアス断層）",
+        "古期造山帯（アパラチア山脈）",
+        "安定陸塊（カナダ楯状地南縁・中央平原・グレートプレーンズ・ミシシッピ川鳥趾状三角州）"
+      ],
+      "summary": "西部に険しい新期造山帯（ロッキー山脈・太平洋岸の地震・火山帯）、中央に氷河が削った五大湖と広大な大平原（プレーリー／グレートプレーンズ）、東部に炭田を伴うなだらかな古期造山帯（アパラチア山脈）が南北に並走。",
+      "items": [
+        {
+          "id": "usa_500mm_ogallala",
+          "category": "landform",
+          "label": "西経100度線（年降水量500mm線）とオガララ帯水層・センターピボット灌漑",
+          "detail": "西経100度線を境に東側（プレーリー）は湿潤（500mm以上）で肥沃なプレーリー土（モールソル）による畑作、西側（グレートプレーンズ）はロッキー山脈の雨蔭効果による半乾燥ステップ気候（500mm未満）で企業的牧畜・灌漑農業。世界最大級のオガララ帯水層を用いた円形スプリンクラー（センターピボット）による地下水位低下・枯渇が深刻。",
+          "clozeTerms": ["西経100度線", "年降水量500mm", "グレートプレーンズ", "オガララ帯水層", "センターピボット"],
+          "tags": ["グレートプレーンズ", "センターピボット", "水資源", "乾燥帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "usa_tectonic_mississippi",
+          "category": "tectonic",
+          "label": "サンアンドレアス断層（ずれる境界）・ミシシッピ川鳥趾状三角州・ハリケーン/トルネード",
+          "detail": "カリフォルニア州は太平洋プレートと北アメリカプレートの「ずれる境界（トランスフォーム断層＝サンアンドレアス断層）」で地震多発。ミシシッピ川河口は波浪の弱いメキシコ湾に突き出す典型的な鳥趾状三角州。大平原では竜巻（トルネード）、南部湾岸（ニューオーリンズ等）ではハリケーン災害が頻発。",
+          "clozeTerms": ["サンアンドレアス断層", "ずれる境界", "鳥趾状三角州", "ミシシッピ川", "ハリケーン"],
+          "tags": ["プレート境界", "三角州", "自然災害", "鳥趾状三角州"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfa", "Dfa", "Dfb", "Csb", "Csa", "BWh", "BSk", "Aw", "ET"],
+      "summary": "広大な国土と東西の地形により多様な気候。東岸・南東部は温暖湿潤・冷帯（Cfa/Dfa：冬は寒気団南下で東京より寒冷）、西岸カリフォルニアは亜熱帯高圧帯＋カリフォルニア海流（寒流）により地中海性気候（Csb/Csa）、内陸西部は雨蔭効果による砂漠・ステップ（BWh/BSk）、北西アラスカ沿岸は偏西風とアラスカ海流（暖流）でCfb/Dfc。",
+      "cities": [
+        {
+          "cityId": "USA_NYC",
+          "nameJa": "ニューヨーク",
+          "nameEn": "New York",
+          "lat": 40.71,
+          "lng": -74.01,
+          "elevationM": 10,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候",
+          "factors": ["大陸東岸のため年間降水量が均等に多い（約1250mm）", "冬の寒気南下で1月は0〜1℃と西岸同緯度より寒冷"],
+          "monthlyTempC": [0.9, 2.2, 6.0, 12.1, 17.5, 22.6, 25.3, 24.6, 20.6, 14.4, 8.9, 3.8],
+          "monthlyPrecipMm": [92, 81, 109, 104, 102, 115, 117, 115, 110, 99, 91, 111],
+          "dataSource": "NOAA 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "USA_CHICAGO",
+          "nameJa": "シカゴ",
+          "nameEn": "Chicago",
+          "lat": 41.88,
+          "lng": -87.63,
+          "elevationM": 182,
+          "koppenCode": "Dfa",
+          "koppenNameJa": "亜寒帯湿潤気候（夏季高温）",
+          "factors": ["五大湖（ミシガン湖）岸の大陸内陸部", "南北に障壁がなく冬の北極寒気団が直接南下し-4℃、夏は24℃超"],
+          "monthlyTempC": [-4.0, -2.1, 3.5, 9.6, 15.6, 21.3, 24.1, 23.2, 19.1, 12.2, 5.1, -1.2],
+          "monthlyPrecipMm": [51, 49, 64, 94, 112, 104, 94, 108, 82, 82, 61, 56],
+          "dataSource": "NOAA 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "USA_SF",
+          "nameJa": "サンフランシスコ",
+          "nameEn": "San Francisco",
+          "lat": 37.77,
+          "lng": -122.42,
+          "elevationM": 16,
+          "koppenCode": "Csb",
+          "koppenNameJa": "地中海性気候（夏冷涼）",
+          "factors": ["夏は亜熱帯高圧帯で乾燥＋カリフォルニア海流（寒流）と湧昇流で夏でも17℃と涼しく海霧発生", "冬は偏西風で多雨"],
+          "monthlyTempC": [10.8, 12.1, 12.9, 13.7, 14.8, 16.2, 16.6, 17.3, 17.7, 16.6, 13.4, 10.7],
+          "monthlyPrecipMm": [112, 105, 79, 39, 13, 4, 1, 2, 5, 27, 68, 118],
+          "dataSource": "NOAA 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "USA_PHOENIX",
+          "nameJa": "フェニックス",
+          "nameEn": "Phoenix",
+          "lat": 33.45,
+          "lng": -112.07,
+          "elevationM": 331,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["亜熱帯高圧帯＋山脈の雨蔭効果", "夏季平均35℃超の酷暑、年間降水量約180mm"],
+          "monthlyTempC": [13.2, 15.1, 18.6, 22.8, 27.9, 33.2, 35.4, 34.8, 31.6, 25.0, 17.8, 12.8],
+          "monthlyPrecipMm": [22, 22, 21, 6, 3, 1, 23, 24, 15, 14, 15, 19],
+          "dataSource": "NOAA 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "USA_MIAMI",
+          "nameJa": "マイアミ",
+          "nameEn": "Miami",
+          "lat": 25.76,
+          "lng": -80.19,
+          "elevationM": 2,
+          "koppenCode": "Am",
+          "koppenNameJa": "熱帯モンスーン気候",
+          "factors": ["フロリダ湾流（暖流）で冬も20℃超", "夏〜秋（6〜10月）にハリケーンと熱帯降雨が集中（年1700mm）"],
+          "monthlyTempC": [20.3, 21.4, 22.8, 24.8, 26.8, 28.2, 29.0, 29.1, 28.4, 26.6, 23.8, 21.6],
+          "monthlyPrecipMm": [48, 55, 65, 88, 155, 255, 175, 230, 260, 180, 90, 58],
+          "dataSource": "NOAA 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業", "企業的穀物農業", "企業的牧畜", "酪農", "地中海式農業", "園芸農業"],
+      "agriculture": [
+        {
+          "id": "usa_agricultural_belts",
+          "label": "適地適作の農業帯（酪農・コーン・冬/春小麦・綿花・カリフォルニア地中海式・牧畜）",
+          "detail": "①五大湖〜北東部（氷河地形の痩せた土地＋大消費地）＝酪農地帯、②中央平原＝コーンベルト（トウモロコシ・大豆輪作＋豚・肉牛のフィードロット肥育）、③グレートプレーンズ＝小麦地帯（北部ノースダコタ等は冬厳しく春小麦、南部カンザス等は冬小麦）、④南部〜西部の灌漑＝綿花地帯（コットンベルト）、⑤西経100度以西＝企業的牧畜、⑥カリフォルニア（セントラルバレー）＝灌漑による地中海式農業（オレンジ・ぶどう・アーモンド・米）。",
+          "worldRank": 1,
+          "worldRankNote": "トウモロコシ・牛肉・鶏肉生産 世界1位、大豆・小麦輸出世界トップ級",
+          "clozeTerms": ["適地適作", "コーンベルト", "春小麦", "冬小麦", "フィードロット", "地中海式農業"],
+          "tags": ["企業的穀物農業", "トウモロコシ", "小麦", "大豆", "酪農"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "usa_agribusiness",
+          "label": "アグリビジネス（巨大穀物メジャー・遺伝子組換え作物）とバイオエタノール",
+          "detail": "種子・農薬・遺伝子組換え（GMO）・流通（カーギル等穀物メジャー）を垂直統合した企業的農業。トウモロコシの約3〜4割はバイオエタノール燃料（自動車ガソリン混入）や飼料向けに利用。",
+          "clozeTerms": ["アグリビジネス", "穀物メジャー", "バイオエタノール"],
+          "tags": ["アグリビジネス", "トウモロコシ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "usa_shale_oil_gas_coal",
+          "label": "シェール革命による原油・天然ガス世界1位（純輸出国化）とメサビ鉄山・アパラチア炭田",
+          "detail": "伝統的なアパラチア炭田・ワイオミング炭田・五大湖西岸メサビ鉄山・メキシコ湾岸原油に加え、水圧破砕法によるシェールガス・シェールオイル増産で世界最大の産油・天然ガス産出国（LNG輸出大国）となった。",
+          "worldRank": 1,
+          "worldRankNote": "原油・天然ガス産出 世界1位",
+          "clozeTerms": ["シェールガス", "シェールオイル", "メサビ鉄山", "アパラチア炭田"],
+          "tags": ["原油", "天然ガス", "シェール", "石炭"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "usa_rustbelt_to_sunbelt",
+          "label": "ラストベルト（五大湖・北東部）の衰退とサンベルト（北緯37度以南）への大移動",
+          "detail": "五大湖周辺（デトロイト自動車、ピッツバーグ鉄鋼、クリーブランド等）は1970年代以降の外国企業との競争や工場移転で「ラストベルト（錆びた工業地帯）／スノーベルト」化。代わって温暖・低賃金・非労組環境・大学研究機関を背景に北緯37度以南の「サンベルト」が急成長：シリコンバレー（IT/AI/半導体・スタンフォード大）、シアトル（航空ボーイング・クラウドIT＝例外的に北部）、ロサンゼルス（映画・航空）、ヒューストン（石油化学・NASA宇宙）、アトランタ、オースティン、リサーチ・トライアングル。",
+          "clozeTerms": ["ラストベルト", "サンベルト", "シリコンバレー", "北緯37度線", "デトロイト", "ピッツバーグ"],
+          "tags": ["サンベルト", "ラストベルト", "ICT", "自動車", "ハイテク産業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油・石油製品・LNG", "航空機・宇宙機器", "半導体・集積回路・一般機械", "医薬品", "農産物（大豆・トウモロコシ）"],
+        "majorImports": ["自動車・部品", "スマートフォン・PC", "衣類・日用品", "医薬品"],
+        "majorPartners": ["メキシコ", "カナダ", "中国", "ドイツ", "日本"],
+        "note": "経常・貿易赤字が恒常的だが、ICTサービス・金融・知財収支は黒字。USMCAによりメキシコ・カナダとの北米域内分業（生産・供給網）を重視。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語、ロマンス語派：スペイン語）",
+      "officialLanguages": ["事実上の英語（連邦法上の法定公用語なし／スペイン語が南部・西部で広く併用）"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：南部バイブルベルト等）", "percent": 43 },
+        { "name": "キリスト教（カトリック：ヒスパニック・北東部中心）", "percent": 20 },
+        { "name": "無宗教・ユダヤ教・イスラム教ほか", "percent": 37 }
+      ],
+      "ethnicGroups": ["白人（非ヒスパニック系約58%）", "ヒスパニック・ラテン系（約19%・最大マイノリティ）", "アフリカ系（約12%）", "アジア系（約6%）", "先住民（ネイティブ・アメリカン）"],
+      "regionalIntegrations": ["USMCA（米国・メキシコ・カナダ協定、旧NAFTA）", "NATO", "G7", "APEC", "OECD"],
+      "historicalContext": [
+        {
+          "id": "usa_salad_bowl_hispanic",
+          "label": "WASP支配から「サラダボウル」・ヒスパニック急増への人口変化",
+          "detail": "建国主体のWASP（白人・アングロサクソン系・プロテスタント）中心社会から、同化（るつぼ）ではなく各文化を保つ「サラダボウル」へ。1965年移民法改正以降アジア系（西海岸）やヒスパニック（カリフォルニア・テキサス・フロリダ等の南西部）が急増し、出生率も支えて先進国では例外的に人口増加が続く。",
+          "clozeTerms": ["サラダボウル", "WASP", "ヒスパニック", "先住民（リザベーション）"],
+          "tags": ["ヒスパニック", "移民", "人口", "多民族"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "usa_urban_structure",
+          "label": "メガロポリスと都市構造問題（ドーナツ化・インナーシティ・ジェントリフィケーション・エッジシティ）",
+          "detail": "北東部大西洋岸のボストン〜ワシントンD.C.に連なる巨大都市群「メガロポリス」。モータリゼーションによる郊外化（スプロール現象）と都心荒廃（インナーシティ問題・人種別居住分離＝セグリゲーション）、郊外商業核（エッジシティ）形成、近年は富裕層・若年層の都心再開発（ジェントリフィケーション）による元住民追い出しが頻出論点。",
+          "clozeTerms": ["メガロポリス", "インナーシティ問題", "ジェントリフィケーション", "スプロール現象", "セグリゲーション"],
+          "tags": ["都市構造", "都市圏", "大都市圏"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "CAN": {
+    "iso3": "CAN",
+    "nameJa": "カナダ",
+    "nameEn": "Canada",
+    "region": "北アメリカ",
+    "subRegion": "アングロアメリカ",
+    "capital": "オタワ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "カナダ楯状地・氷河湖（五大湖）とタイガ林（紙・パルプ世界有数）",
+        "安価な水力発電によるアルミニウム精錬（キティマット等）とオイルサンド・ウラン",
+        "英語・フランス語（ケベック州）の2公用語とモザイク国家・多文化主義・プレーリー春小麦"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（カナダ楯状地）", "新期造山帯（カナディアンロッキー）"],
+      "summary": "国土東半分の大部分が大陸氷河（ローレンタイド氷床）に削られたカナダ楯状地で、無数の氷食湖（五大湖・グレートベア湖等）が分布。西岸はフィヨルド海岸。",
+      "items": [
+        {
+          "id": "can_shield_glacier",
+          "category": "landform",
+          "label": "カナダ楯状地と大陸氷河による無数の氷食湖・フィヨルド・ツンドラ",
+          "detail": "最終氷期に厚い氷床が表土を削ぎ落としたため、露出した先カンブリア時代基盤岩（鉄・ニッケル・ウラン等豊富）と無数の湖沼が残り、北部は永久凍土・ツンドラ。",
+          "clozeTerms": ["カナダ楯状地", "氷食湖", "フィヨルド", "ツンドラ"],
+          "tags": ["氷河地形", "安定陸塊", "ツンドラ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Dfc", "Cfb", "BSk", "ET"],
+      "summary": "南部大都市（トロント・モントリオール）はDfb、太平洋岸バンクーバーは暖流（アラスカ海流）と偏西風で温暖・冬多雨のCfb、北部はDfc・ET。",
+      "cities": [
+        {
+          "cityId": "CAN_TORONTO",
+          "nameJa": "トロント",
+          "nameEn": "Toronto",
+          "lat": 43.65,
+          "lng": -79.38,
+          "elevationM": 76,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["オンタリオ湖沿岸で冬季やや積雪", "夏21〜22℃・冬-4℃前後"],
+          "monthlyTempC": [-4.2, -3.4, 1.3, 7.8, 14.1, 19.4, 22.3, 21.5, 17.2, 10.6, 4.7, -1.0],
+          "monthlyPrecipMm": [56, 49, 58, 69, 77, 74, 76, 80, 79, 69, 75, 62],
+          "dataSource": "ECCC / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CAN_VANCOUVER",
+          "nameJa": "バンクーバー",
+          "nameEn": "Vancouver",
+          "lat": 49.28,
+          "lng": -123.12,
+          "elevationM": 4,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["アラスカ海流（暖流）＋偏西風＋コースト山脈の地形性降雨で冬多雨・冬温和（最寒月4℃）"],
+          "monthlyTempC": [4.1, 4.9, 6.9, 9.6, 13.1, 15.9, 18.4, 18.3, 15.2, 10.5, 6.4, 3.8],
+          "monthlyPrecipMm": [168, 104, 114, 88, 65, 54, 36, 37, 51, 120, 188, 162],
+          "dataSource": "ECCC / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的穀物農業", "酪農", "林業"],
+      "agriculture": [
+        {
+          "id": "can_prairie_wheat_rapeseed",
+          "label": "プレーリー（マニトバ・サスカチュワン・アルバータ州）の春小麦・菜種（キャノーラ）",
+          "detail": "冬季が厳寒のため春に種をまき秋に収穫する春小麦の企業的農業が発達。カナダは小麦・菜種（キャノーラ油）の世界屈指の輸出国。オンタリオ・ケベック南部は酪農・メープルシロップ。",
+          "worldRank": 1,
+          "worldRankNote": "菜種（キャノーラ）・レンズ豆生産輸出 世界1位、小麦輸出トップ5",
+          "clozeTerms": ["春小麦", "プレーリー", "キャノーラ"],
+          "tags": ["小麦", "企業的穀物農業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "can_hydro_oilsands_potash",
+          "label": "水力発電（国内電力約6割）＋オイルサンド（アルバータ）・ウラン・カリウム・ニッケル",
+          "detail": "ケベック州やBC州の豊かな水力発電により、電力を大量消費する「アルミニウム精錬（キティマット等）」が立地（動力指向型工業の典型）。アルバータ州のオイルサンド（非在来型原油）により世界4位級の産油国。",
+          "worldRank": 1,
+          "worldRankNote": "カリウム（肥料）生産 世界1位、ウラン2位級、木材パルプ輸出上位",
+          "clozeTerms": ["水力発電", "アルミニウム精錬", "オイルサンド", "キティマット"],
+          "tags": ["水力発電", "アルミ精錬", "原油", "ウラン"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "can_pulp_usmca",
+          "label": "タイガを活かした木材・紙・パルプ工業とオンタリオの対米自動車組立",
+          "detail": "人口が米国国境付近（五大湖・セントローレンス川沿い）に集中し、USMCAの下で米国市場向け自動車組立（トロント周辺）や航空機製造を展開。",
+          "clozeTerms": ["タイガ", "紙・パルプ", "USMCA"],
+          "tags": ["林業", "自動車", "USMCA"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油（オイルサンド含む）", "自動車・部品", "木材・紙パルプ", "金・カリウム・小麦"],
+        "majorImports": ["自動車・機械", "電気機器", "医薬品"],
+        "majorPartners": ["アメリカ（輸出の約75%）", "中国", "イギリス", "日本"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（英語：ゲルマン語派／フランス語：ロマンス語派）",
+      "officialLanguages": ["英語", "フランス語（ケベック州ではフランス語が主言語）"],
+      "religions": [
+        { "name": "キリスト教（カトリック＝仏系・移民中心、プロテスタント）", "percent": 53 },
+        { "name": "無宗教・イスラム教・ヒンドゥー教・シク教（近年移民で急増）", "percent": 47 }
+      ],
+      "ethnicGroups": ["イギリス系・フランス系（ケベック州中心）", "アジア系移民（バンクーバー・トロント等に急増）", "先住民（ファーストネーションズ・イヌイット＝ヌナブト準州）"],
+      "regionalIntegrations": ["USMCA", "G7", "NATO", "APEC", "CPTPP", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "can_multiculturalism_quebec",
+          "label": "英仏二言語主義とケベック分離運動・国家方針「多文化主義（モザイク国家）」",
+          "detail": "1971年に世界で初めて「多文化主義」を国家公式方針とし、各民族の文化を保持する「人種のモザイク」を形成。ケベック州（フランス系・カトリック）の分離独立住民投票（1995年僅差で否決）や、1999年イヌイット自治準州「ヌナブト準州」設立も重要。",
+          "clozeTerms": ["ケベック州", "多文化主義", "イヌイット", "ヌナブト準州", "二言語公用語"],
+          "tags": ["言語", "多民族", "先住民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "MEX": {
+    "iso3": "MEX",
+    "nameJa": "メキシコ",
+    "nameEn": "Mexico",
+    "region": "北アメリカ（ラテンアメリカ）",
+    "subRegion": "中央アメリカ",
+    "capital": "メキシコシティ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "マキラドーラ（米国国境沿いの保税加工区）とUSMCAによる自動車・家電輸出",
+        "メキシコ高原（標高約2200mの常春都市メキシコシティ）と大気汚染・地震",
+        "銀産出世界1位・原油・アボカドと対米移民（送金）・メスティーソ"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（環太平洋造山帯・シエラマドレ山脈）"],
+      "summary": "東西をシエラマドレ山脈に挟まれた標高2000m前後のメキシコ高原が主体。ココスプレート沈み込みによる火山・地震（メキシコシティ地震）が頻発。",
+      "items": [
+        {
+          "id": "mex_highland_climate",
+          "category": "landform",
+          "label": "メキシコ高原の高度別気候帯（ティエラ・フリア等の常春）と盆地の大気汚染",
+          "detail": "低緯度（北緯19度）にもかかわらず標高約2240mのためメキシコシティは年中13〜19℃の常春（ティエラ・フリア）。周囲を山に囲まれた盆地のため自動車排ガス等による大気汚染と地盤沈下が深刻。",
+          "clozeTerms": ["メキシコ高原", "盆地", "常春"],
+          "tags": ["新期造山帯", "大気汚染", "地震"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cwb", "BSh", "BWh", "Aw"],
+      "summary": "北部は乾燥（BWh/BSh）、南部低地は熱帯（Aw）、メキシコ高原（メキシコシティ）は高標高による温帯夏雨（Cwb）。",
+      "cities": [
+        {
+          "cityId": "MEX_CITY",
+          "nameJa": "メキシコシティ",
+          "nameEn": "Mexico City",
+          "lat": 19.43,
+          "lng": -99.13,
+          "elevationM": 2240,
+          "koppenCode": "Cwb",
+          "koppenNameJa": "温帯夏雨気候（熱帯高地・常春）",
+          "factors": ["熱帯に位置するが標高2240mのため年平均気温16〜17℃で年較差小", "6〜9月雨季・冬乾季"],
+          "monthlyTempC": [13.8, 15.2, 17.5, 19.1, 19.3, 18.4, 17.3, 17.5, 17.0, 16.0, 14.9, 13.8],
+          "monthlyPrecipMm": [9, 7, 13, 27, 58, 135, 180, 175, 145, 58, 12, 6],
+          "dataSource": "SMN / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["焼畑・自給的農業（トウモロコシ）", "企業的牧畜", "プランテーション・園芸"],
+      "agriculture": [
+        {
+          "id": "mex_corn_avocado",
+          "label": "トウモロコシ原産地と米国向けアボカド・トマト・ベリー輸出",
+          "detail": "主食トルティーヤの原料であるトウモロコシ発祥地だが、USMCA下で安価な米国産トウモロコシが流入し農民離農・対米移民の一因となった。現在は高付加価値なアボカド（世界1位）・トマト等の対米輸出が急増。",
+          "worldRank": 1,
+          "worldRankNote": "アボカド生産・輸出 世界1位",
+          "clozeTerms": ["トウモロコシ", "アボカド"],
+          "tags": ["トウモロコシ", "USMCA"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mex_silver_oil",
+          "label": "銀産出世界1位とメキシコ湾岸原油（ペメックス）",
+          "detail": "スペイン植民地時代から続く銀産出世界1位。メキシコ湾カンペチェ湾の原油も重要（近年産出減少傾向）。",
+          "worldRank": 1,
+          "worldRankNote": "銀産出量 世界1位",
+          "clozeTerms": ["銀", "メキシコ湾岸油田"],
+          "tags": ["原油", "銀"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mex_maquiladora_auto",
+          "label": "マキラドーラ（米国国境沿い保税加工区）と自動車産業集積（バヒオ地区等）",
+          "detail": "ティフアナやシウダードフアレスなど米国国境沿いのマキラドーラで外資（米・日・韓・欧）が安価な労働力で電子・自動車を組立し、USMCAの無関税を活かして米国へ輸出（近年は米国に近い立地を生かし対米最大の貿易相手国へ）。",
+          "clozeTerms": ["マキラドーラ", "USMCA", "保税加工区"],
+          "tags": ["マキラドーラ", "USMCA", "自動車"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・自動車部品", "コンピュータ・電気機器", "機械類", "原油", "果実・野菜（アボカド等）"],
+        "majorImports": ["自動車部品・電子部品（加工用）", "石油精製品", "トウモロコシ"],
+        "majorPartners": ["アメリカ（輸出の約8割）", "中国", "カナダ", "ドイツ", "日本"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語）／先住民諸語（ナワトル語・マヤ語）",
+      "officialLanguages": ["事実上のスペイン語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 78 },
+        { "name": "プロテスタント・無宗教ほか", "percent": 22 }
+      ],
+      "ethnicGroups": ["メスティーソ（白人と先住民の混血：約6割強）", "先住民インディオ（約2割）", "ヨーロッパ系白人"],
+      "regionalIntegrations": ["USMCA", "CPTPP", "APEC", "OECD", "太平洋同盟"],
+      "historicalContext": [
+        {
+          "id": "mex_mestizo_migration",
+          "label": "旧スペイン領（アステカ・マヤ文明）・メスティーソと対米出稼ぎ・家族送金",
+          "detail": "ラテンアメリカ最大のスペイン語圏国家。米国との経済格差を背景に多数の移民が米国（ヒスパニック）へ渡り、米国からの個人送金がメキシコ経済の重要収入源。麻薬カルテルの治安問題や中米からの通過移民も課題。",
+          "clozeTerms": ["メスティーソ", "スペイン語", "カトリック", "ヒスパニック"],
+          "tags": ["旧スペイン領", "移民", "ヒスパニック", "言語"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "BRA": {
+    "iso3": "BRA",
+    "nameJa": "ブラジル",
+    "nameEn": "Brazil",
+    "region": "南アメリカ",
+    "subRegion": "ラテンアメリカ",
+    "capital": "ブラジリア",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "セラード開発（石灰投入・品種改良）による大豆世界1位・バイオエタノール（サトウキビ）",
+        "アマゾン川流域の熱帯雨林（セルバ）伐採・焼畑（ロサ）と牧場化",
+        "カラジャス鉄山などの鉄鉱石と水力発電中心の電源構成（イタイプダム）",
+        "ポルトガル語・人種構成・計画都市ブラジリア・ファヴェーラ・メルコスール"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（ブラジル楯状地・ギアナ楯状地）", "アマゾン低地"],
+      "summary": "北部に世界最大の流域面積を持つアマゾン川低地（セルバ）、南東部に広大な安定陸塊のブラジル高原（熱帯サバナのセラード、北東部の乾燥低木林カーチンガ、南部の温帯草原カンポ）が展開。",
+      "items": [
+        {
+          "id": "bra_amazon_selva_cerrado",
+          "category": "landform",
+          "label": "アマゾン熱帯雨林（セルバ）の森林破壊とブラジル高原（セラード・カンポ・カーチンガ）",
+          "detail": "アマゾン川はマナウスまで大型外洋船が遡上でき、河口では逆流現象ポロロッカが発生。焼畑農業（ロサ）や肉牛牧場・大豆畑への転換による熱帯林（セルバ）消失が環境問題の焦点。ブラジル高原内陸のサバナ「セラード」は石灰改良で大豆大産地となり、南部草原「カンポ」は放牧、北東部の半乾燥地「カーチンガ」は干ばつ・貧困が課題。",
+          "clozeTerms": ["セルバ", "セラード", "カンポ", "カーチンガ", "アマゾン川", "ラトソル"],
+          "tags": ["熱帯雨林", "環境問題", "セラード", "アマゾン川"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af", "Aw", "Cfa", "Cwa", "BSh"],
+      "summary": "アマゾン低地は赤道直下のAf、ブラジル高原は明瞭な乾季・雨季を持つサバナ気候（Aw・南半球のため12〜2月が雨季）、南部は温暖湿潤（Cfa）、北東部（ノルデステ内陸）は半乾燥BSh。",
+      "cities": [
+        {
+          "cityId": "BRA_MANAUS",
+          "nameJa": "マナウス",
+          "nameEn": "Manaus",
+          "lat": -3.12,
+          "lng": -60.02,
+          "elevationM": 92,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": ["赤道低圧帯（熱帯収束帯）で年中26〜28℃・年間降水量2200mm超"],
+          "monthlyTempC": [26.3, 26.2, 26.3, 26.4, 26.6, 26.9, 27.2, 28.0, 28.4, 28.3, 27.6, 26.8],
+          "monthlyPrecipMm": [278, 285, 315, 302, 240, 120, 82, 61, 83, 125, 180, 232],
+          "dataSource": "INMET / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "BRA_BRASILIA",
+          "nameJa": "ブラジリア",
+          "nameEn": "Brasilia",
+          "lat": -15.79,
+          "lng": -47.88,
+          "elevationM": 1172,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候（南半球・高原）",
+          "factors": ["標高約1170mで暑さ緩和（19〜23℃）", "南半球のため12〜2月（夏）に雨季、6〜8月（冬）に乾季"],
+          "monthlyTempC": [21.9, 22.1, 22.0, 21.4, 20.1, 19.0, 19.2, 21.2, 23.0, 22.9, 22.0, 21.8],
+          "monthlyPrecipMm": [215, 190, 208, 132, 30, 5, 4, 18, 45, 148, 225, 245],
+          "dataSource": "INMET / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["プランテーション農業", "商業的穀物農業", "企業的牧畜", "焼畑農業"],
+      "agriculture": [
+        {
+          "id": "bra_cerrado_soy_coffee",
+          "label": "セラード（石灰改良）の大豆世界1位・サトウキビ（バイオエタノール）・コーヒー・肉牛/鶏肉",
+          "detail": "日伯農業開発協力（PRODECER）等の石灰投入・品種改良により、不毛と言われたセラードを世界最大の穀物（大豆・トウモロコシ）輸出基地へ転換。サトウキビを原料としたバイオエタノール自動車（フレックス燃料車）が普及。伝統的なコーヒー（サンパウロ州等）・オレンジ（世界1位）・鶏肉輸出でも世界首位級。",
+          "worldRank": 1,
+          "worldRankNote": "大豆・コーヒー・サトウキビ・オレンジ生産 世界1位、牛肉輸出1位級",
+          "clozeTerms": ["セラード開発", "大豆", "バイオエタノール", "サトウキビ", "コーヒー"],
+          "tags": ["セラード", "大豆", "バイオエタノール", "コーヒー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "bra_carajas_hydro_presalt",
+          "label": "カラジャス・イタビラ鉄山の鉄鉱石、水力発電（6割超）、大西洋沖プレソルト原油",
+          "detail": "安定陸塊上に世界有数の高品位鉄鉱床（カラジャス鉄山）。パラナ川イタイプダム等の大規模水力発電が電源の約6割を占め、近年は風力・太陽光と大西洋深海油田（プレソルト層）の原油輸出も急拡大。",
+          "worldRank": 2,
+          "worldRankNote": "鉄鉱石・ボーキサイト産出 世界2位",
+          "clozeTerms": ["カラジャス鉄山", "イタイプダム", "水力発電"],
+          "tags": ["鉄鉱石", "水力発電", "原油"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "bra_se_manaus",
+          "label": "南東部（サンパウロ・リオデジャネイロ・ベロオリゾンテ）とマナウス自由貿易区",
+          "detail": "南東部に自動車・鉄鋼・航空機（エンブラエル＝小型旅客機世界大手）が集積。内陸アマゾン中心部のマナウスには税制優遇の自由貿易区を設置し日系家電等の組立工場が立地。",
+          "clozeTerms": ["サンパウロ", "マナウス自由貿易区", "エンブラエル"],
+          "tags": ["自動車", "工業地域"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["大豆", "原油", "鉄鉱石", "砂糖・エタノール", "肉類（鶏肉・牛肉）・コーヒー"],
+        "majorImports": ["肥料・化学製品", "機械類・自動車部品", "精製燃料"],
+        "majorPartners": ["中国（最大の貿易相手）", "アメリカ", "アルゼンチン", "オランダ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：ポルトガル語）",
+      "officialLanguages": ["ポルトガル語（南米唯一）"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 50 },
+        { "name": "キリスト教（プロテスタント福音派が急増）", "percent": 31 },
+        { "name": "無宗教・アフリカ系伝統信仰ほか", "percent": 19 }
+      ],
+      "ethnicGroups": ["白人系（ポルトガル・イタリア・ドイツ・日系約200万人）", "混血（パルド約45%）", "アフリカ系（黒人奴隷貿易の歴史由来）", "先住民"],
+      "regionalIntegrations": ["メルコスール（南米南部共同市場）", "BRICS", "G20"],
+      "historicalContext": [
+        {
+          "id": "bra_portugal_brasilia_favela",
+          "label": "旧ポルトガル領（トルデシリャス条約）・計画首都ブラジリア・都市のスラム「ファヴェーラ」",
+          "detail": "中南米で唯一のポルトガル語圏（大西洋側に東偏した領土への奴隷輸入によりアフリカ系・混血が多い）。1960年に内陸開発と過密緩和のため計画都市ブラジリア（ニーマイヤー設計）へ遷都。大都市の貧富格差と丘陵斜面のスラム（ファヴェーラ）が社会課題。",
+          "clozeTerms": ["ポルトガル語", "ブラジリア", "ファヴェーラ", "メルコスール"],
+          "tags": ["旧ポルトガル領", "計画都市", "スラム", "メルコスール"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ARG": {
+    "iso3": "ARG",
+    "nameJa": "アルゼンチン",
+    "nameEn": "Argentina",
+    "region": "南アメリカ",
+    "subRegion": "南アメリカ南部",
+    "capital": "ブエノスアイレス",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "パンパ（年降水量500mm線で湿潤パンパ農業／乾燥パンパ牧畜）",
+        "パタゴニアの乾燥気候（アンデス山脈の偏西風雨蔭効果）と羊牧畜",
+        "ヨーロッパ系住民多数（イタリア・スペイン系）・メルコスールとインフレ危機"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アンデス山脈・最高峰アコンカグア）", "安定陸塊（パンパ草原・パタゴニア台地）"],
+      "summary": "北部パラグアイ川流域の半乾燥疎林グランチャコ、中央ラプラタ川流域の肥沃な温帯草原パンパ、南部に階段状台地のパタゴニアが広がる。",
+      "items": [
+        {
+          "id": "arg_pampa_patagonia",
+          "category": "landform",
+          "label": "湿潤パンパ・乾燥パンパ（550mm境界）・グランチャコ・パタゴニア",
+          "detail": "ブエノスアイレス周辺の東部「湿潤パンパ」（年降水量550mm以上・肥沃なパンパ土）では小麦・大豆・トウモロコシ栽培と牛の企業的牧畜、西側の「乾燥パンパ」では粗放的牧畜。北部の「グランチャコ」はケブラチョ林・乾燥放牧。南部「パタゴニア」は偏西風がアンデスを越えて乾燥するため羊牧畜が行われる。",
+          "clozeTerms": ["パンパ", "パタゴニア", "雨蔭効果", "500mm線"],
+          "tags": ["パンパ", "パタゴニア", "企業的牧畜", "乾燥帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfa", "BSk", "BWk", "ET"],
+      "summary": "パンパ東部は温暖湿潤（Cfa・南半球のため1月が夏で25℃）、パタゴニアやアンデス山麓（メンドーサ）はBWk/BSk。",
+      "cities": [
+        {
+          "cityId": "ARG_BA",
+          "nameJa": "ブエノスアイレス",
+          "nameEn": "Buenos Aires",
+          "lat": -34.6,
+          "lng": -58.38,
+          "elevationM": 25,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（南半球）",
+          "factors": ["南半球のため1月が夏（25℃）・7月が冬（11℃）", "大西洋からの湿潤風で年中適度な降水"],
+          "monthlyTempC": [24.8, 23.6, 21.4, 17.6, 14.2, 11.4, 10.9, 12.6, 14.8, 17.7, 20.6, 23.2],
+          "monthlyPrecipMm": [132, 125, 138, 112, 85, 62, 60, 68, 78, 122, 118, 118],
+          "dataSource": "SMN / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的牧畜", "企業的穀物農業"],
+      "agriculture": [
+        {
+          "id": "arg_soy_wheat_beef",
+          "label": "パンパの大豆（世界3位級）・トウモロコシ・小麦・牛肉輸出（「世界のパン籠」）",
+          "detail": "かつての大土地所有制（エスタンシア）のもとガウチョによる牧牛が中心だったが、現在は遺伝子組換え大豆・トウモロコシ・小麦の大規模輸出農業が外貨の要。",
+          "worldRank": 3,
+          "worldRankNote": "大豆・トウモロコシ輸出 世界トップ3〜4",
+          "clozeTerms": ["大豆", "企業的牧畜", "パンパ"],
+          "tags": ["大豆", "小麦", "牛肉"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "arg_lithium_shale",
+          "label": "リチウム・トライアングル（北西部塩湖）とバカ・ムエルタ（シェールガス/オイル）",
+          "detail": "ボリビア・チリと並ぶ「リチウム・トライアングル」を形成しEV電池向け資源で注目。",
+          "clozeTerms": ["リチウム"],
+          "tags": ["リチウム", "シェール"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "arg_ba_food_auto",
+          "label": "ブエノスアイレス周辺の食品加工・自動車組立（メルコスール域内分業）",
+          "detail": "プライメートシティである大ブエノスアイレス圏に人口・産業が集中。慢性的なハイパーインフレ・通貨ペソ安とデフォルト（債務不履行）の繰り返しが経済構造の弱点。",
+          "clozeTerms": ["メルコスール", "インフレ"],
+          "tags": ["メルコスール", "自動車"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["大豆油・大豆かす・大豆", "トウモロコシ", "小麦", "牛肉", "リチウム・原油"],
+        "majorImports": ["自動車・機械", "電子機器", "化学製品"],
+        "majorPartners": ["ブラジル", "中国", "アメリカ", "チリ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語）",
+      "officialLanguages": ["スペイン語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 63 },
+        { "name": "プロテスタント・無宗教ほか", "percent": 37 }
+      ],
+      "ethnicGroups": ["ヨーロッパ系白人（約85%以上：スペイン系・イタリア系移民が極めて多い）", "メスティーソ・先住民"],
+      "regionalIntegrations": ["メルコスール", "G20"],
+      "historicalContext": [
+        {
+          "id": "arg_european_immigrants",
+          "label": "中南米で例外的な白人多数国（イタリア・スペイン系移民）とフォークランド問題",
+          "detail": "19〜20世紀初頭に温暖なパンパ開拓のため大量のイタリア・スペイン系移民を受け入れたため、南米諸国の中で白人比率が際立って高い（ウルグアイと同様）。南大西洋フォークランド諸島（マルビナス諸島）の領有権を英国と争う。",
+          "clozeTerms": ["ヨーロッパ系移民", "イタリア系", "スペイン語"],
+          "tags": ["移民", "旧スペイン領", "領土問題"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "CHL": {
+    "iso3": "CHL",
+    "nameJa": "チリ",
+    "nameEn": "Chile",
+    "region": "南アメリカ",
+    "subRegion": "アンデス南部",
+    "capital": "サンティアゴ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "南北4300kmの気候配列（アタカマ砂漠BWk→地中海性Csb→西岸海洋性Cfb＋フィヨルド）",
+        "ナスカプレート沈み込み・アンデス山脈と銅鉱石世界1位・リチウム世界2位",
+        "ペルー海流（寒流）による海岸砂漠と好漁場・エルニーニョ",
+        "南半球の季節逆転を活かしたブドウ・ワイン・サケ対日輸出とFTA網"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アンデス山脈・ナスカプレート沈み込み境界）"],
+      "summary": "ナスカプレートが南米プレートの下に沈み込み、巨大地震（1960年チリ地震等）と火山・アンデス山脈を形成。南北の海岸環境が劇的に変化する。",
+      "items": [
+        {
+          "id": "chl_atacama_fjord",
+          "category": "landform",
+          "label": "アタカマ砂漠（ペルー海流による海岸砂漠）と南部パタゴニア・フィヨルド",
+          "detail": "北部海岸沖を北上する寒流（ペルー海流／フンボルト海流）により下層大気が冷却され上昇気流が起きず、地球上で最も乾燥した地域の一つ（アタカマ砂漠）となる。南部は氷河侵食のフィヨルド海岸。",
+          "clozeTerms": ["アタカマ砂漠", "ペルー海流", "フィヨルド", "ナスカプレート"],
+          "tags": ["海岸砂漠", "寒流", "フィヨルド", "新期造山帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWk", "Csb", "Cfb", "ET"],
+      "summary": "北部は寒流と亜熱帯高圧帯で砂漠（BW）、中部（サンティアゴ）は南半球の地中海性気候（Csb：1月乾燥高温・7月湿潤低温）、南部は偏西風で年中多雨（Cfb）。",
+      "cities": [
+        {
+          "cityId": "CHL_SANTIAGO",
+          "nameJa": "サンティアゴ",
+          "nameEn": "Santiago",
+          "lat": -33.45,
+          "lng": -70.67,
+          "elevationM": 570,
+          "koppenCode": "Csb",
+          "koppenNameJa": "地中海性気候（南半球）",
+          "factors": ["南半球のため1月が夏（乾燥）・7月が冬（湿潤）", "中緯度高圧帯と偏西風帯の季節移動"],
+          "monthlyTempC": [21.2, 20.3, 18.1, 14.5, 11.1, 8.7, 8.2, 9.7, 12.1, 14.9, 17.7, 19.9],
+          "monthlyPrecipMm": [1, 1, 4, 15, 45, 78, 76, 52, 24, 12, 5, 2],
+          "dataSource": "DMC / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CHL_ARICA",
+          "nameJa": "アリカ",
+          "nameEn": "Arica",
+          "lat": -18.48,
+          "lng": -70.31,
+          "elevationM": 58,
+          "koppenCode": "BWk",
+          "koppenNameJa": "砂漠気候（海岸砂漠）",
+          "factors": ["ペルー海流（寒流）の冷却で低緯度の割に温暖（16〜23℃）かつ年降水量2mm程度の極端な無降水"],
+          "monthlyTempC": [22.8, 23.0, 22.0, 19.9, 18.0, 16.5, 15.8, 15.9, 16.6, 17.9, 19.6, 21.4],
+          "monthlyPrecipMm": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+          "dataSource": "DMC / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "林業・水産養殖"],
+      "agriculture": [
+        {
+          "id": "chl_offseason_salmon",
+          "label": "地中海式農業（ブドウ・ワイン）と南半球「季節の逆転」輸出・南部サーモン養殖",
+          "detail": "北半球の冬〜春（端境期）に生食用ブドウ・サクランボ・ブルーベリーを日米欧へ出荷できる優位性。南部フィヨルド海域の冷涼静穏な波を活用したサケ・マス養殖（ノルウェーに次ぐ世界2位・日本輸入1位級）。",
+          "worldRank": 2,
+          "worldRankNote": "養殖サケ・マス世界2位、ワイン輸出上位",
+          "clozeTerms": ["地中海式農業", "季節の逆転", "サケ養殖"],
+          "tags": ["地中海式農業", "フィヨルド", "漁業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "chl_copper_lithium",
+          "label": "銅鉱石産出世界1位（チュキカマタ・エスコンディーダ）とリチウム（アタカマ塩湖・世界2位）",
+          "detail": "アンデス山脈のマグマ・熱水鉱床による世界最大の銅鉱石・銅地金産出国。北部アタカマ塩湖でのリチウム塩水蒸発採掘（EVバッテリー用）では豪州に次ぐ世界2位。",
+          "worldRank": 1,
+          "worldRankNote": "銅鉱石産出量 世界1位、リチウム産出世界2位",
+          "clozeTerms": ["銅鉱石", "チュキカマタ", "リチウム", "アタカマ塩湖"],
+          "tags": ["銅鉱石", "リチウム", "EV"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "chl_fta_network",
+          "label": "積極的なFTA/EPA網と一次産品輸出型先進国",
+          "detail": "市場規模が小さいため早くから自由貿易を推進し、日・米・中・EU等とFTAを締結。",
+          "clozeTerms": ["FTA", "太平洋同盟"],
+          "tags": ["FTA", "銅鉱石"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["銅鉱・精製銅", "リチウム炭酸塩", "魚類（サケ）", "果実・ワイン・木材パルプ"],
+        "majorImports": ["原油・石油製品", "自動車", "機械・電子機器"],
+        "majorPartners": ["中国", "アメリカ", "日本", "韓国", "ブラジル"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語）",
+      "officialLanguages": ["スペイン語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 55 },
+        { "name": "プロテスタント・無宗教", "percent": 45 }
+      ],
+      "ethnicGroups": ["メスティーソ・ヨーロッパ系白人", "マプチェ等の先住民"],
+      "regionalIntegrations": ["太平洋同盟", "APEC", "CPTPP", "OECD", "メルコスール準加盟"],
+      "historicalContext": [
+        {
+          "id": "chl_pacific_oecd",
+          "label": "旧スペイン領・太平洋に開かれた南米随一の安定市場（OECD加盟）",
+          "detail": "1990年の民主化後、資源・農林水産品輸出で中南米有数の高所得国となり南米初のOECD加盟。",
+          "clozeTerms": ["OECD", "スペイン語"],
+          "tags": ["旧スペイン領", "FTA"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "PER": {
+    "iso3": "PER",
+    "nameJa": "ペルー",
+    "nameEn": "Peru",
+    "region": "南アメリカ",
+    "subRegion": "アンデス中部",
+    "capital": "リマ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "アンデス山脈の高度別農業・生活（ティエラ・フリア/ヘラーダ、リャマ・アルパカ、ジャガイモ原産）",
+        "ペルー海流（寒流）の湧昇流によるアンチョビ（魚粉）漁業とエルニーニョ現象",
+        "インカ帝国（マチュピチュ）と先住民（インディオ）・銅/亜鉛/銀資源"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アンデス山脈）・アマゾン川源流"],
+      "summary": "海岸砂漠（コスタ）、急峻なアンデス高地（シエラ）、アマゾン熱帯雨林（セルバ）の3地域に明瞭に分かれる。",
+      "items": [
+        {
+          "id": "per_vertical_zonation",
+          "category": "landform",
+          "label": "アンデス山脈の標高帯別土地利用（垂直的区分）とコスタの海岸砂漠",
+          "detail": "標高約3000〜4000mにクスコなど人口が集中し（昼と夜の寒暖差が大きく「1日に四季がある」）、ジャガイモ・トウモロコシの段々畑、さらに高地ではリャマ・アルパカの放牧。",
+          "clozeTerms": ["アンデス山脈", "垂直的分布", "ジャガイモ原産地", "リャマ・アルパカ"],
+          "tags": ["新期造山帯", "海岸砂漠", "高山気候"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh", "Cwb", "Af", "ET"],
+      "summary": "海岸リマは南緯12度ながらペルー海流（寒流）により年中霧（ガルーア）が多く涼しく雨がほぼ降らない砂漠気候（BWh）。高地クスコはCwb。",
+      "cities": [
+        {
+          "cityId": "PER_LIMA",
+          "nameJa": "リマ",
+          "nameEn": "Lima",
+          "lat": -12.05,
+          "lng": -77.04,
+          "elevationM": 154,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候（寒流海岸砂漠）",
+          "factors": ["南緯12度の熱帯緯度ながらペルー海流（寒流）で気温17〜24℃と低く、年間降水量約10mmの極端な乾燥"],
+          "monthlyTempC": [22.8, 23.7, 23.1, 21.1, 18.8, 17.5, 16.9, 16.7, 17.0, 18.0, 19.6, 21.4],
+          "monthlyPrecipMm": [1, 1, 1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+          "dataSource": "SENAMHI / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["自給的段々畑・牧畜（リャマ）", "アジア以外の伝統農業"],
+      "agriculture": [
+        {
+          "id": "per_anchovy_elnino",
+          "label": "ペルー海流湧昇流によるアンチョビ（魚粉・養殖飼料）世界1位級とエルニーニョ打撃",
+          "detail": "東風による沿岸湧昇で豊かな栄養塩が湧き出しカタクチイワシ（アンチョビ）漁獲世界首位級（魚粉・魚油へ加工）。ただし数年おきの「エルニーニョ現象」（暖水流入）時に湧昇が弱まり壊滅的不漁と沿岸豪雨が発生。",
+          "worldRank": 1,
+          "worldRankNote": "魚粉生産・輸出 世界1位",
+          "clozeTerms": ["ペルー海流", "湧昇流", "アンチョビ", "エルニーニョ現象"],
+          "tags": ["海流", "漁業", "エルニーニョ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "per_copper_zinc_silver",
+          "label": "銅（世界2位級）・亜鉛・銀・金などアンデス非鉄金属資源",
+          "detail": "輸出額の過半が銅・金・亜鉛・銀などの鉱産物。",
+          "worldRank": 2,
+          "worldRankNote": "銅・亜鉛・銀生産 世界2〜3位",
+          "clozeTerms": ["銅鉱石", "亜鉛"],
+          "tags": ["銅鉱石"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "per_lima_chancay",
+          "label": "リマ周辺（非正規就業＝インフォーマルセクターと中国資本チャンカイ港）",
+          "detail": "都市部への人口集中に伴いスラム（バリアーダ）が形成。近年は中国によるチャンカイ巨大港湾建設。",
+          "clozeTerms": ["スラム"],
+          "tags": ["都市構造"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["銅鉱石", "金", "亜鉛・鉛", "魚粉（アンチョビ）・ブルーベリー/アボカド"],
+        "majorImports": ["石油精製品・原油", "自動車・機械", "トウモロコシ・小麦"],
+        "majorPartners": ["中国", "アメリカ", "カナダ", "日本"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スペイン語）／ケチュア語・アイマラ語",
+      "officialLanguages": ["スペイン語", "ケチュア語・アイマラ語（該当地域公用）"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 76 },
+        { "name": "プロテスタントほか", "percent": 24 }
+      ],
+      "ethnicGroups": ["メスティーソ（約60%）", "先住民インディオ（ケチュア・アイマラ約26%）", "日系人（フジモリ元大統領等）"],
+      "regionalIntegrations": ["太平洋同盟", "アンデス共同体", "APEC"],
+      "historicalContext": [
+        {
+          "id": "per_inca_indigenous",
+          "label": "インカ帝国（ケチュア語）と旧スペイン領・高い先住民比率",
+          "detail": "ボリビアやグアテマラと並び、現代も先住民（インディオ）およびその文化・言語（ケチュア語）の割合が高い。",
+          "clozeTerms": ["インカ帝国", "ケチュア語", "インディオ"],
+          "tags": ["先住民", "旧スペイン領"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "COL": {
+    "iso3": "COL",
+    "nameJa": "コロンビア",
+    "nameEn": "Colombia",
+    "region": "南アメリカ",
+    "subRegion": "アンデス北部・カリブ海",
+    "capital": "ボゴタ",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "赤道付近の高地（ボゴタ標高2600mの常春・年較差1℃未満）と標高別コーヒー栽培",
+        "アラビカ種コーヒー（世界3〜4位）と切り花空輸（対米輸出）",
+        "石炭・原油・エメラルドとベネズエラ難民受入"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アンデス山脈北部3分岐）"],
+      "summary": "南米で唯一、太平洋とカリブ海（大西洋）の双方に面する。アンデス山脈が3列に分かれ、山間盆地に主要都市ボゴタ・メデジンが発達。",
+      "items": [
+        {
+          "id": "col_altitude_tiers",
+          "category": "landform",
+          "label": "赤道直下の高度別気候帯（ティエラ・テンプラーダ＝コーヒー適地）",
+          "detail": "低地（ティエラ・カリエンテ：バナナ・カカオ）、標高1000〜2000m（ティエラ・テンプラーダ：年平均18℃前後・コーヒー栽培最適）、標高2600m（ボゴタ：常春13〜14℃）。",
+          "clozeTerms": ["ティエラ・テンプラーダ", "高度別気候帯", "ボゴタ"],
+          "tags": ["高山気候", "コーヒー"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb", "Af", "Aw"],
+      "summary": "ボゴタは北緯4度の赤道直下かつ標高2600mのため、1年中月平均気温13〜14℃（年較差1℃未満！）という典型的な熱帯高山気候。",
+      "cities": [
+        {
+          "cityId": "COL_BOGOTA",
+          "nameJa": "ボゴタ",
+          "nameEn": "Bogota",
+          "lat": 4.71,
+          "lng": -74.07,
+          "elevationM": 2547,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性・熱帯高山気候（標高2550m）",
+          "factors": ["赤道付近のため気温の年較差が約0.8℃と極めて小さい", "標高2550mにより年中13〜14℃の常春（日較差は大）"],
+          "monthlyTempC": [13.2, 13.6, 13.9, 14.0, 14.0, 13.7, 13.3, 13.5, 13.6, 13.6, 13.6, 13.3],
+          "monthlyPrecipMm": [30, 44, 66, 102, 88, 52, 42, 46, 62, 105, 88, 52],
+          "dataSource": "IDEAM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["プランテーション・商業的栽培", "焼畑・牧畜"],
+      "agriculture": [
+        {
+          "id": "col_coffee_flowers",
+          "label": "高地アラビカ種コーヒー（高品質）とボゴタ高原のバラ・カーネーション空輸",
+          "detail": "ブラジル・ベトナムに次ぐ世界有数のコーヒー生産国。日照と冷涼な高地気候を活かした切り花生産（米国市場向け空輸で世界2位級）も盛ん。",
+          "worldRank": 3,
+          "worldRankNote": "コーヒー（アラビカ種）世界トップ3〜4、切り花輸出世界2位",
+          "clozeTerms": ["アラビカ種コーヒー", "切り花空輸"],
+          "tags": ["コーヒー", "高山気候"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "col_coal_oil_emerald",
+          "label": "原油・石炭（南米最大の石炭輸出・セレホン炭鉱）とエメラルド（世界1位級）",
+          "detail": "コーヒー以上に輸出額が大きいのは実は原油と石炭。電源は水力発電が約7割。",
+          "clozeTerms": ["原油", "石炭", "水力発電"],
+          "tags": ["原油", "石炭"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "col_bogota_medellin",
+          "label": "ボゴタ・メデジン等の繊維・食品・サービス業",
+          "detail": "南米有数の経済規模（人口約5200万人）。",
+          "clozeTerms": ["メデジン"],
+          "tags": ["南アメリカ"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油", "石炭", "コーヒー", "切り花・バナナ・金"],
+        "majorImports": ["機械・電気機器", "自動車", "化学製品"],
+        "majorPartners": ["アメリカ", "パナマ", "中国", "オランダ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スペイン語）",
+      "officialLanguages": ["スペイン語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 75 },
+        { "name": "プロテスタント・無宗教", "percent": 25 }
+      ],
+      "ethnicGroups": ["メスティーソ・白人系（約87%）", "アフリカ系（約9%）", "先住民"],
+      "regionalIntegrations": ["太平洋同盟", "アンデス共同体", "OECD"],
+      "historicalContext": [
+        {
+          "id": "col_peace_refugees",
+          "label": "内戦終結後の和平と隣国ベネズエラからの大量難民受入（280万人超）",
+          "detail": "FARCとの和平合意（2016年）で治安改善が進みつつも、経済崩壊した隣国ベネズエラから数百万人の難民を受け入れている。",
+          "clozeTerms": ["ベネズエラ難民", "スペイン語"],
+          "tags": ["難民", "旧スペイン領"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "VEN": {
+    "iso3": "VEN",
+    "nameJa": "ベネズエラ",
+    "nameEn": "Venezuela",
+    "region": "南アメリカ",
+    "subRegion": "南アメリカ北部・カリブ海",
+    "capital": "カラカス",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "世界最大級の原油埋蔵量（オリノコタール・マラカイボ湖・OPEC原加盟国）",
+        "石油モノカルチャー経済の破綻によるハイパーインフレと700万人超の難民流出",
+        "オリノコ川流域の熱帯草原「リャノ」とギアナ高地"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アンデス北端）", "安定陸塊（ギアナ楯状地＝エンジェルフォール）"],
+      "summary": "北部にマラカイボ湖（油田）とカラカス、中央部にオリノコ川の草原リャノ（Aw）、南東部にテーブルマウンテン（テプイ）のギアナ高地。",
+      "items": [
+        {
+          "id": "ven_llanos_guiana",
+          "category": "landform",
+          "label": "オリノコ川流域のリャノ（サバナ草原）とギアナ高地（テーブルマウンテン）",
+          "detail": "ギアナ高地の先カンブリア時代砂岩台地には世界最大落差のエンジェルフォールがある。リャノでは粗放的牧畜が行われる。",
+          "clozeTerms": ["リャノ", "ギアナ高地", "オリノコ川"],
+          "tags": ["サバナ", "安定陸塊"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw", "Af"],
+      "summary": "大半がサバナ気候（Aw・5〜11月雨季）。南部のオリノコ上流はAf。",
+      "cities": [
+        {
+          "cityId": "VEN_CARACAS",
+          "nameJa": "カラカス",
+          "nameEn": "Caracas",
+          "lat": 10.48,
+          "lng": -66.9,
+          "elevationM": 900,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候（北半球熱帯）",
+          "factors": ["北半球熱帯のため6〜10月が雨季、1〜3月が乾季", "標高900mで21〜24℃と比較的快適"],
+          "monthlyTempC": [20.2, 20.8, 22.0, 23.0, 23.4, 22.8, 22.4, 22.6, 22.8, 22.4, 21.6, 20.6],
+          "monthlyPrecipMm": [15, 13, 12, 48, 82, 135, 125, 118, 108, 120, 72, 42],
+          "dataSource": "INAMEH / WMO",
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的牧畜（リャノ）"],
+      "agriculture": [
+        {
+          "id": "ven_food_shortage",
+          "label": "石油収入への依存による自給農業衰退と深刻な食料輸入依存・不足",
+          "detail": "かつて石油マネーで食料を輸入に頼りすぎた結果（オランダ病）、原油価格下落と制裁後に深刻な食料危機に陥った。",
+          "clozeTerms": ["オランダ病", "食料不足"],
+          "tags": ["モノカルチャー"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ven_oil_reserves",
+          "label": "確認原油埋蔵量世界1位（オリノコ重質油・マラカイボ湖）とOPEC原加盟国",
+          "detail": "サウジアラビアを上回る確認原油埋蔵量を持つが、設備投資不足・重質油（オリノコタール）の精製コスト・米経済制裁により実際の産出量は大きく落ち込んだ。",
+          "worldRank": 1,
+          "worldRankNote": "確認原油埋蔵量 世界1位",
+          "clozeTerms": ["OPEC", "オリノコタール", "原油埋蔵量1位"],
+          "tags": ["原油", "OPEC", "モノカルチャー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ven_ciudad_guayana",
+          "label": "シウダード・グアヤナ（オリノコ川水力＋鉄鉱石の製鉄・アルミ工業）",
+          "detail": "重工業拠点が築かれたが経済危機で稼働低迷。",
+          "clozeTerms": ["オリノコ川"],
+          "tags": ["水力発電"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油（輸出の約9割）", "鉄鋼・金"],
+        "majorImports": ["食料品", "医薬品", "希釈用軽質原油・機械"],
+        "majorPartners": ["中国", "アメリカ", "スペイン", "インド"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スペイン語）",
+      "officialLanguages": ["スペイン語"],
+      "religions": [
+        { "name": "キリスト教（カトリック・プロテスタント）", "percent": 90 }
+      ],
+      "ethnicGroups": ["メスティーソ（過半数）", "白人系", "アフリカ系", "先住民"],
+      "regionalIntegrations": ["OPEC", "メルコスール（資格停止中）"],
+      "historicalContext": [
+        {
+          "id": "ven_crisis_refugees",
+          "label": "経済破綻とハイパーインフレによる770万人超の難民・移民流出",
+          "detail": "近年の共通テスト統計問題でも重要論点！コロンビア・ペルー・エクアドル・チリ・米国など中南米全域へ国民の約4分の1が流出し、シリアやウクライナに匹敵する世界最大級の難民・避難民流出国となった。",
+          "clozeTerms": ["難民流出", "モノカルチャー経済", "ハイパーインフレ"],
+          "tags": ["難民", "移民", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

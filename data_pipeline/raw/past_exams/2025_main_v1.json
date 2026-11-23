@@ -1,0 +1,1067 @@
+{
+  "examId": "2025_main",
+  "year": 2025,
+  "session": "main",
+  "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+  "questions": [
+    {
+      "questionId": "2025_main_d1_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（問番号1）",
+      "title": "第1問 問1: 第1問 食料の生産や消費は，自然環境や生活文化にかかわり，地球的課題にも結 びついている",
+      "promptSummary": "第1問 食料の生産や消費は，自然環境や生活文化にかかわり，地球的課題にも結 びついている。これに関する次の問い（問1～4）に答えよ。（配点 13） 問1次の図1は，食や健康に関するある指標を示したものである。この指標とし て最も適当なものを，後の(1)～(2)のうちから一つ選べ。 1 データなし 低位 中位 高位 統計年次は，2018～2020年の平均または2019年のいずれか。FAOSTAT などにより作成。 図1 (1) 栄養...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d1_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（問番号2）",
+      "title": "第1問 問2: 問2次の図2中の地点ア～エの周辺における自然環境と農業の特徴について述べ た文として最も適...",
+      "promptSummary": "問2次の図2中の地点ア～エの周辺における自然環境と農業の特徴について述べ た文として最も適当なものを，後の(1)～(2)のうちから一つ選べ。 2 ア イ ウ エ 0° 図2 (1) アの周辺は，降水量の季節変化が少ない冷涼な気候であり，肥沃な土壌を いかして小麦などが栽培されている。 かんがい (3) イの周辺は，(4)年中乾燥する気候であり，オアシスや灌漑施設を利用して アブラヤシなどが栽培されている。 (5) ウの周辺は，雨季...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d1_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 4,
+      "questionLabel": "第1問 問3（問番号3）",
+      "title": "第1問 問3: 問3食文化には，地域の歴史的背景や自然環境が反映されている",
+      "promptSummary": "問3食文化には，地域の歴史的背景や自然環境が反映されている。次の図3は， いくつかの国におけるコーヒーと茶の(1)人(1)日当たり消費量＊を示したもので あり，(2)～(3)は，イギリス，イタリア，インドネシア，中国＊＊のいずれかであ る。イギリスに該当するものを，(2)～(3)のうちから一つ選べ。 3 ＊コーヒーは(1)杯10g，茶は(1)杯(4)g 換算。 ＊＊台湾，ホンコン，マカオを含まない。 ǒ Ǒ ǐ Ǐ 1.5 杯 茶...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "IDN",
+        "IND",
+        "GBR",
+        "ITA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d1_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（問番号4）",
+      "title": "第1問 問4: 問4次の表1は，南・東南アジアとヨーロッパについて，イモ類の生産量に占め る，生産・収穫か...",
+      "promptSummary": "問4次の表1は，南・東南アジアとヨーロッパについて，イモ類の生産量に占め る，生産・収穫から消費までの各段階における食品ロスの割合と，最終的な消 費量の割合を示したものである。表1に関することがらについて述べた文章中 の下線部(1)～(2)のうちから，適当でないものを一つ選べ。 4 表1 （単位：％） 各段階における食品ロスの割合 最終的な 消費量の 割合 合計 生産・ 収穫 貯蔵 加工 卸売・ 小売 消費 南・東南アジア 6．0...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d2_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第2問 問1（問番号5）",
+      "title": "第2問 問1: ひがしみかわ 第2問 愛知県の高校に通うコハクさんたちは，愛知県東部に位置する東三河地域 ...",
+      "promptSummary": "ひがしみかわ 第2問 愛知県の高校に通うコハクさんたちは，愛知県東部に位置する東三河地域 の調査を行った。この地域調査に関する次の問い（問1～4）に答えよ。（配点 12） とよはし 問1コハクさんたちは，新旧地形図をみていたところ，豊橋市の中心部の市街地 が拡大していることに気づいた。次の資料1は，コハクさんたちが，文献を調 べたり，後の図1の同範囲の新旧地形図をみたりした際の気づきと問いをまと めたものである。資料1中の下線部ａ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "洪水",
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d2_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第2問 問2（問番号6）",
+      "title": "第2問 問2: 問2コハクさんは，自動車をはじめとした製造業の立地特性について調べ，調査 結果を次の資料2...",
+      "promptSummary": "問2コハクさんは，自動車をはじめとした製造業の立地特性について調べ，調査 結果を次の資料2にまとめた。資料2をみてコハクさんたちが話し合った会話 文中の下線部(1)～(2)のうちから，誤りを含むものを一つ選べ。 6 ●二川・谷川地区 国道に近接し，電機や繊維，食品など の工場が集積 ふたがわ たにがわ ●三河湾臨海地区 自動車関連産業の集積する地域であり， 海外自動車メーカーの流通基地も立地 資料2 豊橋市における製造業の立地特性...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "GIS"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d2_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問3（問番号7）",
+      "title": "第2問 問3: 問3レオンさんは，東三河地域の農業がなぜ盛んになったのかを探るため，農家 への聞き取り調査...",
+      "promptSummary": "問3レオンさんは，東三河地域の農業がなぜ盛んになったのかを探るため，農家 への聞き取り調査結果と，地元の図書館で調べた統計などを次の資料3にまと めた。資料3中のア～ウは，キャベツ，米，サツマイモのいずれかについて， 1960年と2006年の収穫量を行政区域別＊に示したものである。作物名とア～ ウとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。 7 ＊2020年時点。 資料3 東三河地域の農業の地域性とその変容 【聞き取...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d2_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問4（問番号8）",
+      "title": "第2問 問4: 問4最後に，ミイコさんは，東三河地域における他地域との結びつきを調べた",
+      "promptSummary": "問4最後に，ミイコさんは，東三河地域における他地域との結びつきを調べた。 次の表1は，東三河地域を発着地とした他府県との年間旅客数＊を示したもの であり，ＪとＫは静岡と長野のいずれか，カとキは自動車＊＊と鉄道のいずれか である。表1をみてミイコさんたちが話し合った会話文中の空欄Ｋとキに当て はまる語句の正しい組合せを，後の(1)～(4)のうちから一つ選べ。 8 ＊通勤・通学目的を除く，幹線交通機関を利用した県境を越える旅客流動。 ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 9,
+      "points": 4,
+      "questionLabel": "第3問 問1（問番号9）",
+      "title": "第3問 問1: 第3問 世界の自然環境と自然災害に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問 世界の自然環境と自然災害に関する次の問い（問1～6）に答えよ。 （配点 20） 問1植生の分布は，気候や地形など様々な要因により影響を受ける。次の図1中 の(1)～(2)は，後の図2中の線Ａ～Ｄのいずれかに沿った正規化植生指数＊の分 布を示したものである。線Ａに該当するものを，(1)～(2)のうちから一つ選べ。 9 ＊植物による光合成の活発度を示す。 高 低 Ǐ ǐ Ǒ ǒ 2000～2009年の平均値。NASA の資料に...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第3問 問2（問番号10）",
+      "title": "第3問 問2: 問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいず れかの国における...",
+      "promptSummary": "問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいず れかの国における最高標高地点周辺の陰影起伏図である。また，後の文Ｆ～Ｈ は，ア～ウのいずれかの範囲にみられる地形について述べたものである。ア～ ウとＦ～Ｈとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選 べ。 10 ア イ ウ 範囲はいずれも50km 四方。NASA の資料により作成。 図3 Ｆ 固い岩盤が長い時間をかけて風化している。 ...",
+      "relatedCountries": [
+        "PHL"
+      ],
+      "relatedLayerIds": [
+        "pb_japan_trench"
+      ],
+      "topicTags": [
+        "プレート",
+        "火山",
+        "氷河",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第3問 問3（問番号11）",
+      "title": "第3問 問3: 問3次の図4中のＪとＫは，エルニーニョ現象とラニーニャ現象のいずれかの発 生時における海面...",
+      "promptSummary": "問3次の図4中のＪとＫは，エルニーニョ現象とラニーニャ現象のいずれかの発 生時における海面水温について，平年値との差を示したものである。また，図 4に関することがらについて述べた文章中の空欄カにはＪとＫのいずれか，空 欄キには北と南のいずれかが当てはまる。空欄カとキに当てはまる記号と語句 との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。 11 J K － 2 ℃未満 2 ℃以上 － 2～0 ℃ 0～2 ℃ ...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "海流",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第3問 問4（問番号12）",
+      "title": "第3問 問4: 問4次の図5中のサとシは，いくつかの国における浸水＊による延べ被災者数＊＊ と総被害額のい...",
+      "promptSummary": "問4次の図5中のサとシは，いくつかの国における浸水＊による延べ被災者数＊＊ と総被害額のいずれかである。また，Ｐ～Ｒは，アメリカ合衆国，タイ，バン グラデシュのいずれかである。延べ被災者数とタイとの正しい組合せを，後の (1)～(2)のうちから一つ選べ。 12 ＊高潮，津波は除く。 ＊＊緊急事態において迅速な救助を必要とする人数。 Ｐ Ｑ Ｒ 日本 0 100 200 300 サ Ｐ Ｑ Ｒ 日本 0 20 40 60 80 10...",
+      "relatedCountries": [
+        "JPN",
+        "THA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q5",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 13,
+      "points": 4,
+      "questionLabel": "第3問 問5（問番号13）",
+      "title": "第3問 問5: 問5地球温暖化の気温上昇の傾向は，海陸の割合などによって緯度ごとに異な る",
+      "promptSummary": "問5地球温暖化の気温上昇の傾向は，海陸の割合などによって緯度ごとに異な る。また，海氷に覆われた海は日射を反射するため，海氷面積の増減は気温上 昇に影響を与える。次の図6は，地球全体の平均気温が(1)℃上昇するという 予測にもとづき，いくつかの緯度帯における上昇気温別の面積割合をヒストグ ラムにより示したものである。図6中のＸとＹは緯度30～40度帯と80～90度 帯のいずれか，タとチは北半球と南半球のいずれかである。緯度30～4...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "地球温暖化"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d3_q6",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問6（問番号14）",
+      "title": "第3問 問6: 問6持続可能な国土像を考察する上で，自然災害への備えを検討することは重要 である",
+      "promptSummary": "問6持続可能な国土像を考察する上で，自然災害への備えを検討することは重要 である。次の図7は，日本のある沿岸地域における津波への備えについて， GIS を用いて検討する方法を模式的に示したものである。図7中の空欄マ～ム には，分析結果から推計できる値ａ～ｃのいずれかが当てはまる。マ～ムと ａ～ｃとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。 14 重なる領域 ( マ ) 津波浸水想定区域 重ね合わせ 重ね...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "自然災害",
+        "GIS"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第4問 問1（問番号15）",
+      "title": "第4問 問1: 第4問 エネルギーと産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第4問 エネルギーと産業に関する次の問い（問1～6）に答えよ。（配点 21） 問1世界各国では，エネルギー源の多様化が進められている。次の表1は，いく つかの国における2010年から2019年までの発電量の増加率を発電方式別に示 したものである。表1中のア～ウは，日本，中国＊，ドイツのいずれかであ る。国名とア～ウとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。 15 ＊台湾，ホンコン，マカオを含まない。 表1 （単位：...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "DEU",
+        "ISL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "原子力"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 16,
+      "points": 4,
+      "questionLabel": "第4問 問2（問番号16）",
+      "title": "第4問 問2: 問2ウェーバーは，工業の立地は原料の性質や製造過程によって異なると考え しようゆ た",
+      "promptSummary": "問2ウェーバーは，工業の立地は原料の性質や製造過程によって異なると考え しようゆ た。次の資料1中の空欄Ａ～Ｃには，醤油製造，石油精製，ワイン製造のいず れかが当てはまる。工業名とＡ～Ｃとの組合せとして最も適当なものを，後の (1)～(2)のうちから一つ選べ。 16 資料1 ウェーバーの工業立地論からみた工業の立地特性 ドイツの経済学者，ウェーバーの考えた原料指数とは，輸送費の観点から各種 工業の立地指向を考えるための数値であり，...",
+      "relatedCountries": [
+        "DEU"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦",
+        "大豆",
+        "原油"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 17,
+      "points": 4,
+      "questionLabel": "第4問 問3（問番号17）",
+      "title": "第4問 問3: 問3同じ製品でも，生産，流通，販売にかかわる産業の立地は異なっている",
+      "promptSummary": "問3同じ製品でも，生産，流通，販売にかかわる産業の立地は異なっている。次 の図1中のカ～クは，繊維・衣服に関する製造品出荷額，卸売販売額，小売販 売額のいずれかについて，全国に占める都道府県別の割合を示したものであ る。項目とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。 17 カ キ ク 40 ％ 20 5 統計年次は2021年。経済センサスにより作成。 図1 (1) (3) (4) (5) (6) (2) 製...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第4問 問4（問番号18）",
+      "title": "第4問 問4: 問4世界の多くの国・地域では，産業における観光業の重要性が高まっている",
+      "promptSummary": "問4世界の多くの国・地域では，産業における観光業の重要性が高まっている。 次の図2は，いくつかの国における国際観光収支を示したものであり，(1)～(2) は，日本，スペイン，タイ，ドイツのいずれかである。ドイツに該当するもの を，(1)～(2)のうちから一つ選べ。 18 Ǐ ǐ Ǒ ǒ 0 200 400 600 800 0 200 400 600 800 1000 億ドル 2010 年 2019 年 億ドル 1000 収入 支出...",
+      "relatedCountries": [
+        "JPN",
+        "THA",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q5",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問5（問番号19）",
+      "title": "第4問 問5: 問5近年の企業間分業では，新しい形態のサプライチェーンが増えている",
+      "promptSummary": "問5近年の企業間分業では，新しい形態のサプライチェーンが増えている。次の 図3は，ファブレス企業であるスマートフォンメーカーＥ社のサプライチェー ンを模式的に示したものである。図3に関することがらについて述べた文章中 の下線部(1)～(2)のうちから，適当でないものを一つ選べ。 19 Ｅ社本社 ｗ社工場 ｆ社工場 ｘ社工場 ｙ社工場 ｚ社工場 外部の企業への製造委託 組立 Ｅ社直営店 部品製造 部品 部品 部品 部品 商品 商品 ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d4_q6",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 20,
+      "points": 4,
+      "questionLabel": "第4問 問6（問番号20）",
+      "title": "第4問 問6: 問6これからの日本の国土像を考察する上で，国際分業における日本の製造業の 位置づけを他国と...",
+      "promptSummary": "問6これからの日本の国土像を考察する上で，国際分業における日本の製造業の 位置づけを他国と比較して考えることは重要である。次の表2は，日本とアメ リカ合衆国，中国におけるいくつかの産業の貿易について，最終財と部品や加 工品などの中間財に分けて貿易収支を指数化したものである。表2中のサとシ はアメリカ合衆国と中国のいずれか，ＪとＫは家庭用電気機械と輸送機械のい ずれかである。アメリカ合衆国と輸送機械との正しい組合せを，後の(1)～(...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d5_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第5問 問1（問番号21）",
+      "title": "第5問 問1: 第5問 高校生のイブキさんたちは，学校近くの工場跡地が公園に整備されたこと をきっかけに，...",
+      "promptSummary": "第5問 高校生のイブキさんたちは，学校近くの工場跡地が公園に整備されたこと をきっかけに，産業構造の変化に伴う都市の変容について調べることにした。イブ キさんたちの探究に関する次の問い（問1～5）に答えよ。（配点 17） 問1まず，イブキさんたちは，日本における工業用地の移り変わりについて調べ た。イブキさんたちがまとめた資料1中の凡例ＡとＢは，三大都市圏と地方圏 のいずれかである。また，空欄アとイには，後の文ｊとｋのいずれかが当...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d5_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 22,
+      "points": 4,
+      "questionLabel": "第5問 問2（問番号22）",
+      "title": "第5問 問2: 問2次に，イブキさんたちは，工業などの産業の構造が変化する中での都市人口 について調べた",
+      "promptSummary": "問2次に，イブキさんたちは，工業などの産業の構造が変化する中での都市人口 について調べた。次の図1は，日本の首都圏に位置する二つの市区ＤとＥの人 口ピラミッドを示したものである。図1中のカとキは1990年と2015年のいず れか，後の文ｘとｙは市区ＤとＥのいずれかの土地利用の変化について述べた ものである。2015年に該当する記号とＤについて述べた文との組合せとして 最も適当なものを，後の(1)～(2)のうちから一つ選べ。 22 ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d5_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第5問 問3（問番号23）",
+      "title": "第5問 問3: 問3イブキさんたちは，日本以外の国では，産業構造の変化と都市人口にどのよ うな関係がみられ...",
+      "promptSummary": "問3イブキさんたちは，日本以外の国では，産業構造の変化と都市人口にどのよ うな関係がみられるのかを調べた。次の図2中のサ～スは，イタリア，オース トラリア，韓国のいずれかである。国名とサ～スとの正しい組合せを，後の (1)～(2)のうちから一つ選べ。 23 0 20 40 60 都市人口率 80 100 ％ ％ 30 25 20 15 10 5 0 G D P に 占 め る 製 造 業 の 割 合 シ ス 1970 年 1995...",
+      "relatedCountries": [
+        "JPN",
+        "KOR",
+        "ITA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d5_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 24,
+      "points": 4,
+      "questionLabel": "第5問 問4（問番号24）",
+      "title": "第5問 問4: 問4イブキさんたちは，脱工業化が進んだ都市の産業において，情報技術が重要 な役割をもつよう...",
+      "promptSummary": "問4イブキさんたちは，脱工業化が進んだ都市の産業において，情報技術が重要 な役割をもつようになっていると考え，東京の情報関連産業について調べた。 次の表1は，情報関連産業を構成するいくつかの業種について，全国の従業者 数に占める東京都の割合と，全国の従業者数の増減率を示したものである。表 1中のタ～ツは，出版業，新聞業，ソフトウェア業のいずれかである。業種名 とタ～ツとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。 24...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d5_q5",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問5（問番号25）",
+      "title": "第5問 問5: 問5イブキさんたちは，脱工業化に加え，経済のグローバル化や情報化の進展に より，世界都市と...",
+      "promptSummary": "問5イブキさんたちは，脱工業化に加え，経済のグローバル化や情報化の進展に より，世界都市とよばれる都市が台頭していることを知った。こうした都市に は様々な経済的格差や地域差があると考え，いくつかの主題図を用いて検討す ることにした。イブキさんたちが作成した図3は，世界都市であるロンドンに ついて，外国で生まれた人の割合，高度な経営・専門業務の従事者割合，失業 率を地区別に示したものである。図3をもとに先生とイブキさんたちが話し 合...",
+      "relatedCountries": [
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d6_q1",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 26,
+      "points": 4,
+      "questionLabel": "第6問 問1（問番号26）",
+      "title": "第6問 問1: 第6問 インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ",
+      "promptSummary": "第6問 インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ。 （配点 17） 問1インド洋沿岸には，サイクロン（熱帯低気圧）による被害を受けやすい地域が 多く分布する。次の図1中の地域ア～エのうち，サイクロンの上陸頻度が最も 低い地域として適当なものを，後の(1)～(2)のうちから一つ選べ。 26 A C D ウ エ ア 150°E 120°E 90°E 60°E 30°E 0° 30°S 30°N イ B 図1 (...",
+      "relatedCountries": [
+        "IND",
+        "BGD"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理総合・探究"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d6_q2",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第6問 問2（問番号27）",
+      "title": "第6問 問2: 問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適 当でないものを，...",
+      "promptSummary": "問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適 当でないものを，次の(1)～(2)のうちから一つ選べ。 27 かんがい ＊灌漑施設を用いず，雨水のみに依存する水田。 (1) Ａ (3) Ｂ (4) Ｃ (2) Ｄ",
+      "relatedCountries": [
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "稲作"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d6_q3",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 28,
+      "points": 4,
+      "questionLabel": "第6問 問3（問番号28）",
+      "title": "第6問 問3: 問3インド洋周辺の国々の間では，人・モノの流れや結びつきの強さに特徴がみ られる",
+      "promptSummary": "問3インド洋周辺の国々の間では，人・モノの流れや結びつきの強さに特徴がみ られる。次の図2は，いくつかの国家間の輸出額と移民数＊を示したものであ り，カ～クは，アラブ首長国連邦，インドネシア，シンガポールのいずれかで ある。国名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。 28 ＊移住先の国に居住する移民の総数。 100 以上 8～ 100 1～8 1未満(万人) 移民数 カ ク キ 200 以上 80 ～ ...",
+      "relatedCountries": [
+        "IDN",
+        "SGP",
+        "IND",
+        "ARE"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "移民"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d6_q4",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第6問 問4（問番号29）",
+      "title": "第6問 問4: 問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が 存在する",
+      "promptSummary": "問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が 存在する。次の図3は，インド洋に面する国々における国内の宗教人口が第(1) 位の宗教人口割合を示したものである。また，後の文サ～スは，図3中のＦ～ Ｈのいずれかの国の宗教に関することがらについて述べたものである。Ｆ～Ｈ とサ～スとの組合せとして最も適当なものを，後の(2)～(3)のうちから一つ選 べ。 29 G F H 90 以上 80 未満(％) 80～9...",
+      "relatedCountries": [
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "イスラム教",
+        "キリスト教",
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2025_main_d6_q5",
+      "examId": "2025_main",
+      "year": 2025,
+      "session": "main",
+      "sessionLabel": "2025年度 共通テスト 本試験（地理総合・地理探究）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問5（問番号30）",
+      "title": "第6問 問5: とうしよ 問5次の資料1は，インド洋周辺の国々のうち，二つの島嶼国を取り上げて概観 したも...",
+      "promptSummary": "とうしよ 問5次の資料1は，インド洋周辺の国々のうち，二つの島嶼国を取り上げて概観 したものである。この二つの国について述べた文章中の下線部(1)～(2)のうちか ら，適当でないものを一つ選べ。 30 資料1 モーリシャス モルディブ モーリシャス モルディブ 面積 （km2） 人口 （万人） 旧宗主国 主な宗教 主な産業 モーリシャス 2，040 126．5 オランダ フランス イギリス ヒンドゥー教 製糖業・ 繊維産業 モルデ...",
+      "relatedCountries": [
+        "CHN",
+        "IND",
+        "GBR",
+        "FRA",
+        "NLD"
+      ],
+      "relatedLayerIds": [
+        "lf_gbr"
+      ],
+      "topicTags": [
+        "火山",
+        "サンゴ礁",
+        "人口",
+        "移民",
+        "宗教",
+        "イスラム教"
+      ],
+      "clipImagePath": "/data/clips/2025_main/2025_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

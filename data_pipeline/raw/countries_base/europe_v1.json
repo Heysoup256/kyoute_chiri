@@ -1,0 +1,1973 @@
+{
+  "GBR": {
+    "iso3": "GBR",
+    "nameJa": "イギリス",
+    "nameEn": "United Kingdom",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ（島嶼部）",
+    "capital": "ロンドン",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "古期造山帯（ペニン山脈炭田）とロンドン盆地ケスタ地形・テムズ川エスチュアリー",
+        "西岸海洋性気候（Cfb）と混合農業・酪農・北海油田（ブレント原油）",
+        "脱工業化とロンドン金融センター（シティ）・ブレグジット（EU離脱）と移民/スコットランド"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯（スコットランド高地・ペニン山脈）", "安定陸塊・堆積平野（ロンドン盆地ケスタ地形）"],
+      "summary": "北西部は氷河に削られた古期造山帯（フィヨルド風の入り江や氷食湖、ペニン山脈の炭田）、南東部はケスタ地形の緩やかな平原とテムズ川エスチュアリー。",
+      "items": [
+        {
+          "id": "gbr_cuesta_estuary",
+          "category": "landform",
+          "label": "ロンドン盆地のケスタ地形とテムズ川のエスチュアリー（ロンドン港）",
+          "detail": "緩く傾いた硬軟地層の差別侵食によるケスタ地形（急崖＝スカープ、緩斜面＝ディップ）がパリ盆地同様に発達。北海の干満差によるテムズ川エスチュアリーは世界港湾都市ロンドンの基盤。",
+          "clozeTerms": ["ケスタ地形", "エスチュアリー", "ペニン山脈"],
+          "tags": ["ケスタ地形", "エスチュアリー", "古期造山帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb"],
+      "summary": "偏西風と北大西洋海流により北緯50〜60度の高緯度ながら冬も氷点下に下がらず年中湿潤な西岸海洋性気候（Cfb）。緯度の割に夏は涼しい（7月18℃前後）。",
+      "cities": [
+        {
+          "cityId": "GBR_LONDON",
+          "nameJa": "ロンドン",
+          "nameEn": "London",
+          "lat": 51.51,
+          "lng": -0.13,
+          "elevationM": 11,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["偏西風と北大西洋海流で冬5℃前後と温暖", "年中降水があるが月50〜65mm程度で小雨や曇天が多い"],
+          "monthlyTempC": [5.2, 5.4, 7.6, 10.3, 13.6, 16.7, 18.9, 18.5, 15.6, 11.9, 8.0, 5.6],
+          "monthlyPrecipMm": [59, 44, 42, 44, 49, 47, 45, 52, 50, 68, 66, 59],
+          "dataSource": "Met Office / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業", "酪農", "企業的牧畜（粗放的牧羊）"],
+      "agriculture": [
+        {
+          "id": "gbr_west_dairy_east_wheat",
+          "label": "西の酪農・牧羊（湿潤）と東の混合農業・穀物（やや少雨）の対比",
+          "detail": "国土に占める牧草地割合が高く、耕作地は東部イングランド（小麦・大麦）に集中。",
+          "clozeTerms": ["牧草地", "混合農業"],
+          "tags": ["混合農業", "酪農"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "gbr_northsea_wind",
+          "label": "北海油田・天然ガス（減少傾向）と世界有数の洋上風力発電",
+          "detail": "1970年代以降開発された北海油田（アバディーンが拠点）で産油・産ガス国となったが生産は減少局面。産業革命を支えた炭田は閉山・脱石炭完了。洋上風力発電を急速拡大。",
+          "clozeTerms": ["北海油田", "洋上風力発電", "産業革命"],
+          "tags": ["北海油田", "風力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "gbr_deindustrialization_city",
+          "label": "産業革命（ランカシャー・バーミンガム）の衰退と脱工業化・シティ（国際金融）",
+          "detail": "綿工業・鉄鋼の旧工業地域が衰退（サッチャー政権期の構造改革）した後、外資系自動車工場（サンダーランド等）の誘致と、ロンドン「シティ」での国際金融・保険・法務（第三次産業）へのシフトが進んだ。",
+          "clozeTerms": ["脱工業化", "シティ", "ブレグジット"],
+          "tags": ["国際金融", "ブレグジット", "自動車"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["金融・ビジネスサービス", "機械・航空機エンジン", "医薬品", "原油・自動車"],
+        "majorImports": ["機械・電気機器", "自動車", "衣類・食料品"],
+        "majorPartners": ["アメリカ", "ドイツ", "オランダ", "フランス", "中国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語）／ケルト語派（ウェールズ・ゲール語）",
+      "officialLanguages": ["英語（地域によりウェールズ語等）"],
+      "religions": [
+        { "name": "キリスト教（英国国教会・カトリック・長老派）", "percent": 46 },
+        { "name": "無宗教", "percent": 37 },
+        { "name": "イスラム教・ヒンドゥー教（旧植民地系移民）", "percent": 17 }
+      ],
+      "ethnicGroups": ["イングランド人・スコットランド人・ウェールズ人・北アイルランド人", "南アジア・カリブ系等旧英連邦移民"],
+      "regionalIntegrations": ["G7", "NATO", "OECD", "CPTPP（2024年加盟）", "イギリス連邦（2020年EU離脱）"],
+      "historicalContext": [
+        {
+          "id": "gbr_brexit_scotland",
+          "label": "ブレグジット（2020年EU完全離脱）と旧英連邦移民・スコットランド/北アイルランド問題",
+          "detail": "移民流入抑制や主権回復を掲げEUを離脱したが、英領北アイルランドとEU加盟国アイルランドの国境管理問題や物流・生産網の混乱、スコットランド独立運動が課題。",
+          "clozeTerms": ["ブレグジット", "EU離脱", "北アイルランド"],
+          "tags": ["EU", "ブレグジット", "移民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "FRA": {
+    "iso3": "FRA",
+    "nameJa": "フランス",
+    "nameEn": "France",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ",
+    "capital": "パリ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "EU最大の農業大国（パリ盆地ケスタの混合農業・CAP・地中海ワイン）",
+        "原子力発電比率（約65〜70%）世界トップ級と電力純輸出国",
+        "エアバス（トゥールーズ）・TGV・ファッションと旧植民地（マグレブ）移民・ライシテ"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アルプス・ピレネー山脈）", "古期造山帯（中央高地＝マシフサントラル）", "パリ盆地ケスタ地形"],
+      "summary": "中央のパリ盆地（同心円状のケスタ地形）に肥沃なレスが覆い、南東にアルプス山脈、南西にピレネー山脈が走る。",
+      "items": [
+        {
+          "id": "fra_paris_basin_cuesta",
+          "category": "landform",
+          "label": "パリ盆地のケスタ地形と地中海・大西洋の海岸環境",
+          "detail": "中心のパリに向けて硬軟の地層が盆地状に重なり、東側縁辺（ヴェルダン・シャンパーニュ等）に急崖（ケスタ）を形成。緩斜面のぶどう畑や肥沃な小麦畑に利用。",
+          "clozeTerms": ["パリ盆地", "ケスタ地形", "アルプス山脈"],
+          "tags": ["ケスタ地形", "新期造山帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb", "Csa", "ET"],
+      "summary": "北部・西部は西岸海洋性気候（Cfb）、南部地中海沿岸（マルセイユ・ニース）は地中海性気候（Csa）。",
+      "cities": [
+        {
+          "cityId": "FRA_PARIS",
+          "nameJa": "パリ",
+          "nameEn": "Paris",
+          "lat": 48.86,
+          "lng": 2.35,
+          "elevationM": 35,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["偏西風と北大西洋海流で高緯度の割に冬4〜5℃と温暖", "年中均等に月40〜60mmの降水"],
+          "monthlyTempC": [4.9, 5.6, 8.8, 12.1, 15.6, 18.8, 20.9, 20.6, 17.2, 13.0, 8.3, 5.5],
+          "monthlyPrecipMm": [50, 42, 48, 49, 63, 54, 62, 56, 48, 60, 54, 62],
+          "dataSource": "Météo-France / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "FRA_MARSEILLE",
+          "nameJa": "マルセイユ",
+          "nameEn": "Marseille",
+          "lat": 43.3,
+          "lng": 5.37,
+          "elevationM": 12,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["夏は亜熱帯高圧帯で高温乾燥", "冬は偏西風低気圧で降水・ミストラル（寒風）も吹く"],
+          "monthlyTempC": [7.5, 8.3, 11.4, 14.3, 18.3, 22.3, 25.1, 24.8, 20.9, 16.7, 11.7, 8.4],
+          "monthlyPrecipMm": [48, 34, 38, 52, 42, 26, 12, 22, 68, 86, 68, 52],
+          "dataSource": "Météo-France / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業", "地中海式農業", "酪農"],
+      "agriculture": [
+        {
+          "id": "fra_eu_agri_power",
+          "label": "EU最大の農業大国（小麦輸出・ワイン・乳製品・CAP受益）",
+          "detail": "国土の過半が農地で、EUの共通農業政策（CAP）最大の受益国。パリ盆地の小麦・大麦・てんさい、地中海やボルドー・ブルゴーニュのワイン用ぶどう、ノルマンディーの酪農が発展し食料自給率100%超。",
+          "worldRank": 4,
+          "worldRankNote": "小麦生産・輸出EU1位（世界有数）、ワイン生産世界2位級",
+          "clozeTerms": ["EU最大の農業大国", "CAP（共通農業政策）", "小麦", "ワイン"],
+          "tags": ["混合農業", "地中海式農業", "小麦", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "fra_nuclear_power",
+          "label": "原子力発電比率（約65〜70%）世界1位と欧州への電力輸出",
+          "detail": "資源に乏しく第一次オイルショック後に原子力推進（メスメル計画）を断行。発電の約7割を原発で賄い、ドイツやイタリアへ電力を輸出する。",
+          "worldRank": 1,
+          "worldRankNote": "総発電電力量に占める原子力比率 世界1位",
+          "clozeTerms": ["原子力発電", "電力輸出"],
+          "tags": ["原子力", "エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "fra_airbus_tgv_luxury",
+          "label": "トゥールーズのエアバス航空宇宙・TGV・原子力技術・ファッション",
+          "detail": "欧州共同開発のエアバス最終組立工場があるトゥールーズ（サンベルトのフランス版）、高速鉄道TGV、ラグジュアリーブランド（LVMH等）、世界1位の外国人観光客数を誇る観光立国。",
+          "clozeTerms": ["エアバス", "トゥールーズ", "TGV"],
+          "tags": ["航空宇宙", "観光"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["航空機（エアバス）・宇宙機器", "医薬品・化粧品", "自動車", "ワイン・農産物"],
+        "majorImports": ["原油・天然ガス", "自動車", "機械・電子機器"],
+        "majorPartners": ["ドイツ", "アメリカ", "イタリア", "スペイン", "イギリス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：フランス語）",
+      "officialLanguages": ["フランス語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 47 },
+        { "name": "無宗教", "percent": 40 },
+        { "name": "イスラム教（マグレブ系等移民でEU最多級）", "percent": 10 }
+      ],
+      "ethnicGroups": ["フランス人", "旧植民地系移民（アルジェリア・モロッコ・チュニジア・西アフリカ系等）"],
+      "regionalIntegrations": ["EU", "ユーロ圏", "シェンゲン協定", "NATO", "G7"],
+      "historicalContext": [
+        {
+          "id": "fra_maghreb_laicite",
+          "label": "旧アフリカ植民地（マグレブ等）からの移民と「ライシテ（世俗主義）」の摩擦",
+          "detail": "戦後の労働力不足を補うため旧北・西アフリカ植民地（フランス語圏）から多数の移民を受け入れた。公立学校でのスカーフ着用禁止など厳格な政教分離（ライシテ）と移民2世・3世の雇用格差（バンリュー＝郊外団地の暴動等）が社会問題。",
+          "clozeTerms": ["マグレブ諸国", "ライシテ", "政教分離", "旧フランス領"],
+          "tags": ["移民", "イスラム教", "旧フランス領", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "DEU": {
+    "iso3": "DEU",
+    "nameJa": "ドイツ",
+    "nameEn": "Germany",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ",
+    "capital": "ベルリン",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "北ドイツ平原（氷河堆積）・中部山地（古期）・アルプス北麓の3層地形とエルベ川エスチュアリー",
+        "ライン川国際水運・ルール工業地域の構造転換と南部先端産業",
+        "褐炭・再生可能エネルギー（風力・太陽光）・脱原発完了",
+        "東西ドイツ統一の地域差・ガストアルバイター由来トルコ系移民・難民受入"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯（中部ドイツ山地・ハルツ山地）", "安定陸塊・氷河堆積（北ドイツ平原）", "新期造山帯（南部アルプス北麓）"],
+      "summary": "北部は大陸氷河に覆われた平坦な北ドイツ平原（砂質・モレーン）、中部は石炭を産する古期造山帯と肥沃なレス地帯、南部はアルプス前縁高原。",
+      "items": [
+        {
+          "id": "deu_elbe_estuary_rhine",
+          "category": "landform",
+          "label": "エルベ川のエスチュアリー（ハンブルク港）とライン川国際水運・マイン・ドナウ運河",
+          "detail": "北海の大きな潮汐干満差でラッパ状に開くエルベ川エスチュアリーは内陸港ハンブルクを繁栄させた。ライン川はロッテルダム（蘭）へ直結し、マイン・ドナウ運河で黒海とも結ばれる欧州経済の血管。",
+          "clozeTerms": ["エスチュアリー", "エルベ川", "ハンブルク", "ライン川", "マイン・ドナウ運河"],
+          "tags": ["エスチュアリー", "国際河川", "北海"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb", "Dfb"],
+      "summary": "偏西風と北大西洋海流により冬は比較的温暖で年中降水がある西岸海洋性気候（Cfb）。東・南部内陸ほど気温較差が広がる。",
+      "cities": [
+        {
+          "cityId": "DEU_BERLIN",
+          "nameJa": "ベルリン",
+          "nameEn": "Berlin",
+          "lat": 52.52,
+          "lng": 13.4,
+          "elevationM": 34,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["偏西風と北大西洋海流", "東寄りのため冬はやや冷え込み（1月0〜1℃）、夏は対流性降雨でやや降水多い"],
+          "monthlyTempC": [0.6, 1.4, 4.8, 9.5, 14.3, 17.6, 19.7, 19.3, 14.9, 9.8, 4.9, 1.7],
+          "monthlyPrecipMm": [42, 33, 41, 37, 54, 69, 56, 58, 45, 37, 44, 55],
+          "dataSource": "DWD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "DEU_MUNICH",
+          "nameJa": "ミュンヘン",
+          "nameEn": "Munich",
+          "lat": 48.14,
+          "lng": 11.58,
+          "elevationM": 519,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候（アルプス北麓）",
+          "factors": ["標高520mのアルプス前縁で夏に地形性・対流性降水が増加（年約950mm）"],
+          "monthlyTempC": [0.0, 1.1, 4.9, 9.5, 14.0, 17.3, 19.1, 18.8, 14.5, 9.6, 4.4, 1.1],
+          "monthlyPrecipMm": [48, 46, 61, 65, 108, 126, 122, 114, 86, 67, 58, 56],
+          "dataSource": "DWD / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業", "酪農"],
+      "agriculture": [
+        {
+          "id": "deu_mixed_rye_wheat",
+          "label": "北部のライ麦・ジャガイモ・豚（氷河痩せ土）と中部レス地帯の小麦・てんさい（混合農業）",
+          "detail": "氷河堆積の貧栄養砂地（ゲースト）ではライ麦と豚飼養、レス（黄土）地帯（ベルデ）では小麦・てんさい、アルプス麓では酪農という土壌に応じた住み分け。",
+          "clozeTerms": ["混合農業", "ライ麦", "レス（黄土）", "てんさい"],
+          "tags": ["混合農業", "小麦"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "deu_lignite_energiewende",
+          "label": "褐炭（低品位炭・露天掘り）と脱原発完了・エネルギーヴェンデ（再エネ転換）",
+          "detail": "ルール炭田の瀝青炭は輸入に押され閉山したが、東西の褐炭は露天掘りで重要電源。2023年に脱原発を完了し、北部の洋上・陸上風力や太陽光・バイオガス比率が5割超に達する一方、ロシア産ガス停止後の電力価格高騰が課題。",
+          "worldRank": 2,
+          "worldRankNote": "褐炭生産量 世界トップ級、風力発電容量欧州1位",
+          "clozeTerms": ["褐炭", "脱原発", "風力発電", "エネルギーヴェンデ"],
+          "tags": ["褐炭", "風力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "deu_ruhr_and_south",
+          "label": "ルール工業地域の構造転換（環境・IT）と南部（ミュンヘン・シュトゥットガルト）先端工業",
+          "detail": "かつて炭田立地だったルール（エッセン・ドルトムント等）は環境保全とIT・大学誘致・産業遺産観光で再生。自動車（VW・ベンツ・BMW）、化学（バイエル/BASF）、インダストリー4.0の中核。",
+          "clozeTerms": ["ルール工業地域", "構造転換", "インダストリー4.0"],
+          "tags": ["ルール工業地域", "自動車", "ハイテク産業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・部品", "一般機械", "化学・医薬品", "電気機器"],
+        "majorImports": ["機械・電気機器", "原油・天然ガス", "自動車部品"],
+        "majorPartners": ["アメリカ", "中国", "オランダ", "フランス", "ポーランド"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：ドイツ語）",
+      "officialLanguages": ["ドイツ語"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：主に北部）", "percent": 23 },
+        { "name": "キリスト教（カトリック：主に南部バイエルン・西部ラインラント）", "percent": 24 },
+        { "name": "無宗教（旧東ドイツ地域に突出）・イスラム教", "percent": 53 }
+      ],
+      "ethnicGroups": ["ドイツ人", "トルコ系（戦後ガストアルバイター由来）", "シリア・ウクライナ難民・東欧系"],
+      "regionalIntegrations": ["EU", "ユーロ圏", "シェンゲン協定", "NATO", "G7"],
+      "historicalContext": [
+        {
+          "id": "deu_reunification_gastarbeiter",
+          "label": "東西ドイツ統一（1990年）の地域格差とガストアルバイター・難民受入",
+          "detail": "「奇跡の復興」期にトルコ・イタリア等から招いた外国人労働者（ガストアルバイター）が定住。旧東ドイツは社会主義時代に無宗教割合が高くなり、統一後も若年層流出・失業率・極右政党支持など旧西側との格差が残存。多極分散型都市配置。",
+          "clozeTerms": ["ガストアルバイター", "東西統一", "旧東ドイツ", "多極分散"],
+          "tags": ["東西統一", "移民", "難民", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ITA": {
+    "iso3": "ITA",
+    "nameJa": "イタリア",
+    "nameEn": "Italy",
+    "region": "ヨーロッパ",
+    "subRegion": "南ヨーロッパ（地中海）",
+    "capital": "ローマ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "北部の工業三角地帯・第三のイタリア（サードイタリー）と南部（メッツォジョルノ）の南北格差",
+        "ポー川流域の混合農業・欧州最大の稲作と南部の地中海式農業",
+        "アルプス・アペニン山脈の地震・火山と地中海難民玄関口・少子高齢化"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アルプス・アペニン山脈）"],
+      "summary": "アフリカプレートとの衝突で形成されたアルプス・アペニン山脈が走り、ベスビオ・エトナ火山や地震が頻発。北部に広大なポー川沖積平野（ロンバルディア平野）。",
+      "items": [
+        {
+          "id": "ita_alps_po_volcano",
+          "category": "tectonic",
+          "label": "新期造山帯の火山（エトナ・ベスビオ）・地震とポー川流域平野",
+          "detail": "北部のロンバルディア平野にはアルプスの雪解け水が集まり、肥沃な農業地帯を形成。ヴェネツィアは潟湖（ラグーン）上の都市で高潮（アクア・アルタ）対策が課題。",
+          "clozeTerms": ["ポー川", "エトナ火山", "ラグーン"],
+          "tags": ["新期造山帯", "火山", "地震"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "Cfa"],
+      "summary": "中部・南部（ローマ・ナポリ）は典型的な地中海性気候（Csa：夏高温無降水・冬温暖湿潤）、北部ポー川流域（ミラノ）は内陸性・アルプス南麓でCfa。",
+      "cities": [
+        {
+          "cityId": "ITA_ROME",
+          "nameJa": "ローマ",
+          "nameEn": "Rome",
+          "lat": 41.9,
+          "lng": 12.5,
+          "elevationM": 21,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["夏（6〜8月）は亜熱帯高圧帯で乾燥・25℃前後", "冬は偏西風低気圧で10〜12月に多雨"],
+          "monthlyTempC": [7.9, 8.7, 11.1, 14.0, 18.2, 22.4, 25.1, 25.2, 21.4, 17.0, 12.4, 8.8],
+          "monthlyPrecipMm": [72, 66, 62, 66, 48, 25, 16, 22, 68, 108, 116, 94],
+          "dataSource": "AM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "ITA_MILAN",
+          "nameJa": "ミラノ",
+          "nameEn": "Milan",
+          "lat": 45.46,
+          "lng": 9.19,
+          "elevationM": 122,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候",
+          "factors": ["アルプス山脈に守られ、夏にも雷雨・地形性降雨が多いため夏乾にならずCfa"],
+          "monthlyTempC": [2.8, 4.9, 9.4, 13.4, 18.1, 22.3, 24.7, 24.2, 19.9, 14.0, 8.0, 3.6],
+          "monthlyPrecipMm": [58, 52, 68, 86, 102, 82, 68, 78, 84, 106, 102, 62],
+          "dataSource": "AM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "混合農業", "アジア以外の水田稲作"],
+      "agriculture": [
+        {
+          "id": "ita_po_rice_med",
+          "label": "ポー川流域のEU最大の稲作（リゾット用）と南部の地中海式農業（オリーブ・ぶどう・小麦）",
+          "detail": "北部のポー川中流域はアルプスの雪解け水による灌漑水田でEU最大の米産地。南部は乾燥耐性の強いオリーブ・オレンジ・硬質小麦（パスタ用デュラム小麦）と羊・山羊。",
+          "worldRank": 2,
+          "worldRankNote": "ワイン・オリーブ油生産 世界トップ2級、米生産EU1位",
+          "clozeTerms": ["地中海式農業", "ポー川稲作", "オリーブ"],
+          "tags": ["地中海式農業", "稲作", "オリーブ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ita_energy_import",
+          "label": "資源小国・原発全廃（チェルノブイリ後国民投票）と天然ガス・地熱（ラルデレロ）",
+          "detail": "国内資源に乏しくアルジェリア・アゼルバイジャンからのガスパイプライン等に依存。トスカーナ州ラルデレロは世界初の地熱発電発祥地。",
+          "clozeTerms": ["脱原発", "地熱発電"],
+          "tags": ["天然ガス", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ita_third_italy_north_south",
+          "label": "北西部「工業三角地帯」＋中北部「第三のイタリア（サードイタリー）」と南部の経済停滞",
+          "detail": "①北西部ミラノ・トリノ（自動車フィアット）・ジェノバの重化学工業三角地帯、②北東部・中部（エミリアロマーニャ、トスカーナ、ヴェネト）の家族経営中小企業ネットワークによる高付加価値ブランド（皮革・アパレル・陶器・工作機械＝「第三のイタリア」）、③農業中心で失業率の高い南部（メッツォジョルノ）という3層構造。",
+          "clozeTerms": ["第三のイタリア", "工業三角地帯", "南北格差", "メッツォジョルノ"],
+          "tags": ["第三のイタリア", "工業地域", "自動車"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["一般機械・精密機械", "医薬品・化学", "自動車・輸送機器", "アパレル・皮革・食品（ワイン/パスタ）"],
+        "majorImports": ["原油・天然ガス", "自動車", "機械・化学"],
+        "majorPartners": ["ドイツ", "アメリカ", "フランス", "スペイン", "スイス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：イタリア語）",
+      "officialLanguages": ["イタリア語"],
+      "religions": [
+        { "name": "キリスト教（カトリック：ローマ内にバチカン市国）", "percent": 75 },
+        { "name": "無宗教・イスラム教ほか", "percent": 25 }
+      ],
+      "ethnicGroups": ["イタリア人", "北アフリカ・東欧等からの移民"],
+      "regionalIntegrations": ["EU", "ユーロ圏", "シェンゲン協定", "NATO", "G7"],
+      "historicalContext": [
+        {
+          "id": "ita_aging_med_refugees",
+          "label": "深刻な少子高齢化（南北格差）とアフリカからの地中海難民玄関口",
+          "detail": "日本と並び世界で最も早く超高齢社会に突入（出生率低迷）。北アフリカ（チュニジア・リビア）に近くランペドゥーサ島等に難民・不法移民船が殺到しEU域内の負担分担が問題。",
+          "clozeTerms": ["少子高齢化", "南北格差", "難民玄関口"],
+          "tags": ["少子高齢化", "難民", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ESP": {
+    "iso3": "ESP",
+    "nameJa": "スペイン",
+    "nameEn": "Spain",
+    "region": "ヨーロッパ",
+    "subRegion": "イベリア半島",
+    "capital": "マドリード",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "オリーブ油生産世界1位・地中海式農業とアルメリアの施設園芸（プラスチックの海）",
+        "EU加盟後の安価賃金を活かした自動車生産（欧州2位級）・観光世界2位",
+        "カタルーニャ・バスクの自治・分離運動と中南米（ラテンアメリカ）との歴史的紐帯"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯・安定台地（メセタ）", "新期造山帯（ピレネー山脈・ベティコ山系）"],
+      "summary": "イベリア半島の大部分を占める標高600〜700mの乾燥台地「メセタ」を中心に、北部ピレネー山脈・南部アンダルシア低地が広がる。",
+      "items": [
+        {
+          "id": "esp_meseta",
+          "category": "landform",
+          "label": "イベリア半島中央の台地「メセタ」とジブラルタル海峡",
+          "detail": "メセタは乾燥・夏暑く冬寒い内陸性気候で粗放的小麦・牧羊（メリノ種原産）。南端のジブラルタル海峡はアフリカ（モロッコ）と約14kmの要衝。",
+          "clozeTerms": ["メセタ", "ジブラルタル海峡", "ピレネー山脈"],
+          "tags": ["イベリア半島", "海峡"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "BSk", "Cfb"],
+      "summary": "大部分が地中海性気候（Csa）だが、内陸メセタ（マドリード）は乾燥が強くBSk境界、大西洋北西岸（ビルバオ等）は偏西風でCfb。",
+      "cities": [
+        {
+          "cityId": "ESP_MADRID",
+          "nameJa": "マドリード",
+          "nameEn": "Madrid",
+          "lat": 40.42,
+          "lng": -3.7,
+          "elevationM": 667,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候（内陸・ステップ移行部）",
+          "factors": ["メセタ標高667mの内陸で年較差が大きく冬寒い", "夏（7〜8月）は高温乾燥（降水10mm前後）"],
+          "monthlyTempC": [6.3, 7.9, 11.2, 13.4, 17.4, 22.8, 26.2, 25.6, 21.1, 15.6, 10.0, 6.9],
+          "monthlyPrecipMm": [33, 35, 29, 43, 47, 21, 10, 10, 26, 60, 56, 44],
+          "dataSource": "AEMET / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "園芸農業", "企業的牧畜（メリノ羊）"],
+      "agriculture": [
+        {
+          "id": "esp_olive_almeria",
+          "label": "オリーブ油世界1位・柑橘/ぶどう（地中海式）とアルメリアの施設園芸（プラスチックの海）",
+          "detail": "アンダルシア地方のオリーブ油は世界の約4割を占める首位。南東部アルメリアは砂漠に近い少雨地だが、点滴灌漑＋巨大ビニールハウス群（「プラスチックの海」）でEU向け冬野菜（トマト・パプリカ）を通年供給（移民労働力が支える）。",
+          "worldRank": 1,
+          "worldRankNote": "オリーブ油生産 世界1位、ぶどう栽培面積世界1位",
+          "clozeTerms": ["オリーブ", "地中海式農業", "アルメリア施設園芸"],
+          "tags": ["地中海式農業", "オリーブ", "園芸農業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "esp_wind_solar",
+          "label": "風力・太陽光発電の急速拡大（メセタの強風・日照活用）",
+          "detail": "化石燃料は乏しいが、太陽光・風力発電比率が非常に高く再エネ先進国。",
+          "clozeTerms": ["風力発電", "太陽光発電"],
+          "tags": ["再生可能エネルギー", "風力発電"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "esp_auto_tourism",
+          "label": "EU有数の自動車生産拠点（バルセロナ・マドリード等）と世界第2位の観光大国",
+          "detail": "1986年のEC加盟後、旧西欧より安い賃金とEU市場アクセスを武器に独仏米日系自動車メーカーが進出。太陽光（コスタデルソル）と世界遺産を活かした観光収入が極めて大きい。",
+          "worldRank": 2,
+          "worldRankNote": "国際観光客到着数 世界2位級（仏に次ぐ）",
+          "clozeTerms": ["自動車工業", "観光立国"],
+          "tags": ["自動車", "観光", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・部品", "機械・医薬品", "果実・野菜・オリーブ油・ワイン"],
+        "majorImports": ["原油・天然ガス", "機械・電子機器", "自動車部品"],
+        "majorPartners": ["フランス", "ドイツ", "イタリア", "ポルトガル", "イギリス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語・カタルーニャ語・ガリシア語）／系統孤立（バスク語）",
+      "officialLanguages": ["スペイン語（カスティーリャ語）", "地域公用語（カタルーニャ語・バスク語・ガリシア語）"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 58 },
+        { "name": "無宗教・イスラム教", "percent": 42 }
+      ],
+      "ethnicGroups": ["スペイン人（カスティーリャ・カタルーニャ・バスク・ガリシア等地域意識が強い）", "中南米・モロッコ系移民"],
+      "regionalIntegrations": ["EU", "ユーロ圏", "シェンゲン協定", "NATO", "OECD"],
+      "historicalContext": [
+        {
+          "id": "esp_catalonia_basque",
+          "label": "カタルーニャ州（バルセロナ）とバスク州の自治・分離問題、中南米との絆",
+          "detail": "豊かな工業・観光地域カタルーニャでは独自言語と財政負担への不満から独立運動が活発。バスク語は印欧語族に属さない孤立言語。かつての中南米植民地（ラテンアメリカ）からの同言語移民も多い。",
+          "clozeTerms": ["カタルーニャ", "バスク語", "旧スペイン領"],
+          "tags": ["民族問題", "言語", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "NLD": {
+    "iso3": "NLD",
+    "nameJa": "オランダ",
+    "nameEn": "Netherlands",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ（ベネルクス）",
+    "capital": "アムステルダム（政治中心はハーグ）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ポルダー（干拓地）と海抜以下の低地・ライン川デルタ",
+        "ロッテルダム（ユーロポート）の欧州最大港湾・中継貿易機能",
+        "施設園芸（チューリップ・野菜）と酪農による驚異的農産物輸出世界2位級"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊・ライン/マース/スヘルデ川の大三角州"],
+      "summary": "国土の約4分の1が海抜0m未満（平均標高が世界で最も低い国の一つ）。高潮防波堤と干拓地（ポルダー）で海から守られている。",
+      "items": [
+        {
+          "id": "nld_polder_delta",
+          "category": "landform",
+          "label": "ポルダー（干拓地）とゾイデル海大堤防・地球温暖化海面上昇対策",
+          "detail": "風車（現代は電動ポンプ）で排水した低湿地「ポルダー」を牧草地や園芸農地に利用。1953年北海大高潮後にデルタ計画（可動式防潮堤）を建設。",
+          "clozeTerms": ["ポルダー", "干拓地", "デルタ計画"],
+          "tags": ["ポルダー", "三角州", "地球温暖化"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb"],
+      "summary": "偏西風と北海の影響で年較差が小さく年中湿潤な西岸海洋性気候（Cfb）。風車を回す強い偏西風が吹く。",
+      "cities": [
+        {
+          "cityId": "NLD_AMSTERDAM",
+          "nameJa": "アムステルダム",
+          "nameEn": "Amsterdam",
+          "lat": 52.37,
+          "lng": 4.9,
+          "elevationM": -2,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["北海沿岸の平坦地", "偏西風と暖流により冬3〜4℃、夏17〜18℃"],
+          "monthlyTempC": [3.5, 3.8, 6.2, 9.6, 13.4, 16.0, 18.0, 17.8, 14.9, 11.2, 7.2, 4.3],
+          "monthlyPrecipMm": [66, 48, 56, 40, 56, 65, 78, 86, 80, 82, 82, 76],
+          "dataSource": "KNMI / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["園芸農業", "酪農"],
+      "agriculture": [
+        {
+          "id": "nld_horticulture_export",
+          "label": "世界2位級の農産物輸出大国（ガラス温室施設園芸・花き・酪農チーズ）",
+          "detail": "九州ほどの狭い面積ながら、高効率なガラス温室（LED・水耕・自動化＝フードバレー）によるトマト・パプリカ・チューリップ球根・切り花、および高品質乳製品で、米国に次ぐ世界第2位級の農産物輸出額を誇る。",
+          "worldRank": 2,
+          "worldRankNote": "農産物輸出額 世界2位（米国に次ぐ）、切り花輸出世界1位",
+          "clozeTerms": ["園芸農業", "施設園芸", "農産物輸出2位", "チューリップ"],
+          "tags": ["園芸農業", "酪農", "施設園芸"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "nld_groningen_wind",
+          "label": "フローニンゲン天然ガス田（地震問題で閉鎖）と洋上風力発電",
+          "detail": "欧州最大の陸上ガス田だったが地盤沈下・地震により生産停止。現在は北海洋上風力へ転換中。",
+          "clozeTerms": ["フローニンゲンガス田", "洋上風力発電"],
+          "tags": ["天然ガス", "風力発電"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "nld_rotterdam_asml",
+          "label": "ロッテルダム（ユーロポート）の「欧州の玄関口」機能とASML半導体製造装置",
+          "detail": "ライン川河口のロッテルダム港は、大型外洋船から艀（バージ）へ積み替えドイツ等EU内陸へ運ぶ欧州最大港（石油精製・化学集積）。アイントホーフェン周辺のASML（EUV露光装置ほぼ独占）などハイテクも世界屈指。",
+          "worldRank": 1,
+          "worldRankNote": "欧州最大の貨物港（ロッテルダム）、半導体露光装置世界1位",
+          "clozeTerms": ["ロッテルダム", "ユーロポート", "ライン川", "ASML"],
+          "tags": ["港湾", "ライン川", "半導体"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["機械・半導体製造装置", "石油精製品・化学製品", "農産物・乳製品・花卉", "電子機器再輸出"],
+        "majorImports": ["原油", "電気機器・電子部品", "機械・医薬品"],
+        "majorPartners": ["ドイツ", "ベルギー", "フランス", "イギリス", "アメリカ"],
+        "note": "EU域内の中継物流機能（ロッテルダム港・スキポール空港）により貿易額が非常に大きい。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：オランダ語）",
+      "officialLanguages": ["オランダ語"],
+      "religions": [
+        { "name": "無宗教", "percent": 57 },
+        { "name": "キリスト教（カトリック・プロテスタント）", "percent": 36 },
+        { "name": "イスラム教ほか", "percent": 7 }
+      ],
+      "ethnicGroups": ["オランダ人", "インドネシア・スリナム・トルコ・モロッコ系移民"],
+      "regionalIntegrations": ["EU", "ベネルクス", "ユーロ圏", "シェンゲン協定", "NATO"],
+      "historicalContext": [
+        {
+          "id": "nld_maritime_hague",
+          "label": "海洋貿易国家とハーグの国際司法機関・ベネルクス経済統合の先駆",
+          "detail": "ベネルクス3国（ベルギー・オランダ・ルクセンブルク）はEU統合の原型。ハーグには国際司法裁判所（ICJ）や国際刑事裁判所（ICC）が置かれる。",
+          "clozeTerms": ["ベネルクス", "ハーグ", "国際司法裁判所"],
+          "tags": ["EU", "国際機関"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "BEL": {
+    "iso3": "BEL",
+    "nameJa": "ベルギー",
+    "nameEn": "Belgium",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ（ベネルクス）",
+    "capital": "ブリュッセル",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "北部フランデレン（オランダ語系＝フラマン語）と南部ワロン（フランス語）の言語境界・連邦制",
+        "EU本部・NATO本部が置かれる「ヨーロッパの首都」ブリュッセル",
+        "アントワープ港（ダイヤモンド取引）と南部の石炭重工業衰退→北部臨海工業発展"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定低地（北部フランデレン平原）", "古期造山帯（南部アルデンヌ高地）"],
+      "summary": "北部は北海に続く平坦な低地、南東部は古期造山帯の森林高原アルデンヌ。",
+      "items": [
+        {
+          "id": "bel_antwerp_flanders",
+          "category": "landform",
+          "label": "スヘルデ川のエスチュアリー（アントワープ港）と南部サンブル・ミューズ炭田",
+          "detail": "かつての南部ワロン地域は石炭立地型重工業で栄えたが炭田閉鎖で衰退し、現在は北部アントワープ等の臨海工業・物流が経済を牽引。",
+          "clozeTerms": ["アントワープ", "エスチュアリー", "サンブル・ミューズ"],
+          "tags": ["港湾", "古期造山帯"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb"],
+      "summary": "西岸海洋性気候（Cfb）。一年中穏やかで降雨が均等。",
+      "cities": [
+        {
+          "cityId": "BEL_BRUSSELS",
+          "nameJa": "ブリュッセル",
+          "nameEn": "Brussels",
+          "lat": 50.85,
+          "lng": 4.35,
+          "elevationM": 100,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["偏西風と北海に近い低地", "月降水量60〜85mm程度で年中湿潤"],
+          "monthlyTempC": [3.5, 4.0, 7.0, 10.2, 13.8, 16.6, 18.7, 18.4, 15.2, 11.4, 7.1, 4.2],
+          "monthlyPrecipMm": [76, 63, 70, 51, 66, 71, 74, 79, 69, 74, 76, 81],
+          "dataSource": "KMI / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業", "酪農", "園芸農業"],
+      "agriculture": [
+        {
+          "id": "bel_dairy_sugarbeet",
+          "label": "混合農業・酪農・ビール用大麦/ホップ・チョコレート加工",
+          "detail": "農業従事者割合は1%未満ながら高生産性。",
+          "clozeTerms": ["混合農業"],
+          "tags": ["酪農"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "bel_nuclear_wind",
+          "label": "原子力発電と北海洋上風力",
+          "detail": "旧炭田は閉鎖済み。",
+          "clozeTerms": ["原子力発電"],
+          "tags": ["原子力"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "bel_antwerp_brussels",
+          "label": "アントワープ港（欧州第2位の港・化学/自動車/ダイヤモンド）とEU機関集積",
+          "detail": "ロッテルダムに次ぐ欧州最大級のアントワープ港には大規模石油化学コンビナートやダイヤモンド取引中心が集積。",
+          "clozeTerms": ["アントワープ", "ダイヤモンド", "EU本部"],
+          "tags": ["港湾", "EU", "化学"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["医薬品・ワクチン", "化学・石油製品", "自動車", "ダイヤモンド"],
+        "majorImports": ["化学製品・医薬品", "自動車", "天然ガス・原石ダイヤ"],
+        "majorPartners": ["ドイツ", "フランス", "オランダ", "アメリカ", "イギリス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：オランダ語／ロマンス語派：フランス語）",
+      "officialLanguages": ["オランダ語（フラマン語：約6割）", "フランス語（ワロン語：約4割）", "ドイツ語（東部約1%）"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 50 },
+        { "name": "無宗教・イスラム教", "percent": 50 }
+      ],
+      "ethnicGroups": ["フランデレン人（オランダ語系）", "ワロン人（フランス語系）", "旧コンゴ等移民"],
+      "regionalIntegrations": ["EU（欧州委員会本部）", "NATO本部", "ベネルクス", "ユーロ圏", "シェンゲン協定"],
+      "historicalContext": [
+        {
+          "id": "bel_language_divide",
+          "label": "「南北の言語対立」（フランデレン vs ワロン）と連邦制への移行",
+          "detail": "共通テスト超定番の言語問題！ゲルマン語系（北部フランデレン＝近年経済力優位）とラテン/ロマンス語系（南部ワロン＝旧重工業衰退で失業率高め）が東西を走る言語境界線で分かれ、ブリュッセルは2言語併用の特別地域。連邦制で権限を大幅分権化。",
+          "clozeTerms": ["フラマン語（オランダ語）", "ワロン語（フランス語）", "ブリュッセル", "言語境界線"],
+          "tags": ["言語", "民族問題", "EU", "都市"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "CHE": {
+    "iso3": "CHE",
+    "nameJa": "スイス",
+    "nameEn": "Switzerland",
+    "region": "ヨーロッパ",
+    "subRegion": "中央ヨーロッパ（アルプス）",
+    "capital": "ベルン（実質首都／金融チューリヒ・国際機関ジュネーブ）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "アルプス山脈の氷河地形・移牧（アルプ）・水力発電中心の電源",
+        "4公用語（ドイツ語・フランス語・イタリア語・ロマンシュ語）の多言語連邦",
+        "精密機械・時計・製薬（バーゼル）と永世中立・国際金融・非EU/EFTA加盟"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アルプス山脈・ジュラ山脈）"],
+      "summary": "国土の約6割が急峻なアルプス山脈。ホルン（マッターホルン）・カール・U字谷・氷河湖など氷食地形と、ライン川・ローヌ川の源流（欧州の水がめ）。",
+      "items": [
+        {
+          "id": "che_alps_transhumance",
+          "category": "landform",
+          "label": "アルプス氷河地形と垂直的牧畜「移牧（トランスヒューマンス）」・ゴッタルド鉄道トンネル",
+          "detail": "夏は標高2000m前後のアルプス草原（アルプ）で放牧してチーズを作り、冬は谷底へ下ろす移牧の伝統。欧州南北輸送のため世界最長級のゴッタルド基底トンネル等を整備。",
+          "clozeTerms": ["移牧", "U字谷", "ホルン", "新期造山帯"],
+          "tags": ["新期造山帯", "氷河地形", "アルプス", "移牧"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Cfb", "ET"],
+      "summary": "高原（チューリヒ・ベルン）は冬の寒さが厳しくDfb/Cfb境界、アルプス高地はツンドラ・氷雪気候（ET/EF）。夏に山岳対流降雨が多い。",
+      "cities": [
+        {
+          "cityId": "CHE_ZURICH",
+          "nameJa": "チューリヒ",
+          "nameEn": "Zurich",
+          "lat": 47.37,
+          "lng": 8.54,
+          "elevationM": 408,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性・亜寒帯移行部",
+          "factors": ["アルプス北麓・標高約410m", "夏季（6〜8月）に降水極大、年降水約1100mm"],
+          "monthlyTempC": [0.9, 1.8, 5.8, 9.6, 13.8, 17.3, 19.2, 18.8, 14.6, 10.1, 5.0, 1.8],
+          "monthlyPrecipMm": [65, 62, 74, 82, 114, 128, 128, 132, 98, 86, 80, 82],
+          "dataSource": "MeteoSwiss / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["酪農（移牧・チーズ）"],
+      "agriculture": [
+        {
+          "id": "che_dairy_cheese",
+          "label": "移牧を伴うアルプス酪農と手厚い農業保護政策（食料安全保障）",
+          "detail": "国土が山がちで耕地に乏しいため酪農（エメンタール等のチーズ・チョコレート加工）が主力。",
+          "clozeTerms": ["酪農", "移牧"],
+          "tags": ["酪農", "移牧"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "che_hydro_nuclear",
+          "label": "アルプスの水力発電（約6割）と原子力（約3割）による脱炭素電源",
+          "detail": "急峻な地形と豊富な氷河・降水を活かした水力発電大国。",
+          "clozeTerms": ["水力発電"],
+          "tags": ["水力発電", "原子力"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "che_precision_pharma_finance",
+          "label": "小重量高付加価値工業（時計・精密機械・バーゼル製薬）とチューリヒ国際金融",
+          "detail": "内陸国で原料輸送コストが高いため、少量・高価格の時計（ジュラ山脈）、工作・精密機械、巨大製薬（ノバルティス・ロシュ＝バーゼル）に特化。チューリヒの銀行（プライベートバンク）も強固。",
+          "clozeTerms": ["精密機械", "製薬", "バーゼル", "内陸国"],
+          "tags": ["医薬品", "精密機械", "国際金融"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["医薬品・化学製品", "金（精錬再輸出）", "精密機械・時計", "一般機械"],
+        "majorImports": ["金", "医薬品", "自動車・機械"],
+        "majorPartners": ["アメリカ", "ドイツ", "中国", "イタリア", "フランス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：ドイツ語／ロマンス語派：フランス語・イタリア語・ロマンシュ語）",
+      "officialLanguages": ["ドイツ語（約62%）", "フランス語（約23%）", "イタリア語（約8%）", "ロマンシュ語（約0.5%）"],
+      "religions": [
+        { "name": "キリスト教（カトリック・プロテスタント）", "percent": 60 },
+        { "name": "無宗教・イスラム教ほか", "percent": 40 }
+      ],
+      "ethnicGroups": ["スイス人（言語圏別州＝カントンによる高度な自治）", "外国人住民約26%"],
+      "regionalIntegrations": ["EFTA", "シェンゲン協定（EUは非加盟、2国間協定で単一市場参加）", "WTO・WHO本部（ジュネーブ）"],
+      "historicalContext": [
+        {
+          "id": "che_neutrality_4languages",
+          "label": "永世中立国・4公用語連邦制・EU非加盟と国際機関集積（ジュネーブ）",
+          "detail": "隣国（独・仏・伊）に囲まれたアルプスの要衝で4公用語を維持しながら平和共存。EUには非加盟（EFTA加盟）だがシェンゲン圏には参加。国連欧州本部・WHO・WTO・赤十字国際委員会がジュネーブに集中。",
+          "clozeTerms": ["4公用語", "永世中立国", "EU非加盟", "EFTA", "ジュネーブ"],
+          "tags": ["言語", "EU非加盟", "国際機関"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "AUT": {
+    "iso3": "AUT",
+    "nameJa": "オーストリア",
+    "nameEn": "Austria",
+    "region": "ヨーロッパ",
+    "subRegion": "中央ヨーロッパ",
+    "capital": "ウィーン",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "東部アルプスの水力発電と冬期スキー・夏期アルプス観光",
+        "ドナウ川水運の要衝（ウィーン）と旧ハプスブルク圏・中欧経済連携",
+        "EU加盟・シェンゲン参加の中立国"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（東部アルプス山脈）", "ドナウ川流域（ウィーン盆地）"],
+      "summary": "国土の3分の2をアルプス山脈が占め、北部をドナウ川が東流する内陸国。",
+      "items": [
+        {
+          "id": "aut_alps_danube",
+          "category": "river",
+          "label": "ドナウ川（国際河川）と東部アルプスの氷食地形",
+          "detail": "ドイツから発しウィーン・ブラチスラヴァ・ブダペスト・ベオグラードを経て黒海へ注ぐ国際河川ドナウ川が北部を貫く。",
+          "clozeTerms": ["ドナウ川", "アルプス山脈", "国際河川"],
+          "tags": ["国際河川", "アルプス"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb", "Dfb", "ET"],
+      "summary": "ウィーンは中央ヨーロッパ型の穏やかな季節変化（Cfb/Dfb境界）、アルプス山岳部は冷涼多雪。",
+      "cities": [
+        {
+          "cityId": "AUT_VIENNA",
+          "nameJa": "ウィーン",
+          "nameEn": "Vienna",
+          "lat": 48.21,
+          "lng": 16.37,
+          "elevationM": 198,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性・冷帯移行部",
+          "factors": ["中央ヨーロッパ内陸のため1月は0℃前後・7月は21℃前後", "5〜8月に降水やや多い"],
+          "monthlyTempC": [0.3, 1.8, 6.0, 11.2, 15.8, 19.3, 21.3, 20.8, 16.1, 10.6, 5.2, 1.4],
+          "monthlyPrecipMm": [38, 40, 48, 45, 69, 70, 72, 65, 58, 46, 51, 46],
+          "dataSource": "GeoSphere Austria / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["酪農", "混合農業"],
+      "agriculture": [
+        {
+          "id": "aut_organic_dairy",
+          "label": "アルプス酪農・林業とEUトップ級の有機農業比率",
+          "detail": "農地面積に占める有機農業（オーガニック）の割合が約25%とEU最高水準。",
+          "clozeTerms": ["有機農業", "酪農"],
+          "tags": ["酪農", "EU"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "aut_hydro_nonnuclear",
+          "label": "水力発電比率約6割（再エネ約8割）と国民投票による原発禁止",
+          "detail": "ドナウ川とアルプス急流の水力発電に支えられ、1978年国民投票で原発不稼働・脱原発法を堅持。",
+          "clozeTerms": ["水力発電", "脱原発"],
+          "tags": ["水力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "aut_tourism_machinery",
+          "label": "観光立国（ウィーン文化＋アルプス・スキー）と精密機械・自動車部品",
+          "detail": "ドイツ・中東欧との産業連携が緊密。1人あたり観光客数・観光収入が非常に高い。",
+          "clozeTerms": ["観光業"],
+          "tags": ["観光", "EU"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["機械・電気機器", "自動車・部品", "医薬品", "鉄鋼・紙木材"],
+        "majorImports": ["機械・自動車", "天然ガス・原油", "医薬品"],
+        "majorPartners": ["ドイツ", "アメリカ", "イタリア", "スイス", "ハンガリー"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：ドイツ語）",
+      "officialLanguages": ["ドイツ語"],
+      "religions": [
+        { "name": "キリスト教（カトリック）", "percent": 55 },
+        { "name": "無宗教・イスラム教・正教", "percent": 45 }
+      ],
+      "ethnicGroups": ["オーストリア人", "旧ユーゴ・トルコ・ドイツ等からの移民"],
+      "regionalIntegrations": ["EU", "ユーロ圏", "シェンゲン協定", "OECD（永世中立のためNATOは非加盟）"],
+      "historicalContext": [
+        {
+          "id": "aut_vienna_neutral",
+          "label": "EU加盟かつ永世中立国（NATO非加盟）とウィーンの国際機関（OPEC・IAEA本部）",
+          "detail": "ドイツと同じドイツ語圏ながらカトリック主体で独立を保つ。冷戦期から東西の接点としてOPECやIAEA（国際原子力機関）の本部がウィーンに置かれる。",
+          "clozeTerms": ["ドイツ語", "OPEC本部", "IAEA"],
+          "tags": ["言語", "EU", "国際機関"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "SWE": {
+    "iso3": "SWE",
+    "nameJa": "スウェーデン",
+    "nameEn": "Sweden",
+    "region": "ヨーロッパ",
+    "subRegion": "北ヨーロッパ（スカンディナビア）",
+    "capital": "ストックホルム",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "バルト楯状地のキルナ鉄山（高品位鉄鉱石）と氷河湖・針葉樹林（タイガ）",
+        "高福祉・高負担国家（北欧モデル）と水力・原子力による低炭素電源",
+        "EU加盟・非ユーロ圏・2024年NATO加盟と移民統合課題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（バルト楯状地）", "古期造山帯（西部のスカンディナビア山脈）"],
+      "summary": "先カンブリア時代の安定陸塊（バルト楯状地）が主体で、大陸氷河に削られた湖沼（ヴェーネルン湖等）と針葉樹林（タイガ）が国土の約7割を覆う。",
+      "items": [
+        {
+          "id": "swe_kiruna_shield",
+          "category": "landform",
+          "label": "バルト楯状地のキルナ鉄山と氷食湖・ポドゾル土壌",
+          "detail": "北極圏のキルナ・イェリヴァーレで高品位鉄鉱石を採掘し、冬凍結するボスニア湾を避けて不凍港ナルヴィク（ノルウェー）へ鉄道輸送して輸出。冷涼で酸性土壌ポドゾルが分布し森林・製紙業に適する。",
+          "clozeTerms": ["バルト楯状地", "キルナ鉄山", "ナルヴィク", "ポドゾル"],
+          "tags": ["安定陸塊", "鉄鉱石", "ポドゾル", "タイガ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Dfc"],
+      "summary": "スカンディナビア山脈の東側に位置し、ノルウェーよりは大陸性で冬は氷点下に下がる亜寒帯湿潤気候（Dfb/Dfc）。",
+      "cities": [
+        {
+          "cityId": "SWE_STOCKHOLM",
+          "nameJa": "ストックホルム",
+          "nameEn": "Stockholm",
+          "lat": 59.33,
+          "lng": 18.07,
+          "elevationM": 28,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["北緯59度の高緯度だがバルト海と北大西洋海流の余熱で1月-1〜-2℃と緯度の割に穏やか"],
+          "monthlyTempC": [-1.4, -1.5, 1.3, 6.0, 11.4, 15.8, 18.5, 17.4, 12.8, 7.6, 3.2, 0.0],
+          "monthlyPrecipMm": [37, 29, 27, 29, 34, 54, 62, 66, 52, 54, 49, 46],
+          "dataSource": "SMHI / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["林業（パルプ・木材）", "酪農・混合農業（南部スコーネ）"],
+      "agriculture": [
+        {
+          "id": "swe_forestry_skane",
+          "label": "計画的林業（森林国）と南部スコーネ地方の小麦・酪農",
+          "detail": "持続可能な林業（伐採と同数以上の植林）による製材・パルプ・家具（IKEA等）が伝統基幹産業。",
+          "clozeTerms": ["林業", "タイガ"],
+          "tags": ["林業", "タイガ"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "swe_hydro_nuclear_iron",
+          "label": "水力（約4割）＋原子力（約3割）＋風力の脱化石燃料電源とキルナ鉄鉱石",
+          "detail": "発電電力の98%前後が非化石燃料（水力・原子力・風力）。",
+          "clozeTerms": ["水力発電", "原子力発電", "キルナ"],
+          "tags": ["鉄鉱石", "水力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "swe_auto_telecom_it",
+          "label": "特殊鋼・機械・自動車（ボルボ）・通信（エリクソン）・ICTスタートアップ",
+          "detail": "豊富な鉄鉱石と技術力から高品質特殊鋼・自動車・防衛・IT（Spotify等）が発達。",
+          "clozeTerms": ["特殊鋼", "ICT"],
+          "tags": ["鉄鋼業", "ICT"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["機械・電気機器", "自動車・トラック", "紙・パルプ・木材", "医薬品・鉄鉱石/鉄鋼"],
+        "majorImports": ["機械・自動車", "原油・電子機器"],
+        "majorPartners": ["ドイツ", "ノルウェー", "アメリカ", "デンマーク", "オランダ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（北ゲルマン語群：スウェーデン語）",
+      "officialLanguages": ["スウェーデン語"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：福音ルーテル派）", "percent": 55 },
+        { "name": "無宗教・イスラム教（近年の難民・移民）", "percent": 45 }
+      ],
+      "ethnicGroups": ["スウェーデン人", "サーミ人（北部先住民）", "難民・移民系住民（中東・ソマリア等から多数受入）"],
+      "regionalIntegrations": ["EU（ユーロ非導入）", "シェンゲン協定", "NATO（2024年加盟）", "OECD"],
+      "historicalContext": [
+        {
+          "id": "swe_welfare_nato_immigration",
+          "label": "「高福祉・高負担」社会と人道難民受入後の統合課題、歴史的中立からNATO加盟（2024年）",
+          "detail": "医療・教育無料化と高い消費税・所得税による高福祉社会モデル。シリア等の難民を積極受入したが郊外の貧困・治安問題から近年厳格化。ロシアのウクライナ侵攻を受け長年の軍事非同盟を転換し2024年NATO加盟。",
+          "clozeTerms": ["高福祉・高負担", "NATO加盟", "非ユーロ圏"],
+          "tags": ["難民", "EU", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "NOR": {
+    "iso3": "NOR",
+    "nameJa": "ノルウェー",
+    "nameEn": "Norway",
+    "region": "ヨーロッパ",
+    "subRegion": "北ヨーロッパ（スカンディナビア）",
+    "capital": "オスロ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ソグネフィヨルド等のフィヨルド（氷食U字谷の溺れ谷）",
+        "北大西洋海流（暖流）と偏西風による高緯度不凍港（ベルゲン・ナルヴィク）",
+        "水力発電約9割・アルミ精錬・EV新車普及世界1位・北海油田/天然ガス輸出",
+        "EU非加盟（EFTA・EEA）とサーモン養殖世界1位・サーミ人"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯（スカンディナビア山脈）", "バルト楯状地縁辺"],
+      "summary": "氷期に発達した氷河の氷食作用でスカンディナビア山脈西岸に深いU字谷が刻まれ、海面上昇で浸水してソグネフィヨルド等の巨大なフィヨルド群が形成された。",
+      "items": [
+        {
+          "id": "nor_fjord_ice_free",
+          "category": "landform",
+          "label": "ソグネフィヨルド（氷食地形）と不凍港ナルヴィク・ベルゲン",
+          "detail": "急崖の絶壁と水深1000m超の深い入り江（湾口にモレーンの浅瀬）。リアス海岸（河川侵食V字谷の沈水）との成因・断面形状の比較が共通テストの超定番！",
+          "clozeTerms": ["フィヨルド", "U字谷", "氷食", "ソグネフィヨルド", "不凍港"],
+          "tags": ["フィヨルド", "氷河地形", "ソグネフィヨルド"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb", "Dfc", "ET"],
+      "summary": "北緯60〜70度の高緯度ながら、西岸は暖流の北大西洋海流と偏西風によって冬でも0℃以上を保ち海が凍らない（Cfb）。山脈の風上のため極めて多雨。",
+      "cities": [
+        {
+          "cityId": "NOR_BERGEN",
+          "nameJa": "ベルゲン",
+          "nameEn": "Bergen",
+          "lat": 60.39,
+          "lng": 5.32,
+          "elevationM": 12,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候（多雨）",
+          "factors": ["北緯60度だが北大西洋海流で1月平均2℃", "偏西風がスカンディナビア山脈に当たり地形性降雨で年2200mm超"],
+          "monthlyTempC": [2.2, 2.1, 3.8, 7.1, 11.1, 13.7, 15.6, 15.4, 12.6, 8.6, 5.2, 3.0],
+          "monthlyPrecipMm": [230, 185, 190, 140, 120, 150, 175, 220, 265, 270, 250, 265],
+          "dataSource": "MET Norway / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["酪農", "漁業・水産養殖"],
+      "agriculture": [
+        {
+          "id": "nor_salmon_dairy",
+          "label": "フィヨルドのアトランティックサーモン養殖世界1位と酪農",
+          "detail": "耕地面積が国土の約3%と狭く農業は酪農中心だが、冷涼・清浄・波穏やかなフィヨルドを利用した養殖サーモン生産・輸出で世界1位。",
+          "worldRank": 1,
+          "worldRankNote": "養殖サケ・マス生産輸出 世界1位",
+          "clozeTerms": ["サーモン養殖", "フィヨルド"],
+          "tags": ["漁業", "フィヨルド"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "nor_hydro_northsea_ev",
+          "label": "水力発電比率約90%・北海油田/天然ガス欧州供給と新車EV比率8割超",
+          "detail": "急峻な地形と多雨を活かした豊富な水力発電により国内電力はほぼ100%再エネ。北海の原油・天然ガスはパイプライン等で英国・ドイツ等へ輸出（脱ロシア後の欧州最大のガス供給国に）。税制優遇により新車販売の8〜9割がEV。",
+          "worldRank": 1,
+          "worldRankNote": "新車販売におけるEVシェア世界1位、水力発電比率世界トップ級",
+          "clozeTerms": ["水力発電", "北海油田", "EV", "天然ガス"],
+          "tags": ["水力発電", "北海油田", "天然ガス", "EV"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "nor_aluminum_smelting",
+          "label": "安価な水力電力を利用したアルミニウム精錬（電力・動力指向型工業）",
+          "detail": "ボーキサイト（アルミナ）を輸入し、フィヨルド奥の水力発電所隣接工場で電解精錬を行う（カナダ・アイスランドと同じパターン）。",
+          "clozeTerms": ["アルミニウム精錬", "動力指向型工業"],
+          "tags": ["アルミ精錬", "水力発電"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["天然ガス", "原油", "魚類（サーモン等）", "アルミニウム"],
+        "majorImports": ["自動車（EV）", "機械類", "船舶・化学製品"],
+        "majorPartners": ["イギリス", "ドイツ", "オランダ", "スウェーデン", "フランス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（北ゲルマン語群：ノルウェー語）／ウラル語族（サーミ語）",
+      "officialLanguages": ["ノルウェー語（ブークモール・ニーノシュク）", "サーミ語（特定自治体）"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：福音ルーテル派）", "percent": 65 },
+        { "name": "無宗教・イスラム教ほか", "percent": 35 }
+      ],
+      "ethnicGroups": ["ノルウェー人", "サーミ人（北極圏先住民：トナカイ牧畜など）"],
+      "regionalIntegrations": ["EFTA", "EEA（欧州経済領域）", "シェンゲン協定", "NATO（EU非加盟）"],
+      "historicalContext": [
+        {
+          "id": "nor_non_eu_sovereign_fund",
+          "label": "EU非加盟（国民投票で2度否決）と政府年金基金（石油ファンド）・サーミ人",
+          "detail": "漁業資源やエネルギー主権への懸念からEUには加盟せず、EFTA/EEAを通じて単一市場にのみ参加。北海石油・ガス収入は世界最大級の政府年金基金として運用。",
+          "clozeTerms": ["EU非加盟", "EFTA", "サーミ人", "国民投票"],
+          "tags": ["EU非加盟", "先住民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "FIN": {
+    "iso3": "FIN",
+    "nameJa": "フィンランド",
+    "nameEn": "Finland",
+    "region": "ヨーロッパ",
+    "subRegion": "北ヨーロッパ",
+    "capital": "ヘルシンキ",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "氷河に削られた数万の湖沼と森林（タイガ・スオミ）",
+        "ウラル語族（スウェーデン・ノルウェーと系統が異なるフィンランド語）",
+        "林業・製紙・ICT（ノキア由来）と高水準の教育・2023年NATO加盟"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（バルト楯状地）"],
+      "summary": "全体が大陸氷河に覆われ平坦化されたバルト楯状地で、国土の約75%が森林（タイガ）、約10%が数万もの氷食湖沼。",
+      "items": [
+        {
+          "id": "fin_lakes_taiga",
+          "category": "landform",
+          "label": "バルト楯状地・モレーン（氷堆石）が堰き止めた無数の湖沼と針葉樹林",
+          "detail": "起伏が乏しく、氷河が掘った凹地とモレーン堤防による湖水地方（サイマー湖等）が広がる。",
+          "clozeTerms": ["バルト楯状地", "モレーン", "氷食湖"],
+          "tags": ["氷河地形", "タイガ", "安定陸塊"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Dfc"],
+      "summary": "南部（ヘルシンキ）はDfb、北部ラップランドは亜寒帯Dfc（白夜と極夜、オーロラ）。",
+      "cities": [
+        {
+          "cityId": "FIN_HELSINKI",
+          "nameJa": "ヘルシンキ",
+          "nameEn": "Helsinki",
+          "lat": 60.17,
+          "lng": 24.94,
+          "elevationM": 17,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["バルト海（フィンランド湾）沿いで冬は-4℃前後（冬季凍結あり）", "夏は涼しく17℃"],
+          "monthlyTempC": [-3.8, -4.4, -1.2, 4.4, 10.6, 15.1, 18.0, 16.6, 11.8, 6.4, 1.8, -1.5],
+          "monthlyPrecipMm": [53, 39, 36, 36, 40, 61, 56, 77, 60, 74, 70, 61],
+          "dataSource": "FMI / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["林業（パルプ・木材）", "酪農"],
+      "agriculture": [
+        {
+          "id": "fin_forestry_paper",
+          "label": "豊富な針葉樹林（タイガ）による林業・製紙・木質バイオマス",
+          "detail": "農業条件は厳しいが酪農と大麦・オート麦栽培。製紙・パルプ企業（UPM等）が世界大手。",
+          "clozeTerms": ["針葉樹林", "パルプ"],
+          "tags": ["林業", "タイガ"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "fin_nuclear_bio",
+          "label": "原子力発電（オルキルオト原発等約4割）・木質バイオマス・水力・風力",
+          "detail": "林業の製材くず等を活かすバイオマス発電と新型原発によりエネルギー自給率が向上。",
+          "clozeTerms": ["バイオマス発電", "原子力発電"],
+          "tags": ["原子力", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "fin_ict_gaming_education",
+          "label": "ICT・ゲーム・通信機器（ノキア発祥）とサウナ文化・高等教育",
+          "detail": "1990年代に林業中心から携帯電話（ノキア）等のハイテク産業へ劇的に転換。現在もスタートアップ・ゲーム・通信技術（5G/6G）が強い。",
+          "clozeTerms": ["ICT産業"],
+          "tags": ["ICT"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["機械・電気機器", "紙・パルプ・木材", "精製石油・化学・ステンレス鋼"],
+        "majorImports": ["原油・機械", "自動車・化学"],
+        "majorPartners": ["ドイツ", "スウェーデン", "アメリカ", "オランダ", "中国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ウラル語族（フィン・ウゴル語派：フィンランド語 ※印欧語族ではない！）",
+      "officialLanguages": ["フィンランド語（約86%）", "スウェーデン語（約5%）", "サーミ語（北部）"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：福音ルーテル派）", "percent": 65 },
+        { "name": "無宗教ほか", "percent": 35 }
+      ],
+      "ethnicGroups": ["フィンランド人", "スウェーデン系", "サーミ人"],
+      "regionalIntegrations": ["EU", "ユーロ圏（北欧で唯一のユーロ導入国）", "シェンゲン協定", "NATO（2023年加盟）"],
+      "historicalContext": [
+        {
+          "id": "fin_uralic_euro_nato",
+          "label": "ウラル語族（ハンガリー語・エストニア語と同系統）・北欧唯一のユーロ導入・NATO加盟",
+          "detail": "北欧で唯一、言語系統が印欧語族ではなくウラル語族（エストニア語やハンガリー語に近い）。また北欧EU加盟3国（典・丁・芬）の中で唯一通貨ユーロを採用。ロシアと長い国境（1340km）を持ち2023年にNATO加盟。",
+          "clozeTerms": ["ウラル語族", "ユーロ導入", "NATO加盟"],
+          "tags": ["言語", "EU", "ユーロ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "DNK": {
+    "iso3": "DNK",
+    "nameJa": "デンマーク",
+    "nameEn": "Denmark",
+    "region": "ヨーロッパ",
+    "subRegion": "北ヨーロッパ（ユトランド半島）",
+    "capital": "コペンハーゲン",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "協同組合による酪農・養豚（バター・チーズ・豚肉輸出）",
+        "風力発電比率世界1位級（約5〜6割・洋上風力ヴェスタス）",
+        "グリーンランド自治領と環境・高福祉社会"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["氷河堆積平野（モレーン・ユトランド半島と島嶼）"],
+      "summary": "最高標高わずか170m程度の低平なユトランド半島とシェラン島などからなり、バルト海の出口（エーレスンド海峡等）を扼する。",
+      "items": [
+        {
+          "id": "dnk_moraine_oresund",
+          "category": "landform",
+          "label": "氷河堆積の平坦地とエーレスンド橋（スウェーデン・マルメと直結）",
+          "detail": "山脈がない平坦地で、海からの強い偏西風が直接吹き抜けるため風力発電に理想的。",
+          "clozeTerms": ["モレーン", "ユトランド半島"],
+          "tags": ["氷河地形"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb"],
+      "summary": "西岸海洋性気候（Cfb）。北海・バルト海に囲まれ穏やかだが強風が多い。",
+      "cities": [
+        {
+          "cityId": "DNK_COPENHAGEN",
+          "nameJa": "コペンハーゲン",
+          "nameEn": "Copenhagen",
+          "lat": 55.68,
+          "lng": 12.57,
+          "elevationM": 9,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": ["周囲を海に囲まれ高緯度（55°N）でも1月平均約1℃", "年降水量600mm前後で年中湿潤"],
+          "monthlyTempC": [1.4, 1.4, 3.6, 8.0, 12.6, 16.2, 18.4, 18.1, 14.4, 10.0, 5.7, 2.7],
+          "monthlyPrecipMm": [46, 35, 39, 36, 46, 62, 61, 68, 56, 60, 54, 54],
+          "dataSource": "DMI / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["酪農", "混合農業"],
+      "agriculture": [
+        {
+          "id": "dnk_coop_dairy_pork",
+          "label": "農業協同組合（コープ）による酪農・養豚の規格化輸出（バター・チーズ・豚肉）",
+          "detail": "19世紀後半に安価なアメリカ産穀物に対抗して小麦から酪農・養豚（脱脂乳を豚の飼料に活用）へ転換し、協同組合方式で品質を統一して英国等へ輸出した。",
+          "clozeTerms": ["協同組合", "酪農", "養豚"],
+          "tags": ["酪農", "混合農業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "dnk_wind_power",
+          "label": "風力発電（国内電力の5〜6割・世界トップ比率）とヴェスタス社",
+          "detail": "1970年代のオイルショック以降に政府支援と市民共同出資で風力発電を育成し、洋上風力発電の技術・風車メーカーで世界首位級。",
+          "worldRank": 1,
+          "worldRankNote": "総発電電力量に占める風力発電比率 世界1位（約55%超）",
+          "clozeTerms": ["風力発電", "洋上風力"],
+          "tags": ["風力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "dnk_pharma_shipping",
+          "label": "医薬品（ノボノルディスク）・海運（マースク）・ブロック玩具（レゴ）",
+          "detail": "医薬品や海運・再生可能エネルギー関連など知識集約型産業が輸出の柱。",
+          "clozeTerms": ["医薬品", "風車メーカー"],
+          "tags": ["医薬品", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["医薬品", "機械・風力発電設備", "豚肉・乳製品（チーズ・バター）"],
+        "majorImports": ["機械・自動車", "電気機器", "燃料"],
+        "majorPartners": ["アメリカ", "ドイツ", "スウェーデン", "イギリス", "オランダ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（北ゲルマン語群：デンマーク語）",
+      "officialLanguages": ["デンマーク語（自治領でグリーンランド語・フェロー語）"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：福音ルーテル派）", "percent": 73 },
+        { "name": "無宗教・イスラム教", "percent": 27 }
+      ],
+      "ethnicGroups": ["デンマーク人", "グリーンランドのイヌイット（カラーリット）"],
+      "regionalIntegrations": ["EU（ユーロ非導入・オプトアウト）", "シェンゲン協定", "NATO", "OECD"],
+      "historicalContext": [
+        {
+          "id": "dnk_greenland_euro_optout",
+          "label": "自治領グリーンランド（氷床融解・レアアース注目）とEU非ユーロ圏",
+          "detail": "グリーンランドは高度な自治権を持ち、漁業権保護のため1985年にECを離脱した（EU域外）。近年は気候変動による氷床融解と北極海航路・レアアース資源で地政学的注目度上昇。",
+          "clozeTerms": ["グリーンランド", "非ユーロ圏", "イヌイット"],
+          "tags": ["EU", "地球温暖化", "氷床"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ISL": {
+    "iso3": "ISL",
+    "nameJa": "アイスランド",
+    "nameEn": "Iceland",
+    "region": "ヨーロッパ",
+    "subRegion": "北大西洋",
+    "capital": "レイキャビク",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "大西洋中央海嶺（広がる境界）の地上露出と火山・氷河・間欠泉（ガイシール）",
+        "地熱発電＋水力発電で電力約100%再生可能エネルギー",
+        "安価な電力を活かしたアルミニウム精錬・データセンターと漁業・EU非加盟"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["大西洋中央海嶺（プレートの広がる境界＝発散境界）"],
+      "summary": "大西洋中央海嶺（ユーラシアプレートと北アメリカプレートが左右に広がる境界）が海面上に現れた火山島。「火（火山）と氷（氷河）の島」。",
+      "items": [
+        {
+          "id": "isl_mid_atlantic_ridge",
+          "category": "tectonic",
+          "label": "大西洋中央海嶺（広がる境界）のギャオ（地溝）と火山・氷河（氷食地形）",
+          "detail": "プレートが引き裂かれるギャオ（割れ目地形＝シンクヴェトリル）や玄武岩質溶岩による楯状火山が分布。火山活動と氷河融解水が豊富な地熱・水力資源を生む。",
+          "clozeTerms": ["大西洋中央海嶺", "広がる境界", "ギャオ", "玄武岩"],
+          "tags": ["プレート境界", "火山", "氷河地形"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfc", "ET"],
+      "summary": "北緯64〜66度（北極圏直下）でありながら、北大西洋海流の支流（イルミンガー海流）で冬季も平均0℃前後と著しく温暖なCfc／ET境界。",
+      "cities": [
+        {
+          "cityId": "ISL_REYKJAVIK",
+          "nameJa": "レイキャビク",
+          "nameEn": "Reykjavik",
+          "lat": 64.15,
+          "lng": -21.94,
+          "elevationM": 14,
+          "koppenCode": "Cfc",
+          "koppenNameJa": "西岸海洋性気候（亜寒帯境界）",
+          "factors": ["北緯64度ながら暖流で1月平均0℃前後（不凍港）", "夏は涼しく11〜12℃で年較差が極めて小さい"],
+          "monthlyTempC": [0.1, 0.2, 0.9, 3.3, 6.6, 9.6, 11.4, 10.9, 8.0, 4.4, 1.7, 0.2],
+          "monthlyPrecipMm": [86, 86, 81, 56, 53, 44, 52, 66, 73, 76, 88, 94],
+          "dataSource": "Vedurstofa / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["漁業", "酪農・温室栽培（地熱利用）"],
+      "agriculture": [
+        {
+          "id": "isl_fishery_geothermal_greenhouse",
+          "label": "漁業（タラ・シシャモ）と地熱暖房による温室野菜栽培",
+          "detail": "周囲の豊かな漁場で漁業が歴史的基幹産業。地熱の温水でトマトやバナナまで温室栽培できる。",
+          "clozeTerms": ["タラ漁業", "地熱利用温室"],
+          "tags": ["漁業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "isl_100pct_renewable",
+          "label": "水力発電（約70%）＋地熱発電（約30%）による電力100%再生可能エネルギー",
+          "detail": "家庭用暖房やロードヒーティングの約9割も地熱地域熱供給で賄う。発電電力量の100%が水力＋地熱という極めて特異な電源構成（データ問題で一発判別！）。",
+          "worldRank": 1,
+          "worldRankNote": "電力の再生可能エネルギー比率 約100%（水力7割＋地熱3割）",
+          "clozeTerms": ["地熱発電", "水力発電", "再生可能エネルギー100%"],
+          "tags": ["再生可能エネルギー", "地熱発電", "水力発電"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "isl_aluminum_datacenter",
+          "label": "安価な地熱・水力電力を活用したアルミニウム精錬とグリーンデータセンター",
+          "detail": "アルミナ原料を豪州等から輸入し、圧倒的に安い再エネ電力で精錬して欧州へ輸出（輸出額の約4割がアルミニウム）。冷却に適した冷涼気候と電力でAI/暗号資産データセンターも集積。",
+          "clozeTerms": ["アルミニウム精錬", "動力指向型工業"],
+          "tags": ["アルミ精錬", "地熱発電"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["アルミニウム", "魚類・水産加工品", "フェロシリコン"],
+        "majorImports": ["アルミナ（酸化アルミニウム）", "機械・輸送機器", "石油製品（航空・船舶用）"],
+        "majorPartners": ["オランダ", "イギリス", "ドイツ", "アメリカ", "スペイン"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（北ゲルマン語群：アイスランド語）",
+      "officialLanguages": ["アイスランド語"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント：福音ルーテル派）", "percent": 65 },
+        { "name": "無宗教ほか", "percent": 35 }
+      ],
+      "ethnicGroups": ["アイスランド人（ヴァイキング系）"],
+      "regionalIntegrations": ["EFTA", "EEA", "シェンゲン協定", "NATO（EU非加盟・常備軍なし）"],
+      "historicalContext": [
+        {
+          "id": "isl_non_eu_gender",
+          "label": "漁業権保護のためのEU非加盟とジェンダーギャップ指数連続世界1位",
+          "detail": "「タラ戦争」を経て排他的経済水域200海里を死守した歴史から漁業保護のためEU非加盟（EFTA・EEA参加）。男女平等（ジェンダーギャップ指数）で世界首位を長年維持。",
+          "clozeTerms": ["EU非加盟", "EFTA", "ジェンダーギャップ指数"],
+          "tags": ["EU非加盟", "漁業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "POL": {
+    "iso3": "POL",
+    "nameJa": "ポーランド",
+    "nameEn": "Poland",
+    "region": "ヨーロッパ",
+    "subRegion": "東ヨーロッパ（中欧）",
+    "capital": "ワルシャワ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "シレジア炭田による石炭火力依存（EU内脱炭素の焦点）",
+        "EU東方拡大後の西欧（ドイツ等）製造業・自動車組立の生産拠点化",
+        "北ドイツ平原続きの氷河堆積地形（ライ麦・ジャガイモ・豚）とカトリック・ウクライナ難民受入"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["氷河堆積平野（中央ヨーロッパ平原）", "古期造山帯（南西ズデーテン・上シレジア）", "新期造山帯（南端カルパティア山脈）"],
+      "summary": "北部・中部は大陸氷河によるモレーンや湖沼群が広がる平坦地、南部に上シレジア炭田とカルパティア山脈。",
+      "items": [
+        {
+          "id": "pol_glacial_plain",
+          "category": "landform",
+          "label": "氷河堆積平野と上シレジア炭田",
+          "detail": "北ドイツ平原の連続で氷河の痩せた砂質土壌が広く、ライ麦・ジャガイモ・リンゴ栽培に適する。南部シレジアは欧州屈指の炭田地帯。",
+          "clozeTerms": ["上シレジア炭田", "氷河堆積平野"],
+          "tags": ["石炭", "氷河地形"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Cfb"],
+      "summary": "西欧のCfbからロシアの大陸性Dfbへの移行帯。冬は0〜-3℃に下がり夏20℃前後。",
+      "cities": [
+        {
+          "cityId": "POL_WARSAW",
+          "nameJa": "ワルシャワ",
+          "nameEn": "Warsaw",
+          "lat": 52.23,
+          "lng": 21.01,
+          "elevationM": 106,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["大陸性影響で1月平均-1〜-2℃", "夏（6〜8月）に降水がやや集中"],
+          "monthlyTempC": [-1.8, -0.6, 3.3, 9.1, 14.4, 17.8, 19.7, 19.2, 14.0, 8.7, 3.6, -0.4],
+          "monthlyPrecipMm": [27, 26, 31, 34, 56, 69, 76, 62, 46, 37, 38, 34],
+          "dataSource": "IMGW / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業"],
+      "agriculture": [
+        {
+          "id": "pol_rye_potato_apple",
+          "label": "混合農業（ライ麦・ジャガイモ・豚肉・鶏肉）とリンゴ生産EU1位",
+          "detail": "EU加盟後に農業近代化が進み、養鶏・リンゴ・乳製品の輸出が増加。",
+          "worldRank": 1,
+          "worldRankNote": "リンゴ生産EU1位、ライ麦生産世界2位級",
+          "clozeTerms": ["ライ麦", "ジャガイモ", "混合農業"],
+          "tags": ["混合農業", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "pol_coal_power",
+          "label": "石炭（シレジア炭田）・褐炭による発電比率約6〜7割（EU最大の石炭依存国）",
+          "detail": "ドイツと異なり現在も石炭火力が発電の主力（約65%）で、EUの脱炭素目標との調整および洋上風力・原発導入が重大課題。",
+          "clozeTerms": ["石炭火力", "シレジア炭田", "脱炭素"],
+          "tags": ["石炭", "エネルギー", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "pol_eu_factory",
+          "label": "EU東方拡大（2004年）による独日韓企業の自動車部品・EV電池・家電工場集積",
+          "detail": "ドイツと隣接し、EU単一市場の恩恵と比較的低い賃金・高学歴人材を活かして欧州最大のEVバッテリーや自動車・家電の生産拠点に成長。",
+          "clozeTerms": ["EU東方拡大", "自動車部品", "EV電池"],
+          "tags": ["EU", "自動車", "EV"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車部品・車両", "機械・家電・EV電池", "家具・食品"],
+        "majorImports": ["機械・電気機器", "原油・天然ガス", "自動車・医薬品"],
+        "majorPartners": ["ドイツ（輸出の約28%）", "チェコ", "フランス", "イギリス", "イタリア"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スラブ語派：西スラブ語群・ラテン文字使用）",
+      "officialLanguages": ["ポーランド語"],
+      "religions": [
+        { "name": "キリスト教（カトリック ※東欧では例外的に強固）", "percent": 71 },
+        { "name": "無宗教・正教ほか", "percent": 29 }
+      ],
+      "ethnicGroups": ["ポーランド人（約97%）", "ウクライナ人（避難民・移民が急増）"],
+      "regionalIntegrations": ["EU", "シェンゲン協定", "NATO", "OECD（独自通貨ズウォティ＝非ユーロ）"],
+      "historicalContext": [
+        {
+          "id": "pol_catholic_refugees",
+          "label": "スラブ系ながらカトリック（ラテン文字）文化・非ユーロ圏・ウクライナ避難民受入",
+          "detail": "同じスラブ語圏でもロシア（キリル文字・正教）と異なりラテン文字・熱心なカトリック国。2022年のロシアによるウクライナ侵攻では最多級のウクライナ避難民を受け入れた。",
+          "clozeTerms": ["スラブ語派", "カトリック", "非ユーロ圏", "ウクライナ避難民"],
+          "tags": ["言語", "キリスト教", "難民", "EU"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "UKR": {
+    "iso3": "UKR",
+    "nameJa": "ウクライナ",
+    "nameEn": "Ukraine",
+    "region": "ヨーロッパ",
+    "subRegion": "東ヨーロッパ",
+    "capital": "キーウ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "肥沃な黒土「チェルノーゼム」と「欧州のパン籠」（小麦・トウモロコシ・ヒマワリ油輸出）",
+        "ドンバス地方の石炭・鉄鉱石（クリヴィー・リフ）と黒海・オデーサ輸出ルート",
+        "ロシア侵攻（2022年）による食料危機・難民流出と東西の言語/歴史構造"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（東ヨーロッパ平原・ロシア卓状地）"],
+      "summary": "広大な東ヨーロッパ平原の南部を占め、中央をドニエプル川が南流し黒海へ注ぐ。黒土地帯チェルノーゼムが国土の約6割を覆う。",
+      "items": [
+        {
+          "id": "ukr_chernozem",
+          "category": "soil",
+          "label": "肥沃な間帯土壌「チェルノーゼム（黒土）」の広大な分布",
+          "detail": "半乾燥ステップの草原植生が寒冷な冬に分解されずに腐植として厚く蓄積した世界屈指の肥沃な黒色土壌（pH中性に近く無肥料でも高い生産力）。",
+          "clozeTerms": ["チェルノーゼム", "間帯土壌", "ステップ"],
+          "tags": ["チェルノーゼム", "土壌", "ステップ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "BSk"],
+      "summary": "大部分が亜寒帯湿潤気候（Dfb）、黒海沿岸の一部はステップ気候（BSk）。",
+      "cities": [
+        {
+          "cityId": "UKR_KYIV",
+          "nameJa": "キーウ",
+          "nameEn": "Kyiv",
+          "lat": 50.45,
+          "lng": 30.52,
+          "elevationM": 179,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["大陸性気候で冬は-3〜-4℃、夏は20℃超", "初夏（6〜7月）に雨がやや多い"],
+          "monthlyTempC": [-3.2, -2.3, 2.5, 9.9, 15.8, 19.5, 21.3, 20.5, 14.9, 8.6, 2.6, -1.8],
+          "monthlyPrecipMm": [38, 39, 40, 42, 65, 74, 68, 56, 57, 46, 46, 47],
+          "dataSource": "UHMC / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的・商業的穀物農業", "混合農業"],
+      "agriculture": [
+        {
+          "id": "ukr_breadbasket",
+          "label": "「欧州のパン籠」小麦・トウモロコシ・ヒマワリ油（世界1位級）の黒海経由輸出",
+          "detail": "肥沃なチェルノーゼムにより小麦・トウモロコシ・大麦・ヒマワリ油の世界有数輸出国（中東・アフリカの食料安全保障に直結）。戦争による黒海（オデーサ港）封鎖が世界的な食料価格高騰を招いた。",
+          "worldRank": 1,
+          "worldRankNote": "ヒマワリ油輸出 世界1位、トウモロコシ・小麦輸出世界トップ5級",
+          "clozeTerms": ["欧州のパン籠", "小麦", "ヒマワリ油", "オデーサ港"],
+          "tags": ["小麦", "チェルノーゼム", "黒海"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ukr_donbas_nuclear",
+          "label": "ドンバス炭田・クリヴィー・リフ鉄鉱石と原子力発電（5割超）",
+          "detail": "東部の石炭・鉄鉱石は歴史的な鉄鋼業の基盤だったが、紛争で大きく毀損。電力の過半を原発（ザポリージャ等）が担ってきた。",
+          "clozeTerms": ["ドンバス地方", "鉄鉱石", "原子力発電"],
+          "tags": ["石炭", "鉄鉱石", "原子力"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ukr_heavy_it",
+          "label": "東部ドニエプル・ドンバス重工業地帯とキーウのICTアウトソーシング",
+          "detail": "旧ソ連時代から重機械・航空宇宙・鉄鋼の拠点。近年はITエンジニア育成でも知られたが戦時下でインフラ破壊が甚大。",
+          "clozeTerms": ["重工業"],
+          "tags": ["鉄鋼業", "ICT"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["トウモロコシ・小麦", "ヒマワリ油・菜種", "鉄鉱石・鉄鋼"],
+        "majorImports": ["石油精製品", "機械・車両・防衛装備", "医薬品"],
+        "majorPartners": ["ポーランド", "中国", "ルーマニア", "トルコ", "スペイン"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（東スラブ語群：ウクライナ語・ロシア語／キリル文字）",
+      "officialLanguages": ["ウクライナ語"],
+      "religions": [
+        { "name": "キリスト教（東方正教会）", "percent": 78 },
+        { "name": "ウクライナ東方カトリック教会（西部）ほか", "percent": 22 }
+      ],
+      "ethnicGroups": ["ウクライナ人（約78%）", "ロシア系（東部・南部クリミア等に多い）"],
+      "regionalIntegrations": ["EU加盟候補国", "WTO"],
+      "historicalContext": [
+        {
+          "id": "ukr_war_refugees_divide",
+          "label": "2014年クリミア併合・2022年ロシア侵攻による大規模避難民流出と東西の文化的グラデーション",
+          "detail": "1991年ソ連解体で独立。西部はウクライナ語・親EU傾向が強く、東部（ドンバス）・南部（クリミア）にはロシア語話者が多い。2022年以降、600万人以上が欧州（ポーランド・ドイツ等）へ避難。",
+          "clozeTerms": ["クリミア半島", "難民流出", "東方正教会", "旧ソ連"],
+          "tags": ["難民", "領土問題", "旧ソ連"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "RUS": {
+    "iso3": "RUS",
+    "nameJa": "ロシア",
+    "nameEn": "Russia",
+    "region": "ヨーロッパ／北アジア",
+    "subRegion": "東ヨーロッパ・シベリア・極東",
+    "capital": "モスクワ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "ウラル山脈（古期造山帯）を境にした東欧平原とシベリア平原・タイガ・ポドゾル・永久凍土",
+        "世界最大の気温年較差（ヤクーツク60℃超：Dwd）と温暖化による永久凍土融解",
+        "原油・天然ガス・石炭・ダイヤモンド・ニッケル等の資源モノカルチャー輸出と小麦世界1位級",
+        "シベリア鉄道・バム鉄道（第二シベリア）・北極海航路と少子化・少数民族共和国"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（ロシア卓状地・シベリア卓状地）", "古期造山帯（ウラル山脈）", "新期造山帯（カムチャッカ半島）"],
+      "summary": "世界最大の面積（約1710万km²）。ウラル山脈以西は広大な東ヨーロッパ平原、以東は世界最大の湿地帯西シベリア低地・中央シベリア高原。世界最深の断層湖バイカル湖や広大な永久凍土。",
+      "items": [
+        {
+          "id": "rus_taiga_podzol_permafrost",
+          "category": "soil",
+          "label": "タイガ（針葉樹林）・ポドゾル（強酸性灰白色土）・永久凍土の融解問題",
+          "detail": "寒冷な亜寒帯の針葉樹林「タイガ」の下には腐植分解の進まない貧栄養・強酸性土壌「ポドゾル」が分布し耕作不適。シベリアの大部分を占める「永久凍土」が地球温暖化で融解し、地盤沈下による建物・パイプライン崩壊やメタン放出が深刻化。",
+          "clozeTerms": ["タイガ", "ポドゾル", "永久凍土", "ウラル山脈", "バイカル湖"],
+          "tags": ["タイガ", "ポドゾル", "永久凍土", "地球温暖化"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dfb", "Dfc", "Dwd", "ET", "BSk"],
+      "summary": "亜寒帯（冷帯D）が主体。モスクワはDfb、東シベリア（ヤクーツク）は極端な大陸性気候で冬の平均-38℃・夏+19℃と気温年較差が60℃近くに及ぶDwd。北極海沿岸はツンドラ（ET）。",
+      "cities": [
+        {
+          "cityId": "RUS_MOSCOW",
+          "nameJa": "モスクワ",
+          "nameEn": "Moscow",
+          "lat": 55.76,
+          "lng": 37.62,
+          "elevationM": 156,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["大西洋からの偏西風がわずかに届き東シベリアほど極寒にはならない（1月-6℃前後）"],
+          "monthlyTempC": [-6.2, -5.9, -0.7, 6.9, 13.6, 17.3, 19.7, 17.6, 11.9, 5.8, -0.5, -4.4],
+          "monthlyPrecipMm": [53, 44, 39, 37, 61, 78, 84, 78, 66, 70, 52, 51],
+          "dataSource": "Roshydromet / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "RUS_YAKUTSK",
+          "nameJa": "ヤクーツク",
+          "nameEn": "Yakutsk",
+          "lat": 62.04,
+          "lng": 129.74,
+          "elevationM": 103,
+          "koppenCode": "Dwd",
+          "koppenNameJa": "亜寒帯冬季少雨気候（極端な大陸性）",
+          "factors": ["世界最大の大陸内部（極端な隔海度）＋シベリア高気圧により1月平均-37℃前後、7月は+20℃で年較差約57℃", "永久凍土上の高床式建築"],
+          "monthlyTempC": [-36.9, -32.9, -19.1, -3.7, 8.0, 17.0, 19.9, 15.6, 6.4, -6.9, -25.9, -37.0],
+          "monthlyPrecipMm": [10, 9, 6, 8, 20, 35, 40, 37, 30, 19, 17, 10],
+          "dataSource": "Roshydromet / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的穀物農業（南部黒土帯）", "林業", "遊牧（トナカイ）"],
+      "agriculture": [
+        {
+          "id": "rus_wheat_timber",
+          "label": "南部チェルノーゼム地帯の小麦（輸出世界1位）とタイガの木材",
+          "detail": "温暖化で栽培北限がやや北上したこともあり、近年は世界最大の小麦輸出国として中東・アフリカへ輸出。",
+          "worldRank": 1,
+          "worldRankNote": "小麦輸出量 世界1位、大麦輸出トップ級",
+          "clozeTerms": ["小麦輸出1位", "チェルノーゼム"],
+          "tags": ["小麦", "チェルノーゼム", "タイガ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "rus_oil_gas_metals_nsr",
+          "label": "原油・天然ガス（西シベリア・チュメニ）・ダイヤモンド・ニッケル・パラジウムと北極海航路",
+          "detail": "資源輸出に依存するモノカルチャー経済・資源ナショナリズム。ウクライナ侵攻の制裁で欧州向けパイプライン輸出が激減し、中国・インド向けへシフト。海氷減少による北極海航路（ムルマンスク不凍港等）の商業利用が進展。",
+          "worldRank": 1,
+          "worldRankNote": "天然ガス輸出・ダイヤモンド・パラジウム生産 世界1位、原油・ニッケル・石炭・金トップ3",
+          "clozeTerms": ["天然ガス", "モノカルチャー経済", "資源ナショナリズム", "北極海航路", "ムルマンスク"],
+          "tags": ["原油", "天然ガス", "ダイヤモンド", "ニッケル", "不凍港"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "rus_railways_industrial",
+          "label": "モスクワ・ウラル・クズバス工業地域とシベリア鉄道・バム鉄道（第二シベリア鉄道）",
+          "detail": "ウラル山脈の鉄鉱石とクズネツク炭田（クズバス）を結ぶ重工業。シベリアの地下資源開発と太平洋岸（ウラジオストク）連絡のためバイカル湖の北を通るバム鉄道を建設。",
+          "clozeTerms": ["シベリア鉄道", "バム鉄道（第二シベリア鉄道）", "クズネツク炭田"],
+          "tags": ["鉄道", "石炭", "鉄鉱石"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油・石油製品", "天然ガス", "石炭・鉄鋼・肥料", "小麦", "ニッケル・金・ダイヤモンド"],
+        "majorImports": ["機械・電子機器", "自動車・部品（中国製急増）", "医薬品"],
+        "majorPartners": ["中国", "インド", "トルコ", "ベラルーシ", "カザフスタン"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（東スラブ語群：ロシア語）／ウラル・アルタイ・コーカサス系諸語",
+      "officialLanguages": ["ロシア語（連邦公用語、各民族共和国で現地語併用）"],
+      "religions": [
+        { "name": "キリスト教（ロシア正教）", "percent": 65 },
+        { "name": "無宗教", "percent": 20 },
+        { "name": "イスラム教（タタールスタン・北コーカサス等）・チベット仏教", "percent": 15 }
+      ],
+      "ethnicGroups": ["ロシア人（約7〜8割）", "180以上の少数民族（タタール人・チェチェン人・サハ人等）"],
+      "regionalIntegrations": ["BRICS", "EAEU（ユーラシア経済連合）", "CIS", "上海協力機構（SCO）"],
+      "historicalContext": [
+        {
+          "id": "rus_demographics_ethnic",
+          "label": "連邦内の民族共和国と男性短命（男女寿命差大）・人口減少問題",
+          "detail": "旧ソ連崩壊後の経済混乱やアルコール消費等の影響で、先進・新興国の中で男女平均寿命差が大きく（男性が短い）、人口減少と極東シベリアの人口流出が深刻。",
+          "clozeTerms": ["ロシア正教", "人口減少", "少数民族共和国"],
+          "tags": ["人口", "旧ソ連", "多民族"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

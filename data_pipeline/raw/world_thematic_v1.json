@@ -1,0 +1,2162 @@
+{
+  "AFG": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 327,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 1884,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "AGO": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1010,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1112,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "ALB": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 1485,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 708,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "ARE": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 78,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 149,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ARG": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 591,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 595,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "ARM": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 562,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 1792,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "ATA": {
+    "koppenGroup": "E",
+    "koppenMain": "EF",
+    "annualPrecipMm": 166,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 2300,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "ATF": {
+    "koppenGroup": "E",
+    "koppenMain": "ET",
+    "annualPrecipMm": 850,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 300,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "AUS": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 534,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 330,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "AUT": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1110,
+    "agricultureMain": "酪農",
+    "meanElevationM": 910,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "AZE": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 447,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 384,
+    "religionMain": "イスラム教（シーア派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "BDI": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1274,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1504,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "BEL": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 847,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 181,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BEN": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1039,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 273,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "BFA": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 748,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 297,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "BGD": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2320,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 85,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "BGR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 608,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 472,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "BHS": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1292,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 20,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BIH": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1028,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 500,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "BLR": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 618,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 160,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "BLZ": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 1705,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 173,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BOL": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1146,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1192,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "BRA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1761,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 320,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "BRN": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2722,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 478,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "BTN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 2200,
+    "agricultureMain": "アジア式畑作農業",
+    "meanElevationM": 3280,
+    "religionMain": "仏教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "BWA": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 416,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 1013,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "CAF": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1343,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 635,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "CAN": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 537,
+    "agricultureMain": "企業的穀物農業",
+    "meanElevationM": 487,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "CHE": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1131,
+    "agricultureMain": "酪農",
+    "meanElevationM": 1350,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "CHL": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 315,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 1871,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "CHN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 645,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 1840,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "CIV": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1348,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 250,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "CMR": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1604,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 667,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "COD": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1543,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 726,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "COG": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1646,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 430,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "COL": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2612,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 593,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "CRI": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2926,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 746,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "CUB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1335,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 108,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "CYN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 450,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 190,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "CYP": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 498,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 191,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "CZE": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 677,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 433,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "DEU": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 700,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 263,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "DJI": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 220,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 430,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "DNK": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 703,
+    "agricultureMain": "酪農",
+    "meanElevationM": 34,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "DOM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1410,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 424,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "DZA": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 89,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 800,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ECU": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2087,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 1117,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "EGY": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 25,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 321,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ERI": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 384,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 853,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ESH": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 48,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 256,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ESP": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 636,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 660,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "EST": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 626,
+    "agricultureMain": "酪農",
+    "meanElevationM": 61,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "ETH": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 848,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1330,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "FIN": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 536,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 164,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "FJI": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2592,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 230,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "FLK": {
+    "koppenGroup": "E",
+    "koppenMain": "ET",
+    "annualPrecipMm": 575,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 150,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "FRA": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 867,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 375,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "GAB": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1831,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 377,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GBR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1220,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 162,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "GEO": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1026,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 1432,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "GHA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1187,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 190,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GIN": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1651,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 472,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GMB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 836,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 34,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GNB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1577,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 70,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GNQ": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2156,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 577,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "GRC": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 652,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 498,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "GRL": {
+    "koppenGroup": "E",
+    "koppenMain": "EF",
+    "annualPrecipMm": 600,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 1792,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "GTM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1996,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 759,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "GUY": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2387,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 207,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "HND": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1976,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 684,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "HRV": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1113,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 331,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "HTI": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1440,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 470,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "HUN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 589,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 143,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "IDN": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2702,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 367,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "IND": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1083,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 160,
+    "religionMain": "ヒンドゥー教",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "IRL": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1118,
+    "agricultureMain": "酪農",
+    "meanElevationM": 118,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "IRN": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 228,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 1305,
+    "religionMain": "イスラム教（シーア派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "IRQ": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 216,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 312,
+    "religionMain": "イスラム教（シーア派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ISL": {
+    "koppenGroup": "E",
+    "koppenMain": "ET",
+    "annualPrecipMm": 950,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 557,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "ISR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 435,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 508,
+    "religionMain": "ユダヤ教",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ITA": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 832,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 538,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "JAM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 2051,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 340,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "JOR": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 111,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 812,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "JPN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1668,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 438,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "KAZ": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 250,
+    "agricultureMain": "企業的穀物農業",
+    "meanElevationM": 387,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "KEN": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 630,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 762,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "KGZ": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 533,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 2988,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "KHM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1904,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 126,
+    "religionMain": "仏教",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "KOR": {
+    "koppenGroup": "D",
+    "koppenMain": "Dw",
+    "annualPrecipMm": 1274,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 282,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "KOS": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 720,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 800,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "KWT": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 121,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 108,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "LAO": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1834,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 710,
+    "religionMain": "仏教",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "LBN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 661,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 1250,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "LBR": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2391,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 243,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "LBY": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 56,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 423,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "LKA": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 1712,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 228,
+    "religionMain": "仏教",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "LSO": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 788,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 2161,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "LTU": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 656,
+    "agricultureMain": "酪農",
+    "meanElevationM": 110,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "LUX": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 934,
+    "agricultureMain": "酪農",
+    "meanElevationM": 325,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "LVA": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 641,
+    "agricultureMain": "酪農",
+    "meanElevationM": 87,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "MAR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 346,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 909,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "MDA": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 450,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 139,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "MDG": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1513,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 615,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "MEX": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 758,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1111,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "MKD": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 619,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 741,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "MLI": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 282,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 343,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "MMR": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 2091,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 702,
+    "religionMain": "仏教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "MNE": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1400,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 1086,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "MNG": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 241,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 1528,
+    "religionMain": "仏教",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "MOZ": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1032,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 345,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "MRT": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 92,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 276,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "MWI": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1181,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 779,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "MYS": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2875,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 419,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "NAM": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 285,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 1141,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "NCL": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1400,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 320,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "NER": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 151,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 474,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "NGA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1150,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 380,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "NIC": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 2280,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 298,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "NLD": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 815,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 30,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "NOR": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 1414,
+    "agricultureMain": "酪農",
+    "meanElevationM": 460,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "NPL": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 1500,
+    "agricultureMain": "アジア式畑作農業",
+    "meanElevationM": 3265,
+    "religionMain": "ヒンドゥー教",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "NZL": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1732,
+    "agricultureMain": "酪農",
+    "meanElevationM": 388,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "OMN": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 125,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 310,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "PAK": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 290,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 900,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "PAN": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2692,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 360,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "PER": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1738,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1555,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "PHL": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2348,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 442,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "PNG": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3142,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 667,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "POL": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 600,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 173,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "PRI": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2054,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 261,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "PRK": {
+    "koppenGroup": "D",
+    "koppenMain": "Dw",
+    "annualPrecipMm": 1054,
+    "agricultureMain": "アジア式畑作農業",
+    "meanElevationM": 600,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "日本語・朝鮮語・固有語族"
+  },
+  "PRT": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 854,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 372,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "PRY": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1130,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 178,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "PSE": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 402,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 410,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "QAT": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 74,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 28,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ROU": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 637,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 414,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "RUS": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 460,
+    "agricultureMain": "企業的穀物農業",
+    "meanElevationM": 600,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "RWA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1212,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1598,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SAU": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 59,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 665,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "SDN": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 250,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 568,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "SEN": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 686,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 69,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SGP": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2185,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 15,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "SLB": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3028,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 210,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "SLE": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2526,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 279,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SLV": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1784,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 442,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "SOL": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 290,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 600,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "SOM": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 282,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 410,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "SRB": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 686,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 473,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "SSD": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 900,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 460,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SUR": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2331,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 246,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "SVK": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 824,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 458,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "SVN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1162,
+    "agricultureMain": "酪農",
+    "meanElevationM": 492,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "SWE": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 624,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 320,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "SWZ": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 788,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 305,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SYR": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 252,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 514,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "TCD": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 322,
+    "agricultureMain": "遊牧",
+    "meanElevationM": 543,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "TGO": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1168,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 236,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "THA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1622,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 287,
+    "religionMain": "仏教",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "TJK": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 691,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 3186,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（インド・イラン・他）"
+  },
+  "TKM": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 161,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 230,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "TLS": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1500,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 630,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "TTO": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2200,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 83,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "TUN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 207,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 246,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "TUR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 593,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 1132,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "TWN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 2403,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 790,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "TZA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1071,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1018,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "UGA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1180,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1100,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "UKR": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 565,
+    "agricultureMain": "企業的穀物農業",
+    "meanElevationM": 175,
+    "religionMain": "キリスト教（正教）",
+    "languageFamilyMain": "印欧語族（スラブ語派）"
+  },
+  "URY": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1300,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 109,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "USA": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 715,
+    "agricultureMain": "企業的穀物農業",
+    "meanElevationM": 760,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "UZB": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 206,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 450,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "テュルク・モンゴル・ウラル語族"
+  },
+  "VEN": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 2044,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 450,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "VNM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1821,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 398,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "VUT": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2000,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 210,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "YEM": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 167,
+    "agricultureMain": "オアシス農業",
+    "meanElevationM": 999,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "ZAF": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 495,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 1034,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "ZMB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1020,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1138,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "ZWE": {
+    "koppenGroup": "B",
+    "koppenMain": "BS",
+    "annualPrecipMm": 657,
+    "agricultureMain": "企業的牧畜",
+    "meanElevationM": 961,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "VAT": {
+    "koppenGroup": "C",
+    "koppenMain": "Cs",
+    "annualPrecipMm": 601,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 66,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "FSM": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 4594,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 199,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "MHL": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3275,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 2,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "MNP": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2050,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 111,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "VIR": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1088,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 57,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "GUM": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2257,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 79,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "ASM": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3456,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 165,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "SGS": {
+    "koppenGroup": "E",
+    "koppenMain": "ET",
+    "annualPrecipMm": 1655,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 685,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "IOT": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2573,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 5,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "SHN": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 10,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 120,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "PCN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1398,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 27,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "AIA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 961,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 22,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "CYM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1450,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 7,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BMU": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1509,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 20,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "VGB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1112,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 72,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "TCA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 773,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 6,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "MSR": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1562,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 235,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "JEY": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 847,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 64,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "GGY": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 867,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 43,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "IMN": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1048,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 168,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "TON": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1782,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 11,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "SYC": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2337,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 184,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "STP": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2890,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 621,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "SMR": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 896,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 388,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "WSM": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3583,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 885,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "VCT": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2084,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 378,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "LCA": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 2083,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 171,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "KNA": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1345,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 167,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "PLW": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3399,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 64,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "NIU": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2210,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 57,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "COK": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1988,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 114,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "ABW": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 416,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 50,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "CUW": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 531,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 31,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "NRU": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2020,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 25,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "MCO": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 813,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 437,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "MUS": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 1773,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 386,
+    "religionMain": "ヒンドゥー教",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "MLT": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 535,
+    "agricultureMain": "地中海式農業",
+    "meanElevationM": 90,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "MDV": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 1944,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 2,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "LIE": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1464,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 1409,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "KIR": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1629,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 2,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "GRD": {
+    "koppenGroup": "A",
+    "koppenMain": "Am",
+    "annualPrecipMm": 1790,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 248,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "SPM": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 1389,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 84,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "WLF": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 2846,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 163,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "MAF": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1020,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 59,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BLM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1002,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 46,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "PYF": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1974,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 408,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "ALA": {
+    "koppenGroup": "D",
+    "koppenMain": "Df",
+    "annualPrecipMm": 576,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 8,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "DMA": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1896,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 408,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "FRO": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 2754,
+    "agricultureMain": "混合農業",
+    "meanElevationM": 116,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "COM": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 2171,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 1169,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "MAC": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 1979,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 46,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "HKG": {
+    "koppenGroup": "C",
+    "koppenMain": "Cw",
+    "annualPrecipMm": 2033,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 142,
+    "religionMain": "東アジア伝統信仰・無宗教",
+    "languageFamilyMain": "シナ・チベット語族"
+  },
+  "CPV": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 268,
+    "agricultureMain": "プランテーション農業",
+    "meanElevationM": 333,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "ニジェール・コンゴ語族"
+  },
+  "BRB": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1607,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 85,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "BHR": {
+    "koppenGroup": "B",
+    "koppenMain": "BW",
+    "annualPrecipMm": 80,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 26,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "アフロ・アジア語族"
+  },
+  "HMD": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 810,
+    "agricultureMain": "林業・非農業（寒冷・都市）",
+    "meanElevationM": 839,
+    "religionMain": "伝統信仰・無宗教（欧米等）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "NFK": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfa",
+    "annualPrecipMm": 1303,
+    "agricultureMain": "酪農",
+    "meanElevationM": 88,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "ATG": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1100,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 44,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "AND": {
+    "koppenGroup": "C",
+    "koppenMain": "Cfb",
+    "annualPrecipMm": 1332,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 2064,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ロマンス語派）"
+  },
+  "KAS": {
+    "koppenGroup": "E",
+    "koppenMain": "ET",
+    "annualPrecipMm": 128,
+    "agricultureMain": "アジア式稲作農業",
+    "meanElevationM": 5774,
+    "religionMain": "イスラム教（スンニ派）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  },
+  "SXM": {
+    "koppenGroup": "A",
+    "koppenMain": "Aw",
+    "annualPrecipMm": 1020,
+    "agricultureMain": "園芸農業",
+    "meanElevationM": 59,
+    "religionMain": "キリスト教（カトリック）",
+    "languageFamilyMain": "印欧語族（ゲルマン語派）"
+  },
+  "TUV": {
+    "koppenGroup": "A",
+    "koppenMain": "Af",
+    "annualPrecipMm": 3371,
+    "agricultureMain": "焼畑農業・自給的農業",
+    "meanElevationM": 3,
+    "religionMain": "キリスト教（プロテスタント）",
+    "languageFamilyMain": "東南アジア・太平洋諸語族"
+  }
+}

@@ -1,0 +1,716 @@
+{
+  "JPN": {
+    "iso3": "JPN",
+    "nameJa": "日本",
+    "nameEn": "Japan",
+    "region": "東アジア",
+    "subRegion": "東アジア（島嶼部）",
+    "capital": "東京",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "4プレート境界・フォッサマグナと火山・地震災害",
+        "モンスーンと太平洋側・日本海側・瀬戸内の気候差",
+        "臨海型製鉄所と太平洋ベルトの産業立地変化",
+        "少子高齢化・三大都市圏・過疎・防災（地形図・ハザードマップ）"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（環太平洋造山帯）"],
+      "summary": "ユーラシア・北アメリカ・太平洋・フィリピン海の4プレートの収束境界に位置し、世界有数の地震・火山多発国。急峻な脊梁山脈と短い急流河川、複雑な海岸地形が特徴。",
+      "items": [
+        {
+          "id": "jpn_plate_fossa_magna",
+          "category": "tectonic",
+          "label": "4プレート境界（日本海溝・南海トラフ）とフォッサマグナ・中央構造線",
+          "detail": "糸魚川―静岡構造線を西縁とするフォッサマグナ（大地溝帯）と西南日本を走る中央構造線により地質・地形が明瞭に区分される。火山フロント沿いにカルデラや温泉・地熱地帯が分布。",
+          "clozeTerms": ["フォッサマグナ", "糸魚川―静岡構造線", "中央構造線", "南海トラフ"],
+          "tags": ["新期造山帯", "プレート境界", "火山", "地震"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "jpn_micro_landforms",
+          "category": "landform",
+          "label": "扇状地・氾濫原・三角州・リアス海岸・砂丘・カルスト",
+          "detail": "山麓の扇状地（果樹園・水無川）、中流の氾濫原（自然堤防＝集落/畑、後背湿地＝水田）、河口の三角州（水田・軟弱地盤と液状化）、三陸・志摩・若狭のリアス海岸（養殖・津波増幅）、秋吉台のカルスト地形が頻出。",
+          "clozeTerms": ["扇状地", "自然堤防", "後背湿地", "三角州", "リアス海岸"],
+          "tags": ["扇状地", "三角州", "リアス海岸", "自然災害", "地形図"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfa", "Dfb"],
+      "summary": "冬季の北西季節風（日本海を渡る際に水蒸気を補給し日本海側に豪雪・太平洋側に空っ風）と、夏季の南東季節風・梅雨前線・秋雨前線・台風により地域差が大きい。瀬戸内は中国・四国山地に挟まれ少雨。",
+      "cities": [
+        {
+          "cityId": "JPN_TOKYO",
+          "nameJa": "東京",
+          "nameEn": "Tokyo",
+          "lat": 35.69,
+          "lng": 139.69,
+          "elevationM": 25,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（太平洋側）",
+          "factors": ["南東モンスーン", "黒潮（日本海流）", "梅雨・秋雨・台風で9〜10月多雨", "冬の北西風は山脈越えで乾燥"],
+          "monthlyTempC": [5.4, 6.1, 9.4, 14.3, 18.9, 22.1, 25.8, 27.1, 23.5, 18.0, 12.6, 7.7],
+          "monthlyPrecipMm": [56, 56, 117, 124, 152, 168, 156, 155, 225, 234, 96, 58],
+          "dataSource": "気象庁 1991-2020 平年値",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "JPN_KANAZAWA",
+          "nameJa": "金沢",
+          "nameEn": "Kanazawa",
+          "lat": 36.59,
+          "lng": 136.63,
+          "elevationM": 6,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（日本海側）",
+          "factors": ["冬の北西季節風が対馬海流（暖流）上で水蒸気を吸収し大雪（冬季降水量極大）"],
+          "monthlyTempC": [4.0, 4.2, 7.3, 12.6, 17.7, 21.4, 25.5, 27.0, 22.9, 17.3, 11.7, 6.6],
+          "monthlyPrecipMm": [256, 162, 157, 144, 134, 184, 227, 194, 226, 184, 240, 294],
+          "dataSource": "気象庁 1991-2020 平年値",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "JPN_SAPPORO",
+          "nameJa": "札幌",
+          "nameEn": "Sapporo",
+          "lat": 43.06,
+          "lng": 141.35,
+          "elevationM": 17,
+          "koppenCode": "Dfb",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": ["梅雨・台風の影響が弱く6〜7月は少雨", "冬は北西季節風で多雪"],
+          "monthlyTempC": [-3.2, -2.7, 1.1, 7.3, 13.0, 17.0, 21.1, 22.3, 18.6, 12.1, 5.2, -0.9],
+          "monthlyPrecipMm": [108, 92, 78, 55, 56, 67, 81, 124, 137, 109, 115, 118],
+          "dataSource": "気象庁 1991-2020 平年値",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "JPN_NAHA",
+          "nameJa": "那覇",
+          "nameEn": "Naha",
+          "lat": 26.21,
+          "lng": 127.69,
+          "elevationM": 28,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（亜熱帯性）",
+          "factors": ["黒潮（暖流）により冬も温暖（最寒月17℃前後）", "梅雨（5〜6月）と台風（8〜9月）で多雨"],
+          "monthlyTempC": [17.3, 17.5, 19.1, 21.5, 24.2, 27.0, 29.1, 28.9, 27.7, 25.2, 22.1, 18.9],
+          "monthlyPrecipMm": [107, 120, 149, 166, 232, 273, 162, 261, 253, 182, 120, 108],
+          "dataSource": "気象庁 1991-2020 平年値",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "酪農", "園芸農業"],
+      "agriculture": [
+        {
+          "id": "jpn_rice_horticulture",
+          "label": "水田稲作・促成栽培（宮崎・高知）・抑制栽培（長野高冷地）・近郊農業",
+          "detail": "食料自給率（カロリーベース約38%）が低く、米・野菜の自給率は高いが小麦・大豆・飼料用トウモロコシ・牛肉は輸入依存。耕作放棄地増加・農業就業者の高齢化が深刻。十勝平野・根釧台地の畑作・酪農。",
+          "clozeTerms": ["促成栽培", "抑制栽培", "近郊農業", "カロリーベース食料自給率"],
+          "tags": ["稲作", "食料自給率", "園芸農業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "jpn_fishery",
+          "label": "潮目（親潮×黒潮）の好漁場と遠洋→養殖・栽培漁業への転換",
+          "detail": "200海里排他的経済水域（EEZ）設定や水産資源減少により遠洋漁業が縮小し、沿岸・養殖業（ブリ・マダイ・ホタテ等）の比率が増加。輸入大国でもある。",
+          "clozeTerms": ["潮目", "EEZ", "栽培漁業"],
+          "tags": ["漁業", "海流"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "jpn_energy_mix",
+          "label": "エネルギー自給率の低さ（約12〜13%）と電源構成の変遷",
+          "detail": "化石燃料（原油は中東依存度約9割、石炭・LNGは豪州等が上位）を輸入。2011年以降は原発比率低下に伴いLNG・石炭火力が主軸となり、太陽光など再エネ比率が拡大中。",
+          "clozeTerms": ["エネルギー自給率", "LNG", "再生可能エネルギー"],
+          "tags": ["エネルギー", "原油", "LNG", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "jpn_steel_location_shift",
+          "label": "製鉄所立地の変遷（原料立地→大消費地港湾→臨海埋立地→再編）",
+          "detail": "1910年代は八幡・室蘭など炭田・鉄山立地（原料指向）、戦後は輸入原料依存により太平洋ベルトの臨海埋立地に高炉（銑鋼一貫工場）が集中。現在は合理化・統合が進む。",
+          "clozeTerms": ["銑鋼一貫工場", "原料指向", "臨海型立地"],
+          "tags": ["鉄鋼業", "太平洋ベルト"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "jpn_pacific_belt_clusters",
+          "label": "太平洋ベルト（中京自動車・京浜・阪神）と地方ハイテク（シリコンアイランド）",
+          "detail": "中京工業地帯は自動車など輸送用機械が圧倒的首位。九州（シリコンアイランド・熊本TSMC等）や東北は高速道路・空港直結の臨空型半導体・電子部品工場が集積。",
+          "clozeTerms": ["太平洋ベルト", "中京工業地帯", "シリコンアイランド", "臨空型立地"],
+          "tags": ["自動車", "半導体", "工業地域"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車", "半導体等製造装置", "鉄鋼", "半導体・電子部品", "プラスチック"],
+        "majorImports": ["原油", "液化天然ガス（LNG）", "石炭", "衣類・通信機器", "医薬品"],
+        "majorPartners": ["アメリカ", "中国", "韓国", "台湾", "オーストラリア", "ASEAN"],
+        "note": "完成品の輸出に加え、企業の海外現地生産化（産業の空洞化）に伴い、部品・製造装置など資本財・中間財の貿易比率が高い。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "日本語族",
+      "officialLanguages": ["日本語"],
+      "religions": [
+        { "name": "神道・仏教（重層的信仰）", "percent": 95 },
+        { "name": "キリスト教・その他", "percent": 5 }
+      ],
+      "ethnicGroups": ["日本人（アイヌ・琉球の人々等の地域固有文化を含む）", "在留外国人（ベトナム・中国・ネパール・フィリピン・インドネシア等が増加）"],
+      "regionalIntegrations": ["G7", "OECD", "APEC", "RCEP", "CPTPP"],
+      "historicalContext": [
+        {
+          "id": "jpn_population_urban",
+          "label": "少子高齢化・人口減少と三大都市圏一極集中・都心回帰",
+          "detail": "高度経済成長期に三大都市圏へ若年層が移動し地方が過疎化。大都市圏では郊外ベッドタウン化（ドーナツ化）の後、近年はタワーマンション等による都心回帰と郊外ニュータウンのオールドタウン化（高齢化）が同時進行。",
+          "clozeTerms": ["少子高齢化", "過疎", "ドーナツ化現象", "都心回帰"],
+          "tags": ["人口", "少子高齢化", "都市圏", "大都市圏"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "jpn_disaster_resilience",
+          "label": "防災・減災（ハザードマップと土地履歴の読み取り）",
+          "detail": "旧版地形図や治水地形分類図から埋立地・旧河道・谷底平野を判別し、洪水・土砂災害・液状化・津波リスクに備える地理総合の中核テーマ。",
+          "clozeTerms": ["ハザードマップ", "旧河道", "液状化"],
+          "tags": ["自然災害", "地形図", "GIS"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "CHN": {
+    "iso3": "CHN",
+    "nameJa": "中華人民共和国",
+    "nameEn": "China",
+    "region": "東アジア",
+    "subRegion": "東アジア（大陸部）",
+    "capital": "北京",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "秦嶺・淮河線（1000mm・0℃線）と400mm農牧境界・胡煥庸線",
+        "経済特区（深圳）からハイテク・EV・巨大消費市場への転換",
+        "西部大開発・西気東輸・南水北調・一帯一路",
+        "一人っ子政策の反動（少子高齢化・人口減少）・民工潮と戸籍・55少数民族"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（ヒマラヤ・チベット高原）", "古期造山帯（天山・アルタイ山脈）", "安定陸塊（東北・華北平原・華南）"],
+      "summary": "西から東へ「チベット高原（標高4000m超）→内陸盆地・高原（タリム盆地・黄土高原）→東部の広大な沖積平野（東北・華北・長江中下流平原）」と下る3段の階段状地形。",
+      "items": [
+        {
+          "id": "chn_qinling_huaihe",
+          "category": "climate_boundary",
+          "label": "秦嶺・淮河線（年降水量約800〜1000mm・1月平均0℃線）",
+          "detail": "中国東部を南北に分かつ最重要ライン。北側（華北・東北）は亜寒帯・冷帯または半乾燥で小麦・トウモロコシ・綿花の畑作、南側（華中・華南）は温暖湿潤で水田稲作（華南では二期作）と茶が卓越し、生活文化（麺食 vs 米食）も大きく異なる。",
+          "clozeTerms": ["秦嶺・淮河線", "水田稲作", "畑作", "二期作"],
+          "tags": ["秦嶺・淮河線", "稲作", "小麦", "農業境界"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "chn_hu_line_400mm",
+          "category": "landform",
+          "label": "年降水量400mm線（農牧境界）と胡煥庸線（黒河―騰衝線）",
+          "detail": "年降水量400mm線より西側は乾燥（タクラマカン砂漠・ゴビ砂漠）または高冷（チベット高原）のため遊牧やオアシス農業が中心。黒河（黒竜江省）と騰衝（雲南省）を結ぶ胡煥庸線の東南側に総人口の約94%が集中する。",
+          "clozeTerms": ["胡煥庸線", "年降水量400mm線", "タクラマカン砂漠", "黄土高原"],
+          "tags": ["胡煥庸線", "人口分布", "乾燥帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "chn_rivers_karst",
+          "category": "river",
+          "label": "長江（三峡ダム）・黄河（天井川と断流）・桂林のタワーカルスト",
+          "detail": "黄河は黄土高原の黄土（レス）を運搬し下流に肥沃な華北平原を作るが、土砂堆積で天井川化・水不足（断流）が発生。長江は水運と三峡ダム（世界最大級水力）の舞台。南部（桂林・雲貴高原）は石灰岩溶食によるタワーカルストが発達。",
+          "clozeTerms": ["長江", "黄河", "三峡ダム", "天井川", "タワーカルスト"],
+          "tags": ["長江", "黄河", "三峡ダム", "カルスト"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dwa", "Cfa", "Cwa", "BSk", "BWk", "ET"],
+      "summary": "東部は顕著なアジアモンスーンの影響で夏高温多雨・冬乾燥寒冷（北京はDwa、上海はCfa、広州はCwa）。内陸部は隔海度と山脈の障壁によりステップ（BSk）・砂漠（BWk）、チベット高原は高山気候（ET相当）。",
+      "cities": [
+        {
+          "cityId": "CHN_BEIJING",
+          "nameJa": "北京",
+          "nameEn": "Beijing",
+          "lat": 39.9,
+          "lng": 116.4,
+          "elevationM": 43,
+          "koppenCode": "Dwa",
+          "koppenNameJa": "亜寒帯冬季少雨気候",
+          "factors": ["夏は南東モンスーンで集中豪雨", "冬はシベリア高気圧の寒気団で0℃以下・極端な少雨", "春は黄砂発生"],
+          "monthlyTempC": [-2.7, 0.5, 7.0, 14.7, 21.0, 25.1, 26.9, 25.7, 20.6, 13.4, 5.1, -0.9],
+          "monthlyPrecipMm": [3, 5, 9, 22, 36, 78, 165, 140, 50, 26, 13, 3],
+          "dataSource": "CMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CHN_SHANGHAI",
+          "nameJa": "上海",
+          "nameEn": "Shanghai",
+          "lat": 31.23,
+          "lng": 121.47,
+          "elevationM": 4,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候",
+          "factors": ["秦嶺・淮河線以南", "梅雨（6月）と台風（8〜9月）で年降水量1100mm超"],
+          "monthlyTempC": [4.9, 6.3, 10.2, 15.6, 20.7, 24.3, 28.6, 28.3, 24.3, 19.1, 13.5, 7.3],
+          "monthlyPrecipMm": [65, 63, 94, 86, 100, 195, 152, 178, 118, 63, 58, 49],
+          "dataSource": "CMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CHN_GUANGZHOU",
+          "nameJa": "広州",
+          "nameEn": "Guangzhou",
+          "lat": 23.13,
+          "lng": 113.26,
+          "elevationM": 41,
+          "koppenCode": "Cwa",
+          "koppenNameJa": "温帯夏雨気候",
+          "factors": ["北回帰線付近で冬も温暖（14℃前後）", "夏モンスーンで4〜9月に多雨（年1800mm超）"],
+          "monthlyTempC": [13.8, 15.2, 18.2, 22.4, 26.0, 27.9, 28.9, 28.7, 27.5, 24.5, 20.2, 15.6],
+          "monthlyPrecipMm": [45, 65, 95, 185, 280, 315, 245, 240, 185, 72, 42, 34],
+          "dataSource": "CMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CHN_URUMQI",
+          "nameJa": "ウルムチ",
+          "nameEn": "Urumqi",
+          "lat": 43.83,
+          "lng": 87.62,
+          "elevationM": 935,
+          "koppenCode": "BSk",
+          "koppenNameJa": "ステップ気候（乾燥帯）",
+          "factors": ["ユーラシア内陸の極端な隔海度", "天山山脈北麓で冬季は厳寒、気温年較差約36℃"],
+          "monthlyTempC": [-12.2, -9.2, -0.5, 10.6, 17.5, 22.3, 24.1, 22.7, 16.9, 8.2, -1.6, -9.6],
+          "monthlyPrecipMm": [10, 11, 20, 34, 38, 34, 31, 26, 23, 25, 19, 13],
+          "dataSource": "CMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "CHN_LHASA",
+          "nameJa": "ラサ",
+          "nameEn": "Lhasa",
+          "lat": 29.65,
+          "lng": 91.13,
+          "elevationM": 3649,
+          "koppenCode": "BSk",
+          "koppenNameJa": "ステップ・高山気候（標高3650m）",
+          "factors": ["チベット高原の高標高による気温低下（年中冷涼・日較差大）", "ヒマラヤ山脈の雨蔭で乾燥（夏モンスーンの隙間のみ降水）"],
+          "monthlyTempC": [-1.0, 2.0, 5.4, 8.9, 12.8, 16.2, 15.8, 15.0, 13.4, 9.0, 3.3, -0.4],
+          "monthlyPrecipMm": [1, 2, 3, 8, 28, 76, 125, 128, 60, 8, 2, 1],
+          "dataSource": "CMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "アジア式畑作農業", "遊牧", "オアシス農業"],
+      "agriculture": [
+        {
+          "id": "chn_grain_soy_import",
+          "label": "米・小麦・豚肉・茶・野菜世界1位と「大豆・飼料穀物」の爆増輸入",
+          "detail": "食料生産量は世界最大級（米・小麦・綿花・豚肉・養殖水産物など1位多数）。しかし所得向上に伴う肉食化（食生活の変化）で飼料用大豆・トウモロコシが不足し、ブラジルや米国から世界最大の輸入を行っている。新疆ウイグルではカンアルチン（地下水路）による綿花・果実のオアシス農業、チベットではヤクの遊牧。",
+          "worldRank": 1,
+          "worldRankNote": "米・小麦・豚肉・茶・リンゴ・綿花生産 世界1位",
+          "clozeTerms": ["大豆輸入", "食生活の変化", "カンアルチン", "ヤク"],
+          "tags": ["米", "小麦", "大豆", "オアシス農業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "chn_coal_rare_earth_renewables",
+          "label": "石炭・レアアース世界1位と、太陽光・風力・EV・原発・西気東輸",
+          "detail": "山西省などの石炭に依存しCO2排出世界1位だが、大気汚染（PM2.5）対策で再生可能エネルギー（太陽光パネル・風力・水力三峡ダム）とEV導入でも世界首位。レアアース（内モンゴル自治区バヤンオボ等）の産出・精製をほぼ独占。タリム盆地の天然ガスを上海へ送る「西気東輸」、長江の水を華北へ送る「南水北調」を推進。",
+          "worldRank": 1,
+          "worldRankNote": "石炭・レアアース・アルミニウム・粗鋼・セメント・太陽光発電世界1位",
+          "clozeTerms": ["レアアース", "石炭", "西気東輸", "南水北調", "EV"],
+          "tags": ["石炭", "レアアース", "再生可能エネルギー", "EV"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "chn_sez_3belts_hightech",
+          "label": "改革開放・経済特区（深圳等）と三大工業地帯、ハイテク化・工場移転",
+          "detail": "1978年の改革開放以降、深圳・珠海・汕頭・アモイ・海南島に経済特区を設置して外資導入。「世界の工場」として遼中南（鉄鋼・重工業）、京津唐（北京・天津）、滬寧杭（長江デルタ＝上海周辺）、珠江デルタ（深圳・広州）が急成長。近年は沿海部の賃金上昇で労働集約型工場が内陸（重慶・成都等）やASEANへ移転（チャイナプラスワン）し、深圳（「中国のシリコンバレー」）等でAI・通信・EV・ドローンなど先端産業へ高度化。",
+          "clozeTerms": ["改革開放", "経済特区", "深圳", "滬寧杭", "チャイナプラスワン", "西部大開発"],
+          "tags": ["経済特区", "ハイテク産業", "ICT", "世界の工場"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["電気機器・スマートフォン", "一般機械・PC", "EV・リチウムイオン電池", "太陽光パネル", "鉄鋼・衣類"],
+        "majorImports": ["集積回路（半導体）", "原油", "鉄鉱石（豪州・伯）", "大豆（伯・米）", "LNG"],
+        "majorPartners": ["ASEAN", "アメリカ", "EU", "日本", "韓国", "香港"],
+        "note": "一帯一路構想により東南アジア・中央アジア・中東・アフリカへのインフラ投資と貿易拡大を推進。ASEANが国・地域別最大の貿易相手。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "シナ・チベット語族（漢語・チベット語等）、アルタイ系諸語（ウイグル・モンゴル語等）",
+      "officialLanguages": ["中国語（普通話＝共通語）", "各自治区での少数民族言語併用"],
+      "religions": [
+        { "name": "無宗教・儒教・道教・伝統信仰", "percent": 75 },
+        { "name": "仏教（大乗仏教・チベット仏教）", "percent": 18 },
+        { "name": "イスラム教（回族・ウイグル族等）・キリスト教", "percent": 7 }
+      ],
+      "ethnicGroups": ["漢族（約91%・東部集中）", "55の少数民族（チワン族、ウイグル族、回族、チベット族、モンゴル族等）"],
+      "regionalIntegrations": ["RCEP", "APEC", "BRICS", "上海協力機構（SCO）"],
+      "historicalContext": [
+        {
+          "id": "chn_population_hukou",
+          "label": "一人っ子政策（1979〜2015）の反動による急速な少子高齢化と人口減少",
+          "detail": "出生率の急落により「富む前に老いる」少子高齢化（男女比の不均衡含む）が進み、2022年に人口減少へ転じた。農村戸籍と都市戸籍を分ける戸籍制度（フーコウ）の下、沿海部への大量出稼ぎ（民工潮・農民工）における医療・教育格差や、留守児童問題が社会課題。",
+          "clozeTerms": ["一人っ子政策", "民工潮", "農民工", "戸籍制度", "少子高齢化"],
+          "tags": ["人口", "少子高齢化", "民工潮", "戸籍制度"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "id": "chn_minorities_autonomy",
+          "label": "5つの民族自治区と西部開発・一国二制度（香港・マカオ）",
+          "detail": "内モンゴル、新疆ウイグル、チベット、寧夏回族、広西チワン族の5自治区を置くが、漢族移住や同化政策をめぐる緊張が存在。香港（旧英領・1997年返還）は国際金融の中心地。",
+          "clozeTerms": ["新疆ウイグル自治区", "チベット自治区", "一国二制度"],
+          "tags": ["少数民族", "宗教", "言語"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "KOR": {
+    "iso3": "KOR",
+    "nameJa": "大韓民国（韓国）",
+    "nameEn": "South Korea",
+    "region": "東アジア",
+    "subRegion": "朝鮮半島",
+    "capital": "ソウル",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": ["漢江の奇跡と財閥（半導体・造船・自動車）", "ソウル一極集中と少子高齢化（世界最低水準の出生率）", "オンドルとキムチなどの生活文化"]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（中朝地塊・太白山脈が東寄りに走る）"],
+      "summary": "東側が急峻な太白山脈、西側（黄海側）に緩やかな平野が広がり、主要河川（漢江・洛東江）と都市・水田が西・南部に集中。",
+      "items": [
+        {
+          "id": "kor_landform_soil",
+          "category": "landform",
+          "label": "東高西低の地形と黄海側の干潟・埋立地、南岸の多島海（リアス海岸）",
+          "detail": "日本と異なり活火山は本土にほとんどない（済州島は楯状火山）。西岸では干満差を活かした干拓や臨海工業団地が発達。",
+          "clozeTerms": ["太白山脈", "済州島", "干拓"],
+          "tags": ["安定陸塊", "リアス海岸"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Dwa", "Cfa"],
+      "summary": "典型的な東アジアモンスーン気候。冬はシベリア気団の影響で0℃以下に下がり乾燥（ソウルはDwa）、夏は梅雨と台風で多雨（南部釜山はCfa）。",
+      "cities": [
+        {
+          "cityId": "KOR_SEOUL",
+          "nameJa": "ソウル",
+          "nameEn": "Seoul",
+          "lat": 37.57,
+          "lng": 126.97,
+          "elevationM": 86,
+          "koppenCode": "Dwa",
+          "koppenNameJa": "亜寒帯冬季少雨気候",
+          "factors": ["大陸東岸モンスーン", "冬季のシベリア寒気団による低温・少雨", "夏季集中豪雨（チャンマ＝梅雨）"],
+          "monthlyTempC": [-2.2, 0.4, 5.7, 12.5, 18.0, 22.8, 25.3, 26.1, 21.6, 15.1, 7.6, 0.3],
+          "monthlyPrecipMm": [18, 28, 41, 76, 102, 134, 414, 348, 141, 52, 51, 24],
+          "dataSource": "KMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "園芸農業"],
+      "agriculture": [
+        {
+          "id": "kor_rice_greenhouse",
+          "label": "西部・南部の水田稲作と都市近郊施設園芸（唐辛子・白菜）",
+          "detail": "経済発展に伴い米の消費量が減少する一方、小麦・トウモロコシ・大豆など飼料穀物の輸入が増加。",
+          "clozeTerms": ["水田稲作", "食料輸入"],
+          "tags": ["稲作", "食生活の変化"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "kor_energy_import",
+          "label": "資源小国・化石燃料輸入と原子力・石炭・LNG電源",
+          "detail": "日本と同様にエネルギー資源に乏しく中東原油・豪州石炭・LNGを輸入。発電では石炭・LNG・原子力が高い比率を占める。",
+          "clozeTerms": ["原子力発電", "LNG輸入"],
+          "tags": ["エネルギー", "原子力"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "kor_chaebol_export",
+          "label": "財閥（チェボル）主導の輸出指向工業化（半導体・自動車・造船・鉄鋼）",
+          "detail": "1960年代以降の「漢江の奇跡」で軽工業から重化学工業へ急速転換。浦項・光陽の臨海製鉄、蔚山の自動車・造船、首都圏（水原等）の半導体・電子が中核。海外現地生産とFTA網を積極活用。",
+          "clozeTerms": ["漢江の奇跡", "財閥", "浦項", "蔚山", "半導体"],
+          "tags": ["半導体", "自動車", "造船", "輸出指向"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["半導体・集積回路", "自動車", "石油精製品", "船舶", "ディスプレイ・電池"],
+        "majorImports": ["原油", "LNG", "半導体製造装置", "半導体・電子部品"],
+        "majorPartners": ["中国", "アメリカ", "ベトナム", "日本", "台湾"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "朝鮮語族（独自の文字「ハングル」）",
+      "officialLanguages": ["韓国語（朝鮮語）"],
+      "religions": [
+        { "name": "無宗教", "percent": 56 },
+        { "name": "キリスト教（プロテスタント・カトリック）", "percent": 28 },
+        { "name": "仏教", "percent": 16 }
+      ],
+      "ethnicGroups": ["朝鮮民族（単一民族性が強いが近年外国人労働者・国際結婚が増加）"],
+      "regionalIntegrations": ["OECD", "APEC", "RCEP"],
+      "historicalContext": [
+        {
+          "id": "kor_seoul_fertility",
+          "label": "首都圏（ソウル大都市圏）への人口半分集中と世界最低水準の出生率",
+          "detail": "総人口の約50%がソウル首都圏に集中。受験競争や住居費高騰から合計特殊出生率が1.0を大きく下回り、世界で最も急速な少子高齢化が進行。伝統的床暖房オンドル・南北分断（38度線・DMZ）。",
+          "clozeTerms": ["合計特殊出生率", "ソウル一極集中", "オンドル", "ハングル"],
+          "tags": ["少子高齢化", "人口", "都市圏"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "TWN": {
+    "iso3": "TWN",
+    "nameJa": "台湾",
+    "nameEn": "Taiwan",
+    "region": "東アジア",
+    "subRegion": "東アジア（島嶼部）",
+    "capital": "台北",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": ["世界の半導体ファウンドリ拠点（TSMC・新竹）", "新期造山帯と台風・地震", "二期作・亜熱帯農業"]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（環太平洋造山帯）"],
+      "summary": "フィリピン海プレートとユーラシアプレートの衝突境界により中央山脈（最高峰玉山3952m）がそびえ、西部に肥沃な沖積平野が広がる。",
+      "items": [
+        {
+          "id": "twn_tectonic_mountains",
+          "category": "tectonic",
+          "label": "急峻な中央山脈と激しい地震・台風被害",
+          "detail": "日本と同じ環太平洋造山帯に位置し地震が頻発。夏〜秋には強い台風が直撃しやすく土砂災害・水害対策が重要。",
+          "clozeTerms": ["新期造山帯", "中央山脈"],
+          "tags": ["新期造山帯", "地震", "自然災害"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfa", "Am", "Aw"],
+      "summary": "北回帰線が中央を通り、北部は温暖湿潤気候（Cfa）、南部は熱帯モンスーン・サバナ気候。梅雨と台風により極めて多雨。",
+      "cities": [
+        {
+          "cityId": "TWN_TAIPEI",
+          "nameJa": "台北",
+          "nameEn": "Taipei",
+          "lat": 25.03,
+          "lng": 121.56,
+          "elevationM": 9,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候",
+          "factors": ["黒潮（暖流）とモンスーン", "夏は台風で多雨、冬は北東風で曇雨が多い"],
+          "monthlyTempC": [16.1, 16.5, 18.5, 21.9, 25.2, 27.7, 29.6, 29.2, 27.4, 24.5, 21.5, 17.9],
+          "monthlyPrecipMm": [83, 170, 180, 178, 234, 326, 245, 322, 360, 149, 83, 73],
+          "dataSource": "CWA 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "園芸農業"],
+      "agriculture": [
+        {
+          "id": "twn_double_cropping_fruit",
+          "label": "温暖な気候を活かした米の二期作と烏龍茶・マンゴー等の亜熱帯果樹",
+          "detail": "西部平野で稲作が行われ、丘陵部では茶（烏龍茶）や果実栽培が盛ん。",
+          "clozeTerms": ["二期作", "烏龍茶"],
+          "tags": ["稲作", "二期作"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "twn_energy_import",
+          "label": "化石燃料輸入依存と脱原発・洋上風力整備",
+          "detail": "石炭・LNG・原油の大部分を輸入に依存。半導体の膨大な電力需要を支える安定供給と再エネ移行が課題。",
+          "clozeTerms": ["化石燃料輸入"],
+          "tags": ["エネルギー"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "twn_semiconductor_tsmc",
+          "label": "新竹科学工業園区（サイエンスパーク）と世界最大の半導体受託生産（ファウンドリ）",
+          "detail": "「台湾のシリコンバレー」新竹を中心に、TSMCなど最先端ロジック半導体の生産が集中。国際的な半導体供給網の偏在リスクへの懸念から日本・米国への工場分散投資が進展。",
+          "worldRank": 1,
+          "worldRankNote": "半導体受託生産（ファウンドリ）世界シェア6割超で首位",
+          "clozeTerms": ["新竹科学工業園区", "ファウンドリ", "TSMC"],
+          "tags": ["半導体", "ICT", "ハイテク産業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["半導体・集積回路", "PC・電子部品", "プラスチック・精密機械"],
+        "majorImports": ["半導体製造装置", "原油・LNG", "電子部品"],
+        "majorPartners": ["中国・香港", "アメリカ", "ASEAN", "日本"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "シナ・チベット語族（漢語：北京語・台湾語）／オーストロネシア語族（先住民諸語）",
+      "officialLanguages": ["中国語（繁体字）"],
+      "religions": [
+        { "name": "仏教・道教・民間信仰", "percent": 80 },
+        { "name": "無宗教・キリスト教ほか", "percent": 20 }
+      ],
+      "ethnicGroups": ["漢族（本省人・外省人）", "原住民族（アミ族・タイヤル族などオーストロネシア系）"],
+      "regionalIntegrations": ["APEC", "WTO（中華台北名義）"],
+      "historicalContext": [
+        {
+          "id": "twn_aging_politics",
+          "label": "NIES（新興工業経済地域）としての急成長と少子高齢化",
+          "detail": "アジアNIESの一角として高成長を遂げた後、先進国型の少子高齢化に直面。",
+          "clozeTerms": ["アジアNIES", "繁体字"],
+          "tags": ["人口", "少子高齢化"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "MNG": {
+    "iso3": "MNG",
+    "nameJa": "モンゴル",
+    "nameEn": "Mongolia",
+    "region": "東アジア",
+    "subRegion": "内陸アジア",
+    "capital": "ウランバートル",
+    "examSummary": {
+      "manualRankOverride": "C",
+      "frequentTopics": ["ステップ気候・草原の遊牧（ゲル）とゾド（雪害）", "石炭・銅の鉱産資源輸出（対中依存）", "ウランバートルの大気汚染と定住化"]
+    },
+    "nature": {
+      "orogenicBelts": ["古期造山帯（アルタイ・ハンガイ山脈）・内陸高原"],
+      "summary": "中国とロシアに挟まれた平均標高約1580mの高原の内陸国。北部はタイガ林縁辺、中央部は草原（ステップ）、南部はゴビ砂漠。",
+      "items": [
+        {
+          "id": "mng_steppe_gobi",
+          "category": "landform",
+          "label": "モンゴル高原のステップとゴビ砂漠（礫砂漠中心）・過放牧による砂漠化",
+          "detail": "ゴビ砂漠は砂丘よりも岩石・礫砂漠が多い。カシミヤヤギの頭数急増等による過放牧と気候変動が砂漠化・黄砂を助長。",
+          "clozeTerms": ["ゴビ砂漠", "過放牧", "砂漠化"],
+          "tags": ["砂漠化", "ステップ"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BSk", "BWk", "Dwc"],
+      "summary": "極端な大陸性気候。ウランバートルは世界最寒の首都の一つ（1月平均-21℃前後）。夏にわずかな雨が降るステップ・冷帯気候。",
+      "cities": [
+        {
+          "cityId": "MNG_ULAANBAATAR",
+          "nameJa": "ウランバートル",
+          "nameEn": "Ulaanbaatar",
+          "lat": 47.92,
+          "lng": 106.92,
+          "elevationM": 1350,
+          "koppenCode": "Dwc",
+          "koppenNameJa": "亜寒帯冬季少雨・ステップ移行部",
+          "factors": ["高緯度＋標高1350m＋内陸（シベリア高気圧の中心付近）で冬極めて寒冷"],
+          "monthlyTempC": [-21.6, -16.6, -7.4, 2.0, 10.1, 15.7, 18.2, 16.0, 9.6, 1.7, -9.7, -19.0],
+          "monthlyPrecipMm": [2, 3, 4, 10, 21, 46, 75, 65, 29, 9, 6, 3],
+          "dataSource": "NAMEM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["遊牧"],
+      "agriculture": [
+        {
+          "id": "mng_nomadic_dzud",
+          "label": "五畜（ヒツジ・ヤギ・ウシ・ウマ・ラクダ）の遊牧と移動式住居ゲル",
+          "detail": "市場経済移行後にカシミヤ生産のためヤギが増加。近年の「ゾド」（厳冬・大雪害）で多数の家畜を失った遊牧民がウランバートル郊外（ゲル地区）へ移住し石炭ストーブによる大気汚染が深刻化。",
+          "clozeTerms": ["ゲル", "遊牧", "ゾド", "カシミヤ"],
+          "tags": ["遊牧", "砂漠化", "大気汚染"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mng_coal_copper",
+          "label": "石炭・銅（オユトルゴイ銅・金鉱山）の輸出特化経済",
+          "detail": "輸出の約8〜9割が石炭・銅精鉱等の鉱産資源で、その大部分が隣国中国向け。",
+          "clozeTerms": ["石炭", "銅鉱石", "内陸国"],
+          "tags": ["石炭", "銅鉱石"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mng_ulaanbaatar_meat_cashmere",
+          "label": "ウランバートル周辺の畜産加工（カシミヤ・食肉）・鉱業関連",
+          "detail": "内陸国のため海港を持たず、中露の鉄道経由で貿易。",
+          "clozeTerms": ["ウランバートル"],
+          "tags": ["内陸国"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["石炭", "銅鉱石", "鉄鉱石", "カシミヤ製品"],
+        "majorImports": ["石油製品", "機械・自動車", "食料品"],
+        "majorPartners": ["中国", "ロシア", "日本", "スイス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "モンゴル語族（キリル文字を使用、伝統モンゴル文字復興の動き）",
+      "officialLanguages": ["モンゴル語"],
+      "religions": [
+        { "name": "仏教（チベット仏教）", "percent": 52 },
+        { "name": "無宗教・シャーマニズム・イスラム教（西部カザフ系）", "percent": 48 }
+      ],
+      "ethnicGroups": ["ハルハ・モンゴル人（約8割強）", "カザフ人ほか"],
+      "regionalIntegrations": ["上海協力機構オブザーバー", "WTO"],
+      "historicalContext": [
+        {
+          "id": "mng_post_socialism",
+          "label": "ソ連圏からの市場経済化（1990年代）と都市集中",
+          "detail": "社会主義時代のネグデル（牧畜協同組合）解体後、牧畜の個人化が進み都市への人口集中が加速。人口の約半分がウランバートルに居住。",
+          "clozeTerms": ["市場経済化", "チベット仏教"],
+          "tags": ["遊牧", "都市集中"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

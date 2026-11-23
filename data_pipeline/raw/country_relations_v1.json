@@ -1,0 +1,4192 @@
+{
+  "JPN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "自動車・機械・中間財を輸出し、トウモロコシ・牛肉・航空機・LNGを輸入する最大級の同盟・貿易相手。現地法人数も極めて多い。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "部品・製造装置等の中間財を輸出し、衣料品・PC・スマートフォン・レアアースを輸入する最大の貿易相手国（近年は東南アジア等への生産分散も進行）。"
+    },
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "鉄鉱石・原料炭（石炭）・LNG・牛肉の最重要供給国。かつて英国中心だった豪州の貿易シフト先、ワーキングホリデー渡航先としても密接。"
+    },
+    {
+      "partnerIso3": "VNM",
+      "partnerNameJa": "ベトナム",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中国からの脱却・分散（「チャイナプラスワン」）により繊維・衣類輸入や日系製造拠点進出が急増。技能実習・特定技能人材の最大送出国の一つ。"
+    },
+    {
+      "partnerIso3": "SAU",
+      "partnerNameJa": "サウジアラビア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "日本の原油輸入の約4割前後を占める最大供給国（UAEと合わせ中東から約9割の原油を輸入）。ホルムズ海峡経由でタンカー輸送。"
+    },
+    {
+      "partnerIso3": "TWN",
+      "partnerNameJa": "台湾",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "半導体ファウンドリ（TSMC等）や電子部品の国際水平分業パートナー。インバウンド訪日観光（東アジア）も極めて活発。"
+    }
+  ],
+  "USA": [
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "USMCA（旧NAFTA）で無関税圏を形成し、現在アメリカ最大の貿易相手国。国境マキラドーラでの自動車分業と、ヒスパニック移民の最大出身国。"
+    },
+    {
+      "partnerIso3": "CAN",
+      "partnerNameJa": "カナダ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "世界最長クラスの陸国境を共有しUSMCAで結合。カナダは最大の原油・天然ガス・木材・自動車輸出を対米依存。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "安価な消費財・電子機器の大供給元から、現在は関税・半導体規制等の貿易摩擦を経てメキシコ・ベトナム等へのサプライチェーン再編が進む。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "シリコンバレー等のICT・医療高度専門職移民の最大級出身国（H-1Bビザ等）であり、英語圏・民主主義パートナー（クアッド）。"
+    },
+    {
+      "partnerIso3": "VEN",
+      "partnerNameJa": "ベネズエラ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "経済破綻とハイパーインフレによる多数のベネズエラ避難民・移民の主要移住先であり、石油制裁等の外交的対立関係。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋を挟む最大の安全保障・投資パートナー。自動車・先端材料の相互投資と多国籍企業網を構築。"
+    }
+  ],
+  "CHN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "最大の輸出市場として電機・衣料等を輸出する一方、米中貿易摩擦により中間財・組立の東南アジア（ベトナム等）・メキシコ迂回投資が増加。"
+    },
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "製鉄用の高品位鉄鉱石（ピルバラ）や一般炭・LNG・羊毛・ワイン等の巨大な輸入元。資源相場で経済が強く連動。"
+    },
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "大豆輸入および鉄鉱石調達の最重要パートナー。セラード開発等で拡大したブラジル農産物の最大買い手。"
+    },
+    {
+      "partnerIso3": "VNM",
+      "partnerNameJa": "ベトナム",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "繊維・電子機器の労働集約工程が賃金上昇した中国沿岸部から隣接するベトナム北部へ急移転（一帯一路・サプライチェーン連結）。"
+    },
+    {
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "ウクライナ侵攻後の西側制裁下で、安価なロシア産原油・天然ガスパイプライン・石炭の主要引受先として結合が強化。"
+    },
+    {
+      "partnerIso3": "CHL",
+      "partnerNameJa": "チリ",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "銅鉱石・精製銅およびEV向けリチウム・サクランボ等の最大輸出先。インフラ投資・FTAでも緊密。"
+    }
+  ],
+  "DEU": [
+    {
+      "partnerIso3": "POL",
+      "partnerNameJa": "ポーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU拡大後の安価・勤勉な労働力と近接立地を活かし自動車・機械部品の下請工場が集積。ウクライナ避難民受入でもEUの最前線を共有。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "欧州石炭鉄鋼共同体（ECSC）以来のEU統合の中核2国。最大級の相互貿易パートナーであり、ライン川・欧州高速鉄道網で連結。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ドイツ自動車・化学・機械メーカーの最大海外販売市場・生産拠点であり、中国製EV・電池・希少資源の輸入でも依存度が高い。"
+    },
+    {
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "高度経済成長期の「ガストアルバイター（外国人労働者）」受入に由来する最大のトルコ系移民コミュニティを形成。"
+    },
+    {
+      "partnerIso3": "AUT",
+      "partnerNameJa": "オーストリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ドイツ語圏かつドナウ川（国際河川）で直結する上流・中流の親密パートナー。ドイツからの観光客・投資が極めて多い。"
+    }
+  ],
+  "GBR": [
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧イギリス植民地・イギリス連邦の中心国。英国内で最大のインド系移民・医療/金融人材コミュニティを抱え、文化（紅茶・クリケット）・IT投資で密接。"
+    },
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧宗主国。1973年の英EC加盟まで豪州の乳製品・小麦・牛肉の最大輸出先だったが、その後豪州はアジア（日中）へ劇的転換。現在もワーホリや移民で交流。"
+    },
+    {
+      "partnerIso3": "NOR",
+      "partnerNameJa": "ノルウェー",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "ブレグジットやロシア制裁以降、北海海底パイプラインを通じた天然ガスおよび再エネ電力ケーブル（水力）の最重要供給パートナー。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ドーバー海峡海底トンネル（ユーロスター）で直結し、欧州大陸との最大の貿易・観光・人の往来ルート（不法移民の小舟問題も発生）。"
+    }
+  ],
+  "FRA": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU統合の双発エンジン。原子力大国フランスと再エネ/工業大国ドイツの間で電力融通や航空宇宙（エアバス共同開発）を実施。"
+    },
+    {
+      "partnerIso3": "DZA",
+      "partnerNameJa": "アルジェリア",
+      "category": "history",
+      "direction": "incoming",
+      "summary": "旧フランス領マグレブ諸国との歴史的結びつきからフランス語圏移民（イスラム教徒）の主要出身国（同化主義・ライシテ論点と密接）。"
+    },
+    {
+      "partnerIso3": "MAR",
+      "partnerNameJa": "モロッコ",
+      "category": "history",
+      "direction": "incoming",
+      "summary": "フランス語を解する多くのモロッコ人留学生・労働者が移住し、フランス企業（自動車ルノー等）もモロッコのタンジェへ工場進出。"
+    },
+    {
+      "partnerIso3": "ESP",
+      "partnerNameJa": "スペイン",
+      "category": "tourism",
+      "direction": "mutual",
+      "summary": "世界トップ級の国際観光大国同士で国境観光・農産物（ワイン・野菜）と鉄道物流が活発。"
+    }
+  ],
+  "AUS": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "現在の最大の輸出相手国（鉄鉱石・LNG・羊毛・小麦等）。中国人の留学・都市部移民の主要出身国でもある。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "戦後の資源貿易で結合し、日本の鉄鉱石・石炭・LNG・牛肉のトップ級供給国。ワーキングホリデーや観光でも高い相互人気。"
+    },
+    {
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "かつて「大英帝国の食料庫」として対英輸出が中心だったが、英のEC加盟後にアジア市場へ大転換。今も英連邦の一員で英国系住民が基盤。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アンザス・経済緊密化協定（ANZCERTA）により人・モノの自由移動を行う最も親密な隣国。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "近年のシドニー・メルボルン等5大都市への新規流入移民（高度技術・留学生）において最大級の出身国の一つとして急増。"
+    }
+  ],
+  "IND": [
+    {
+      "partnerIso3": "ARE",
+      "partnerNameJa": "アラブ首長国連邦（UAE）",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "UAE総人口の約3〜4割を占める最大規模の出稼ぎ労働者コミュニティを送出し、莫大な本国への国外送金（外貨収入）を獲得。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "時差（昼夜逆転）と英語力・理数系IT人材を活かしたICTオフショア開発と、米系企業への経営・技術人材輩出で最大の輸出相手国。"
+    },
+    {
+      "partnerIso3": "PAK",
+      "partnerNameJa": "パキスタン",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "1947年印パ分離独立（宗教対立：ヒンドゥー vs イスラム）以来、カシミール地方の帰属やインダス川水利条約をめぐり緊張が続く。"
+    },
+    {
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "ウクライナ侵攻後も歴史的友好関係と実利から安価なロシア産原油の最大買い手の一つとなり、精製石油の欧州再輸出も拡大。"
+    },
+    {
+      "partnerIso3": "BGD",
+      "partnerNameJa": "バングラデシュ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ガンジス川・ブラマプトラ川の上下流に位置し乾季のダム取水・洪水や越境移動をめぐる課題を抱えつつ、近年は繊維・鉄道連結を拡大。"
+    }
+  ],
+  "ARE": [
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "ドバイ・アブダビの建設・サービス・商業を支える外国人労働者（総人口の約9割を占める外国籍住民）の最大の出身国。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "サウジアラビアと並ぶ日本への最大級原油供給国。安定した中東原油・LNGの長期供給パートナー。"
+    },
+    {
+      "partnerIso3": "PAK",
+      "partnerNameJa": "パキスタン",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "建設・運輸業を担う多数の出稼ぎ男性労働者を受け入れ、出稼ぎ送金を通じてパキスタン経済を側面支援。"
+    },
+    {
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "tourism",
+      "direction": "mutual",
+      "summary": "中東・欧州・アジアを結ぶ航空ハブ（ドバイ空港）を通じて英国からの観光・金融・移住が極めて活発。"
+    }
+  ],
+  "SAU": [
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "日本の原油輸入の約4割を担う最大供給国。脱炭素・クリーンアンモニア等の次世代エネルギー協力も進展。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "現在のサウジ原油最大の買い手。近年はインフラ・再生可能エネルギー投資（ビジョン2030）で急速に接近。"
+    },
+    {
+      "partnerIso3": "EGY",
+      "partnerNameJa": "エジプト",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "アラビア語圏で多数のエジプト人技術者・教員・労働者を受け入れる主要就職先（紅海を挟むアラブ主要国間連携）。"
+    },
+    {
+      "partnerIso3": "IRN",
+      "partnerNameJa": "イラン",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "イスラム教スンニ派の盟主とシーア派の大国という宗派・地域覇権対立を軸に、近年は中国の仲介等で外交正常化も模索。"
+    }
+  ],
+  "EGY": [
+    {
+      "partnerIso3": "ETH",
+      "partnerNameJa": "エチオピア",
+      "category": "history",
+      "direction": "incoming",
+      "summary": "ナイル川（特に水量の約8割をもたらす青ナイル）の源流エチオピアが巨大「大エチオピア・ルネサンスダム」を建設し、下流エジプトが深刻な水不足を懸念。"
+    },
+    {
+      "partnerIso3": "SDN",
+      "partnerNameJa": "スーダン",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ナイル川の中流・下流を共有する歴史的隣国。近年はスーダン内戦による多数の難民が北のエジプトへ避難。"
+    },
+    {
+      "partnerIso3": "SAU",
+      "partnerNameJa": "サウジアラビア",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "高い若年失業率を背景に湾岸産油国（サウジ・UAE）へ出稼ぎ労働者を出し、外貨送金とスエズ運河収入・観光を補う。"
+    },
+    {
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "人口1億超の主食パン用小麦の輸入依存度が世界有数であり、ロシア・ウクライナからの安価な小麦供給に食料安全保障を依存。"
+    }
+  ],
+  "SDN": [
+    {
+      "partnerIso3": "EGY",
+      "partnerNameJa": "エジプト",
+      "category": "history",
+      "direction": "outgoing",
+      "summary": "ナイル川中流域として上流ダム利水調整と下流エジプトとの歴史的結びつきが深く、内戦による避難民が多数流入。"
+    },
+    {
+      "partnerIso3": "SSD",
+      "partnerNameJa": "南スーダン",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "2011年に南スーダンが分離独立。油田の多くが南側へ移った一方、輸出パイプラインは北スーダン（ポートスーダン）を通過するため利害が対立。"
+    },
+    {
+      "partnerIso3": "ETH",
+      "partnerNameJa": "エチオピア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "青ナイルの流域を共有し、エチオピア国境付近での国境難民往来とダム水量調整の当事国。"
+    }
+  ],
+  "BRA": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "大豆・鉄鉱石・原油・牛肉の最大の輸出先。中国の食料・資源調達網の中核を担う。"
+    },
+    {
+      "partnerIso3": "ARG",
+      "partnerNameJa": "アルゼンチン",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "メルコスール（南米南部共同市場）の両翼。工業製品（自動車等）と小麦の相互貿易パートナー。"
+    },
+    {
+      "partnerIso3": "PRT",
+      "partnerNameJa": "ポルトガル",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧宗主国であり南米唯一のポルトガル語文化を継承。相互の移民往来（ブラジル人労働者の欧州移住）も多い。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "戦前・戦後の日系移民（サンパウロ周辺約200万人）の歴史と、日伯セラード農業開発協力（PRODECER）による強固な絆。"
+    }
+  ],
+  "ARG": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "メルコスール内の最大貿易相手。ブラジルからの自動車部品・機械と、アルゼンチンからの小麦・自動車組立品を交換。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "大豆・牛肉・トウモロコシ・リチウムの重要輸出先かつ、近年の通貨スワップ金融協力先。"
+    },
+    {
+      "partnerIso3": "ITA",
+      "partnerNameJa": "イタリア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "19〜20世紀初頭の膨大なイタリア系移民により国民の約半数以上がイタリアにルーツを持ち、文化・食生活に濃い影響。"
+    },
+    {
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "南大西洋のフォークランド諸島（マルビナス諸島）の領有権をめぐる歴史的紛争当事国。"
+    }
+  ],
+  "CHL": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "銅鉱石・リチウム・生鮮果実（サクランボ）・サーモン等の最大輸出先（総輸出の約4割）。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "銅鉱石、紙パルプ用木材チップ、養殖サケ、そして南半球の真夏の逆季節を生かしたワイン・果実の重要供給国。"
+    },
+    {
+      "partnerIso3": "PER",
+      "partnerNameJa": "ペルー",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "19世紀「太平洋戦争」以来の歴史的境界および北部の乾燥・鉱業・アンデス太平洋同盟パートナー（ペルー系移民の流入先でもある）。"
+    },
+    {
+      "partnerIso3": "BOL",
+      "partnerNameJa": "ボリビア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "かつてボリビア領沿岸部をチリが獲得した歴史から、ボリビアの内陸国化・海港回復要求をめぐる外交懸案を抱える。"
+    }
+  ],
+  "PER": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "銅・亜鉛・魚粉の最大輸出先。近年は中国資本により太平洋岸チャンカイ巨大港が整備され南米〜アジア直結拠点へ。"
+    },
+    {
+      "partnerIso3": "VEN",
+      "partnerNameJa": "ベネズエラ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "経済破綻したベネズエラから150万人超の避難民を受け入れた中南米最大級の受入国の一つ。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "明治期からの日系ペルー人移民コミュニティの歴史を持ち、銅鉱石や水産資源取引で緊密。"
+    }
+  ],
+  "COL": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "原油・コーヒー・切り花（空輸バラ等）の最大輸出先であり、米州の緊密な安保・経済パートナー。"
+    },
+    {
+      "partnerIso3": "VEN",
+      "partnerNameJa": "ベネズエラ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "国境を接するベネズエラから約280〜300万人の難民・避難民を受け入れている世界最大級の受入国。"
+    }
+  ],
+  "VEN": [
+    {
+      "partnerIso3": "COL",
+      "partnerNameJa": "コロンビア",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "経済崩壊・ハイパーインフレに伴い、数百万人のベネズエラ国民が隣国コロンビア経由で陸路流出。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "history",
+      "direction": "outgoing",
+      "summary": "かつて最大の原油輸出先だったが制裁により激減。米国を目指す移民・難民の急増が政治焦点。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "欧米制裁下で重質原油の主要輸出・融資先として関係を維持。"
+    }
+  ],
+  "MEX": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "輸出の約8割がアメリカ向け。マキラドーラの自動車・電子組立と、数千万人規模のヒスパニック系移民・本国送金で深く結合。"
+    },
+    {
+      "partnerIso3": "CAN",
+      "partnerNameJa": "カナダ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "USMCA3カ国のパートナー。中米・カナダ間の農産物・自動車サプライチェーンを共有。"
+    }
+  ],
+  "CAN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "輸出の約7割超を対米市場（原油・木材・自動車）に依存し、五大湖・セントローレンス水路を共同管理。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "スキルドワーカーや留学生としてインド・中国・フィリピン等から積極的移民受入を実施する「モザイク国家」。"
+    }
+  ],
+  "VNM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "衣類・履物・電子機器の最大の輸出先。対米貿易黒字が急拡大中。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "対日繊維・水産品輸出と、ODAによる鉄道・橋梁整備・日系工場進出・多数の技能実習生来日で極めて密接。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "原材料・生地・部品を中国から陸路・海上輸入し、ベトナムで最終組立して日米欧へ輸出する分業構造。"
+    }
+  ],
+  "BGD": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "EU・ドイツ・米国向けのファストファッション等アパレル（既製服）世界2位級の縫製輸出基地。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "周囲をインドに囲まれ、ガンジス・ブラマプトラ川の水利や国境インフラ連携が不可欠。"
+    },
+    {
+      "partnerIso3": "SAU",
+      "partnerNameJa": "サウジアラビア",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "湾岸産油国等への出稼ぎ労働者による本国送金が縫製輸出と並ぶ重要な外貨獲得源。"
+    }
+  ],
+  "THA": [
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "「アジアのデトロイト」として日系自動車メーカーが東南アジア生産・輸出ハブを構築。日本人観光客・駐在員も多数。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ドリアン等の農産物輸出・近年急増する中国EV工場進出および中国人訪タイ観光客で強固に連動。"
+    },
+    {
+      "partnerIso3": "MMR",
+      "partnerNameJa": "ミャンマー",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "軍事政変・内戦が続く隣国ミャンマーから工場・建設・農業労働者や避難民が大量流入。"
+    }
+  ],
+  "IDN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "世界1位のニッケル鉱石・石炭・パーム油の最大輸出先であり、中国資本のEV電池・精錬投資が急増。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "長年日本の天然ガス・石炭・合板・エビ等の最重要供給国であり、ジャカルタ周辺の日系二輪・四輪工場が展開。"
+    },
+    {
+      "partnerIso3": "SGP",
+      "partnerNameJa": "シンガポール",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "マラッカ海峡・バタム島（経済特区）を挟み、シンガポール資本とインドネシアの低賃金・資源が結合。"
+    }
+  ],
+  "MYS": [
+    {
+      "partnerIso3": "SGP",
+      "partnerNameJa": "シンガポール",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ジョホール海峡のコーズウェイで連結。多くのマレーシア人がシンガポールへ越境通勤し、半導体・貿易で緊密一体化。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "華人系住民（約2割超）とASEAN中核立地を背景に電子部品・パーム油貿易が急拡大。"
+    }
+  ],
+  "SGP": [
+    {
+      "partnerIso3": "MYS",
+      "partnerNameJa": "マレーシア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "生鮮食品や飲料水の一部に至るまで隣国マレーシアと緊密に依存し合い、マラッカ海峡経由の国際貿易・金融ハブとして機能。"
+    },
+    {
+      "partnerIso3": "IDN",
+      "partnerNameJa": "インドネシア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インドネシアの資源・労働力とシンガポールの金融・海運・本社機能が補完関係（「成長の三角地帯」）。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中華系多数の文化背景と高度な英語ビジネス環境を生かし、欧米・中国・ASEANの結節点となる。"
+    }
+  ],
+  "PHL": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧アメリカ植民地として英語が公用語となり、現在もBPO（コールセンター）受託や海外移民（ナース等）・安保で緊密。"
+    },
+    {
+      "partnerIso3": "ARE",
+      "partnerNameJa": "アラブ首長国連邦（UAE）",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "国民の約1割が海外就労（OFW）し、中東産油国や欧米からの「国外出稼ぎ送金（対GDP比約9%）」が経済を支える。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "バナナ（日本の輸入の約7〜8割）・パイナップル・電子部品や、介護・造船人材での強固な関係。"
+    }
+  ],
+  "KOR": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "半導体・自動車・二次電池の大手企業の現地工場進出と同盟関係。最大の貿易相手クラス。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "半導体メモリー等の中間財輸出と生産委託で深く連動してきたが、近年は米中対立の中でASEAN・米国比重を高めている。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "精密製造装置・素材の相互分業と、東アジア最大の相互インバウンド観光・ポップカルチャー交流。"
+    }
+  ],
+  "TWN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "先端ロジック半導体（TSMC）を通じた世界のICTサプライチェーンの中核と安全保障支援。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "政治的緊張を抱えつつも、中国の工場への資本投資・部品輸出で高い貿易結合度を持つ（近年は東南アジア・米国へ分散）。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "半導体材料・製造装置の調達パートナー（熊本進出）であり、極めて高い観光・親日交流。"
+    }
+  ],
+  "NZL": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "経済・人的往来（相互自由移動）における最密接パートナー。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "かつて英国向けバター・羊肉中心だった輸出から、現在は中国向けの乳製品（粉ミルク）・木材・キウイ・食肉が最大の柱へ転換。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "キウイフルーツ・チーズ・木材・アルミニウム精錬地金の安定供給と、語学留学・ワーキングホリデーの人気先。"
+    }
+  ],
+  "NOR": [
+    {
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "欧州大陸・イギリスへ海底パイプラインで天然ガスを供給するエネルギー大国。水力由来のグリーン電力融通も行う。"
+    },
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "ロシア産ガス停止後のEU・ドイツにとって代替となる最大の天然ガス供給国（EFTA・EEA経由で単一市場に参加）。"
+    }
+  ],
+  "POL": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "西隣ドイツとの工場分業（自動車・電機）がポーランド経済成長の牽引役。"
+    },
+    {
+      "partnerIso3": "UKR",
+      "partnerNameJa": "ウクライナ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "2022年のロシア侵攻以降、陸の国境を接する最大級のウクライナ避難民受入国・支援ハブとなった。"
+    }
+  ],
+  "UKR": [
+    {
+      "partnerIso3": "POL",
+      "partnerNameJa": "ポーランド",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "戦火を逃れた数百万の避難民の主要受入先であり、黒海封鎖時の穀物（小麦・トウモロコシ）陸路輸出ルート。"
+    },
+    {
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "ボスポラス海峡を管理するトルコを通じた黒海穀物輸送と農産物・鉄鋼貿易で重要な位置。"
+    }
+  ],
+  "TUR": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "多数のトルコ系移民がドイツ等に定住し本国との送金・商業・人的ネットワークを形成。"
+    },
+    {
+      "partnerIso3": "SYR",
+      "partnerNameJa": "シリア",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "内戦が続くシリアから300万人以上の難民を受け入れてきた世界最大規模の難民受入国（欧州への玄関口）。"
+    },
+    {
+      "partnerIso3": "AZE",
+      "partnerNameJa": "アゼルバイジャン",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "同じテュルク系言語を共有する「一つの民族・二つの国家」の親密な同盟・パイプライン通過国。"
+    }
+  ],
+  "IRN": [
+    {
+      "partnerIso3": "IRQ",
+      "partnerNameJa": "イラク",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "同じくイスラム教シーア派が多数（イラン・イラクとも）を占め、歴史的戦争（イラン・イラク戦争）を経て現在は深い宗教・経済関係。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "米国の経済制裁下で産出原油の大部分を中国へ輸出。"
+    }
+  ],
+  "ETH": [
+    {
+      "partnerIso3": "EGY",
+      "partnerNameJa": "エジプト",
+      "category": "history",
+      "direction": "outgoing",
+      "summary": "ナイル川の水源（青ナイル）を抑え、大エチオピア・ルネサンスダムの貯水をめぐり下流エジプト・スーダンと協議継続。"
+    },
+    {
+      "partnerIso3": "DJI",
+      "partnerNameJa": "ジブチ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "エリトリア分離後に内陸国となったため、輸出入貿易の9割以上をジブチ港・鉄道（中国支援）経由で行う。"
+    }
+  ],
+  "NGA": [
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "ナイジェリア産原油の最大の輸出先の一つであり、消費財輸入でも深く結合。"
+    },
+    {
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "旧イギリス領（英語公用語・英連邦）。医療・教育・金融人材の英国移住が多い。"
+    }
+  ],
+  "ZAF": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "鉄鉱石・マンガン・クロム・白金族等の重要資源を中国・欧州へ輸出。BRICS連携の拠点。"
+    },
+    {
+      "partnerIso3": "ZWE",
+      "partnerNameJa": "ジンバブエ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "南部アフリカ経済圏の中核として、周辺国ジンバブエやモザンビーク等から多数の労働移民・避難民が流入。"
+    }
+  ],
+  "ATA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "RUS": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "GRL": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "KAZ": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "DZA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "COD": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "MNG": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "MLI": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "MAR": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "LBY": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "PAK": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "NER": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SWE": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "MOZ": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "TCD": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "MMR": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "NAM": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "BOL": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "MRT": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "AGO": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "UZB": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "SOM": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "AFG": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "TZA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "ITA": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "ZMB": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "CAF": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "FIN": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "TKM": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "ESP": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "PNG": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "MDG": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SSD": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "CMR": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "BWA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "KEN": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "IRQ": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "PRY": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "YEM": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "OMN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "COG": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "LAO": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "ESH": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "ZWE": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "BLR": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "BFA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "KGZ": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "ROU": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "GRC": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "GIN": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "CIV": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "ECU": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "ERI": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "CUB": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "GUY": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "GAB": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "ISL": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "TJK": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "PRK": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "SYR": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "NPL": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "UGA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "TUN": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "GHA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SEN": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "URY": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "MWI": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "HRV": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "KHM": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "SOL": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "AZE": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "AUT": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "NIC": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "HUN": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "HND": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "BEN": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "BGR": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "JOR": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "PRT": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LVA": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LBR": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "IRL": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "SUR": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "GEO": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "CZE": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "GTM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SRB": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LTU": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "PAN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "DNK": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "EST": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "MDA": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "BIH": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "NLD": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "CRI": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SVK": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "SLE": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "TGO": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "CHE": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LKA": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "DOM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "ARM": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "BEL": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "NCL": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "ISR": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "SLB": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "HTI": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "GNB": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "BTN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "ALB": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LSO": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SVN": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "BHS": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "MKD": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "BDI": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "RWA": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "FLK": [
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南米域内貿易（メルコスール等）の最大市場として連結。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "米州地域の主要貿易・投資パートナー。"
+    }
+  ],
+  "MNE": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "KWT": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "BLZ": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SLV": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "TLS": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "DJI": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "GNQ": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "FJI": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "KOS": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "LBN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "GMB": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SWZ": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "SGS": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "ATF": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "VUT": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "JAM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "QAT": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "CYN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "BRN": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "CYP": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "PRI": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "PSE": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "TTO": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "KAS": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "LUX": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "PYF": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "CPV": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "FRO": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "WSM": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "COM": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "KIR": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "MUS": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "ALA": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "IMN": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "HKG": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "CUW": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "HMD": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "STP": [
+    {
+      "partnerIso3": "ZAF",
+      "partnerNameJa": "南アフリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+    }
+  ],
+  "GUM": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "DMA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "MHL": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "TON": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "FSM": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "BHR": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "LCA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "AND": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "MNP": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "TCA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "BRB": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "PLW": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "ATG": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "CYM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "KNA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SPM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "VIR": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "MLT": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "VCT": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "GRD": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SYC": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "ABW": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "IOT": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "LIE": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "NIU": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "ASM": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "BMU": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SHN": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "WLF": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "JEY": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "VGB": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "AIA": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "SMR": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "GGY": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "MSR": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "MDV": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際貿易・地球環境観測等の連携"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "国際交流"
+    }
+  ],
+  "NFK": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "COK": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "SXM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "PCN": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "MAF": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "BLM": [
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+    },
+    {
+      "partnerIso3": "MEX",
+      "partnerNameJa": "メキシコ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+    }
+  ],
+  "MAC": [
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+    }
+  ],
+  "NRU": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "MCO": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ],
+  "TUV": [
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+    },
+    {
+      "partnerIso3": "NZL",
+      "partnerNameJa": "ニュージーランド",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+    }
+  ],
+  "VAT": [
+    {
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+    },
+    {
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "欧州域内貿易・観光・EU市場で交流。"
+    }
+  ]
+}

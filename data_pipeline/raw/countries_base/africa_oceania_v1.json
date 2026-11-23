@@ -1,0 +1,1199 @@
+{
+  "EGY": {
+    "iso3": "EGY",
+    "nameJa": "エジプト",
+    "nameEn": "Egypt",
+    "region": "アフリカ",
+    "subRegion": "北アフリカ（アラブ世界）",
+    "capital": "カイロ（東方へ新行政首都移転中）",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "外来河川ナイル川・ナイルデルタ（三角州）とアスワンハイダムの功罪",
+        "砂漠気候（BWh）のオアシス農業（綿花・小麦）と新行政首都・人口1億人超",
+        "スエズ運河の地政学とエチオピア（大エチオピア・ルネサンスダム）との水紛争",
+        "アラビア語・イスラム教スンニ派・コプト教と小麦輸入依存"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（アフリカ楯状地・サハラ砂漠）"],
+      "summary": "国土の約95%が砂漠。上流の熱帯夏季多雨（エチオピア高原）を運ぶ外来河川ナイル川が縦貫し、河口に巨大な扇形三角州（ナイルデルタ）を形成。",
+      "items": [
+        {
+          "id": "egy_nile_aswan",
+          "category": "river",
+          "label": "外来河川ナイル川・ナイルデルタとアスワンハイダムの功罪",
+          "detail": "【功】洪水防止・水力発電・年間を通じた灌漑（通年灌漑で年2〜3回収穫可能）。【罪】肥沃な泥土が下流に届かなくなり化学肥料使用増・地中海側海岸線の侵食・塩害（蒸発に伴う塩分蓄積）が発生。上流エチオピアの大型ダム建設が外交問題。",
+          "clozeTerms": ["外来河川", "ナイルデルタ", "アスワンハイダム", "通年灌漑", "塩害"],
+          "tags": ["三角州", "外来河川", "塩害", "水資源"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh"],
+      "summary": "亜熱帯高圧帯に覆われ、全土が年間降水量50mm未満の極端な砂漠気候（BWh）。地中海沿岸のみ冬季に微量の雨。",
+      "cities": [
+        {
+          "cityId": "EGY_CAIRO",
+          "nameJa": "カイロ",
+          "nameEn": "Cairo",
+          "lat": 30.04,
+          "lng": 31.24,
+          "elevationM": 23,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["北緯30度の亜熱帯高圧帯", "年間降水量約25mm、夏（6〜9月）は完全無降水"],
+          "monthlyTempC": [14.0, 15.2, 18.0, 21.8, 25.4, 27.9, 28.6, 28.5, 26.8, 24.1, 19.6, 15.4],
+          "monthlyPrecipMm": [5, 4, 4, 2, 1, 0, 0, 0, 0, 1, 3, 5],
+          "dataSource": "EMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["オアシス農業（集約的灌漑農業）"],
+      "agriculture": [
+        {
+          "id": "egy_cotton_wheat_import",
+          "label": "ナイル川沿いのオアシス農業（綿花・米・サトウキビ）と世界最大の小麦輸入",
+          "detail": "人口の95%以上がナイル川流域・デルタに集中する極端な人口偏在。高品質長繊維エジプト綿を生産するが、急激な人口増加（1.1億人超）に食料生産が追いつかず、ロシア・ウクライナ等からの世界最大級の小麦輸入国。",
+          "worldRank": 1,
+          "worldRankNote": "小麦輸入量 世界トップ級",
+          "clozeTerms": ["オアシス農業", "綿花", "小麦輸入", "人口偏在"],
+          "tags": ["オアシス農業", "綿花", "小麦", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "egy_suez_gas",
+          "label": "スエズ運河通航料（重要外貨源）・地中海ゾールガス田・ピラミッド観光",
+          "detail": "地中海と紅海を結ぶ水平式（閘門なし）スエズ運河は欧州〜アジア海運の動脈。近年は紅海の治安情勢で通航料収入が変動しやすい。",
+          "clozeTerms": ["スエズ運河", "水平式運河", "天然ガス"],
+          "tags": ["スエズ運河", "天然ガス", "観光"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "egy_new_capital_textile",
+          "label": "カイロ・アレキサンドリア繊維工業とスエズ運河経済圏・新行政首都建設",
+          "detail": "スラム拡大や交通渋滞が深刻なカイロから東方の砂漠へ巨大な新行政首都を建設中。",
+          "clozeTerms": ["新行政首都", "繊維工業"],
+          "tags": ["都市構造", "スエズ運河"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油・LNG・石油製品", "化学・肥料", "衣類・綿製品", "果実（柑橘類）"],
+        "majorImports": ["小麦・トウモロコシ", "機械・車両", "原油・鉄鋼"],
+        "majorPartners": ["UAE", "サウジアラビア", "トルコ", "イタリア", "中国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（セム語派：アラビア語）",
+      "officialLanguages": ["アラビア語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派）", "percent": 90 },
+        { "name": "キリスト教（コプト正教会）", "percent": 10 }
+      ],
+      "ethnicGroups": ["アラブ系エジプト人"],
+      "regionalIntegrations": ["アラブ連盟（本部カイロ）", "AU（アフリカ連合）", "BRICS（2024年加盟）"],
+      "historicalContext": [
+        {
+          "id": "egy_arab_center_pop",
+          "label": "アラブ連盟の中心・スエズ運河国有化（1956年）と人口急増",
+          "detail": "アラブ世界で最多の人口（約1.1億人）。カイロにアラブ連盟本部が置かれ、イスラム教スンニ派最高権威アズハル大学を擁する。",
+          "clozeTerms": ["アラブ連盟", "コプト正教会", "スンニ派"],
+          "tags": ["イスラム教", "アラビア語", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "MAR": {
+    "iso3": "MAR",
+    "nameJa": "モロッコ",
+    "nameEn": "Morocco",
+    "region": "アフリカ",
+    "subRegion": "北アフリカ（マグレブ）",
+    "capital": "ラバト（最大都市カサブランカ）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "アトラス山脈（新期造山帯）と伝統的地下水路フォガラ（カナート）・オアシス農業",
+        "リン鉱石（世界埋蔵約7割・輸出世界1位級）",
+        "EU向け自動車組立（タンジェ港）とジブラルタル海峡・対欧移民・西サハラ問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アトラス山脈：アフリカ北西端のアルプス・ヒマラヤ系）", "サハラ楯状地"],
+      "summary": "アフリカ大陸で極めて珍しい新期造山帯のアトラス山脈が走り、北西側の地中海性気候と南東側のサハラ砂漠（カスバ街道・ワジ）を分ける。",
+      "items": [
+        {
+          "id": "mar_atlas_foggara",
+          "category": "landform",
+          "label": "アトラス山脈（新期造山帯）と地下水路フォガラ（カナート）・日干し煉瓦カスバ",
+          "detail": "アトラス山脈の雨蔭となる南東麓の乾燥オアシスでは、地下水を引く「フォガラ（ケッタラ）」が利用され、強い日差しと寒暖差を防ぐ厚い日干し煉瓦の家屋（カスバ）がみられる。",
+          "clozeTerms": ["アトラス山脈", "新期造山帯", "フォガラ", "日干し煉瓦"],
+          "tags": ["新期造山帯", "カナート", "乾燥帯"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "BSh", "BWh"],
+      "summary": "大西洋・地中海沿岸（カサブランカ）はカナリア海流（寒流）の影響で夏も比較的涼しいCsa、内陸（マラケシュ）はBSh、アトラス以南は砂漠BWh。",
+      "cities": [
+        {
+          "cityId": "MAR_CASABLANCA",
+          "nameJa": "カサブランカ",
+          "nameEn": "Casablanca",
+          "lat": 33.57,
+          "lng": -7.59,
+          "elevationM": 50,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["カナリア海流（寒流）により夏の高温緩和（23℃前後）", "夏は完全少雨・冬（11〜2月）のみ降水"],
+          "monthlyTempC": [13.0, 13.7, 15.2, 16.6, 18.9, 21.3, 23.0, 23.5, 22.3, 20.0, 16.6, 14.0],
+          "monthlyPrecipMm": [66, 52, 46, 38, 17, 4, 1, 1, 7, 36, 78, 72],
+          "dataSource": "DMN / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業", "オアシス農業", "遊牧"],
+      "agriculture": [
+        {
+          "id": "mar_citrus_fishery",
+          "label": "地中海式農業（柑橘類・オリーブ・トマト）とカナリア海流のタコ/イワシ漁業",
+          "detail": "欧州向け早出し野菜・柑橘類の輸出と、寒流カナリア海流沿いの好漁場でのタコ・イワシ漁（日本へのタコ輸出上位）が盛ん。",
+          "clozeTerms": ["カナリア海流", "地中海式農業"],
+          "tags": ["地中海式農業", "海流", "漁業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mar_phosphate_solar",
+          "label": "リン鉱石（世界埋蔵約7割・輸出世界トップ級）とワルザザート大規模太陽熱発電",
+          "detail": "化学肥料の必須原料リン鉱石が極めて豊富。サハラ縁辺の強い日照を活かした巨大太陽熱発電所（ヌール発電所）も建設。",
+          "worldRank": 1,
+          "worldRankNote": "リン鉱石埋蔵量・輸出量 世界1位（産出2位）",
+          "clozeTerms": ["リン鉱石", "太陽熱発電"],
+          "tags": ["リン鉱石", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mar_tangier_auto",
+          "label": "タンジェ・メッド港（アフリカ最大級の拠点港）と欧州向け自動車・航空部品組立",
+          "detail": "ジブラルタル海峡を挟んでスペインのすぐ対岸という立地を活かし、ルノーやステランティス等の自動車工場がEU輸出用に集積（南アフリカの自動車生産を上回る規模へ）。",
+          "clozeTerms": ["タンジェ", "ジブラルタル海峡", "自動車工業"],
+          "tags": ["自動車", "港湾", "海峡"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・ワイヤーハーネス", "リン酸肥料・リン鉱石", "衣類・農水産物"],
+        "majorImports": ["原油・石油製品", "自動車部品", "小麦・機械"],
+        "majorPartners": ["スペイン", "フランス", "イタリア", "ドイツ", "アメリカ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語・ベルベル語＝アマジグ語）／フランス語通用",
+      "officialLanguages": ["アラビア語", "アマジグ語（ベルベル語）"],
+      "religions": [
+        { "name": "イスラム教（スンニ派）", "percent": 99 }
+      ],
+      "ethnicGroups": ["アラブ系・ベルベル人（アマジグ）"],
+      "regionalIntegrations": ["アラブ連盟", "AU（アフリカ連合）"],
+      "historicalContext": [
+        {
+          "id": "mar_france_western_sahara",
+          "label": "旧フランス保護領（フランス語普及・対仏移民）とジブラルタル越境・西サハラ問題",
+          "detail": "マグレブ諸国（チュニジア・アルジェリア・モロッコ）の多くが旧フランス領で、フランスやスペインへの労働移民が多い。スペインの飛び地セウタ・メリリャとの国境フェンスが欧州への不法越境焦点。南部の西サハラ領有権問題も継続。",
+          "clozeTerms": ["旧フランス領", "マグレブ", "セウタ・メリリャ", "西サハラ"],
+          "tags": ["旧フランス領", "移民", "領土問題"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "DZA": {
+    "iso3": "DZA",
+    "nameJa": "アルジェリア",
+    "nameEn": "Algeria",
+    "region": "アフリカ",
+    "subRegion": "北アフリカ（マグレブ）",
+    "capital": "アルジェ",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "アフリカ最大の面積とサハラ砂漠（天然ガス・原油輸出・OPEC）",
+        "EU（イタリア・スペイン）向け地中海海底ガスパイプライン",
+        "旧フランス領・アルジェリア戦争（独立）とフランス国内のアルジェリア系移民"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（地中海沿岸アトラス山脈）", "安定陸塊（サハラ砂漠）"],
+      "summary": "2011年の南スーダン分離後のアフリカ面積第1位。北部1割に人口が集中し、残り9割はサハラ砂漠。",
+      "items": [
+        {
+          "id": "dza_sahara_erg",
+          "category": "landform",
+          "label": "アフリカ最大の国土面積とサハラ砂漠（砂砂漠エルグ・礫砂漠レグ・フォガラ）",
+          "detail": "アトラス山脈の南側に広がるサハラ砂漠にはハッシ・メサウド油田やハッシ・ルメル巨大ガス田が分布。",
+          "clozeTerms": ["サハラ砂漠", "アフリカ最大面積"],
+          "tags": ["砂漠", "乾燥帯"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csa", "BSh", "BWh"],
+      "summary": "地中海沿岸アルジェは夏乾燥・冬雨のCsa、内陸・南部は極端な砂漠気候（BWh）。",
+      "cities": [
+        {
+          "cityId": "DZA_ALGIERS",
+          "nameJa": "アルジェ",
+          "nameEn": "Algiers",
+          "lat": 36.75,
+          "lng": 3.04,
+          "elevationM": 25,
+          "koppenCode": "Csa",
+          "koppenNameJa": "地中海性気候",
+          "factors": ["夏（6〜8月）は亜熱帯高圧帯で乾燥", "冬は地中海低気圧によりアルジェ北部沿岸で年600mm前後の降水"],
+          "monthlyTempC": [11.6, 12.1, 13.8, 16.0, 19.3, 22.8, 25.8, 26.5, 24.0, 20.5, 16.0, 12.8],
+          "monthlyPrecipMm": [82, 72, 58, 52, 34, 14, 3, 7, 32, 74, 96, 102],
+          "dataSource": "ONM / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["地中海式農業（北部沿岸）", "オアシス農業・遊牧（サハラ）"],
+      "agriculture": [
+        {
+          "id": "dza_wheat_import",
+          "label": "地中海式農業（オリーブ・ぶどう）と高い食料輸入依存",
+          "detail": "独立後のイスラム化によるワイン生産縮小と急激な人口増で、小麦・乳製品を大量輸入。",
+          "clozeTerms": ["小麦輸入"],
+          "tags": ["地中海式農業"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "dza_oil_gas_eu",
+          "label": "原油・天然ガス（OPEC加盟・輸出の9割超）と欧州向け海底パイプライン",
+          "detail": "ロシアのガス供給削減後、イタリアやスペイン向け海底パイプラインおよびLNG供給国として欧州にとって重要性が増大。輸出の9割以上を炭化水素に頼るモノカルチャー構造。",
+          "clozeTerms": ["天然ガス", "OPEC", "モノカルチャー経済"],
+          "tags": ["天然ガス", "原油", "OPEC"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "dza_oil_petrochem",
+          "label": "海岸部アルズー・スキクダのLNG液化基地・石油精製",
+          "detail": "製造業の育成が遅れ、若年層の失業率が高いことが対欧移民の一因。",
+          "clozeTerms": ["LNG"],
+          "tags": ["天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["天然ガス（パイプライン・LNG）", "原油・石油精製品"],
+        "majorImports": ["機械・車両", "小麦・食料品", "医薬品・鉄鋼"],
+        "majorPartners": ["イタリア", "フランス", "スペイン", "中国", "アメリカ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語・タマジグト語）／フランス語（事実上広く使用）",
+      "officialLanguages": ["アラビア語", "タマジグト語（ベルベル語）"],
+      "religions": [
+        { "name": "イスラム教（スンニ派）", "percent": 99 }
+      ],
+      "ethnicGroups": ["アラブ人・ベルベル人（カビル人等）"],
+      "regionalIntegrations": ["OPEC", "アラブ連盟", "AU（アフリカ連合）"],
+      "historicalContext": [
+        {
+          "id": "dza_france_war",
+          "label": "フランス直接植民地・アルジェリア独立戦争（1962年）と対仏移民最大出身国",
+          "detail": "130年以上の仏領（100万人以上の仏人入植者ピエ・ノワールが存在）を経て激しい独立戦争後に独立。戦後のフランスへ多くのアルジェリア人労働者が渡り、仏国内移民の最大多数派を形成。",
+          "clozeTerms": ["旧フランス領", "アルジェリア独立戦争", "対仏移民"],
+          "tags": ["旧フランス領", "移民", "フランス"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "NGA": {
+    "iso3": "NGA",
+    "nameJa": "ナイジェリア",
+    "nameEn": "Nigeria",
+    "region": "アフリカ",
+    "subRegion": "西アフリカ（ギニア湾岸）",
+    "capital": "アブジャ（最大都市ラゴス）",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "アフリカ最大の人口（2.2億人超）と今後の爆発的人口増加予測（今世紀中に世界3位級へ）",
+        "ニジェール川デルタの原油（アフリカ最大級産油国・OPEC）と環境汚染",
+        "南部（キリスト教・ヨルバ/イボ）と北部（イスラム教・ハウサ・サヘル乾燥/ボコハラム）の南北対立"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（アフリカ楯状地）・ニジェール川デルタ"],
+      "summary": "西アフリカの大河ニジェール川が南部ギニア湾に広大なデルタを形成。北部はサヘル（半乾燥サバナ）からサハラ砂漠南縁へ連なる。",
+      "items": [
+        {
+          "id": "nga_niger_delta_sahel",
+          "category": "river",
+          "label": "ニジェール川デルタ（原油・マングローブ汚染）と北部サヘルの砂漠化",
+          "detail": "南部デルタでは原油採掘に伴う漏洩やガスフレアが深刻な環境・住民対立の原因。北部では過放牧と干ばつによるサヘル砂漠化が進む。",
+          "clozeTerms": ["ニジェール川デルタ", "サヘル", "砂漠化"],
+          "tags": ["三角州", "サヘル", "砂漠化", "環境問題"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw", "Am", "BSh"],
+      "summary": "南部（ラゴス・ニジェールデルタ）は熱帯雨林〜熱帯モンスーン多雨、中部（アブジャ）〜北部（カノ）は乾季・雨季明瞭なサバナ（Aw）〜ステップ（BSh）。",
+      "cities": [
+        {
+          "cityId": "NGA_LAGOS",
+          "nameJa": "ラゴス",
+          "nameEn": "Lagos",
+          "lat": 6.52,
+          "lng": 3.38,
+          "elevationM": 10,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ・熱帯モンスーン気候",
+          "factors": ["熱帯収束帯の北上で5〜7月および9〜10月に二山型多雨", "12〜2月はサハラからの乾燥熱風ハルマッタン"],
+          "monthlyTempC": [27.3, 28.4, 28.6, 28.1, 27.1, 25.8, 25.1, 25.1, 25.6, 26.3, 27.2, 27.3],
+          "monthlyPrecipMm": [24, 42, 85, 145, 215, 315, 225, 115, 190, 175, 58, 20],
+          "dataSource": "NiMet / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["自給的農業（ヤムイモ・キャッサバ）", "プランテーション（カカオ・アブラヤシ）", "遊牧（北部）"],
+      "agriculture": [
+        {
+          "id": "nga_yam_cocoa",
+          "label": "ヤムイモ・キャッサバ世界1位とカカオ（世界4位級）・北部落花生/牧畜",
+          "detail": "主食の芋類（ヤムイモ・キャッサバ）生産は世界最大。輸出作物として西部のカカオやアブラヤシ（国内需要大）。",
+          "worldRank": 1,
+          "worldRankNote": "ヤムイモ・キャッサバ生産 世界1位",
+          "clozeTerms": ["キャッサバ", "ヤムイモ", "カカオ"],
+          "tags": ["焼畑", "カカオ"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "nga_oil_monoculture",
+          "label": "アフリカ最大級の原油（OPEC）・LNG輸出（ただし精製能力不足でガソリン輸入）",
+          "detail": "輸出の約8〜9割を原油・天然ガスが占めるモノカルチャー経済。巨大民間製油所（ダンゴテ製油所）稼働まで石油製品を逆輸入していた。",
+          "clozeTerms": ["OPEC", "モノカルチャー経済", "ニジェールデルタ原油"],
+          "tags": ["原油", "OPEC", "モノカルチャー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "nga_lagos_nollywood",
+          "label": "メガシティ「ラゴス」（人口2000万人超）のフィンテック・映画（ノリウッド）",
+          "detail": "旧首都ラゴスはアフリカ最大級のメガシティでスラム拡大・渋滞を抱えつつもスタートアップや映画産業「ノリウッド」が急成長。1991年に中央部の計画都市アブジャへ遷都。",
+          "clozeTerms": ["ラゴス", "アブジャ", "メガシティ"],
+          "tags": ["都市構造", "計画都市"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["原油（約8割）", "天然ガス（LNG）", "カカオ・ゴマ"],
+        "majorImports": ["精製石油製品", "機械・車両", "小麦・米・医薬品"],
+        "majorPartners": ["インド", "スペイン", "オランダ", "アメリカ", "中国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ニジェール・コンゴ語族（ヨルバ・イボ）／アフロ・アジア語族（ハウサ）／インド・ヨーロッパ語族（英語）",
+      "officialLanguages": ["英語（旧イギリス領：250以上もの多言語統合のため）"],
+      "religions": [
+        { "name": "イスラム教（北部ハウサ・フラニ中心）", "percent": 50 },
+        { "name": "キリスト教（南部ヨルバ・イボ中心）", "percent": 48 }
+      ],
+      "ethnicGroups": ["ハウサ・フラニ族（北部）", "ヨルバ族（南西部）", "イボ族（南東部）ほか約250以上の民族"],
+      "regionalIntegrations": ["OPEC", "ECOWAS（西アフリカ諸国経済共同体）", "AU", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "nga_pop_north_south",
+          "label": "人口爆発（2.2億人超・2050年約4億人予測）と「北＝イスラム／南＝キリスト」対立",
+          "detail": "旧英領が引いた境界内に、北部のイスラム系牧畜・農耕民（ハウサ・フラニ）と南部のキリスト教系民族（ヨルバ・イボ・原油立地）が混在。ビアフラ戦争の歴史や北東部のイスラム過激派「ボコ・ハラム」のテロ・難民問題が深刻。高い出生率（約5人）により人口爆発中。",
+          "clozeTerms": ["人口爆発", "旧イギリス領", "ハウサ族", "ヨルバ族", "イボ族", "ボコ・ハラム"],
+          "tags": ["人口", "人口爆発", "宗教", "民族問題", "旧イギリス領"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "KEN": {
+    "iso3": "KEN",
+    "nameJa": "ケニア",
+    "nameEn": "Kenya",
+    "region": "アフリカ",
+    "subRegion": "東アフリカ",
+    "capital": "ナイロビ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "東アフリカ大地溝帯（リフトバレー）と標高1600mの常春（ナイロビCwb）",
+        "高地プランテーションの紅茶（輸出世界1位級）・コーヒー・切り花（バラ空輸）",
+        "サバンナ観光と携帯電話決済（M-Pesa）の急速な普及・スラム（キベラ）"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["東アフリカ大地溝帯（広がる境界＝大陸リフティング）", "ケニア山（火山）"],
+      "summary": "南北に縦貫する東アフリカ大地溝帯（断層崖とトゥルカナ湖・ナイバシャ湖などの構造湖）と標高1500〜2000mのケニア高地が主体。",
+      "items": [
+        {
+          "id": "ken_rift_valley_highland",
+          "category": "tectonic",
+          "label": "東アフリカ大地溝帯（断層・構造湖）と標高による冷涼な高原気候",
+          "detail": "アフリカプレートが東西に引き裂かれる広がる境界。赤道直下ながら内陸高原のためマラリア等の熱帯病が比較的少なく、英領期に白人入植地（ホワイトハイランド）が開拓された。",
+          "clozeTerms": ["東アフリカ大地溝帯", "広がる境界", "構造湖", "ホワイトハイランド"],
+          "tags": ["プレート境界", "大地溝帯", "高山気候"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cwb", "Aw", "BSh"],
+      "summary": "赤道直下ながらナイロビは標高1660mのため平均17〜21℃の常春（Cwb）。北部・東部は乾燥ステップ、インド洋岸（モンバサ）は熱帯Aw。",
+      "cities": [
+        {
+          "cityId": "KEN_NAIROBI",
+          "nameJa": "ナイロビ",
+          "nameEn": "Nairobi",
+          "lat": -1.29,
+          "lng": 36.82,
+          "elevationM": 1661,
+          "koppenCode": "Cwb",
+          "koppenNameJa": "温帯夏雨気候（赤道高地・常春）",
+          "factors": ["赤道直下で気温の年較差は約4℃と小さい", "標高1660mのため年中17〜21℃", "3〜5月（大雨季）と10〜12月（小雨季）の二山型降水"],
+          "monthlyTempC": [19.8, 20.8, 21.0, 20.1, 18.8, 17.5, 16.7, 17.2, 18.7, 19.9, 19.3, 19.3],
+          "monthlyPrecipMm": [48, 45, 84, 185, 138, 36, 15, 18, 28, 56, 132, 78],
+          "dataSource": "KMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["プランテーション農業（紅茶・コーヒー・花卉）", "遊牧（マサイ族）"],
+      "agriculture": [
+        {
+          "id": "ken_tea_flowers",
+          "label": "高地の紅茶（輸出世界トップ級）・アラビカ種コーヒーとナイバシャ湖周辺のバラ（切り花）空輸",
+          "detail": "旧ホワイトハイランドの冷涼な赤道高地（年中栽培可能＋豊富な労働力）で生産したバラなど切り花をナイロビ空港から欧州（オランダ花市場等）へ空輸。",
+          "worldRank": 1,
+          "worldRankNote": "紅茶輸出世界1〜2位（生産3位）、欧州向け切り花輸出トップ級",
+          "clozeTerms": ["紅茶", "切り花空輸", "プランテーション"],
+          "tags": ["茶", "プランテーション", "高山気候"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ken_geothermal_hydro",
+          "label": "大地溝帯を活かした地熱発電（発電比率約45%・世界トップ10）と水力発電",
+          "detail": "大地溝帯（オルカリア地熱発電所）の地熱＋水力＋風力で電力の8割以上が再生可能エネルギー。",
+          "clozeTerms": ["地熱発電", "大地溝帯"],
+          "tags": ["地熱発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ken_mpesa_tourism_kibera",
+          "label": "携帯電話決済（M-Pesa）の急速な普及とサファリ観光・キベラスラム",
+          "detail": "固定通信網や銀行口座の整備を飛び越えて携帯電話決済（M-Pesa）が一気に普及。マサイマラ等のサファリ観光が重要な一方、ナイロビのキベラなどスラムの拡大が課題。",
+          "clozeTerms": ["携帯電話決済", "M-Pesa", "スラム"],
+          "tags": ["ICT", "観光", "スラム"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["紅茶", "切り花・野菜", "コーヒー", "衣類・チタン鉱"],
+        "majorImports": ["石油精製品", "機械・車両", "パーム油・小麦・鉄鋼"],
+        "majorPartners": ["ウガンダ", "アメリカ", "オランダ", "イギリス", "UAE"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ニジェール・コンゴ語族（スワヒリ語・キクユ語）／インド・ヨーロッパ語族（英語）",
+      "officialLanguages": ["スワヒリ語", "英語"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント・カトリック）", "percent": 85 },
+        { "name": "イスラム教（モンバサ等海岸部）", "percent": 11 }
+      ],
+      "ethnicGroups": ["キクユ族（約17%）", "ルヒヤ族", "カレンジン族", "ルオ族", "マサイ族など約40以上"],
+      "regionalIntegrations": ["EAC（東アフリカ共同体）", "AU", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "ken_unep_swahili",
+          "label": "旧イギリス領・共通語スワヒリ語と国連環境計画（UNEP）本部（ナイロビ）",
+          "detail": "途上国で唯一、国連機関（UNEP・UN-Habitat）の本部が置かれる東アフリカの交通・外交の中心地。ソマリア等からの難民（ダダーブ難民キャンプ）を受入。",
+          "clozeTerms": ["スワヒリ語", "UNEP本部", "旧イギリス領"],
+          "tags": ["言語", "国際機関", "難民", "旧イギリス領"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ETH": {
+    "iso3": "ETH",
+    "nameJa": "エチオピア",
+    "nameEn": "Ethiopia",
+    "region": "アフリカ",
+    "subRegion": "東アフリカ（アフリカの角）",
+    "capital": "アディスアベバ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "エチオピア高原（青ナイル川源流）と大エチオピア・ルネサンスダム（エジプトとの水紛争）",
+        "アフリカ第2位の人口（1.2億人超）とコーヒー原産地",
+        "欧米に植民地化されなかった独立の歴史・AU（アフリカ連合）本部・エチオピア正教"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["エチオピア高原（溶岩台地）・東アフリカ大地溝帯"],
+      "summary": "「アフリカの屋根」と呼ばれる標高2000〜3000mのエチオピア高原が中央に広がり、青ナイル川の源流（タナ湖）となる。内陸国（1993年エリトリア独立により海を失う）。",
+      "items": [
+        {
+          "id": "eth_blue_nile_gerd",
+          "category": "river",
+          "label": "青ナイル川源流と大エチオピア・ルネサンスダム（GERD）をめぐる国際河川対立",
+          "detail": "エチオピア高原の夏のモンスーン豪雨（6〜9月）は青ナイルとしてエジプトのナイル水量の約8割を供給。エチオピアが建設したアフリカ最大の水力発電ダム「GERD」を巡り下流エジプト・スーダンと対立。",
+          "clozeTerms": ["青ナイル川", "エチオピア高原", "大エチオピア・ルネサンスダム", "内陸国"],
+          "tags": ["国際河川", "水力発電", "内陸国", "ナイル川"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cwb", "Aw", "BWh"],
+      "summary": "アディスアベバは標高2355mのため熱帯にありながら年中15〜18℃の爽やかな高地気候（Cwb）。6〜9月に降水集中。",
+      "cities": [
+        {
+          "cityId": "ETH_ADDIS",
+          "nameJa": "アディスアベバ",
+          "nameEn": "Addis Ababa",
+          "lat": 9.03,
+          "lng": 38.74,
+          "elevationM": 2355,
+          "koppenCode": "Cwb",
+          "koppenNameJa": "温帯夏雨気候（標高2355m）",
+          "factors": ["標高2355mで年中15〜18℃", "6〜9月（キレムト）の夏季にモンスーン性の集中的降雨（水力・青ナイル増水の源）"],
+          "monthlyTempC": [15.8, 17.0, 18.0, 18.1, 18.2, 16.9, 15.6, 15.6, 16.0, 16.0, 15.2, 15.0],
+          "monthlyPrecipMm": [15, 34, 64, 88, 78, 134, 275, 290, 165, 32, 8, 9],
+          "dataSource": "NMA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["自給的畑作・牧畜（テフ・牛）", "プランテーション（コーヒー）"],
+      "agriculture": [
+        {
+          "id": "eth_coffee_teff",
+          "label": "コーヒー原産地（アラビカ種・アフリカ最大生産）と主食「テフ（インジェラ）」",
+          "detail": "世界有数のコーヒー生産国（特にカッファ地方原産）。主食テフと高地農業が人口1.2億人を支える。",
+          "worldRank": 5,
+          "worldRankNote": "コーヒー生産 世界5位前後（アフリカ1位）",
+          "clozeTerms": ["コーヒー原産地", "エチオピア高原"],
+          "tags": ["コーヒー", "高山気候"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "eth_hydro_power",
+          "label": "水力発電（電力の約9割以上）による電力輸出国化",
+          "detail": "高地と豊富な夏雨を活かした水力発電で電力のほぼすべてを供給し周辺国へ電力輸出。",
+          "clozeTerms": ["水力発電"],
+          "tags": ["水力発電", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "eth_textile_djibouti",
+          "label": "工業団地の縫製業・革靴（中国資本等）とジブチ鉄道による海上アクセス",
+          "detail": "1993年エリトリア独立で内陸国となったため、輸出入の9割を隣国ジブチ港への鉄道輸送に依存。高い経済成長を遂げたが近年のティグライ紛争等で一時停滞。",
+          "clozeTerms": ["ジブチ港", "内陸国", "縫製業"],
+          "tags": ["内陸国", "衣類"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["コーヒー", "切り花・油糧種子（ゴマ）", "金・豆類・衣類"],
+        "majorImports": ["石油精製品", "機械・車両", "肥料・小麦"],
+        "majorPartners": ["アメリカ", "サウジアラビア", "UAE", "中国", "ドイツ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（セム語派：アムハラ語・クシ語派：オロモ語）",
+      "officialLanguages": ["アムハラ語（連邦実務語）", "オロモ語・ティグリニャ語等"],
+      "religions": [
+        { "name": "キリスト教（エチオピア正教・プロテスタント）", "percent": 67 },
+        { "name": "イスラム教（東部等）", "percent": 31 }
+      ],
+      "ethnicGroups": ["オロモ人（約35%）", "アムハラ人（約27%）", "ソマリ人", "ティグライ人"],
+      "regionalIntegrations": ["AU（アフリカ連合：本部アディスアベバ）", "BRICS（2024年加盟）"],
+      "historicalContext": [
+        {
+          "id": "eth_uncolonized_au",
+          "label": "アフリカ唯一の独立維持（イタリア軍撃退・短期占領除く）とAU本部・独自暦/文字",
+          "detail": "リベリアと並びアフリカ分割期に欧米の植民地にならなかった誇りから、アディスアベバにアフリカ連合（AU）本部が置かれる。アフリカ人口第2位（約1.3億人）。",
+          "clozeTerms": ["AU本部", "エチオピア正教", "植民地化されなかった歴史"],
+          "tags": ["国際機関", "キリスト教", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "ZAF": {
+    "iso3": "ZAF",
+    "nameJa": "南アフリカ共和国",
+    "nameEn": "South Africa",
+    "region": "アフリカ",
+    "subRegion": "南部アフリカ",
+    "capital": "プレトリア（行政）／ケープタウン（立法）／ブルームフォンテーン（司法）",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "レアメタル（白金＝プラチナ・クロム・マンガン世界1位）・金・ダイヤモンド・石炭",
+        "ケープタウンの地中海性気候（Csb・ベンゲラ海流）と内陸ヨハネスブルグ（Cwb・メイズ地帯）",
+        "アパルトヘイト撤廃（1994年）後の貧富格差・タウンシップとBRICS・11公用語"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（南部アフリカ高原＝グレートエスカープメント）", "古期造山帯（ケープ褶曲山脈）"],
+      "summary": "内陸は標高1000〜1800mの高原（ハイフェルト）が卓越し、東縁にドラケンスバーグ山脈が走る。古い地質構造に世界有数のレアメタル鉱床を胚胎。",
+      "items": [
+        {
+          "id": "zaf_plateau_currents",
+          "category": "landform",
+          "label": "南部アフリカ高原と西岸ベンゲラ海流（寒流）・東岸アガラス海流（暖流）",
+          "detail": "西岸沖の寒流（ベンゲラ海流）はナミブ砂漠形成とケープタウンの夏冷涼に影響し、東岸の暖流は湿潤気候をもたらす。",
+          "clozeTerms": ["ベンゲラ海流", "ドラケンスバーグ山脈", "アフリカ楯状地"],
+          "tags": ["海流", "安定陸塊"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Csb", "Cwb", "BSh", "BWh", "Cfa"],
+      "summary": "南西端ケープタウンは南半球の地中海性気候（Csb：1月乾燥・6〜7月湿潤）、内陸ヨハネスブルグ（標高1750m）は夏雨温帯（Cwb）、北西部は砂漠・ステップ。",
+      "cities": [
+        {
+          "cityId": "ZAF_CAPETOWN",
+          "nameJa": "ケープタウン",
+          "nameEn": "Cape Town",
+          "lat": -33.92,
+          "lng": 18.42,
+          "elevationM": 25,
+          "koppenCode": "Csb",
+          "koppenNameJa": "地中海性気候（南半球）",
+          "factors": ["南半球のため1〜2月が夏で乾燥（21℃前後）", "6〜8月が冬で偏西風帯に入り湿潤（12〜13℃）", "ベンゲラ海流で夏の高温緩和"],
+          "monthlyTempC": [21.2, 21.4, 20.1, 17.5, 14.9, 13.0, 12.2, 12.6, 14.0, 16.3, 18.4, 20.2],
+          "monthlyPrecipMm": [15, 16, 20, 42, 72, 95, 88, 78, 44, 30, 19, 17],
+          "dataSource": "SAWS / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "ZAF_JHB",
+          "nameJa": "ヨハネスブルグ",
+          "nameEn": "Johannesburg",
+          "lat": -26.2,
+          "lng": 28.05,
+          "elevationM": 1753,
+          "koppenCode": "Cwb",
+          "koppenNameJa": "温帯夏雨気候（標高1750m）",
+          "factors": ["標高1753mの高原のため冬（6〜7月）は10℃前後", "南半球のため夏（11〜2月）に降水集中"],
+          "monthlyTempC": [20.2, 19.9, 18.7, 15.8, 13.0, 10.1, 10.0, 12.6, 16.0, 18.0, 18.9, 19.8],
+          "monthlyPrecipMm": [125, 95, 92, 48, 16, 9, 4, 8, 25, 76, 115, 125],
+          "dataSource": "SAWS / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["混合農業・商業的穀物農業（メイズ）", "地中海式農業（ケープ）", "企業的牧畜"],
+      "agriculture": [
+        {
+          "id": "zaf_maize_wine_citrus",
+          "label": "内陸メイズ（トウモロコシ）トライアングルとケープ地域のワイン・柑橘類輸出",
+          "detail": "内陸高原でメイズ（トウモロコシ）や牧羊、ケープタウン周辺の地中海性気候で南半球逆転シーズンのワイン・ぶどう・オレンジを欧州等へ輸出。",
+          "clozeTerms": ["トウモロコシ", "地中海式農業", "ワイン"],
+          "tags": ["トウモロコシ", "地中海式農業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "zaf_platinum_chromium_coal",
+          "label": "プラチナ（白金）・クロム・マンガン世界1位、金・ダイヤモンド・鉄鉱石・石炭",
+          "detail": "ブッシュフェルト複合岩体など安定陸塊の地下資源の宝庫で、世界シェア7割前後の白金（自動車排ガス触媒）やクロム・マンガンを輸出。電力の8割は豊富な石炭火力（慢性的な計画停電が課題）。",
+          "worldRank": 1,
+          "worldRankNote": "プラチナ（白金）・クロム・マンガン産出 世界1位",
+          "clozeTerms": ["白金（プラチナ）", "クロム", "マンガン", "レアメタル", "石炭火力"],
+          "tags": ["レアメタル", "白金", "石炭", "ダイヤモンド"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "zaf_auto_johannesburg",
+          "label": "アフリカ最大の工業国（ヨハネスブルグ重工業・プレトリア/ダーバン自動車組立）",
+          "detail": "トヨタや独米系メーカーの自動車工場が立地。サブサハラ以南最大の先進工業・金融拠点。",
+          "clozeTerms": ["ヨハネスブルグ", "自動車工業"],
+          "tags": ["自動車", "BRICS"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["白金・金・パラジウム", "石炭", "鉄鉱石・マンガン・クロム", "自動車", "果実・ワイン"],
+        "majorImports": ["原油・石油精製品", "機械・電気機器", "自動車部品"],
+        "majorPartners": ["中国", "アメリカ", "ドイツ", "日本", "イギリス"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ニジェール・コンゴ語族（ズールー・コサ語等）／インド・ヨーロッパ語族（英語・アフリカーンス語）",
+      "officialLanguages": ["英語", "アフリカーンス語", "ズールー語・コサ語など計12公用語（手話含む）"],
+      "religions": [
+        { "name": "キリスト教（プロテスタント・独立教会等）", "percent": 80 },
+        { "name": "伝統信仰・イスラム教・ヒンドゥー教", "percent": 20 }
+      ],
+      "ethnicGroups": ["黒人系（約81%）", "カラード（混血約9%）", "白人（アフリカーナー＝オランダ系・イギリス系約7%）", "アジア系（インド系中心）"],
+      "regionalIntegrations": ["BRICS", "SADC（南部アフリカ開発共同体）", "AU", "G20", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "zaf_apartheid_legacy",
+          "label": "アパルトヘイト撤廃（1994年ネルソン・マンデラ）後の経済格差と「虹の国」・タウンシップ",
+          "detail": "白人少数支配による人種隔離政策（アパルトヘイト・ホームランド制度）は1994年に終了し多民族「虹の国」となったが、高失業率（約3割）やジニ係数世界最大級の貧富格差、ソウェト等の旧黒人居住区（タウンシップ）や治安問題が根強く残る。",
+          "clozeTerms": ["アパルトヘイト", "タウンシップ", "アフリカーンス語", "BRICS"],
+          "tags": ["アパルトヘイト", "人種問題", "BRICS", "多民族"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "COD": {
+    "iso3": "COD",
+    "nameJa": "コンゴ民主共和国",
+    "nameEn": "Democratic Republic of the Congo",
+    "region": "アフリカ",
+    "subRegion": "中部アフリカ",
+    "capital": "キンシャサ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "EV電池用「コバルト」産出世界1位（約7割）と銅・タンタル（コルタン）・ダイヤモンド",
+        "コンゴ盆地の熱帯雨林（Af）とコンゴ川・世界有数の包蔵水力",
+        "旧ベルギー領の負の遺産・紛争鉱物（東部紛争）・児童労働と急激な人口増加"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（コンゴ盆地）", "東縁の東アフリカ大地溝帯（タンガニーカ湖等）"],
+      "summary": "赤道直下のコンゴ川流域にアマゾンに次ぐ広大な熱帯雨林（コンゴ盆地）が広がり、東縁は大地溝帯の断層湖に接する。",
+      "items": [
+        {
+          "id": "cod_congo_basin",
+          "category": "river",
+          "label": "コンゴ川（大河川）と世界第2位の熱帯雨林（コンゴ盆地）",
+          "detail": "赤道を2度横切る大河コンゴ川は南北両半球の雨期を受けるため年間流量が安定し、下流の急流帯（インガ滝）は世界有数の包蔵水力を持つ。",
+          "clozeTerms": ["コンゴ川", "熱帯雨林", "東アフリカ大地溝帯"],
+          "tags": ["熱帯雨林", "水力発電"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af", "Aw"],
+      "summary": "北部・中央部は高温多雨の熱帯雨林気候（Af）、南部カタンガ高原・キンシャサは短い乾季（6〜8月）のあるAw。",
+      "cities": [
+        {
+          "cityId": "COD_KINSHASA",
+          "nameJa": "キンシャサ",
+          "nameEn": "Kinshasa",
+          "lat": -4.44,
+          "lng": 15.27,
+          "elevationM": 240,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候（赤道付近・南半球）",
+          "factors": ["南緯4度で年中25℃前後", "6〜8月（南半球の冬）のみ降水が少なく乾季（Aw）"],
+          "monthlyTempC": [25.6, 26.0, 26.3, 26.4, 25.8, 23.6, 22.3, 23.3, 25.0, 25.7, 25.6, 25.4],
+          "monthlyPrecipMm": [148, 138, 185, 220, 145, 8, 2, 4, 38, 135, 255, 180],
+          "dataSource": "METTELSAT / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["焼畑農業（キャッサバ・プランテン）", "プランテーション"],
+      "agriculture": [
+        {
+          "id": "cod_cassava_subsistence",
+          "label": "焼畑によるキャッサバ・トウモロコシの自給的農業",
+          "detail": "農業従事者が多いが内戦とインフラ不足で生産性が低く食料を輸入。",
+          "clozeTerms": ["キャッサバ", "焼畑農業"],
+          "tags": ["焼畑"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "cod_cobalt_copper_coltan",
+          "label": "コバルト世界1位（シェア約7割）・銅（世界2〜3位）・タンタル（コルタン）・工業用ダイヤ",
+          "detail": "EVリチウムイオン電池正極材に不可欠なコバルトと、スマホ・電子部品に必須のタンタル（コルタン）を南部カタンガ州や東部で採掘。中国企業が鉱山権益・精錬を多く握り、手掘り鉱山での児童労働や武装勢力資金源（紛争鉱物）が国際問題。",
+          "worldRank": 1,
+          "worldRankNote": "コバルト・タンタル産出 世界1位、銅世界トップ3",
+          "clozeTerms": ["コバルト", "EV電池", "紛争鉱物", "コルタン（タンタル）", "カタンガ州"],
+          "tags": ["コバルト", "EV", "レアメタル", "銅鉱石"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "cod_resource_curse",
+          "label": "「資源の呪い」とインフラ未整備（キンシャサ・ブラザヴィルの双子都市）",
+          "detail": "コンゴ川を挟んでコンゴ共和国首都ブラザヴィルと向かい合う。豊かな資源を持ちながら政情不安定で工業化が遅れ、世界最貧国水準にとどまる。",
+          "clozeTerms": ["資源の呪い", "キンシャサ"],
+          "tags": ["モノカルチャー"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["精製銅・銅鉱", "コバルト", "ダイヤモンド・金・タンタル", "原油"],
+        "majorImports": ["機械・車両", "食料品（米・鶏肉）", "医薬品・燃料"],
+        "majorPartners": ["中国（輸出の過半）", "UAE", "南アフリカ", "ザンビア"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ニジェール・コンゴ語族（リンガラ・スワヒリ等）／インド・ヨーロッパ語族（フランス語）",
+      "officialLanguages": ["フランス語（旧ベルギー領）"],
+      "religions": [
+        { "name": "キリスト教（カトリック・プロテスタント）", "percent": 95 }
+      ],
+      "ethnicGroups": ["バンツー系諸民族（ルバ・コンゴ・モンゴ等200以上）"],
+      "regionalIntegrations": ["AU", "SADC", "EAC（東アフリカ共同体）"],
+      "historicalContext": [
+        {
+          "id": "cod_belgian_colonial_pop",
+          "label": "旧ベルギー領の過酷な搾取・東部紛争と世界屈指の人口増加率（1億人超）",
+          "detail": "ベルギー国王レオポルド2世の私領時代から続くゴム・鉱物資源搾取の負の歴史。ルワンダ等の影響も受ける東部キヴ地方の内戦・国内避難民が続き、極めて高い出生率（約6人）で人口が急拡大中。",
+          "clozeTerms": ["旧ベルギー領", "紛争鉱物", "人口爆発", "フランス語"],
+          "tags": ["人口", "人口爆発", "難民", "紛争"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "AUS": {
+    "iso3": "AUS",
+    "nameJa": "オーストラリア",
+    "nameEn": "Australia",
+    "region": "オセアニア",
+    "subRegion": "オセアニア",
+    "capital": "キャンベラ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "安定陸塊（西部）＋大鑽井盆地＋グレートディバイディング山脈（古期：地震火山なし）",
+        "鉄鉱石（ピルバラ）・リチウム世界1位、石炭・LNG・ボーキサイト世界有数と露天掘り",
+        "グレートアーテジアン盆地（被圧地下水）の牧羊・小麦羊地帯と南半球の気候帯",
+        "白豪主義の撤廃と多文化主義・アジア系移民（アジア太平洋貿易シフト）・アボリジニ"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（西部楯状地・卓状地）", "古期造山帯（グレートディバイディング山脈）"],
+      "summary": "西半分が極めて古い安定陸塊、中央がグレートアーテジアン盆地、東部に古期造山帯のグレートディバイディング山脈が南北に走る。プレート境界から遠く新期造山帯を含まないため火山・大地震がほぼない。",
+      "items": [
+        {
+          "id": "aus_artesian_gbr",
+          "category": "landform",
+          "label": "グレートアーテジアン盆地（大鑽井盆地）・グレートバリアリーフ・エアーズロック（ウルル）",
+          "detail": "東部山脈に降った雨が不透水層に挟まれた帯水層を通り、内陸で掘り抜くと自噴する被圧地下水（やや塩分を含むため灌漑よりもヒツジの飲み水に利用）。北東岸のサンゴ礁グレートバリアリーフは白化現象が課題。",
+          "clozeTerms": ["グレートアーテジアン盆地", "被圧地下水", "グレートディバイディング山脈", "グレートバリアリーフ"],
+          "tags": ["大鑽井盆地", "サンゴ礁", "古期造山帯", "安定陸塊"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh", "BSk", "Cfa", "Cfb", "Csb", "Aw"],
+      "summary": "南回帰線が中央を貫くため内陸・西部は広大な砂漠（BWh）とステップ（BSk）。北部（ダーウィン）はAw、東岸（シドニー）は南東貿易風＋東オーストラリア海流でCfa、南西端パースはCsb。",
+      "cities": [
+        {
+          "cityId": "AUS_SYDNEY",
+          "nameJa": "シドニー",
+          "nameEn": "Sydney",
+          "lat": -33.87,
+          "lng": 151.21,
+          "elevationM": 39,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（南半球）",
+          "factors": ["南半球のため1〜2月が夏（23℃）・7月が冬（12℃）", "東オーストラリア海流（暖流）と南東貿易風で年中湿潤"],
+          "monthlyTempC": [23.0, 22.8, 21.5, 18.8, 15.8, 13.4, 12.6, 13.8, 16.2, 18.6, 20.2, 21.9],
+          "monthlyPrecipMm": [96, 122, 133, 122, 114, 132, 92, 77, 65, 76, 84, 78],
+          "dataSource": "BoM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "AUS_PERTH",
+          "nameJa": "パース",
+          "nameEn": "Perth",
+          "lat": -31.95,
+          "lng": 115.86,
+          "elevationM": 25,
+          "koppenCode": "Csb",
+          "koppenNameJa": "地中海性気候（南半球）",
+          "factors": ["南半球の夏（12〜2月）は亜熱帯高圧帯で乾燥・高温", "冬（6〜8月）に偏西風帯に入り多雨（ケープタウン・サンティアゴと同パターン）"],
+          "monthlyTempC": [24.6, 24.9, 23.1, 19.5, 16.2, 13.8, 13.0, 13.6, 15.0, 17.3, 20.4, 22.8],
+          "monthlyPrecipMm": [10, 12, 20, 42, 98, 145, 155, 122, 78, 46, 24, 12],
+          "dataSource": "BoM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "AUS_ALICE",
+          "nameJa": "アリススプリングス",
+          "nameEn": "Alice Springs",
+          "lat": -23.7,
+          "lng": 133.88,
+          "elevationM": 545,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候（南半球内陸）",
+          "factors": ["南回帰線上の亜熱帯高圧帯", "内陸部のため年較差17℃前後、年降水量約280mm"],
+          "monthlyTempC": [28.9, 28.1, 25.2, 20.4, 15.4, 12.2, 11.9, 14.7, 19.6, 23.4, 26.2, 28.0],
+          "monthlyPrecipMm": [40, 41, 31, 17, 18, 14, 15, 9, 9, 21, 28, 39],
+          "dataSource": "BoM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "AUS_DARWIN",
+          "nameJa": "ダーウィン",
+          "nameEn": "Darwin",
+          "lat": -12.46,
+          "lng": 130.84,
+          "elevationM": 30,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候（南半球低緯度）",
+          "factors": ["12〜3月の北西モンスーン（南半球の夏）に豪雨", "6〜8月は南東貿易風でほぼ無降水"],
+          "monthlyTempC": [28.3, 28.2, 28.5, 28.6, 27.4, 25.3, 25.1, 26.0, 28.0, 29.3, 29.4, 28.9],
+          "monthlyPrecipMm": [435, 375, 315, 102, 20, 2, 1, 4, 16, 72, 145, 255],
+          "dataSource": "BoM / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["企業的牧畜（ステーション）", "企業的穀物農業", "混合農業（小麦・羊）"],
+      "agriculture": [
+        {
+          "id": "aus_wheat_sheep_cattle",
+          "label": "降水量対応の牧畜（内陸ステーション＝メリノ種羊毛・肉牛）と南東部マレー川の小麦・羊地帯",
+          "detail": "250〜500mmのステップは企業的牧畜（羊＝メリノ種羊毛・マトン、北東部湿潤側＝肉牛）、500mm前後（南東部マレー・ダーリング川流域や南西部）は小麦と羊を組み合わせた企業的混合農業。",
+          "worldRank": 2,
+          "worldRankNote": "羊毛生産 世界2位級（中国に次ぐ）、牛肉・小麦輸出世界トップ5",
+          "clozeTerms": ["ステーション", "メリノ種", "小麦・羊地帯", "マレー川"],
+          "tags": ["企業的牧畜", "羊毛", "小麦", "牛肉"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "aus_iron_coal_lithium_lng",
+          "label": "鉄鉱石（ピルバラ）・リチウム（世界1位）・ボーキサイト・石炭（東部）・LNG",
+          "detail": "西部ピルバラ地域の縞状鉄鉱床や東部クイーンズランド・NSW州の石炭を大規模「露天掘り」で採掘し、巨大鉱石船で中国・日本へ輸出。EV需要でリチウム（硬岩型スポジュメン）世界1位、LNG輸出世界トップ級。",
+          "worldRank": 1,
+          "worldRankNote": "鉄鉱石・リチウム・ボーキサイト・ルチル生産 世界1位、石炭・LNG輸出世界トップ2",
+          "clozeTerms": ["ピルバラ", "鉄鉱石", "露天掘り", "リチウム", "ボーキサイト"],
+          "tags": ["鉄鉱石", "石炭", "リチウム", "LNG"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "aus_service_auto_exit",
+          "label": "製造業縮小（自動車生産撤退）と資源・金融・教育/観光サービスの先進国構造",
+          "detail": "高い賃金水準と市場狭小、FTA拡大により2017年までに国内の自動車生産工場が全撤退し輸入車へ移行。鉱業・農業と高度サービス業が中心。",
+          "clozeTerms": ["自動車生産撤退", "計画都市キャンベラ"],
+          "tags": ["資源輸出", "自動車"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["鉄鉱石", "石炭", "LNG（液化天然ガス）", "金・リチウム・ボーキサイト", "小麦・牛肉・羊毛"],
+        "majorImports": ["自動車", "石油精製品", "機械・電気機器"],
+        "majorPartners": ["中国（最大の輸出先）", "日本", "韓国", "アメリカ", "インド"],
+        "note": "英国のEC加盟（1973年）とアジア経済成長に伴い、貿易相手国が旧宗主国イギリスからアジア太平洋諸国へ大きくシフト。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語）",
+      "officialLanguages": ["英語（事実上の公用語）"],
+      "religions": [
+        { "name": "キリスト教", "percent": 44 },
+        { "name": "無宗教", "percent": 39 },
+        { "name": "イスラム教・仏教・ヒンドゥー教（アジア系移民で増加）", "percent": 17 }
+      ],
+      "ethnicGroups": ["ヨーロッパ系（英・愛系中心）", "アジア系（中国・インド・ベトナム等移民急増）", "アボリジニ・トレス海峡諸島民（先住民）"],
+      "regionalIntegrations": ["APEC", "OECD", "CPTPP", "RCEP", "クアッド（日米豪印）", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "aus_white_australia_aborigines",
+          "label": "白豪主義の撤廃（1973年）と多文化主義・アジア系移民集中・アボリジニの権利回復",
+          "detail": "アジア人移住を制限した白豪主義を撤廃し多文化主義へ転換後、五大都市（シドニー・メルボルン等）に中国・インド・ベトナム等からの熟練・留学生移民が集中（特に非英語圏移民が都市に集住）。先住民アボリジニへの同化政策謝罪と聖地ウルル返還。シドニー・メルボルンの対立から中間地に計画首都キャンベラを建設。",
+          "clozeTerms": ["白豪主義", "多文化主義", "アボリジニ", "キャンベラ", "アジア系移民"],
+          "tags": ["白豪主義", "多文化主義", "先住民", "移民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "NZL": {
+    "iso3": "NZL",
+    "nameJa": "ニュージーランド",
+    "nameEn": "New Zealand",
+    "region": "オセアニア",
+    "subRegion": "ポリネシア",
+    "capital": "ウェリントン（最大都市オークランド）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "新期造山帯（環太平洋造山帯＝南アルプス山脈・火山・地震・地熱発電＋水力発電で再エネ8割超）",
+        "偏西風の風上（西岸多雨・氷食フィヨルド）と風下（東岸カンタベリー平野の少雨・牧草地）",
+        "酪農・牧羊（乳製品世界有数輸出）とキウイフルーツ・マオリ共生（ワイタンギ条約）"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（環太平洋造山帯・南アルプス山脈）"],
+      "summary": "オーストラリアと対照的に、太平洋プレートとオーストラリアプレートの境界に位置するため急峻な山地（標高別面積で中高標高が多い＝イギリスとの対比頻出）、火山（北島タウポ・ロトルア）、地震、そして南島南西部の氷河地形（ミルフォード・サウンドのフィヨルド）を持つ。",
+      "items": [
+        {
+          "id": "nzl_tectonic_fjord_alps",
+          "category": "tectonic",
+          "label": "急峻な南アルプス山脈（新期）・北島の火山地帯・南西岸フィヨルド",
+          "detail": "国土全体の標高が高く山地・丘陵が約75%（低平なイギリスとの比較が2024本試第1問問1でも出題！）。北島は火山活動による地熱が豊富。",
+          "clozeTerms": ["新期造山帯", "南アルプス山脈", "フィヨルド", "標高別面積"],
+          "tags": ["新期造山帯", "火山", "地震", "フィヨルド"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cfb"],
+      "summary": "全域が年中穏やかで湿潤な西岸海洋性気候（Cfb）。南緯40度台の強い偏西風（咆哮する40度）が南アルプスにぶつかり、西岸は超多雨（年3000mm超）、東岸カンタベリー平野（クライストチャーチ）は雨蔭でやや少雨（約600mm）。",
+      "cities": [
+        {
+          "cityId": "NZL_WELLINGTON",
+          "nameJa": "ウェリントン",
+          "nameEn": "Wellington",
+          "lat": -41.29,
+          "lng": 174.78,
+          "elevationM": 12,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候（南半球）",
+          "factors": ["南半球で1〜2月が夏（17℃）、7月が冬（9℃）", "海に囲まれ年較差8℃前後、強い偏西風"],
+          "monthlyTempC": [17.1, 17.3, 15.9, 13.7, 11.4, 9.5, 8.9, 9.6, 10.9, 12.4, 13.9, 15.8],
+          "monthlyPrecipMm": [72, 62, 82, 88, 105, 130, 128, 115, 92, 102, 82, 80],
+          "dataSource": "NIWA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "NZL_CHRISTCHURCH",
+          "nameJa": "クライストチャーチ",
+          "nameEn": "Christchurch",
+          "lat": -43.53,
+          "lng": 172.64,
+          "elevationM": 20,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候（山脈風下・少雨）",
+          "factors": ["南アルプス山脈の東側（偏西風の雨蔭）に位置するため年降水量約600mmと少ない"],
+          "monthlyTempC": [17.4, 17.0, 15.0, 12.1, 9.2, 6.6, 6.2, 7.4, 9.8, 11.9, 14.0, 16.0],
+          "monthlyPrecipMm": [42, 42, 46, 48, 62, 64, 65, 58, 42, 48, 46, 50],
+          "dataSource": "NIWA / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["酪農", "企業的牧畜（牧羊）", "園芸農業（キウイ）"],
+      "agriculture": [
+        {
+          "id": "nzl_dairy_sheep_kiwi",
+          "label": "高割合の牧草地（乳製品・牛肉・羊肉輸出）と北島キウイフルーツ",
+          "detail": "森林より牧草地割合が高く、耕作地はごくわずか。年中牧草が育つCfbを活かし、バター・粉ミルク・チーズ輸出（フォンテラ等）で世界トップ級、羊頭数も人口の約5倍。北島ベイオブプレンティ地方でキウイフルーツ栽培。",
+          "worldRank": 1,
+          "worldRankNote": "全粉乳・バター輸出 世界1位級、キウイフルーツ輸出トップ級",
+          "clozeTerms": ["酪農", "牧草地", "キウイフルーツ", "乳製品輸出"],
+          "tags": ["酪農", "牧草地", "羊毛"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "nzl_hydro_geothermal",
+          "label": "水力発電（約6割）＋地熱発電（約2割）＋風力で再エネ比率8割超・非核政策",
+          "detail": "多雨急峻地形による水力と北島火山帯の地熱（ワイラケイ等）により電力の8割以上を再生可能エネルギーで賄う。非核三原則的な反核政策。",
+          "clozeTerms": ["地熱発電", "水力発電", "再生可能エネルギー"],
+          "tags": ["再生可能エネルギー", "地熱発電", "水力発電"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "nzl_dairy_aluminum_tourism",
+          "label": "酪農食品加工・林業（ラジアータ松）・ティワイポイントアルミ精錬と自然観光",
+          "detail": "南島マナポウリ水力電力を利用したアルミニウム精錬や映画ロケ地（ロードオブザリング）等の観光収入。",
+          "clozeTerms": ["アルミ精錬", "観光"],
+          "tags": ["観光", "アルミ精錬"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["乳製品（粉ミルク・バター・チーズ）", "食肉（牛肉・羊肉）", "木材・パルプ", "果実（キウイ・リンゴ）・ワイン"],
+        "majorImports": ["自動車・機械", "石油精製品", "電子機器"],
+        "majorPartners": ["中国", "オーストラリア", "アメリカ", "日本", "韓国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（英語）／オーストロネシア語族（マオリ語）",
+      "officialLanguages": ["英語", "マオリ語", "ニュージーランド手話"],
+      "religions": [
+        { "name": "無宗教", "percent": 49 },
+        { "name": "キリスト教", "percent": 37 },
+        { "name": "ヒンドゥー教・イスラム教・マオリ伝統信仰ほか", "percent": 14 }
+      ],
+      "ethnicGroups": ["ヨーロッパ系（パケハ約68%）", "マオリ（ポリネシア系先住民約17%）", "アジア系（約17%・急増）", "太平洋島嶼系"],
+      "regionalIntegrations": ["APEC", "OECD", "CPTPP", "RCEP", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "nzl_maori_waitangi",
+          "label": "先住民マオリ（ポリネシア系）とのワイタンギ条約とバイカルチャリズム（二文化共生）",
+          "detail": "1840年ワイタンギ条約に基づきマオリの権利・土地補償・マオリ語公用語化・議会マオリ選挙区制度を推進。近年はアジア系・太平洋島嶼系移民も急増。",
+          "clozeTerms": ["マオリ", "ワイタンギ条約", "ポリネシア系"],
+          "tags": ["先住民", "言語", "移民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

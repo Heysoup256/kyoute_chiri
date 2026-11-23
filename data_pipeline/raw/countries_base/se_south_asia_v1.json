@@ -1,0 +1,1268 @@
+{
+  "IDN": {
+    "iso3": "IDN",
+    "nameJa": "インドネシア",
+    "nameEn": "Indonesia",
+    "region": "東南アジア",
+    "subRegion": "東南アジア島嶼部",
+    "capital": "ジャカルタ（ヌサンタラへ移転計画）",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "熱帯雨林（Af）とアブラヤシ（パーム油）世界1位・熱帯雨林伐採",
+        "世界最多のイスラム教徒（スンニ派）とバリ島ヒンドゥー教",
+        "ジャワ島の過密とカリマンタン島への首都移転",
+        "環太平洋造山帯の火山・地震津波とニッケル・石炭資源"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アルプス・ヒマラヤ造山帯と環太平洋造山帯の交点）"],
+      "summary": "ユーラシア・インドオーストラリア・太平洋プレートが衝突する世界有数の火山・地震・津波多発国。1万7000以上の島々からなる。",
+      "items": [
+        {
+          "id": "idn_volcano_forest",
+          "category": "tectonic",
+          "label": "火山灰の肥沃な土壌（ジャワ島）と熱帯雨林（カリマンタン・スマトラ）の減少",
+          "detail": "ジャワ島は火山灰による肥沃土に恵まれ世界屈指の人口稠密地域。一方、スマトラ・カリマンタンの低地泥炭湿地林はパーム油農園開発や焼畑による森林破壊・煙害（ヘイズ）が深刻。",
+          "clozeTerms": ["泥炭湿地林", "ヘイズ", "火山灰土"],
+          "tags": ["新期造山帯", "熱帯雨林", "火山"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af", "Am", "Aw"],
+      "summary": "赤道が横断するため大半が高温多雨の熱帯雨林気候（Af）。ジャワ島東部はやや乾季のあるAm・Aw。",
+      "cities": [
+        {
+          "cityId": "IDN_JAKARTA",
+          "nameJa": "ジャカルタ",
+          "nameEn": "Jakarta",
+          "lat": -6.2,
+          "lng": 106.85,
+          "elevationM": 8,
+          "koppenCode": "Am",
+          "koppenNameJa": "熱帯モンスーン気候",
+          "factors": ["赤道低圧帯の季節移動", "1〜2月は北西モンスーンで極大降水"],
+          "monthlyTempC": [26.8, 26.8, 27.4, 27.9, 28.1, 27.9, 27.7, 27.9, 28.2, 28.4, 28.0, 27.4],
+          "monthlyPrecipMm": [310, 315, 215, 145, 110, 85, 65, 45, 60, 100, 145, 200],
+          "dataSource": "BMKG / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "プランテーション農業", "焼畑農業"],
+      "agriculture": [
+        {
+          "id": "idn_palm_oil_rubber",
+          "label": "アブラヤシ（パーム油）世界1位・天然ゴム（世界2位）・水田稲作（棚田）",
+          "detail": "加工食品やバイオ燃料原料として需要が急増したパーム油の生産が世界1位。ジャワ島では火山斜面を利用した階段状水田（棚田）で稲作が盛ん。",
+          "worldRank": 1,
+          "worldRankNote": "パーム油生産 世界1位、天然ゴム2位",
+          "clozeTerms": ["パーム油", "アブラヤシ", "プランテーション", "天然ゴム"],
+          "tags": ["プランテーション", "パーム油", "稲作"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "idn_nickel_coal_lng",
+          "label": "ニッケル世界1位・一般炭輸出世界トップ級・スズ（バンカ島）",
+          "detail": "EV電池向けの重要鉱物であるニッケル（世界の約半分）は原鉱輸出を禁じ国内製錬を推進（資源ナショナリズム）。かつてのOPEC加盟国だが石油純輸入国となり脱退。",
+          "worldRank": 1,
+          "worldRankNote": "ニッケル産出 世界1位、石炭輸出1位級",
+          "clozeTerms": ["ニッケル", "資源ナショナリズム", "石炭"],
+          "tags": ["ニッケル", "石炭", "EV"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "idn_jabodetabek_auto",
+          "label": "ジャカルタ大都市圏（日系自動車・二輪・電子組立）",
+          "detail": "人口約2.8億人（世界4位）の巨大市場と豊富な若年労働力を背景に外資系工場が集中。",
+          "clozeTerms": ["ASEAN", "巨大市場"],
+          "tags": ["ASEAN", "自動車"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["石炭", "パーム油", "鉄鋼・ニッケル製品", "LNG", "繊維・履物"],
+        "majorImports": ["石油精製品・原油", "機械類", "電気機器"],
+        "majorPartners": ["中国", "アメリカ", "日本", "インド", "シンガポール"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロネシア語族（マレー・ポリネシア語派）",
+      "officialLanguages": ["インドネシア語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派：世界最大の信徒数）", "percent": 87 },
+        { "name": "キリスト教（東部島嶼に多い）", "percent": 10 },
+        { "name": "ヒンドゥー教（バリ島中心）・仏教", "percent": 3 }
+      ],
+      "ethnicGroups": ["ジャワ人", "スンダ人ほか約300以上の多様な民族（「多様性の中の統一」）"],
+      "regionalIntegrations": ["ASEAN（本部ジャカルタ）", "RCEP", "G20", "APEC"],
+      "historicalContext": [
+        {
+          "id": "idn_capital_relocation",
+          "label": "ジャワ島一極集中・地盤沈下対策としてのヌサンタラ首都移転",
+          "detail": "旧オランダ領東インド。ジャカルタの過密・渋滞・地下水汲み上げによる地盤沈下解消のため、カリマンタン島（ボルネオ島）東部に新首都「ヌサンタラ」を建設中。",
+          "clozeTerms": ["ヌサンタラ", "地盤沈下", "旧オランダ領"],
+          "tags": ["人口", "首都移転", "イスラム教"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "THA": {
+    "iso3": "THA",
+    "nameJa": "タイ",
+    "nameEn": "Thailand",
+    "region": "東南アジア",
+    "subRegion": "東南アジア大陸部（インドシナ半島）",
+    "capital": "バンコク",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "チャオプラヤ川デルタの稲作と米・天然ゴム（世界1位）・エビ養殖",
+        "「アジアのデトロイト」自動車産業集積とチャオプラヤ洪水",
+        "上座部仏教と少子高齢化の進行"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期・新期造山帯縁辺と広大な沖積平野"],
+      "summary": "北部の山地から発したチャオプラヤ川が中央部に広大な沖積平野と三角州を形成し、バンコクへ注ぐ。東部はコーラート高原。",
+      "items": [
+        {
+          "id": "tha_chao_phraya_flood",
+          "category": "river",
+          "label": "チャオプラヤ川デルタの浮稲と工業団地の大洪水（2011年）",
+          "detail": "極めて平坦な沖積低地のため雨季に長期間冠水し、水位上昇に合わせて伸びる「浮稲」が行われてきた。近年はバンコク北部の工業団地水害や沿岸マングローブ破壊が課題。",
+          "clozeTerms": ["チャオプラヤ川", "浮稲", "マングローブ"],
+          "tags": ["三角州", "稲作", "洪水"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw"],
+      "summary": "サバナ気候（Aw）が主体。5〜10月の南西モンスーン期は雨季、11〜4月は北東モンスーンで乾季。",
+      "cities": [
+        {
+          "cityId": "THA_BANGKOK",
+          "nameJa": "バンコク",
+          "nameEn": "Bangkok",
+          "lat": 13.75,
+          "lng": 100.5,
+          "elevationM": 2,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": ["5〜10月の南西モンスーンで雨季", "12〜2月は乾季で少雨"],
+          "monthlyTempC": [27.1, 28.4, 29.8, 30.8, 30.2, 29.7, 29.3, 29.1, 28.6, 28.4, 27.9, 26.8],
+          "monthlyPrecipMm": [13, 24, 38, 86, 205, 162, 165, 205, 330, 245, 48, 9],
+          "dataSource": "TMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "プランテーション農業"],
+      "agriculture": [
+        {
+          "id": "tha_rubber_rice_shrimp",
+          "label": "天然ゴム生産世界1位・米輸出上位・マングローブ林を伐採したエビ養殖",
+          "detail": "南部マレー半島側で天然ゴムやアブラヤシ、北部・中央部でジャスミンライス等の米、東北部（イーサーン）でキャッサバ、沿岸でブラックタイガー等のエビ養殖（マングローブ破壊問題）を展開。",
+          "worldRank": 1,
+          "worldRankNote": "天然ゴム生産 世界1位、米・鶏肉輸出世界トップ級",
+          "clozeTerms": ["天然ゴム", "マングローブ林", "エビ養殖"],
+          "tags": ["稲作", "天然ゴム", "プランテーション"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "tha_gas_import",
+          "label": "タイ湾の天然ガスとミャンマーからの輸入",
+          "detail": "発電の約6割を天然ガス火力が占める。",
+          "clozeTerms": ["天然ガス"],
+          "tags": ["天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "tha_asian_detroit",
+          "label": "「アジアのデトロイト」日系自動車産業集積とASEAN水平分業・中国EV参入",
+          "detail": "1985年のプラザ合意以降の円高を機に日系自動車・部品・HDDメーカーが東部臨海工業地域（レムチャバン等）に集積。近年はタイ＋1（周辺カンボジア・ラオスへの労働集約工程分散）や中国EV工場進出が話題。",
+          "clozeTerms": ["アジアのデトロイト", "水平分業", "タイ・プラス・ワン"],
+          "tags": ["自動車", "ASEAN", "水平分業"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["自動車・自動車部品", "コンピュータ・HDD", "天然ゴム・樹脂", "米・加工食品"],
+        "majorImports": ["原油", "集積回路", "自動車部品", "機械"],
+        "majorPartners": ["アメリカ", "中国", "日本", "ASEAN各国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "タイ・カダイ語族",
+      "officialLanguages": ["タイ語"],
+      "religions": [
+        { "name": "仏教（上座部仏教）", "percent": 93 },
+        { "name": "イスラム教（深南部マレー系）", "percent": 5 },
+        { "name": "キリスト教ほか", "percent": 2 }
+      ],
+      "ethnicGroups": ["タイ族（約8割）", "華人（経済界で強い影響力）", "マレー系"],
+      "regionalIntegrations": ["ASEAN", "RCEP", "APEC"],
+      "historicalContext": [
+        {
+          "id": "tha_uncolonized_aging",
+          "label": "東南アジア唯一の非植民地国とバンコク一極集中（プライメートシティ）・少子高齢化",
+          "detail": "英仏の緩衝国として独立を維持。人口の割にバンコクが突出した典型的なプライメートシティ。東南アジア諸国の中で急速に少子高齢化が進みつつある。",
+          "clozeTerms": ["上座部仏教", "プライメートシティ", "非植民地"],
+          "tags": ["仏教", "少子高齢化", "植民地"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "VNM": {
+    "iso3": "VNM",
+    "nameJa": "ベトナム",
+    "nameEn": "Vietnam",
+    "region": "東南アジア",
+    "subRegion": "東南アジア大陸部",
+    "capital": "ハノイ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ドイモイ政策とチャイナプラスワン（繊維・スマホ・電子部品組立）",
+        "メコン・紅河両デルタの稲作とコーヒー（ロブスタ種世界2位）",
+        "少子化と日本への技能実習生送り出し上位"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["古期・新期縁辺山地と南北2大デルタ"],
+      "summary": "北部に紅河（ソンコイ川）デルタ、南部に肥沃なメコン川デルタがあり、西側にアンナン山脈が縦貫。",
+      "items": [
+        {
+          "id": "vnm_deltas",
+          "category": "landform",
+          "label": "メコンデルタ・紅河デルタと塩害・上流ダム開発",
+          "detail": "メコン川流域は国際河川であり、上流（中国・ラオス）のダム建設や海面上昇によるメコンデルタの塩害・地盤沈下が問題化。",
+          "clozeTerms": ["メコン川", "紅河デルタ", "国際河川"],
+          "tags": ["三角州", "国際河川", "メコン川"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Cwa", "Aw"],
+      "summary": "北部（ハノイ）は冬の季節風でやや冷え込みCwa、南部（ホーチミン）は熱帯サバナ気候（Aw）。",
+      "cities": [
+        {
+          "cityId": "VNM_HANOI",
+          "nameJa": "ハノイ",
+          "nameEn": "Hanoi",
+          "lat": 21.03,
+          "lng": 105.85,
+          "elevationM": 12,
+          "koppenCode": "Cwa",
+          "koppenNameJa": "温帯夏雨気候",
+          "factors": ["北回帰線に近く冬は17℃前後まで下がりCwa", "5〜9月の夏モンスーンに降水集中"],
+          "monthlyTempC": [16.6, 17.7, 20.3, 24.2, 27.6, 29.3, 29.4, 28.7, 27.6, 25.2, 21.8, 18.2],
+          "monthlyPrecipMm": [22, 24, 46, 86, 185, 245, 295, 320, 248, 145, 58, 22],
+          "dataSource": "NCHMF / WMO 1991-2020",
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "VNM_HOCHIMINH",
+          "nameJa": "ホーチミン",
+          "nameEn": "Ho Chi Minh City",
+          "lat": 10.82,
+          "lng": 106.63,
+          "elevationM": 19,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": ["低緯度で年中高温（26〜29℃）", "5〜11月が雨季、12〜4月が乾季"],
+          "monthlyTempC": [26.4, 27.2, 28.5, 29.6, 28.9, 28.0, 27.7, 27.8, 27.6, 27.5, 27.2, 26.3],
+          "monthlyPrecipMm": [14, 5, 13, 52, 215, 310, 295, 270, 325, 265, 118, 45],
+          "dataSource": "NCHMF / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "プランテーション農業"],
+      "agriculture": [
+        {
+          "id": "vnm_rice_coffee",
+          "label": "メコンデルタの米（世界有数輸出）と中部高原のコーヒー（世界2位）",
+          "detail": "ドイモイ以降、土地使用権の長期貸与により食料増産に成功し世界有数の米輸出国・カシューナッツ・コショウ・ロブスタ種コーヒー（ブラジルに次ぐ世界2位）の生産国に。",
+          "worldRank": 2,
+          "worldRankNote": "コーヒー生産 世界2位、米輸出世界トップ3",
+          "clozeTerms": ["ドイモイ", "ロブスタ種コーヒー", "メコンデルタ"],
+          "tags": ["稲作", "コーヒー", "米"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "vnm_coal_oil",
+          "label": "ホンゲイ炭田（無煙炭）と南海油田・水力発電",
+          "detail": "北部の良質な無煙炭（ホンゲイ）と水力・石炭火力・急増する太陽光発電。",
+          "clozeTerms": ["ホンゲイ炭田"],
+          "tags": ["石炭"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "vnm_china_plus_one",
+          "label": "チャイナプラスワンによるスマホ（サムスン等）・衣料品・履物生産の急成長",
+          "detail": "社会主義市場経済「ドイモイ（刷新）」（1986年〜）により外資を積極導入。人件費上昇の中国からハノイ周辺（電子・スマホ）やホーチミン周辺（繊維・食品）へ工場移転が集中。",
+          "clozeTerms": ["チャイナプラスワン", "ドイモイ政策"],
+          "tags": ["ASEAN", "半導体", "衣類"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["スマートフォン・電子機器", "繊維・衣類・履物", "コーヒー・米・水産物"],
+        "majorImports": ["集積回路・電子部品", "繊維原料・生地", "機械類"],
+        "majorPartners": ["アメリカ", "中国", "韓国", "日本", "EU"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロアジア語族（ベトナム語：ローマ字表記「クオック・グー」）",
+      "officialLanguages": ["ベトナム語"],
+      "religions": [
+        { "name": "伝統信仰・無宗教", "percent": 73 },
+        { "name": "仏教（大乗仏教）・キリスト教（カトリック）", "percent": 27 }
+      ],
+      "ethnicGroups": ["キン族（ベト族：約85%）", "53の少数民族"],
+      "regionalIntegrations": ["ASEAN", "RCEP", "CPTPP", "APEC"],
+      "historicalContext": [
+        {
+          "id": "vnm_colonial_labor",
+          "label": "旧フランス領インドシナ・ベトナム戦争から日本への最大労働力送り出し国へ",
+          "detail": "仏領時代の名残でバゲット等の食文化やカトリック教徒・ローマ字表記が定着。近年は日本における技能実習生・在留外国人の出身国として上位。",
+          "clozeTerms": ["旧フランス領", "大乗仏教"],
+          "tags": ["旧フランス領", "技能実習生", "移民"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "MYS": {
+    "iso3": "MYS",
+    "nameJa": "マレーシア",
+    "nameEn": "Malaysia",
+    "region": "東南アジア",
+    "subRegion": "マレー半島・ボルネオ島",
+    "capital": "クアラルンプール",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": ["ブミプトラ政策（マレー系優先）と多民族社会", "マラッカ海峡・パーム油（世界2位）・LNG", "ルックイースト政策と電子・半導体組立"]
+    },
+    "nature": {
+      "orogenicBelts": ["古期・安定縁辺と熱帯雨林"],
+      "summary": "マレー半島（西マレーシア）とカリマンタン島北部（東マレーシア：サバ・サラワク州）に分かれる。マラッカ海峡に面する。",
+      "items": [
+        {
+          "id": "mys_malacca",
+          "category": "strait",
+          "label": "マラッカ海峡と熱帯雨林の油ヤシ農園転換",
+          "detail": "東アジア〜中東・欧州を結ぶ重要航路に面する。半島の熱帯林はアブラヤシ農園に多く転換。",
+          "clozeTerms": ["マラッカ海峡", "アブラヤシ"],
+          "tags": ["マラッカ海峡", "パーム油"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af"],
+      "summary": "赤道直下で年間を通じ高温多雨の熱帯雨林気候（Af）。スコールが多い。",
+      "cities": [
+        {
+          "cityId": "MYS_KL",
+          "nameJa": "クアラルンプール",
+          "nameEn": "Kuala Lumpur",
+          "lat": 3.14,
+          "lng": 101.69,
+          "elevationM": 55,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": ["赤道低圧帯の強い対流性降雨（スコール）", "年間較差が2℃未満"],
+          "monthlyTempC": [27.3, 27.8, 28.2, 28.3, 28.4, 28.1, 27.8, 27.8, 27.6, 27.6, 27.3, 27.1],
+          "monthlyPrecipMm": [180, 175, 240, 275, 210, 135, 140, 160, 200, 265, 290, 245],
+          "dataSource": "MET Malaysia / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["プランテーション農業", "アジア式稲作農業"],
+      "agriculture": [
+        {
+          "id": "mys_palm_rubber",
+          "label": "天然ゴムからアブラヤシ（パーム油世界2位）への作目転換",
+          "detail": "かつてのスズ・天然ゴム中心から、労働効率・収益性の高いアブラヤシ（パーム油）へ大きく転換。",
+          "worldRank": 2,
+          "worldRankNote": "パーム油生産 世界2位",
+          "clozeTerms": ["パーム油", "天然ゴム"],
+          "tags": ["パーム油", "プランテーション"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mys_lng_oil",
+          "label": "東マレーシア（サラワク州等）のLNG・原油とかつてのスズ",
+          "detail": "日本の重要なLNG供給国の一つ。",
+          "clozeTerms": ["LNG", "スズ"],
+          "tags": ["天然ガス", "原油"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mys_penang_electronics",
+          "label": "ペナン・クアラルンプール周辺の半導体後工程・電子機器組立",
+          "detail": "ルックイースト政策で日韓を手本に工業化。ペナンは半導体パッケージングの世界的拠点。国民車プロトン等。",
+          "clozeTerms": ["ルックイースト政策", "ペナン"],
+          "tags": ["半導体", "ASEAN"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["電気機器・半導体", "パーム油", "LNG・石油製品"],
+        "majorImports": ["半導体部品", "機械類", "原油"],
+        "majorPartners": ["シンガポール", "中国", "アメリカ", "日本"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロネシア語族（マレー語）",
+      "officialLanguages": ["マレー語（英語も広く通用）"],
+      "religions": [
+        { "name": "イスラム教（国教・主にマレー系）", "percent": 63 },
+        { "name": "仏教（主に華人系）", "percent": 19 },
+        { "name": "キリスト教・ヒンドゥー教（主にインド系）", "percent": 18 }
+      ],
+      "ethnicGroups": ["マレー系・先住民（ブミプトラ約70%）", "中華系（約22%）", "インド系（約7%）"],
+      "regionalIntegrations": ["ASEAN", "RCEP", "CPTPP", "APEC", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "mys_bumiputera",
+          "label": "旧イギリス領とブミプトラ政策（マレー系優先政策）",
+          "detail": "英領時代に錫鉱山やゴム農園の労働力として華人・インド系が移住し複合民族社会が形成された。経済力を持つ華人との格差是正のためマレー系（土地の子＝ブミプトラ）を優遇する政策を実施。シンガポールは1965年に分離独立。",
+          "clozeTerms": ["ブミプトラ政策", "複合民族社会", "旧イギリス領"],
+          "tags": ["多民族", "旧イギリス領", "イスラム教"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "SGP": {
+    "iso3": "SGP",
+    "nameJa": "シンガポール",
+    "nameEn": "Singapore",
+    "region": "東南アジア",
+    "subRegion": "マレー半島南端（都市国家）",
+    "capital": "シンガポール",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": ["マラッカ海峡の要衝・中継貿易・国際金融センター", "ジュロン工業団地と石油精製・高付加価値工業", "多民族社会（4公用語）と水資源自給（NEWater）"]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊縁辺の低平な島（埋立により国土拡大）"],
+      "summary": "東京23区よりやや大きい程度の都市国家。国土の約4分の1を埋立てにより拡張。",
+      "items": [
+        {
+          "id": "sgp_reclamation_water",
+          "category": "landform",
+          "label": "マラッカ海峡を扼する海上交通の要衝と水資源対策（NEWater・海水淡水化）",
+          "detail": "大河川がないため長年マレーシア（ジョホール州）からの導水に依存してきたが、雨水貯留・下水高度再生水（NEWater）・海水淡水化で水自給を強化。",
+          "clozeTerms": ["マラッカ海峡", "中継貿易", "NEWater"],
+          "tags": ["マラッカ海峡", "水資源"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af"],
+      "summary": "北緯1度の赤道直下で年中高温多雨（Af）。年降水量2200mm以上。",
+      "cities": [
+        {
+          "cityId": "SGP_SINGAPORE",
+          "nameJa": "シンガポール",
+          "nameEn": "Singapore",
+          "lat": 1.35,
+          "lng": 103.82,
+          "elevationM": 15,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": ["赤道直下で年較差約2℃", "モンスーン交代期のスコール"],
+          "monthlyTempC": [26.8, 27.3, 27.8, 28.2, 28.5, 28.4, 28.1, 28.0, 27.8, 27.8, 27.3, 26.8],
+          "monthlyPrecipMm": [235, 115, 170, 155, 170, 145, 145, 155, 155, 175, 250, 315],
+          "dataSource": "NEA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["都市型（植物工場等、農地は1%未満）"],
+      "agriculture": [
+        {
+          "id": "sgp_food_import",
+          "label": "食料の約9割を輸入依存と都市型ハイテク農業",
+          "detail": "国土狭小のため食料は輸入依存（30 by 30構想で垂直農法等を推進）。",
+          "clozeTerms": ["食料輸入"],
+          "tags": ["都市国家"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "sgp_refining_hub",
+          "label": "地下資源に乏しいながら世界屈指の石油精製・船舶燃料補給の拠点",
+          "detail": "中東原油を輸入・精製しアジア各地へ再輸出。発電は天然ガス中心。",
+          "clozeTerms": ["石油精製", "中継貿易"],
+          "tags": ["原油", "ASEAN"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "sgp_jurong_finance",
+          "label": "ジュロン工業団地と国際金融・多国籍企業地域統括拠点",
+          "detail": "アジアNIESの筆頭。低法人税・英語力・高度な港湾（PSA）・チャンギ空港を武器に多国籍企業の地域本社や金融機関が集積し、1人あたりGDPはアジア首位級。",
+          "clozeTerms": ["ジュロン工業団地", "アジアNIES", "自由港"],
+          "tags": ["ASEAN", "国際金融", "ICT"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["半導体・電子部品（再輸出含む）", "石油精製品", "医薬品・精密機器"],
+        "majorImports": ["電子部品・機械", "原油", "食料品"],
+        "majorPartners": ["中国", "マレーシア", "アメリカ", "台湾", "インドネシア"],
+        "note": "輸出額がGDPを上回る典型的な中継貿易国家。"
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "中国語系・オーストロネシア語系・インド・ヨーロッパ語系・ドラヴィダ語系",
+      "officialLanguages": ["英語（実務公用語）", "中国語（北京語）", "マレー語（国語）", "タミル語"],
+      "religions": [
+        { "name": "仏教・道教", "percent": 40 },
+        { "name": "キリスト教", "percent": 19 },
+        { "name": "イスラム教", "percent": 15 },
+        { "name": "ヒンドゥー教・無宗教", "percent": 26 }
+      ],
+      "ethnicGroups": ["中華系（約74%）", "マレー系（約13%）", "インド系（約9%）"],
+      "regionalIntegrations": ["ASEAN", "RCEP", "CPTPP", "APEC", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "sgp_hdb_harmony",
+          "label": "公営住宅（HDB）の民族比率割当と高度な人材誘致・少子高齢化",
+          "detail": "旧英領・1965年マレーシアから分離。民族融和のため公営団地（HDB）で住民の民族構成比を割り当てる政策を実施。外国人高度人材・労働者への依存と少子化が課題。",
+          "clozeTerms": ["HDB", "4公用語", "華人多数"],
+          "tags": ["多民族", "都市国家", "旧イギリス領"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "PHL": {
+    "iso3": "PHL",
+    "nameJa": "フィリピン",
+    "nameEn": "Philippines",
+    "region": "東南アジア",
+    "subRegion": "東南アジア島嶼部",
+    "capital": "マニラ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": ["東南アジア唯一のカトリック多数国（旧スペイン・米国領）", "英語力とBPO（コールセンター）・海外出稼ぎ送金（OFW）", "バナナプランテーション・ニッケル・台風災害"]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（環太平洋造山帯・フィリピン海溝）"],
+      "summary": "環太平洋造山帯に位置し火山（ピナトゥボ・マヨン等）と地震が多い。台風常襲地帯で、ルソン島山岳部には世界遺産の棚田がある。",
+      "items": [
+        {
+          "id": "phl_typhoon_volcano",
+          "category": "tectonic",
+          "label": "台風（タイフーン）常襲地帯と環太平洋造山帯の火山",
+          "detail": "北西太平洋で発生した台風が直接上陸することが多く高潮・洪水被害が大きい。",
+          "clozeTerms": ["環太平洋造山帯", "台風"],
+          "tags": ["新期造山帯", "自然災害", "火山"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw", "Am", "Af"],
+      "summary": "熱帯モンスーン・サバナ・熱帯雨林気候が島嶼や山脈の風上・風下で分布。",
+      "cities": [
+        {
+          "cityId": "PHL_MANILA",
+          "nameJa": "マニラ",
+          "nameEn": "Manila",
+          "lat": 14.6,
+          "lng": 120.98,
+          "elevationM": 16,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ・熱帯モンスーン気候",
+          "factors": ["6〜10月の南西モンスーンと台風で豪雨", "1〜4月は乾季"],
+          "monthlyTempC": [26.2, 26.9, 28.2, 29.7, 29.9, 29.0, 28.2, 28.0, 28.0, 28.0, 27.6, 26.6],
+          "monthlyPrecipMm": [18, 12, 16, 28, 145, 260, 415, 440, 355, 205, 130, 62],
+          "dataSource": "PAGASA / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "プランテーション農業"],
+      "agriculture": [
+        {
+          "id": "phl_banana_pineapple",
+          "label": "ミンダナオ島のバナナ・パイナップルプランテーションと稲作（IRRI）",
+          "detail": "日本向けバナナの圧倒的首位供給国。ルソン島（国際稲研究所 IRRI）発の「緑の革命」高収量米（IR8）でも有名だが、現在も米輸入国。",
+          "worldRank": 2,
+          "worldRankNote": "バナナ輸出世界2位（日本輸入1位）、ココナッツ油1位級",
+          "clozeTerms": ["バナナ", "プランテーション", "ミンダナオ島"],
+          "tags": ["プランテーション", "稲作"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "phl_nickel_geothermal",
+          "label": "ニッケル（世界2位級）・銅と地熱発電（世界トップ3）",
+          "detail": "火山帯を活かした地熱発電比率が高い（約10%）。",
+          "worldRank": 2,
+          "worldRankNote": "ニッケル産出世界2位・地熱発電容量世界3位級",
+          "clozeTerms": ["ニッケル", "地熱発電"],
+          "tags": ["ニッケル", "再生可能エネルギー"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "phl_bpo_ofw",
+          "label": "英語力を活かしたBPO（コールセンター等）と海外出稼ぎ労働者（OFW）からの送金",
+          "detail": "GDPの約1割近くを占めるOFW（海外フィリピン人労働者：中東・北米・東アジアの看護師・船員・家事労働）の本国送金と、マニラ・セブでの米国企業BPO拠点が経済を支える。電子部品組立も輸出主力。",
+          "clozeTerms": ["BPO", "OFW", "海外出稼ぎ送金"],
+          "tags": ["ICT", "出稼ぎ", "移民"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["半導体・電子部品", "機械類", "バナナ・ココナッツ油", "ニッケル・銅"],
+        "majorImports": ["電子部品", "原油・燃料", "小麦・米・輸送機器"],
+        "majorPartners": ["中国", "アメリカ", "日本", "韓国", "香港"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロネシア語族（タガログ語系）／英語",
+      "officialLanguages": ["フィリピノ語（タガログ語基盤）", "英語"],
+      "religions": [
+        { "name": "キリスト教（カトリック約8割・プロテスタント）", "percent": 88 },
+        { "name": "イスラム教（ミンダナオ島西部中心）", "percent": 6 }
+      ],
+      "ethnicGroups": ["マレー系（ビサヤ・タガログ等）"],
+      "regionalIntegrations": ["ASEAN", "RCEP", "APEC"],
+      "historicalContext": [
+        {
+          "id": "phl_spanish_us_catholic",
+          "label": "スペイン（約330年）とアメリカ（約50年）の植民地支配・ミンダナオ問題",
+          "detail": "スペイン統治により東南アジアで例外的なカトリック大国（東ティモールもカトリック）となり、アメリカ統治により英語が公用語として普及。人口1.1億人超で若年層が多い（人口ボーナス期）。",
+          "clozeTerms": ["カトリック", "旧スペイン領", "英語公用語"],
+          "tags": ["キリスト教", "旧スペイン領", "言語", "人口"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "MMR": {
+    "iso3": "MMR",
+    "nameJa": "ミャンマー",
+    "nameEn": "Myanmar",
+    "region": "東南アジア",
+    "subRegion": "東南アジア大陸部",
+    "capital": "ネピドー",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": ["エーヤワディー川デルタの稲作", "上座部仏教と多民族国家（ロヒンギャ問題等）", "天然ガス輸出とネピドー遷都"]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（アラカン山脈・シャン高原）"],
+      "summary": "中央を南北に流れるエーヤワディー川が下流に巨大なデルタを形成。東西は山脈に囲まれ中央乾燥地帯が存在。",
+      "items": [
+        {
+          "id": "mmr_ayeyarwady",
+          "category": "river",
+          "label": "エーヤワディー川（イラワジ川）のデルタと中央乾燥地帯",
+          "detail": "アラカン山脈の風下にあたる中部マンダレー周辺は雨蔭効果で半乾燥（BSh）となり、下流デルタは熱帯モンスーン多雨で稲作地帯。",
+          "clozeTerms": ["エーヤワディー川", "三角州"],
+          "tags": ["三角州", "雨蔭効果"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Am", "Aw", "BSh"],
+      "summary": "南部沿岸（ヤンゴン）はモンスーンの強いAm、内陸盆地は乾季の明瞭なAw〜BSh。",
+      "cities": [
+        {
+          "cityId": "MMR_YANGON",
+          "nameJa": "ヤンゴン",
+          "nameEn": "Yangon",
+          "lat": 16.87,
+          "lng": 96.19,
+          "elevationM": 15,
+          "koppenCode": "Am",
+          "koppenNameJa": "熱帯モンスーン気候",
+          "factors": ["6〜9月に南西モンスーンが集中し月500mm超の豪雨", "12〜3月はほぼ無降水"],
+          "monthlyTempC": [25.2, 26.8, 29.0, 30.8, 29.4, 27.6, 27.2, 27.2, 27.5, 28.0, 27.5, 25.7],
+          "monthlyPrecipMm": [4, 3, 12, 18, 305, 550, 560, 595, 395, 200, 55, 8],
+          "dataSource": "DMH / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "焼畑農業"],
+      "agriculture": [
+        {
+          "id": "mmr_rice_beans",
+          "label": "エーヤワディー川デルタの稲作と豆類・ゴマ",
+          "detail": "農業従事者が多く、米や豆類の輸出が重要。",
+          "clozeTerms": ["稲作"],
+          "tags": ["稲作"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mmr_gas_jade",
+          "label": "アンダマン海沖の天然ガス（タイ・中国向けパイプライン）と翡翠・チーク材",
+          "detail": "天然ガス輸出と鉱物（翡翠・ルビー等）が外貨獲得源。",
+          "clozeTerms": ["天然ガス"],
+          "tags": ["天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mmr_garment",
+          "label": "ヤンゴン周辺の縫製業（衣料品）",
+          "detail": "低賃金労働を活かした縫製工場が進出したが、政変（2021年）により投資停滞。",
+          "clozeTerms": ["縫製業"],
+          "tags": ["衣類", "ASEAN"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["天然ガス", "縫製衣類", "豆類・米", "翡翠・銅"],
+        "majorImports": ["石油精製品", "機械類", "織物生地"],
+        "majorPartners": ["中国", "タイ", "日本", "シンガポール"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "シナ・チベット語族（ビルマ語）",
+      "officialLanguages": ["ビルマ語（ミャンマー語）"],
+      "religions": [
+        { "name": "仏教（上座部仏教）", "percent": 88 },
+        { "name": "キリスト教（少数民族）・イスラム教（ロヒンギャ等）", "percent": 12 }
+      ],
+      "ethnicGroups": ["ビルマ族（約68%）", "シャン・カレン・カチン・ラカインなど135以上の公認民族"],
+      "regionalIntegrations": ["ASEAN", "RCEP"],
+      "historicalContext": [
+        {
+          "id": "mmr_ethnic_rohingya",
+          "label": "旧イギリス領からの独立とロヒンギャ難民問題・ネピドー遷都（2006年）",
+          "detail": "西部ラカイン州のイスラム系少数民族ロヒンギャが迫害により隣国バングラデシュへ大量流出。2006年にヤンゴンから内陸のネピドーへ遷都。",
+          "clozeTerms": ["ロヒンギャ", "ネピドー", "上座部仏教"],
+          "tags": ["難民", "民族問題", "仏教"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "IND": {
+    "iso3": "IND",
+    "nameJa": "インド",
+    "nameEn": "India",
+    "region": "南アジア",
+    "subRegion": "インド亜大陸",
+    "capital": "ニューデリー",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "モンスーン（6〜9月雨季）と米（東部）・小麦（パンジャブ）・綿花（レグール）・茶",
+        "緑の革命（穀物自給）・白の革命（牛乳世界1位）",
+        "バンガロールのICT産業（欧米からの受託開発）と人口世界1位（人口ボーナス）",
+        "ヒンドゥー教・カースト・多言語（ヒンディー＋英語）とカシミール問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（ヒマラヤ山脈）", "安定陸塊（デカン高原・インド楯状地）"],
+      "summary": "北部にプレート衝突のヒマラヤ山脈、中部にガンジス・インダスが形成するヒンドゥスタン平野、南部に玄武岩溶岩台地のデカン高原が展開。",
+      "items": [
+        {
+          "id": "ind_deccan_regur",
+          "category": "soil",
+          "label": "デカン高原のレグール（黒色綿花土）とヒマラヤ山脈",
+          "detail": "デカン高原北西部の玄武岩溶岩が風化した保水性・肥沃度に富む黒色土（レグール）は綿花栽培に最適。ヒマラヤ山脈は冬の寒気流入を遮断し夏のモンスーンを堰き止める。",
+          "clozeTerms": ["レグール", "デカン高原", "玄武岩", "ヒンドゥスタン平野"],
+          "tags": ["レグール", "綿花", "ヒマラヤ"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw", "Cwa", "BSh", "Am", "BWh"],
+      "summary": "6〜9月の南西モンスーン（湿潤）と11〜2月の北東モンスーン（乾燥）が明瞭。雨季直前の4〜5月が年間最高気温（酷暑期）。西ガーツ山脈西岸とアッサム（チェラプンジ）は世界屈指の多雨。",
+      "cities": [
+        {
+          "cityId": "IND_MUMBAI",
+          "nameJa": "ムンバイ",
+          "nameEn": "Mumbai",
+          "lat": 19.08,
+          "lng": 72.88,
+          "elevationM": 14,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": ["西ガーツ山脈風上で6〜9月の南西モンスーン期に圧倒的多雨", "1〜4月は乾季"],
+          "monthlyTempC": [24.5, 25.3, 27.5, 29.3, 30.6, 29.2, 27.6, 27.4, 27.8, 28.6, 28.0, 26.0],
+          "monthlyPrecipMm": [1, 1, 0, 1, 15, 535, 795, 520, 325, 80, 14, 2],
+          "dataSource": "IMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "IND_DELHI",
+          "nameJa": "ニューデリー",
+          "nameEn": "New Delhi",
+          "lat": 28.61,
+          "lng": 77.21,
+          "elevationM": 216,
+          "koppenCode": "BSh",
+          "koppenNameJa": "ステップ気候（Cwa移行部）",
+          "factors": ["4〜6月に34℃超の酷暑期", "7〜9月のみ南西モンスーンの雨"],
+          "monthlyTempC": [14.2, 17.5, 22.9, 29.1, 33.4, 34.0, 31.3, 30.1, 29.4, 25.8, 20.4, 15.6],
+          "monthlyPrecipMm": [20, 21, 16, 12, 26, 79, 210, 228, 125, 16, 6, 8],
+          "dataSource": "IMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        },
+        {
+          "cityId": "IND_BENGALURU",
+          "nameJa": "バンガロール",
+          "nameEn": "Bengaluru",
+          "lat": 12.97,
+          "lng": 77.59,
+          "elevationM": 920,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候（デカン高原高地）",
+          "factors": ["標高920mのためインド内陸では比較的涼しく快適（ICT拠点立地の一因）"],
+          "monthlyTempC": [21.6, 23.8, 26.4, 28.0, 27.4, 24.8, 23.8, 23.6, 23.8, 23.4, 22.2, 21.1],
+          "monthlyPrecipMm": [3, 6, 14, 48, 115, 95, 112, 142, 210, 175, 62, 18],
+          "dataSource": "IMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業", "アジア式畑作農業", "プランテーション農業"],
+      "agriculture": [
+        {
+          "id": "ind_crops_revolutions",
+          "label": "緑の革命・白の革命と年降水量1000mmによる米・小麦の分布境界",
+          "detail": "多雨なガンジス川下流（東側・西ベンガル）と沿岸は米とジュート、少雨な北西部パンジャブ平原は灌漑小麦、デカン高原北西部（ムンバイ周辺）は綿花、アッサム・ダージリン丘陵は茶プランテーション。宗教上の菜食主義と「白い革命」により牛乳・水牛肉生産が世界最大級。",
+          "worldRank": 1,
+          "worldRankNote": "牛乳・豆類・香辛料・ジュート1位、米・小麦・茶・綿花・サトウキビ2位",
+          "clozeTerms": ["緑の革命", "白い革命", "パンジャブ地方", "ジュート", "茶"],
+          "tags": ["稲作", "小麦", "綿花", "茶", "モンスーン"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ind_iron_coal_power",
+          "label": "チョタナグプール高原の石炭・鉄鉱石と石炭火力主体の電源",
+          "detail": "デカン高原北東部の豊富な鉄鉱石・石炭によりジャムシェドプール（タタ製鉄所）で製鉄業が発展。国内電力は石炭火力が7割前後。",
+          "worldRank": 2,
+          "worldRankNote": "粗鋼・石炭生産 世界2位",
+          "clozeTerms": ["チョタナグプール", "ジャムシェドプール", "鉄鉱石"],
+          "tags": ["鉄鉱石", "石炭", "鉄鋼業"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ind_bengaluru_pharma",
+          "label": "バンガロールのICT・ソフトウェア受託開発とジェネリック医薬品・製造業（Make in India）",
+          "detail": "英語堪能な理数系大卒人材（IIT等）、低い人件費、米欧との約10〜13時間の時差（24時間開発体制）により世界のIT・BPO拠点（バンガロール・ハイデラバード）。スラム抱えるムンバイ（商業・綿工業・ボリウッド）やチェンナイ（自動車）も重要。",
+          "clozeTerms": ["バンガロール", "ソフトウェア開発", "時差", "ジェネリック医薬品"],
+          "tags": ["ICT", "バンガロール", "医薬品"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["石油精製品", "宝石・研磨ダイヤモンド", "医薬品", "機械・自動車", "ICTサービス（ソフトウェア）"],
+        "majorImports": ["原油", "金", "石炭", "集積回路・電子部品"],
+        "majorPartners": ["アメリカ", "UAE", "中国", "ロシア", "サウジアラビア"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（北部：ヒンディー語・ベンガル語等）／ドラヴィダ語族（南部：タミル語等）",
+      "officialLanguages": ["ヒンディー語（連邦公用語）", "英語（準公用語・ビジネス・高等教育）", "22の憲法指定言語"],
+      "religions": [
+        { "name": "ヒンドゥー教", "percent": 79.8 },
+        { "name": "イスラム教（信徒数は世界3位級）", "percent": 14.2 },
+        { "name": "キリスト教・シク教（パンジャブ）・仏教・ジャイナ教", "percent": 6.0 }
+      ],
+      "ethnicGroups": ["インド・アーリア系（北部中心）", "ドラヴィダ系（南部中心）"],
+      "regionalIntegrations": ["BRICS", "SAARC", "クアッド（日米豪印）", "G20", "上海協力機構"],
+      "historicalContext": [
+        {
+          "id": "ind_pop_partition",
+          "label": "人口世界1位（約14.4億人）と印パ分離独立・カシミール問題・カースト",
+          "detail": "2023年頃に中国を抜き人口世界1位となり若年労働力が豊富（人口ボーナス）。1947年の英領インド独立時に宗教対立でパキスタン（後にバングラデシュ分離）と分裂し、カシミール地方の帰属紛争が継続。法的廃止後もカースト（ヴァルナ・ジャーティ）の影響が残る。",
+          "clozeTerms": ["人口世界1位", "カシミール問題", "カースト制度", "人口ボーナス"],
+          "tags": ["人口", "ヒンドゥー教", "領土問題", "言語"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "PAK": {
+    "iso3": "PAK",
+    "nameJa": "パキスタン",
+    "nameEn": "Pakistan",
+    "region": "南アジア",
+    "subRegion": "インド亜大陸北西部",
+    "capital": "イスラマバード",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": ["外来河川インダス川の灌漑農業（小麦・綿花）", "人口増加世界5位とイスラム教", "カシミール問題と中国CPEC（グワダル港）"]
+    },
+    "nature": {
+      "orogenicBelts": ["新期造山帯（ヒマラヤ・カラコルム山脈）とインダス沖積平野"],
+      "summary": "インダス川がチベット・ヒマラヤの雪解け水とモンスーン雨を集め、乾燥した国土を貫流する。",
+      "items": [
+        {
+          "id": "pak_indus_exotic",
+          "category": "river",
+          "label": "外来河川インダス川と大規模灌漑に伴う塩害",
+          "detail": "パンジャブ5河川が合流するインダス川の用水路網により砂漠でも農業が可能になったが、排水不良による土壌の塩類集積（塩害）が深刻。",
+          "clozeTerms": ["インダス川", "外来河川", "塩害"],
+          "tags": ["外来河川", "塩害"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["BWh", "BSh"],
+      "summary": "アラビア海沿いやタール砂漠は乾燥が厳しい砂漠気候（BWh）、北東部パンジャブは夏のモンスーンがわずかに届くステップ気候（BSh）。",
+      "cities": [
+        {
+          "cityId": "PAK_KARACHI",
+          "nameJa": "カラチ",
+          "nameEn": "Karachi",
+          "lat": 24.86,
+          "lng": 67.0,
+          "elevationM": 22,
+          "koppenCode": "BWh",
+          "koppenNameJa": "砂漠気候",
+          "factors": ["亜熱帯高圧帯の影響で年間降水量約180mm", "7〜8月のみモンスーンの端がかかる"],
+          "monthlyTempC": [18.5, 20.8, 25.0, 28.6, 30.8, 31.6, 30.4, 29.3, 29.2, 28.2, 24.4, 20.2],
+          "monthlyPrecipMm": [5, 7, 10, 4, 1, 12, 72, 48, 16, 1, 2, 5],
+          "dataSource": "PMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["オアシス農業（灌漑畑作）", "遊牧"],
+      "agriculture": [
+        {
+          "id": "pak_cotton_wheat",
+          "label": "インダス流域の綿花・小麦・米と水牛・ヤギ牧畜",
+          "detail": "灌漑農業による綿花生産（世界有数）が基幹繊維工業の原料となる。2022年等の大洪水による農地壊滅が問題。",
+          "clozeTerms": ["綿花", "小麦", "灌漑農業"],
+          "tags": ["綿花", "小麦", "洪水"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "pak_gas_hydro",
+          "label": "国内天然ガスとインダス水系の水力発電（タルベラダム等）",
+          "detail": "電力不足と原油輸入負担が経済課題。",
+          "clozeTerms": ["水力発電"],
+          "tags": ["水力発電"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "pak_textile_cpec",
+          "label": "カラチ・ラホール等の綿工業（繊維輸出）と中国・パキスタン経済回廊（CPEC）",
+          "detail": "輸出の過半が綿糸・綿織物・衣類。中国の「一帯一路」の一環としてグワダル港等を整備。",
+          "clozeTerms": ["綿工業", "CPEC", "グワダル港"],
+          "tags": ["衣類", "繊維工業"],
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["綿織物・衣類・タオル", "米", "皮革製品"],
+        "majorImports": ["原油・石油製品", "機械類", "パーム油"],
+        "majorPartners": ["アメリカ", "中国", "UAE", "イギリス", "ドイツ"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ウルドゥー語・パンジャブ語等）",
+      "officialLanguages": ["ウルドゥー語", "英語"],
+      "religions": [
+        { "name": "イスラム教（主にスンニ派）", "percent": 96 },
+        { "name": "ヒンドゥー教・キリスト教", "percent": 4 }
+      ],
+      "ethnicGroups": ["パンジャブ人", "パシュトゥーン人", "シンド人", "バローチ人"],
+      "regionalIntegrations": ["SAARC", "上海協力機構（SCO）", "OIC"],
+      "historicalContext": [
+        {
+          "id": "pak_pop_growth",
+          "label": "高い人口増加率（人口約2.4億人・世界5位）とインドとのカシミール対立",
+          "detail": "合計特殊出生率が高く若年人口が急増中（ピラミッド型）。英領分離独立以来、インドとカシミール領有権をめぐり対立。アフガン難民の受入国でもある。",
+          "clozeTerms": ["イスラム教", "ピラミッド型人口構成", "カシミール問題"],
+          "tags": ["人口", "イスラム教", "領土問題"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "BGD": {
+    "iso3": "BGD",
+    "nameJa": "バングラデシュ",
+    "nameEn": "Bangladesh",
+    "region": "南アジア",
+    "subRegion": "ベンガル湾沿岸",
+    "capital": "ダッカ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ガンジス・ブラマプトラデルタの洪水・サイクロン高潮・海面上昇リスク",
+        "既製服（衣料品）縫製輸出世界2位級と低賃金女性労働",
+        "米（3期作）とジュート（黄麻）・グラミン銀行"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": ["世界最大のガンジス・ブラマプトラ川三角州（ベンガルデルタ）"],
+      "summary": "国土の大部分が標高10m未満の超低平な三角州。雨季の河川氾濫、乾季末〜雨季のサイクロン高潮、さらに地球温暖化による海面上昇の危機に直面。",
+      "items": [
+        {
+          "id": "bgd_delta_cyclone",
+          "category": "landform",
+          "label": "ガンジス川三角州の低平地とサイクロン高潮・地球温暖化",
+          "detail": "ヒマラヤの雪解け水＋モンスーン豪雨（アッサム等）による洪水と、ベンガル湾のサイクロンによる高潮が重なり甚大な水害が発生。サイクロンシェルターの整備や井戸のヒ素汚染問題が知られる。",
+          "clozeTerms": ["ガンジス川", "三角州", "サイクロン", "高潮"],
+          "tags": ["三角州", "自然災害", "洪水", "地球温暖化"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Aw", "Am"],
+      "summary": "高温多雨の熱帯気候。6〜9月の南西モンスーン期に年間降水量（約2000mm）の大部分が集中。",
+      "cities": [
+        {
+          "cityId": "BGD_DHAKA",
+          "nameJa": "ダッカ",
+          "nameEn": "Dhaka",
+          "lat": 23.81,
+          "lng": 90.41,
+          "elevationM": 9,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ・モンスーン気候",
+          "factors": ["ベンガル湾からの南西モンスーンで6〜9月豪雨", "12〜2月は乾季"],
+          "monthlyTempC": [18.5, 21.8, 26.2, 28.6, 28.9, 28.9, 28.7, 28.8, 28.7, 27.3, 23.8, 19.8],
+          "monthlyPrecipMm": [8, 22, 60, 145, 295, 355, 375, 315, 300, 165, 30, 10],
+          "dataSource": "BMD / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["アジア式稲作農業"],
+      "agriculture": [
+        {
+          "id": "bgd_rice_jute",
+          "label": "高人口密度を支える水田稲作（二期作・三期作）とジュート（麻）",
+          "detail": "日本面積の約4割に約1.7億人が暮らす世界有数の高人口密度国。洪水・雨量に応じた稲作（アウス・アモン・ボロ）や麻袋原料ジュートの生産が盛ん。",
+          "worldRank": 2,
+          "worldRankNote": "ジュート生産世界2位（輸出1位）、米生産世界3位級",
+          "clozeTerms": ["ジュート", "高人口密度", "稲作"],
+          "tags": ["稲作", "人口密度"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "bgd_natural_gas",
+          "label": "国内天然ガス（電力主力）と原発建設",
+          "detail": "天然ガスを国内で産出するが枯渇懸念からLNG・石炭輸入が増加。",
+          "clozeTerms": ["天然ガス"],
+          "tags": ["天然ガス"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "bgd_garment_microcredit",
+          "label": "世界2位級の既製服（アパレル）輸出とグラミン銀行（マイクロクレジット）",
+          "detail": "極めて低い賃金水準（チャイナ＋αの移転先）と欧米向け特恵関税を背景に、輸出の約8割強を衣類（主にダッカ・チッタゴン周辺）が占め、労働者の多くが女性。ラナ・プラザ崩落事故以降、労働環境改善が課題。無担保少額融資のグラミン銀行（ムハマド・ユヌス）発祥地。",
+          "worldRank": 2,
+          "worldRankNote": "衣類輸出額 世界2位（中国に次ぐ）",
+          "clozeTerms": ["縫製業", "衣類輸出", "グラミン銀行", "マイクロクレジット"],
+          "tags": ["衣類", "繊維工業", "労働力指向"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["衣類（Tシャツ・ニット・織物）", "皮革・履物", "ジュート製品"],
+        "majorImports": ["綿花・織物生地", "石油製品", "機械類", "小麦"],
+        "majorPartners": ["EU（ドイツ等）", "アメリカ", "イギリス", "中国", "インド"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ベンガル語）",
+      "officialLanguages": ["ベンガル語"],
+      "religions": [
+        { "name": "イスラム教（スンニ派）", "percent": 91 },
+        { "name": "ヒンドゥー教", "percent": 8 },
+        { "name": "仏教・キリスト教", "percent": 1 }
+      ],
+      "ethnicGroups": ["ベンガル人（約98%：単一民族・言語的一体性が強い）"],
+      "regionalIntegrations": ["SAARC", "OIC"],
+      "historicalContext": [
+        {
+          "id": "bgd_independence_1971",
+          "label": "東パキスタンからの独立（1971年）と出生率低下・海外出稼ぎ",
+          "detail": "言語問題などから西パキスタンと対立し1971年独立。近年は女子教育や家族計画により出生率が劇的に低下し2人台へ落ち着き、経済成長を続けている。ロヒンギャ難民（コックスバザール）を受入。",
+          "clozeTerms": ["ベンガル語", "東パキスタン", "イスラム教"],
+          "tags": ["言語", "イスラム教", "難民"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  },
+  "LKA": {
+    "iso3": "LKA",
+    "nameJa": "スリランカ",
+    "nameEn": "Sri Lanka",
+    "region": "南アジア",
+    "subRegion": "インド洋島嶼部",
+    "capital": "スリジャヤワルダナプラコッテ（商業中心コロンボ）",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": ["中央高地の紅茶プランテーション（セイロンティー）", "シンハラ人（上座部仏教）とタミル人（ヒンドゥー教）の民族対立", "インド洋海上交通路・ハンバントタ港（一帯一路）"]
+    },
+    "nature": {
+      "orogenicBelts": ["安定陸塊（南インド楯状地の延長）"],
+      "summary": "中央南部に標高2000m級の山地があり、北東部はなだらかな平野。",
+      "items": [
+        {
+          "id": "lka_highland_monsoon",
+          "category": "landform",
+          "label": "中央高地と南西・北東モンスーンによる湿潤・乾燥帯の分離",
+          "detail": "南西部（コロンボ側）は湿潤（Af）、北東部はやや乾燥（Aw）。山地斜面が良質な茶栽培地となる。",
+          "clozeTerms": ["セイロン島", "中央高地"],
+          "tags": ["モンスーン"],
+          "examMeta": { "isFrequent": false, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": ["Af", "Am", "Aw"],
+      "summary": "北緯6〜9度の熱帯で、南西モンスーン（5〜8月）と北東モンスーン（10〜1月）の両方で雨が降るため南西岸はAf。",
+      "cities": [
+        {
+          "cityId": "LKA_COLOMBO",
+          "nameJa": "コロンボ",
+          "nameEn": "Colombo",
+          "lat": 6.93,
+          "lng": 79.86,
+          "elevationM": 7,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": ["南西・北東の両モンスーン移行期（4〜5月、10〜11月）に二山型多雨"],
+          "monthlyTempC": [26.8, 27.1, 27.9, 28.4, 28.3, 27.8, 27.5, 27.6, 27.6, 27.3, 26.9, 26.7],
+          "monthlyPrecipMm": [72, 68, 130, 265, 345, 195, 135, 115, 225, 360, 310, 155],
+          "dataSource": "Met Dept Sri Lanka / WMO 1991-2020",
+          "examMeta": { "isFrequent": true, "importance": "B", "pastExamRefs": [] }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": ["プランテーション農業", "アジア式稲作農業"],
+      "agriculture": [
+        {
+          "id": "lka_ceylon_tea",
+          "label": "紅茶プランテーション（ヌワラエリヤ・キャンディ等高地）とタミル人労働者",
+          "detail": "英領時代にコーヒーさび病被害の後、茶（セイロンティー）へ転換。現在も世界有数の茶生産・輸出国であり、摘採労働力として南インドから移住したインド・タミル人が多く従事。",
+          "worldRank": 4,
+          "worldRankNote": "茶生産・輸出世界トップ4",
+          "clozeTerms": ["紅茶", "セイロンティー", "プランテーション"],
+          "tags": ["茶", "プランテーション"],
+          "examMeta": { "isFrequent": true, "importance": "S", "pastExamRefs": [] }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "lka_gem_hydro",
+          "label": "宝石（サファイア等）と水力発電",
+          "detail": "化石燃料は輸入依存。",
+          "clozeTerms": ["水力発電"],
+          "tags": ["宝石"],
+          "examMeta": { "isFrequent": false, "importance": "C", "pastExamRefs": [] }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "lka_garment_port",
+          "label": "衣料品縫製業とコロンボ港・ハンバントタ港（債務の罠問題）",
+          "detail": "インド洋の東西航路の要衝。中国融資によるハンバントタ港整備後に債務危機に陥り99年運営権譲渡（債務の罠の典型事例）。",
+          "clozeTerms": ["ハンバントタ港", "衣類輸出"],
+          "tags": ["港湾", "衣類"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ],
+      "trade": {
+        "majorExports": ["衣類・繊維", "紅茶", "ゴム製品", "香辛料（シナモン）"],
+        "majorImports": ["原油・石油製品", "織物生地", "機械・食料"],
+        "majorPartners": ["アメリカ", "イギリス", "インド", "中国"]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（シンハラ語）／ドラヴィダ語族（タミル語）",
+      "officialLanguages": ["シンハラ語", "タミル語（英語も連結言語）"],
+      "religions": [
+        { "name": "仏教（上座部仏教：主にシンハラ人）", "percent": 70 },
+        { "name": "ヒンドゥー教（主にタミル人）", "percent": 13 },
+        { "name": "イスラム教・キリスト教", "percent": 17 }
+      ],
+      "ethnicGroups": ["シンハラ人（約75%）", "タミル人（スリランカ・タミル、インド・タミル約15%）", "ムーア人"],
+      "regionalIntegrations": ["SAARC", "イギリス連邦"],
+      "historicalContext": [
+        {
+          "id": "lka_civil_war",
+          "label": "シンハラ人優先政策と長年の内戦（LTTE・2009年終結）",
+          "detail": "英領独立後のシンハラ語公用化など多数派優遇に対し、北・東部のタミル人が分離独立を求めて内戦となった。2022年のデフォルト（外貨危機）も近年の話題。",
+          "clozeTerms": ["シンハラ人", "タミル人", "上座部仏教"],
+          "tags": ["民族問題", "宗教", "言語"],
+          "examMeta": { "isFrequent": true, "importance": "A", "pastExamRefs": [] }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "mr_andes": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Panoramic_view_Andes-Chile.jpg/960px-Panoramic_view_Andes-Chile.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アンデス山脈の高峰と雪線",
+    "credit": "Wikimedia Commons（出典: Andes）"
+  },
+  "mr_rocky": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Maroon_Bells_%2811553%29a.jpg/960px-Maroon_Bells_%2811553%29a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ロッキー山脈の氷食地形と針葉樹林",
+    "credit": "Wikimedia Commons（出典: Rocky Mountains）"
+  },
+  "mr_sierra_madre": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Sierra_Madre_Occidental.jpg/960px-Sierra_Madre_Occidental.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "メキシコのシエラマドレ山脈",
+    "credit": "Wikimedia Commons（出典: Sierra Madre Occidental）"
+  },
+  "mr_alps": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/960px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アルプス山脈（マッターホルン等氷食地形）",
+    "credit": "Wikimedia Commons（出典: Matterhorn）"
+  },
+  "mr_pyrenees": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Pyrenees_aerial.jpg/960px-Pyrenees_aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "フランス・スペイン国境ピレネー山脈",
+    "credit": "Wikimedia Commons（出典: Pyrenees）"
+  },
+  "mr_atlas": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Plateau_Yagour%2C_Agdal%2C_Morocco.jpg/960px-Plateau_Yagour%2C_Agdal%2C_Morocco.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "北アフリカ・アトラス山脈",
+    "credit": "Wikimedia Commons（出典: Atlas Mountains）"
+  },
+  "mr_zagros": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Dena_Mountain-Iran-Mar2012.JPG/960px-Dena_Mountain-Iran-Mar2012.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "イランのザグロス山脈",
+    "credit": "Wikimedia Commons（出典: Dena）"
+  },
+  "mr_himalaya": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/South_Face_of_Annapurna_I_%28Main%29.jpg/960px-South_Face_of_Annapurna_I_%28Main%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ヒマラヤ山脈（世界最高峰群の現地風景）",
+    "credit": "Wikimedia Commons（出典: Annapurna）"
+  },
+  "mr_southern_alps_nz": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Aoraki_Mount_Cook.JPG/960px-Aoraki_Mount_Cook.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ニュージーランド南アルプス山脈",
+    "credit": "Wikimedia Commons（出典: Aoraki / Mount Cook）"
+  },
+  "mr_scandinavia": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Utsiktgald1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "スカンディナビア山脈（古期造山帯）",
+    "credit": "Wikimedia Commons（出典: Jotunheimen）"
+  },
+  "mr_pennine": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Mam_Tor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "イギリス・ペニン山脈（古期）",
+    "credit": "Wikimedia Commons（出典: Peak District）"
+  },
+  "mr_ural": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Landscape_view_in_Circumpolar_Urals.jpg/960px-Landscape_view_in_Circumpolar_Urals.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ウラル山脈（欧亜境界・古期）",
+    "credit": "Wikimedia Commons（出典: Ural Mountains）"
+  },
+  "mr_appalachian": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Rainy_Blue_Ridge-27527.jpg/960px-Rainy_Blue_Ridge-27527.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アパラチア山脈（古期・炭田背景）",
+    "credit": "Wikimedia Commons（出典: Blue Ridge Mountains）"
+  },
+  "mr_great_dividing": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Three_Sisters_Sunset.jpg/960px-Three_Sisters_Sunset.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "オーストラリア・グレートディバイディング山脈",
+    "credit": "Wikimedia Commons（出典: Blue Mountains (New South Wales)）"
+  },
+  "mr_drakensberg": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/South_Africa_-_Drakensberg_%2816261357780%29.jpg/960px-South_Africa_-_Drakensberg_%2816261357780%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "南アフリカ・ドラケンスバーグ山脈大崖",
+    "credit": "Wikimedia Commons（出典: Drakensberg）"
+  },
+  "rv_rhine": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/St.Goarshausen_Loreley_Burg_Katz_2016-03-27-17-13-57.jpg/960px-St.Goarshausen_Loreley_Burg_Katz_2016-03-27-17-13-57.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "国際河川ライン川の舟運と峡谷",
+    "credit": "Wikimedia Commons（出典: Rhine Gorge）"
+  },
+  "rv_danube": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg/960px-View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ドナウ川（国際河川）と沿岸都市",
+    "credit": "Wikimedia Commons（出典: Danube）"
+  },
+  "rv_nile": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Beautiful_nature_along_Nile_River_01.jpg/960px-Beautiful_nature_along_Nile_River_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ナイル川（砂漠を貫く外来河川）",
+    "credit": "Wikimedia Commons（出典: Nile）"
+  },
+  "rv_congo": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chutes_Livingstone.jpg/960px-Chutes_Livingstone.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "コンゴ川の熱帯大流域と急流",
+    "credit": "Wikimedia Commons（出典: Livingstone Falls）"
+  },
+  "rv_niger": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg/960px-Niger%2C_Niamey%2C_Pont_Kennedy_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "西アフリカを大湾曲するニジェール川",
+    "credit": "Wikimedia Commons（出典: Niger River）"
+  },
+  "rv_tigris_euphrates": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Euphrates_River_in_Turkey%2C_Rumkale_%2852031477798%29.jpg/960px-The_Euphrates_River_in_Turkey%2C_Rumkale_%2852031477798%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ティグリス・ユーフラテス川とメソポタミア",
+    "credit": "Wikimedia Commons（出典: Euphrates）"
+  },
+  "rv_indus": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Nanga_Parbat_Indus_Gorge.jpg/960px-Nanga_Parbat_Indus_Gorge.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ヒマラヤ発・パキスタンを潤すインダス川",
+    "credit": "Wikimedia Commons（出典: Indus River）"
+  },
+  "rv_ganges": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Varanasiganga.jpg/960px-Varanasiganga.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ガンジス川とヒンドゥスタン平野",
+    "credit": "Wikimedia Commons（出典: Ganges）"
+  },
+  "rv_mekong": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Mekong-River-Near-Luang-Prabang.jpg/960px-Mekong-River-Near-Luang-Prabang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "メコン川の水上交通とデルタ",
+    "credit": "Wikimedia Commons（出典: Mekong）"
+  },
+  "rv_changjiang": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Qutang_Gorge_on_Changjiang.jpg/960px-Qutang_Gorge_on_Changjiang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "長江（三峡〜長江デルタ）",
+    "credit": "Wikimedia Commons（出典: Three Gorges）"
+  },
+  "rv_huanghe": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Hukou_Waterfall.jpg/960px-Hukou_Waterfall.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "黄河と黄土高原の堆積土砂",
+    "credit": "Wikimedia Commons（出典: Hukou Waterfalls）"
+  },
+  "rv_mississippi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Efmo_View_from_Fire_Point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ミシシッピ川の穀物水運バージ",
+    "credit": "Wikimedia Commons（出典: Mississippi River）"
+  },
+  "rv_amazon": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Amazon_River_ESA387332.jpg/960px-Amazon_River_ESA387332.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アマゾン川の蛇行と広大な熱帯雨林",
+    "credit": "Wikimedia Commons（出典: Amazon River）"
+  },
+  "rv_murray_darling": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Deakin_Ave_from_Fifteenth_looking_north.jpg/960px-Deakin_Ave_from_Fifteenth_looking_north.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "マレー・ダーリング川と乾燥灌漑",
+    "credit": "Wikimedia Commons（出典: Mildura）"
+  },
+  "lf_sognefjord": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Sognefjord%2C_Norway.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ソグネフィヨルド（氷食U字谷の溺れ谷）",
+    "credit": "Wikimedia Commons（出典: Sognefjord）"
+  },
+  "lf_milford_sound": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Milford_Sound_%28New_Zealand%29.JPG/960px-Milford_Sound_%28New_Zealand%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ミルフォードサウンド（NZフィヨルド）",
+    "credit": "Wikimedia Commons（出典: Milford Sound）"
+  },
+  "lf_patagonia_fjord": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg/960px-Torres_del_Paine_y_cuernos_del_Paine%2C_montaje.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "チリ南部パタゴニアのフィヨルドとサケ養殖",
+    "credit": "Wikimedia Commons（出典: Torres del Paine National Park）"
+  },
+  "lf_glacier_bay_fjord": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/A045%2C_Glacier_Bay_National_Park%2C_Alaska%2C_USA%2C_Johns_Hopkins_Glacier%2C_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "アラスカ・グレイシャーベイの氷河フィヨルド",
+    "credit": "Wikimedia Commons（出典: Glacier Bay National Park and Preserve）"
+  },
+  "lf_sanriku_rias": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Jyoudogahama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "三陸海岸のリアス海岸（複雑に入り組む湾）",
+    "credit": "Wikimedia Commons（出典: Sanriku Coast）"
+  },
+  "lf_shima_rias": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Ago_Bay_and_Jir%C5%8Drokur%C5%8D_Beach.JPG/960px-Ago_Bay_and_Jir%C5%8Drokur%C5%8D_Beach.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "志摩半島（英虞湾）のリアス海岸と真珠養殖",
+    "credit": "Wikimedia Commons（出典: Ago Bay）"
+  },
+  "lf_galicia_rias": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Panoramica_bueu_1.jpg/960px-Panoramica_bueu_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "スペイン・ガリシア海岸（リアス海岸の語源）",
+    "credit": "Wikimedia Commons（出典: Rías Baixas）"
+  },
+  "lf_elbe_estuary": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Burchardkai-Nacht-%28Hamburg%29-msu-2021-4873-.jpg/960px-Burchardkai-Nacht-%28Hamburg%29-msu-2021-4873-.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "エルベ川エスチュアリーとハンブルク港",
+    "credit": "Wikimedia Commons（出典: Port of Hamburg）"
+  },
+  "lf_thames_estuary": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Thames_Barrier_03.jpg/960px-Thames_Barrier_03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "テムズ川エスチュアリー（ロンドン・防潮水門）",
+    "credit": "Wikimedia Commons（出典: Thames Barrier）"
+  },
+  "lf_seine_estuary": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/S%C3%A9maphore_et_grues_sur_le_port_du_Havre.jpg/960px-S%C3%A9maphore_et_grues_sur_le_port_du_Havre.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "セーヌ川エスチュアリーとル・アーヴル港",
+    "credit": "Wikimedia Commons（出典: Port of Le Havre）"
+  },
+  "lf_la_plata_estuary": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Puerto_de_Buenos_Aires%2C_Argentina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ラプラタ川エスチュアリー（広大な三角江）",
+    "credit": "Wikimedia Commons（出典: Port of Buenos Aires）"
+  },
+  "lf_st_lawrence_estuary": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Le_fleuve_Saint-Laurent.jpg/960px-Le_fleuve_Saint-Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "セントローレンス川のエスチュアリー",
+    "credit": "Wikimedia Commons（出典: St. Lawrence River）"
+  },
+  "lf_dalmatian_coast": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Kornati.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "クロアチア・ダルマチア海岸（沈水地形と島列）",
+    "credit": "Wikimedia Commons（出典: Kornati）"
+  },
+  "lf_nile_delta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%D8%B7%D8%B1%D9%8A%D9%82_%D8%A5%D9%84%D9%89_%D9%85%D8%A8%D9%86%D9%89_%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9_%D8%AF%D9%85%D9%8A%D8%A7%D8%B7.JPG/960px-%D8%B7%D8%B1%D9%8A%D9%82_%D8%A5%D9%84%D9%89_%D9%85%D8%A8%D9%86%D9%89_%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9_%D8%AF%D9%85%D9%8A%D8%A7%D8%B7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ナイル川デルタ（扇状の緑地帯と水路網）",
+    "credit": "Wikimedia Commons（出典: Damietta）"
+  },
+  "lf_mississippi_delta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Atchafalaya_Basin.jpg/960px-Atchafalaya_Basin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ミシシッピ川鳥趾状三角州・湾岸湿地",
+    "credit": "Wikimedia Commons（出典: Bayou）"
+  },
+  "lf_bengal_delta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/960px-Save_the_sundarbans_20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ガンジス川・ベンガルデルタの低平湿地",
+    "credit": "Wikimedia Commons（出典: Sundarbans）"
+  },
+  "lf_mekong_delta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/C%E1%BA%A7u_Cao_L%C3%A3nh.jpg/960px-C%E1%BA%A7u_Cao_L%C3%A3nh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "メコン川デルタの水田と水路網",
+    "credit": "Wikimedia Commons（出典: Mekong Delta）"
+  },
+  "lf_guilin_karst": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/87318-Li-River.jpg/960px-87318-Li-River.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "中国・桂林のタワーカルスト景観",
+    "credit": "Wikimedia Commons（出典: Li River）"
+  },
+  "lf_ha_long_bay": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Ha_Long_Bay_in_2019.jpg/960px-Ha_Long_Bay_in_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ベトナム・ハロン湾の沈水タワーカルスト",
+    "credit": "Wikimedia Commons（出典: Hạ Long Bay）"
+  },
+  "lf_kras_karst": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Postojna_%2822206343750%29.jpg/960px-Postojna_%2822206343750%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "スロベニア・クラス地方（カルスト地形の語源・鍾乳洞）",
+    "credit": "Wikimedia Commons（出典: Postojna Cave）"
+  },
+  "lf_plitvice_karst": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/View_in_Plitvice_Lakes_National_Park.jpg/960px-View_in_Plitvice_Lakes_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "プリトヴィツェ湖群の石灰華段丘カルスト",
+    "credit": "Wikimedia Commons（出典: Plitvice Lakes National Park）"
+  },
+  "lf_akiyoshidai": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Akiyoshi-do-entrance.jpg/960px-Akiyoshi-do-entrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "秋吉台・秋芳洞のドリーネ・カレンフェルト",
+    "credit": "Wikimedia Commons（出典: Akiyoshidai Quasi-National Park）"
+  },
+  "lf_yucatan_cenote": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cenote_2.jpg/960px-Cenote_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ユカタン半島のセノーテ（石灰岩陥没穴）",
+    "credit": "Wikimedia Commons（出典: Cenote）"
+  },
+  "lf_gbr": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/ISS-45_StoryOfWater%2C_Great_Barrier_Reef%2C_Australia.jpg/960px-ISS-45_StoryOfWater%2C_Great_Barrier_Reef%2C_Australia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "グレートバリアリーフ（世界最大の堡礁）",
+    "credit": "Wikimedia Commons（出典: Great Barrier Reef）"
+  },
+  "lf_new_caledonia_reef": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Lagoons_and_Reefs_of_New_Caledonia_May_10%2C_2001.jpg/960px-Lagoons_and_Reefs_of_New_Caledonia_May_10%2C_2001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ニューカレドニアのサンゴ礁とラグーン（堡礁）",
+    "credit": "Wikimedia Commons（出典: New Caledonian barrier reef）"
+  },
+  "lf_belize_barrier_reef": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Great_Blue_Hole.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ベリーズの堡礁とグレート・ブルーホール",
+    "credit": "Wikimedia Commons（出典: Great Blue Hole）"
+  },
+  "lf_maldives_atoll": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tetiaroa_from_sky.JPG/960px-Tetiaroa_from_sky.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "モルディブの低平なサンゴ礁（環礁）",
+    "credit": "Wikimedia Commons（出典: Atoll）"
+  },
+  "lf_tuvalu_atoll": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Funafuti_airport_-_Fiji_Airways.jpg/960px-Funafuti_airport_-_Fiji_Airways.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ツバルの環礁地形（海面上昇の危機）",
+    "credit": "Wikimedia Commons（出典: Funafuti）"
+  },
+  "lf_marshall_atoll": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Eneko_Islet_02.JPG/960px-Eneko_Islet_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "マーシャル諸島・典型的サンゴ環礁の全景",
+    "credit": "Wikimedia Commons（出典: Majuro）"
+  },
+  "lf_okinawa_fringing_reef": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Kabira-Bay-Kabira-park-2019.jpg/960px-Kabira-Bay-Kabira-park-2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "沖縄・八重山諸島（石西礁湖・川平湾サンゴ礁）",
+    "credit": "Wikimedia Commons（出典: Kabira Bay）"
+  },
+  "lf_aral_sea": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Moynaq.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "縮小したアラル海・ムイナクの「船の墓場」",
+    "credit": "Wikimedia Commons（出典: Moynaq）"
+  },
+  "lf_polder": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Flevopolder_Larserbos.jpg/960px-Flevopolder_Larserbos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "オランダの海抜0m以下の干拓地ポルダー",
+    "credit": "Wikimedia Commons（出典: Polder）"
+  },
+  "lf_paris_cuesta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Vineyards_near_Epernay.jpg/960px-Vineyards_near_Epernay.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "パリ盆地のケスタ地形（シャンパーニュ丘陵）",
+    "credit": "Wikimedia Commons（出典: Épernay）"
+  },
+  "lf_atacama": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Valle_della_Luna_01.jpg/960px-Valle_della_Luna_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "世界最乾燥のアタカマ砂漠・月の谷（チリ）",
+    "credit": "Wikimedia Commons（出典: Valle de la Luna (Chile)）"
+  },
+  "lf_great_lakes": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Lake_Superior%2C_ISS.jpg/960px-Lake_Superior%2C_ISS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "氷食湖・五大湖（スペリオル湖等）",
+    "credit": "Wikimedia Commons（出典: Lake Superior）"
+  },
+  "oc_kuroshio": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cape_Shiono_Aerial_photograph.1975.jpg/960px-Cape_Shiono_Aerial_photograph.1975.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "黒潮が洗う紀伊半島・潮岬の沿岸風景",
+    "credit": "Wikimedia Commons（出典: Cape Shionomisaki）"
+  },
+  "oc_oyashio": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Kushiro_Montage.jpg/960px-Kushiro_Montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "親潮・釧路沖に発生する濃い海霧",
+    "credit": "Wikimedia Commons（出典: Kushiro）"
+  },
+  "oc_peru": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Paracas_National_Reserve._Ica%2C_Peru.jpg/960px-Paracas_National_Reserve._Ica%2C_Peru.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ペルー海流の湧昇沿岸とパラカス海岸",
+    "credit": "Wikimedia Commons（出典: Paracas National Reserve）"
+  },
+  "oc_california": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カリフォルニア海流がもたらすサンフランシスコの海霧",
+    "credit": "Wikimedia Commons（出典: Golden Gate Bridge）"
+  },
+  "oc_north_atlantic": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Troms%C3%B8_sentrum_%285835702754%29.jpg/960px-Troms%C3%B8_sentrum_%285835702754%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "北大西洋海流がもたらす高緯度不凍港（トロムソ）",
+    "credit": "Wikimedia Commons（出典: Tromsø）"
+  },
+  "oc_benguela": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Otavi_1945.jpg/960px-Otavi_1945.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ベンゲラ海流と砂漠が海に接するナミブ砂漠沿岸",
+    "credit": "Wikimedia Commons（出典: Skeleton Coast）"
+  },
+  "oc_labrador": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Northern_Gannets_St_Mary_Cape_Newfoundland_%2840650858444%29.jpg/960px-Northern_Gannets_St_Mary_Cape_Newfoundland_%2840650858444%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ラブラドル海流が運ぶカナダ沖の氷山",
+    "credit": "Wikimedia Commons（出典: Atlantic Marine Ecozone）"
+  },
+  "sc_malacca": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Port_of_Singapore.jpg/960px-Port_of_Singapore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "マラッカ海峡に臨む国際貿易港シンガポール",
+    "credit": "Wikimedia Commons（出典: Port of Singapore）"
+  },
+  "sc_hormuz": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Khasab_%2826467361548%29.jpg/960px-Khasab_%2826467361548%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ホルムズ海峡を臨むオマーン・ムサンダム半島の入り江",
+    "credit": "Wikimedia Commons（出典: Khasab）"
+  },
+  "sc_suez": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Iss016e019375.jpg/960px-Iss016e019375.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "水平式運河・スエズ運河を通過する大型コンテナ船",
+    "credit": "Wikimedia Commons（出典: Suez Canal）"
+  },
+  "sc_panama": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/US_Navy_080813-N-6266K-036_American_and_Panamanian_security_forces_practice_water_steering_and_maneuvering-edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "閘門（ロック）で船を昇降させるパナマ運河",
+    "credit": "Wikimedia Commons（出典: Bridge of the Americas）"
+  },
+  "sc_gibraltar": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/STS059-238-074_Strait_of_Gibraltar.jpg/960px-STS059-238-074_Strait_of_Gibraltar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "地中海と大西洋を隔てるジブラルタルの岩",
+    "credit": "Wikimedia Commons（出典: Strait of Gibraltar）"
+  },
+  "sc_bosphorus": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bosphorus_Bridge_%281973%29_in_Istanbul.jpg/960px-Bosphorus_Bridge_%281973%29_in_Istanbul.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ボスポラス海峡（アジア側とヨーロッパ側を結ぶ水道）",
+    "credit": "Wikimedia Commons（出典: Bosphorus Bridge）"
+  },
+  "sc_dover": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/White_Cliffs_of_Dover_02.JPG/960px-White_Cliffs_of_Dover_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ドーバー海峡の白い崖（チョーク台地）",
+    "credit": "Wikimedia Commons（出典: White Cliffs of Dover）"
+  },
+  "vol_kilauea": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg/960px-Episode_4_of_Kilauea%27s_December_2024_eruption_2025-01-16.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ハワイ・キラウエア火山の穏やかな溶岩流出",
+    "credit": "Wikimedia Commons（出典: Kīlauea）"
+  },
+  "vol_mauna_loa": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mauna_Loa_Volcano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ハワイ・マウナ・ロアのなだらかな盾状火山",
+    "credit": "Wikimedia Commons（出典: Mauna Loa）"
+  },
+  "vol_yellowstone": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Aerial_image_of_Grand_Prismatic_Spring_%28view_from_the_south%29.jpg/960px-Aerial_image_of_Grand_Prismatic_Spring_%28view_from_the_south%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "イエローストーン・カルデラの熱水間欠泉",
+    "credit": "Wikimedia Commons（出典: Grand Prismatic Spring）"
+  },
+  "vol_teide": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Roque_Cinchado_und_Teide.jpg/960px-Roque_Cinchado_und_Teide.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カナリア諸島・テイデ山（ホットスポット成層火山）",
+    "credit": "Wikimedia Commons（出典: Teide）"
+  },
+  "vol_galapagos": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG/960px-Lobo_marino_%28Zalophus_californianus_wollebaeki%29%2C_Punta_Pitt%2C_isla_de_San_Crist%C3%B3bal%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-24%2C_DD_11.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ガラパゴス諸島の火山島景観",
+    "credit": "Wikimedia Commons（出典: Galápagos Islands）"
+  },
+  "vol_reunion": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg/960px-Piton_de_la_Fournaise%2C_R%C3%A9union_Island_%28High_Resolution%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "レユニオン島・ピトン・ドゥ・ラ・フルネーズ火山",
+    "credit": "Wikimedia Commons（出典: Piton de la Fournaise）"
+  },
+  "vol_eyja": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%C3%9E%C3%B3rsm%C3%B6rk_Eyjafjallaj%C3%B6kull_1_Iceland_%28cropped%29.jpg/960px-%C3%9E%C3%B3rsm%C3%B6rk_Eyjafjallaj%C3%B6kull_1_Iceland_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アイスランド・エイヤフィヤトラヨークトル火山",
+    "credit": "Wikimedia Commons（出典: Eyjafjallajökull）"
+  },
+  "vol_hekla": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg/960px-2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アイスランド・ヘクラ火山（広がる境界）",
+    "credit": "Wikimedia Commons（出典: Hekla）"
+  },
+  "vol_kilimanjaro": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Kilimanjaro_from_Amboseli.jpg/960px-Kilimanjaro_from_Amboseli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アフリカ最高峰・キリマンジャロ（大地溝帯東縁）",
+    "credit": "Wikimedia Commons（出典: Mount Kilimanjaro）"
+  },
+  "vol_nyiragongo": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/An_aerial_view_of_the_towering_volcanic_peak_of_Mt._Nyiragongo.jpg/960px-An_aerial_view_of_the_towering_volcanic_peak_of_Mt._Nyiragongo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "コンゴ・ニーラゴンゴ山の溶岩湖",
+    "credit": "Wikimedia Commons（出典: Mount Nyiragongo）"
+  },
+  "vol_erta_ale": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Erta_Ale.jpg/960px-Erta_Ale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "エチオピア・アファール三重点のエルタ・アレ火山",
+    "credit": "Wikimedia Commons（出典: Erta Ale）"
+  },
+  "vol_fuji": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/960px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "富士山（沈み込み帯の美しい成層火山）",
+    "credit": "Wikimedia Commons（出典: Mount Fuji）"
+  },
+  "vol_sakurajima": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Sakurajima55.jpg/960px-Sakurajima55.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "桜島（姶良カルデラ内の活火山）",
+    "credit": "Wikimedia Commons（出典: Sakurajima）"
+  },
+  "vol_aso": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/20140516%E9%98%BF%E8%98%87%E5%B1%B1%E5%BA%83%E5%9F%9F.jpg/960px-20140516%E9%98%BF%E8%98%87%E5%B1%B1%E5%BA%83%E5%9F%9F.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "世界最大級のカルデラ地形・阿蘇山",
+    "credit": "Wikimedia Commons（出典: Mount Aso）"
+  },
+  "vol_pinatubo": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg/960px-Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "フィリピン・ピナツボ山のカルデラ湖",
+    "credit": "Wikimedia Commons（出典: Mount Pinatubo）"
+  },
+  "vol_merapi": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Pendidikan_Karakter_Dan_Nasionalisme.jpg/960px-Pendidikan_Karakter_Dan_Nasionalisme.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ジャワ島中央部・メラピ火山と肥沃な山麓",
+    "credit": "Wikimedia Commons（出典: Mount Merapi）"
+  },
+  "vol_krakatau": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Anak_krakatau_sebelum_tsunami.jpg/960px-Anak_krakatau_sebelum_tsunami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "スンダ海峡のクラカタウ（アナク・クラカタウ）",
+    "credit": "Wikimedia Commons（出典: Anak Krakatoa）"
+  },
+  "vol_etna": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mt_Etna_and_Catania1.jpg/960px-Mt_Etna_and_Catania1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "イタリア・エトナ山（ヨーロッパ最大の活火山）",
+    "credit": "Wikimedia Commons（出典: Mount Etna）"
+  },
+  "vol_vesuvius": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg/960px-Il_cratere_del_Vulcano_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ナポリ湾を望むヴェスヴィオ火山",
+    "credit": "Wikimedia Commons（出典: Mount Vesuvius）"
+  },
+  "vol_st_helens": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg/960px-MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カスケード山脈・セント・ヘレンズ山",
+    "credit": "Wikimedia Commons（出典: Mount St. Helens）"
+  },
+  "vol_popocatepetl": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Mexico-Popocatepetl.jpg/960px-Mexico-Popocatepetl.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "メキシコ高原にそびえるポポカテペトル山",
+    "credit": "Wikimedia Commons（出典: Popocatépetl）"
+  },
+  "vol_cotopaxi": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Cotopaxi_volcano_2008-06-27T1322.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "アンデス北部・コトパクシ山（雪冠火山）",
+    "credit": "Wikimedia Commons（出典: Cotopaxi）"
+  },
+  "vol_chimborazo": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Chimborazo%2C_aspecto_norte%2C_Ecuador._%2826354503702%29.jpg/960px-Chimborazo%2C_aspecto_norte%2C_Ecuador._%2826354503702%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "エクアドル最高峰チンボラソ山",
+    "credit": "Wikimedia Commons（出典: Chimborazo）"
+  },
+  "vol_ruapehu": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Mount_Ruapehu_October_9%2C_2023_%28cropped%29.jpg/960px-Mount_Ruapehu_October_9%2C_2023_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "NZ北島・ルアペフ山（トンガリロ火山帯）",
+    "credit": "Wikimedia Commons（出典: Mount Ruapehu）"
+  },
+  "vol_klyuchevskaya": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Klju%C4%8Devskaja_za_v%C3%BDchodu_slunce.jpg/960px-Klju%C4%8Devskaja_za_v%C3%BDchodu_slunce.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カムチャツカ半島・クリュチェフスカヤ山",
+    "credit": "Wikimedia Commons（出典: Klyuchevskaya Sopka）"
+  },
+  "vol_baekdu": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Laika_ac_Mt._Paekdu_%287998657081%29.jpg/960px-Laika_ac_Mt._Paekdu_%287998657081%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "白頭山（長白山）山頂のカルデラ湖・天池",
+    "credit": "Wikimedia Commons（出典: Mount Paektu）"
+  },
+  "pl_chernozem": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mollisol.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "チェルノーゼム（黒土）の土壌断面・肥沃黒土",
+    "credit": "Wikimedia Commons（出典: Chernozem）"
+  },
+  "pl_terra_roxa": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fazenda_Da_Lagoa.jpg/960px-Fazenda_Da_Lagoa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "テラローシャ（ブラジル南部の赤紫色土・コーヒー畑）",
+    "credit": "Wikimedia Commons（出典: Coffee production in Brazil）"
+  },
+  "pl_regur": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/India_Geology_Zones.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "レグール（デカン高原・玄武岩溶岩台地と綿花畑）",
+    "credit": "Wikimedia Commons（出典: Deccan Traps）"
+  },
+  "pl_latosol": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Laterite_monument._C_002.jpg/960px-Laterite_monument._C_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ラトソル（熱帯地域の酸化鉄を含む赤色土断面）",
+    "credit": "Wikimedia Commons（出典: Laterite）"
+  },
+  "pl_podzol": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Podzol.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "ポドゾル（タイガ帯の強酸性灰白色土の断面）",
+    "credit": "Wikimedia Commons（出典: Podzol）"
+  },
+  "pl_terra_rossa": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Olivesfromjordan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "テラロッサ（地中海石灰岩由来の赤土とブドウ・オリーブ畑）",
+    "credit": "Wikimedia Commons（出典: Olive）"
+  },
+  "pl_andosol": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Andisol_profile.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "黒ボク土・火山灰土の土壌断面",
+    "credit": "Wikimedia Commons（出典: Andosol）"
+  },
+  "pl_kastanozem": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Steppe_of_western_Kazakhstan_in_the_early_spring.jpg/960px-Steppe_of_western_Kazakhstan_in_the_early_spring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "栗色土・ステップ草原風景",
+    "credit": "Wikimedia Commons（出典: Kazakh Steppe）"
+  },
+  "pl_tundra_soil": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Greenland_scoresby-sydkapp2_hg.jpg/960px-Greenland_scoresby-sydkapp2_hg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ツンドラ土と北極圏永久凍土景観",
+    "credit": "Wikimedia Commons（出典: Tundra）"
+  },
+  "pl_loess": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Loess_landscape_china.jpg/960px-Loess_landscape_china.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "中国・黄土高原の黄土（レス）段丘",
+    "credit": "Wikimedia Commons（出典: Loess Plateau）"
+  },
+  "pl_alluvial": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Waimakariri02_gobeirne.jpg/960px-Waimakariri02_gobeirne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "河川堆積の沖積土が広がる平野と水田",
+    "credit": "Wikimedia Commons（出典: Alluvial plain）"
+  },
+  "pl_pampa": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/SerraGeralI.jpg/960px-SerraGeralI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "アルゼンチン・パンパの広大な温帯草原",
+    "credit": "Wikimedia Commons（出典: Pampas）"
+  },
+  "pl_pampa_humid": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Casa_y_monta%C3%B1a.jpg/960px-Casa_y_monta%C3%B1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "湿潤パンパの豊かな穀物・大豆農業地帯",
+    "credit": "Wikimedia Commons（出典: Buenos Aires Province）"
+  },
+  "pl_pampa_dry": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Gaucho1868b.jpg/960px-Gaucho1868b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "乾燥パンパの草原とガウチョの牛放牧",
+    "credit": "Wikimedia Commons（出典: Gaucho）"
+  },
+  "pl_llanos": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Aterdecer_En_Los_Llanos_De_Apure_%2846754808%29.jpeg/960px-Aterdecer_En_Los_Llanos_De_Apure_%2846754808%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "リャノ（オリノコ川流域の熱帯サバナ草原と牧畜）",
+    "credit": "Wikimedia Commons（出典: Apure）"
+  },
+  "pl_selva": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Amazon17_%285641020319%29.jpg/960px-Amazon17_%285641020319%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "セルバ（アマゾン川流域の広大な熱帯雨林）",
+    "credit": "Wikimedia Commons（出典: Amazon rainforest）"
+  },
+  "pl_campo": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/SerraGeralI.jpg/960px-SerraGeralI.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カンポ（ブラジル南部の草原と牧場）",
+    "credit": "Wikimedia Commons（出典: Pampas）"
+  },
+  "pl_cerrado": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Morro_cabeludo_-_Parque_dos_Pireneus_-_Piren%C3%B3polis_-_Goi%C3%A1s_01.jpg/960px-Morro_cabeludo_-_Parque_dos_Pireneus_-_Piren%C3%B3polis_-_Goi%C3%A1s_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "セラード（ブラジル中央高原の大豆開拓地帯）",
+    "credit": "Wikimedia Commons（出典: Cerrado）"
+  },
+  "pl_caatinga": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Um_mundo_chamado_Sert%C3%A3o.jpg/960px-Um_mundo_chamado_Sert%C3%A3o.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カーチンガ（ブラジル北東部の半乾燥有刺低木林）",
+    "credit": "Wikimedia Commons（出典: Caatinga）"
+  },
+  "pl_gran_chaco": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Chaco_Boreal_Paraguay.jpg/960px-Chaco_Boreal_Paraguay.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "グランチャコ（南米中央の半乾燥疎林）",
+    "credit": "Wikimedia Commons（出典: Gran Chaco）"
+  },
+  "pl_patagonia": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/1952-01-31_-_Lionel_Terray%2C_Fitzroy%2C_d%C3%A9dicace_-_NB.jpg/960px-1952-01-31_-_Lionel_Terray%2C_Fitzroy%2C_d%C3%A9dicace_-_NB.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "パタゴニア（アンデス風下の乾燥ステップ・山岳）",
+    "credit": "Wikimedia Commons（出典: Fitz Roy）"
+  },
+  "pl_prairie": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Crops_Kansas_AST_20010624.jpg/960px-Crops_Kansas_AST_20010624.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "北米プレーリー・グレートプレーンズの小麦・センターピボット",
+    "credit": "Wikimedia Commons（出典: Center-pivot irrigation）"
+  },
+  "pl_sunbelt": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Silicon_Valley%2C_facing_southward_towards_Downtown_San_Jose%2C_2014_%28cropped%29.jpg/960px-Silicon_Valley%2C_facing_southward_towards_Downtown_San_Jose%2C_2014_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "米国サンベルト（シリコンバレー／先端産業拠点）",
+    "credit": "Wikimedia Commons（出典: Silicon Valley）"
+  },
+  "pl_rustbelt": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Ascending_the_Duquesne_Incline.jpg/960px-Ascending_the_Duquesne_Incline.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "米国ラストベルト（ピッツバーグ等旧製鉄・工業景観）",
+    "credit": "Wikimedia Commons（出典: Pittsburgh）"
+  },
+  "pl_sahel": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Mud_Mosque_-_Bani_-_Sahel_Region_-_Burkina_Faso_-_02.jpg/960px-Mud_Mosque_-_Bani_-_Sahel_Region_-_Burkina_Faso_-_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "サヘル地帯の乾燥サバナ草原景観",
+    "credit": "Wikimedia Commons（出典: Sahel）"
+  },
+  "pl_qinling": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Part_of_Qinling_mountains.jpg/960px-Part_of_Qinling_mountains.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "秦嶺山脈（中国の南北気候・農業境界）",
+    "credit": "Wikimedia Commons（出典: Qinling）"
+  },
+  "pl_ruhr": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Zeche_Zollverein_abends.jpg/960px-Zeche_Zollverein_abends.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ドイツ・ルール工業地域の産業遺産・ツォルフェアアイン",
+    "credit": "Wikimedia Commons（出典: Zollverein Coal Mine Industrial Complex）"
+  },
+  "pl_polder": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/KinderdijkMolens02.jpg/960px-KinderdijkMolens02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "オランダの干拓地ポルダー（運河・風車）",
+    "credit": "Wikimedia Commons（出典: Kinderdijk）"
+  },
+  "pl_fergana": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/RegistanSquare_Samarkand.jpg/960px-RegistanSquare_Samarkand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "フェルガナ盆地と中央アジアのオアシス灌漑",
+    "credit": "Wikimedia Commons（出典: Samarkand）"
+  },
+  "pl_maquiladora": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Templo_Tijuana_Mexico_%28cropped%29.jpg/960px-Templo_Tijuana_Mexico_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "メキシコ北部の米国国境都市ティフアナ・工業地域",
+    "credit": "Wikimedia Commons（出典: Tijuana）"
+  },
+  "pl_pilbara": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Dales_Gorge%2C_WA.jpg/960px-Dales_Gorge%2C_WA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "オーストラリア・ピルバラ地域の赤色鉄鉱石地層",
+    "credit": "Wikimedia Commons（出典: Karijini National Park）"
+  },
+  "pl_great_artesian": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Dalhousie_Springs_in_Witjira_National_Park_-_steps_into_the_warm_water.JPG/960px-Dalhousie_Springs_in_Witjira_National_Park_-_steps_into_the_warm_water.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "オーストラリア内陸アウトバックの湧水・牧畜景観",
+    "credit": "Wikimedia Commons（出典: Dalhousie Springs）"
+  },
+  "pl_hawaii": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/NaPali_overlook_Kalalau_Valley.jpg/960px-NaPali_overlook_Kalalau_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ハワイ火山列島の自然景観",
+    "credit": "Wikimedia Commons（出典: Nā Pali Coast State Park）"
+  },
+  "pl_tibet": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "平均標高4000m超のチベット高原とラサ",
+    "credit": "Wikimedia Commons（出典: Potala Palace）"
+  },
+  "pl_niger_delta": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Pitakwa.jpg/960px-Pitakwa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ニジェール川デルタの水路・マングローブ湿地",
+    "credit": "Wikimedia Commons（出典: Port Harcourt）"
+  },
+  "pl_katanga": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Lubumbashi_Cathedral.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "カタンガ地方（カッパーベルト）の鉱山開発",
+    "credit": "Wikimedia Commons（出典: Lubumbashi）"
+  },
+  "pl_hokkaido": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Biei_Hokkaido.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "北海道・十勝平野や美瑛の大規模畑作景観",
+    "credit": "Wikimedia Commons（出典: Biei）"
+  },
+  "pl_shenzhen": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Commercial_area_of_futian_to_east2020.jpg/960px-Commercial_area_of_futian_to_east2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "経済特区から巨大ICT都市へ成長した深セン",
+    "credit": "Wikimedia Commons（出典: Shenzhen）"
+  },
+  "pl_hsinchu": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E6%96%B0%E7%AB%B9%E7%81%AB%E8%BB%8A%E7%AB%99%28%E5%B7%B4%E6%B4%9B%E5%85%8B%E9%A2%A8%E6%A0%BC%29.jpg/960px-%E6%96%B0%E7%AB%B9%E7%81%AB%E8%BB%8A%E7%AB%99%28%E5%B7%B4%E6%B4%9B%E5%85%8B%E9%A2%A8%E6%A0%BC%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "台湾の半導体集積地・新竹",
+    "credit": "Wikimedia Commons（出典: Hsinchu）"
+  },
+  "pl_baku": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Baku_city_at_night.jpg/960px-Baku_city_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "カスピ海西岸バクーの市街と産油地域",
+    "credit": "Wikimedia Commons（出典: Baku）"
+  },
+  "pl_aswan": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/BarragemAssu%C3%A3o.jpg/960px-BarragemAssu%C3%A3o.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "ナイル川を制御するアスワン・ハイ・ダム",
+    "credit": "Wikimedia Commons（出典: Aswan High Dam）"
+  }
+}

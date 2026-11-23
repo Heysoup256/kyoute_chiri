@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kyoute-chiri.local/schemas/schema_v1.json",
+  "title": "共テ地理ナビ データスキーマ v1",
+  "description": "大学入学共通テスト「地理総合・地理探究」対策アプリ用の国別データおよび過去問データ定義",
+  "type": "object",
+  "$defs": {
+    "ImportanceRank": {
+      "type": "string",
+      "enum": ["S", "A", "B", "C"],
+      "description": "共通テストにおける重要度・出題頻度ランク"
+    },
+    "PastExamRef": {
+      "type": "object",
+      "required": ["examId", "questionLabel"],
+      "properties": {
+        "examId": {
+          "type": "string",
+          "description": "試験識別子（例: 2025_main, 2024_makeup）"
+        },
+        "questionId": {
+          "type": "string",
+          "description": "past_exams_v1.json 内の設問ID（任意）"
+        },
+        "questionLabel": {
+          "type": "string",
+          "description": "設問表記（例: 第1問 問2）"
+        },
+        "note": {
+          "type": "string",
+          "description": "出題内容の補足メモ"
+        }
+      }
+    },
+    "ExamMeta": {
+      "type": "object",
+      "required": ["isFrequent", "importance", "pastExamRefs"],
+      "properties": {
+        "isFrequent": {
+          "type": "boolean",
+          "description": "★共テ頻出バッジを表示するか"
+        },
+        "importance": {
+          "$ref": "#/$defs/ImportanceRank"
+        },
+        "pastExamRefs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PastExamRef" }
+        }
+      }
+    },
+    "KnowledgeItem": {
+      "type": "object",
+      "required": ["id", "label", "examMeta"],
+      "properties": {
+        "id": { "type": "string" },
+        "category": { "type": "string" },
+        "label": { "type": "string" },
+        "detail": { "type": "string" },
+        "worldRank": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "worldRankNote": { "type": "string" },
+        "clozeTerms": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "ブラインド（暗記確認）モードでマスク対象とする重要語句"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "examMeta": { "$ref": "#/$defs/ExamMeta" }
+      }
+    },
+    "ClimateCity": {
+      "type": "object",
+      "required": [
+        "cityId",
+        "nameJa",
+        "lat",
+        "lng",
+        "koppenCode",
+        "factors",
+        "monthlyTempC",
+        "monthlyPrecipMm",
+        "examMeta"
+      ],
+      "properties": {
+        "cityId": { "type": "string" },
+        "nameJa": { "type": "string" },
+        "nameEn": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "elevationM": { "type": ["number", "null"] },
+        "koppenCode": { "type": "string" },
+        "koppenNameJa": { "type": "string" },
+        "factors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "気候の成因（偏西風、寒流、隔海度など）"
+        },
+        "monthlyTempC": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": { "type": "number" },
+          "description": "1月〜12月の月平均気温（℃）"
+        },
+        "monthlyPrecipMm": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": { "type": "number", "minimum": 0 },
+          "description": "1月〜12月の月降水量（mm）"
+        },
+        "dataSource": { "type": "string" },
+        "examMeta": { "$ref": "#/$defs/ExamMeta" }
+      }
+    },
+    "CountryData": {
+      "type": "object",
+      "required": [
+        "iso3",
+        "nameJa",
+        "nameEn",
+        "region",
+        "subRegion",
+        "capital",
+        "examSummary",
+        "nature",
+        "climate",
+        "industry",
+        "cultureAndHistory"
+      ],
+      "properties": {
+        "iso3": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "nameJa": { "type": "string" },
+        "nameEn": { "type": "string" },
+        "region": { "type": "string" },
+        "subRegion": { "type": "string" },
+        "capital": { "type": "string" },
+        "examSummary": {
+          "type": "object",
+          "required": ["rank", "appearanceCount", "years", "frequentTopics"],
+          "properties": {
+            "rank": { "$ref": "#/$defs/ImportanceRank" },
+            "manualRankOverride": {
+              "oneOf": [
+                { "$ref": "#/$defs/ImportanceRank" },
+                { "type": "null" }
+              ]
+            },
+            "appearanceCount": { "type": "integer", "minimum": 0 },
+            "years": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "frequentTopics": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "nature": {
+          "type": "object",
+          "required": ["orogenicBelts", "items"],
+          "properties": {
+            "orogenicBelts": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "summary": { "type": "string" },
+            "items": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/KnowledgeItem" }
+            }
+          }
+        },
+        "climate": {
+          "type": "object",
+          "required": ["koppenCodes", "summary", "cities"],
+          "properties": {
+            "koppenCodes": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "summary": { "type": "string" },
+            "cities": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/ClimateCity" }
+            }
+          }
+        },
+        "industry": {
+          "type": "object",
+          "required": [
+            "whittleseyTypes",
+            "agriculture",
+            "resourcesAndEnergy",
+            "industrialRegions",
+            "trade"
+          ],
+          "properties": {
+            "whittleseyTypes": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "agriculture": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/KnowledgeItem" }
+            },
+            "resourcesAndEnergy": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/KnowledgeItem" }
+            },
+            "industrialRegions": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/KnowledgeItem" }
+            },
+            "trade": {
+              "type": "object",
+              "required": ["majorExports", "majorPartners"],
+              "properties": {
+                "majorExports": { "type": "array", "items": { "type": "string" } },
+                "majorImports": { "type": "array", "items": { "type": "string" } },
+                "majorPartners": { "type": "array", "items": { "type": "string" } },
+                "note": { "type": "string" }
+              }
+            }
+          }
+        },
+        "cultureAndHistory": {
+          "type": "object",
+          "required": [
+            "languageFamily",
+            "officialLanguages",
+            "religions",
+            "ethnicGroups",
+            "regionalIntegrations",
+            "historicalContext"
+          ],
+          "properties": {
+            "languageFamily": { "type": "string" },
+            "officialLanguages": { "type": "array", "items": { "type": "string" } },
+            "religions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "percent": { "type": ["number", "null"] }
+                }
+              }
+            },
+            "ethnicGroups": { "type": "array", "items": { "type": "string" } },
+            "regionalIntegrations": { "type": "array", "items": { "type": "string" } },
+            "historicalContext": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/KnowledgeItem" }
+            }
+          }
+        }
+      }
+    },
+    "CountriesDataset": {
+      "type": "object",
+      "required": ["schemaVersion", "generatedAt", "examCoverage", "countries"],
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "examCoverage": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "countries": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/CountryData" }
+        }
+      }
+    },
+    "PastExamQuestion": {
+      "type": "object",
+      "required": [
+        "questionId",
+        "examId",
+        "year",
+        "session",
+        "questionLabel",
+        "title",
+        "relatedCountries",
+        "topicTags",
+        "choicesCount",
+        "correctAnswer"
+      ],
+      "properties": {
+        "questionId": { "type": "string" },
+        "examId": { "type": "string" },
+        "year": { "type": "integer" },
+        "session": { "type": "string", "enum": ["main", "makeup"] },
+        "sessionLabel": { "type": "string" },
+        "questionLabel": { "type": "string" },
+        "title": { "type": "string" },
+        "promptSummary": { "type": "string" },
+        "relatedCountries": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{3}$" }
+        },
+        "relatedLayerIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "topicTags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "clipImagePath": { "type": ["string", "null"] },
+        "clipPdfPath": { "type": ["string", "null"] },
+        "choicesCount": { "type": "integer", "minimum": 2, "maximum": 8 },
+        "choiceLabels": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "correctAnswer": { "type": "integer", "minimum": 1 },
+        "explanation": { "type": "string" },
+        "isPrototypeSample": { "type": "boolean" }
+      }
+    },
+    "PastExamsDataset": {
+      "type": "object",
+      "required": ["schemaVersion", "generatedAt", "questions"],
+      "properties": {
+        "schemaVersion": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "questions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PastExamQuestion" }
+        }
+      }
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/$defs/CountriesDataset" },
+    { "$ref": "#/$defs/PastExamsDataset" }
+  ]
+}
