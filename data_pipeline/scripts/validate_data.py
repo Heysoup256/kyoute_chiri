@@ -233,12 +233,13 @@ def main() -> None:
     wr = json.loads((DATA_DIR / "world_rankings_v1.json").read_text(encoding="utf-8"))
     sg = json.loads((DATA_DIR / "systematic_geography_v1.json").read_text(encoding="utf-8"))
     jg = json.loads((DATA_DIR / "japan_geography_v1.json").read_text(encoding="utf-8"))
-    if len(wr.get("items", [])) < 30 or len(wr.get("scatters", [])) < 2:
-        errors.append("world_rankings_v1.json の品目または散布図数が不足しています")
-    if len(sg.get("topics", [])) < 30:
-        errors.append("systematic_geography_v1.json のトピック数が30未満です")
-    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 5:
-        errors.append("japan_geography_v1.json の地方または地形図スキル数が不足しています")
+    if len(wr.get("items", [])) < 50 or len(wr.get("scatters", [])) < 4 or len(wr.get("comparisonCharts", [])) < 8 or len(wr.get("flowMaps", [])) < 5:
+        errors.append("world_rankings_v1.json の品目・散布図・比較グラフまたはフロー地図数が不足しています")
+    if len(sg.get("categories", [])) < 7 or len(sg.get("topics", [])) < 45:
+        errors.append("systematic_geography_v1.json のカテゴリ数(7以上)またはトピック数(45以上)が不足しています")
+    dom = jg.get("domesticStats") or {}
+    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 4 or len(dom.get("prefRankings", [])) < 8:
+        errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データが不足しています")
 
     if errors:
         print("VALIDATION FAILED:")

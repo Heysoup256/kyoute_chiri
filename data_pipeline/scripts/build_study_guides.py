@@ -23,6 +23,31 @@ def load_valid_iso3_set() -> set[str]:
     return set(data.get("countries", {}).keys())
 
 
+def validate_guide_charts(ctx: str, charts: list[dict]) -> list[str]:
+    errs: list[str] = []
+    for ch in charts:
+        cid = ch.get("id", "?")
+        kind = ch.get("kind")
+        cats = ch.get("categories") or []
+        series = ch.get("series") or []
+        if not series:
+            errs.append(f"{ctx} chart {cid}: empty series")
+            continue
+        if cats:
+            for s in series:
+                vals = s.get("values") or []
+                if len(vals) != len(cats):
+                    errs.append(
+                        f"{ctx} chart {cid} series '{s.get('name')}': values len {len(vals)} != categories len {len(cats)}"
+                    )
+        if kind == "stacked_bar" and cats:
+            for i in range(len(cats)):
+                total = sum(float((s.get("values") or [0])[i]) for s in series)
+                if abs(total - 100.0) > 2.5:
+                    errs.append(f"{ctx} chart {cid} cat '{cats[i]}': stacked_bar sum={total} != 100")
+    return errs
+
+
 def build_world_rankings(valid_iso3s: set[str]) -> list[str]:
     src = RAW_DIR / "world_rankings_v1.json"
     if not src.exists():
@@ -58,6 +83,7 @@ def build_world_rankings(valid_iso3s: set[str]) -> list[str]:
                 errors.append(f"world_rankings_v1 scatter {sc.get('id')}: unknown iso3 {iso}")
 
     comp_charts = data.get("comparisonCharts", [])
+    errors.extend(validate_guide_charts("world_rankings", comp_charts))
     flow_maps = data.get("flowMaps", [])
     for fm in flow_maps:
         for arc in fm.get("arcs", []):
@@ -86,14 +112,18 @@ def build_systematic_guide(valid_iso3s: set[str]) -> list[str]:
     topics = data.get("topics", [])
     if len(topics) < 20:
         errors.append(f"systematic_geography_v1: topics count too low ({len(topics)})")
+    chart_count = 0
     for t in topics:
         for iso in t.get("relatedCountries", []):
             if iso not in valid_iso3s:
                 errors.append(f"systematic {t.get('id')}: unknown iso3 {iso}")
+        t_charts = t.get("charts") or []
+        chart_count += len(t_charts)
+        errors.extend(validate_guide_charts(f"systematic/{t.get('id')}", t_charts))
     if not errors:
         out = DATA_DIR / "systematic_geography_v1.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"Built {out.name}: categories={len(data.get('categories', []))}, topics={len(topics)}")
+        print(f"Built {out.name}: categories={len(data.get('categories', []))}, topics={len(topics)}, embeddedCharts={chart_count}")
     return errors
 
 
@@ -112,6 +142,8 @@ def build_japan_guide(valid_iso3s: set[str]) -> list[str]:
         errors.append(f"japan_geography_v1: mapSkills count < 5 ({len(map_skills)})")
     if "JPN" not in valid_iso3s:
         errors.append("JPN missing in countries_v1.json")
+    dom = data.get("domesticStats") or {}
+    errors.extend(validate_guide_charts("japan_domestic", dom.get("charts") or []))
     if not errors:
         out = DATA_DIR / "japan_geography_v1.json"
         out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")

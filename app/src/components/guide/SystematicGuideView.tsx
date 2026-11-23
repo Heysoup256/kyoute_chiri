@@ -1,11 +1,15 @@
 import {
   AlertTriangle,
+  BarChart3,
   BookOpen,
   CheckCircle2,
   ChevronRight,
   Globe2,
+  Layers,
   MapPin,
   Search,
+  Sparkles,
+  Table2,
 } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import type {
@@ -16,6 +20,7 @@ import type {
 import type { PlaceMatcher } from '../../utils/places';
 import { RichGeoText } from '../study/RichGeoText';
 import { GeoDiagramRenderer } from './GeoDiagrams';
+import { GuideChartCard } from './GuideChartCard';
 
 interface SystematicGuideViewProps {
   dataset: SystematicGuideDataset | null;
@@ -27,8 +32,8 @@ interface SystematicGuideViewProps {
 }
 
 /**
- * 系統地理・地図/GIS・防災・生活文化マスター図鑑ビュー
- * （5大カテゴリ × 35トピック ＋ 軽量SVG模式図 ＋ 比較表 ＋ 地図タップ連動）
+ * 系統地理・地図/GIS・防災・農林水・工業・宗教文化マスター図鑑ビュー
+ * （7大カテゴリ × 45+トピック ＋ 軽量SVG模式図19種 ＋ ECharts統計グラフ ＋ 比較表 ＋ 深掘り解説）
  */
 export function SystematicGuideView({
   dataset,
@@ -56,7 +61,8 @@ export function SystematicGuideView({
     const kw = keyword.trim().toLowerCase();
     return dataset.topics.filter((t) => {
       if (kw) {
-        const hay = `${t.title} ${t.summary} ${t.keyPoints.join(' ')} ${t.examTraps.join(' ')} ${t.tags.join(' ')}`.toLowerCase();
+        const deepTxt = (t.deepDive ?? []).map((d) => `${d.heading} ${d.body}`).join(' ');
+        const hay = `${t.title} ${t.summary} ${t.keyPoints.join(' ')} ${t.examTraps.join(' ')} ${deepTxt} ${t.tags.join(' ')}`.toLowerCase();
         return hay.includes(kw);
       }
       return t.categoryId === selectedCategory;
@@ -83,7 +89,7 @@ export function SystematicGuideView({
       {/* 上部カテゴリ＆検索バー */}
       <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2.5 md:px-6">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+          <div className="flex min-w-0 flex-1 items-center gap-1.5 overflow-x-auto pb-0.5">
             {dataset.categories.map((cat) => {
               const active = !keyword.trim() && selectedCategory === cat.id;
               return (
@@ -114,20 +120,20 @@ export function SystematicGuideView({
               type="text"
               value={keyword}
               onChange={(e) => setKeyword(e.target.value)}
-              placeholder="系統用語を検索（例: 扇状地, ウェーバー）"
+              placeholder="系統用語を検索（例: カトリック, 半導体, ケスタ）"
               className="w-full rounded-lg border border-slate-300 bg-slate-50 py-1.5 pl-8 pr-2.5 text-xs font-medium text-slate-800 focus:border-indigo-500 focus:bg-white focus:outline-none"
             />
           </div>
         </div>
       </div>
 
-      {/* メイン2ペイン（左/上: トピック一覧 / 右: 記事＋SVG図解＋表） */}
+      {/* メイン2ペイン（左/上: トピック一覧 / 右: 記事＋SVG図解＋グラフ＋深掘り＋表） */}
       <div className="min-h-0 flex-1 overflow-y-auto md:overflow-hidden">
         <div className="mx-auto flex h-full max-w-6xl flex-col md:flex-row">
-          {/* トピック一覧（スマホ: 横スクロールチップ / PC: 左サイドメニュー） */}
+          {/* トピック一覧 */}
           <nav
             aria-label="系統トピック選択"
-            className="shrink-0 border-b border-slate-200 bg-white p-2.5 md:h-full md:w-72 md:overflow-y-auto md:border-b-0 md:border-r md:p-3"
+            className="shrink-0 border-b border-slate-200 bg-white p-2.5 md:h-full md:w-76 md:overflow-y-auto md:border-b-0 md:border-r md:p-3"
           >
             {activeCatMeta && !keyword.trim() && (
               <p className="mb-2 hidden text-[11px] leading-snug text-slate-500 md:block">
@@ -137,6 +143,9 @@ export function SystematicGuideView({
             <div className="flex gap-1.5 overflow-x-auto pb-1 md:flex-col md:overflow-x-visible md:pb-0">
               {filteredTopics.map((topic) => {
                 const isSel = topic.id === activeTopic?.id;
+                const hasDiag = Boolean(topic.diagramId);
+                const hasCharts = Boolean(topic.charts && topic.charts.length > 0);
+                const hasTables = Boolean(topic.tables && topic.tables.length > 0);
                 return (
                   <button
                     key={topic.id}
@@ -148,7 +157,31 @@ export function SystematicGuideView({
                         : 'border-slate-200 bg-slate-50/70 text-slate-700 hover:bg-slate-100'
                     }`}
                   >
-                    <span className="line-clamp-2">{topic.title}</span>
+                    <div className="min-w-0 flex-1">
+                      <span className="line-clamp-2">{topic.title}</span>
+                      {(hasDiag || hasCharts || hasTables) && (
+                        <div className="mt-1 flex flex-wrap gap-1">
+                          {hasDiag && (
+                            <span className="inline-flex items-center gap-0.5 rounded bg-sky-100 px-1.5 py-0.5 text-[9.5px] font-bold text-sky-800">
+                              <Layers className="h-2.5 w-2.5" />
+                              図解
+                            </span>
+                          )}
+                          {hasCharts && (
+                            <span className="inline-flex items-center gap-0.5 rounded bg-emerald-100 px-1.5 py-0.5 text-[9.5px] font-bold text-emerald-800">
+                              <BarChart3 className="h-2.5 w-2.5" />
+                              グラフ
+                            </span>
+                          )}
+                          {hasTables && (
+                            <span className="inline-flex items-center gap-0.5 rounded bg-violet-100 px-1.5 py-0.5 text-[9.5px] font-bold text-violet-800">
+                              <Table2 className="h-2.5 w-2.5" />
+                              表
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
                     <ChevronRight className="hidden h-3.5 w-3.5 shrink-0 md:block" />
                   </button>
                 );
@@ -197,6 +230,19 @@ export function SystematicGuideView({
                   <GeoDiagramRenderer diagramId={activeTopic.diagramId} />
                 )}
 
+                {/* 埋め込みECharts統計グラフ */}
+                {activeTopic.charts && activeTopic.charts.length > 0 && (
+                  <div
+                    className={`grid grid-cols-1 gap-4 ${
+                      activeTopic.charts.length > 1 ? 'xl:grid-cols-2' : ''
+                    }`}
+                  >
+                    {activeTopic.charts.map((ch) => (
+                      <GuideChartCard key={ch.id} spec={ch} />
+                    ))}
+                  </div>
+                )}
+
                 {/* 核心メカニズム・箇条書き */}
                 <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs">
                   <h3 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
@@ -220,6 +266,33 @@ export function SystematicGuideView({
                     ))}
                   </ul>
                 </section>
+
+                {/* 深掘りメカニズム・詳細背景解説 */}
+                {activeTopic.deepDive && activeTopic.deepDive.length > 0 && (
+                  <section className="rounded-2xl border border-indigo-200/80 bg-indigo-50/35 p-4 shadow-2xs">
+                    <div className="mb-2.5 flex items-center gap-1.5 text-xs font-extrabold text-indigo-900">
+                      <Sparkles className="h-4 w-4 text-indigo-600" />
+                      深掘り背景知識・原理の整理
+                    </div>
+                    <div className="grid grid-cols-1 gap-2.5 lg:grid-cols-2">
+                      {activeTopic.deepDive.map((dd, dIdx) => (
+                        <div
+                          key={dIdx}
+                          className="rounded-xl border border-indigo-100 bg-white p-3"
+                        >
+                          <h4 className="text-xs font-extrabold text-indigo-950">{dd.heading}</h4>
+                          <p className="mt-1 text-xs leading-relaxed text-slate-700">
+                            <RichGeoText
+                              text={dd.body}
+                              placeMatcher={placeMatcher}
+                              onFocusPlace={onFocusPlace}
+                            />
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )}
 
                 {/* 比較表 */}
                 {activeTopic.tables?.map((tbl, tIdx) => (

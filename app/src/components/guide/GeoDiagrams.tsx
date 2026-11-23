@@ -1,9 +1,39 @@
+import { ExtraGeoDiagramRenderer } from './GeoDiagramsExtra';
+
+const BASE_DIAGRAM_IDS = new Set([
+  'river_landform',
+  'plate_depth',
+  'koppen_flow',
+  'soil_zonation',
+  'co2_hemisphere',
+  'settlement_patterns',
+  'urban_structure',
+  'demographic_transition',
+  'contour_landforms',
+]);
+
+const EXTRA_DIAGRAM_IDS = new Set([
+  'erosion_cuesta_terrace',
+  'coastal_landforms',
+  'atmospheric_circulation',
+  'koppen_ideal_continent',
+  'ocean_currents_gyre',
+  'whittlesey_thunen',
+  'weber_industrial',
+  'religion_tree',
+  'language_tree',
+  'japan_tectonics_climate',
+]);
+
 /**
- * 系統地理・日本地形図マスター用の軽量インラインSVG模式図群
+ * 系統地理・日本地形図マスター用の軽量インラインSVG模式図群（全19種）
  * （暗記モードなし：視覚的構造・メカニズムを一目で理解・記憶するための図解コンポーネント）
  */
 export function GeoDiagramRenderer({ diagramId }: { diagramId?: string }) {
   if (!diagramId) return null;
+  const isBase = BASE_DIAGRAM_IDS.has(diagramId);
+  const isExtra = EXTRA_DIAGRAM_IDS.has(diagramId);
+  if (!isBase && !isExtra) return null;
 
   return (
     <div className="overflow-hidden rounded-xl border border-slate-200 bg-white p-3 shadow-2xs">
@@ -16,6 +46,7 @@ export function GeoDiagramRenderer({ diagramId }: { diagramId?: string }) {
       {diagramId === 'urban_structure' && <UrbanStructureSvg />}
       {diagramId === 'demographic_transition' && <DemographicTransitionSvg />}
       {diagramId === 'contour_landforms' && <ContourLandformsSvg />}
+      {isExtra && <ExtraGeoDiagramRenderer diagramId={diagramId} />}
     </div>
   );
 }
