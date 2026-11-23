@@ -1,5 +1,6 @@
 # 著作権保護対象（過去問PDF・問題切り抜き画像）は公開リポジトリから除外
 共テ地理過去問/
+高校地理資料/
 data_pipeline/raw/wayback_pdfs/
 app/public/data/clips/
 
