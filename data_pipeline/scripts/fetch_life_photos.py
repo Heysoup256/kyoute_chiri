@@ -13,16 +13,16 @@ IN_PATH = RAW_DIR / "country_overviews_and_life_v1.json"
 OUT_PATH = RAW_DIR / "life_photos_v1.json"
 
 WIKI_API = "https://en.wikipedia.org/w/api.php"
-REJECT_SUBSTRS = (".svg", "flag_of_", "locator_map", "location_map", "coat_of_arms", "emblem_of")
+REJECT_SUBSTRS = (".svg", ".png", "flag_of_", "locator", "location_map", "coat_of_arms", "emblem_of", "topo_map", "topographic", "watershed", "chart", "relief")
 
 
 def is_usable_photo_url(url: str | None) -> bool:
-    if not url or not url.startswith("http"):
+    if not url or not url.startswith("https://"):
         return False
-    low = url.lower()
+    low = url.lower().split("?")[0]
     if any(bad in low for bad in REJECT_SUBSTRS):
         return False
-    return any(ext in low for ext in (".jpg", ".jpeg", ".png", ".webp"))
+    return any(ext in low for ext in (".jpg", ".jpeg", ".webp"))
 
 
 def query_pageimages(titles: list[str]) -> dict[str, dict[str, str]]:
@@ -75,9 +75,17 @@ def query_pageimages(titles: list[str]) -> dict[str, dict[str, str]]:
 
 def main() -> None:
     data = json.loads(IN_PATH.read_text(encoding="utf-8"))
+    existing_out: dict[str, list[dict[str, str]]] = (
+        json.loads(OUT_PATH.read_text(encoding="utf-8")) if OUT_PATH.exists() else {}
+    )
+    missing_isos = [
+        iso3 for iso3 in sorted(data)
+        if not existing_out.get(iso3) or len(existing_out.get(iso3, [])) < 1
+    ]
     all_titles: list[str] = []
     seen: set[str] = set()
-    for entry in data.values():
+    for iso3 in missing_isos:
+        entry = data[iso3]
         targets = entry.get("wikiPhotoTargets") or entry.get("dailyLife", {}).get("wikiPhotoTargets", [])
         for target in targets:
             candidates = [target["title"], *target.get("fallbackTitles", [])]
@@ -86,12 +94,13 @@ def main() -> None:
                     seen.add(t)
                     all_titles.append(t)
 
-    print(f"Querying Wikipedia pageimages for {len(all_titles)} candidate titles...")
-    found_map = query_pageimages(all_titles)
+    print(f"Missing countries to fetch: {len(missing_isos)}, querying {len(all_titles)} candidate titles...")
+    found_map = query_pageimages(all_titles) if all_titles else {}
 
-    out: dict[str, list[dict[str, str]]] = {}
+    out: dict[str, list[dict[str, str]]] = dict(existing_out)
     missing: list[tuple[str, str]] = []
-    for iso3, entry in sorted(data.items()):
+    for iso3 in missing_isos:
+        entry = data[iso3]
         photos: list[dict[str, str]] = []
         used_urls: set[str] = set()
         targets = entry.get("wikiPhotoTargets") or entry.get("dailyLife", {}).get("wikiPhotoTargets", [])

@@ -17,12 +17,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Shibuya Crossing",
-          "fallbackTitles": ["Shinkansen", "Tokyo Station"],
+          "fallbackTitles": [
+            "Shinkansen",
+            "Tokyo Station"
+          ],
           "caption": "東京・渋谷駅前の交差点と都市の日常風景"
         },
         {
           "title": "Washoku",
-          "fallbackTitles": ["Ramen", "Bento"],
+          "fallbackTitles": [
+            "Ramen",
+            "Bento"
+          ],
           "caption": "米・汁物・魚を中心とする日常の和食"
         }
       ]
@@ -46,12 +52,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Hutong",
-          "fallbackTitles": ["Nanjing Road", "Beijing Subway"],
+          "fallbackTitles": [
+            "Nanjing Road",
+            "Beijing Subway"
+          ],
           "caption": "北京の伝統的な路地「胡同（フートン）」の街並み"
         },
         {
           "title": "Dim sum",
-          "fallbackTitles": ["Jiaozi", "Chinese cuisine"],
+          "fallbackTitles": [
+            "Jiaozi",
+            "Chinese cuisine"
+          ],
           "caption": "地域色豊かな中華の点心・日常料理"
         }
       ]
@@ -75,12 +87,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Myeong-dong",
-          "fallbackTitles": ["Seoul Metropolitan Subway", "Bukchon Hanok Village"],
+          "fallbackTitles": [
+            "Seoul Metropolitan Subway",
+            "Bukchon Hanok Village"
+          ],
           "caption": "ソウル都心・明洞周辺の繁華街と人々"
         },
         {
           "title": "Kimchi",
-          "fallbackTitles": ["Bibimbap", "Korean cuisine"],
+          "fallbackTitles": [
+            "Bibimbap",
+            "Korean cuisine"
+          ],
           "caption": "朝鮮半島の食卓に欠かせない伝統の発酵食キムチ"
         }
       ]
@@ -104,12 +122,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Shilin Night Market",
-          "fallbackTitles": ["Taipei Metro", "Raohe Street Night Market"],
+          "fallbackTitles": [
+            "Taipei Metro",
+            "Raohe Street Night Market"
+          ],
           "caption": "夕暮れからにぎわう台北の士林夜市"
         },
         {
           "title": "Beef noodle soup",
-          "fallbackTitles": ["Braised pork rice", "Xiaolongbao"],
+          "fallbackTitles": [
+            "Braised pork rice",
+            "Xiaolongbao"
+          ],
           "caption": "日常の食堂や屋台で親しまれる台湾の麺料理"
         }
       ]
@@ -133,12 +157,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Yurt",
-          "fallbackTitles": ["Ulaanbaatar", "Mongolian steppe"],
+          "fallbackTitles": [
+            "Ulaanbaatar",
+            "Mongolian steppe"
+          ],
           "caption": "草原に建てられたモンゴルの伝統的移動住居ゲル"
         },
         {
           "title": "Buuz",
-          "fallbackTitles": ["Mongolian cuisine", "Airag"],
+          "fallbackTitles": [
+            "Mongolian cuisine",
+            "Airag"
+          ],
           "caption": "羊肉を包んで蒸した定番料理ボーズ"
         }
       ]
@@ -162,12 +192,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Hawker centre",
-          "fallbackTitles": ["Housing and Development Board", "Singapore"],
+          "fallbackTitles": [
+            "Housing and Development Board",
+            "Singapore"
+          ],
           "caption": "住民の日常の食卓を支えるホーカーセンターの屋台群"
         },
         {
           "title": "Hainanese chicken rice",
-          "fallbackTitles": ["Laksa", "Singaporean cuisine"],
+          "fallbackTitles": [
+            "Laksa",
+            "Singaporean cuisine"
+          ],
           "caption": "シンガポールの定番大衆食・海南鶏飯（チキンライス）"
         }
       ]
@@ -191,12 +227,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Chatuchak Weekend Market",
-          "fallbackTitles": ["BTS Skytrain", "Bangkok"],
+          "fallbackTitles": [
+            "BTS Skytrain",
+            "Bangkok"
+          ],
           "caption": "バンコクの買い物客でにぎわう市場の風景"
         },
         {
           "title": "Pad thai",
-          "fallbackTitles": ["Tom yum", "Thai cuisine"],
+          "fallbackTitles": [
+            "Tom yum",
+            "Thai cuisine"
+          ],
           "caption": "屋台でも家庭でも定番のタイ風焼きそばパッタイ"
         }
       ]
@@ -220,12 +262,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Hanoi",
-          "fallbackTitles": ["Ben Thanh Market", "Ho Chi Minh City"],
+          "fallbackTitles": [
+            "Ben Thanh Market",
+            "Ho Chi Minh City"
+          ],
           "caption": "バイクが行き交うベトナム・ハノイの市街地風景"
         },
         {
           "title": "Pho",
-          "fallbackTitles": ["Bánh mì", "Vietnamese cuisine"],
+          "fallbackTitles": [
+            "Bánh mì",
+            "Vietnamese cuisine"
+          ],
           "caption": "朝食の定番として親しまれる米粉麺フォー"
         }
       ]
@@ -249,12 +297,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Jakarta",
-          "fallbackTitles": ["Kuala Lumpur", "Jalan Malioboro"],
+          "fallbackTitles": [
+            "Kuala Lumpur",
+            "Jalan Malioboro"
+          ],
           "caption": "急成長と混雑が交差するジャカルタ市街"
         },
         {
           "title": "Nasi goreng",
-          "fallbackTitles": ["Satay", "Indonesian cuisine"],
+          "fallbackTitles": [
+            "Satay",
+            "Indonesian cuisine"
+          ],
           "caption": "屋台や家庭で広く食べられているナシゴレン"
         }
       ]
@@ -278,12 +332,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Petaling Street",
-          "fallbackTitles": ["Kuala Lumpur", "Penang"],
+          "fallbackTitles": [
+            "Kuala Lumpur",
+            "Penang"
+          ],
           "caption": "多民族文化のにぎわいを見せるクアラルンプールの通り"
         },
         {
           "title": "Nasi lemak",
-          "fallbackTitles": ["Roti canai", "Malaysian cuisine"],
+          "fallbackTitles": [
+            "Roti canai",
+            "Malaysian cuisine"
+          ],
           "caption": "マレーシアの国民的朝食ナシレマ"
         }
       ]
@@ -307,12 +367,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Jeepney",
-          "fallbackTitles": ["Manila", "Makati"],
+          "fallbackTitles": [
+            "Manila",
+            "Makati"
+          ],
           "caption": "色鮮やかな乗り合いバス「ジープニー」が行き交う街路"
         },
         {
           "title": "Philippine adobo",
-          "fallbackTitles": ["Halo-halo", "Filipino cuisine"],
+          "fallbackTitles": [
+            "Halo-halo",
+            "Filipino cuisine"
+          ],
           "caption": "家庭料理の代表格であるアドボ"
         }
       ]
@@ -336,12 +402,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Yangon",
-          "fallbackTitles": ["Thanaka", "Longyi"],
+          "fallbackTitles": [
+            "Thanaka",
+            "Longyi"
+          ],
           "caption": "旧植民地期の建築と寺院が調和するヤンゴンの街並み"
         },
         {
           "title": "Mohinga",
-          "fallbackTitles": ["Lahpet", "Burmese cuisine"],
+          "fallbackTitles": [
+            "Lahpet",
+            "Burmese cuisine"
+          ],
           "caption": "朝食の定番として愛される麺料理モヒンガー"
         }
       ]
@@ -365,12 +437,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Chandni Chowk",
-          "fallbackTitles": ["Mumbai Suburban Railway", "Jaipur"],
+          "fallbackTitles": [
+            "Mumbai Suburban Railway",
+            "Jaipur"
+          ],
           "caption": "人々や三輪車が活気にあふれるデリーの市場通り"
         },
         {
           "title": "Thali",
-          "fallbackTitles": ["Biryani", "Masala chai"],
+          "fallbackTitles": [
+            "Biryani",
+            "Masala chai"
+          ],
           "caption": "豆や野菜のカレー、パンや米が並ぶ定番の定食ターリー"
         }
       ]
@@ -394,12 +472,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Dhaka",
-          "fallbackTitles": ["Cycle rickshaw", "Bangladeshi cuisine"],
+          "fallbackTitles": [
+            "Cycle rickshaw",
+            "Bangladeshi cuisine"
+          ],
           "caption": "過密な交通と生活の熱気に包まれるダッカの街並み"
         },
         {
           "title": "Kacchi biryani",
-          "fallbackTitles": ["Biryani", "Bangladeshi cuisine"],
+          "fallbackTitles": [
+            "Biryani",
+            "Bangladeshi cuisine"
+          ],
           "caption": "祝い事や食堂で親しまれるスパイス炊き込みご飯ビリヤニ"
         }
       ]
@@ -423,12 +507,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Lahore",
-          "fallbackTitles": ["Truck art in South Asia", "Karachi"],
+          "fallbackTitles": [
+            "Truck art in South Asia",
+            "Karachi"
+          ],
           "caption": "歴史的建築と活気ある街路が残る古都ラホール"
         },
         {
           "title": "Nihari",
-          "fallbackTitles": ["Pakistani cuisine", "Chapati"],
+          "fallbackTitles": [
+            "Pakistani cuisine",
+            "Chapati"
+          ],
           "caption": "スパイスでじっくり煮込んだ名物肉料理ニハリとパン"
         }
       ]
@@ -452,12 +542,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Colombo",
-          "fallbackTitles": ["Kandy", "Auto rickshaw"],
+          "fallbackTitles": [
+            "Kandy",
+            "Auto rickshaw"
+          ],
           "caption": "インド洋に面した商業中心都市コロンボの街並み"
         },
         {
           "title": "Sri Lankan cuisine",
-          "fallbackTitles": ["Ceylon tea", "Appam"],
+          "fallbackTitles": [
+            "Ceylon tea",
+            "Appam"
+          ],
           "caption": "米と多彩な副菜・カレーを盛ったスリランカの日常食"
         }
       ]
@@ -481,12 +577,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Riyadh",
-          "fallbackTitles": ["Al-Balad, Jeddah", "Jeddah"],
+          "fallbackTitles": [
+            "Al-Balad, Jeddah",
+            "Jeddah"
+          ],
           "caption": "砂漠の中にそびえるリヤドの近代都市景観"
         },
         {
           "title": "Kabsa",
-          "fallbackTitles": ["Arabic coffee", "Saudi Arabian cuisine"],
+          "fallbackTitles": [
+            "Arabic coffee",
+            "Saudi Arabian cuisine"
+          ],
           "caption": "大皿を囲んで分け合う伝統料理カブサ"
         }
       ]
@@ -510,12 +612,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Dubai Metro",
-          "fallbackTitles": ["Al Fahidi Historical Neighbourhood", "Dubai"],
+          "fallbackTitles": [
+            "Al Fahidi Historical Neighbourhood",
+            "Dubai"
+          ],
           "caption": "酷暑の都市を結ぶ空調完備の高架鉄道ドバイメトロ"
         },
         {
           "title": "Machboos",
-          "fallbackTitles": ["Emirati cuisine", "Shawarma"],
+          "fallbackTitles": [
+            "Emirati cuisine",
+            "Shawarma"
+          ],
           "caption": "湾岸地域で親しまれる香辛料炊き込みご飯マクブース"
         }
       ]
@@ -539,12 +647,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Grand Bazaar, Tehran",
-          "fallbackTitles": ["Tehran", "Yazd"],
+          "fallbackTitles": [
+            "Tehran",
+            "Yazd"
+          ],
           "caption": "庶民の生活用品から絨毯までそろうテヘランの大バザール"
         },
         {
           "title": "Chelow kabab",
-          "fallbackTitles": ["Iranian cuisine", "Saffron"],
+          "fallbackTitles": [
+            "Iranian cuisine",
+            "Saffron"
+          ],
           "caption": "サフランライスと炭火肉を合わせる国民食チェロウ・カバブ"
         }
       ]
@@ -568,12 +682,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Baghdad",
-          "fallbackTitles": ["Tigris", "Erbil"],
+          "fallbackTitles": [
+            "Tigris",
+            "Erbil"
+          ],
           "caption": "チグリス川のほとりに広がる古都バグダッドの市街"
         },
         {
           "title": "Masgouf",
-          "fallbackTitles": ["Iraqi cuisine", "Date palm"],
+          "fallbackTitles": [
+            "Iraqi cuisine",
+            "Date palm"
+          ],
           "caption": "川魚を薪火でじっくり焼き上げるイラクの伝統料理マスグーフ"
         }
       ]
@@ -597,12 +717,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Grand Bazaar, Istanbul",
-          "fallbackTitles": ["Taksim–Tünel nostalgia tramway", "Istanbul"],
+          "fallbackTitles": [
+            "Taksim–Tünel nostalgia tramway",
+            "Istanbul"
+          ],
           "caption": "多くの買い物客でにぎわうイスタンブールのグランドバザール"
         },
         {
           "title": "Turkish tea",
-          "fallbackTitles": ["Kebab", "Baklava"],
+          "fallbackTitles": [
+            "Kebab",
+            "Baklava"
+          ],
           "caption": "街のいたるところで飲まれるチューリップ型グラスのチャイ"
         }
       ]
@@ -626,12 +752,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Mahane Yehuda Market",
-          "fallbackTitles": ["Tel Aviv", "Old City of Jerusalem"],
+          "fallbackTitles": [
+            "Tel Aviv",
+            "Old City of Jerusalem"
+          ],
           "caption": "スパイスや生鮮食品が並ぶエルサレムの活気ある市場"
         },
         {
           "title": "Falafel",
-          "fallbackTitles": ["Shakshouka", "Hummus"],
+          "fallbackTitles": [
+            "Shakshouka",
+            "Hummus"
+          ],
           "caption": "屋台でも定番のひよこ豆コロッケ「ファラフェル」のピタサンド"
         }
       ]
@@ -655,12 +787,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Astana",
-          "fallbackTitles": ["Almaty", "Green Bazaar, Almaty"],
+          "fallbackTitles": [
+            "Almaty",
+            "Green Bazaar, Almaty"
+          ],
           "caption": "広大な草原の中に築かれた計画都市・首都アスタナ"
         },
         {
           "title": "Beshbarmak",
-          "fallbackTitles": ["Kazakh cuisine", "Plov"],
+          "fallbackTitles": [
+            "Kazakh cuisine",
+            "Plov"
+          ],
           "caption": "羊肉や馬肉と平麺を盛り合わせた伝統料理ベシュバルマク"
         }
       ]
@@ -684,12 +822,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Chorsu Bazaar",
-          "fallbackTitles": ["Registan", "Tashkent"],
+          "fallbackTitles": [
+            "Registan",
+            "Tashkent"
+          ],
           "caption": "青いドーム屋根で有名なタシケントのチョルスー・バザール"
         },
         {
           "title": "Plov",
-          "fallbackTitles": ["Uzbek cuisine", "Tandyr nan"],
+          "fallbackTitles": [
+            "Uzbek cuisine",
+            "Tandyr nan"
+          ],
           "caption": "大鍋で炊き上げるウズベキスタンの国民食プロフ"
         }
       ]
@@ -713,12 +857,18 @@
       "wikiPhotoTargets": [
         {
           "title": "London Underground",
-          "fallbackTitles": ["Terraced house", "London"],
+          "fallbackTitles": [
+            "Terraced house",
+            "London"
+          ],
           "caption": "世界最古の地下鉄網としてロンドンの通勤を支えるチューブ"
         },
         {
           "title": "Fish and chips",
-          "fallbackTitles": ["Full breakfast", "British cuisine"],
+          "fallbackTitles": [
+            "Full breakfast",
+            "British cuisine"
+          ],
           "caption": "イギリス庶民の味として長年親しまれるフィッシュ・アンド・チップス"
         }
       ]
@@ -742,12 +892,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Paris Métro",
-          "fallbackTitles": ["Haussmann's renovation of Paris", "Paris"],
+          "fallbackTitles": [
+            "Haussmann's renovation of Paris",
+            "Paris"
+          ],
           "caption": "パリ市内の移動に欠かせないメトロの駅入り口と街並み"
         },
         {
           "title": "Baguette",
-          "fallbackTitles": ["French cuisine", "Croissant"],
+          "fallbackTitles": [
+            "French cuisine",
+            "Croissant"
+          ],
           "caption": "フランスの食卓に毎日並ぶ焼き立てのバゲット"
         }
       ]
@@ -771,12 +927,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Berlin U-Bahn",
-          "fallbackTitles": ["Timber framing", "Frankfurt"],
+          "fallbackTitles": [
+            "Timber framing",
+            "Frankfurt"
+          ],
           "caption": "ベルリンなどドイツ大都市の交通網を担う地下鉄Uバーン"
         },
         {
           "title": "Currywurst",
-          "fallbackTitles": ["Pretzel", "German cuisine"],
+          "fallbackTitles": [
+            "Pretzel",
+            "German cuisine"
+          ],
           "caption": "ベルリン発祥の大衆軽食カリーヴルスト"
         }
       ]
@@ -800,12 +962,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Milan",
-          "fallbackTitles": ["Trastevere", "Rome"],
+          "fallbackTitles": [
+            "Trastevere",
+            "Rome"
+          ],
           "caption": "歴史的建築と路面電車が調和する北部の商工業中心都市ミラノ"
         },
         {
           "title": "Neapolitan pizza",
-          "fallbackTitles": ["Pasta", "Italian cuisine"],
+          "fallbackTitles": [
+            "Pasta",
+            "Italian cuisine"
+          ],
           "caption": "南部の地中海性農業（トマト・オリーブ・小麦）が生んだナポリピッツァ"
         }
       ]
@@ -829,12 +997,18 @@
       "wikiPhotoTargets": [
         {
           "title": "La Rambla, Barcelona",
-          "fallbackTitles": ["Gran Vía, Madrid", "Barcelona"],
+          "fallbackTitles": [
+            "Gran Vía, Madrid",
+            "Barcelona"
+          ],
           "caption": "並木道と露店・歩行者でにぎわうバルセロナのランブラス通り"
         },
         {
           "title": "Paella",
-          "fallbackTitles": ["Tapas", "Spanish cuisine"],
+          "fallbackTitles": [
+            "Tapas",
+            "Spanish cuisine"
+          ],
           "caption": "地中海沿いの米どころバレンシア発祥の大鍋料理パエリア"
         }
       ]
@@ -858,12 +1032,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Amsterdam",
-          "fallbackTitles": ["Canal house", "Rotterdam"],
+          "fallbackTitles": [
+            "Canal house",
+            "Rotterdam"
+          ],
           "caption": "運河沿いに切妻屋根の建物が並び自転車が行き交うアムステルダム"
         },
         {
           "title": "Stroopwafel",
-          "fallbackTitles": ["Gouda cheese", "Dutch cuisine"],
+          "fallbackTitles": [
+            "Gouda cheese",
+            "Dutch cuisine"
+          ],
           "caption": "街角の市場でも焼かれる伝統のお菓子ストロープワッフル"
         }
       ]
@@ -887,12 +1067,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Grand-Place",
-          "fallbackTitles": ["Brussels", "Antwerp"],
+          "fallbackTitles": [
+            "Brussels",
+            "Antwerp"
+          ],
           "caption": "ギルドハウスに囲まれたブリュッセル中心部の広場グラン・プラス"
         },
         {
           "title": "Belgian waffle",
-          "fallbackTitles": ["Moules-frites", "Belgian cuisine"],
+          "fallbackTitles": [
+            "Moules-frites",
+            "Belgian cuisine"
+          ],
           "caption": "屋台やカフェで広く親しまれているベルギーワッフル"
         }
       ]
@@ -916,12 +1102,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Kraków",
-          "fallbackTitles": ["Warsaw Old Town", "Gdańsk"],
+          "fallbackTitles": [
+            "Warsaw Old Town",
+            "Gdańsk"
+          ],
           "caption": "歴史的建築と広場が残る古都クラクフの街並み"
         },
         {
           "title": "Pierogi",
-          "fallbackTitles": ["Polish cuisine", "Żurek"],
+          "fallbackTitles": [
+            "Polish cuisine",
+            "Żurek"
+          ],
           "caption": "家庭でも大衆食堂でも不動の人気を誇る水餃子ピエロギ"
         }
       ]
@@ -945,12 +1137,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Bryggen",
-          "fallbackTitles": ["Oslo", "Bergen"],
+          "fallbackTitles": [
+            "Oslo",
+            "Bergen"
+          ],
           "caption": "フィヨルドの玄関口ベルゲンに残る色鮮やかな木造建築群ブリッゲン"
         },
         {
           "title": "Norwegian cuisine",
-          "fallbackTitles": ["Brunost", "Smoked salmon"],
+          "fallbackTitles": [
+            "Brunost",
+            "Smoked salmon"
+          ],
           "caption": "サーモンやチーズなどノルウェーの海と山の恵み"
         }
       ]
@@ -974,12 +1172,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Gamla stan",
-          "fallbackTitles": ["Stockholm", "Gothenburg"],
+          "fallbackTitles": [
+            "Stockholm",
+            "Gothenburg"
+          ],
           "caption": "中世の暖色系建築が水辺に並ぶストックホルム旧市街ガムラスタン"
         },
         {
           "title": "Fika (Sweden)",
-          "fallbackTitles": ["Swedish cuisine", "Kanelbulle"],
+          "fallbackTitles": [
+            "Swedish cuisine",
+            "Kanelbulle"
+          ],
           "caption": "コーヒーとシナモンロールを囲むスウェーデンの休憩文化フィーカ"
         }
       ]
@@ -1003,12 +1207,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Helsinki",
-          "fallbackTitles": ["Finnish sauna", "Market Square, Helsinki"],
+          "fallbackTitles": [
+            "Finnish sauna",
+            "Market Square, Helsinki"
+          ],
           "caption": "海と建築が調和する首都ヘルシンキの街並み"
         },
         {
           "title": "Karelian pasty",
-          "fallbackTitles": ["Finnish cuisine", "Lohikeitto"],
+          "fallbackTitles": [
+            "Finnish cuisine",
+            "Lohikeitto"
+          ],
           "caption": "国民的軽食として朝市や家庭で親しまれるカレリアパイ"
         }
       ]
@@ -1032,12 +1242,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Nyhavn",
-          "fallbackTitles": ["Copenhagen", "Bicycles in Copenhagen"],
+          "fallbackTitles": [
+            "Copenhagen",
+            "Bicycles in Copenhagen"
+          ],
           "caption": "カラフルな建物と運河が並ぶコペンハーゲンのニューハウン"
         },
         {
           "title": "Smørrebrød",
-          "fallbackTitles": ["Danish pastry", "Danish cuisine"],
+          "fallbackTitles": [
+            "Danish pastry",
+            "Danish cuisine"
+          ],
           "caption": "ライ麦パンに彩りよく具材を載せた定番昼食スモーブロー"
         }
       ]
@@ -1061,12 +1277,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Reykjavík",
-          "fallbackTitles": ["Hallgrímskirkja", "Blue Lagoon (geothermal spa)"],
+          "fallbackTitles": [
+            "Hallgrímskirkja",
+            "Blue Lagoon (geothermal spa)"
+          ],
           "caption": "カラフルな屋根と背後の山々が印象的なレイキャビクの街並み"
         },
         {
           "title": "Skyr",
-          "fallbackTitles": ["Icelandic cuisine", "Plokkfiskur"],
+          "fallbackTitles": [
+            "Icelandic cuisine",
+            "Plokkfiskur"
+          ],
           "caption": "千年以上続く伝統的な高タンパク乳製品スキル"
         }
       ]
@@ -1090,12 +1312,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Zürich",
-          "fallbackTitles": ["Bern", "Geneva"],
+          "fallbackTitles": [
+            "Bern",
+            "Geneva"
+          ],
           "caption": "湖と歴史的教会・路面電車が調和するチューリヒの市街地"
         },
         {
           "title": "Fondue",
-          "fallbackTitles": ["Rösti", "Swiss cuisine"],
+          "fallbackTitles": [
+            "Rösti",
+            "Swiss cuisine"
+          ],
           "caption": "アルプスの酪農文化が生んだ名物チーズフォンデュ"
         }
       ]
@@ -1119,12 +1347,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Vienna",
-          "fallbackTitles": ["Viennese coffee house", "Salzburg"],
+          "fallbackTitles": [
+            "Viennese coffee house",
+            "Salzburg"
+          ],
           "caption": "歴史的建築とカフェ文化が息づく首都ウィーンの街並み"
         },
         {
           "title": "Wiener schnitzel",
-          "fallbackTitles": ["Sachertorte", "Austrian cuisine"],
+          "fallbackTitles": [
+            "Sachertorte",
+            "Austrian cuisine"
+          ],
           "caption": "市民に長年愛されるオーストリアの伝統料理シュニッツェル"
         }
       ]
@@ -1148,12 +1382,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Moscow Metro",
-          "fallbackTitles": ["Izba", "Moscow"],
+          "fallbackTitles": [
+            "Izba",
+            "Moscow"
+          ],
           "caption": "極寒の冬でも市民の足となる重厚なモスクワ地下鉄"
         },
         {
           "title": "Borscht",
-          "fallbackTitles": ["Pelmeni", "Russian cuisine"],
+          "fallbackTitles": [
+            "Pelmeni",
+            "Russian cuisine"
+          ],
           "caption": "サワークリームを添えて温まる東欧・ロシアの定番スープ「ボルシチ」"
         }
       ]
@@ -1177,12 +1417,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Kyiv",
-          "fallbackTitles": ["Khreshchatyk", "Lviv"],
+          "fallbackTitles": [
+            "Khreshchatyk",
+            "Lviv"
+          ],
           "caption": "広い並木道と歴史的建造物が広がる首都キーウ"
         },
         {
           "title": "Varenyky",
-          "fallbackTitles": ["Borscht", "Ukrainian cuisine"],
+          "fallbackTitles": [
+            "Borscht",
+            "Ukrainian cuisine"
+          ],
           "caption": "ジャガイモやカッテージチーズを包んで茹でる家庭料理ヴァレーニキ"
         }
       ]
@@ -1206,12 +1452,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Times Square",
-          "fallbackTitles": ["New York City Subway", "Suburbia"],
+          "fallbackTitles": [
+            "New York City Subway",
+            "Suburbia"
+          ],
           "caption": "多くの人と黄色のタクシーが行き交うニューヨーク・タイムズスクエア"
         },
         {
           "title": "Hamburger",
-          "fallbackTitles": ["Barbecue in the United States", "American cuisine"],
+          "fallbackTitles": [
+            "Barbecue in the United States",
+            "American cuisine"
+          ],
           "caption": "全国どこでも親しまれるアメリカの代表的な日常食ハンバーガー"
         }
       ]
@@ -1235,12 +1487,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Toronto",
-          "fallbackTitles": ["Montreal", "Vancouver"],
+          "fallbackTitles": [
+            "Montreal",
+            "Vancouver"
+          ],
           "caption": "多文化が共存するカナダ最大都市トロントの市街地"
         },
         {
           "title": "Poutine",
-          "fallbackTitles": ["Maple syrup", "Canadian cuisine"],
+          "fallbackTitles": [
+            "Maple syrup",
+            "Canadian cuisine"
+          ],
           "caption": "ケベック州発祥で全国に広まった名物軽食プーティン"
         }
       ]
@@ -1264,12 +1522,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Zócalo",
-          "fallbackTitles": ["Mexico City", "Guadalajara"],
+          "fallbackTitles": [
+            "Mexico City",
+            "Guadalajara"
+          ],
           "caption": "歴史的建築と大勢の市民が集うメキシコシティの中央広場ソカロ"
         },
         {
           "title": "Taco",
-          "fallbackTitles": ["Mole (sauce)", "Mexican cuisine"],
+          "fallbackTitles": [
+            "Mole (sauce)",
+            "Mexican cuisine"
+          ],
           "caption": "トウモロコシのトルティーヤに具材を挟む国民食タコス"
         }
       ]
@@ -1293,12 +1557,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Favela",
-          "fallbackTitles": ["Copacabana, Rio de Janeiro", "São Paulo"],
+          "fallbackTitles": [
+            "Copacabana, Rio de Janeiro",
+            "São Paulo"
+          ],
           "caption": "ブラジル都市部の斜面景観を象徴するリオデジャネイロのファヴェーラ住宅街"
         },
         {
           "title": "Feijoada (Brazilian dish)",
-          "fallbackTitles": ["Churrasco", "Brazilian cuisine"],
+          "fallbackTitles": [
+            "Churrasco",
+            "Brazilian cuisine"
+          ],
           "caption": "豆・豚肉と米を一緒に味わうブラジルの国民食フェイジョアーダ"
         }
       ]
@@ -1322,12 +1592,18 @@
       "wikiPhotoTargets": [
         {
           "title": "La Boca",
-          "fallbackTitles": ["Buenos Aires", "Avenida 9 de Julio"],
+          "fallbackTitles": [
+            "Buenos Aires",
+            "Avenida 9 de Julio"
+          ],
           "caption": "色鮮やかなトタン板の街並みが有名なブエノスアイレスのラ・ボカ地区"
         },
         {
           "title": "Asado",
-          "fallbackTitles": ["Empanada", "Mate (drink)"],
+          "fallbackTitles": [
+            "Empanada",
+            "Mate (drink)"
+          ],
           "caption": "週末に家族や友人で囲む伝統的な炭火焼肉料理アサード"
         }
       ]
@@ -1351,12 +1627,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Valparaíso",
-          "fallbackTitles": ["Santiago", "Santiago Metro"],
+          "fallbackTitles": [
+            "Santiago",
+            "Santiago Metro"
+          ],
           "caption": "急斜面にカラフルな住宅が立ち並ぶ港町バルパライソの風景"
         },
         {
           "title": "Pastel de choclo",
-          "fallbackTitles": ["Empanada", "Chilean cuisine"],
+          "fallbackTitles": [
+            "Empanada",
+            "Chilean cuisine"
+          ],
           "caption": "夏の家庭料理として広く親しまれるパステル・デ・チョクロ"
         }
       ]
@@ -1380,12 +1662,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Cusco",
-          "fallbackTitles": ["Lima", "Arequipa"],
+          "fallbackTitles": [
+            "Lima",
+            "Arequipa"
+          ],
           "caption": "アンデス高地の石造り景観と生活が調和する古都クスコの街"
         },
         {
           "title": "Ceviche",
-          "fallbackTitles": ["Lomo saltado", "Peruvian cuisine"],
+          "fallbackTitles": [
+            "Lomo saltado",
+            "Peruvian cuisine"
+          ],
           "caption": "豊かな沿岸漁場の魚介をライムで締めた国民食セビーチェ"
         }
       ]
@@ -1409,12 +1697,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Metrocable (Medellín)",
-          "fallbackTitles": ["Medellín", "Bogotá"],
+          "fallbackTitles": [
+            "Medellín",
+            "Bogotá"
+          ],
           "caption": "山腹の庶民街と都心を結ぶ交通網・メデジンのメトロカブレ"
         },
         {
           "title": "Bandeja paisa",
-          "fallbackTitles": ["Arepa", "Colombian cuisine"],
+          "fallbackTitles": [
+            "Arepa",
+            "Colombian cuisine"
+          ],
           "caption": "豆・米・アボカド・肉がたっぷり載る名物定食バンデハ・パイサ"
         }
       ]
@@ -1438,12 +1732,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Caracas",
-          "fallbackTitles": ["Maracaibo", "Venezuela"],
+          "fallbackTitles": [
+            "Maracaibo",
+            "Venezuela"
+          ],
           "caption": "山々に囲まれた盆地に広がる首都カラカスの市街"
         },
         {
           "title": "Arepa",
-          "fallbackTitles": ["Pabellón criollo", "Venezuelan cuisine"],
+          "fallbackTitles": [
+            "Pabellón criollo",
+            "Venezuelan cuisine"
+          ],
           "caption": "朝食にも夕食にも欠かせないトウモロコシのパン「アレパ」"
         }
       ]
@@ -1467,12 +1767,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Khan el-Khalili",
-          "fallbackTitles": ["Cairo", "Cairo Metro"],
+          "fallbackTitles": [
+            "Cairo",
+            "Cairo Metro"
+          ],
           "caption": "多くの買い物客や商店でにぎわうカイロのハン・ハリーリ市場"
         },
         {
           "title": "Koshary",
-          "fallbackTitles": ["Ful medames", "Egyptian cuisine"],
+          "fallbackTitles": [
+            "Ful medames",
+            "Egyptian cuisine"
+          ],
           "caption": "豆と米・パスタを重ねたエジプト庶民の定番食コシャリ"
         }
       ]
@@ -1496,12 +1802,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Marrakesh",
-          "fallbackTitles": ["Fes", "Casablanca"],
+          "fallbackTitles": [
+            "Fes",
+            "Casablanca"
+          ],
           "caption": "赤土色の城壁と日用品市場が広がるマラケシュの街並み"
         },
         {
           "title": "Tajine",
-          "fallbackTitles": ["Couscous", "Moroccan cuisine"],
+          "fallbackTitles": [
+            "Couscous",
+            "Moroccan cuisine"
+          ],
           "caption": "少ない水でじっくり蒸し煮にする伝統のタジン鍋料理"
         }
       ]
@@ -1525,12 +1837,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Casbah of Algiers",
-          "fallbackTitles": ["Algiers", "Oran"],
+          "fallbackTitles": [
+            "Algiers",
+            "Oran"
+          ],
           "caption": "地中海に向かって階段状に白い建物が並ぶアルジェの旧市街カスバ"
         },
         {
           "title": "Couscous",
-          "fallbackTitles": ["Algerian cuisine", "Chorba"],
+          "fallbackTitles": [
+            "Algerian cuisine",
+            "Chorba"
+          ],
           "caption": "マグレブ地域の家庭で金曜日に囲む伝統の蒸し料理クスクス"
         }
       ]
@@ -1554,12 +1872,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Lagos",
-          "fallbackTitles": ["Abuja", "Makoko"],
+          "fallbackTitles": [
+            "Abuja",
+            "Makoko"
+          ],
           "caption": "巨大な人口と商業エネルギーが渦巻く経済中心都市ラゴス"
         },
         {
           "title": "Jollof rice",
-          "fallbackTitles": ["Fufu", "Nigerian cuisine"],
+          "fallbackTitles": [
+            "Fufu",
+            "Nigerian cuisine"
+          ],
           "caption": "お祝いや日常の外食でも定番のスパイス炊き込みご飯ジョロフライス"
         }
       ]
@@ -1583,12 +1907,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Nairobi",
-          "fallbackTitles": ["Matatu", "Mombasa"],
+          "fallbackTitles": [
+            "Matatu",
+            "Mombasa"
+          ],
           "caption": "東アフリカの経済・外交の拠点として成長する高原都市ナイロビ"
         },
         {
           "title": "Ugali",
-          "fallbackTitles": ["Nyama choma", "Kenyan cuisine"],
+          "fallbackTitles": [
+            "Nyama choma",
+            "Kenyan cuisine"
+          ],
           "caption": "白いトウモロコシ粉を練り上げたケニアの主食ウガリと菜食・肉"
         }
       ]
@@ -1612,12 +1942,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Addis Ababa",
-          "fallbackTitles": ["Addis Ababa Light Rail", "Merkato"],
+          "fallbackTitles": [
+            "Addis Ababa Light Rail",
+            "Merkato"
+          ],
           "caption": "アフリカ連合本部を擁し急成長する高原首都アディスアベバ"
         },
         {
           "title": "Injera",
-          "fallbackTitles": ["Ethiopian coffee ceremony", "Ethiopian cuisine"],
+          "fallbackTitles": [
+            "Ethiopian coffee ceremony",
+            "Ethiopian cuisine"
+          ],
           "caption": "雑穀テフから作るエチオピアの伝統的主食インジェラと各種煮込み"
         }
       ]
@@ -1641,12 +1977,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Kinshasa",
-          "fallbackTitles": ["Congo River", "Lubumbashi"],
+          "fallbackTitles": [
+            "Congo River",
+            "Lubumbashi"
+          ],
           "caption": "大河コンゴ川のほとりに広がる巨大都市キンシャサ"
         },
         {
           "title": "Fufu",
-          "fallbackTitles": ["Congolese cuisine", "Saka-saka"],
+          "fallbackTitles": [
+            "Congolese cuisine",
+            "Saka-saka"
+          ],
           "caption": "キャッサバなどを練り上げスープと合わせる主食フフ"
         }
       ]
@@ -1670,12 +2012,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Soweto",
-          "fallbackTitles": ["Cape Town", "Johannesburg"],
+          "fallbackTitles": [
+            "Cape Town",
+            "Johannesburg"
+          ],
           "caption": "歴史的背景を持ち現在も多くの住民が暮らすヨハネスブルグ近郊ソウェト"
         },
         {
           "title": "Braai",
-          "fallbackTitles": ["Bunny chow", "South African cuisine"],
+          "fallbackTitles": [
+            "Bunny chow",
+            "South African cuisine"
+          ],
           "caption": "人種や地域を問わず週末に楽しまれる南アフリカ式炭火焼きブライ"
         }
       ]
@@ -1699,12 +2047,18 @@
       "wikiPhotoTargets": [
         {
           "title": "Melbourne",
-          "fallbackTitles": ["Sydney", "Sydney Harbour"],
+          "fallbackTitles": [
+            "Sydney",
+            "Sydney Harbour"
+          ],
           "caption": "カフェ文化と路面電車が街に溶け込む南東部の大都市メルボルン"
         },
         {
           "title": "Meat pie (Australia and New Zealand)",
-          "fallbackTitles": ["Vegemite", "Australian cuisine"],
+          "fallbackTitles": [
+            "Vegemite",
+            "Australian cuisine"
+          ],
           "caption": "スポーツ観戦や軽食の定番として愛されるオーストラリアン・ミートパイ"
         }
       ]
@@ -1728,13 +2082,888 @@
       "wikiPhotoTargets": [
         {
           "title": "Auckland",
-          "fallbackTitles": ["Wellington", "Auckland Harbour Bridge"],
+          "fallbackTitles": [
+            "Wellington",
+            "Auckland Harbour Bridge"
+          ],
           "caption": "「帆の街」とも呼ばれる海辺の多文化都市オークランド"
         },
         {
           "title": "Pavlova (food)",
-          "fallbackTitles": ["Hāngī", "New Zealand cuisine"],
+          "fallbackTitles": [
+            "Hāngī",
+            "New Zealand cuisine"
+          ],
           "caption": "キウイなどの果物を載せたお祝いの定番デザート・パヴロヴァ"
+        }
+      ]
+    }
+  },
+  "GRC": {
+    "quickOverview": {
+      "headline": "地中海性気候（Cs）のオリーブと世界有数の海運・観光立国",
+      "summary": "夏に乾き冬に雨が降る典型的な地中海性気候（Cs）と石灰岩山地の国。オリーブ生産と実質世界首位級の海運業、年間3000万人超の国際観光が経済の柱。",
+      "keyPoints": [
+        "アテネは夏極小雨・冬降水の中緯度Cs気候の典型",
+        "オリーブ生産上位・伝統的ヤギ/羊の移牧と石灰岩カルスト",
+        "海運・観光産業が主力、ユーロ加盟の南欧高齢化社会"
+      ]
+    },
+    "dailyLife": {
+      "summary": "アテネの白亜のアパートメントやエーゲ海の白い壁・青いドームの家並みが特徴。強い日差しを遮り冷気を保つ石造り建築が暮らしに根付く。",
+      "food": "オリーブ油をたっぷり使うギリシャサラダ（フェタチーズ）、ムサカ、スブラキ。",
+      "housing": "石灰岩や白い漆喰で強い日射を反射させる地中海型建築。",
+      "streetNote": "夏は日中の強い日差しを避け、夕暮れ以降にカフェやタベルナが賑わう。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Santorini",
+          "fallbackTitles": [
+            "Athens",
+            "Acropolis of Athens"
+          ],
+          "caption": "強い日差しを反射するエーゲ海サントリーニ島の白壁の街並み"
+        },
+        {
+          "title": "Moussaka",
+          "fallbackTitles": [
+            "Greek salad",
+            "Souvlaki"
+          ],
+          "caption": "オリーブ油や羊・ヤギ乳チーズを多用するギリシャの食卓"
+        }
+      ]
+    }
+  },
+  "PRT": {
+    "quickOverview": {
+      "headline": "コルク世界首位・再生可能エネルギー先進国・ブラジルと結ぶロマンス語の国",
+      "summary": "イベリア半島西端の大西洋岸。コルク・ワイン生産に加え、大西洋の風力を活かした再生可能エネルギー発電比率の高さと高齢化率の高さ、大航海時代由来のブラジル等との繋がりが共テ重要。",
+      "keyPoints": [
+        "リスボンは大西洋岸のCs気候で冬の雨が多く夏は乾燥",
+        "水力・風力中心に再エネ発電割合が極めて高い",
+        "カトリック・ロマンス語派ポルトガル語（ブラジルやアンゴラ・マカオ等へ波及）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "リスボンのアズレージョ（装飾タイル）貼りの建物と坂道を走る路面電車が象徴。大西洋由来の豊かなタラやイワシ料理が家庭の味。",
+      "food": "干しダラ料理（バカリャウ）、エッグタルト（パステル・デ・ナタ）。",
+      "housing": "日差しと海風に適応したタイル外壁と赤瓦の市街地住宅。",
+      "streetNote": "坂の多いリスボンを走る黄色い路面電車やケーブルカー。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Trams in Lisbon",
+          "fallbackTitles": [
+            "Lisbon"
+          ],
+          "caption": "リスボンの急坂の石畳を走る伝統的な黄色い路面電車"
+        },
+        {
+          "title": "Pastel de nata",
+          "fallbackTitles": [
+            "Bacalhau",
+            "Lisbon"
+          ],
+          "caption": "修道院発祥で親しまれる名物菓子パステル・デ・ナタ"
+        }
+      ]
+    }
+  },
+  "IRL": {
+    "quickOverview": {
+      "headline": "低法人税×英語圏×EU加盟で急成長したICT・製薬ハブ（1人当たりGDP世界最上位）",
+      "summary": "西岸海洋性気候の緑島で伝統的には酪農とジャガイモ飢饉からの対米移民の国だったが、低法人税と英語・EU市場を武器に米国系ICT・製薬大手の欧州本社が集積し高所得国へ変貌。",
+      "keyPoints": [
+        "米系IT・製薬企業の欧州拠点集積により1人当たりGDPが非常に高い",
+        "英国EU離脱後のEU内英語圏、ユーロ圏（シェンゲンは非加盟）",
+        "19世紀ジャガイモ飢饉→米国へのカトリック移民史・北アイルランド境界問題"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ダブリンのパブ文化やジョージアン様式のカラフルな扉の街並みが特徴。多国籍IT企業の誘致で国際色豊かな若い人材が集まる。",
+      "food": "アイリッシュシチュー（羊肉とじゃがいも）、黒ビール、ソーダブレッド。",
+      "housing": "レンガ造りの都市型テラスハウスや郊外の断熱重視住宅。",
+      "streetNote": "リフィー川沿いの歴史街区とシリコン・ドックスと呼ばれる近代的ITオフィス街が共存。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Dublin",
+          "fallbackTitles": [
+            "Ha'penny Bridge",
+            "Cliffs of Moher"
+          ],
+          "caption": "ダブリン市中心部リフィー川沿いの街並み"
+        },
+        {
+          "title": "Irish stew",
+          "fallbackTitles": [
+            "Guinness"
+          ],
+          "caption": "羊肉とじゃがいもを煮込む伝統家庭料理アイリッシュシチュー"
+        }
+      ]
+    }
+  },
+  "CZE": {
+    "quickOverview": {
+      "headline": "ドイツと組む中東欧の自動車工業拠点・高い無宗教率の内陸国",
+      "summary": "スラブ語派だが工業化の伝統があり、EU加盟後はドイツ等の自動車・精密機械工場が集積。EU加盟国でありながらユーロ非導入で自国通貨を維持し、無宗教割合が欧州で突出して高い点も特徴。",
+      "keyPoints": [
+        "ドイツと隣接し自動車（シュコダ等）が最大輸出品の中東欧工業国",
+        "EU・シェンゲン加盟だがユーロ未導入（スロバキアはユーロ導入）",
+        "スラブ語派・非常に高い無宗教割合"
+      ]
+    },
+    "dailyLife": {
+      "summary": "プラハの中世ゴシック建築と路面電車網が市民の足。世界一のビール消費文化と手頃なカフェ文化が暮らしに溶け込む。",
+      "food": "チェコビール、ローストポークと蒸しパン（クネドリーキ）、揚げチーズ。",
+      "housing": "歴史的石造建築群と郊外の集合住宅（パネラーク）・戸建て。",
+      "streetNote": "カレル橋やプラハ市街のトラム網、郊外の自動車関連工業団地。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Prague",
+          "fallbackTitles": [
+            "Charles Bridge"
+          ],
+          "caption": "歴史的建築と路面電車網が残る中欧の都市プラハ"
+        },
+        {
+          "title": "Svíčková",
+          "fallbackTitles": [
+            "Czech beer"
+          ],
+          "caption": "牛肉のクリームソースと伝統的な蒸しパン（クネドリーキ）"
+        }
+      ]
+    }
+  },
+  "HUN": {
+    "quickOverview": {
+      "headline": "欧州に浮かぶウラル語族の国・ドナウ川大平原の農業と自動車・電池拠点",
+      "summary": "周囲がインド・ヨーロッパ語族（スラブ・ゲルマン・ロマンス）に囲まれる中でウラル語族（ハンガリー語）を話す特徴的な国。ドナウ川中流の大平原を活かし穀物輸出と自動車・EV電池製造を担う。",
+      "keyPoints": [
+        "フィンランド語と同じウラル語族（姓名表記も『姓・名』順）",
+        "国際河川ドナウ川中流のパンノニア平原での小麦・トウモロコシ栽培",
+        "ドイツ系自動車工場（アウディ・メルセデス等）や日韓中EV工場が集積（ユーロ非導入）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ドナウ川を挟んで歴史地区ブダと商業地区ペストが並ぶ「ドナウの真珠」。欧州随一の温泉大国で公衆温泉文化が定着している。",
+      "food": "パプリカをたっぷり使う牛肉スープ「グヤーシュ」、揚げパンのラーンゴシュ。",
+      "housing": "ブダペストの重厚な中欧ネオバロック集合住宅と農村の平屋住宅。",
+      "streetNote": "ドナウ川に架かるくさり橋や歴史的な温泉施設・地下鉄網。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Hungarian Parliament Building",
+          "fallbackTitles": [
+            "Budapest",
+            "Széchenyi Chain Bridge"
+          ],
+          "caption": "国際河川ドナウ川岸に建つブダペストの歴史的街並み"
+        },
+        {
+          "title": "Goulash",
+          "fallbackTitles": [
+            "Lángos"
+          ],
+          "caption": "パプリカをふんだんに使った伝統料理グヤーシュ"
+        }
+      ]
+    }
+  },
+  "ROU": {
+    "quickOverview": {
+      "headline": "ロマンス語×東方正教・ドナウ河口の国・EU内の自動車＆穀物拠点",
+      "summary": "周辺がスラブ語圏の東欧にありながらロマンス語派（ラテン語由来）を話し、宗教は東方正教という出題定番国。EU加盟後はドイツ・イタリア等への労働力流出と、自動車・IT工場誘致の双方が進む。",
+      "keyPoints": [
+        "東欧で唯一の『ロマンス語派 × 東方正教』の組み合わせ",
+        "ドナウ川下流の黒海デルタとワラキア平原のトウモロコシ・小麦生産",
+        "EU加盟後に西欧への出稼ぎ移民流出と自動車工場（ダチア）誘致が進行"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ブカレストの大通りやトランシルバニア地方の城塞都市シビウ等の中世文化が残る。若年層の西欧移住による地方の過疎・高齢化も話題。",
+      "food": "キャベツのひき肉包みサルマーレ、トウモロコシ粉のママリガ。",
+      "housing": "共産主義時代のアパート群と農村の伝統的木・漆喰住宅。",
+      "streetNote": "ドナウ沿岸のコンスタンツァ港や、トランシルバニア地方の石畳と城壁。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Sibiu",
+          "fallbackTitles": [
+            "Bucharest",
+            "Palace of the Parliament"
+          ],
+          "caption": "カルパチア山脈北側トランシルバニア地方の歴史的街並み"
+        },
+        {
+          "title": "Sarma (food)",
+          "fallbackTitles": [
+            "Mămăligă"
+          ],
+          "caption": "トウモロコシ粥や発酵キャベツロールなどのルーマニアの郷土料理"
+        }
+      ]
+    }
+  },
+  "SVK": {
+    "quickOverview": {
+      "headline": "『1人当たり自動車生産世界一』＆『原発6割』・中欧唯一のユーロ導入国",
+      "summary": "人口わずか540万人ながら独・仏・韓・英メーカーの大工場が集まり『1人当たり自動車生産台数世界1位』を誇る。またフランスに次ぐ原子力発電比率約6割、中東欧4国で唯一のユーロ圏である点が統計判別の決定打。",
+      "keyPoints": [
+        "原子力発電比率が約61%とフランスに次ぐ高さ（水力含め低炭素電源8割超）",
+        "人口規模に対し年100万台生産する自動車産業特化国",
+        "中欧V4（チェコ・波・洪・斯）で唯一ユーロを導入"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ウィーンと近接する首都ブラチスラバは中欧の交通結節点。山間部では木造家屋や羊チーズ料理が残り、都市部では自動車工場勤務者が多い。",
+      "food": "羊乳チーズをじゃがいも団子に絡めた国民食ブリンゾベー・ハルシュキ。",
+      "housing": "ドナウ沿岸の欧州型アパートとタトラ山麓の木造ロッジ。",
+      "streetNote": "ドナウ川沿岸の旧市街と郊外の大規模自動車組立ライン。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Bratislava",
+          "fallbackTitles": [
+            "High Tatras"
+          ],
+          "caption": "ドナウ川に面しウィーン近郊に位置する首都ブラチスラバ"
+        },
+        {
+          "title": "Bryndzové halušky",
+          "fallbackTitles": [
+            "High Tatras"
+          ],
+          "caption": "カルパチア山地の牧羊文化から生まれた国民食ハルシュキ"
+        }
+      ]
+    }
+  },
+  "CUB": {
+    "quickOverview": {
+      "headline": "カリブ海の社会主義島嶼国・サトウキビとニッケル・高い平均寿命",
+      "summary": "熱帯サバナ気候の冬乾季を活かしたサトウキビ栽培（モノカルチャーの歴史）と東部ラトソルのニッケルが特徴。社会主義政策で識字率や医療・平均寿命が高い一方、経済制裁や物資不足による移民流出も起きている。",
+      "keyPoints": [
+        "ラテンアメリカ唯一の社会主義国家（ソ連崩壊後は観光・外貨送金に依存）",
+        "熱帯サバナ気候の乾季収穫に適したサトウキビ＋東部のニッケル産出",
+        "医療・教育充実により1人当たりGDPの割に平均寿命が極めて長い"
+      ]
+    },
+    "dailyLife": {
+      "summary": "1950年代の米国製クラシックカーやスペイン植民地時代のカラフルなコロニアル建築が残る一方、物資配給制度や停電対策が市民生活に直結する。",
+      "food": "黒豆と米の炊き込み（モロス・イ・クリスティアノス）、牛肉の細切り煮込み（ロパ・ビエハ）。",
+      "housing": "ハバナ旧市街の歴史的石造集合住宅や郊外の平屋住宅。",
+      "streetNote": "カリブ海沿いのマレコン海岸通りを行き交うレトロなクラシックカー。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Old Havana",
+          "fallbackTitles": [
+            "Classic cars in Cuba"
+          ],
+          "caption": "ハバナ旧市街の植民地時代のカラフルな建物とクラシックカー"
+        },
+        {
+          "title": "Ropa vieja",
+          "fallbackTitles": [
+            "Cuban cuisine"
+          ],
+          "caption": "黒豆ご飯と牛肉を煮込んだキューバの伝統家庭料理"
+        }
+      ]
+    }
+  },
+  "PAN": {
+    "quickOverview": {
+      "headline": "閘門式パナマ運河＆便宜置籍船で第3次産業が支える中米の海上十字路",
+      "summary": "中米最狭部に位置し、大西洋と太平洋を結ぶ閘門式パナマ運河と『便宜置籍船』世界最大級の海運・自由貿易金融センター。水平式のスエズ運河との違いや、エルニーニョ現象時の淡水湖干ばつによる通航制限が共テ注目点。",
+      "keyPoints": [
+        "湖（淡水）を利用する閘門式＝パナマ運河 ／ 水平式＝スエズ運河",
+        "日本船主も多く利用する便宜置籍船籍数トップクラス",
+        "米ドルがそのまま通用し第3次産業中心（1人当たりGDP中南米最上位級）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "運河太平洋口に高層ビル群がそびえる金融街があり中南米で極めて高い所得水準を誇る一方、運河周辺には豊かな熱帯雨林と先住民文化も残る。",
+      "food": "セビーチェ（白身魚のマリネ）、鶏肉スープのサンコーチョ、米と豆。",
+      "housing": "パナマシティの近代高層コンドミニアムと農村の高床木造家屋。",
+      "streetNote": "ミラフローレス閘門を通過する巨大コンテナ船と金融街スカイラインの対比。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Panama Canal",
+          "fallbackTitles": [
+            "Panama City"
+          ],
+          "caption": "大西洋と太平洋を標高26mの湖経由で繋ぐ閘門式パナマ運河"
+        },
+        {
+          "title": "Ceviche",
+          "fallbackTitles": [
+            "Sancocho"
+          ],
+          "caption": "太平洋・カリブ海双方の魚介を使うさっぱりしたセビーチェ"
+        }
+      ]
+    }
+  },
+  "JAM": {
+    "quickOverview": {
+      "headline": "旧英領カリブ海のボーキサイト／アルミナと最高級コーヒーの島",
+      "summary": "中南米・カリブ諸国の中でも旧英領（英語・プロテスタント・アフリカ系9割超）である点が特徴。石灰岩カルスト由来のボーキサイト/アルミナ輸出と、霧のブルーマウンテン高地産コーヒー（日本が多く輸入）で著名。",
+      "keyPoints": [
+        "ラテンアメリカ内の旧英領：英語・プロテスタント・アフリカ系中心",
+        "カルスト台地で採掘されるボーキサイト／アルミナ輸出（電力を要するアルミ地金はカナダやアイスランドへ輸出）",
+        "ブルーマウンテンコーヒー・リゾート観光・レゲエ音楽・陸上の短距離大国"
+      ]
+    },
+    "dailyLife": {
+      "summary": "街角にレゲエ音楽が流れ、週末は家族でドラム缶グリルを囲みスパイシーなジャークチキンを焼く陽気なカリブ海文化。",
+      "food": "ジャークチキン（オールスパイス等のスパイス焼き）、アキー＆ソルトフィッシュ。",
+      "housing": "ハリケーンに備えた低層木造・コンクリート造や海沿いのカラー住宅。",
+      "streetNote": "キングストンの港湾・市場と、高地の霧に包まれた急斜面コーヒー農園。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Blue Mountains (Jamaica)",
+          "fallbackTitles": [
+            "Kingston, Jamaica"
+          ],
+          "caption": "急斜面の霧の中で最高級コーヒーが育てられるブルーマウンテン山脈"
+        },
+        {
+          "title": "Jerk (cooking)",
+          "fallbackTitles": [
+            "Kingston, Jamaica"
+          ],
+          "caption": "スパイスをすり込んで炭火で焼くジャマイカの定番料理ジャークチキン"
+        }
+      ]
+    }
+  },
+  "BOL": {
+    "quickOverview": {
+      "headline": "標高3600mの首都ラパス・ウユニ塩湖のリチウム・高い先住民比率",
+      "summary": "アンデス高地（アルティプラノ）では年中10℃前後の寒冷高地気候でリャマやじゃがいもを育て、東部低地では熱帯の大豆を栽培する極端な標高対比の国。ウユニ塩湖の世界最大級リチウム埋蔵量と高い先住民比率（ケチュア・アイマラ）が超重要。",
+      "keyPoints": [
+        "ラパス（標高3640m）は低緯度なのに年較差小さく低温＝高地気候の代表",
+        "チリ・亜と共にリチウムトライアングル（ウユニ塩湖）＆天然ガス・銀・スズ",
+        "先住民比率が南米トップクラス、硝石戦争で海岸を失った内陸国"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ラパスでは地形がすり鉢状のため、空気が薄く寒い高所（エルアルト）に先住民系庶民層、酸素が濃く温暖な谷底に高所得層が住み、都市交通として世界最長級のロープウェイ網（ミ・テレフェリコ）が日常の足。",
+      "food": "キヌアのスープ、肉入り蒸し焼きパン「サルテーニャ」、数百種類のじゃがいも料理。",
+      "housing": "アルティプラノの赤レンガ造り高地住宅と、寒冷を防ぐ厚手のアルパカ織物衣服（チョリータの山高帽とスカート）。",
+      "streetNote": "すり鉢状の斜面に張り付く赤レンガ家屋の上を空中ロープウェイが行き交うラパスの絶景。",
+      "wikiPhotoTargets": [
+        {
+          "title": "La Paz",
+          "fallbackTitles": [
+            "Salar de Uyuni"
+          ],
+          "caption": "標高3600mのすり鉢谷に広がるラパスの街並みとアンデスの峰"
+        },
+        {
+          "title": "Salar de Uyuni",
+          "fallbackTitles": [
+            "Salteña"
+          ],
+          "caption": "世界最大級の塩原かつ巨大なリチウム資源を秘めるウユニ塩湖"
+        }
+      ]
+    }
+  },
+  "ECU": {
+    "quickOverview": {
+      "headline": "赤道直下の常春キト（年較差1℃）・バナナ輸出世界1位・ガラパゴス諸島",
+      "summary": "『赤道』を意味する国名通り、赤道直下ながら標高2850mのキトは毎月14℃前後で年較差がほぼない。低地は世界一のバナナ輸出・エビ養殖・アマゾン原油、沖合はペルー海流とホットスポットが重なるガラパゴス諸島。",
+      "keyPoints": [
+        "キトの雨温図＝赤道直下高地のため1〜12月気温がほぼ一直線（14℃前後）",
+        "バナナ輸出世界1位＋養殖エビ世界トップ級＋カカオ＋バラ（高地花き）＋原油（OPEC脱退）",
+        "ガラパゴス諸島＝ホットスポット火山＋寒流ペルー海流の特異生態系"
+      ]
+    },
+    "dailyLife": {
+      "summary": "高地キトの人は重ね着（ポンチョ等）で1日の寒暖差に対応し、沿岸グアヤキルは半袖にエアコンの熱帯都市と暮らしぶりが二分される。",
+      "food": "エビのセビーチェ、じゃがいもとチーズのスープ「ロクロ」、高地の焼きトウモロコシ。",
+      "housing": "キト世界遺産旧市街の白壁石造建築（地震・日差し対策）と沿岸高床木造。",
+      "streetNote": "赤道記念碑と背後に雪を戴く標高5897mコトパクシ火山の景観。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Quito",
+          "fallbackTitles": [
+            "Cotopaxi"
+          ],
+          "caption": "赤道直下・標高2850mの谷に広がる常春の首都キト市街"
+        },
+        {
+          "title": "Galápagos Islands",
+          "fallbackTitles": [
+            "Ceviche"
+          ],
+          "caption": "ペルー海流と赤道が交わる固有種の宝庫ガラパゴス諸島"
+        }
+      ]
+    }
+  },
+  "URY": {
+    "quickOverview": {
+      "headline": "人口の3倍の肉牛・再エネ9割・メルコスール本部のあるラプラタ東岸の福祉国家",
+      "summary": "アルゼンチンと同じくイタリア・スペイン系白人が約9割を占め、Cfa気候の温暖草原での企業的牧畜（牛肉・羊毛輸出）と木材パルプ・大豆が主軸。電力の9割超を水力・風力等の再エネで賄う優等生で、メルコスール本部が置かれる。",
+      "keyPoints": [
+        "ラプラタ川東岸のCfa気候（南半球なので7月低温・1月高温）＋企業的牧畜",
+        "メルコスール（南米南部共同市場）本部が首都モンテビデオに立地",
+        "風力＋水力による再エネ発電比率約9割超・高い識字率と欧州系住民比率"
+      ]
+    },
+    "dailyLife": {
+      "summary": "国民が魔法瓶とお椀型容器を持ち歩きマテ茶を飲みながら街を歩く光景が名物。週末は家族で炭火牛肉アサードを楽しむ。",
+      "food": "牧草育ちの牛肉アサード、マテ茶（1人当たり消費量世界最上位級）。",
+      "housing": "欧州風の石造・コンクリート都市住宅（モンテビデオ中心部に全人口の約半数集中）。",
+      "streetNote": "ラプラタ川の河口遊歩道沿いにジョギングやマテ茶を楽しむ人々。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Montevideo",
+          "fallbackTitles": [
+            "Punta del Este"
+          ],
+          "caption": "ラプラタ川東岸に広がる都市国家型の首都モンテビデオ"
+        },
+        {
+          "title": "Yerba mate",
+          "fallbackTitles": [
+            "Asado"
+          ],
+          "caption": "国民的飲料として日常的に持ち歩かれるマテ茶"
+        }
+      ]
+    }
+  },
+  "LBY": {
+    "quickOverview": {
+      "headline": "アフリカ最大原油埋蔵量（OPEC）＆サハラ化石地下水の巨大パイプライン",
+      "summary": "サハラ砂漠が国土の大部分を占め、原油・天然ガス輸出に9割超を依存するOPEC産油国。サハラ南部地下の非再生「化石地下水」を沿岸大都市へ引く大人工河川と、旧宗主国イタリアへ向かう地中海難民ルートの拠点性が重要。",
+      "keyPoints": [
+        "OPEC加盟・アフリカ最大級の原油確認埋蔵量（主に欧州へ輸出）",
+        "サハラ地下の化石地下水を沿岸へ送る『大人工河川計画』とBW・BS乾燥気候",
+        "アラビア語・イスラム教スンニ派・旧伊領・地中海移民ルートの経由地"
+      ]
+    },
+    "dailyLife": {
+      "summary": "住民の大半が地中海沿岸のトリポリやベンガジに集中。伝統的なクスクスや茶文化とともに、政情不安定による停電やインフラ課題を抱える。",
+      "food": "羊肉や魚を使ったクスクス、ナツメヤシ（デーツ）、濃厚なリビア風ミント茶。",
+      "housing": "日差しを避ける厚い白壁の中庭付き都市住宅とサハラ内陸の日干しレンガ家屋。",
+      "streetNote": "地中海に面したトリポリの旧市街（メディナ）と古代ローマ遺跡レプティス・マグナ。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Leptis Magna",
+          "fallbackTitles": [
+            "Tripoli, Libya"
+          ],
+          "caption": "地中海沿岸に残る世界遺産古代ローマ都市レプティス・マグナ"
+        },
+        {
+          "title": "Couscous",
+          "fallbackTitles": [
+            "Sahara"
+          ],
+          "caption": "北アフリカ全域で主食として親しまれる硬質小麦粒クスクス"
+        }
+      ]
+    }
+  },
+  "TUN": {
+    "quickOverview": {
+      "headline": "マグレブ3国のCsオリーブ輸出＆EU向け自動車部品・フランス語通用の国",
+      "summary": "地中海性気候の北部とサハラ砂漠の南部に分かれるマグレブ諸国。オリーブ油やリン鉱石に加え、旧宗主国フランス・イタリアに近い低賃金拠点としてEU向け自動車電装部品や衣料縫製が主力輸出に成長。2011年アラブの春の発祥地。",
+      "keyPoints": [
+        "地中海沿岸Cs気候のオリーブ油輸出国＋南部オアシスのデーツ＋リン鉱石",
+        "旧フランス保護領（アラビア語＋仏語商業利用）・自動車電線や繊維のEU下請工場",
+        "マグレブ諸国で出生率低下・観光産業が発達（カルタゴ・シディ・ブ・サイド等）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "青と白の街シディ・ブ・サイドやカフェ文化など地中海らしさとアラブ・イスラム文化が融合。フランス語とアラビア語のバイリンガルが多い。",
+      "food": "クスクス、薄皮に卵とツナを包んで揚げた前菜「ブリック」、辛い香辛料ハリッサ。",
+      "housing": "白壁と青い格子戸（マシュラビーヤ）で強い日差しと視線を遮る住宅。",
+      "streetNote": "チュニスの旧市街（スーク）と地中海沿岸の近代リゾート地区・工業団地。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Sidi Bou Said",
+          "fallbackTitles": [
+            "Tunis"
+          ],
+          "caption": "強い日差しに映える白壁と地中海ブルーの扉が美しいシディ・ブ・サイド"
+        },
+        {
+          "title": "Brik",
+          "fallbackTitles": [
+            "Couscous",
+            "Tunis"
+          ],
+          "caption": "マグレブ地域を代表する揚げ包み前菜料理ブリック"
+        }
+      ]
+    }
+  },
+  "CIV": {
+    "quickOverview": {
+      "headline": "カカオ豆世界1位（約4割）× 天然ゴム世界4位急伸・旧仏領西アフリカの経済軸",
+      "summary": "ガーナと並びギニア湾岸で世界のカカオ生産の約6割を担う世界1位国（近年は天然ゴム世界4位やカシューナッツでも躍進）。旧仏領でフランス語と共通通貨CFAフランを使い、最大輸出先は欧州カカオ加工拠点のオランダ等。",
+      "keyPoints": [
+        "カカオ豆生産・輸出とも不動の世界1位（隣国ガーナが2位）＋天然ゴム急増",
+        "旧仏領（フランス語・CFAフラン）・ヤムスクロへ行政遷都も経済中心は港湾アビジャン",
+        "北部イスラム教・南部キリスト教の地域構造とカカオ栽培での森林保全/公正貿易課題"
+      ]
+    },
+    "dailyLife": {
+      "summary": "「西アフリカのマンハッタン」と呼ばれる高層ビル街を持つアビジャン（プラトー地区）では多様な民族が暮らし、仏語が共通語となっている。",
+      "food": "キャッサバ粒を蒸した「アチェケ」と焼き魚、プランテン（料理用バナナ）揚げアロコ。",
+      "housing": "アビジャンの高層アパート・中庭式住宅（クール・コミューヌ）と内陸農村の日干し壁住宅。",
+      "streetNote": "ヤムスクロの世界最大級カトリック大聖堂と、アビジャン港から欧州へ出荷されるカカオ袋の山。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Abidjan",
+          "fallbackTitles": [
+            "Basilica of Our Lady of Peace"
+          ],
+          "caption": "ラグーン沿いに高層ビルと港湾が広がる最大都市アビジャン"
+        },
+        {
+          "title": "Attiéké",
+          "fallbackTitles": [
+            "Cocoa bean"
+          ],
+          "caption": "キャッサバから作られる西アフリカ沿岸部の主食アチェケ"
+        }
+      ]
+    }
+  },
+  "GHA": {
+    "quickOverview": {
+      "headline": "旧英領×カカオ世界2位（対日輸入7割）× 金産出アフリカ首位級＆電子ゴミ問題",
+      "summary": "隣国コートジボワール（仏語）と並走するカカオ大国（日本のカカオ輸入約7〜8割！）かつ旧名「黄金海岸」由来の金産出アフリカ首位級国。旧英領（英語・英連邦）で、経度0°（テマ港）を通り、中古電子廃棄物（E-waste）環境問題の現場としても頻出。",
+      "keyPoints": [
+        "隣国コートジボワール（仏語）との対比：ガーナは旧英領（英語・プロテスタント・独立通貨）",
+        "日本のカカオ豆輸入の約7割超を占める＆金生産アフリカ1位級",
+        "経度0°の本初子午線が通過・アコソンボダム水力・E-waste（廃棄物越境移動）課題"
+      ]
+    },
+    "dailyLife": {
+      "summary": "アクラの道路沿いでは色彩豊かな布（ケンテ織）を纏う人々や、頭上に果物・水を載せて売り歩く行商、賑やかなマコラ市場がみられる。",
+      "food": "キャッサバとプランテンを搗いた餅状主食「フフ」とスープ、スパイシーなジョロフライス。",
+      "housing": "都市部のコンクリート造集合住宅と、熱帯雨林地域の中庭付き伝統土壁・トタン屋根家屋。",
+      "streetNote": "経度0度付近のテマ港と、金・カカオ輸送で栄える商業街区。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Accra",
+          "fallbackTitles": [
+            "Kakum National Park"
+          ],
+          "caption": "ギニア湾に面し本初子午線近くに発展するガーナの首都アクラ"
+        },
+        {
+          "title": "Jollof rice",
+          "fallbackTitles": [
+            "Fufu"
+          ],
+          "caption": "西アフリカ各国で家庭や祝祭の定番となるジョロフライス"
+        }
+      ]
+    }
+  },
+  "NAM": {
+    "quickOverview": {
+      "headline": "寒流ベンゲラ海流の『涼しい海岸砂漠』・ウラン世界3位級・超低人口密度",
+      "summary": "南回帰線直下の大西洋岸にありながら、冷たいベンゲラ海流の影響で『夏でも涼しく濃霧が出るのに雨が降らない海岸砂漠（ワルビスベイ）』が最大の試験ポイント！カザフ・カナダに次ぐウラン産出と極端な低人口密度（3人/km²）が特徴。",
+      "keyPoints": [
+        "ワルビスベイの気候＝寒流ベンゲラ海流＋亜熱帯高圧帯による『冷涼な海岸砂漠BW』（ペルーのリマと同じ機構！）",
+        "ウラン（世界3位級）とダイヤモンド採掘・湧昇流漁業",
+        "日本の2.2倍の国土に約300万人（超低人口密度）・旧独領から南ア統治を経て1990年独立"
+      ]
+    },
+    "dailyLife": {
+      "summary": "内陸高地の首都ウィントフックでは南アやドイツ由来の落ち着いた街並みが広がり、広大な農場では牧畜や野生動物保護が営まれる。",
+      "food": "放牧牛肉のステーキ（ブライ＝南ア風BBQ）やゲームミート（オリックス肉等）、ドイツ風ビール。",
+      "housing": "乾燥気候に適応した平屋型農場家屋や、海岸のドイツ風コロニアル木・漆喰建築。",
+      "streetNote": "真っ赤な巨大砂丘（ソススフレイ）と大西洋岸の寒流の霧に包まれたワルビスベイ。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Sossusvlei",
+          "fallbackTitles": [
+            "Namib",
+            "Namibia"
+          ],
+          "caption": "ベンゲラ海流と亜熱帯高圧帯が生んだナミブ砂漠の赤い砂丘群"
+        },
+        {
+          "title": "Windhoek",
+          "fallbackTitles": [
+            "Swakopmund"
+          ],
+          "caption": "乾燥高原に広がるナミビアの首都ウィントフックの街並み"
+        }
+      ]
+    }
+  },
+  "MDG": {
+    "quickOverview": {
+      "headline": "アフリカなのに『インドネシア系言語＆主食は米』・バニラ世界1位・東西気候差",
+      "summary": "2025年本試第6問でも出題されたインド洋の重要島嶼！アフリカ沖にありながら住民はインドネシア方面からインド洋を越えて渡来した祖先を持ち、『オーストロネシア語族』『棚田での稲作・米食』という異色の文化を持つ。世界1位のバニラとニッケル・固有種保護が柱。",
+      "keyPoints": [
+        "インドネシアと同じオーストロネシア語族＋旧仏領（フランス語）・主食は米（棚田）",
+        "南東貿易風による『東岸多雨（Af）／西岸乾燥（BS・バオバブ）』のコントラスト",
+        "バニラ生産世界1位（約8割）＋日本企業も関わるニッケル/コバルト＋固有種・森林減少"
+      ]
+    },
+    "dailyLife": {
+      "summary": "中央高地アンタナナリボは赤土とレンガ造りの2〜3階建て木製バルコニー付き家屋が棚田の丘に並び、毎日山盛りのご飯とおかずを食べる。",
+      "food": "大盛りご飯と青菜・牛肉の煮込み（ロマザヴァ）、コメのとぎ汁スープ（ラノナンパング）。",
+      "housing": "高地の赤レンガ製バルコニー住宅と、東岸の竹・ヤシの葉の高床式家屋。",
+      "streetNote": "西部の乾燥地帯に立ち並ぶ巨木バオバブ並木と高地の段々水田。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Avenue of the Baobabs",
+          "fallbackTitles": [
+            "Antananarivo"
+          ],
+          "caption": "南西部の乾燥風下地域に残る巨大なバオバブの並木道"
+        },
+        {
+          "title": "Antananarivo",
+          "fallbackTitles": [
+            "Madagascar"
+          ],
+          "caption": "高地の丘に赤レンガ家屋と棚田が広がる首都アンタナナリボ"
+        }
+      ]
+    }
+  },
+  "NPL": {
+    "quickOverview": {
+      "headline": "ヒマラヤ災害リスク×水力電源 ×『海外出稼ぎ送金がGDPの約4分の1超』",
+      "summary": "インドと中国に挟まれたヒマラヤ山中の内陸国。大陸プレート衝突による地震・氷河湖決壊洪水リスクやCw気候の夏モンスーン集中に加え、若年層の中東湾岸（カタール等）への出稼ぎに伴う『個人送金GDP比25〜27%』という経済依存構造が共テ超頻出。",
+      "keyPoints": [
+        "湾岸産油国やインドへの出稼ぎによる個人送金受取がGDPの約27%（世界トップ級）",
+        "ヒマラヤ大陸衝突境界の地震・土砂・氷河湖決壊洪水リスク（2025年本試出題）",
+        "ヒンドゥー教8割超（ブッダ生誕地ルンビニも擁す）・内陸国でインド経由貿易依存"
+      ]
+    },
+    "dailyLife": {
+      "summary": "カトマンズ盆地のレンガ木造寺院街やヒマラヤトレッキング観光が暮らしと結びつき、多くの家庭に湾岸諸国で働く家族がいる。",
+      "food": "豆スープ・ご飯・野菜カレー定食「ダルバート」、チベット由来の蒸し餃子「モモ」。",
+      "housing": "レンガと彫刻木窓のネワール様式の街並み、山間部の石積み屋根家屋。",
+      "streetNote": "山道沿いの棚田とダルバール広場、中東出稼ぎ帰りの若者が出入りする空港。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Kathmandu",
+          "fallbackTitles": [
+            "Himalayas"
+          ],
+          "caption": "ヒマラヤ山麓の盆地にレンガ建築が密集する首都カトマンズ"
+        },
+        {
+          "title": "Dal bhat",
+          "fallbackTitles": [
+            "Momo (food)"
+          ],
+          "caption": "豆スープとご飯と野菜を毎日食べるネパールの国民食ダルバート"
+        }
+      ]
+    }
+  },
+  "QAT": {
+    "quickOverview": {
+      "headline": "LNG世界3大輸出国・OPEC脱退・住民約9割が外国人男性の超高所得産ガス国",
+      "summary": "ペルシャ湾のLNG（液化天然ガス）輸出大国（2019年OPEC脱退）。20〜40代男性の外国人出稼ぎ労働者（南アジア等）が人口の約8〜9割を占めるため、人口ピラミッドと老年人口割合（1%台）・1人当たりGDP・CO₂排出量（世界トップ級）の統計問題で絶対に問われる定番国。",
+      "keyPoints": [
+        "米国・豪州と並ぶLNG（液化天然ガス）輸出大国（2019年OPEC脱退）",
+        "外国人割合約8〜9割・人口性比が男性に極端偏重・老年人口率わずか約1.6%",
+        "1人当たりGDP＆エネルギー消費/CO₂排出が世界最上位・ドーハのハブ空港と海水淡水化"
+      ]
+    },
+    "dailyLife": {
+      "summary": "夏は日差しと熱風が強いため巨大な冷房付きモールや空調設備が整い、ドーハの近代的湾岸スカイラインの下で世界中からの駐在員・労働者が暮らす。",
+      "food": "香辛料と肉・米を炊き込んだ「マクブース」、デーツ（ナツメヤシ）、南アジア労働者向けのカレー等。",
+      "housing": "中庭付きカタール伝統白亜ヴィラと高層マンション・郊外労働者宿舎。",
+      "streetNote": "ドーハ湾岸に林立する高層ビル街（ウエストベイ）とアラブ伝統市場スーク・ワキーフ。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Doha",
+          "fallbackTitles": [
+            "Museum of Islamic Art, Doha"
+          ],
+          "caption": "ペルシャ湾沿いに超高層ビル群と近代建築が建ち並ぶドーハ"
+        },
+        {
+          "title": "Kabsa",
+          "fallbackTitles": [
+            "Souq Waqif"
+          ],
+          "caption": "アラビア湾岸地域で親しまれる香辛料炊き込みご飯マクブース"
+        }
+      ]
+    }
+  },
+  "OMN": {
+    "quickOverview": {
+      "headline": "ホルムズ海峡南岸・OPEC非加盟の中東産油国＆世界遺産『アフラジ』灌漑",
+      "summary": "飛地ムサンダム半島で世界の石油輸送路「ホルムズ海峡」の南岸を握る。イランやサウジと距離を置く穏健なイバード派が多数でOPEC非加盟。山麓地下水を引く伝統灌漑水路アフラジが世界遺産。",
+      "keyPoints": [
+        "ホルムズ海峡南岸（飛地ムサンダム半島）に位置・GCC加盟だがOPEC非加盟",
+        "イランのカナートと同型の伝統地下水路『アフラジ』（世界遺産）",
+        "スンニ派/シーア派と異なる『イバード派』多数・東アフリカ（ザンジバル）との歴史的紐帯"
+      ]
+    },
+    "dailyLife": {
+      "summary": "法律で伝統的な白亜建築と高さ制限が守られた落ち着いた街マスカット。男性は白い民族衣装ディシュダーシャに独特の刺繍帽クンマをかぶる。",
+      "food": "バナナの葉で包んで地下オーブンで蒸し焼きにする羊肉料理「シュワ」、デーツとカルダモンコーヒー。",
+      "housing": "高層ビルを抑えた伝統的アラブ様式の白壁低層建築群。",
+      "streetNote": "岩山と海に囲まれたマスカット湾と日干しレンガのニズワ城塞・アフラジ水路。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Muscat",
+          "fallbackTitles": [
+            "Nizwa Fort"
+          ],
+          "caption": "岩山に囲まれたアラビア海港湾に白亜の低層建築が並ぶマスカット"
+        },
+        {
+          "title": "Aflaj Irrigation Systems of Oman",
+          "fallbackTitles": [
+            "Frankincense"
+          ],
+          "caption": "カナートと同じ原理でオアシスを潤す世界遺産の伝統水路アフラジ"
+        }
+      ]
+    }
+  },
+  "KHM": {
+    "quickOverview": {
+      "headline": "季節で逆流するトンレサップ湖×上座部仏教×『衣料・縫製』労働力指向基地",
+      "summary": "2026年本試第4問（衣料品輸入）・第6問（メコン川流域・プノンペン）の双方に直結！モンスーン雨季にメコン川から水が逆流して巨大化するトンレサップ湖（淡水魚）、上座部仏教97%、欧米・日本向けの衣料品縫製工場集積と人口ピラミッドの戦乱によるくびれが必出知識。",
+      "keyPoints": [
+        "メコン川の増水で逆流し面積が数倍になるトンレサップ湖（2026年本試出題）",
+        "安価な若年労働力を活かした衣料品・靴縫製（総輸出の約5割超・2026年本試第4問関連）",
+        "旧仏領だが公用語クメール語（オーストロアジア語族）・上座部仏教97%・米ドル流通"
+      ]
+    },
+    "dailyLife": {
+      "summary": "トンレサップ湖上の高床・水上集落での漁業生活と、首都プノンペンでオートバイが飛び交い縫製工場で多くの若い女性が働く都市生活が対照的。",
+      "food": "淡水魚をココナッツミルクと香草で蒸した「アモック」、発酵魚ペースト「プラホック」と米。",
+      "housing": "洪水・熱帯雨に対応した木造高床式住宅とトンレサップの水上家屋（フローティングハウス）。",
+      "streetNote": "世界遺産アンコールワットの石造寺院群とメコン川合流点のプノンペン市街。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Angkor Wat",
+          "fallbackTitles": [
+            "Phnom Penh"
+          ],
+          "caption": "クメール王朝の栄華を伝える世界遺産アンコールワット"
+        },
+        {
+          "title": "Fish amok",
+          "fallbackTitles": [
+            "Tonlé Sap"
+          ],
+          "caption": "淡水魚とココナッツミルクをバナナの葉で蒸す伝統料理アモック"
+        }
+      ]
+    }
+  },
+  "FJI": {
+    "quickOverview": {
+      "headline": "南太平洋のハブ・旧英領サトウキビプランテーション由来『インド系約4割＆ヒンディー語公用語』",
+      "summary": "メラネシアに属する南太平洋の島嶼国ハブ（PIF本部所在地）。最大の特徴は英国統治時代のサトウキビ農園契約労働に由来する『インド系住民（約38%）とヒンドゥー教（約28%）・3公用語（英・フィジー・ヒンディー）』の共存と、サイクロン・海面上昇課題。",
+      "keyPoints": [
+        "旧英領サトウキビプランテーション移民由来のインド系住民（約4割）とヒンドゥー教",
+        "英語・フィジー語・フィジーヒンディー語の3つが公用語（南太平洋メラネシアの中心）",
+        "南東貿易風による島内の湿潤（首都スバ）vs 相対的乾燥（観光地ナンディ）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "先住民系の共同体文化（伝統的カヴァ儀式・ラグビー熱）と、インド系の商店街・カレー食文化やヒンドゥー寺院が同じ島で共存する。",
+      "food": "生魚をライムとココナッツミルクで和えた「ココンダ」、フィジー風インドカレー、地下蒸し料理ロボ。",
+      "housing": "伝統的な茅葺き高屋根家屋「ブレ」と都市部の耐サイクロン住宅。",
+      "streetNote": "スバ市内のキリスト教会とヒンドゥー寺院が並び立つ風景と熱帯ビーチリゾート。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Suva",
+          "fallbackTitles": [
+            "Fiji"
+          ],
+          "caption": "南太平洋諸島の国際機関も集まるフィジーの首都スバ"
+        },
+        {
+          "title": "Kokoda (Fijian dish)",
+          "fallbackTitles": [
+            "Lovo (Fijian)",
+            "Fiji"
+          ],
+          "caption": "太平洋島嶼の魚とココナッツの伝統料理ココンダ"
+        }
+      ]
+    }
+  },
+  "MDV": {
+    "quickOverview": {
+      "headline": "最高標高2.4mの環礁国（海面上昇の最前線）・1島1リゾート観光・首都マレの超高密度",
+      "summary": "2025年本試第6問「インド洋の島嶼国」でも直撃出題！約1200のサンゴ環礁から成り、最高標高わずか2.4mのため温暖化による海面上昇・高潮水没リスクの象徴として必ず登場する。1島1リゾートの高級観光とカツオ漁、イスラム教国でありつつ人口過密な首都マレ島が特徴。",
+      "keyPoints": [
+        "最高標高2.4m・平均1.5mのサンゴ礁（環礁）→海面上昇・サンゴ白化の象徴",
+        "『1島1リゾート』方式の高級観光立国（外貨収入柱）と伝統的一本釣りカツオ漁",
+        "イスラム教スンニ派国（約100%）× 世界最高級の過密人口都市マレ島"
+      ]
+    },
+    "dailyLife": {
+      "summary": "一般市民が暮らす首都マレ島は高層ビルが島いっぱいに密集しバイクが走るのに対し、周囲のリゾート島は水上コテージとエメラルドの海という二面性を持つ。",
+      "food": "鰹節に似た乾燥カツオ（モルディブフィッシュ）とココナッツ・玉ねぎを和えた「マスフニ」、ロティ。",
+      "housing": "マレ島の過密中高層アパート（埋立島フルマーレへ分散中）と伝統サンゴ石建築。",
+      "streetNote": "水上飛行機やスピードボートが島々の環礁ラグーンを繋ぐ海の交通網。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Malé",
+          "fallbackTitles": [
+            "Atoll"
+          ],
+          "caption": "環礁の小さな島を埋め尽くすように高密度に建てられた首都マレ市街"
+        },
+        {
+          "title": "Mas huni",
+          "fallbackTitles": [
+            "Baa Atoll"
+          ],
+          "caption": "一本釣りカツオとココナッツを使った朝食の定番マスフニ"
+        }
+      ]
+    }
+  },
+  "MUS": {
+    "quickOverview": {
+      "headline": "2025年本試出題！『インド系約7割・ヒンドゥー最多 × 仏語系クレオール』の多角化島嶼国",
+      "summary": "2025年本試第6問問5で『インド洋周辺の島嶼国』として直撃出題！旧フランス領から旧イギリス領を経て、サトウキビ農園の契約労働者としてインド人が移住したため『インド系住民約7割・ヒンドゥー教約半数 × 日常は仏語系クレオール・政治は英語』という重層構造を持つ。サトウキビモノカルチャーから繊維・国際金融・観光へ転換成功した高水準国。",
+      "keyPoints": [
+        "2025年本試第6問出題：インド洋の多民族島嶼国（インド系約68%・ヒンドゥー約48%）",
+        "仏領→英領のため英連邦・英語実務かつフランス語・クレオール語が日常通用",
+        "サトウキビ依存→輸出加工区（繊維）→金融ハブ・観光へと経済多角化に成功（1人当たりGDPアフリカ最上位級）"
+      ]
+    },
+    "dailyLife": {
+      "summary": "ポートルイスの市場ではヒンドゥー寺院とモスクとカトリック教会が徒歩圏に並び、インド系・アフリカ系・華人・仏系の食文化が日常的に交じり合う。",
+      "food": "インド由来の薄焼き豆パン「ドールプリ」、中華系麺「ミネフリ」、クレオール風カレー「ルガイユ」。",
+      "housing": "仏植民地風ベランダ付き木造クレオール邸宅と都市部の近代的オフィス・マンション。",
+      "streetNote": "世界遺産ル・モーン山（逃亡奴隷の聖地）や、金融ビル・サトウキビ畑・海岸リゾートが同居する風景。",
+      "wikiPhotoTargets": [
+        {
+          "title": "Port Louis",
+          "fallbackTitles": [
+            "Le Morne Brabant",
+            "Mauritius"
+          ],
+          "caption": "インド洋の金融・貿易拠点であり多様な文化が交わるポートルイス"
+        },
+        {
+          "title": "Dholl puri",
+          "fallbackTitles": [
+            "Mauritian cuisine",
+            "Le Morne Brabant"
+          ],
+          "caption": "インド系住民から広がり国民食となった豆入り平焼きパンのドールプリ"
         }
       ]
     }

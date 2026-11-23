@@ -189,7 +189,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地震"
+        "地震",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d2_q2.png",
       "clipPdfPath": null,
@@ -258,9 +259,9 @@
         "THA",
         "VNM",
         "SGP",
-        "IND",
         "USA",
-        "CHL"
+        "CHL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -479,7 +480,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
-        "自然災害"
+        "自然災害",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d3_q6.png",
       "clipPdfPath": null,
@@ -509,13 +511,15 @@
       "promptSummary": "第4問コトミさんは，衣料品類の生産，流通，再利用・再資源化について探究した。この探究に関する次の問い（問1～5）に答えよ。（配点17）問1コトミさんは，衣料品類の原料である天然繊維がどのような地域で生産されているのかについて調べた。コトミさんが作成した図1は，いくつかの天然繊維の生産量について，世界全体に占める割合が(1)％以上の国・地域を示したものであり，ア～ウは，亜麻，ジュート，綿花のいずれかである。また，後の文Ａ～Ｃは，ア～...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
         "小麦",
         "プランテーション",
-        "混合農業"
+        "混合農業",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d4_q1.png",
       "clipPdfPath": null,
@@ -586,7 +590,8 @@
         "KOR",
         "TWN",
         "VNM",
-        "BGD"
+        "BGD",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -653,7 +658,8 @@
       "promptSummary": "問5最後にコトミさんは，大量に消費される衣料品類の再利用・再資源化の現状について調べた。次の図3は，世界の中古衣料品類＊の輸出額と輸入額について，世界に占める割合が(5)％以上の国を示したものであり，ＪとＫは，輸出と輸入のいずれかである。また，後の文章中の空欄サには，ASEANとEUのいずれかが当てはまる。輸入に該当する図と空欄サに当てはまる語句との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。19＊衣料アク...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -727,7 +733,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "ARE",
         "FRA"
       ],
@@ -958,7 +963,9 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "KHM",
+        "SDN"
       ],
       "relatedLayerIds": [
         "rv_nile"
@@ -998,7 +1005,9 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "HUN",
+        "SVK"
       ],
       "relatedLayerIds": [
         "rv_nile"
@@ -1080,7 +1089,10 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "SDN",
+        "MAC",
+        "SRB"
       ],
       "relatedLayerIds": [
         "rv_nile"

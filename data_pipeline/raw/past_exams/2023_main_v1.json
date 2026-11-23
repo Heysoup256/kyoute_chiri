@@ -92,7 +92,9 @@
       "relatedCountries": [
         "JPN",
         "RUS",
-        "AUS"
+        "AUS",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -294,7 +296,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "トウモロコシ",
-        "大豆"
+        "大豆",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2023_main/2023_main_d2_q3.png",
       "clipPdfPath": null,
@@ -360,7 +363,8 @@
       "promptSummary": "問5輸出入の際に用いられる輸送手段は，国の地理的位置や運ばれる製品の性質によって異なる。次の図5は，フランスとポルトガルにおける，2019年のEU＊域外への輸送手段別割合を示したものである。図5中のアとイはフランスとポルトガルのいずれか，ＥとＦは輸出額と輸出量＊＊のいずれかである。フランスの輸出額に該当するものを，図5中の(1)～(2)のうちから一つ選べ。12＊EUにはイギリスを含む。＊＊重量ベース。フランスまたはポルトガルアＥＦ...",
       "relatedCountries": [
         "GBR",
-        "FRA"
+        "FRA",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -576,7 +580,8 @@
         "CHN",
         "TWN",
         "FRA",
-        "ETH"
+        "ETH",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -616,7 +621,8 @@
         "GBR",
         "DEU",
         "POL",
-        "USA"
+        "USA",
+        "IRL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -689,7 +695,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -727,7 +734,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -765,7 +773,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -801,7 +810,8 @@
         "CHN",
         "TWN",
         "IND",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1018,7 +1028,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2023_main/2023_main_d5_q5.png",
       "clipPdfPath": null,

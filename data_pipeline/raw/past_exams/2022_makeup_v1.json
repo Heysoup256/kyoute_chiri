@@ -185,8 +185,7 @@
       "title": "第1問 問6: 問6津波の被害は，地形の違いにより異なる",
       "promptSummary": "問6津波の被害は，地形の違いにより異なる。次の図4は，インドネシアのある平野における2004年インド洋大津波の浸水範囲と浸水深，および地形の分布を示したものである。図4の範囲における津波の状況について考えられることがらを述べた文(1)～(2)のうちから，適当でないものを一つ選べ。6 2 km 0タチ300 25 50 580 320 270 355 355 325 600 810 380 400 610 200浸水範囲浸水深(cm...",
       "relatedCountries": [
-        "IDN",
-        "IND"
+        "IDN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -231,7 +230,8 @@
         "USA",
         "CAN",
         "MEX",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -267,7 +267,8 @@
       "promptSummary": "問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた。次の図2は，いくつかの工業製品について，輸出金額の上位15か国・地域が世界の輸出金額に占める割合を示したものであり，カ～クは，衣類，航空機＊，テレビのいずれかである。工業製品名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。8＊航空機の部分品や人工衛星などを含む。40 20 5％カキク中国の数値には台湾，ホンコン，マカオ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -440,7 +441,8 @@
       "relatedCountries": [
         "VNM",
         "DZA",
-        "NZL"
+        "NZL",
+        "QAT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -837,7 +839,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "石炭"
+        "石炭",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q6.png",
       "clipPdfPath": null,

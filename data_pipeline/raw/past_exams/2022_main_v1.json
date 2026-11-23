@@ -155,7 +155,9 @@
       "questionLabel": "第1問 問5（解答番号5）",
       "title": "第1問 問5: 問5次の図5は，アフリカを(1)地域に区分＊して示したものである",
       "promptSummary": "問5次の図5は，アフリカを(1)地域に区分＊して示したものである。また，表3は，この(1)地域について，1990年から2019年の期間における地震，火山噴火，熱帯低気圧による自然災害の発生数＊＊を集計したものであり，タ～ツは，北部，西部，東部のいずれかである。地域とタ～ツとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。5とうしよ＊マダガスカル以外の島嶼国を除く。＊＊死者10名以上，被災者100名以上，非常事態宣言の発令，...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "MDG"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
@@ -338,13 +340,15 @@
         "DEU",
         "ISL",
         "USA",
-        "CAN"
+        "CAN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
         "再生可能エネルギー",
         "原子力",
-        "人口"
+        "人口",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d2_q4.png",
       "clipPdfPath": null,
@@ -418,11 +422,13 @@
         "MYS",
         "IND",
         "USA",
-        "ZAF"
+        "ZAF",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d2_q6.png",
       "clipPdfPath": null,
@@ -626,7 +632,8 @@
         "KOR",
         "MYS",
         "BGD",
-        "CAN"
+        "CAN",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -698,7 +705,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "再生可能エネルギー",
-        "原子力"
+        "原子力",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d4_q2.png",
       "clipPdfPath": null,
@@ -734,7 +742,9 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "大豆"
+        "大豆",
+        "カカオ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d4_q3.png",
       "clipPdfPath": null,
@@ -767,7 +777,9 @@
         "BRA",
         "ARG",
         "CHL",
-        "NZL"
+        "NZL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -862,7 +874,10 @@
         "USA",
         "MEX",
         "CHL",
-        "NZL"
+        "NZL",
+        "PRT",
+        "IRL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [

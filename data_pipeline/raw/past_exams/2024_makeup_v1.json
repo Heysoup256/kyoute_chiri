@@ -338,7 +338,8 @@
       "promptSummary": "問4ナオさんは，世界における農産物の需給について考えるため，食料の輸出入を調べた。次の図4は，いくつかの品目について，世界における2019年の(1)国・地域間の輸出入量の上位(2)件を示したものであり，カ～クは，果実類，牛肉，穀物のいずれかである。品目名とカ～クとの正しい組合せを，後の(3)～(4)のうちから一つ選べ。10ホンコンカキク1～3位4～6位7～9位輸出先輸出元中国の数値には台湾，ホンコン，マカオを含まない。UN Com...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -541,7 +542,8 @@
       "promptSummary": "問4次の表1は，いくつかの国における外国籍人口を男女別に示したものであり，ＥとＦは男性と女性のいずれか，カ～クはアラブ首長国連邦，ギリシャ，ドイツのいずれかである。女性とドイツとの正しい組合せを，後の(1)～(5)のうちから一つ選べ。16表1（単位：万人）ＥＦカ593 250キ309 308ク52 43統計年次は，アラブ首長国連邦とギリシャが2010年，ドイツが2011年。国際連合の資料により作成。(1) (2) (3) (4) ...",
       "relatedCountries": [
         "ARE",
-        "DEU"
+        "DEU",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -689,7 +691,12 @@
         "CHL",
         "PER",
         "COL",
-        "VEN"
+        "VEN",
+        "BOL",
+        "ECU",
+        "URY",
+        "LBY",
+        "PRY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -728,11 +735,13 @@
         "BRA",
         "ARG",
         "PER",
-        "COL"
+        "COL",
+        "PRY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "大豆"
+        "大豆",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q3.png",
       "clipPdfPath": null,
@@ -766,7 +775,9 @@
         "FRA",
         "USA",
         "ARG",
-        "COL"
+        "COL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -806,7 +817,9 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "原油"
+        "原油",
+        "リチウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q5.png",
       "clipPdfPath": null,

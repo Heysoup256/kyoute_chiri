@@ -398,8 +398,7 @@
       "title": "第3問 問4: 問4次の図5は，インドネシアのある地域における過去の土地利用の変化を示したものである",
       "promptSummary": "問4次の図5は，インドネシアのある地域における過去の土地利用の変化を示したものである。図5に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。12アブラヤシ林・農地二次林(疎)天然林・二次林(密)海水域アカシア林2006年1979年0 10 km川井ほか（2012）などにより作成。図5図5中の天然林・二次林（密）では，毎年数か月間にわたって冠水することで微生物の働きが抑制され，泥炭と呼ば...",
       "relatedCountries": [
-        "IDN",
-        "IND"
+        "IDN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -507,7 +506,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "GBR"
       ],
       "relatedLayerIds": [],
@@ -545,7 +543,8 @@
         "TWN",
         "USA",
         "BRA",
-        "ARG"
+        "ARG",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -731,7 +730,8 @@
         "CHN",
         "TWN",
         "IND",
-        "SAU"
+        "SAU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -803,7 +803,8 @@
       "relatedCountries": [
         "PAK",
         "NOR",
-        "EGY"
+        "EGY",
+        "KHM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -939,7 +940,10 @@
       "questionLabel": "第6問 問2（解答番号27）",
       "title": "第6問 問2: 問2オセアニアの気候は海洋の影響を強く受ける",
       "promptSummary": "問2オセアニアの気候は海洋の影響を強く受ける。次の図2中のＡ～Ｄは，いくつかの都市の位置を示したものであり，後の図3中の(1)～(2)は，Ａ～Ｄのいずれかの雨温図である。Ｄに該当するものを，(1)～(2)のうちから一つ選べ。27 B A D Cフィジーフィジーサモアサモアサモア，フィジーは首都の位置を示す。図2ǏǐǑǒ250 200 150 100 50 0 1 3 5 7 9 11月気温降水量3 5 7 9 11月30 25℃m...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "FJI",
+        "WSM"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "雨温図"
@@ -972,7 +976,9 @@
       "promptSummary": "問3オセアニアでは，地域によって多様な食生活がみられる。次の図4は，オセアニアの(1)つの国におけるいくつかの農作物の(2)人当たり年間消費量を示したものである。図4中のＦとＧはサモアとニュージーランドのいずれか，凡例カ～クは小麦，米，タロイモ類＊のいずれかである。サモアとタロイモ類との正しい組合せを，後の(3)～(4)のうちから一つ選べ。28＊キャッサバ，ヤムイモなどを含み，ジャガイモを含まない。カキクＧＦフィジー120 100...",
       "relatedCountries": [
         "AUS",
-        "NZL"
+        "NZL",
+        "FJI",
+        "WSM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1015,7 +1021,8 @@
         "GBR",
         "USA",
         "AUS",
-        "NZL"
+        "NZL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1056,11 +1063,13 @@
         "IND",
         "GBR",
         "AUS",
-        "NZL"
+        "NZL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "移民"
+        "移民",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2026_makeup/2026_makeup_d6_q5.png",
       "clipPdfPath": null,

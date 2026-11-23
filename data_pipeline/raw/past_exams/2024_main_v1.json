@@ -160,7 +160,9 @@
       "relatedCountries": [
         "CAN",
         "MEX",
-        "COL"
+        "COL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -235,7 +237,8 @@
       "relatedCountries": [
         "JPN",
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -307,7 +310,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "USA",
         "AUS"
       ],
@@ -350,7 +352,8 @@
         "TWN",
         "VNM",
         "GBR",
-        "DEU"
+        "DEU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -639,7 +642,6 @@
       "promptSummary": "問6次の図4は，アメリカ合衆国のいくつかの都市において家庭で使用されている主要な言語の割合を示したものである。図4中の(1)～(2)は，後の図5中のシアトル，ミネアポリス，ロサンゼルス，マイアミのいずれかである。シアトルに該当するものを，図4中の(1)～(2)のうちから一つ選べ。18英語スペイン語アジア・太平洋系言語その他0 20 40 60 80 100％ǏǐǑǒアジア・太平洋系言語には，インド・ヨーロッパ系言語を含まない。統計...",
       "relatedCountries": [
         "JPN",
-        "IND",
         "ESP",
         "USA"
       ],
@@ -779,11 +781,12 @@
       "promptSummary": "とうしよ問4環太平洋の島嶼国・地域には，世界各地から観光客が来訪する。次の図4は，いくつかの国・地域における2019年の観光客数を出発地域別の割合で示したものである。図4中のサ～スは，後の図5中のグアム，ハワイ，フィジーのいずれか，凡例ＪとＫはアジアとヨーロッパ＊のいずれかである。グアムとヨーロッパとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。22＊ヨーロッパの数値にはロシアを含む。0 20 40 60 80 100％...",
       "relatedCountries": [
         "RUS",
-        "USA"
+        "USA",
+        "FJI"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2024_main/2024_main_d4_q4.png",
       "clipPdfPath": null,
@@ -818,7 +821,8 @@
         "TWN",
         "USA",
         "PER",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -854,7 +858,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [

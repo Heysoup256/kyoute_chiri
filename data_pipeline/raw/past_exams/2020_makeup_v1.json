@@ -191,7 +191,9 @@
       "promptSummary": "問6自然災害は直接的に生命を脅かすだけでなく，生活基盤となる居住環境にも大きな被害をもたらす。次の図3は，いくつかの国で発生した自然災害による建築物の被害＊について，災害種別の割合で示したものであり，サ～スは，スリランカ，チリ，ボリビアのいずれかである。国名とサ～スとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。6＊1970～2014年に損壊した建築物の数の合計。サシス洪水洪水洪水強風強風地震地震暴風雨津波その他その他そ...",
       "relatedCountries": [
         "LKA",
-        "CHL"
+        "CHL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -305,7 +307,8 @@
         "THA",
         "NLD",
         "COL",
-        "KEN"
+        "KEN",
+        "TON"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -380,11 +383,12 @@
         "TWN",
         "ITA",
         "USA",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q5.png",
       "clipPdfPath": null,
@@ -453,8 +457,8 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
-        "ARG"
+        "ARG",
+        "ROU"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -496,7 +500,8 @@
       ],
       "topicTags": [
         "原油",
-        "国際河川"
+        "国際河川",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q2.png",
       "clipPdfPath": null,
@@ -633,7 +638,8 @@
       "title": "第3問 問6: 問6都市と村落では人口構成や世帯構成の特徴が異なる",
       "promptSummary": "問6都市と村落では人口構成や世帯構成の特徴が異なる。次の図3中のサ～スは，近畿地方の(1)市区町村について，1990年と2015年の老年人口率＊と総世帯数に占める(2)人世帯割合を示したものであり，下のＡ～Ｃの文は，いずれかの市区町村の特徴を説明したものである。サ～スとＡ～Ｃとの正しい組合せを，下の(3)～(4)のうちから一つ選べ。18＊総人口に占める65歳以上の人口割合。0 10 20 30 40 50 70 60 0 10 2...",
       "relatedCountries": [
-        "ZAF"
+        "ZAF",
+        "BWA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -735,7 +741,8 @@
       "title": "第4問 問3: 問3アフリカでは，国によって産業構造が大きく異なる",
       "promptSummary": "問3アフリカでは，国によって産業構造が大きく異なる。次の図4は，図1中のいくつかの国における1970年，1993年，2016年のGDP（国内総生産）に占める各産業の割合を示したものであり，ア～ウは，ボツワナ，マリ，南アフリカ共和国のいずれかである。国名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。21第1次産業第2次産業第3次産業0 0 20 20 40 40 60 60 80 80 100％100％0 20 ...",
       "relatedCountries": [
-        "ZAF"
+        "ZAF",
+        "BWA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -773,7 +780,9 @@
         "CHN",
         "TWN",
         "GBR",
-        "FRA"
+        "FRA",
+        "MDG",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1000,7 +1009,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q4.png",
       "clipPdfPath": null,
@@ -1214,7 +1224,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q5.png",
       "clipPdfPath": null,
@@ -1247,7 +1257,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q6.png",
       "clipPdfPath": null,

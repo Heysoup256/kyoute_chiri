@@ -48,9 +48,7 @@
       "questionLabel": "第1問 問2（解答番号2）",
       "title": "第1問 問2: 問2大気と海洋との相互作用は自然災害を発生させることがある",
       "promptSummary": "問2大気と海洋との相互作用は自然災害を発生させることがある。次の図2中のJ ~ Mに示した地域でみられる災害をもたらす自然現象とその原因や背景について述べた文として下線部が最も適当なものを,下の①~④のうちから一つ選2ウ①J地域でみられる洪水の原因の一つとして,インド洋付近に停滞する梅雨前線がある。②K地域でみられる干ばつの背景として,太平洋西部の海水温が異常に上昇するエルニニョ現象などがある。③L地域でみられる豪雪の背景として,...",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "モンスーン",
@@ -225,11 +223,12 @@
         "PHL",
         "IND",
         "LKA",
-        "COL"
+        "COL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q1.png",
       "clipPdfPath": null,
@@ -259,11 +258,12 @@
       "promptSummary": "問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,世界の上位10か国とそれらが世界に占める割合を示したものである。漁獲量,水産物輸出額,水産物輸入額とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選、*養殖を含まない。ー150ー( 2702ー15の20 % 10中国の数値には,台湾,ホンコン,マカオを含まない。統計年次は2010年。FAOSTATにより作成。①アイウ②アウィ③ィアウ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q2.png",
       "clipPdfPath": null,
@@ -297,7 +297,8 @@
         "CHN",
         "TWN",
         "RUS",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -372,7 +373,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "石炭"
+        "石炭",
+        "世界遺産"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q5.png",
       "clipPdfPath": null,
@@ -405,11 +407,12 @@
         "TWN",
         "FRA",
         "POL",
-        "MEX"
+        "MEX",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q6.png",
       "clipPdfPath": null,
@@ -976,11 +979,12 @@
       "relatedCountries": [
         "JPN",
         "PHL",
-        "NZL"
+        "NZL",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q5.png",
       "clipPdfPath": null,
@@ -1207,7 +1211,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "洪水"
+        "洪水",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q7.png",
       "clipPdfPath": null,

@@ -267,7 +267,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d2_q2.png",
       "clipPdfPath": null,
@@ -335,7 +335,8 @@
       "promptSummary": "問4次の図2中のカ～クは，米の生産量，輸出量，輸入量のいずれかについて，上位12か国・地域とそれらが世界全体に占める割合を示したものである。項目名とカ～クとの正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。10％30 15 5カキク中国の数値には台湾，ホンコン，マカオを含まない。統計年次は2015年。FAOSTATにより作成。図2 (1) (2) (3) (4) (5) (6)生産量カカキキクク輸出量キクカクカキ輸入量...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -372,7 +373,8 @@
       "relatedCountries": [
         "TWN",
         "IRN",
-        "CAN"
+        "CAN",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -407,7 +409,8 @@
       "relatedCountries": [
         "JPN",
         "ARE",
-        "CHE"
+        "CHE",
+        "HUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -476,7 +479,8 @@
       "relatedCountries": [
         "KOR",
         "ETH",
-        "AUS"
+        "AUS",
+        "CZE"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -754,11 +758,13 @@
       "promptSummary": "問4東南アジアとオセアニアの豊富な鉱産資源は，外貨の獲得に寄与している。次の表1は，いくつかの鉱産資源について，世界の産出量に占める割合を地域・国別に示したものであり，(1)～(4)は，すず，鉄鉱石，ニッケル，ボーキサイトのいずれかである。ボーキサイトに該当するものを，表1中の(1)～(4)のうちから一つ選べ。22表1（単位：％）(1) (2) (3) (4)東南アジア（大陸部）14．1 1．5 0．4 0．2東南アジア（島嶼部）...",
       "relatedCountries": [
         "MYS",
-        "AUS"
+        "AUS",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "鉄鉱石"
+        "鉄鉱石",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d4_q4.png",
       "clipPdfPath": null,
@@ -790,7 +796,9 @@
         "CHN",
         "TWN",
         "THA",
-        "AUS"
+        "AUS",
+        "MAC",
+        "LAO"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -826,7 +834,6 @@
         "IDN",
         "VNM",
         "SGP",
-        "IND",
         "FRA",
         "AUS"
       ],
@@ -835,7 +842,8 @@
         "人口",
         "移民",
         "宗教",
-        "イスラム教"
+        "イスラム教",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d4_q6.png",
       "clipPdfPath": null,
@@ -906,7 +914,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -945,7 +954,8 @@
         "TWN",
         "IND",
         "RUS",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -983,7 +993,8 @@
         "IND",
         "RUS",
         "USA",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1019,7 +1030,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [

@@ -155,7 +155,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "自然災害",
-        "砂漠化"
+        "砂漠化",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d1_q5.png",
       "clipPdfPath": null,
@@ -221,11 +222,14 @@
       "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点17）問1スマートフォンは，次の写真1に示すように各種の鉱産資源を原料とする部品が用いられ，また多くの技術が集約された通信機器である。これらの資源や技術に関して，下の図1中のア～ウは，国際特許出願件数＊，アルミ合金ケースの原料となるボーキサイトの生産量，リチウムの生産量のいずれかについて，上位(1)位までの国・地域とそれらが世界全体に占める割合を示したものである。項目名と...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "半導体"
+        "半導体",
+        "リチウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d2_q1.png",
       "clipPdfPath": null,
@@ -429,7 +433,8 @@
       "relatedCountries": [
         "FRA",
         "DEU",
-        "POL"
+        "POL",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -501,7 +506,8 @@
       "promptSummary": "問3多民族国家として知られるマレーシアの取組みを説明した次の文中の空欄カとキに当てはまる語句の正しい組合せを，下の(1)～(4)のうちから一つ選べ。15マレーシアでは，マレー系住民に対して，雇用や教育の面を優遇する（カ）政策をとることで，国内において大きな経済力をもつ（キ）系住民とマレー系住民との格差縮小を図っている。(1) (2) (3) (4)カブミプトラブミプトラルックイーストルックイーストキアラブ中国アラブ中国",
       "relatedCountries": [
         "CHN",
-        "MYS"
+        "MYS",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -672,7 +678,9 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "小麦"
+        "小麦",
+        "オリーブ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d4_q2.png",
       "clipPdfPath": null,
@@ -776,11 +784,12 @@
         "JPN",
         "SAU",
         "IRQ",
-        "TUR"
+        "TUR",
+        "QAT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d4_q5.png",
       "clipPdfPath": null,
@@ -812,7 +821,8 @@
       "promptSummary": "問6次のサ～スの文は，図1中のX～Zのいずれかの国で第二次世界大戦後に発生した紛争（戦争）について述べたものである。サ～スとX～Zとの正しい組合せを，下の(1)～(6)のうちから一つ選べ。24サアメリカ合衆国で発生した同時多発テロ事件をきっかけに，イスラム原理主義組織が支配する地域での戦闘が開始された。シ北部のトルコ系住民と南部のギリシャ系住民との対立が激化し，ギリシャへの併合の動きに対するトルコ軍の介入によって北部が独立を宣言し...",
       "relatedCountries": [
         "TUR",
-        "USA"
+        "USA",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1180,7 +1190,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d6_q5.png",
       "clipPdfPath": null,
@@ -1213,7 +1223,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d6_q6.png",
       "clipPdfPath": null,

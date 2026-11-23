@@ -227,11 +227,14 @@
         "RUS",
         "USA",
         "CAN",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "鉄鉱石"
+        "鉄鉱石",
+        "アルミニウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q1.png",
       "clipPdfPath": null,
@@ -260,7 +263,6 @@
       "title": "第2問 問2: 問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割...",
       "promptSummary": "問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割合が(1)％以上の国・地域を示したものである。図3に関することがらについて述べた文章中の下線部(2)～(3)のうちから，最も適当なものを一つ選べ。8生産量万トン50 25 5輸入量統計年次は2018年。FAOSTATにより作成。図3とうしよツナ缶詰の主要な生産地をみると，インド洋の島嶼国では，(2)原料の漁獲域に近いことをいかして，ツナ缶詰が...",
       "relatedCountries": [
-        "IND",
         "ESP",
         "USA"
       ],
@@ -300,11 +302,12 @@
         "USA",
         "CHL",
         "PER",
-        "COL"
+        "COL",
+        "ECU"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q3.png",
       "clipPdfPath": null,
@@ -334,9 +337,9 @@
       "promptSummary": "問4次の図5は，いくつかの国における米の栽培カレンダーを示したものであり，(1)～(2)は，イタリア，インドネシア，コートジボワール，チリ＊のいずれかである。コートジボワールに該当するものを，図5中の(1)～(2)のうちから一つ選べ。10＊中南部。ǏǐǑǒ12月11 10 9 8 7 6 5 4 3 2 1第1期第2期第3期作付収穫U.S. Department of Agricultureの資料により作成。図5",
       "relatedCountries": [
         "IDN",
-        "IND",
         "ITA",
-        "CHL"
+        "CHL",
+        "CIV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -663,7 +666,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q1.png",
       "clipPdfPath": null,
@@ -773,11 +776,12 @@
         "GBR",
         "FRA",
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q4.png",
       "clipPdfPath": null,
@@ -809,11 +813,12 @@
       "promptSummary": "問5次の図5に示したスペインのセビリアとチュニジアのチュニスでは，類似した都市景観がみられる。後の写真1は，両都市の中心部を撮影した衛星画像と，旧市街を撮影した景観写真である。写真1に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。23セビリアチュニス図5セビリアチュニス衛星画像景観写真100 m 0 100 m 0写真1セビリアとチュニスは，(1)都市中心部がともに旧市街と新市街に分...",
       "relatedCountries": [
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q5.png",
       "clipPdfPath": null,
@@ -843,7 +848,8 @@
       "promptSummary": "問6次の図6は，スペインとチュニジアについて，全就業人口に占める産業別・男女別の就業人口割合の推移を示したものである。チュニジアの第(5)次産業を示す図に該当するものを，図6中の(1)～(4)のうちから一つ選べ。24スペインまたはチュニジア女性男性第2次産業または第3次産業年% 1991 1998 2005 2012 2019 10 20 30 40 50 0年% 1991 1998 2005 2012 2019 10 20 30...",
       "relatedCountries": [
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [

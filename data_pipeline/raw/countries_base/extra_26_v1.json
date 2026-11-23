@@ -1,0 +1,6089 @@
+{
+  "GRC": {
+    "iso3": "GRC",
+    "nameJa": "ギリシャ",
+    "nameEn": "Greece",
+    "region": "ヨーロッパ",
+    "subRegion": "南ヨーロッパ（地中海）",
+    "capital": "アテネ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "地中海性気候（Cs）とオリーブ・石灰岩カルスト地形",
+        "海運大国・観光収入依存とユーロ圏債務問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（アルプス・ヒマラヤ造山帯／多島海・地震多発）"
+      ],
+      "summary": "バルカン半島南端とエーゲ海約2000の島々から成り、国土の約8割が山地・石灰岩質（カルスト地形）。アフリカプレートとユーラシアプレートの境界に近く地震が多い。",
+      "items": [
+        {
+          "id": "grc_karst",
+          "label": "エーゲ海の多島海・沈水海岸と石灰岩地形",
+          "detail": "氷期後の海面上昇による多島海と急峻な石灰岩山地。夏の高温乾燥で山火事リスクも高い。",
+          "clozeTerms": [
+            "エーゲ海",
+            "石灰岩",
+            "新期造山帯"
+          ],
+          "tags": [
+            "エーゲ海",
+            "石灰岩",
+            "新期造山帯"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cs"
+      ],
+      "summary": "夏は亜熱帯高圧帯の北上で極めて乾燥し、冬は偏西風と低気圧で雨が降る典型的な地中海性気候（Cs）。",
+      "cities": [
+        {
+          "cityId": "GRC_ATHENS",
+          "nameJa": "アテネ",
+          "nameEn": "Athens",
+          "lat": 37.98,
+          "lng": 23.73,
+          "elevationM": 107,
+          "koppenCode": "Cs",
+          "koppenNameJa": "地中海性気候",
+          "factors": [
+            "夏に亜熱帯高圧帯に覆われ少雨",
+            "冬は偏西風で降水"
+          ],
+          "monthlyTempC": [
+            9.9,
+            10.4,
+            12.6,
+            16.4,
+            21.1,
+            25.8,
+            28.6,
+            28.4,
+            24.4,
+            19.6,
+            15.0,
+            11.4
+          ],
+          "monthlyPrecipMm": [
+            48,
+            41,
+            41,
+            28,
+            18,
+            9,
+            6,
+            7,
+            17,
+            42,
+            62,
+            66
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "地中海式農業",
+        "遊牧・移牧"
+      ],
+      "agriculture": [
+        {
+          "id": "grc_olive",
+          "label": "オリーブ・ぶどう・かんきつ類の栽培とヤギ・羊の移牧",
+          "detail": "乾燥した夏に強い永年性樹木と、夏は山地・冬は低地で飼う伝統的移牧が特徴。",
+          "clozeTerms": [
+            "オリーブ",
+            "地中海式農業"
+          ],
+          "tags": [
+            "オリーブ",
+            "地中海式農業"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "grc_bauxite",
+          "label": "褐炭依存からの脱却と太陽光・風力への転換",
+          "detail": "欧州屈指のボーキサイト産出地を持つ一方、従来の褐炭火力から再エネ比率が急速拡大中。",
+          "clozeTerms": [
+            "太陽光",
+            "再生可能エネルギー"
+          ],
+          "tags": [
+            "太陽光",
+            "再生可能エネルギー"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "grc_shipping",
+          "label": "世界トップクラスの海運業と国際観光",
+          "detail": "船舶保有トン数は実質世界首位級。パルテノン神殿やサントリーニ島などの観光業がGDPと雇用を牽引。",
+          "clozeTerms": [
+            "海運",
+            "観光",
+            "世界遺産"
+          ],
+          "tags": [
+            "海運",
+            "観光",
+            "世界遺産"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "石油精製品",
+          "海運サービス",
+          "観光サービス",
+          "オリーブ油・農産品"
+        ],
+        "majorImports": [
+          "原油・天然ガス",
+          "機械・自動車",
+          "工業製品"
+        ],
+        "majorPartners": [
+          "イタリア",
+          "ドイツ",
+          "ブルガリア",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ギリシャ語派）",
+      "officialLanguages": [
+        "ギリシャ語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（東方正教：ギリシャ正教）",
+          "percent": 90
+        },
+        {
+          "name": "その他",
+          "percent": 10
+        }
+      ],
+      "ethnicGroups": [
+        "ギリシャ人"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "ユーロ圏",
+        "シェンゲン協定",
+        "NATO",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "grc_euro_debt",
+          "label": "ユーロ導入後の財政危機と少子高齢化",
+          "detail": "2010年代の欧州債務危機を経て緊縮財政を実施。老年人口比率23%超の少子高齢化が進む。",
+          "clozeTerms": [
+            "EU",
+            "ユーロ圏",
+            "少子高齢化"
+          ],
+          "tags": [
+            "EU",
+            "ユーロ圏",
+            "少子高齢化"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "PRT": {
+    "iso3": "PRT",
+    "nameJa": "ポルトガル",
+    "nameEn": "Portugal",
+    "region": "ヨーロッパ",
+    "subRegion": "南ヨーロッパ（イベリア半島）",
+    "capital": "リスボン",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "地中海性気候（Cs）と大西洋沿岸の温暖さ",
+        "世界トップの再生可能電力比率・コルク生産と大航海時代のブラジルとの繋がり"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "古期造山帯・卓状地（イベリア半島のメセタ西縁）"
+      ],
+      "summary": "イベリア半島西岸に位置し、テージョ川などの河口に天然の良港リスボン・ポルトが開ける。",
+      "items": [
+        {
+          "id": "prt_coast",
+          "label": "大西洋に面した開放的海岸とコルクガシ林",
+          "detail": "地中海性気候と大西洋の寒流（カナリア海流）の影響を受け、夏でもアテネほど極端な高温になりにくい。",
+          "clozeTerms": [
+            "大西洋",
+            "Cs気候"
+          ],
+          "tags": [
+            "大西洋",
+            "Cs気候"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cs"
+      ],
+      "summary": "大西洋岸のリスボンは典型的な地中海性気候（Cs）だが、海洋性の影響で夏の猛暑が和らぐ。",
+      "cities": [
+        {
+          "cityId": "PRT_LISBON",
+          "nameJa": "リスボン",
+          "nameEn": "Lisbon",
+          "lat": 38.72,
+          "lng": -9.14,
+          "elevationM": 77,
+          "koppenCode": "Cs",
+          "koppenNameJa": "地中海性気候",
+          "factors": [
+            "夏に亜熱帯高圧帯で乾燥",
+            "カナリア海流と大西洋により夏の高温がやや緩和"
+          ],
+          "monthlyTempC": [
+            11.6,
+            12.3,
+            14.3,
+            15.6,
+            18.0,
+            21.0,
+            23.0,
+            23.5,
+            22.0,
+            18.9,
+            14.9,
+            12.2
+          ],
+          "monthlyPrecipMm": [
+            100,
+            85,
+            53,
+            68,
+            54,
+            16,
+            4,
+            7,
+            33,
+            101,
+            128,
+            127
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "地中海式農業",
+        "園芸農業"
+      ],
+      "agriculture": [
+        {
+          "id": "prt_cork_wine",
+          "label": "世界1位のコルク生産とポートワイン・オリーブ",
+          "detail": "コルクガシの樹皮は世界生産の約半分。ワインやトマト・オリーブ栽培が盛ん。",
+          "clozeTerms": [
+            "コルク",
+            "ワイン",
+            "オリーブ"
+          ],
+          "tags": [
+            "コルク",
+            "ワイン",
+            "オリーブ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "prt_renewable",
+          "label": "水力・風力による世界屈指の再エネ発電比率",
+          "detail": "大西洋からの偏西風を活かした洋上/陸上風力と水力により、発電の6〜7割超が再生可能エネルギー。",
+          "clozeTerms": [
+            "風力",
+            "再生可能エネルギー",
+            "水力"
+          ],
+          "tags": [
+            "風力",
+            "再生可能エネルギー",
+            "水力"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "prt_eu_auto",
+          "label": "欧州域内の自動車・繊維・靴製造拠点",
+          "detail": "EU加盟後は西欧より安価な賃金を強みに自動車組立（VW系等）やIT拠点・観光産業が成長。",
+          "clozeTerms": [
+            "EU",
+            "自動車",
+            "観光"
+          ],
+          "tags": [
+            "EU",
+            "自動車",
+            "観光"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車・部品",
+          "機械・電気機器",
+          "衣料・靴",
+          "ワイン・紙パルプ"
+        ],
+        "majorImports": [
+          "機械",
+          "自動車",
+          "原油",
+          "化学品"
+        ],
+        "majorPartners": [
+          "スペイン",
+          "フランス",
+          "ドイツ",
+          "イギリス"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派）",
+      "officialLanguages": [
+        "ポルトガル語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック）",
+          "percent": 80
+        },
+        {
+          "name": "無宗教等",
+          "percent": 20
+        }
+      ],
+      "ethnicGroups": [
+        "ポルトガル人"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "ユーロ圏",
+        "シェンゲン協定",
+        "NATO",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "prt_lusophone",
+          "label": "大航海時代とブラジル・モザンビーク・マカオ等への言語波及",
+          "detail": "ブラジルの公用語ポルトガル語の宗主国。旧植民地ブラジルからの移民受入も多い。",
+          "clozeTerms": [
+            "ポルトガル語",
+            "ブラジル",
+            "移民"
+          ],
+          "tags": [
+            "ポルトガル語",
+            "ブラジル",
+            "移民"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "IRL": {
+    "iso3": "IRL",
+    "nameJa": "アイルランド",
+    "nameEn": "Ireland",
+    "region": "ヨーロッパ",
+    "subRegion": "西ヨーロッパ（アイルランド島）",
+    "capital": "ダブリン",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "1人当たりGDP世界最高水準（低法人税と外資ICT・製薬誘致）",
+        "EU唯一の主要英語圏・北アイルランドとの歴史的背景"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "古期造山帯・氷河地形平原（ケルトの緑島）"
+      ],
+      "summary": "北大西洋に浮かぶ緑豊かな島で、氷河に覆われた低地や泥炭地が多く牧草地に適する。",
+      "items": [
+        {
+          "id": "irl_peat",
+          "label": "西岸海洋性気候と緑の牧草地・泥炭地",
+          "detail": "冬でも氷点下にならず年間を通じて牧草が育つため「エメラルドの島」と呼ばれる。",
+          "clozeTerms": [
+            "Cfb気候",
+            "酪農"
+          ],
+          "tags": [
+            "Cfb気候",
+            "酪農"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb"
+      ],
+      "summary": "年中湿潤で気温較差の極めて小さい典型的な西岸海洋性気候（Cfb）。",
+      "cities": [
+        {
+          "cityId": "IRL_DUBLIN",
+          "nameJa": "ダブリン",
+          "nameEn": "Dublin",
+          "lat": 53.35,
+          "lng": -6.26,
+          "elevationM": 20,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": [
+            "北大西洋海流と偏西風により北緯53度でも冬5℃前後",
+            "夏も15〜16℃と極めて涼しい"
+          ],
+          "monthlyTempC": [
+            5.3,
+            5.4,
+            6.8,
+            8.5,
+            11.1,
+            13.8,
+            15.6,
+            15.3,
+            13.3,
+            10.4,
+            7.4,
+            5.7
+          ],
+          "monthlyPrecipMm": [
+            63,
+            49,
+            53,
+            54,
+            60,
+            67,
+            56,
+            73,
+            60,
+            79,
+            73,
+            73
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "酪農",
+        "企業的牧畜"
+      ],
+      "agriculture": [
+        {
+          "id": "irl_dairy_famine",
+          "label": "酪農・牛肉輸出中心の農業と19世紀のジャガイモ飢饉",
+          "detail": "農地の大部分が牧草地で乳製品・牛肉を輸出。19世紀のジャガイモ飢饉は米国への大規模移民の引き金となった。",
+          "clozeTerms": [
+            "酪農",
+            "移民"
+          ],
+          "tags": [
+            "酪農",
+            "移民"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "irl_wind",
+          "label": "偏西風を活かした風力発電と脱石炭",
+          "detail": "北海〜大西洋の強風による風力発電が国内電源の約3分の1を担う。",
+          "clozeTerms": [
+            "風力",
+            "偏西風"
+          ],
+          "tags": [
+            "風力",
+            "偏西風"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "irl_ict_hub",
+          "label": "低法人税率・英語・EU加盟を武器にした欧米ICT・製薬拠点",
+          "detail": "12.5%の低法人税率と英国EU離脱後の「EU唯一の主要英語圏」の立場により、Google・Apple・Meta・製薬大手の欧州本社が集積し1人当たりGDPが10万ドル超へ急上昇。",
+          "clozeTerms": [
+            "ICT",
+            "多国籍企業",
+            "1人当たりGDP"
+          ],
+          "tags": [
+            "ICT",
+            "多国籍企業",
+            "1人当たりGDP"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "医薬品・血液製剤",
+          "電子部品・ソフトウェアサービス",
+          "乳製品・牛肉"
+        ],
+        "majorImports": [
+          "航空機・機械",
+          "ICT機器使用料（知的財産）",
+          "原油"
+        ],
+        "majorPartners": [
+          "アメリカ",
+          "イギリス",
+          "ドイツ",
+          "ベルギー"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ケルト語派・ゲルマン語派）",
+      "officialLanguages": [
+        "英語",
+        "アイルランド語（ゲール語）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック）",
+          "percent": 69
+        },
+        {
+          "name": "その他・無宗教",
+          "percent": 31
+        }
+      ],
+      "ethnicGroups": [
+        "アイルランド人（ケルト系）"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "ユーロ圏",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "irl_border",
+          "label": "北アイルランド国境とブレグジット後の物流",
+          "detail": "英国領北アイルランド（プロテスタント系多数）との国境管理がブレグジット時の最大争点に（シェンゲン協定には非加盟）。",
+          "clozeTerms": [
+            "ブレグジット",
+            "北アイルランド",
+            "カトリック"
+          ],
+          "tags": [
+            "ブレグジット",
+            "北アイルランド",
+            "カトリック"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "CZE": {
+    "iso3": "CZE",
+    "nameJa": "チェコ",
+    "nameEn": "Czechia",
+    "region": "ヨーロッパ",
+    "subRegion": "中央ヨーロッパ（中東欧・内陸）",
+    "capital": "プラハ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "東欧の自動車・機械工業集積（ドイツ企業の進出・EU加盟国・非ユーロ）",
+        "内陸の西岸海洋性〜亜寒帯気候移行部と1993年チェコスロバキア分離"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "古期造山帯（ボヘミア山地・ズデーテン山地）"
+      ],
+      "summary": "エルベ川源流域のボヘミア盆地を中心とする内陸国。周囲を古期造山帯の低い山地に囲まれる。",
+      "items": [
+        {
+          "id": "cze_bohemia",
+          "label": "ボヘミア盆地とエルベ川上流域",
+          "detail": "戦前から重工業の伝統があったボヘミア盆地は肥沃で混合農業やホップ栽培にも適する。",
+          "clozeTerms": [
+            "ボヘミア",
+            "エルベ川"
+          ],
+          "tags": [
+            "ボヘミア",
+            "エルベ川"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb",
+        "Df"
+      ],
+      "summary": "海洋性（Cfb）から大陸性（Df）への移行帯にあたり、冬はやや冷え込むが夏は温暖。",
+      "cities": [
+        {
+          "cityId": "CZE_PRAGUE",
+          "nameJa": "プラハ",
+          "nameEn": "Prague",
+          "lat": 50.08,
+          "lng": 14.44,
+          "elevationM": 235,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": [
+            "内陸で冬の気温低下が大きい（1月0℃前後）",
+            "夏に降水がやや増える内陸性傾向"
+          ],
+          "monthlyTempC": [
+            -0.5,
+            0.7,
+            4.3,
+            9.2,
+            13.9,
+            17.3,
+            19.2,
+            18.7,
+            14.3,
+            8.9,
+            3.9,
+            0.5
+          ],
+          "monthlyPrecipMm": [
+            22,
+            20,
+            27,
+            34,
+            65,
+            71,
+            79,
+            71,
+            47,
+            33,
+            30,
+            26
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "混合農業",
+        "酪農"
+      ],
+      "agriculture": [
+        {
+          "id": "cze_hops",
+          "label": "ビール原料のホップと小麦・甜菜・混合農業",
+          "detail": "1人当たりビール消費量世界1位を背景に高品質なザーツ産ホップ等を栽培。",
+          "clozeTerms": [
+            "混合農業",
+            "ホップ"
+          ],
+          "tags": [
+            "混合農業",
+            "ホップ"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "cze_coal_nuc",
+          "label": "褐炭火力と原子力（約4割）の組み合わせ",
+          "detail": "かつての石炭/褐炭中心から原子力発電（テメリン等）と再エネへの転換を進行中。",
+          "clozeTerms": [
+            "原子力",
+            "石炭"
+          ],
+          "tags": [
+            "原子力",
+            "石炭"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "cze_auto_hub",
+          "label": "自動車（シュコダ・トヨタ等）と精密機械の中東欧生産拠点",
+          "detail": "高い工業技術と比較的低い賃金を背景にドイツ等から自動車産業が集積し、中東欧の「世界の工場」の一角をなす（EU加盟・自国通貨コルナ）。",
+          "clozeTerms": [
+            "自動車",
+            "EU",
+            "中東欧"
+          ],
+          "tags": [
+            "自動車",
+            "EU",
+            "中東欧"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車・自動車部品",
+          "産業機械・電子機器"
+        ],
+        "majorImports": [
+          "機械部品",
+          "電子部品",
+          "天然ガス・原油"
+        ],
+        "majorPartners": [
+          "ドイツ",
+          "スロバキア",
+          "ポーランド",
+          "フランス"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スラブ語派：西スラブ）",
+      "officialLanguages": [
+        "チェコ語"
+      ],
+      "religions": [
+        {
+          "name": "無宗教・無回答（欧州最高水準）",
+          "percent": 78
+        },
+        {
+          "name": "キリスト教（カトリック等）",
+          "percent": 22
+        }
+      ],
+      "ethnicGroups": [
+        "チェコ人"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "シェンゲン協定",
+        "NATO",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "cze_velvet",
+          "label": "ビロード離婚（1993年）とEU東方拡大・非ユーロ通貨",
+          "detail": "スロバキアと平和的に連邦解消。2004年EU加盟後も自国通貨コルナを維持しドイツ経済と密接に結びつく。",
+          "clozeTerms": [
+            "EU",
+            "スラブ語派",
+            "無宗教"
+          ],
+          "tags": [
+            "EU",
+            "スラブ語派",
+            "無宗教"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "HUN": {
+    "iso3": "HUN",
+    "nameJa": "ハンガリー",
+    "nameEn": "Hungary",
+    "region": "ヨーロッパ",
+    "subRegion": "中央ヨーロッパ（ドナウ中流域）",
+    "capital": "ブダペスト",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ウラル語族（周囲のスラブ・ゲルマン語圏に浮かぶ言語の孤島・アジア系マジャル人）",
+        "ドナウ川パンノニア平原（プスタ）の農業と欧州EV電池/自動車誘致拠点"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "パンノニア平原（アルプス＝カルパチア山脈に囲まれた沈降盆地・一部チェルノーゼム系黒土）"
+      ],
+      "summary": "ドナウ川が南北に貫流する肥沃なパンノニア平原（プスタ）が広がる内陸国。",
+      "items": [
+        {
+          "id": "hun_danube_puszta",
+          "label": "国際河川ドナウ川と肥沃なパンノニア平原（プスタ）",
+          "detail": "2026年本試第6問の国際河川ドナウ流域国。国土の大半が平坦な大平原で穀物生産に適す。",
+          "clozeTerms": [
+            "ドナウ川",
+            "国際河川",
+            "平原"
+          ],
+          "tags": [
+            "ドナウ川",
+            "国際河川",
+            "平原"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb",
+        "Cfa"
+      ],
+      "summary": "大陸性気候の影響が強く夏は高温（7月22℃前後）、冬は氷点下付近になる。",
+      "cities": [
+        {
+          "cityId": "HUN_BUDAPEST",
+          "nameJa": "ブダペスト",
+          "nameEn": "Budapest",
+          "lat": 47.5,
+          "lng": 19.04,
+          "elevationM": 102,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": [
+            "カルパチア盆地内陸で夏の気温が上がりCfaに近い傾向",
+            "偏西風帯だが山脈に囲まれ年降水量は530mm程度とやや少なめ"
+          ],
+          "monthlyTempC": [
+            0.4,
+            2.2,
+            6.8,
+            12.1,
+            16.9,
+            20.4,
+            22.3,
+            22.0,
+            17.1,
+            11.4,
+            5.7,
+            1.3
+          ],
+          "monthlyPrecipMm": [
+            33,
+            30,
+            34,
+            42,
+            62,
+            68,
+            62,
+            57,
+            45,
+            42,
+            51,
+            44
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "混合農業",
+        "企業的穀物農業"
+      ],
+      "agriculture": [
+        {
+          "id": "hun_grain",
+          "label": "小麦・トウモロコシ・ヒマワリとフォアグラ/パプリカ",
+          "detail": "平坦肥沃なパンノニア平原を活かしEU域内向けの穀物・家禽肉供給地となる。",
+          "clozeTerms": [
+            "小麦",
+            "トウモロコシ"
+          ],
+          "tags": [
+            "小麦",
+            "トウモロコシ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "hun_nuc_gas",
+          "label": "原子力発電（約45%）とロシア等からのパイプラインガス",
+          "detail": "パクス原発により電力の約半数を原子力で供給。国内天然ガス依存から多様化模索。",
+          "clozeTerms": [
+            "原子力",
+            "パイプライン"
+          ],
+          "tags": [
+            "原子力",
+            "パイプライン"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "hun_auto_ev",
+          "label": "日欧の自動車・中国/韓国のEV電池工場集積",
+          "detail": "低法人税とEU市場アクセスによりスズキ・メルセデス・BMWやCATL等のEV電池工場が集積。",
+          "clozeTerms": [
+            "自動車",
+            "EU",
+            "電池"
+          ],
+          "tags": [
+            "自動車",
+            "EU",
+            "電池"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車・エンジン",
+          "EV用バッテリー・電子機器",
+          "医薬品"
+        ],
+        "majorImports": [
+          "電子部品",
+          "天然ガス・原油",
+          "自動車部品"
+        ],
+        "majorPartners": [
+          "ドイツ",
+          "イタリア",
+          "ルーマニア",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "ウラル語族（フィン・ウゴル語派：フィンランド/エストニアと同系）",
+      "officialLanguages": [
+        "ハンガリー語（マジャル語）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック・カルヴァン派）",
+          "percent": 50
+        },
+        {
+          "name": "無宗教等",
+          "percent": 50
+        }
+      ],
+      "ethnicGroups": [
+        "マジャル人（ハンガリー人：姓名が『姓→名』の順）"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "シェンゲン協定",
+        "NATO",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "hun_ural",
+          "label": "欧州におけるウラル語族（フィンランドと並ぶ系統）",
+          "detail": "9世紀末に東方草原から移動したマジャル人が建国。スラブ語・ゲルマン語に囲まれつつウラル語族を守る。難民受入に厳しい姿勢も話題。",
+          "clozeTerms": [
+            "ウラル語族",
+            "マジャル人",
+            "EU"
+          ],
+          "tags": [
+            "ウラル語族",
+            "マジャル人",
+            "EU"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "ROU": {
+    "iso3": "ROU",
+    "nameJa": "ルーマニア",
+    "nameEn": "Romania",
+    "region": "ヨーロッパ",
+    "subRegion": "東ヨーロッパ（バルカン北部・黒海沿岸）",
+    "capital": "ブカレスト",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "東欧に浮かぶロマンス語族（ラテン系ルーマニア語）と東方正教の結合",
+        "ドナウ川河口デルタと自動車（ダチア）・IT開発拠点"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（カルパチア山脈）",
+        "ワラキア平原・ドナウデルタ"
+      ],
+      "summary": "中央をカルパチア山脈が弧を描いて走り、南部のワラキア平原をドナウ川が流れて黒海に巨大なドナウデルタを形成する。",
+      "items": [
+        {
+          "id": "rou_danube_delta",
+          "label": "カルパチア山脈と世界遺産ドナウデルタ（湿地帯）",
+          "detail": "ドナウ川は10カ国を通過してルーマニア黒海沿岸へ注ぎ、欧州有数の自然湿地デルタを形成。",
+          "clozeTerms": [
+            "ドナウ川",
+            "三角州",
+            "カルパチア山脈"
+          ],
+          "tags": [
+            "ドナウ川",
+            "三角州",
+            "カルパチア山脈"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb",
+        "Df",
+        "Cfa"
+      ],
+      "summary": "寒暖差の大きい内陸性の温帯〜亜寒帯気候（Df・Cfb・Cfa移行帯）。",
+      "cities": [
+        {
+          "cityId": "ROU_BUCHAREST",
+          "nameJa": "ブカレスト",
+          "nameEn": "Bucharest",
+          "lat": 44.43,
+          "lng": 26.1,
+          "elevationM": 82,
+          "koppenCode": "Df",
+          "koppenNameJa": "亜寒帯湿潤気候",
+          "factors": [
+            "カルパチア山脈南側の内陸盆地で冬の寒さが厳しく1月は氷点下",
+            "夏は23℃前後まで上がり大陸性気候を示す"
+          ],
+          "monthlyTempC": [
+            -1.3,
+            1.3,
+            6.2,
+            11.7,
+            17.0,
+            20.9,
+            23.0,
+            22.8,
+            17.7,
+            11.4,
+            5.2,
+            0.2
+          ],
+          "monthlyPrecipMm": [
+            38,
+            35,
+            43,
+            50,
+            68,
+            82,
+            65,
+            51,
+            49,
+            44,
+            46,
+            44
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "混合農業",
+        "企業的穀物農業"
+      ],
+      "agriculture": [
+        {
+          "id": "rou_grain",
+          "label": "EU有数のトウモロコシ・小麦・ヒマワリ生産輸出国",
+          "detail": "ドナウ下流ワラキア平原の肥沃な黒土地帯を活かし穀物輸出大国のひとつ。",
+          "clozeTerms": [
+            "トウモロコシ",
+            "小麦"
+          ],
+          "tags": [
+            "トウモロコシ",
+            "小麦"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "rou_oil_gas",
+          "label": "歴史あるプロイェシュティ油田・黒海天然ガスと高いエネルギー自給率",
+          "detail": "東欧で珍しい化石燃料産出国（黒海沖ガス開発も進行）＋水力・原子力で自給率が高い。",
+          "clozeTerms": [
+            "天然ガス",
+            "石油"
+          ],
+          "tags": [
+            "天然ガス",
+            "石油"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "rou_dacia_it",
+          "label": "ルノー傘下ダチア等の自動車製造と低コストIT開発",
+          "detail": "EU内の低賃金メリットにより自動車部品・完成車（仏ルノー傘下）と欧州向けオフショアIT開発が急成長。",
+          "clozeTerms": [
+            "自動車",
+            "ICT",
+            "EU"
+          ],
+          "tags": [
+            "自動車",
+            "ICT",
+            "EU"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車・電線ハーネス等の部品",
+          "機械",
+          "小麦・トウモロコシ"
+        ],
+        "majorImports": [
+          "自動車部品・機械",
+          "石油・化学品"
+        ],
+        "majorPartners": [
+          "ドイツ",
+          "イタリア",
+          "ハンガリー",
+          "フランス"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派）",
+      "officialLanguages": [
+        "ルーマニア語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（東方正教：ルーマニア正教）",
+          "percent": 85
+        },
+        {
+          "name": "プロテスタント・カトリック",
+          "percent": 15
+        }
+      ],
+      "ethnicGroups": [
+        "ルーマニア人",
+        "ハンガリー人（トランシルバニア西部）",
+        "ロマ"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "NATO",
+        "シェンゲン協定（2024年空海先行）"
+      ],
+      "historicalContext": [
+        {
+          "id": "rou_romance_ortho",
+          "label": "『ロマンス語族 × 東方正教』という共テ頻出の例外組み合わせ",
+          "detail": "東欧スラブ諸国に囲まれながらローマ帝国由来（ダキア）のロマンス語族を保ちつつ、宗教は東方正教という珍しい組み合わせ。",
+          "clozeTerms": [
+            "ロマンス語派",
+            "東方正教",
+            "移民流出"
+          ],
+          "tags": [
+            "ロマンス語派",
+            "東方正教",
+            "移民流出"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "SVK": {
+    "iso3": "SVK",
+    "nameJa": "スロバキア",
+    "nameEn": "Slovakia",
+    "region": "ヨーロッパ",
+    "subRegion": "中央ヨーロッパ（中東欧・内陸）",
+    "capital": "ブラチスラバ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "1人当たり自動車生産台数世界1位級の『欧州自動車工場』",
+        "原子力発電比率6割超（フランスと並ぶ原発依存）＆旧チェコスロバキアで唯一のユーロ導入"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（カルパチア山脈・タトラ山脈）",
+        "ドナウ低地"
+      ],
+      "summary": "北部〜中部をカルパチア山脈（高タトラ山脈）が占め、南西部をドナウ川（首都ブラチスラバ）が流れる。",
+      "items": [
+        {
+          "id": "svk_tatras",
+          "label": "高タトラ山脈と南西部のドナウ川",
+          "detail": "首都ブラチスラバはドナウ川沿いでオーストリアの首都ウィーンとわずか60kmしか離れていない。",
+          "clozeTerms": [
+            "ドナウ川",
+            "タトラ山脈"
+          ],
+          "tags": [
+            "ドナウ川",
+            "タトラ山脈"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb",
+        "Df"
+      ],
+      "summary": "平野部はCfb（冬冷涼）、カルパチア山間部は亜寒帯Df。",
+      "cities": [
+        {
+          "cityId": "SVK_BRATISLAVA",
+          "nameJa": "ブラチスラバ",
+          "nameEn": "Bratislava",
+          "lat": 48.15,
+          "lng": 17.11,
+          "elevationM": 131,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性気候",
+          "factors": [
+            "ウィーン盆地に隣接し夏は21℃、冬は0℃前後",
+            "カルパチア山脈南西端で年間降水量は約560mm"
+          ],
+          "monthlyTempC": [
+            0.0,
+            1.5,
+            5.9,
+            11.4,
+            16.0,
+            19.6,
+            21.5,
+            21.1,
+            16.4,
+            10.7,
+            5.4,
+            1.0
+          ],
+          "monthlyPrecipMm": [
+            39,
+            36,
+            39,
+            41,
+            61,
+            67,
+            65,
+            59,
+            55,
+            43,
+            50,
+            44
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "混合農業",
+        "酪農"
+      ],
+      "agriculture": [
+        {
+          "id": "svk_agri",
+          "label": "南西部ドナウ低地の麦作と山間部放牧",
+          "detail": "穀物・甜菜栽培とカルパチア山脈の伝統的羊飼い（羊チーズ）。",
+          "clozeTerms": [
+            "混合農業"
+          ],
+          "tags": [
+            "混合農業"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "C",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "svk_nuclear",
+          "label": "原子力発電が総発電の約6割を占める電力構成",
+          "detail": "モホフツェ・ボフニツェ原発によりフランスに次ぐ世界第2位級の原子力発電比率（約61%）を持ち、脱石炭も進めた。",
+          "clozeTerms": [
+            "原子力",
+            "発電構成"
+          ],
+          "tags": [
+            "原子力",
+            "発電構成"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "svk_auto_per_cap",
+          "label": "Population約540万人で年約100万台を造る世界一の1人当たり自動車生産国",
+          "detail": "VW・ステランティス・キア・ジャガーランドローバーが立地し、人口1人当たり自動車生産台数は世界1位！輸出の過半を自動車関連が占める。",
+          "clozeTerms": [
+            "自動車",
+            "中東欧",
+            "ユーロ圏"
+          ],
+          "tags": [
+            "自動車",
+            "中東欧",
+            "ユーロ圏"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車（全輸出の約3〜4割）",
+          "電子機器（液晶等）",
+          "機械"
+        ],
+        "majorImports": [
+          "自動車部品",
+          "電子部品",
+          "天然ガス・原油"
+        ],
+        "majorPartners": [
+          "ドイツ",
+          "チェコ",
+          "ポーランド",
+          "フランス"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（スラブ語派）",
+      "officialLanguages": [
+        "スロバキア語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック多数）",
+          "percent": 62
+        },
+        {
+          "name": "無宗教等",
+          "percent": 38
+        }
+      ],
+      "ethnicGroups": [
+        "スロバキア人",
+        "ハンガリー人（南部）"
+      ],
+      "regionalIntegrations": [
+        "EU",
+        "ユーロ圏",
+        "シェンゲン協定",
+        "NATO",
+        "OECD"
+      ],
+      "historicalContext": [
+        {
+          "id": "svk_euro",
+          "label": "旧東側中欧（ビシェグラード4）で唯一のユーロ導入国",
+          "detail": "チェコ・ポーランド・ハンガリーが自国通貨を維持する中、スロバキアは2009年にユーロを導入して外資工場誘致を加速。",
+          "clozeTerms": [
+            "ユーロ圏",
+            "EU",
+            "ビロード離婚"
+          ],
+          "tags": [
+            "ユーロ圏",
+            "EU",
+            "ビロード離婚"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "CUB": {
+    "iso3": "CUB",
+    "nameJa": "キューバ",
+    "nameEn": "Cuba",
+    "region": "北アメリカ",
+    "subRegion": "カリブ海地域（ラテンアメリカ）",
+    "capital": "ハバナ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "サトウキビのモノカルチャー（1月〜4月乾季の刈り取りと糖度向上）",
+        "社会主義体制・ニッケル/葉巻/観光・米国の経済制裁"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯・カリブ海弧（石灰岩カルストと山地）"
+      ],
+      "summary": "カリブ海最大の島嶼。平地はサトウキビ栽培に適した石灰岩質〜赤土で、西部にピニャレスのカルスト（モゴテ）がある。",
+      "items": [
+        {
+          "id": "cub_sugar_soil",
+          "label": "石灰岩由来の赤土と平地・ハリケーン通り道",
+          "detail": "サバナ気候（Aw）の明確な乾季がサトウキビの糖度を高め収穫作業を容易にするが、夏〜秋はハリケーン被害を受ける。",
+          "clozeTerms": [
+            "サバナ気候",
+            "ハリケーン"
+          ],
+          "tags": [
+            "サバナ気候",
+            "ハリケーン"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Aw"
+      ],
+      "summary": "北回帰線直下に位置する熱帯サバナ気候（Aw）。5〜10月が雨季、11〜4月が乾季。",
+      "cities": [
+        {
+          "cityId": "CUB_HAVANA",
+          "nameJa": "ハバナ",
+          "nameEn": "Havana",
+          "lat": 23.11,
+          "lng": -82.37,
+          "elevationM": 50,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": [
+            "北東貿易風と夏〜秋ハリケーンの雨季",
+            "冬〜春は亜熱帯高圧帯の影響で乾季（サトウキビ収穫期）"
+          ],
+          "monthlyTempC": [
+            22.2,
+            22.7,
+            23.8,
+            25.2,
+            26.7,
+            27.9,
+            28.5,
+            28.6,
+            27.9,
+            26.6,
+            24.7,
+            23.1
+          ],
+          "monthlyPrecipMm": [
+            64,
+            68,
+            46,
+            54,
+            98,
+            182,
+            106,
+            99,
+            144,
+            180,
+            88,
+            58
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション農業",
+        "商業的混合・自給混合"
+      ],
+      "agriculture": [
+        {
+          "id": "cub_sugarcane",
+          "label": "サトウキビ・葉巻（タバコ）・コーヒー",
+          "detail": "歴史的にサトウキビ単一栽培（モノカルチャー）が中心だったが近年は生産低迷・観光依存へ移行。世界最高級の葉巻産地。",
+          "clozeTerms": [
+            "サトウキビ",
+            "プランテーション",
+            "モノカルチャー"
+          ],
+          "tags": [
+            "サトウキビ",
+            "プランテーション",
+            "モノカルチャー"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "cub_nickel",
+          "label": "世界有数のニッケル・コバルト埋蔵量と産出",
+          "detail": "東部のラトソル土壌中に豊富なニッケル・コバルト鉱床を持ち、重要な輸出外貨獲得源。",
+          "clozeTerms": [
+            "ニッケル",
+            "ラトソル"
+          ],
+          "tags": [
+            "ニッケル",
+            "ラトソル"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "cub_medical_tour",
+          "label": "医療水準の高さ・外貨稼ぎの観光とバイオ医薬品",
+          "detail": "社会主義下で教育・医療が無償で平均寿命が先進国並みに高いが、経済制裁や物資不足により若年層流出と停電が課題。",
+          "clozeTerms": [
+            "社会主義",
+            "平均寿命",
+            "観光"
+          ],
+          "tags": [
+            "社会主義",
+            "平均寿命",
+            "観光"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "ニッケル",
+          "砂糖・ラム酒",
+          "葉巻・医薬品",
+          "観光サービス"
+        ],
+        "majorImports": [
+          "原油・燃料",
+          "食料（小麦・鶏肉）",
+          "機械・生活必需品"
+        ],
+        "majorPartners": [
+          "中国",
+          "スペイン",
+          "カナダ",
+          "ベネズエラ",
+          "ロシア"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語）",
+      "officialLanguages": [
+        "スペイン語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック＋サンテリア習合）",
+          "percent": 60
+        },
+        {
+          "name": "無宗教",
+          "percent": 40
+        }
+      ],
+      "ethnicGroups": [
+        "白人（スペイン系）",
+        "ムラート（混血）",
+        "アフリカ系黒人"
+      ],
+      "regionalIntegrations": [
+        "ALBA",
+        "ラテンアメリカ諸国共同体"
+      ],
+      "historicalContext": [
+        {
+          "id": "cub_revolution",
+          "label": "1959年キューバ革命と社会主義化・米国の禁輸措置",
+          "detail": "スペイン植民地→米国の砂糖資本支配を経て革命により社会主義国家に。ソ連崩壊後は観光とニッケルへ軸足を移し、2015年に米と一時国交回復したが再び制裁が継続。",
+          "clozeTerms": [
+            "社会主義",
+            "プランテーション",
+            "歴史"
+          ],
+          "tags": [
+            "社会主義",
+            "プランテーション",
+            "歴史"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "PAN": {
+    "iso3": "PAN",
+    "nameJa": "パナマ",
+    "nameEn": "Panama",
+    "region": "北アメリカ",
+    "subRegion": "中央アメリカ（地峡部）",
+    "capital": "パナマシティ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "パナマ運河（閘門式・ガトゥン湖の渇水問題）と世界海運の大動脈",
+        "便宜置籍船世界1位級＆国際金融・第3次産業偏重の経済"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（中米地峡山脈）"
+      ],
+      "summary": "北米と南米を繋ぐ最も幅の狭い地峡（最短約65km）。熱帯モンスーン〜熱帯雨林気候の豊富な雨が閘門式運河の水源（ガトゥン湖）を支えてきたが、エルニーニョ時の干ばつが深刻化。",
+      "items": [
+        {
+          "id": "pan_canal_lock",
+          "label": "パナマ運河の閘門式構造とエルニーニョによる渇水",
+          "detail": "海面高度が同じスエズ運河（水平式）と異なり、内陸の高地にある人工湖（ガトゥン湖・標高26m）へ閘門で船を上下させるため大量の淡水が必要。2023〜24年の干ばつでは通航制限が発生。",
+          "clozeTerms": [
+            "パナマ運河",
+            "閘門式",
+            "エルニーニョ"
+          ],
+          "tags": [
+            "パナマ運河",
+            "閘門式",
+            "エルニーニョ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Am",
+        "Af"
+      ],
+      "summary": "太平洋岸パナマシティは5〜11月に降水量が多い熱帯モンスーン気候（Am）、カリブ海側はAf。",
+      "cities": [
+        {
+          "cityId": "PAN_CITY",
+          "nameJa": "パナマシティ",
+          "nameEn": "Panama City",
+          "lat": 8.98,
+          "lng": -79.52,
+          "elevationM": 10,
+          "koppenCode": "Am",
+          "koppenNameJa": "熱帯モンスーン気候",
+          "factors": [
+            "赤道付近の熱帯収束帯と太平洋海風で年2000mm近い雨",
+            "1〜3月に短い乾季があるAm気候"
+          ],
+          "monthlyTempC": [
+            26.8,
+            27.1,
+            27.6,
+            28.0,
+            27.5,
+            27.1,
+            27.2,
+            27.1,
+            26.8,
+            26.5,
+            26.5,
+            26.7
+          ],
+          "monthlyPrecipMm": [
+            28,
+            16,
+            17,
+            74,
+            214,
+            198,
+            179,
+            197,
+            224,
+            304,
+            250,
+            112
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション農業",
+        "焼畑農業"
+      ],
+      "agriculture": [
+        {
+          "id": "pan_banana",
+          "label": "バナナ・コーヒー・パイン等の熱帯作物",
+          "detail": "第1次産業比率は低下しているがバナナ等は輸出品。",
+          "clozeTerms": [
+            "バナナ"
+          ],
+          "tags": [
+            "バナナ"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "C",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "pan_hydro",
+          "label": "豊富な降水による水力発電（約6〜7割）",
+          "detail": "国土が狭小で山岳から流れる河川で水力発電比率が高い。",
+          "clozeTerms": [
+            "水力"
+          ],
+          "tags": [
+            "水力"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "pan_flag_finance",
+          "label": "便宜置籍船世界最大級・コロン自由貿易区・金融ハブ",
+          "detail": "税制・労働規制が緩く外国船主が船籍を登録する「便宜置籍船」でリベリア等と世界首位を争う。第3次産業比率が約8割と中南米突出。",
+          "clozeTerms": [
+            "便宜置籍船",
+            "パナマ運河",
+            "第3次産業"
+          ],
+          "tags": [
+            "便宜置籍船",
+            "パナマ運河",
+            "第3次産業"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "運河通航料・海運サービス",
+          "銅鉱（係争あり）・バナナ"
+        ],
+        "majorImports": [
+          "石油製品（タンカー給油用含む）",
+          "自動車・機械"
+        ],
+        "majorPartners": [
+          "アメリカ",
+          "中国",
+          "日本",
+          "エクアドル"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語派：スペイン語）",
+      "officialLanguages": [
+        "スペイン語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック）",
+          "percent": 70
+        },
+        {
+          "name": "プロテスタント",
+          "percent": 20
+        }
+      ],
+      "ethnicGroups": [
+        "メスティーソ（混血）",
+        "アフリカ系・先住民（クナ族等）"
+      ],
+      "regionalIntegrations": [
+        "中米統合機構（SICA）",
+        "OECD関連"
+      ],
+      "historicalContext": [
+        {
+          "id": "pan_us_canal",
+          "label": "米国支援によるコロンビアからの独立（1903年）と1999年運河返還",
+          "detail": "運河建設のため独立し、長期米国管理を経て1999年末にパナマへ完全返還。通貨は実質米ドル（バルボア固定）が流通。",
+          "clozeTerms": [
+            "パナマ運河",
+            "スエズ運河との対比"
+          ],
+          "tags": [
+            "パナマ運河",
+            "スエズ運河との対比"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "JAM": {
+    "iso3": "JAM",
+    "nameJa": "ジャマイカ",
+    "nameEn": "Jamaica",
+    "region": "北アメリカ",
+    "subRegion": "カリブ海地域（ラテンアメリカ）",
+    "capital": "キングストン",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "カルスト地形由来のボーキサイト（アルミナ輸出世界有数）とブルーマウンテンコーヒー",
+        "旧英領の英語公用語・アフリカ系住民多数・観光業"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯・カリブ海弧（中央にブルーマウンテン山脈、西部は石灰岩カルスト）"
+      ],
+      "summary": "カリブ海に浮かぶ島嶼国で、中央部の東側に標高2256mのブルーマウンテン連峰、中西部には典型的なタワーカルスト台地が広がる。",
+      "items": [
+        {
+          "id": "jam_karst_bauxite",
+          "label": "石灰岩台地のカルスト地形（コクピットカントリー）とボーキサイト",
+          "detail": "熱帯気候による石灰岩の溶食残土中にアルミニウム原料のボーキサイトが濃集。",
+          "clozeTerms": [
+            "カルスト",
+            "ボーキサイト"
+          ],
+          "tags": [
+            "カルスト",
+            "ボーキサイト"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Aw"
+      ],
+      "summary": "貿易風と海風に吹かれる熱帯サバナ気候（Aw）。山脈の北東風上側は多雨で南岸キングストンはやや少雨。",
+      "cities": [
+        {
+          "cityId": "JAM_KINGSTON",
+          "nameJa": "キングストン",
+          "nameEn": "Kingston",
+          "lat": 18.0,
+          "lng": -76.79,
+          "elevationM": 25,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": [
+            "ブルーマウンテン山脈の風下にあたり年降水量は約800mm台と少なめ",
+            "年中26〜29℃の常夏（冬〜春が乾季）"
+          ],
+          "monthlyTempC": [
+            25.8,
+            25.8,
+            26.2,
+            27.0,
+            27.9,
+            28.6,
+            28.9,
+            28.8,
+            28.4,
+            27.7,
+            27.1,
+            26.3
+          ],
+          "monthlyPrecipMm": [
+            22,
+            18,
+            20,
+            35,
+            90,
+            75,
+            45,
+            95,
+            110,
+            155,
+            85,
+            38
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション農業"
+      ],
+      "agriculture": [
+        {
+          "id": "jam_coffee_sugar",
+          "label": "ブルーマウンテンコーヒー（日本が大部分を輸入）とサトウキビ",
+          "detail": "急峻で霧のかかるブルーマウンテン高地で最高級コーヒーを栽培（日本向けシェア極大）。",
+          "clozeTerms": [
+            "コーヒー",
+            "サトウキビ"
+          ],
+          "tags": [
+            "コーヒー",
+            "サトウキビ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "jam_bauxite",
+          "label": "ボーキサイト・アルミナの産出（カリブ海・カルスト地域）",
+          "detail": "世界有数のボーキサイト・アルミナ産出・輸出国（電力不足から地金精錬ではなく半製品のアルミナとして主に輸出）。",
+          "clozeTerms": [
+            "ボーキサイト",
+            "アルミナ"
+          ],
+          "tags": [
+            "ボーキサイト",
+            "アルミナ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "jam_tourism_music",
+          "label": "欧米向けリゾート観光・出稼ぎ送金とレゲエ文化",
+          "detail": "モンテゴベイ等の観光収入と米国・英国・カナダからの移民送金が外貨を支える。",
+          "clozeTerms": [
+            "観光",
+            "出稼ぎ送金"
+          ],
+          "tags": [
+            "観光",
+            "出稼ぎ送金"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "アルミナ・ボーキサイト",
+          "ラム酒・ブルーマウンテンコーヒー",
+          "砂糖",
+          "観光サービス"
+        ],
+        "majorImports": [
+          "原油・天然ガス",
+          "機械・食料"
+        ],
+        "majorPartners": [
+          "アメリカ",
+          "カナダ",
+          "オランダ",
+          "アイスランド"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語）",
+      "officialLanguages": [
+        "英語",
+        "パトワ語（英語ベースのクレオール）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（プロテスタント中心）",
+          "percent": 69
+        },
+        {
+          "name": "無宗教・ラスタファリ等",
+          "percent": 31
+        }
+      ],
+      "ethnicGroups": [
+        "アフリカ系黒人（約9割以上）",
+        "混血"
+      ],
+      "regionalIntegrations": [
+        "カリブ共同体（CARICOM）",
+        "イギリス連邦"
+      ],
+      "historicalContext": [
+        {
+          "id": "jam_uk_sugar",
+          "label": "旧英領サトウキビ奴隷プランテーションに由来する民族・言語構成",
+          "detail": "キューバやドミニカ（スペイン語・カトリック）と異なり、旧英領であるため公用語が英語・プロテスタント中心でアフリカ系住民が9割超を占める。",
+          "clozeTerms": [
+            "旧英領",
+            "英語",
+            "奴隷貿易"
+          ],
+          "tags": [
+            "旧英領",
+            "英語",
+            "奴隷貿易"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "BOL": {
+    "iso3": "BOL",
+    "nameJa": "ボリビア",
+    "nameEn": "Bolivia",
+    "region": "南アメリカ",
+    "subRegion": "アンデス高地・内陸",
+    "capital": "スクレ（憲法）／ラパス（事実上行政）",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ウユニ塩湖と世界最大級のリチウム埋蔵量（リチウム・トライアングル）",
+        "標高3600m超のラパス・垂直的気候帯と先住民比率の高さ"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（アンデス山脈・アルティプラノ高原）"
+      ],
+      "summary": "ペルー・ボリビア国境の標高約3800m「アルティプラノ高原（チチカカ湖・ウユニ塩湖）」と、東側の熱帯アマゾン低地から成る内陸国。",
+      "items": [
+        {
+          "id": "bol_altiplano_uyuni",
+          "label": "標高3600m超のアルティプラノ高原とウユニ塩湖",
+          "detail": "アンデス東・西コルディレラに挟まれた高原盆地。乾燥気候下で蒸発により広大な塩原ウユニ塩湖が形成され、地下かん水中に巨大なリチウム資源を蓄える。",
+          "clozeTerms": [
+            "ウユニ塩湖",
+            "リチウム",
+            "アルティプラノ"
+          ],
+          "tags": [
+            "ウユニ塩湖",
+            "リチウム",
+            "アルティプラノ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "ET",
+        "BS",
+        "Aw"
+      ],
+      "summary": "標高によって気温が激変する垂直分布が顕著！事実上の首都ラパス（約3640m）は年中気温10℃前後の常冬（高地・高山気候 ET〜BS的）、東部サンタクルスは高温なサバナ気候（Aw）。",
+      "cities": [
+        {
+          "cityId": "BOL_LAPAZ",
+          "nameJa": "ラパス",
+          "nameEn": "La Paz",
+          "lat": -16.5,
+          "lng": -68.15,
+          "elevationM": 3640,
+          "koppenCode": "ET",
+          "koppenNameJa": "高地・高山気候（ツンドラ同等寒冷）",
+          "factors": [
+            "標高3640mのため低緯度南緯16度でも年平均気温が約8〜9℃と極端に冷涼",
+            "12〜2月（南半球の夏）が雨季、6〜8月が乾季"
+          ],
+          "monthlyTempC": [
+            9.5,
+            9.4,
+            9.2,
+            8.6,
+            7.6,
+            6.2,
+            6.0,
+            7.1,
+            8.3,
+            9.5,
+            10.1,
+            9.8
+          ],
+          "monthlyPrecipMm": [
+            135,
+            110,
+            82,
+            38,
+            14,
+            6,
+            8,
+            16,
+            32,
+            42,
+            54,
+            102
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "伝統的牧畜・根栽農業（リャマ・アルパカ・じゃがいも）",
+        "大規模プランテーション・企業的大豆（東部低地）"
+      ],
+      "agriculture": [
+        {
+          "id": "bol_vertical_ag",
+          "label": "標高別農業：高地のじゃがいも・キヌア・リャマ vs 東部低地の大豆",
+          "detail": "アンデス高地はインカ以来のじゃがいも・リャマ・アルパカ、一方サンタクルス等の東部アマゾン系低地は大豆生産が急成長。",
+          "clozeTerms": [
+            "垂直分布",
+            "じゃがいも",
+            "大豆"
+          ],
+          "tags": [
+            "垂直分布",
+            "じゃがいも",
+            "大豆"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "bol_lithium_gas",
+          "label": "世界最大級のリチウム資源（ウユニ塩湖）と天然ガス・スズ・亜鉛",
+          "detail": "チリ・アルゼンチンと共にリチウムトライアングルを構成。商業生産は課題があるが埋蔵量世界首位級。天然ガス（対ブラジル・亜パイプライン）と銀・亜鉛・スズも重要輸出品。",
+          "clozeTerms": [
+            "リチウム",
+            "天然ガス",
+            "スズ"
+          ],
+          "tags": [
+            "リチウム",
+            "天然ガス",
+            "スズ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "bol_minerals",
+          "label": "鉱業依存の内陸経済と低い工業化率",
+          "detail": "硝石戦争で太平洋岸（アントファガスタ等）をチリに失い内陸国化した歴史が物流コストに影響。",
+          "clozeTerms": [
+            "内陸国",
+            "モノカルチャー"
+          ],
+          "tags": [
+            "内陸国",
+            "モノカルチャー"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "天然ガス",
+          "金・亜鉛・銀・スズ鉱石",
+          "大豆・大豆かす"
+        ],
+        "majorImports": [
+          "精製燃料（軽油・ガソリン）",
+          "機械・自動車"
+        ],
+        "majorPartners": [
+          "ブラジル",
+          "アルゼンチン",
+          "インド",
+          "日本",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語：スペイン語）＋先住民語（ケチュア語・アイマラ語）",
+      "officialLanguages": [
+        "スペイン語",
+        "ケチュア語",
+        "アイマラ語等36語"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック＋プロテスタント）",
+          "percent": 89
+        },
+        {
+          "name": "伝統宗教・無宗教",
+          "percent": 11
+        }
+      ],
+      "ethnicGroups": [
+        "先住民（ケチュア・アイマラ等約4割超）",
+        "メスティーソ（約5割）"
+      ],
+      "regionalIntegrations": [
+        "アンデス共同体",
+        "メルコスール（加盟手続中）"
+      ],
+      "historicalContext": [
+        {
+          "id": "bol_indigenous",
+          "label": "ラテンアメリカ最高水準の先住民比率と2都市首都分担",
+          "detail": "憲法上の首都スクレに対し、標高3600mのすり鉢谷底（上位階層ほど低標高側に住む逆転現象）のラパスに行政・議会が置かれる。",
+          "clozeTerms": [
+            "先住民",
+            "ラパス",
+            "憲法上首都"
+          ],
+          "tags": [
+            "先住民",
+            "ラパス",
+            "憲法上首都"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "ECU": {
+    "iso3": "ECU",
+    "nameJa": "エクアドル",
+    "nameEn": "Ecuador",
+    "region": "南アメリカ",
+    "subRegion": "アンデス北部（赤道直下）",
+    "capital": "キト",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "赤道直下なのに年平均14℃の常春『高山都市キト（標高2850m）』",
+        "バナナ輸出世界1位＆原油・エビ養殖・世界遺産ガラパゴス諸島"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（アンデス山脈・コトパクシ火山）",
+        "ガラパゴス・ホットスポット"
+      ],
+      "summary": "国名の由来通り赤道が横切る国。太平洋岸の熱帯低地、アンデス高地盆地（火山群）、東部のアマゾン熱帯雨林と、沖合1000kmの世界自然遺産ガラパゴス諸島（ホットスポット）の4地域から成る。",
+      "items": [
+        {
+          "id": "ecu_galapagos",
+          "label": "世界遺産ガラパゴス諸島（ホットスポット＋寒流・暖流合流）",
+          "detail": "ナスカプレートがホットスポット上を移動してできた火山列島。赤道直下ながら寒流ペルー海流（フンボルト海流）がぶつかるためアシカやペンギンなど固有生物が生息。",
+          "clozeTerms": [
+            "ガラパゴス諸島",
+            "ホットスポット",
+            "ペルー海流"
+          ],
+          "tags": [
+            "ガラパゴス諸島",
+            "ホットスポット",
+            "ペルー海流"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfb",
+        "Af",
+        "Aw",
+        "BW"
+      ],
+      "summary": "キトは赤道直下（南緯0.2度）だが標高2850mの高地に位置するため年中月平均気温13〜14℃（年較差わずか1℃以下）の『常春』となる。沿岸はサバナ〜寒流による乾燥影響も。",
+      "cities": [
+        {
+          "cityId": "ECU_QUITO",
+          "nameJa": "キト",
+          "nameEn": "Quito",
+          "lat": -0.18,
+          "lng": -78.47,
+          "elevationM": 2850,
+          "koppenCode": "Cfb",
+          "koppenNameJa": "西岸海洋性（高地常春）",
+          "factors": [
+            "赤道直下のため季節変化（年較差）がほぼゼロ（年間約13〜15℃）",
+            "標高2850mのため昼は暖かく朝晩は冷え込む日較差が大きい"
+          ],
+          "monthlyTempC": [
+            14.1,
+            14.1,
+            14.0,
+            14.2,
+            14.3,
+            14.1,
+            14.0,
+            14.4,
+            14.4,
+            14.1,
+            14.0,
+            14.1
+          ],
+          "monthlyPrecipMm": [
+            82,
+            108,
+            134,
+            146,
+            102,
+            55,
+            24,
+            30,
+            62,
+            102,
+            98,
+            78
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション農業",
+        "商業的・伝統的混合農業（標高垂直分布）"
+      ],
+      "agriculture": [
+        {
+          "id": "ecu_banana_rose_shrimp",
+          "label": "バナナ輸出世界1位・カカオ・アンデス高地のバラ栽培・養殖エビ",
+          "detail": "低地のバナナ（輸出世界1位）・カカオ・エビ養殖に加え、高地の強日照・年較差ゼロを活かしたバラ切り花の空輸輸出が大成長。",
+          "clozeTerms": [
+            "バナナ",
+            "カカオ",
+            "高地花き"
+          ],
+          "tags": [
+            "バナナ",
+            "カカオ",
+            "高地花き"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ecu_oil",
+          "label": "アマゾン側オリエンテ地方の原油産出（元OPEC加盟・2020年脱退）",
+          "detail": "原油が最大の輸出品目だが、環境保護や割当枠との折り合いからOPECを脱退した経歴を持つ。",
+          "clozeTerms": [
+            "原油",
+            "OPEC脱退"
+          ],
+          "tags": [
+            "原油",
+            "OPEC脱退"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ecu_usd",
+          "label": "2000年の自国通貨廃止・米ドル法定通貨化（ダラリゼーション）",
+          "detail": "インフレ抑制のため公式通貨に米ドルを採用（パナマ・エルサルバドルと同様）。",
+          "clozeTerms": [
+            "米ドル",
+            "ガラパゴス観光"
+          ],
+          "tags": [
+            "米ドル",
+            "ガラパゴス観光"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "原油",
+          "養殖エビ（世界トップ級）",
+          "バナナ（輸出世界1位）",
+          "カカオ・バラ切り花"
+        ],
+        "majorImports": [
+          "石油製品（精製油）",
+          "機械・自動車"
+        ],
+        "majorPartners": [
+          "アメリカ",
+          "中国",
+          "EU",
+          "パナマ"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語：スペイン語）＋ケチュア語",
+      "officialLanguages": [
+        "スペイン語",
+        "キチュア語（ケチュア語）等"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（カトリック）",
+          "percent": 75
+        },
+        {
+          "name": "プロテスタント等",
+          "percent": 25
+        }
+      ],
+      "ethnicGroups": [
+        "メスティーソ（約7割）",
+        "モンツビオ・先住民・アフリカ系"
+      ],
+      "regionalIntegrations": [
+        "アンデス共同体",
+        "（2020年OPEC脱退）"
+      ],
+      "historicalContext": [
+        {
+          "id": "ecu_equator_highland",
+          "label": "標高による住み分け（高地キト vs 港湾グアヤキル）",
+          "detail": "標高2850mの涼しい首都キトと、低地の高温多湿な最大経済港湾都市グアヤキルに対比がみられる。",
+          "clozeTerms": [
+            "赤道",
+            "高地都市",
+            "垂直分布"
+          ],
+          "tags": [
+            "赤道",
+            "高地都市",
+            "垂直分布"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "URY": {
+    "iso3": "URY",
+    "nameJa": "ウルグアイ",
+    "nameEn": "Uruguay",
+    "region": "南アメリカ",
+    "subRegion": "南アメリカ南部（ラプラタ川東岸）",
+    "capital": "モンテビデオ",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "温帯草原（パンパの延長）での企業的牧畜（牛肉・羊毛）と欧州系住民多数",
+        "中南米屈指の政治安定・福祉国家＆再生可能電力9割超"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊・ラプラタ川東岸の緩やかな波状草原"
+      ],
+      "summary": "アルゼンチンとブラジルに挟まれ、ほぼ全土が温帯の緩やかな草原地帯。ラプラタ川（エスチュアリー）東岸に面する。",
+      "items": [
+        {
+          "id": "ury_grassland",
+          "label": "国土の約8割が天然牧草地・温暖湿潤気候（Cfa）",
+          "detail": "高峻な山脈がなく全域が温帯草原で、四季があり家畜放牧に最適。",
+          "clozeTerms": [
+            "パンパ",
+            "Cfa気候",
+            "牧草地"
+          ],
+          "tags": [
+            "パンパ",
+            "Cfa気候",
+            "牧草地"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cfa"
+      ],
+      "summary": "年中降水があり夏暖かく冬も温暖な温暖湿潤気候（Cfa）。南半球のため1月が夏、7月が冬。",
+      "cities": [
+        {
+          "cityId": "URY_MONTEVIDEO",
+          "nameJa": "モンテビデオ",
+          "nameEn": "Montevideo",
+          "lat": -34.9,
+          "lng": -56.16,
+          "elevationM": 22,
+          "koppenCode": "Cfa",
+          "koppenNameJa": "温暖湿潤気候（南半球）",
+          "factors": [
+            "南半球のため1月（約23℃）が最も暑く、7月（約11℃）が最も寒い",
+            "大西洋岸で年降水量は1100mm前後でほぼ通年均等"
+          ],
+          "monthlyTempC": [
+            23.1,
+            22.6,
+            20.8,
+            17.5,
+            14.3,
+            11.4,
+            10.9,
+            12.1,
+            13.8,
+            16.5,
+            19.3,
+            21.8
+          ],
+          "monthlyPrecipMm": [
+            92,
+            95,
+            104,
+            105,
+            86,
+            85,
+            88,
+            90,
+            89,
+            106,
+            94,
+            86
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "企業的牧畜",
+        "混合農業"
+      ],
+      "agriculture": [
+        {
+          "id": "ury_beef_soy",
+          "label": "肉牛・羊の企業的牧畜と大豆・米輸出・ユーカリ林業",
+          "detail": "人口約340万人に対し肉牛が約1100万頭と1人当たり飼育数・牛肉消費量世界トップクラス。",
+          "clozeTerms": [
+            "企業的牧畜",
+            "牛肉",
+            "パンパ"
+          ],
+          "tags": [
+            "企業的牧畜",
+            "牛肉",
+            "パンパ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "ury_renewables",
+          "label": "水力＋風力中心に総発電の約9割以上が再生可能エネルギー",
+          "detail": "送電網整備と風力発電急増で中南米随一の再エネ優等生。",
+          "clozeTerms": [
+            "風力",
+            "再生可能エネルギー"
+          ],
+          "tags": [
+            "風力",
+            "再生可能エネルギー"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "ury_it_service",
+          "label": "金融・ソフトウェア輸出・IT人材育成",
+          "detail": "ブラジル・アルゼンチン間の中立的な金融・IT拠点かつ安定した民主主義・社会保障国家。",
+          "clozeTerms": [
+            "ソフトウェア",
+            "中南米福祉"
+          ],
+          "tags": [
+            "ソフトウェア",
+            "中南米福祉"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "牛肉（冷凍・冷蔵）",
+          "紙パルプ（ユーカリ造林）",
+          "大豆・米・乳製品"
+        ],
+        "majorImports": [
+          "原油・石油製品",
+          "自動車・機械"
+        ],
+        "majorPartners": [
+          "中国",
+          "ブラジル",
+          "アメリカ",
+          "アルゼンチン"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語：スペイン語）",
+      "officialLanguages": [
+        "スペイン語"
+      ],
+      "religions": [
+        {
+          "name": "無宗教・世俗（中南米最高水準の政教分離）",
+          "percent": 47
+        },
+        {
+          "name": "キリスト教（カトリック等）",
+          "percent": 53
+        }
+      ],
+      "ethnicGroups": [
+        "ヨーロッパ系白人（スペイン・イタリア系約88%と南米で極めて高い）"
+      ],
+      "regionalIntegrations": [
+        "メルコスール（加盟・本部所在地）"
+      ],
+      "historicalContext": [
+        {
+          "id": "ury_mercosur_welfare",
+          "label": "メルコスール本部所在地・欧州系白人比率と世俗福祉国家",
+          "detail": "アルゼンチン同様にイタリア・スペイン系白人が約9割を占め、早くから年金・無償教育・再エネと高い民主度を達成。",
+          "clozeTerms": [
+            "メルコスール",
+            "欧州系",
+            "Cfa"
+          ],
+          "tags": [
+            "メルコスール",
+            "欧州系",
+            "Cfa"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "LBY": {
+    "iso3": "LBY",
+    "nameJa": "リビア",
+    "nameEn": "Libya",
+    "region": "アフリカ",
+    "subRegion": "北アフリカ（地中海・サハラ）",
+    "capital": "トリポリ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "アフリカ最大の原油確認埋蔵量・OPEC加盟の産油国",
+        "サハラ砂漠の化石地下水汲み上げ『大人工河川計画』と欧州への難民・移民中継ルート"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊（サハラ砂漠）"
+      ],
+      "summary": "北端の狭い地中海沿岸を除き、国土の約9割以上が広大なサハラ砂漠（BW）。",
+      "items": [
+        {
+          "id": "lby_fossil_water",
+          "label": "サハラ砂漠地下の『化石地下水』と大人工河川（グレートマンメイドリバー）",
+          "detail": "数万年前の湿潤期に溜まった非再生の化石地下水をサハラ南部から地中海沿岸のトリポリ・ベンガジへ巨大パイプラインで送水・灌漑している。",
+          "clozeTerms": [
+            "化石地下水",
+            "サハラ砂漠",
+            "BW気候"
+          ],
+          "tags": [
+            "化石地下水",
+            "サハラ砂漠",
+            "BW気候"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "BW",
+        "BS"
+      ],
+      "summary": "内陸部は年間降水50mm未満の砂漠気候（BW）、地中海沿岸トリポリはステップ気候（BS）〜乾燥地中海性。",
+      "cities": [
+        {
+          "cityId": "LBY_TRIPOLI",
+          "nameJa": "トリポリ",
+          "nameEn": "Tripoli",
+          "lat": 32.89,
+          "lng": 13.19,
+          "elevationM": 25,
+          "koppenCode": "BS",
+          "koppenNameJa": "ステップ気候（BSh・地中海乾燥影響）",
+          "factors": [
+            "地中海冬雨がわずかに降るが年降水量約330mmと乾燥",
+            "サハラからの熱風（ギブリ）で夏は非常に高温"
+          ],
+          "monthlyTempC": [
+            12.3,
+            13.1,
+            15.2,
+            18.6,
+            22.1,
+            25.8,
+            27.6,
+            28.4,
+            26.2,
+            22.7,
+            17.8,
+            13.7
+          ],
+          "monthlyPrecipMm": [
+            68,
+            42,
+            30,
+            17,
+            5,
+            1,
+            0,
+            1,
+            12,
+            42,
+            55,
+            68
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "オアシス農業・灌漑農業",
+        "遊牧"
+      ],
+      "agriculture": [
+        {
+          "id": "lby_oasis_food",
+          "label": "乾燥のため食料の多くを輸入・沿岸と化石地下水オアシスの小麦/ナツメヤシ",
+          "detail": "農業に適した土地が狭いため食料輸入依存が大きい。",
+          "clozeTerms": [
+            "オアシス農業",
+            "小麦輸入"
+          ],
+          "tags": [
+            "オアシス農業",
+            "小麦輸入"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "lby_oil_opec",
+          "label": "軽質低硫黄原油の世界的産地（OPEC加盟・アフリカ首位級埋蔵量）",
+          "detail": "欧州に最も近いOPEC産油国として高品質原油と天然ガスを欧州へ輸出（内戦による生産変動が大きい）。",
+          "clozeTerms": [
+            "原油",
+            "OPEC",
+            "地中海"
+          ],
+          "tags": [
+            "原油",
+            "OPEC",
+            "地中海"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "lby_oil_mono",
+          "label": "輸出額の95%以上を原油・ガスに頼る極端なモノカルチャー",
+          "detail": "カダフィ政権崩壊後の東西分裂・内戦によりインフラや産業多角化が停滞。",
+          "clozeTerms": [
+            "モノカルチャー",
+            "資源依存"
+          ],
+          "tags": [
+            "モノカルチャー",
+            "資源依存"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "原油（全輸出の9割超）",
+          "天然ガス"
+        ],
+        "majorImports": [
+          "食料品（小麦等）",
+          "精製燃料",
+          "機械・車両"
+        ],
+        "majorPartners": [
+          "イタリア",
+          "ドイツ",
+          "スペイン",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語）",
+      "officialLanguages": [
+        "アラビア語"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（スンニ派）",
+          "percent": 97
+        },
+        {
+          "name": "その他",
+          "percent": 3
+        }
+      ],
+      "ethnicGroups": [
+        "アラブ人",
+        "ベルベル人（アマジグ）・トゥアレグ"
+      ],
+      "regionalIntegrations": [
+        "OPEC",
+        "AU",
+        "アラブ連盟"
+      ],
+      "historicalContext": [
+        {
+          "id": "lby_migrant_route",
+          "label": "サブサハラ・アフリカから欧州（イタリア）への密航・難民経由地",
+          "detail": "旧宗主国イタリアと地中海を挟んで向かい合い、政情不安定も相まって不法移民の出発・中継拠点化。",
+          "clozeTerms": [
+            "イタリア",
+            "難民",
+            "OPEC"
+          ],
+          "tags": [
+            "イタリア",
+            "難民",
+            "OPEC"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "TUN": {
+    "iso3": "TUN",
+    "nameJa": "チュニジア",
+    "nameEn": "Tunisia",
+    "region": "アフリカ",
+    "subRegion": "北アフリカ（マグレブ）",
+    "capital": "チュニス",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "地中海性気候（Cs）のオリーブ油輸出＆欧州向け自動車部品/衣料加工",
+        "『アラブの春（ジャスミン革命）』発祥国・リン鉱石・地中海リゾート"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（アトラス山脈東端）とサハラ砂漠北部"
+      ],
+      "summary": "北端の肥沃な地中海沿岸から南部のサハラ砂漠（ショッツ塩湖群）へ気候帯が連続して変化。",
+      "items": [
+        {
+          "id": "tun_climate_grad",
+          "label": "北部の地中海性気候（Cs）と南部のサハラ砂漠（BW）の対比",
+          "detail": "アフリカ最北端を抱え、北部は冬雨のオリーブ・小麦地帯、南部はオアシスのデーツ（ナツメヤシ）と砂漠観光。",
+          "clozeTerms": [
+            "Cs気候",
+            "アトラス山脈"
+          ],
+          "tags": [
+            "Cs気候",
+            "アトラス山脈"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cs",
+        "BS",
+        "BW"
+      ],
+      "summary": "北部チュニスは地中海性気候（Cs）で冬に適度な雨があり、南下するとステップ（BS）〜砂漠（BW）に変化。",
+      "cities": [
+        {
+          "cityId": "TUN_TUNIS",
+          "nameJa": "チュニス",
+          "nameEn": "Tunis",
+          "lat": 36.81,
+          "lng": 10.18,
+          "elevationM": 4,
+          "koppenCode": "Cs",
+          "koppenNameJa": "地中海性気候",
+          "factors": [
+            "夏は亜熱帯高圧帯で乾燥し非常に高温",
+            "冬は偏西風と地中海低気圧で降水がありCs気候となる"
+          ],
+          "monthlyTempC": [
+            11.8,
+            12.1,
+            13.8,
+            16.5,
+            20.4,
+            24.7,
+            27.6,
+            28.1,
+            25.3,
+            21.1,
+            16.4,
+            12.9
+          ],
+          "monthlyPrecipMm": [
+            63,
+            56,
+            46,
+            39,
+            23,
+            10,
+            4,
+            10,
+            35,
+            62,
+            57,
+            65
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "地中海式農業",
+        "オアシス農業"
+      ],
+      "agriculture": [
+        {
+          "id": "tun_olive_dates",
+          "label": "世界有数のオリーブ油・高級デーツ輸出",
+          "detail": "オリーブ栽培面積が広大で世界トップ5級のオリーブ油輸出国。南部オアシスのデーツ（デグレ・ヌール）も名産。",
+          "clozeTerms": [
+            "オリーブ",
+            "地中海式農業",
+            "デーツ"
+          ],
+          "tags": [
+            "オリーブ",
+            "地中海式農業",
+            "デーツ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "tun_phosphate",
+          "label": "内陸南部ガフサのリン鉱石",
+          "detail": "肥料原料となるリン鉱石はモロッコに並ぶ北アフリカの伝統的鉱産資源。",
+          "clozeTerms": [
+            "リン鉱石"
+          ],
+          "tags": [
+            "リン鉱石"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "tun_eu_subcontract",
+          "label": "EU向け自動車部品（ワイヤーハーネス）と衣料品縫製・観光",
+          "detail": "フランス・イタリア等EU市場に近い低賃金拠点として自動車電装品やアパレルの受託工場が集積。地中海ビーチやカルタゴ・チュニス旧市街観光も重要。",
+          "clozeTerms": [
+            "自動車部品",
+            "旧仏領",
+            "観光"
+          ],
+          "tags": [
+            "自動車部品",
+            "旧仏領",
+            "観光"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "自動車用配線・電気機器",
+          "衣料品",
+          "オリーブ油・デーツ",
+          "原油（少量）・リン酸肥料"
+        ],
+        "majorImports": [
+          "機械・繊維生地",
+          "石油製品・穀物"
+        ],
+        "majorPartners": [
+          "フランス",
+          "イタリア",
+          "ドイツ",
+          "スペイン"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語）＋フランス語（商業・教育）",
+      "officialLanguages": [
+        "アラビア語",
+        "フランス語（広く通用）"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（スンニ派）",
+          "percent": 99
+        },
+        {
+          "name": "その他",
+          "percent": 1
+        }
+      ],
+      "ethnicGroups": [
+        "アラブ・ベルベル系"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "アラブ連盟",
+        "AMU（アラブ・マグレブ連合）"
+      ],
+      "historicalContext": [
+        {
+          "id": "tun_arab_spring",
+          "label": "旧フランス保護領と2011年『アラブの春（ジャスミン革命）』発祥",
+          "detail": "モロッコ・アルジェリアと同じマグレブ3国の1つ。フランスの影響が残り教育水準が高く出生率も1.8前後へ低下、女性の権利がアラブ圏で最も進んでいた。",
+          "clozeTerms": [
+            "フランス語",
+            "マグレブ",
+            "アラブの春"
+          ],
+          "tags": [
+            "フランス語",
+            "マグレブ",
+            "アラブの春"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "CIV": {
+    "iso3": "CIV",
+    "nameJa": "コートジボワール",
+    "nameEn": "Côte d'Ivoire",
+    "region": "アフリカ",
+    "subRegion": "西アフリカ（ギニア湾岸）",
+    "capital": "ヤムスクロ（憲法）／アビジャン（最大都市・経済中心）",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "カカオ豆世界1位（世界生産の約4割）＆天然ゴム4位急伸",
+        "旧仏領（CFAフラン・フランス語公用語）・モノカルチャーと児童労働問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊（アフリカ楯状地・ギニア湾沿岸熱帯雨林と内陸サバナ）"
+      ],
+      "summary": "ギニア湾に面する南部は高温多湿の熱帯雨林・モンスーン気候（Af/Am）、北部内陸はサバナ気候（Aw）へと移行する。",
+      "items": [
+        {
+          "id": "civ_rainforest_cacao",
+          "label": "ギニア湾岸の熱帯気候とカカオ・天然ゴム適地",
+          "detail": "年較差が少なく年降水量1600〜2000mm前後の南部がカカオやアブラヤシの栽培適地。",
+          "clozeTerms": [
+            "熱帯気候",
+            "ギニア湾"
+          ],
+          "tags": [
+            "熱帯気候",
+            "ギニア湾"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Af",
+        "Am",
+        "Aw"
+      ],
+      "summary": "最大都市アビジャン（南岸）は熱帯雨林〜モンスーン（Af/Aw）で特に5〜7月に降水が集中する。",
+      "cities": [
+        {
+          "cityId": "CIV_ABIDJAN",
+          "nameJa": "アビジャン",
+          "nameEn": "Abidjan",
+          "lat": 5.36,
+          "lng": -4.01,
+          "elevationM": 20,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": [
+            "ギニア湾の暖流と南西モンスーンにより5〜7月に極めて多雨",
+            "年間平均27℃前後の高温多湿"
+          ],
+          "monthlyTempC": [
+            27.0,
+            27.9,
+            28.2,
+            28.1,
+            27.3,
+            25.9,
+            25.1,
+            24.7,
+            25.4,
+            26.5,
+            27.4,
+            27.1
+          ],
+          "monthlyPrecipMm": [
+            22,
+            46,
+            102,
+            146,
+            278,
+            562,
+            210,
+            44,
+            72,
+            168,
+            142,
+            74
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション農業",
+        "焼畑農業"
+      ],
+      "agriculture": [
+        {
+          "id": "civ_cacao_rubber",
+          "label": "カカオ豆生産世界1位（約4割）＆天然ゴム・カシューナッツ急増",
+          "detail": "不動の世界1位カカオ輸出国（小農園主体）。近年はマレーシア等を抜いて天然ゴム生産でも世界4位前後へ躍進。",
+          "clozeTerms": [
+            "カカオ",
+            "天然ゴム",
+            "カシューナッツ"
+          ],
+          "tags": [
+            "カカオ",
+            "天然ゴム",
+            "カシューナッツ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "civ_gold_oil",
+          "label": "金採掘・沖合原油とガス発電拠点",
+          "detail": "農業に加え金鉱山と沿岸天然ガスによる発電整備が伸長。",
+          "clozeTerms": [
+            "金",
+            "天然ガス"
+          ],
+          "tags": [
+            "金",
+            "天然ガス"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "civ_processing",
+          "label": "カカオ一次加工・熱帯雨林破壊と公正貿易（フェアトレード）",
+          "detail": "国際価格の変動や森林減少・児童労働問題への対策として現地でのチョコレート原料加工や認証カカオを推進。",
+          "clozeTerms": [
+            "フェアトレード",
+            "モノカルチャー"
+          ],
+          "tags": [
+            "フェアトレード",
+            "モノカルチャー"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "カカオ豆・ココア製品（約4割）",
+          "天然ゴム",
+          "金・原油・カシューナッツ"
+        ],
+        "majorImports": [
+          "機械・電気機器",
+          "原油・精製油",
+          "米・食料"
+        ],
+        "majorPartners": [
+          "オランダ（ロッテルダム経由加工）",
+          "スイス",
+          "フランス",
+          "アメリカ"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ロマンス語：フランス語）＋ニジェール・コンゴ語族",
+      "officialLanguages": [
+        "フランス語（公用語）",
+        "ジュラ語・バウレ語等"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（北部中心）",
+          "percent": 43
+        },
+        {
+          "name": "キリスト教（南部中心）",
+          "percent": 34
+        },
+        {
+          "name": "伝統宗教",
+          "percent": 23
+        }
+      ],
+      "ethnicGroups": [
+        "アカン人",
+        "ヴォルタ人",
+        "マンデ系（北部）"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "ECOWAS（西アフリカ諸国経済共同体）",
+        "CFAフラン圏"
+      ],
+      "historicalContext": [
+        {
+          "id": "civ_france_capital",
+          "label": "旧仏領「象牙海岸」・北部イスラム/南部キリスト教対立とヤムスクロ遷都",
+          "detail": "フランス語公用語・通貨CFAフラン（ユーロペッグ）。内戦の背景ともなった北（イスラム）と南（キリスト・富裕）の地域格差がある。1983年にアビジャンから内陸ヤムスクロへ遷都。",
+          "clozeTerms": [
+            "旧仏領",
+            "遷都",
+            "カカオ"
+          ],
+          "tags": [
+            "旧仏領",
+            "遷都",
+            "カカオ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "GHA": {
+    "iso3": "GHA",
+    "nameJa": "ガーナ",
+    "nameEn": "Ghana",
+    "region": "アフリカ",
+    "subRegion": "西アフリカ（ギニア湾岸）",
+    "capital": "アクラ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "カカオ豆世界2位（日本の最大輸入元）＆金産出アフリカ最大級（旧名ゴールドコースト）",
+        "旧英領（英語公用語・キリスト教約7割）とアコソンボダム（ボルタ川）水力発電・中古電子ゴミ問題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊（アフリカ楯状地・アシャンティ高地・ボルタ湖）"
+      ],
+      "summary": "ボルタ川を堰き止めた世界最大級の人造湖ボルタ湖（アコソンボダム）を持ち、南西部の森林地帯でカカオや金を産出。",
+      "items": [
+        {
+          "id": "gha_volta_dam",
+          "label": "ボルタ川のアコソンボダム（人造湖ボルタ湖）",
+          "detail": "水力発電で自国アルミ精錬や電力供給を支えるが、気候変動による水量変動が課題。",
+          "clozeTerms": [
+            "ボルタ川",
+            "水力発電"
+          ],
+          "tags": [
+            "ボルタ川",
+            "水力発電"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Aw",
+        "Af"
+      ],
+      "summary": "南部海岸のアクラは年降水780mm前後（海岸沿い冷潮影響で周囲よりやや寡雨）のサバナ気候（Aw）、南西部内陸は多雨（Af/Am）。",
+      "cities": [
+        {
+          "cityId": "GHA_ACCRA",
+          "nameJa": "アクラ",
+          "nameEn": "Accra",
+          "lat": 5.6,
+          "lng": -0.19,
+          "elevationM": 69,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": [
+            "本初子午線（経度0°）至近（テマ港）・赤道北側のAw気候",
+            "5〜6月と9〜10月の二峰性雨季（北岸はやや少雨）"
+          ],
+          "monthlyTempC": [
+            27.3,
+            28.0,
+            28.3,
+            28.1,
+            27.3,
+            25.8,
+            24.8,
+            24.6,
+            25.4,
+            26.4,
+            27.3,
+            27.3
+          ],
+          "monthlyPrecipMm": [
+            14,
+            26,
+            56,
+            85,
+            134,
+            195,
+            52,
+            22,
+            46,
+            75,
+            42,
+            22
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション・商品作物小農（カカオ）",
+        "根栽・雑穀農耕"
+      ],
+      "agriculture": [
+        {
+          "id": "gha_cacao_jp",
+          "label": "カカオ豆世界2位・日本のカカオ輸入の約7〜8割を供給",
+          "detail": "コートジボワールに次ぐ世界2位。良質な発酵管理で日本のチョコレート原料の圧倒的1位輸入相手国。",
+          "clozeTerms": [
+            "カカオ",
+            "日本輸入",
+            "フェアトレード"
+          ],
+          "tags": [
+            "カカオ",
+            "日本輸入",
+            "フェアトレード"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "gha_gold_oil",
+          "label": "金産出アフリカ1位級（旧名ゴールドコースト）＋沖合原油",
+          "detail": "15世紀以来の『黄金海岸』。現在もアフリカトップの産金国で、近年は原油生産・輸出も拡大。",
+          "clozeTerms": [
+            "金",
+            "原油",
+            "旧英領"
+          ],
+          "tags": [
+            "金",
+            "原油",
+            "旧英領"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "gha_ewaste",
+          "label": "アグボグブロシー等の輸入中古電子廃棄物（E-waste）問題",
+          "detail": "欧米等から『中古品』として持ち込まれた廃家電の野焼き回収による環境・健康被害と、国際的な廃棄物越境規制（バーゼル条約）が共テ頻出。",
+          "clozeTerms": [
+            "E-waste",
+            "バーゼル条約",
+            "環境問題"
+          ],
+          "tags": [
+            "E-waste",
+            "バーゼル条約",
+            "環境問題"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "金（約4〜5割）",
+          "原油",
+          "カカオ豆（約15〜20%）"
+        ],
+        "majorImports": [
+          "機械・輸送機器",
+          "精製燃料",
+          "米・冷凍食品"
+        ],
+        "majorPartners": [
+          "スイス（金精製）",
+          "中国",
+          "インド",
+          "オランダ",
+          "日本"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語）＋ニジェール・コンゴ語族",
+      "officialLanguages": [
+        "英語（公用語）",
+        "アカン語（トウィ語）等"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（プロテスタント等多数）",
+          "percent": 71
+        },
+        {
+          "name": "イスラム教（北部中心）",
+          "percent": 20
+        },
+        {
+          "name": "伝統宗教",
+          "percent": 9
+        }
+      ],
+      "ethnicGroups": [
+        "アカン人",
+        "モレ・ダグバニ系",
+        "エウェ人"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "ECOWAS",
+        "イギリス連邦"
+      ],
+      "historicalContext": [
+        {
+          "id": "gha_indep_1957",
+          "label": "旧英領ゴールドコースト・1957年サブサハラ黒人アフリカ初の独立達成",
+          "detail": "隣国コートジボワール（旧仏領）と気候・カカオ産出が同じだが、ガーナは『旧英領・英語公用語・キリスト教7割・独立通貨セディ』という対照関係が試験に出る！",
+          "clozeTerms": [
+            "旧英領",
+            "英語",
+            "本初子午線"
+          ],
+          "tags": [
+            "旧英領",
+            "英語",
+            "本初子午線"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "NAM": {
+    "iso3": "NAM",
+    "nameJa": "ナミビア",
+    "nameEn": "Namibia",
+    "region": "アフリカ",
+    "subRegion": "南部アフリカ（大西洋岸）",
+    "capital": "ウィントフック",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "寒流『ベンゲラ海流』による海岸砂漠『ナミブ砂漠（BW）』と沿岸の海霧",
+        "ウラン産出世界3位級＆ダイヤモンド・アフリカ有数の低い人口密度"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊（南アフリカ楯状地・ナミブ砂漠・カラハリ盆地西縁）"
+      ],
+      "summary": "大西洋岸に沿う世界最古級の海岸砂漠『ナミブ砂漠』（ソススフレイの赤い砂丘）と、内陸の標高1000〜1700m乾燥高原から成る。",
+      "items": [
+        {
+          "id": "nam_benguela_fog",
+          "label": "寒流ベンゲラ海流が生む海岸砂漠（ナミブ砂漠）と砂丘の濃霧",
+          "detail": "南緯20度前後の亜熱帯高圧帯＋冷たいベンゲラ海流で上昇気流が抑えられ雨がほぼ降らない（海岸部は年20mm以下）が、朝には濃霧が発生し砂漠の動植物に水分を供給する（アタカマ砂漠と同じ寒流海岸砂漠！）。",
+          "clozeTerms": [
+            "ベンゲラ海流",
+            "ナミブ砂漠",
+            "寒流"
+          ],
+          "tags": [
+            "ベンゲラ海流",
+            "ナミブ砂漠",
+            "寒流"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "BW",
+        "BS"
+      ],
+      "summary": "大西洋岸（ワルビスベイ）は世界でも極端な海岸砂漠（BW、寒流で夏も20℃以下と涼しい！）。内陸首都ウィントフックは標高1650mのステップ（BS）。",
+      "cities": [
+        {
+          "cityId": "NAM_WALVIS",
+          "nameJa": "ワルビスベイ",
+          "nameEn": "Walvis Bay",
+          "lat": -22.96,
+          "lng": 14.51,
+          "elevationM": 5,
+          "koppenCode": "BW",
+          "koppenNameJa": "砂漠気候（寒流海岸砂漠）",
+          "factors": [
+            "寒流ベンゲラ海流により南回帰線上でも年平均16℃前後と冷涼",
+            "亜熱帯高圧帯＋寒流で年間降水量わずか15mm前後だが濃霧が多発"
+          ],
+          "monthlyTempC": [
+            17.8,
+            18.2,
+            18.0,
+            16.5,
+            15.6,
+            14.9,
+            13.8,
+            13.3,
+            13.7,
+            14.5,
+            15.6,
+            16.8
+          ],
+          "monthlyPrecipMm": [
+            2,
+            3,
+            4,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "企業的牧畜（粗放的牧羊・牧牛）",
+        "遊牧"
+      ],
+      "agriculture": [
+        {
+          "id": "nam_livestock_fish",
+          "label": "内陸高原の粗放的肉牛/羊牧畜とベンゲラ海流湧昇流の漁業",
+          "detail": "乾燥ゆえ耕地は1%未満。ワルビスベイ沖は湧昇流の好漁場。",
+          "clozeTerms": [
+            "寒流漁場",
+            "粗放的牧畜"
+          ],
+          "tags": [
+            "寒流漁場",
+            "粗放的牧畜"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "nam_uranium_diamond",
+          "label": "ウラン鉱（世界3位級）・ダイヤモンド（海底含む）・亜鉛・銅",
+          "detail": "ロッシング/フサブ鉱山によりカザフスタン・カナダに並ぶ世界トップクラスのウラン生産国。海岸漂砂のダイヤモンドも豊富。",
+          "clozeTerms": [
+            "ウラン",
+            "ダイヤモンド",
+            "乾燥鉱山"
+          ],
+          "tags": [
+            "ウラン",
+            "ダイヤモンド",
+            "乾燥鉱山"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "nam_density_tourism",
+          "label": "モンゴルに次ぐ世界最低級の人口密度（約3人/km²）と自然観光",
+          "detail": "日本の約2.2倍の国土に人口わずか約260〜300万人。砂漠とエトーシャ国立公園の観光も伸びる。",
+          "clozeTerms": [
+            "低人口密度",
+            "エコツーリズム"
+          ],
+          "tags": [
+            "低人口密度",
+            "エコツーリズム"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "ダイヤモンド",
+          "ウラン・銅・金",
+          "水産物（ホキ・イワシ）",
+          "牛肉"
+        ],
+        "majorImports": [
+          "機械・自動車",
+          "精製燃料・食料（南アから輸入多）"
+        ],
+        "majorPartners": [
+          "中国",
+          "南アフリカ",
+          "ボツワナ",
+          "スイス",
+          "スペイン"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（ゲルマン語派：英語）＋ニジェール・コンゴ語族・ドイツ語/アフリカーンス",
+      "officialLanguages": [
+        "英語（公用語）",
+        "オバンボ語",
+        "アフリカーンス・ドイツ語（歴史上）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（ルター派等プロテスタント中心）",
+          "percent": 90
+        },
+        {
+          "name": "伝統宗教等",
+          "percent": 10
+        }
+      ],
+      "ethnicGroups": [
+        "オバンボ人（約半数）",
+        "カバンゴ・ヘレロ・白人（独/南ア系）"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "SADC（南部アフリカ開発共同体）",
+        "イギリス連邦"
+      ],
+      "historicalContext": [
+        {
+          "id": "nam_de_zaf",
+          "label": "旧ドイツ領南西アフリカ→南アフリカ委任統治→1990年独立",
+          "detail": "ドイツ植民地建築（スワコプムント等）と南ア統治時代のアフリカーンス語・インフラの影響が強く、1990年にアフリカ最後発級で独立。",
+          "clozeTerms": [
+            "旧ドイツ領",
+            "南アフリカ",
+            "1990年独立"
+          ],
+          "tags": [
+            "旧ドイツ領",
+            "南アフリカ",
+            "1990年独立"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "MDG": {
+    "iso3": "MDG",
+    "nameJa": "マダガスカル",
+    "nameEn": "Madagascar",
+    "region": "アフリカ",
+    "subRegion": "東アフリカ・インド洋島嶼",
+    "capital": "アンタナナリボ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "インド洋を越えたオーストロネシア語族（東南アジア系）とアフリカ系の融合・主食が『米』＆棚田",
+        "世界1位のバニラ（約8割）とバオバブ/キツネザル固有生態系・2025年本試出題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "ゴンドワナ大陸分裂由来の先カンブリア代高原とラトソル赤土"
+      ],
+      "summary": "約1億6千万年前にアフリカ・インドから分離した世界第4位の島。東岸は南東貿易風の風上で熱帯雨林（Af）、中央高地はCwb/Cw（稲作棚田）、西〜南西は風下で乾燥（Aw/BS・バオバブ並木）。",
+      "items": [
+        {
+          "id": "mdg_orographic_rain",
+          "label": "南東貿易風による地形性降雨の東西対比（東岸多雨Af・西岸少雨BS）",
+          "detail": "2025年本試第6問「インド洋島嶼国」でも核心！東側から湿った南東貿易風が吹き込み中央山脈で雨を降らせるため、西側や南西部は乾燥しバオバブやトゲ植物が育つ。",
+          "clozeTerms": [
+            "地形性降雨",
+            "南東貿易風",
+            "バオバブ"
+          ],
+          "tags": [
+            "地形性降雨",
+            "南東貿易風",
+            "バオバブ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cw",
+        "Af",
+        "Aw",
+        "BS"
+      ],
+      "summary": "高地アンタナナリボは標高1280mで夏雨・冬乾冷の温暖冬季少雨気候（Cw）。東海岸トアマシナは熱帯雨林（Af）。",
+      "cities": [
+        {
+          "cityId": "MDG_ANTANANARIVO",
+          "nameJa": "アンタナナリボ",
+          "nameEn": "Antananarivo",
+          "lat": -18.88,
+          "lng": 47.51,
+          "elevationM": 1280,
+          "koppenCode": "Cw",
+          "koppenNameJa": "温暖冬季少雨気候",
+          "factors": [
+            "南半球（12〜3月）の夏にモンスーン・貿易風・サイクロンで降水集中",
+            "標高約1280mのため冬（7月）は14℃台に冷えるCw気候"
+          ],
+          "monthlyTempC": [
+            20.8,
+            20.9,
+            20.4,
+            19.2,
+            16.9,
+            14.9,
+            14.3,
+            14.8,
+            16.6,
+            18.8,
+            20.1,
+            20.6
+          ],
+          "monthlyPrecipMm": [
+            285,
+            250,
+            195,
+            58,
+            20,
+            9,
+            10,
+            12,
+            14,
+            58,
+            155,
+            290
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "アジア式稲作（集約的棚田稲作）",
+        "焼畑農業",
+        "プランテーション"
+      ],
+      "agriculture": [
+        {
+          "id": "mdg_rice_vanilla",
+          "label": "主食の稲作棚田と世界1位のバニラ（約8割）・クローブ",
+          "detail": "アフリカでありながら東南アジア起源の人々がもたらした水田・棚田稲作が主食！北東部のバニラは世界生産の約8割を占める重要外貨源。",
+          "clozeTerms": [
+            "稲作",
+            "バニラ",
+            "棚田"
+          ],
+          "tags": [
+            "稲作",
+            "バニラ",
+            "棚田"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mdg_nickel_cobalt",
+          "label": "アンバトビー鉱山等のニッケル・コバルト・サファイア（日本企業も参画）",
+          "detail": "先カンブリア代地層に豊富なニッケル・コバルト（EV電池向け）・黒鉛・サファイアを産出。",
+          "clozeTerms": [
+            "ニッケル",
+            "コバルト",
+            "日系参画"
+          ],
+          "tags": [
+            "ニッケル",
+            "コバルト",
+            "日系参画"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mdg_eco_deforest",
+          "label": "人口急増と焼畑・木炭燃料による深刻な森林破壊＆固有種危機",
+          "detail": "キツネザルやバオバブなど固有種9割超の生態系が焼畑・伐採により危機に瀕する。所得は極めて低い後発開発途上国。",
+          "clozeTerms": [
+            "森林破壊",
+            "固有種",
+            "焼畑"
+          ],
+          "tags": [
+            "森林破壊",
+            "固有種",
+            "焼畑"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "バニラ（世界1位）",
+          "ニッケル・コバルト",
+          "衣料品（繊維）",
+          "クローブ・エビ"
+        ],
+        "majorImports": [
+          "機械",
+          "精製燃料",
+          "米（不足分）・食料"
+        ],
+        "majorPartners": [
+          "フランス",
+          "アメリカ",
+          "中国",
+          "日本",
+          "インド"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロネシア語族（マダガスカル語＝インドネシア・ボルネオ系由来！）＋フランス語",
+      "officialLanguages": [
+        "マダガスカル語（公用語）",
+        "フランス語（公用語）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教",
+          "percent": 80
+        },
+        {
+          "name": "伝統宗教・イスラム教",
+          "percent": 20
+        }
+      ],
+      "ethnicGroups": [
+        "マレー・ポリネシア系（メリナ人等・高地）＋アフリカ系バントゥー（沿岸）の混血"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "SADC",
+        "フランコフォニー"
+      ],
+      "historicalContext": [
+        {
+          "id": "mdg_austronesian",
+          "label": "アフリカなのに『オーストロネシア語族 × 水田稲作』の謎",
+          "detail": "紀元後1千年紀に現在のインドネシア周辺からアウトリガーカヌーでインド洋を横断移住した祖先を持つため、アフリカ唯一のオーストロネシア語圏＆米食文化を持つ（その後旧仏領）。",
+          "clozeTerms": [
+            "オーストロネシア語族",
+            "米食",
+            "旧仏領"
+          ],
+          "tags": [
+            "オーストロネシア語族",
+            "米食",
+            "旧仏領"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "NPL": {
+    "iso3": "NPL",
+    "nameJa": "ネパール",
+    "nameEn": "Nepal",
+    "region": "アジア",
+    "subRegion": "南アジア（ヒマラヤ山脈）",
+    "capital": "カトマンズ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "ヒマラヤ造山帯による極端な高度差・氷河湖決壊洪水・地震リスク（2025年本試出題）",
+        "個人送金（出稼ぎ仕送り）GDP比約27%の世界最上位級＆水力ポテンシャル"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "新期造山帯（ヒマラヤ山脈・インド/ユーラシア大陸プレート衝突境界）"
+      ],
+      "summary": "南北幅わずか約200kmの中に標高60mの南部タライ平原から世界最高峰エベレスト（8848m）まで垂直分布し、地震・氷河湖決壊洪水（GLOF）・土砂災害が頻発する（2025年本試第3問出題）。",
+      "items": [
+        {
+          "id": "npl_himalaya_glof",
+          "label": "大陸衝突型プレート境界の巨大地震と氷河湖決壊洪水",
+          "detail": "インドプレートの北上衝突で形成されたヒマラヤ山脈では直下型大地震や、温暖化による氷河融解で拡大した氷河湖の決壊災害リスクが極めて高い。",
+          "clozeTerms": [
+            "ヒマラヤ山脈",
+            "プレート衝突",
+            "氷河湖決壊"
+          ],
+          "tags": [
+            "ヒマラヤ山脈",
+            "プレート衝突",
+            "氷河湖決壊"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Cw",
+        "Cfa",
+        "ET",
+        "EF"
+      ],
+      "summary": "標高1350mのカトマンズ盆地はモンスーンの夏（6〜9月）に雨が集中し冬は乾燥・温暖な温暖冬季少雨気候（Cw）。北部高山はET・EF。",
+      "cities": [
+        {
+          "cityId": "NPL_KATHMANDU",
+          "nameJa": "カトマンズ",
+          "nameEn": "Kathmandu",
+          "lat": 27.72,
+          "lng": 85.32,
+          "elevationM": 1350,
+          "koppenCode": "Cw",
+          "koppenNameJa": "温暖冬季少雨気候",
+          "factors": [
+            "南西モンスーンにより6〜9月に年降水1400mmの約8割が集中",
+            "標高1350mで冬は10℃前後・夏は24℃前後で過ごしやすいCw気候"
+          ],
+          "monthlyTempC": [
+            10.4,
+            12.6,
+            16.1,
+            19.3,
+            21.8,
+            23.6,
+            23.9,
+            23.8,
+            22.7,
+            19.6,
+            15.1,
+            11.4
+          ],
+          "monthlyPrecipMm": [
+            14,
+            19,
+            34,
+            61,
+            124,
+            248,
+            363,
+            331,
+            200,
+            51,
+            8,
+            13
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "集約的稲作",
+        "山岳移牧・棚田農耕"
+      ],
+      "agriculture": [
+        {
+          "id": "npl_tarai_terrace",
+          "label": "南部タライ平原の稲作・小麦と山間部の棚田",
+          "detail": "国土の約3割強しか農地に適さず、山麓棚田のトウモロコシ・ミレットと南部平原の稲作が中心。",
+          "clozeTerms": [
+            "棚田",
+            "モンスーン"
+          ],
+          "tags": [
+            "棚田",
+            "モンスーン"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "npl_hydro_potential",
+          "label": "ほぼ水力発電100%近い電源構成とインド向け売電",
+          "detail": "ヒマラヤの雪解け水と急峻な標高差による水力ポテンシャルが膨大で、国内電力のほぼ全てが水力（一部インドへ輸出開始）。",
+          "clozeTerms": [
+            "水力発電",
+            "ヒマラヤ"
+          ],
+          "tags": [
+            "水力発電",
+            "ヒマラヤ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "npl_remittance",
+          "label": "湾岸諸国・インド・マレーシアへの出稼ぎ＆個人送金GDP比約27%",
+          "detail": "国内雇用の不足から若年男性を中心にカタール・UAE・サウジ・インド等へ出稼ぎに出ており、海外からの仕送り（個人送金）がGDPの4分の1超を占める！",
+          "clozeTerms": [
+            "出稼ぎ送金",
+            "湾岸移民",
+            "観光"
+          ],
+          "tags": [
+            "出稼ぎ送金",
+            "湾岸移民",
+            "観光"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "電力（対インド）",
+          "カーペット・繊維",
+          "紅茶・カルダモン・観光"
+        ],
+        "majorImports": [
+          "精製石油",
+          "鉄鋼・機械",
+          "米・食料（対インド輸送）"
+        ],
+        "majorPartners": [
+          "インド（約6割・内陸輸送依存）",
+          "中国",
+          "アメリカ"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（インド・イラン語派：ネパール語）ほかチベット・ビルマ語系",
+      "officialLanguages": [
+        "ネパール語"
+      ],
+      "religions": [
+        {
+          "name": "ヒンドゥー教",
+          "percent": 81
+        },
+        {
+          "name": "仏教",
+          "percent": 9
+        },
+        {
+          "name": "イスラム教・キラント教",
+          "percent": 10
+        }
+      ],
+      "ethnicGroups": [
+        "パルバテ・ヒンドゥー（チェトリ/バフン）",
+        "マガル",
+        "タマン",
+        "ネワール",
+        "シェルパ（高地登山案内）"
+      ],
+      "regionalIntegrations": [
+        "SAARC（南アジア地域協力連合：本部カトマンズ）",
+        "BIMSTEC"
+      ],
+      "historicalContext": [
+        {
+          "id": "npl_landlocked_buffer",
+          "label": "インドと中国に挟まれたヒンドゥー内陸緩衝国",
+          "detail": "歴史的にインドと中国・チベットに挟まれ（2008年に王制廃止し連邦共和制）、港がない内陸国として貿易の多くをインドのコルカタ港経由に依存。",
+          "clozeTerms": [
+            "内陸国",
+            "ヒンドゥー教",
+            "緩衝国"
+          ],
+          "tags": [
+            "内陸国",
+            "ヒンドゥー教",
+            "緩衝国"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "QAT": {
+    "iso3": "QAT",
+    "nameJa": "カタール",
+    "nameEn": "Qatar",
+    "region": "アジア",
+    "subRegion": "西アジア（ペルシャ湾岸）",
+    "capital": "ドーハ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "LNG（液化天然ガス）世界3大輸出国＆1人当たりGDP/CO₂排出世界トップクラス",
+        "住民の約8〜9割が外国人男性労働者という極めて歪な人口ピラミッド"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊・アラビア半島のペルシャ湾突出部（サウスパルス/ノースフィールド巨大ガス田）"
+      ],
+      "summary": "ペルシャ湾に突き出た平坦な砂漠半島。淡水河川が一切なく、飲み水のほぼ全てを海水淡水化に頼る。",
+      "items": [
+        {
+          "id": "qat_gasfield",
+          "label": "世界最大級の単一ガス田『ノースフィールド』と砂漠半島",
+          "detail": "イランと海上で共有する巨大天然ガス田を保有し、極限の乾燥下で海水淡水化による都市維持を行う。",
+          "clozeTerms": [
+            "天然ガス",
+            "LNG",
+            "砂漠気候"
+          ],
+          "tags": [
+            "天然ガス",
+            "LNG",
+            "砂漠気候"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "BW"
+      ],
+      "summary": "夏（7・8月）の平均気温が35〜37℃、日最高は45℃に達し年降水量75mm前後の典型的な砂漠気候（BW）。",
+      "cities": [
+        {
+          "cityId": "QAT_DOHA",
+          "nameJa": "ドーハ",
+          "nameEn": "Doha",
+          "lat": 25.29,
+          "lng": 51.53,
+          "elevationM": 10,
+          "koppenCode": "BW",
+          "koppenNameJa": "砂漠気候",
+          "factors": [
+            "亜熱帯高圧帯により年降水量わずか75mm前後（冬〜春にわずかな雨）",
+            "ペルシャ湾沿いで夏は高温かつ蒸し暑さが厳しい"
+          ],
+          "monthlyTempC": [
+            17.4,
+            18.6,
+            22.1,
+            27.1,
+            32.5,
+            35.1,
+            36.1,
+            35.7,
+            33.4,
+            29.5,
+            24.4,
+            19.6
+          ],
+          "monthlyPrecipMm": [
+            13,
+            17,
+            16,
+            8,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            12
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "施設・海水淡水化灌漑（極少）",
+        "伝統遊牧"
+      ],
+      "agriculture": [
+        {
+          "id": "qat_food_import",
+          "label": "食料の約9割近くを輸入（一部空調施設栽培・乳業自給推進）",
+          "detail": "水資源が極度に乏しいため食料自給率が極めて低く輸入に依存。",
+          "clozeTerms": [
+            "食料輸入",
+            "海水淡水化"
+          ],
+          "tags": [
+            "食料輸入",
+            "海水淡水化"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "qat_lng",
+          "label": "米国・豪州と並ぶLNG（液化天然ガス）世界3大輸出国＆OPEC脱退",
+          "detail": "日本の重要なLNG輸入先。2019年にOPECを脱退してガス開発と中立外交（アルジャジーラ、航空ハブ）に注力。",
+          "clozeTerms": [
+            "LNG",
+            "天然ガス",
+            "OPEC脱退"
+          ],
+          "tags": [
+            "LNG",
+            "天然ガス",
+            "OPEC脱退"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "qat_airline_migrant",
+          "label": "カタール航空の国際ハブ化・W杯2022・外国人労働者約85〜90%",
+          "detail": "自国民は約1割、残りはインド・ネパール・バングラデシュ等の建設労働者と欧米系専門職。人口ピラミッドの20〜40代男性側が極端に突出する！",
+          "clozeTerms": [
+            "外国人労働者",
+            "人口ピラミッド",
+            "ハブ空港"
+          ],
+          "tags": [
+            "外国人労働者",
+            "人口ピラミッド",
+            "ハブ空港"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "LNG・天然ガス",
+          "原油・石油製品",
+          "化学肥料・プラスチック"
+        ],
+        "majorImports": [
+          "機械・航空機",
+          "自動車",
+          "食料・鉄鋼"
+        ],
+        "majorPartners": [
+          "中国",
+          "インド",
+          "日本",
+          "韓国",
+          "イギリス"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語）＋英語（商業・労働現場）",
+      "officialLanguages": [
+        "アラビア語",
+        "英語（広く通用）"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（スンニ派多数）",
+          "percent": 66
+        },
+        {
+          "name": "ヒンドゥー・キリスト・仏教（南アジア・比労働者）",
+          "percent": 34
+        }
+      ],
+      "ethnicGroups": [
+        "外国人（約88%：南アジア・アラブ他国・フィリピン等）",
+        "カタール国籍者（約12%）"
+      ],
+      "regionalIntegrations": [
+        "GCC（湾岸協力会議）",
+        "アラブ連盟",
+        "（2019年OPEC脱退）"
+      ],
+      "historicalContext": [
+        {
+          "id": "qat_pyramid_shape",
+          "label": "人口ピラミッド・出生率・老年人口割合の特殊統計",
+          "detail": "若い単身男性出稼ぎ労働者の大量流入により「男性比率約7割・老年人口約1.6%」という世界でも類を見ない極端な数値になる。",
+          "clozeTerms": [
+            "人口ピラミッド",
+            "出稼ぎ",
+            "老年人口極小"
+          ],
+          "tags": [
+            "人口ピラミッド",
+            "出稼ぎ",
+            "老年人口極小"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "OMN": {
+    "iso3": "OMN",
+    "nameJa": "オマーン",
+    "nameEn": "Oman",
+    "region": "アジア",
+    "subRegion": "西アジア（アラビア半島南東端）",
+    "capital": "マスカット",
+    "examSummary": {
+      "manualRankOverride": "B",
+      "frequentTopics": [
+        "世界の原油輸送要衝『ホルムズ海峡』の南岸・OPEC非加盟の産油/LNG輸出国",
+        "イバード派イスラム・世界遺産の伝統灌漑水路『アフラジ（カナート型）』"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊と北部のアル・ハジャル山脈（オフィオライト地層）"
+      ],
+      "summary": "アラビア半島南東端に位置し、飛地ムサンダム半島がイランと向かい合って石油輸送の動脈『ホルムズ海峡』を扼する。",
+      "items": [
+        {
+          "id": "omn_hormuz_aflaj",
+          "label": "ホルムズ海峡（ムサンダム半島）と伝統的地下水路『アフラジ』",
+          "detail": "イランのカナートと同系統の『アフラジ』と呼ばれる地下・地表灌漑水路網が今もオアシス農業を支え世界遺産に登録されている。",
+          "clozeTerms": [
+            "ホルムズ海峡",
+            "アフラジ",
+            "カナート"
+          ],
+          "tags": [
+            "ホルムズ海峡",
+            "アフラジ",
+            "カナート"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "BW",
+        "BS"
+      ],
+      "summary": "国土の大部分が砂漠気候（BW）。南部サラーラのみ夏季のインド洋モンスーン湿風（カリーフ）により緑に覆われる特殊微気候を持つ。",
+      "cities": [
+        {
+          "cityId": "OMN_MUSCAT",
+          "nameJa": "マスカット",
+          "nameEn": "Muscat",
+          "lat": 23.59,
+          "lng": 58.38,
+          "elevationM": 15,
+          "koppenCode": "BW",
+          "koppenNameJa": "砂漠気候",
+          "factors": [
+            "北回帰線上で年間降水量わずか100mm前後の高温砂漠",
+            "夏季平均34〜35℃・冬21℃の海洋近接高温"
+          ],
+          "monthlyTempC": [
+            21.0,
+            22.0,
+            25.2,
+            29.8,
+            34.4,
+            35.4,
+            34.1,
+            32.6,
+            31.6,
+            29.5,
+            25.5,
+            22.4
+          ],
+          "monthlyPrecipMm": [
+            18,
+            22,
+            16,
+            9,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2,
+            9,
+            17
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "オアシス農業（アフラジ灌漑）",
+        "遊牧"
+      ],
+      "agriculture": [
+        {
+          "id": "omn_dates_frank",
+          "label": "アフラジ灌漑によるナツメヤシ（デーツ）と古代からの『乳香』産地",
+          "detail": "山麓からの地下水を引くアフラジでオアシスを営むほか、南部ドファール地方は歴史的な香料「乳香（フランキンセンス）」の産地。",
+          "clozeTerms": [
+            "アフラジ",
+            "デーツ",
+            "オアシス農業"
+          ],
+          "tags": [
+            "アフラジ",
+            "デーツ",
+            "オアシス農業"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "omn_oil_lng",
+          "label": "OPEC非加盟の中東産油国＆LNG輸出・港湾中継",
+          "detail": "イランと協調外交を保ちつつGCCに属するがOPECには非加盟。原油・LNG輸出を柱に脱石油（ソハール港等工業団地・観光）を進行。",
+          "clozeTerms": [
+            "ホルムズ海峡",
+            "OPEC非加盟",
+            "LNG"
+          ],
+          "tags": [
+            "ホルムズ海峡",
+            "OPEC非加盟",
+            "LNG"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "omn_tourism_med",
+          "label": "中東の「スイス」的調停外交と落ち着いた伝統景観保護",
+          "detail": "隣国UAE（ドバイ）のような超高層競争を避け、白亜低層の街並み規制や環境観光・港湾物流を重視。",
+          "clozeTerms": [
+            "中立外交",
+            "景観保全"
+          ],
+          "tags": [
+            "中立外交",
+            "景観保全"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "原油・コンデンセート",
+          "LNG",
+          "石油化学・鉄鉱ペレット/アルミ"
+        ],
+        "majorImports": [
+          "自動車・機械",
+          "精製燃料・鉄鉱石・食料"
+        ],
+        "majorPartners": [
+          "中国",
+          "インド",
+          "UAE",
+          "韓国",
+          "日本"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "アフロ・アジア語族（アラビア語）",
+      "officialLanguages": [
+        "アラビア語"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（イバード派多数・スンニ派・シーア派共存）",
+          "percent": 86
+        },
+        {
+          "name": "ヒンドゥー・キリスト（外国人労働者）",
+          "percent": 14
+        }
+      ],
+      "ethnicGroups": [
+        "オマーン人（アラブ・スワヒリ系等）",
+        "南アジア等外国人労働者（約4割）"
+      ],
+      "regionalIntegrations": [
+        "GCC（湾岸協力会議）",
+        "アラブ連盟"
+      ],
+      "historicalContext": [
+        {
+          "id": "omn_ibadi_east_africa",
+          "label": "スンニでもシーアでもない『イバード派』多数・東アフリカ（ザンジバル）海洋交易史",
+          "detail": "かつてザンジバル島（タンザニア）まで支配した海洋帝国の歴史から東アフリカ系住民も多く、スンニ派/シーア派対立に巻き込まれにくい。",
+          "clozeTerms": [
+            "イバード派",
+            "ホルムズ海峡",
+            "海洋交易"
+          ],
+          "tags": [
+            "イバード派",
+            "ホルムズ海峡",
+            "海洋交易"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "KHM": {
+    "iso3": "KHM",
+    "nameJa": "カンボジア",
+    "nameEn": "Cambodia",
+    "region": "アジア",
+    "subRegion": "東南アジア（インドシナ半島）",
+    "capital": "プノンペン",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "メコン川と雨季・乾季で流れが逆転する『トンレサップ湖』（2026年本試出題）",
+        "衣料品縫製（労働力指向型）中心の輸出構造・ASEAN・世界遺産アンコールワット"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "安定陸塊（インドシナ地塊）・メコン低地盆地"
+      ],
+      "summary": "中央に広大な低地盆地が広がり、メコン川の本流とトンレサップ湖を挟んで雨季と乾季で水流が逆転する独特の自然環境。",
+      "items": [
+        {
+          "id": "khm_tonle_sap",
+          "label": "季節により面積が約5〜6倍に拡大・水流が逆転するトンレサップ湖",
+          "detail": "モンスーン雨季（6〜10月）にはメコン川の水位上昇によりトンレサップ川が湖へ向かって逆流し湖面積が拡大。湖上の水上集落や豊富な淡水魚漁業を支える（2026年本試第6問国際河川テーマ直結）。",
+          "clozeTerms": [
+            "トンレサップ湖",
+            "メコン川",
+            "国際河川"
+          ],
+          "tags": [
+            "トンレサップ湖",
+            "メコン川",
+            "国際河川"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Aw"
+      ],
+      "summary": "5〜10月が南西モンスーンの雨季、11〜4月が乾季となる熱帯サバナ気候（Aw）。",
+      "cities": [
+        {
+          "cityId": "KHM_PHNOM",
+          "nameJa": "プノンペン",
+          "nameEn": "Phnom Penh",
+          "lat": 11.56,
+          "lng": 104.92,
+          "elevationM": 12,
+          "koppenCode": "Aw",
+          "koppenNameJa": "サバナ気候",
+          "factors": [
+            "4〜5月が最も暑い（30℃前後）プレモンスーン高温期",
+            "5〜10月の南西モンスーンに降水が集中（冬1〜2月は10mm以下）"
+          ],
+          "monthlyTempC": [
+            26.6,
+            27.6,
+            29.0,
+            29.8,
+            29.3,
+            28.6,
+            28.1,
+            28.0,
+            27.7,
+            27.3,
+            26.8,
+            26.1
+          ],
+          "monthlyPrecipMm": [
+            15,
+            10,
+            42,
+            78,
+            142,
+            148,
+            160,
+            175,
+            255,
+            268,
+            130,
+            38
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "アジア式稲作（天水・浮稲・灌漑稲作）"
+      ],
+      "agriculture": [
+        {
+          "id": "khm_rice_rubber",
+          "label": "メコン流域の米輸出（近年増）と天然ゴム・キャッサバ",
+          "detail": "雨季の増水に合わせた伝統的な稲作・淡水魚漁獲と近年のコメ輸出伸長。",
+          "clozeTerms": [
+            "米",
+            "淡水魚"
+          ],
+          "tags": [
+            "米",
+            "淡水魚"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "khm_hydro_coal",
+          "label": "メコン支流の水力発電と中国資本による石炭火力拡大",
+          "detail": "上流中国・ラオスでのメコンダム建設による下流（トンレサップ湖）生態系・土砂減少への影響が国際河川問題として重要。",
+          "clozeTerms": [
+            "水力",
+            "メコン川上流ダム"
+          ],
+          "tags": [
+            "水力",
+            "メコン川上流ダム"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "khm_garment",
+          "label": "衣料品・履物縫製（全輸出の過半）＆日系等自動車部品配線進出（タイ＋1）",
+          "detail": "安価な若年労働力を目当てに外資系縫製工場と日系部品工場（タイ工場の補完「タイ＋1」）がプノンペン周辺に進出。欧米・日本の衣料輸入相手国上位。",
+          "clozeTerms": [
+            "繊維",
+            "衣料品",
+            "労働力指向"
+          ],
+          "tags": [
+            "繊維",
+            "衣料品",
+            "労働力指向"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "衣料品・履物",
+          "米・ゴム",
+          "自転車・電線部品",
+          "観光（アンコールワット）"
+        ],
+        "majorImports": [
+          "繊維生地・糸",
+          "機械・車両",
+          "精製石油"
+        ],
+        "majorPartners": [
+          "アメリカ",
+          "中国",
+          "EU",
+          "日本",
+          "タイ",
+          "ベトナム"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロアジア語族（モン・クメール語派：クメール語）",
+      "officialLanguages": [
+        "クメール語（カンボジア語）"
+      ],
+      "religions": [
+        {
+          "name": "仏教（上座部仏教：小乗仏教）",
+          "percent": 97
+        },
+        {
+          "name": "イスラム教・キリスト教",
+          "percent": 3
+        }
+      ],
+      "ethnicGroups": [
+        "クメール人（約95%）",
+        "チャム人・華人・ベトナム系"
+      ],
+      "regionalIntegrations": [
+        "ASEAN",
+        "RCEP"
+      ],
+      "historicalContext": [
+        {
+          "id": "khm_angkor_polpot",
+          "label": "アンコール朝遺産と内戦からの復興・人口ピラミッドの『くびれ』",
+          "detail": "1970年代クメールルージュ（ポル・ポト派）の大量虐殺で40〜50代以上に極端な人口くびれと若い世代の山（ベビーブーム）があり、現在は若年労働力が豊富。通貨は米ドルも広く流通。",
+          "clozeTerms": [
+            "上座部仏教",
+            "アンコールワット",
+            "人口ピラミッド"
+          ],
+          "tags": [
+            "上座部仏教",
+            "アンコールワット",
+            "人口ピラミッド"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "FJI": {
+    "iso3": "FJI",
+    "nameJa": "フィジー",
+    "nameEn": "Fiji",
+    "region": "オセアニア",
+    "subRegion": "オセアニア（メラネシア地域）",
+    "capital": "スバ",
+    "examSummary": {
+      "manualRankOverride": "A",
+      "frequentTopics": [
+        "先住民系（フィジー系・キリスト教）と旧英領プランテーション由来『インド系住民（ヒンドゥー教・約35%）』の共存",
+        "サイクロン被害・海面上昇と観光・水・サトウキビ"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "環太平洋造山帯（南太平洋の火山島・サンゴ礁囲繞）"
+      ],
+      "summary": "ビティレブ島など300余の火山島・サンゴ礁島から成る南太平洋メラネシアの地域ハブ国。",
+      "items": [
+        {
+          "id": "fji_cyclone",
+          "label": "南東貿易風の風上/風下差とサイクロン・海面上昇",
+          "detail": "大きな火山島ビティレブ島の南東側（首都スバ）は多雨（年3000mm超のAf）、北西側（ナンディ等リゾート・サトウキビ）は雨蔭でやや乾燥（Am〜Aw）。南太平洋のサイクロン被害常襲地。",
+          "clozeTerms": [
+            "サイクロン",
+            "メラネシア",
+            "風上・風下"
+          ],
+          "tags": [
+            "サイクロン",
+            "メラネシア",
+            "風上・風下"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Af",
+        "Am"
+      ],
+      "summary": "首都スバは南東貿易風の風上にあたるため年間3000mm前後の熱帯雨林気候（Af）。南半球のため1〜3月が雨季かつサイクロン期。",
+      "cities": [
+        {
+          "cityId": "FJI_SUVA",
+          "nameJa": "スバ",
+          "nameEn": "Suva",
+          "lat": -18.14,
+          "lng": 178.44,
+          "elevationM": 20,
+          "koppenCode": "Af",
+          "koppenNameJa": "熱帯雨林気候",
+          "factors": [
+            "南東貿易風の山脈風上斜面で年間降水3000mm超",
+            "最寒月（7・8月）も23℃以上の常夏"
+          ],
+          "monthlyTempC": [
+            27.0,
+            27.2,
+            26.8,
+            25.8,
+            24.4,
+            23.6,
+            22.9,
+            23.0,
+            23.6,
+            24.5,
+            25.5,
+            26.4
+          ],
+          "monthlyPrecipMm": [
+            345,
+            305,
+            370,
+            360,
+            265,
+            165,
+            145,
+            155,
+            195,
+            235,
+            250,
+            290
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション・商品作物（サトウキビ）",
+        "根栽農耕（タロイモ・ヤムイモ）"
+      ],
+      "agriculture": [
+        {
+          "id": "fji_sugar_taro",
+          "label": "サトウキビ（インド系導入の歴史）・タロイモ・ココヤシ",
+          "detail": "かつて英国がサトウキビ農園労働力としてインドから契約移民を多数導入した歴史が民族構成に直結。",
+          "clozeTerms": [
+            "サトウキビ",
+            "プランテーション"
+          ],
+          "tags": [
+            "サトウキビ",
+            "プランテーション"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "fji_water_gold",
+          "label": "豊富な水力発電・金とミネラルウォーター輸出品目",
+          "detail": "降雨に恵まれた鉱水（フィジーウォーター）と金・観光が外貨源。",
+          "clozeTerms": [
+            "水力",
+            "水資源"
+          ],
+          "tags": [
+            "水力",
+            "水資源"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "fji_hub_tour",
+          "label": "オセアニア島嶼国の航空ハブ（ナンディ）と豪・NZ客中心の観光",
+          "detail": "豪州・NZ・北米から観光客が訪れ、GDPの約3〜4割を観光関連が占める。",
+          "clozeTerms": [
+            "観光",
+            "メラネシア"
+          ],
+          "tags": [
+            "観光",
+            "メラネシア"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "観光サービス",
+          "ミネラルウォーター",
+          "砂糖・魚（マグロ）・金"
+        ],
+        "majorImports": [
+          "石油製品",
+          "機械・輸送機器",
+          "食料（小麦等）"
+        ],
+        "majorPartners": [
+          "オーストラリア",
+          "ニュージーランド",
+          "アメリカ",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "オーストロネシア語族（フィジー語）＋印欧語（英語・フィジーヒンディー語）",
+      "officialLanguages": [
+        "英語",
+        "フィジー語",
+        "フィジー・ヒンディー語（3つが公用語！）"
+      ],
+      "religions": [
+        {
+          "name": "キリスト教（フィジー系中心）",
+          "percent": 64
+        },
+        {
+          "name": "ヒンドゥー教（インド系中心）",
+          "percent": 28
+        },
+        {
+          "name": "イスラム教",
+          "percent": 6
+        }
+      ],
+      "ethnicGroups": [
+        "フィジー系（メラネシア＋ポリネシア混・約57%）",
+        "インド系（約38%）"
+      ],
+      "regionalIntegrations": [
+        "PIF（太平洋諸島フォーラム：本部スバ）",
+        "イギリス連邦"
+      ],
+      "historicalContext": [
+        {
+          "id": "fji_indian_diaspora",
+          "label": "『インド系約38%・ヒンドゥー教約28%』という英植民地サトウキビ移民の遺産",
+          "detail": "モーリシャスやガイアナ・トリニダードと同様に英国がインド人年季契約労働者を移住させたため、フィジー語・英語に加え『ヒンディー語が公用語』という共テ鉄板問題。",
+          "clozeTerms": [
+            "インド系",
+            "ヒンドゥー教",
+            "旧英領"
+          ],
+          "tags": [
+            "インド系",
+            "ヒンドゥー教",
+            "旧英領"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "MDV": {
+    "iso3": "MDV",
+    "nameJa": "モルディブ",
+    "nameEn": "Maldives",
+    "region": "海洋地域",
+    "subRegion": "インド洋（南アジア南西沖・環礁群）",
+    "capital": "マレ",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "地球温暖化による『海面上昇・水没危機』（平均標高約1.5m・最高標高わずか2.4m）",
+        "サンゴ礁（環礁）26組の島嶼・高級観光リゾート・イスラム教国・2025年本試出題"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "インド洋中央海嶺・ホットスポット上のサンゴ礁（環礁＝アトール）約1200島"
+      ],
+      "summary": "インド・スリランカ南西のインド洋に南北約800kmに連なる約1200のサンゴ礁島（26環礁）。国土の平均標高約1.5m・最高地点でもわずか約2.4mと世界で最も海抜が低い。",
+      "items": [
+        {
+          "id": "mdv_atoll_sea_rise",
+          "label": "『最高地点2.4m』のサンゴ礁（環礁）と地球温暖化・海面上昇・サンゴ白化",
+          "detail": "海面わずかな上昇や高潮・2004年スマトラ沖津波に極めて脆弱で、人口島フルマーレ造成等の護岸適応と国際会議での排出削減訴えの最前線（2025年本試第6問インド洋島嶼出題）。",
+          "clozeTerms": [
+            "環礁",
+            "海面上昇",
+            "地球温暖化"
+          ],
+          "tags": [
+            "環礁",
+            "海面上昇",
+            "地球温暖化",
+            "サンゴ礁"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Am",
+        "Af"
+      ],
+      "summary": "赤道を挟む熱帯モンスーン〜熱帯雨林気候（Am）。5〜10月の南西モンスーン期に雨が多く、1〜3月がやや少ない（観光ベストシーズン）。",
+      "cities": [
+        {
+          "cityId": "MDV_MALE",
+          "nameJa": "マレ",
+          "nameEn": "Malé",
+          "lat": 4.18,
+          "lng": 73.51,
+          "elevationM": 2,
+          "koppenCode": "Am",
+          "koppenNameJa": "熱帯モンスーン気候",
+          "factors": [
+            "赤道至近で年中気温27〜29℃とほぼ一定",
+            "1〜3月は北東モンスーンでやや乾季、5〜11月は南西モンスーンで多雨"
+          ],
+          "monthlyTempC": [
+            27.3,
+            27.6,
+            28.3,
+            28.9,
+            28.6,
+            28.2,
+            27.9,
+            27.8,
+            27.7,
+            27.7,
+            27.5,
+            27.3
+          ],
+          "monthlyPrecipMm": [
+            75,
+            45,
+            62,
+            130,
+            215,
+            175,
+            150,
+            165,
+            200,
+            225,
+            205,
+            220
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "漁業（カツオ・マグロの一本釣り）中心・耕作面積極小"
+      ],
+      "agriculture": [
+        {
+          "id": "mdv_fish_import",
+          "label": "伝統的一本釣りカツオ漁（保存食モルディブフィッシュ）と食料ほぼ全量輸入",
+          "detail": "サンゴ砂土壌のため農業面積が極端に狭く、米・野菜など食料の大半を輸入（対して魚＝カツオ類が主要輸出品）。",
+          "clozeTerms": [
+            "カツオ漁",
+            "食料輸入"
+          ],
+          "tags": [
+            "カツオ漁",
+            "食料輸入"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mdv_diesel_desal",
+          "label": "輸入ディーゼル発電＋太陽光拡大・海水淡水化とゴミ処分問題",
+          "detail": "島嶼ごと小規模火力（輸入軽油）に依存。プラスチック等のごみ処分（人工ゴミ島ティラフシ）が環境課題。",
+          "clozeTerms": [
+            "海水淡水化",
+            "廃棄物問題"
+          ],
+          "tags": [
+            "海水淡水化",
+            "廃棄物問題"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mdv_1island_1resort",
+          "label": "『1島1リゾート』高級観光（GDPの約3割・外貨の大部分）",
+          "detail": "住民島と外国人専用高級リゾート島を分離し、イスラム国の規律を保ちつつ高額観光収入を得るモデルを確立。",
+          "clozeTerms": [
+            "観光産業",
+            "1島1リゾート"
+          ],
+          "tags": [
+            "観光産業",
+            "1島1リゾート"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "観光サービス（圧倒的外貨源）",
+          "カツオ・マグロ類（生鮮・乾燥）"
+        ],
+        "majorImports": [
+          "精製燃料（軽油・ジェット燃料）",
+          "食料品・建材・生活必需品"
+        ],
+        "majorPartners": [
+          "インド",
+          "UAE",
+          "中国",
+          "タイ",
+          "スリランカ"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（インド・イラン語派：ディベヒ語＝シンハラ語同系）",
+      "officialLanguages": [
+        "ディベヒ語（公用語・固有文字）",
+        "英語"
+      ],
+      "religions": [
+        {
+          "name": "イスラム教（スンニ派・国教でほぼ100%）",
+          "percent": 99
+        },
+        {
+          "name": "その他（リゾート外国人）",
+          "percent": 1
+        }
+      ],
+      "ethnicGroups": [
+        "モルディブ人（南アジア系・アラブ・マレー・アフリカ混融）"
+      ],
+      "regionalIntegrations": [
+        "SAARC",
+        "コモンウェルス（英連邦）",
+        "AOSIS（小島嶼国連合）"
+      ],
+      "historicalContext": [
+        {
+          "id": "mdv_islam_highdensity",
+          "label": "超高密度の首都マレ島と100%イスラム教の『海洋小島嶼』",
+          "detail": "首都マレ島はわずか約2〜8km²に人口20万超が密集する世界最高水準の超高密度都市！一方観光島との隔絶によりイスラム文化と高級観光を両立。",
+          "clozeTerms": [
+            "超高密度都市",
+            "イスラム教",
+            "小島嶼"
+          ],
+          "tags": [
+            "超高密度都市",
+            "イスラム教",
+            "小島嶼"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  },
+  "MUS": {
+    "iso3": "MUS",
+    "nameJa": "モーリシャス",
+    "nameEn": "Mauritius",
+    "region": "海洋地域",
+    "subRegion": "インド洋南西部（マダガスカル東方）",
+    "capital": "ポートルイス",
+    "examSummary": {
+      "manualRankOverride": "S",
+      "frequentTopics": [
+        "インド洋の『インド系住民多数（約7割）・ヒンドゥー教約半数』＋フランス語＆英語（2025年本試出題）",
+        "サトウキビ依存から繊維・IT金融・観光へ転換したアフリカの優等生"
+      ]
+    },
+    "nature": {
+      "orogenicBelts": [
+        "インド洋ホットスポット由来の火山島（玄武岩高原とサンゴ礁ラグーン）"
+      ],
+      "summary": "マダガスカルの東約900kmに位置する火山島。かつて固有の飛べない鳥ドードーが生息したが絶滅した環境教訓でも知られる。",
+      "items": [
+        {
+          "id": "mus_volcanic_cyclone",
+          "label": "玄武岩の火山島（サンゴ礁囲繞）とインド洋サイクロン通過域",
+          "detail": "火山起源の肥沃な土壌を持ち、1〜3月の南インド洋サイクロンや南東貿易風の雨を受ける。",
+          "clozeTerms": [
+            "火山島",
+            "サイクロン",
+            "サンゴ礁"
+          ],
+          "tags": [
+            "火山島",
+            "サイクロン",
+            "サンゴ礁"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "climate": {
+      "koppenCodes": [
+        "Aw",
+        "Af"
+      ],
+      "summary": "南半球のサバナ〜モンスーン気候（Aw）。12〜4月が暑く多雨、6〜10月が涼しく乾燥。",
+      "cities": [
+        {
+          "cityId": "MUS_PORTLOUIS",
+          "nameJa": "ポートルイス",
+          "nameEn": "Port Louis",
+          "lat": -20.16,
+          "lng": 57.5,
+          "elevationM": 10,
+          "koppenCode": "Aw",
+          "koppenNameJa": "熱帯サバナ気候（南半球）",
+          "factors": [
+            "南半球の夏（1〜3月）に貿易風・サイクロンによる降水集中",
+            "冬（7・8月）は21℃前後で涼しく少雨"
+          ],
+          "monthlyTempC": [
+            26.8,
+            26.8,
+            26.2,
+            25.0,
+            23.1,
+            21.4,
+            20.6,
+            20.8,
+            21.6,
+            22.9,
+            24.5,
+            25.9
+          ],
+          "monthlyPrecipMm": [
+            195,
+            220,
+            175,
+            115,
+            78,
+            52,
+            46,
+            42,
+            34,
+            38,
+            64,
+            138
+          ],
+          "dataSource": "WMO / NOAA 1991-2020目安",
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    },
+    "industry": {
+      "whittleseyTypes": [
+        "プランテーション・商品作物（サトウキビ）"
+      ],
+      "agriculture": [
+        {
+          "id": "mus_sugar_transition",
+          "label": "伝統的サトウキビ農園からの産業多角化",
+          "detail": "耕地の多くをサトウキビが占めていたが価格変動リスクから観光・ITへ転換。",
+          "clozeTerms": [
+            "サトウキビ"
+          ],
+          "tags": [
+            "サトウキビ"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "A",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "resourcesAndEnergy": [
+        {
+          "id": "mus_renew_ocean",
+          "label": "サトウキビ搾りかす（バガス）バイオマス発電・太陽光と広大なEEZ",
+          "detail": "小さな島国だがインド洋の広大な排他的経済水域（EEZ・日本の半分級）を持つ。",
+          "clozeTerms": [
+            "バイオマス",
+            "EEZ"
+          ],
+          "tags": [
+            "バイオマス",
+            "EEZ"
+          ],
+          "examMeta": {
+            "isFrequent": false,
+            "importance": "B",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "industrialRegions": [
+        {
+          "id": "mus_epz_finance",
+          "label": "輸出加工区（繊維）→ 国際金融・BPO/IT・高級観光への構造転換",
+          "detail": "アフリカ・インド間の投資金融ハブやフランス語・英語バイリンガルを活かしたコールセンター/IT誘致で『アフリカの奇跡』の高所得中上国を達成。",
+          "clozeTerms": [
+            "輸出加工区",
+            "国際金融",
+            "多角化"
+          ],
+          "tags": [
+            "輸出加工区",
+            "国際金融",
+            "多角化"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ],
+      "trade": {
+        "majorExports": [
+          "衣料品・繊維",
+          "砂糖・マグロ缶詰",
+          "観光・金融BPOサービス"
+        ],
+        "majorImports": [
+          "機械・電気機器",
+          "原油・精製油",
+          "食料・綿糸生地"
+        ],
+        "majorPartners": [
+          "フランス",
+          "南アフリカ",
+          "イギリス",
+          "インド",
+          "中国"
+        ]
+      }
+    },
+    "cultureAndHistory": {
+      "languageFamily": "インド・ヨーロッパ語族（英語＋フランス語系クレオール＋インド系語）",
+      "officialLanguages": [
+        "英語（実務公用）",
+        "モーリシャス・クレオール（フランス語基盤・日常共通語）",
+        "フランス語"
+      ],
+      "religions": [
+        {
+          "name": "ヒンドゥー教（インド系由来）",
+          "percent": 48
+        },
+        {
+          "name": "キリスト教（カトリック等）",
+          "percent": 33
+        },
+        {
+          "name": "イスラム教",
+          "percent": 17
+        }
+      ],
+      "ethnicGroups": [
+        "インド系モーリシャス人（約68%）",
+        "クレオール（アフリカ・欧州混血約27%）",
+        "華人・白人"
+      ],
+      "regionalIntegrations": [
+        "AU",
+        "SADC",
+        "イギリス連邦",
+        "フランコフォニー"
+      ],
+      "historicalContext": [
+        {
+          "id": "mus_multi_layer",
+          "label": "仏領→英領の重層支配＋インド人契約移民が生んだ『ヒンドゥー約半数＆仏語系クレオール』",
+          "detail": "2025年本試第6問「インド洋島嶼国（マダガスカル・モルディブ・モーリシャス等の比較）」に完全対応！仏領後の英領時代にサトウキビ労働者としてインドから大量移住した結果、インド系約7割・ヒンドゥー教最大だが日常語は仏語由来クレオール・公用書類は英語という複合文化を形成。",
+          "clozeTerms": [
+            "2025年本試",
+            "インド系多数",
+            "クレオール"
+          ],
+          "tags": [
+            "2025年本試",
+            "インド系多数",
+            "クレオール"
+          ],
+          "examMeta": {
+            "isFrequent": true,
+            "importance": "S",
+            "pastExamRefs": []
+          }
+        }
+      ]
+    }
+  }
+}

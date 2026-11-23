@@ -88,13 +88,13 @@
         "CHN",
         "TWN",
         "IDN",
-        "IND",
         "GBR",
-        "ITA"
+        "ITA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d1_q3.png",
       "clipPdfPath": null,
@@ -261,7 +261,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d2_q4.png",
       "clipPdfPath": null,
@@ -321,7 +322,9 @@
       "title": "第3問 問2: 問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいずれかの国における最...",
       "promptSummary": "問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいずれかの国における最高標高地点周辺の陰影起伏図である。また，後の文Ｆ～Ｈは，ア～ウのいずれかの範囲にみられる地形について述べたものである。ア～ウとＦ～Ｈとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。10アイウ範囲はいずれも50km四方。NASAの資料により作成。図3Ｆ固い岩盤が長い時間をかけて風化している。Ｇ山岳氷河による侵食作用がみら...",
       "relatedCountries": [
-        "PHL"
+        "PHL",
+        "NAM",
+        "NPL"
       ],
       "relatedLayerIds": [
         "pb_japan_trench"
@@ -508,11 +511,13 @@
         "CHN",
         "TWN",
         "DEU",
-        "ISL"
+        "ISL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "原子力"
+        "原子力",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q1.png",
       "clipPdfPath": null,
@@ -549,7 +554,8 @@
       "topicTags": [
         "小麦",
         "大豆",
-        "原油"
+        "原油",
+        "ワイン"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q2.png",
       "clipPdfPath": null,
@@ -621,7 +627,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q4.png",
       "clipPdfPath": null,
@@ -889,7 +895,6 @@
       "title": "第6問 問1: 第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ",
       "promptSummary": "第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ。（配点17）問1インド洋沿岸には，サイクロン（熱帯低気圧）による被害を受けやすい地域が多く分布する。次の図1中の地域ア～エのうち，サイクロンの上陸頻度が最も低い地域として適当なものを，後の(1)～(2)のうちから一つ選べ。26 A C Dウエア150°E 120°E 90°E 60°E 30°E 0°30°S 30°NイB図1 (1)ア(3)イ(4)ウ(2)エ",
       "relatedCountries": [
-        "IND",
         "BGD"
       ],
       "relatedLayerIds": [],
@@ -922,9 +927,7 @@
       "questionLabel": "第6問 問2（解答番号27）",
       "title": "第6問 問2: 問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適当でないものを，次...",
       "promptSummary": "問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適当でないものを，次の(1)～(2)のうちから一つ選べ。27かんがい＊灌漑施設を用いず，雨水のみに依存する水田。(1)Ａ(3)Ｂ(4)Ｃ(2)Ｄ",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "稲作"
@@ -994,16 +997,15 @@
       "questionLabel": "第6問 問4（解答番号29）",
       "title": "第6問 問4: 問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が存在する",
       "promptSummary": "問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が存在する。次の図3は，インド洋に面する国々における国内の宗教人口が第(1)位の宗教人口割合を示したものである。また，後の文サ～スは，図3中のＦ～Ｈのいずれかの国の宗教に関することがらについて述べたものである。Ｆ～Ｈとサ～スとの組合せとして最も適当なものを，後の(2)～(3)のうちから一つ選べ。29 G F H 90以上80未満(％) 80～90統計年次は201...",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
         "宗教",
         "イスラム教",
         "キリスト教",
-        "言語"
+        "言語",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d6_q4.png",
       "clipPdfPath": null,
@@ -1039,7 +1041,9 @@
         "GBR",
         "FRA",
         "NLD",
-        "CHE"
+        "CHE",
+        "MDV",
+        "MUS"
       ],
       "relatedLayerIds": [
         "lf_gbr"

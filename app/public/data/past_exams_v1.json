@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-23T03:29:45Z",
+  "generatedAt": "2026-11-23T05:51:18Z",
   "questions": [
     {
       "questionId": "2015_main_d1_q1",
@@ -113,7 +113,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "自然災害",
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d1_q4.png",
       "clipPdfPath": null,
@@ -254,11 +255,15 @@
         "LKA",
         "TUR",
         "NGA",
-        "KEN"
+        "KEN",
+        "MDV",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "プランテーション"
+        "プランテーション",
+        "天然ゴム",
+        "パーム油"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d2_q2.png",
       "clipPdfPath": null,
@@ -292,7 +297,8 @@
         "MYS",
         "GBR",
         "NLD",
-        "USA"
+        "USA",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -332,7 +338,8 @@
         "小麦",
         "トウモロコシ",
         "大豆",
-        "酪農"
+        "酪農",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d2_q4.png",
       "clipPdfPath": null,
@@ -367,7 +374,8 @@
         "CHN",
         "TWN",
         "THA",
-        "DEU"
+        "DEU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -552,7 +560,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d3_q4.png",
       "clipPdfPath": null,
@@ -724,7 +732,8 @@
       "topicTags": [
         "トウモロコシ",
         "大豆",
-        "プランテーション"
+        "プランテーション",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d4_q3.png",
       "clipPdfPath": null,
@@ -756,7 +765,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "鉄鋼業",
-        "人口"
+        "人口",
+        "天然ゴム"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d4_q4.png",
       "clipPdfPath": null,
@@ -824,7 +834,9 @@
         "USA",
         "ARG",
         "COL",
-        "VEN"
+        "VEN",
+        "PRT",
+        "URY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1006,11 +1018,12 @@
         "TWN",
         "GBR",
         "USA",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d5_q5.png",
       "clipPdfPath": null,
@@ -1044,7 +1057,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q1.png",
       "clipPdfPath": null,
@@ -1078,7 +1091,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q2.png",
       "clipPdfPath": null,
@@ -1112,7 +1125,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地形図"
+        "地形図",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q3.png",
       "clipPdfPath": null,
@@ -1146,7 +1160,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q4.png",
       "clipPdfPath": null,
@@ -1180,7 +1194,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q5.png",
       "clipPdfPath": null,
@@ -1214,7 +1228,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q6.png",
       "clipPdfPath": null,
@@ -1284,7 +1298,9 @@
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
-        "自然災害"
+        "自然災害",
+        "地熱",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d1_q2.png",
       "clipPdfPath": null,
@@ -1485,7 +1501,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d2_q2.png",
       "clipPdfPath": null,
@@ -1552,7 +1568,8 @@
         "KOR",
         "TWN",
         "CHE",
-        "MEX"
+        "MEX",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1588,7 +1605,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1661,7 +1679,8 @@
         "MYS",
         "GBR",
         "ARG",
-        "NGA"
+        "NGA",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1695,11 +1714,12 @@
       "promptSummary": "問2特定の機能が発達した都市について説明した文として最も適当なものを,次の①~④のうちから一つ選~①ターチン(大慶)は,石油関連産業が発達した鉱工業都市である。②ニースは,スキーリゾートを中心とした観光保養都市である。③パナマシティは,地中海と紅海を結ぶ運河沿いの交通都市である。④モントリオールは,首都として計画的に建設された政治都市である。ー152ー( 2102ー152 )",
       "relatedCountries": [
         "ITA",
-        "CAN"
+        "CAN",
+        "PAN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d3_q2.png",
       "clipPdfPath": null,
@@ -1833,7 +1853,8 @@
         "IND",
         "PAK",
         "BGD",
-        "LKA"
+        "LKA",
+        "NPL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1910,7 +1931,7 @@
         "rv_rhine"
       ],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d4_q2.png",
       "clipPdfPath": null,
@@ -1978,7 +1999,9 @@
         "NLD",
         "CHE",
         "NOR",
-        "POL"
+        "POL",
+        "GRC",
+        "HUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -2051,7 +2074,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "EU"
+        "EU",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d4_q6.png",
       "clipPdfPath": null,
@@ -2087,7 +2111,9 @@
       "relatedLayerIds": [],
       "topicTags": [
         "プランテーション",
-        "宗教"
+        "宗教",
+        "カカオ",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d5_q1.png",
       "clipPdfPath": null,
@@ -2124,7 +2150,8 @@
         "TWN",
         "IND",
         "RUS",
-        "ZAF"
+        "ZAF",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -2423,7 +2450,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d6_q6.png",
       "clipPdfPath": null,
@@ -2781,7 +2809,8 @@
       "promptSummary": "問5次の図2中のア~ウは,石炭の生産量,輸出量,消費量のいずれかについて,上位8か国・地域とそれらが世界に占める割合を示したものである。指標名とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。50 % 25中国の数値には台湾,ホンコン,マカオを含まない。統計年次は2013年。IEA, Coわゾ襯砒〃により作成。ー150 - ( 2602ー150 )①アイウ②アウィ③ィアウ@イウア⑤ウアイ⑥ウィア生輸消産出費量量量",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -3101,7 +3130,8 @@
       "promptSummary": "問3次の図3は,いくつかの農作物の作付面積について,中国*全体に占める省* *ごとの割合を上位10省まで示したものであり,カ~クはイモ類,茶,野菜のいずれかである。カ~クと品目名との正しい組合せを,下の①~⑥のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。省に相当する市・自治区を含む。〇カキ20 %ク統計年次は2011年。『中国統計年により作成。①②③〇⑤⑥カイモ類イモ類茶茶野菜野菜キ茶野菜イモ類野菜イモ類茶野菜ク茶野菜イ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -3212,7 +3242,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
-        "言語"
+        "言語",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2017_main/2017_main_d4_q6.png",
       "clipPdfPath": null,
@@ -3349,7 +3380,8 @@
       "relatedCountries": [
         "FRA",
         "DEU",
-        "ESP"
+        "ESP",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -3546,7 +3578,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2017_main/2017_main_d6_q5.png",
       "clipPdfPath": null,
@@ -3671,9 +3703,7 @@
       "questionLabel": "第1問 問2（解答番号2）",
       "title": "第1問 問2: 問2大気と海洋との相互作用は自然災害を発生させることがある",
       "promptSummary": "問2大気と海洋との相互作用は自然災害を発生させることがある。次の図2中のJ ~ Mに示した地域でみられる災害をもたらす自然現象とその原因や背景について述べた文として下線部が最も適当なものを,下の①~④のうちから一つ選2ウ①J地域でみられる洪水の原因の一つとして,インド洋付近に停滞する梅雨前線がある。②K地域でみられる干ばつの背景として,太平洋西部の海水温が異常に上昇するエルニニョ現象などがある。③L地域でみられる豪雪の背景として,...",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "モンスーン",
@@ -3848,11 +3878,12 @@
         "PHL",
         "IND",
         "LKA",
-        "COL"
+        "COL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q1.png",
       "clipPdfPath": null,
@@ -3882,11 +3913,12 @@
       "promptSummary": "問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,世界の上位10か国とそれらが世界に占める割合を示したものである。漁獲量,水産物輸出額,水産物輸入額とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選、*養殖を含まない。ー150ー( 2702ー15の20 % 10中国の数値には,台湾,ホンコン,マカオを含まない。統計年次は2010年。FAOSTATにより作成。①アイウ②アウィ③ィアウ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q2.png",
       "clipPdfPath": null,
@@ -3920,7 +3952,8 @@
         "CHN",
         "TWN",
         "RUS",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -3995,7 +4028,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "石炭"
+        "石炭",
+        "世界遺産"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q5.png",
       "clipPdfPath": null,
@@ -4028,11 +4062,12 @@
         "TWN",
         "FRA",
         "POL",
-        "MEX"
+        "MEX",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q6.png",
       "clipPdfPath": null,
@@ -4599,11 +4634,12 @@
       "relatedCountries": [
         "JPN",
         "PHL",
-        "NZL"
+        "NZL",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q5.png",
       "clipPdfPath": null,
@@ -4830,7 +4866,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "洪水"
+        "洪水",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q7.png",
       "clipPdfPath": null,
@@ -4996,7 +5033,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "自然災害",
-        "砂漠化"
+        "砂漠化",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d1_q5.png",
       "clipPdfPath": null,
@@ -5062,11 +5100,14 @@
       "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点17）問1スマートフォンは，次の写真1に示すように各種の鉱産資源を原料とする部品が用いられ，また多くの技術が集約された通信機器である。これらの資源や技術に関して，下の図1中のア～ウは，国際特許出願件数＊，アルミ合金ケースの原料となるボーキサイトの生産量，リチウムの生産量のいずれかについて，上位(1)位までの国・地域とそれらが世界全体に占める割合を示したものである。項目名と...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "半導体"
+        "半導体",
+        "リチウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d2_q1.png",
       "clipPdfPath": null,
@@ -5270,7 +5311,8 @@
       "relatedCountries": [
         "FRA",
         "DEU",
-        "POL"
+        "POL",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -5342,7 +5384,8 @@
       "promptSummary": "問3多民族国家として知られるマレーシアの取組みを説明した次の文中の空欄カとキに当てはまる語句の正しい組合せを，下の(1)～(4)のうちから一つ選べ。15マレーシアでは，マレー系住民に対して，雇用や教育の面を優遇する（カ）政策をとることで，国内において大きな経済力をもつ（キ）系住民とマレー系住民との格差縮小を図っている。(1) (2) (3) (4)カブミプトラブミプトラルックイーストルックイーストキアラブ中国アラブ中国",
       "relatedCountries": [
         "CHN",
-        "MYS"
+        "MYS",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -5513,7 +5556,9 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "小麦"
+        "小麦",
+        "オリーブ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d4_q2.png",
       "clipPdfPath": null,
@@ -5617,11 +5662,12 @@
         "JPN",
         "SAU",
         "IRQ",
-        "TUR"
+        "TUR",
+        "QAT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d4_q5.png",
       "clipPdfPath": null,
@@ -5653,7 +5699,8 @@
       "promptSummary": "問6次のサ～スの文は，図1中のX～Zのいずれかの国で第二次世界大戦後に発生した紛争（戦争）について述べたものである。サ～スとX～Zとの正しい組合せを，下の(1)～(6)のうちから一つ選べ。24サアメリカ合衆国で発生した同時多発テロ事件をきっかけに，イスラム原理主義組織が支配する地域での戦闘が開始された。シ北部のトルコ系住民と南部のギリシャ系住民との対立が激化し，ギリシャへの併合の動きに対するトルコ軍の介入によって北部が独立を宣言し...",
       "relatedCountries": [
         "TUR",
-        "USA"
+        "USA",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -6021,7 +6068,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d6_q5.png",
       "clipPdfPath": null,
@@ -6054,7 +6101,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2018_main/2018_main_d6_q6.png",
       "clipPdfPath": null,
@@ -6320,7 +6367,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "カカオ"
       ],
       "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q2.png",
       "clipPdfPath": null,
@@ -6353,12 +6400,11 @@
       "promptSummary": "問3水産資源とそれにかかわることがらについて述べた文として適当でないものを，次の(1)～(4)のうちから一つ選べ。9 (1)インドネシアでは，エビの養殖のためにマングローブ林が破壊されている。(2)北ヨーロッパでは，魚介類を卵から育てて放流する漁業が盛んに行われている。ゆうしようりゆう(3)ペルー沖は，湧昇流によって，魚介類の餌となるプランクトンが発生しにくい海域となっている。(4)マグロの乱獲を背景として，その漁獲を規制する国際...",
       "relatedCountries": [
         "IDN",
-        "IND",
         "PER"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q3.png",
       "clipPdfPath": null,
@@ -6842,7 +6888,8 @@
       "relatedCountries": [
         "USA",
         "CAN",
-        "MEX"
+        "MEX",
+        "CUB"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -6875,7 +6922,6 @@
       "title": "第4問 問6: 問6次の図4は，アメリカ合衆国の各州＊における全従業者に占めるいくつかの産業別従業者の割合...",
       "promptSummary": "問6次の図4は，アメリカ合衆国の各州＊における全従業者に占めるいくつかの産業別従業者の割合の上位(1)位を示したものであり，サ～スはコンピュータ・電子部品製造業，食品製造業，石油・ガス採掘業のいずれかである。業種名とサ～スとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。24＊ハワイ州を除く。サシス統計年次は2011年。U.S. Bureau of Economic Analysisの資料により作成。図4 (2) (4) ...",
       "relatedCountries": [
-        "IND",
         "LKA",
         "GBR",
         "USA",
@@ -6918,7 +6964,6 @@
       "title": "第5問 問1: 問1下線部に関して，インド洋航路の特徴とそれに関することがらについて説明した次の文章中の...",
       "promptSummary": "問1下線部に関して，インド洋航路の特徴とそれに関することがらについて説明した次の文章中の空欄アとイに当てはまる語の正しい組合せを，下の(1)～(2)のうちから一つ選べ。25きぼうほうイギリスからケニアおよびスリランカまで航海するには，かつては喜望峰を経由せねばならず長い日数を要した。アフリカ東岸からスリランカへ向かう際は，（ア）に追い風を受けることができたため，所要日数の短縮につながった。19世紀にスエズ運河が開通したことにより...",
       "relatedCountries": [
-        "IND",
         "LKA",
         "GBR",
         "EGY",
@@ -7003,7 +7048,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q3.png",
       "clipPdfPath": null,
@@ -7377,8 +7422,7 @@
       "title": "第1問 問3: 問3河川流量の年変化は,流域の気候環境などを反映する",
       "promptSummary": "問3河川流量の年変化は,流域の気候環境などを反映する。次の図3は,ェニセイ川,コンゴ川,ミシシッピ川の流域と主な河道および流量観測地点を示したものであり,下の図4中のF ~ Hは,図3中のいずれかの河川の流量観測地点における月平均流量を示したものである。河川名とF ~ Hとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ロコンゴ川ミシシッピ川ェニセイ川/」,主な河道(こ)流域・流量観測地点それぞれの地図は,同縮尺で,正積図法...",
       "relatedCountries": [
-        "USA",
-        "COD"
+        "USA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -7513,11 +7557,13 @@
       "promptSummary": "第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,いくつかの農作物について, 1990年と2016年の世界における生産量の割合を地域別に示したものであり,①~④は,オリープ,オレンジ類,コーヒー,トウモロコシのいずれかである。コーヒーに該当するものを,図1中の①~④のうちから一つ選べ。7 1990年2016年0 20 40 80 100 % 1990年・◆・◆2016年20 100 % 0 ...",
       "relatedCountries": [
         "USA",
-        "MEX"
+        "MEX",
+        "PAN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "トウモロコシ"
+        "トウモロコシ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q1.png",
       "clipPdfPath": null,
@@ -7546,11 +7592,13 @@
       "title": "第2問 問2: 問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している",
       "promptSummary": "問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している。コーヒーの主要な種となっているアラビカ種の原産地(栽培起源地)に該当するものを,次の①~④のうちから一つ選べ。工①アラブ首長国連邦②ウルグアイ③工チオピア④ジャマイカ",
       "relatedCountries": [
-        "ARE"
+        "ARE",
+        "JAM",
+        "URY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q2.png",
       "clipPdfPath": null,
@@ -7583,7 +7631,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q3.png",
       "clipPdfPath": null,
@@ -7618,7 +7666,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q4.png",
       "clipPdfPath": null,
@@ -7648,11 +7696,14 @@
       "promptSummary": "問5次の表2は,コーヒーを輸出しているいくつかの国の輸出品目について,輸出金額の上位4品目を示したものであり,①~④は,インド,工チオピア,コートジボワール,ベトナムのいずれかである。ベトナムに該当するものを,表2中の①~④のうちから一つ選べ。表2宝石・貴金属位カカオ豆・同関連品電子機器・機械コーヒ1ー豆植物油用種子類位石油衣料品石油製品2天然ゴム位金鉱はきもの衣料品3位金鉱産業用機械輸送機械豆類4統計年次は2016年。UN Co...",
       "relatedCountries": [
         "VNM",
-        "IND"
+        "IND",
+        "CIV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "カカオ",
+        "コーヒー",
+        "天然ゴム"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q5.png",
       "clipPdfPath": null,
@@ -7752,7 +7803,8 @@
         "CHN",
         "KOR",
         "TWN",
-        "MYS"
+        "MYS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -7790,7 +7842,8 @@
       ],
       "topicTags": [
         "三角州",
-        "宗教"
+        "宗教",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d3_q3.png",
       "clipPdfPath": null,
@@ -7821,12 +7874,12 @@
       "relatedCountries": [
         "IDN",
         "VNM",
-        "IND",
         "FRA",
         "ITA",
         "ESP",
         "NLD",
-        "ARG"
+        "ARG",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -7968,7 +8021,8 @@
         "GBR",
         "FRA",
         "ITA",
-        "ESP"
+        "ESP",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -8001,7 +8055,8 @@
       "title": "第4問 問3: 問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている",
       "promptSummary": "問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている。次の図2中のカ~クは,コルクガシ,テンサイ,ナツメヤシのいずれかについて,それらの主な産地を示したものである。農作物名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。△△△今ゝ公△△△0〇9カキク0△0 D尾Ⅳに〃〃〃, 2015により作成。図2〇キクカ⑤クカキ⑥クキカ②カクキ③キカクコルクガシカキテンサイナツメヤシクー151ー( 2602ー15D",
       "relatedCountries": [
-        "ITA"
+        "ITA",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -8075,11 +8130,12 @@
       "relatedCountries": [
         "FRA",
         "ITA",
-        "EGY"
+        "EGY",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d4_q5.png",
       "clipPdfPath": null,
@@ -8114,7 +8170,10 @@
         "UKR",
         "COL",
         "MAR",
-        "DZA"
+        "DZA",
+        "GRC",
+        "ROU",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -8188,7 +8247,8 @@
       "topicTags": [
         "小麦",
         "鉄鉱石",
-        "石炭"
+        "石炭",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d5_q2.png",
       "clipPdfPath": null,
@@ -8365,7 +8425,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d6_q2.png",
       "clipPdfPath": null,
@@ -8562,7 +8622,6 @@
       "title": "第1問 問2: 問2次の図2は, 7月のある日時に撮影された気象衛星画像を用いて,地球上の広範囲における雲...",
       "promptSummary": "問2次の図2は, 7月のある日時に撮影された気象衛星画像を用いて,地球上の広範囲における雲の分布を示したものである。図2から読み取れることがらとその背景について述べた文として最も適当なものを,下の①~〇のうちから一つ選べ。University of Wisconsin-Madisonの資料により作成。図2①オーストラリア大陸の南回帰線付近に雲があまりみられないのは,主に熱帯収束帯の上昇気流の影響による。②北アメリカ大陸の南東部に雲...",
       "relatedCountries": [
-        "IND",
         "USA",
         "AUS"
       ],
@@ -8674,7 +8733,6 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND",
         "DNK"
       ],
       "relatedLayerIds": [
@@ -8712,7 +8770,9 @@
       "questionLabel": "第1問 問6（解答番号6）",
       "title": "第1問 問6: 問6図1中のJの地域では,二つの大陸の境界部に位置することなどにより,様々な自然災害が繰り...",
       "promptSummary": "問6図1中のJの地域では,二つの大陸の境界部に位置することなどにより,様々な自然災害が繰り返し発生してきた。次の図5は, Jの地域におけるいくつかの自然災害*について, 2000 ~ 2015年の発生数* *を国・地域別に示したものであり,図5中のカ~クは,火山活動,洪水* * * ,熱帯低気圧のいずれかである。災害名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。6 *死者10名以上,被災者100名以上,非常事態宣言の...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "SDN"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
@@ -8754,7 +8814,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d2_q1.png",
       "clipPdfPath": null,
@@ -8949,10 +9009,15 @@
       "questionLabel": "第3問 問1（解答番号13）",
       "title": "第3問 問1: 第3問都市と村落,生活文化に関する次の問い(問1 ~ 6 )に答えよ",
       "promptSummary": "第3問都市と村落,生活文化に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の写真1中のA ~ Cは,世界各地の壁やフェンスを撮影したものであり,下のア~ウは, A ~ Cのいすれかに関連することがらを説明したものである。A ~ Cとア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。1 3省略省略Bハンガリーとセルピアの国境にA北アイルランドのベルファストの郊外住宅地に設けられた壁設けられたフェンス省略ヨ...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "IRL",
+        "HUN",
+        "JOR"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
-        "EU"
+        "EU",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d3_q1.png",
       "clipPdfPath": null,
@@ -8989,7 +9054,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "難民"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d3_q2.png",
       "clipPdfPath": null,
@@ -9019,7 +9084,9 @@
       "promptSummary": "問3次の図1は,いくつかの国における2000年と2015年の5歳未満児死亡率と,安全な水を確保できる人口の割合*を示したものであり,①~〇は,ケニア,チェコ,ベトナム,ポリビアのいずれかである。ベトナムに該当するものを,図1中の①~④のうちから一つ選べ。*生活に最低限必要な量の安全な飲料水が,住居から一定の範囲内で確保できる人口の割合安全な水を確保できる人口の割合②③4亠ロ2000年△2015年0 20 40 60 80 100 ...",
       "relatedCountries": [
         "VNM",
-        "KEN"
+        "KEN",
+        "CZE",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -9122,11 +9189,14 @@
       "promptSummary": "問6次の①~〇の文は,オマーン,コロンピア,フィリピン,フランスのいすれかの国における,生業や景観にかかわる世界遺産が含まれる地域について説明したものである。オマーンに該当するものを,次の①~〇のうちから一つ選きようしよう①高地の狭小な土地や傾斜地などで,伝統的なコーヒー栽培が行われてき②蒸発を防ぐため,縦穴の底を横穴でつなぐ大規模な水利システムが築かれ,古くから農業用水や生活用水に利用されてきた。③標高1500mに達する山間部の...",
       "relatedCountries": [
         "PHL",
-        "FRA"
+        "FRA",
+        "OMN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "ワイン",
+        "コーヒー",
+        "世界遺産"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d3_q6.png",
       "clipPdfPath": null,
@@ -9163,7 +9233,8 @@
         "モンスーン",
         "小麦",
         "大豆",
-        "プランテーション"
+        "プランテーション",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d4_q1.png",
       "clipPdfPath": null,
@@ -9266,7 +9337,8 @@
       "topicTags": [
         "鉄鉱石",
         "石炭",
-        "自動車"
+        "自動車",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d4_q4.png",
       "clipPdfPath": null,
@@ -9297,7 +9369,8 @@
       "relatedCountries": [
         "CHN",
         "IND",
-        "LKA"
+        "LKA",
+        "NPL"
       ],
       "relatedLayerIds": [
         "mr_himalaya"
@@ -9305,7 +9378,8 @@
       "topicTags": [
         "モンスーン",
         "人口",
-        "宗教"
+        "宗教",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_makeup/2019_makeup_d4_q5.png",
       "clipPdfPath": null,
@@ -9341,7 +9415,11 @@
         "GBR",
         "USA",
         "CAN",
-        "COD"
+        "COD",
+        "CUB",
+        "MDG",
+        "OMN",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -9376,7 +9454,10 @@
       "questionLabel": "第5問 問1（解答番号25）",
       "title": "第5問 問1: 問1下線部③に関して,キューバとマダガスカルの気候には類似点がみられるが,島の大きさや地形...",
       "promptSummary": "問1下線部③に関して,キューバとマダガスカルの気候には類似点がみられるが,島の大きさや地形に起因する相違点もみられる。次の図2は,両国の地勢と回帰線の位置を示したものである。図2に関して,両島の気候の特徴を述べた文として下線部が適当でないものを,下の①~④のうちから一つ選べ。25回帰線2000 400 km 0 200回帰線2000 200 400km 0マダガスカルキューノヾ①キューバとマダガスカルは,貿易風の影響を受ける。②キ...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "CUB",
+        "MDG"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "地理B"
@@ -9408,9 +9489,10 @@
       "title": "第5問 問2: 問2下線部⑩に関して,島の成り立ちゃ位置は,その地域の自然や文化を特徴づける要因の一つとな...",
       "promptSummary": "問2下線部⑩に関して,島の成り立ちゃ位置は,その地域の自然や文化を特徴づける要因の一つとなってきた。キューバとマダガスカルの特徴について述べた次の文章中の下線部①~〇のうちから,適当でないものを一つ選べ。世界の島の中で4番目に大きいマダガスカル島は,かって1大陸から分離して島となった。キューバ島は現在,変動帯に位置しており,マダガスカル島よりも地震が多く発生している。島嶼では,その閉鎖性により独自の進化を遂げた固有種がみられること...",
       "relatedCountries": [
-        "IND",
         "ESP",
-        "MEX"
+        "MEX",
+        "CUB",
+        "MDG"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -9442,7 +9524,10 @@
       "questionLabel": "第5問 問3（解答番号27）",
       "title": "第5問 問3: 問3下線部◎に関して,キューバとマダガスカルの農業では,植民地的な経済構造からの脱却など,...",
       "promptSummary": "問3下線部◎に関して,キューバとマダガスカルの農業では,植民地的な経済構造からの脱却など,様々な取組みが行われてきた。次の表1は,キューバとマダガスカルにおける1961年と2014年の農産物の生産量を示したものであり,ア~ウは,米,サトウキピ,タバコのいすれかである。農産物名とア~ウとの正しい組合せを,下の①~⑥のうちから一つ選べ。(単位:千トン)マダガスカルキュー.バ2014年1961年2014年1961年18 , 000 83...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "CUB",
+        "MDG"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "地理B"
@@ -9479,7 +9564,10 @@
         "JPN",
         "PHL",
         "LKA",
-        "ISL"
+        "ISL",
+        "CUB",
+        "JAM",
+        "MDG"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -9519,7 +9607,10 @@
         "USA",
         "CAN",
         "MEX",
-        "ZAF"
+        "ZAF",
+        "CUB",
+        "MDG",
+        "MUS"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10007,7 +10098,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d2_q2.png",
       "clipPdfPath": null,
@@ -10075,7 +10166,8 @@
       "promptSummary": "問4次の図2中のカ～クは，米の生産量，輸出量，輸入量のいずれかについて，上位12か国・地域とそれらが世界全体に占める割合を示したものである。項目名とカ～クとの正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。10％30 15 5カキク中国の数値には台湾，ホンコン，マカオを含まない。統計年次は2015年。FAOSTATにより作成。図2 (1) (2) (3) (4) (5) (6)生産量カカキキクク輸出量キクカクカキ輸入量...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10112,7 +10204,8 @@
       "relatedCountries": [
         "TWN",
         "IRN",
-        "CAN"
+        "CAN",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10147,7 +10240,8 @@
       "relatedCountries": [
         "JPN",
         "ARE",
-        "CHE"
+        "CHE",
+        "HUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10216,7 +10310,8 @@
       "relatedCountries": [
         "KOR",
         "ETH",
-        "AUS"
+        "AUS",
+        "CZE"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10494,11 +10589,13 @@
       "promptSummary": "問4東南アジアとオセアニアの豊富な鉱産資源は，外貨の獲得に寄与している。次の表1は，いくつかの鉱産資源について，世界の産出量に占める割合を地域・国別に示したものであり，(1)～(4)は，すず，鉄鉱石，ニッケル，ボーキサイトのいずれかである。ボーキサイトに該当するものを，表1中の(1)～(4)のうちから一つ選べ。22表1（単位：％）(1) (2) (3) (4)東南アジア（大陸部）14．1 1．5 0．4 0．2東南アジア（島嶼部）...",
       "relatedCountries": [
         "MYS",
-        "AUS"
+        "AUS",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "鉄鉱石"
+        "鉄鉱石",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d4_q4.png",
       "clipPdfPath": null,
@@ -10530,7 +10627,9 @@
         "CHN",
         "TWN",
         "THA",
-        "AUS"
+        "AUS",
+        "MAC",
+        "LAO"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10566,7 +10665,6 @@
         "IDN",
         "VNM",
         "SGP",
-        "IND",
         "FRA",
         "AUS"
       ],
@@ -10575,7 +10673,8 @@
         "人口",
         "移民",
         "宗教",
-        "イスラム教"
+        "イスラム教",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2020_main/2020_main_d4_q6.png",
       "clipPdfPath": null,
@@ -10646,7 +10745,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10685,7 +10785,8 @@
         "TWN",
         "IND",
         "RUS",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10723,7 +10824,8 @@
         "IND",
         "RUS",
         "USA",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -10759,7 +10861,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11176,7 +11279,9 @@
       "promptSummary": "問6自然災害は直接的に生命を脅かすだけでなく，生活基盤となる居住環境にも大きな被害をもたらす。次の図3は，いくつかの国で発生した自然災害による建築物の被害＊について，災害種別の割合で示したものであり，サ～スは，スリランカ，チリ，ボリビアのいずれかである。国名とサ～スとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。6＊1970～2014年に損壊した建築物の数の合計。サシス洪水洪水洪水強風強風地震地震暴風雨津波その他その他そ...",
       "relatedCountries": [
         "LKA",
-        "CHL"
+        "CHL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11290,7 +11395,8 @@
         "THA",
         "NLD",
         "COL",
-        "KEN"
+        "KEN",
+        "TON"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11365,11 +11471,12 @@
         "TWN",
         "ITA",
         "USA",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q5.png",
       "clipPdfPath": null,
@@ -11438,8 +11545,8 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
-        "ARG"
+        "ARG",
+        "ROU"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11481,7 +11588,8 @@
       ],
       "topicTags": [
         "原油",
-        "国際河川"
+        "国際河川",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q2.png",
       "clipPdfPath": null,
@@ -11618,7 +11726,8 @@
       "title": "第3問 問6: 問6都市と村落では人口構成や世帯構成の特徴が異なる",
       "promptSummary": "問6都市と村落では人口構成や世帯構成の特徴が異なる。次の図3中のサ～スは，近畿地方の(1)市区町村について，1990年と2015年の老年人口率＊と総世帯数に占める(2)人世帯割合を示したものであり，下のＡ～Ｃの文は，いずれかの市区町村の特徴を説明したものである。サ～スとＡ～Ｃとの正しい組合せを，下の(3)～(4)のうちから一つ選べ。18＊総人口に占める65歳以上の人口割合。0 10 20 30 40 50 70 60 0 10 2...",
       "relatedCountries": [
-        "ZAF"
+        "ZAF",
+        "BWA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11720,7 +11829,8 @@
       "title": "第4問 問3: 問3アフリカでは，国によって産業構造が大きく異なる",
       "promptSummary": "問3アフリカでは，国によって産業構造が大きく異なる。次の図4は，図1中のいくつかの国における1970年，1993年，2016年のGDP（国内総生産）に占める各産業の割合を示したものであり，ア～ウは，ボツワナ，マリ，南アフリカ共和国のいずれかである。国名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。21第1次産業第2次産業第3次産業0 0 20 20 40 40 60 60 80 80 100％100％0 20 ...",
       "relatedCountries": [
-        "ZAF"
+        "ZAF",
+        "BWA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11758,7 +11868,9 @@
         "CHN",
         "TWN",
         "GBR",
-        "FRA"
+        "FRA",
+        "MDG",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -11985,7 +12097,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q4.png",
       "clipPdfPath": null,
@@ -12199,7 +12312,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q5.png",
       "clipPdfPath": null,
@@ -12232,7 +12345,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q6.png",
       "clipPdfPath": null,
@@ -12329,7 +12442,8 @@
       "promptSummary": "問3コハルさんたちはまとめとして，気候変動などに関連した世界各地の自然災害の原因について，各班で調べてカードに書き出した。次のａ～ｄは，タカシさんの班とコハルさんの班のカードであり，次ページの会話文は，その内容について意見交換したときのものである。会話文中の空欄タにはａとｂのいずれか，空欄チにはｃとｄのいずれか，空欄ツには次ページの文ＧとＨのいずれかが当てはまる。空欄タとチのそれぞれに当てはまるカードと，空欄ツに当てはまる文との組...",
       "relatedCountries": [
         "THA",
-        "PER"
+        "PER",
+        "TZA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -12369,7 +12483,8 @@
       "relatedCountries": [
         "USA",
         "PER",
-        "AUS"
+        "AUS",
+        "TZA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -12510,11 +12625,12 @@
       "promptSummary": "問2次の図1中のカとキは，2000年と2017年のいずれかについて，漁獲量＊と養殖業生産量の合計の上位(1)か国を示したものであり，凡例ＥとＦは，漁獲量と養殖業生産量のいずれかである。2017年の図と養殖業生産量の凡例との正しい組合せを，下の(2)～(3)のうちから一つ選べ。9＊養殖業生産量を含まない。カ百万トンE F 80 5 20キ中国の数値には台湾，ホンコン，マカオを含まない。FAOSTATにより作成。図1 (2) (4) ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d2_q2.png",
       "clipPdfPath": null,
@@ -12621,8 +12737,9 @@
         "THA",
         "MYS",
         "PHL",
-        "IND",
-        "USA"
+        "USA",
+        "MDV",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -12767,7 +12884,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d3_q3.png",
       "clipPdfPath": null,
@@ -12837,7 +12955,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
-        "都市圏"
+        "都市圏",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d3_q5.png",
       "clipPdfPath": null,
@@ -13180,7 +13299,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d5_q3.png",
       "clipPdfPath": null,
@@ -13279,7 +13398,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d5_q6.png",
       "clipPdfPath": null,
@@ -13650,7 +13769,6 @@
         "IDN",
         "VNM",
         "SGP",
-        "IND",
         "CAN"
       ],
       "relatedLayerIds": [],
@@ -13691,11 +13809,12 @@
         "CHN",
         "KOR",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q6.png",
       "clipPdfPath": null,
@@ -13732,7 +13851,8 @@
         "CHN",
         "TWN",
         "FRA",
-        "CAN"
+        "CAN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -13838,7 +13958,8 @@
         "プランテーション",
         "鉄鉱石",
         "石炭",
-        "人口"
+        "人口",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q4.png",
       "clipPdfPath": null,
@@ -14112,7 +14233,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q6.png",
       "clipPdfPath": null,
@@ -14486,7 +14608,9 @@
       "questionLabel": "第1問 問5（解答番号5）",
       "title": "第1問 問5: 問5次の図5は，アフリカを(1)地域に区分＊して示したものである",
       "promptSummary": "問5次の図5は，アフリカを(1)地域に区分＊して示したものである。また，表3は，この(1)地域について，1990年から2019年の期間における地震，火山噴火，熱帯低気圧による自然災害の発生数＊＊を集計したものであり，タ～ツは，北部，西部，東部のいずれかである。地域とタ～ツとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。5とうしよ＊マダガスカル以外の島嶼国を除く。＊＊死者10名以上，被災者100名以上，非常事態宣言の発令，...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "MDG"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
@@ -14669,13 +14793,15 @@
         "DEU",
         "ISL",
         "USA",
-        "CAN"
+        "CAN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
         "再生可能エネルギー",
         "原子力",
-        "人口"
+        "人口",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d2_q4.png",
       "clipPdfPath": null,
@@ -14749,11 +14875,13 @@
         "MYS",
         "IND",
         "USA",
-        "ZAF"
+        "ZAF",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d2_q6.png",
       "clipPdfPath": null,
@@ -14957,7 +15085,8 @@
         "KOR",
         "MYS",
         "BGD",
-        "CAN"
+        "CAN",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15029,7 +15158,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "再生可能エネルギー",
-        "原子力"
+        "原子力",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d4_q2.png",
       "clipPdfPath": null,
@@ -15065,7 +15195,9 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "大豆"
+        "大豆",
+        "カカオ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2022_main/2022_main_d4_q3.png",
       "clipPdfPath": null,
@@ -15098,7 +15230,9 @@
         "BRA",
         "ARG",
         "CHL",
-        "NZL"
+        "NZL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15193,7 +15327,10 @@
         "USA",
         "MEX",
         "CHL",
-        "NZL"
+        "NZL",
+        "PRT",
+        "IRL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15607,8 +15744,7 @@
       "title": "第1問 問6: 問6津波の被害は，地形の違いにより異なる",
       "promptSummary": "問6津波の被害は，地形の違いにより異なる。次の図4は，インドネシアのある平野における2004年インド洋大津波の浸水範囲と浸水深，および地形の分布を示したものである。図4の範囲における津波の状況について考えられることがらを述べた文(1)～(2)のうちから，適当でないものを一つ選べ。6 2 km 0タチ300 25 50 580 320 270 355 355 325 600 810 380 400 610 200浸水範囲浸水深(cm...",
       "relatedCountries": [
-        "IDN",
-        "IND"
+        "IDN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15653,7 +15789,8 @@
         "USA",
         "CAN",
         "MEX",
-        "BRA"
+        "BRA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15689,7 +15826,8 @@
       "promptSummary": "問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた。次の図2は，いくつかの工業製品について，輸出金額の上位15か国・地域が世界の輸出金額に占める割合を示したものであり，カ～クは，衣類，航空機＊，テレビのいずれかである。工業製品名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。8＊航空機の部分品や人工衛星などを含む。40 20 5％カキク中国の数値には台湾，ホンコン，マカオ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -15862,7 +16000,8 @@
       "relatedCountries": [
         "VNM",
         "DZA",
-        "NZL"
+        "NZL",
+        "QAT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -16259,7 +16398,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "石炭"
+        "石炭",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q6.png",
       "clipPdfPath": null,
@@ -16554,7 +16694,9 @@
       "relatedCountries": [
         "JPN",
         "RUS",
-        "AUS"
+        "AUS",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -16756,7 +16898,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "トウモロコシ",
-        "大豆"
+        "大豆",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2023_main/2023_main_d2_q3.png",
       "clipPdfPath": null,
@@ -16822,7 +16965,8 @@
       "promptSummary": "問5輸出入の際に用いられる輸送手段は，国の地理的位置や運ばれる製品の性質によって異なる。次の図5は，フランスとポルトガルにおける，2019年のEU＊域外への輸送手段別割合を示したものである。図5中のアとイはフランスとポルトガルのいずれか，ＥとＦは輸出額と輸出量＊＊のいずれかである。フランスの輸出額に該当するものを，図5中の(1)～(2)のうちから一つ選べ。12＊EUにはイギリスを含む。＊＊重量ベース。フランスまたはポルトガルアＥＦ...",
       "relatedCountries": [
         "GBR",
-        "FRA"
+        "FRA",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17038,7 +17182,8 @@
         "CHN",
         "TWN",
         "FRA",
-        "ETH"
+        "ETH",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17078,7 +17223,8 @@
         "GBR",
         "DEU",
         "POL",
-        "USA"
+        "USA",
+        "IRL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17151,7 +17297,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17189,7 +17336,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17227,7 +17375,8 @@
       "relatedCountries": [
         "CHN",
         "TWN",
-        "IND"
+        "IND",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17263,7 +17412,8 @@
         "CHN",
         "TWN",
         "IND",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -17480,7 +17630,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2023_main/2023_main_d5_q5.png",
       "clipPdfPath": null,
@@ -17753,11 +17903,14 @@
         "RUS",
         "USA",
         "CAN",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "鉄鉱石"
+        "鉄鉱石",
+        "アルミニウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q1.png",
       "clipPdfPath": null,
@@ -17786,7 +17939,6 @@
       "title": "第2問 問2: 問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割...",
       "promptSummary": "問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割合が(1)％以上の国・地域を示したものである。図3に関することがらについて述べた文章中の下線部(2)～(3)のうちから，最も適当なものを一つ選べ。8生産量万トン50 25 5輸入量統計年次は2018年。FAOSTATにより作成。図3とうしよツナ缶詰の主要な生産地をみると，インド洋の島嶼国では，(2)原料の漁獲域に近いことをいかして，ツナ缶詰が...",
       "relatedCountries": [
-        "IND",
         "ESP",
         "USA"
       ],
@@ -17826,11 +17978,12 @@
         "USA",
         "CHL",
         "PER",
-        "COL"
+        "COL",
+        "ECU"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q3.png",
       "clipPdfPath": null,
@@ -17860,9 +18013,9 @@
       "promptSummary": "問4次の図5は，いくつかの国における米の栽培カレンダーを示したものであり，(1)～(2)は，イタリア，インドネシア，コートジボワール，チリ＊のいずれかである。コートジボワールに該当するものを，図5中の(1)～(2)のうちから一つ選べ。10＊中南部。ǏǐǑǒ12月11 10 9 8 7 6 5 4 3 2 1第1期第2期第3期作付収穫U.S. Department of Agricultureの資料により作成。図5",
       "relatedCountries": [
         "IDN",
-        "IND",
         "ITA",
-        "CHL"
+        "CHL",
+        "CIV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -18189,7 +18342,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q1.png",
       "clipPdfPath": null,
@@ -18299,11 +18452,12 @@
         "GBR",
         "FRA",
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q4.png",
       "clipPdfPath": null,
@@ -18335,11 +18489,12 @@
       "promptSummary": "問5次の図5に示したスペインのセビリアとチュニジアのチュニスでは，類似した都市景観がみられる。後の写真1は，両都市の中心部を撮影した衛星画像と，旧市街を撮影した景観写真である。写真1に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。23セビリアチュニス図5セビリアチュニス衛星画像景観写真100 m 0 100 m 0写真1セビリアとチュニスは，(1)都市中心部がともに旧市街と新市街に分...",
       "relatedCountries": [
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q5.png",
       "clipPdfPath": null,
@@ -18369,7 +18524,8 @@
       "promptSummary": "問6次の図6は，スペインとチュニジアについて，全就業人口に占める産業別・男女別の就業人口割合の推移を示したものである。チュニジアの第(5)次産業を示す図に該当するものを，図6中の(1)～(4)のうちから一つ選べ。24スペインまたはチュニジア女性男性第2次産業または第3次産業年% 1991 1998 2005 2012 2019 10 20 30 40 50 0年% 1991 1998 2005 2012 2019 10 20 30...",
       "relatedCountries": [
         "ITA",
-        "ESP"
+        "ESP",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -18748,7 +18904,9 @@
       "relatedCountries": [
         "CAN",
         "MEX",
-        "COL"
+        "COL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -18823,7 +18981,8 @@
       "relatedCountries": [
         "JPN",
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -18895,7 +19054,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "USA",
         "AUS"
       ],
@@ -18938,7 +19096,8 @@
         "TWN",
         "VNM",
         "GBR",
-        "DEU"
+        "DEU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -19227,7 +19386,6 @@
       "promptSummary": "問6次の図4は，アメリカ合衆国のいくつかの都市において家庭で使用されている主要な言語の割合を示したものである。図4中の(1)～(2)は，後の図5中のシアトル，ミネアポリス，ロサンゼルス，マイアミのいずれかである。シアトルに該当するものを，図4中の(1)～(2)のうちから一つ選べ。18英語スペイン語アジア・太平洋系言語その他0 20 40 60 80 100％ǏǐǑǒアジア・太平洋系言語には，インド・ヨーロッパ系言語を含まない。統計...",
       "relatedCountries": [
         "JPN",
-        "IND",
         "ESP",
         "USA"
       ],
@@ -19367,11 +19525,12 @@
       "promptSummary": "とうしよ問4環太平洋の島嶼国・地域には，世界各地から観光客が来訪する。次の図4は，いくつかの国・地域における2019年の観光客数を出発地域別の割合で示したものである。図4中のサ～スは，後の図5中のグアム，ハワイ，フィジーのいずれか，凡例ＪとＫはアジアとヨーロッパ＊のいずれかである。グアムとヨーロッパとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。22＊ヨーロッパの数値にはロシアを含む。0 20 40 60 80 100％...",
       "relatedCountries": [
         "RUS",
-        "USA"
+        "USA",
+        "FJI"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2024_main/2024_main_d4_q4.png",
       "clipPdfPath": null,
@@ -19406,7 +19565,8 @@
         "TWN",
         "USA",
         "PER",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -19442,7 +19602,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -19999,7 +20160,8 @@
       "promptSummary": "問4ナオさんは，世界における農産物の需給について考えるため，食料の輸出入を調べた。次の図4は，いくつかの品目について，世界における2019年の(1)国・地域間の輸出入量の上位(2)件を示したものであり，カ～クは，果実類，牛肉，穀物のいずれかである。品目名とカ～クとの正しい組合せを，後の(3)～(4)のうちから一つ選べ。10ホンコンカキク1～3位4～6位7～9位輸出先輸出元中国の数値には台湾，ホンコン，マカオを含まない。UN Com...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -20202,7 +20364,8 @@
       "promptSummary": "問4次の表1は，いくつかの国における外国籍人口を男女別に示したものであり，ＥとＦは男性と女性のいずれか，カ～クはアラブ首長国連邦，ギリシャ，ドイツのいずれかである。女性とドイツとの正しい組合せを，後の(1)～(5)のうちから一つ選べ。16表1（単位：万人）ＥＦカ593 250キ309 308ク52 43統計年次は，アラブ首長国連邦とギリシャが2010年，ドイツが2011年。国際連合の資料により作成。(1) (2) (3) (4) ...",
       "relatedCountries": [
         "ARE",
-        "DEU"
+        "DEU",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -20350,7 +20513,12 @@
         "CHL",
         "PER",
         "COL",
-        "VEN"
+        "VEN",
+        "BOL",
+        "ECU",
+        "URY",
+        "LBY",
+        "PRY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -20389,11 +20557,13 @@
         "BRA",
         "ARG",
         "PER",
-        "COL"
+        "COL",
+        "PRY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "大豆"
+        "大豆",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q3.png",
       "clipPdfPath": null,
@@ -20427,7 +20597,9 @@
         "FRA",
         "USA",
         "ARG",
-        "COL"
+        "COL",
+        "BOL",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -20467,7 +20639,9 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "原油"
+        "原油",
+        "リチウム",
+        "ボーキサイト"
       ],
       "clipImagePath": "/data/clips/2024_makeup/2024_makeup_d4_q5.png",
       "clipPdfPath": null,
@@ -20809,13 +20983,13 @@
         "CHN",
         "TWN",
         "IDN",
-        "IND",
         "GBR",
-        "ITA"
+        "ITA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d1_q3.png",
       "clipPdfPath": null,
@@ -20982,7 +21156,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d2_q4.png",
       "clipPdfPath": null,
@@ -21042,7 +21217,9 @@
       "title": "第3問 問2: 問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいずれかの国における最...",
       "promptSummary": "問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいずれかの国における最高標高地点周辺の陰影起伏図である。また，後の文Ｆ～Ｈは，ア～ウのいずれかの範囲にみられる地形について述べたものである。ア～ウとＦ～Ｈとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。10アイウ範囲はいずれも50km四方。NASAの資料により作成。図3Ｆ固い岩盤が長い時間をかけて風化している。Ｇ山岳氷河による侵食作用がみら...",
       "relatedCountries": [
-        "PHL"
+        "PHL",
+        "NAM",
+        "NPL"
       ],
       "relatedLayerIds": [
         "pb_japan_trench"
@@ -21229,11 +21406,13 @@
         "CHN",
         "TWN",
         "DEU",
-        "ISL"
+        "ISL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "原子力"
+        "原子力",
+        "地熱"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q1.png",
       "clipPdfPath": null,
@@ -21270,7 +21449,8 @@
       "topicTags": [
         "小麦",
         "大豆",
-        "原油"
+        "原油",
+        "ワイン"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q2.png",
       "clipPdfPath": null,
@@ -21342,7 +21522,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d4_q4.png",
       "clipPdfPath": null,
@@ -21610,7 +21790,6 @@
       "title": "第6問 問1: 第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ",
       "promptSummary": "第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ。（配点17）問1インド洋沿岸には，サイクロン（熱帯低気圧）による被害を受けやすい地域が多く分布する。次の図1中の地域ア～エのうち，サイクロンの上陸頻度が最も低い地域として適当なものを，後の(1)～(2)のうちから一つ選べ。26 A C Dウエア150°E 120°E 90°E 60°E 30°E 0°30°S 30°NイB図1 (1)ア(3)イ(4)ウ(2)エ",
       "relatedCountries": [
-        "IND",
         "BGD"
       ],
       "relatedLayerIds": [],
@@ -21643,9 +21822,7 @@
       "questionLabel": "第6問 問2（解答番号27）",
       "title": "第6問 問2: 問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適当でないものを，次...",
       "promptSummary": "問2図1中の地域Ａ～Ｄのうち，稲作で主に天水田＊が利用される地域として適当でないものを，次の(1)～(2)のうちから一つ選べ。27かんがい＊灌漑施設を用いず，雨水のみに依存する水田。(1)Ａ(3)Ｂ(4)Ｃ(2)Ｄ",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "稲作"
@@ -21715,16 +21892,15 @@
       "questionLabel": "第6問 問4（解答番号29）",
       "title": "第6問 問4: 問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が存在する",
       "promptSummary": "問4インド洋に面する国々では，歴史的なつながりを背景として，様々な宗教が存在する。次の図3は，インド洋に面する国々における国内の宗教人口が第(1)位の宗教人口割合を示したものである。また，後の文サ～スは，図3中のＦ～Ｈのいずれかの国の宗教に関することがらについて述べたものである。Ｆ～Ｈとサ～スとの組合せとして最も適当なものを，後の(2)～(3)のうちから一つ選べ。29 G F H 90以上80未満(％) 80～90統計年次は201...",
-      "relatedCountries": [
-        "IND"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
         "宗教",
         "イスラム教",
         "キリスト教",
-        "言語"
+        "言語",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d6_q4.png",
       "clipPdfPath": null,
@@ -21760,7 +21936,9 @@
         "GBR",
         "FRA",
         "NLD",
-        "CHE"
+        "CHE",
+        "MDV",
+        "MUS"
       ],
       "relatedLayerIds": [
         "lf_gbr"
@@ -21839,7 +22017,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "オリーブ"
       ],
       "clipImagePath": "/data/clips/2025_makeup/2025_makeup_d1_q2.png",
       "clipPdfPath": null,
@@ -22376,7 +22554,9 @@
         "USA",
         "CAN",
         "BRA",
-        "NZL"
+        "NZL",
+        "CZE",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -22417,7 +22597,8 @@
         "TWN",
         "PHL",
         "IND",
-        "RUS"
+        "RUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -22524,7 +22705,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "USA"
       ],
       "relatedLayerIds": [],
@@ -22740,7 +22920,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_makeup/2025_makeup_d6_q2.png",
       "clipPdfPath": null,
@@ -22770,7 +22950,13 @@
       "promptSummary": "問3中央アメリカの国々には，歴史的な背景などにより社会構造に違いがみられる。次の図3中のサ～スは，中央アメリカの主な国＊における国土に占める農地面積の割合，GDPに占める第三次産業の割合，人種・民族構成に占めるアフリカ系の割合のいずれかを示したものである。指標名とサ～スとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。28＊国土面積が(3)万km2以上の13か国。バハマホンジュラスハイチドミニカ共和国ジャマイカパナマコスタ...",
       "relatedCountries": [
         "USA",
-        "MEX"
+        "MEX",
+        "CUB",
+        "PAN",
+        "JAM",
+        "GTM",
+        "CRI",
+        "DOM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -22846,7 +23032,8 @@
       "relatedCountries": [
         "USA",
         "CAN",
-        "MEX"
+        "MEX",
+        "CUB"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -23052,7 +23239,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地震"
+        "地震",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d2_q2.png",
       "clipPdfPath": null,
@@ -23121,9 +23309,9 @@
         "THA",
         "VNM",
         "SGP",
-        "IND",
         "USA",
-        "CHL"
+        "CHL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -23342,7 +23530,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
-        "自然災害"
+        "自然災害",
+        "ハザードマップ"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d3_q6.png",
       "clipPdfPath": null,
@@ -23372,13 +23561,15 @@
       "promptSummary": "第4問コトミさんは，衣料品類の生産，流通，再利用・再資源化について探究した。この探究に関する次の問い（問1～5）に答えよ。（配点17）問1コトミさんは，衣料品類の原料である天然繊維がどのような地域で生産されているのかについて調べた。コトミさんが作成した図1は，いくつかの天然繊維の生産量について，世界全体に占める割合が(1)％以上の国・地域を示したものであり，ア～ウは，亜麻，ジュート，綿花のいずれかである。また，後の文Ａ～Ｃは，ア～...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
         "小麦",
         "プランテーション",
-        "混合農業"
+        "混合農業",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2026_main/2026_main_d4_q1.png",
       "clipPdfPath": null,
@@ -23449,7 +23640,8 @@
         "KOR",
         "TWN",
         "VNM",
-        "BGD"
+        "BGD",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -23516,7 +23708,8 @@
       "promptSummary": "問5最後にコトミさんは，大量に消費される衣料品類の再利用・再資源化の現状について調べた。次の図3は，世界の中古衣料品類＊の輸出額と輸入額について，世界に占める割合が(5)％以上の国を示したものであり，ＪとＫは，輸出と輸入のいずれかである。また，後の文章中の空欄サには，ASEANとEUのいずれかが当てはまる。輸入に該当する図と空欄サに当てはまる語句との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。19＊衣料アク...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -23590,7 +23783,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "ARE",
         "FRA"
       ],
@@ -23821,7 +24013,9 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "KHM",
+        "SDN"
       ],
       "relatedLayerIds": [
         "rv_nile"
@@ -23861,7 +24055,9 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "HUN",
+        "SVK"
       ],
       "relatedLayerIds": [
         "rv_nile"
@@ -23943,7 +24139,10 @@
         "VNM",
         "DEU",
         "AUT",
-        "EGY"
+        "EGY",
+        "SDN",
+        "MAC",
+        "SRB"
       ],
       "relatedLayerIds": [
         "rv_nile"
@@ -24360,8 +24559,7 @@
       "title": "第3問 問4: 問4次の図5は，インドネシアのある地域における過去の土地利用の変化を示したものである",
       "promptSummary": "問4次の図5は，インドネシアのある地域における過去の土地利用の変化を示したものである。図5に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。12アブラヤシ林・農地二次林(疎)天然林・二次林(密)海水域アカシア林2006年1979年0 10 km川井ほか（2012）などにより作成。図5図5中の天然林・二次林（密）では，毎年数か月間にわたって冠水することで微生物の働きが抑制され，泥炭と呼ば...",
       "relatedCountries": [
-        "IDN",
-        "IND"
+        "IDN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -24469,7 +24667,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "GBR"
       ],
       "relatedLayerIds": [],
@@ -24507,7 +24704,8 @@
         "TWN",
         "USA",
         "BRA",
-        "ARG"
+        "ARG",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -24693,7 +24891,8 @@
         "CHN",
         "TWN",
         "IND",
-        "SAU"
+        "SAU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -24765,7 +24964,8 @@
       "relatedCountries": [
         "PAK",
         "NOR",
-        "EGY"
+        "EGY",
+        "KHM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -24901,7 +25101,10 @@
       "questionLabel": "第6問 問2（解答番号27）",
       "title": "第6問 問2: 問2オセアニアの気候は海洋の影響を強く受ける",
       "promptSummary": "問2オセアニアの気候は海洋の影響を強く受ける。次の図2中のＡ～Ｄは，いくつかの都市の位置を示したものであり，後の図3中の(1)～(2)は，Ａ～Ｄのいずれかの雨温図である。Ｄに該当するものを，(1)～(2)のうちから一つ選べ。27 B A D Cフィジーフィジーサモアサモアサモア，フィジーは首都の位置を示す。図2ǏǐǑǒ250 200 150 100 50 0 1 3 5 7 9 11月気温降水量3 5 7 9 11月30 25℃m...",
-      "relatedCountries": [],
+      "relatedCountries": [
+        "FJI",
+        "WSM"
+      ],
       "relatedLayerIds": [],
       "topicTags": [
         "雨温図"
@@ -24934,7 +25137,9 @@
       "promptSummary": "問3オセアニアでは，地域によって多様な食生活がみられる。次の図4は，オセアニアの(1)つの国におけるいくつかの農作物の(2)人当たり年間消費量を示したものである。図4中のＦとＧはサモアとニュージーランドのいずれか，凡例カ～クは小麦，米，タロイモ類＊のいずれかである。サモアとタロイモ類との正しい組合せを，後の(3)～(4)のうちから一つ選べ。28＊キャッサバ，ヤムイモなどを含み，ジャガイモを含まない。カキクＧＦフィジー120 100...",
       "relatedCountries": [
         "AUS",
-        "NZL"
+        "NZL",
+        "FJI",
+        "WSM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -24977,7 +25182,8 @@
         "GBR",
         "USA",
         "AUS",
-        "NZL"
+        "NZL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -25018,11 +25224,13 @@
         "IND",
         "GBR",
         "AUS",
-        "NZL"
+        "NZL",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "移民"
+        "移民",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2026_makeup/2026_makeup_d6_q5.png",
       "clipPdfPath": null,

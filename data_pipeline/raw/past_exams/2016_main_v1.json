@@ -59,7 +59,9 @@
       "relatedLayerIds": [],
       "topicTags": [
         "火山",
-        "自然災害"
+        "自然災害",
+        "地熱",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d1_q2.png",
       "clipPdfPath": null,
@@ -260,7 +262,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d2_q2.png",
       "clipPdfPath": null,
@@ -327,7 +329,8 @@
         "KOR",
         "TWN",
         "CHE",
-        "MEX"
+        "MEX",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -363,7 +366,8 @@
         "JPN",
         "CHN",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -436,7 +440,8 @@
         "MYS",
         "GBR",
         "ARG",
-        "NGA"
+        "NGA",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -470,11 +475,12 @@
       "promptSummary": "問2特定の機能が発達した都市について説明した文として最も適当なものを,次の①~④のうちから一つ選~①ターチン(大慶)は,石油関連産業が発達した鉱工業都市である。②ニースは,スキーリゾートを中心とした観光保養都市である。③パナマシティは,地中海と紅海を結ぶ運河沿いの交通都市である。④モントリオールは,首都として計画的に建設された政治都市である。ー152ー( 2102ー152 )",
       "relatedCountries": [
         "ITA",
-        "CAN"
+        "CAN",
+        "PAN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d3_q2.png",
       "clipPdfPath": null,
@@ -608,7 +614,8 @@
         "IND",
         "PAK",
         "BGD",
-        "LKA"
+        "LKA",
+        "NPL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -685,7 +692,7 @@
         "rv_rhine"
       ],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d4_q2.png",
       "clipPdfPath": null,
@@ -753,7 +760,9 @@
         "NLD",
         "CHE",
         "NOR",
-        "POL"
+        "POL",
+        "GRC",
+        "HUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -826,7 +835,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "EU"
+        "EU",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d4_q6.png",
       "clipPdfPath": null,
@@ -862,7 +872,9 @@
       "relatedLayerIds": [],
       "topicTags": [
         "プランテーション",
-        "宗教"
+        "宗教",
+        "カカオ",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d5_q1.png",
       "clipPdfPath": null,
@@ -899,7 +911,8 @@
         "TWN",
         "IND",
         "RUS",
-        "ZAF"
+        "ZAF",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1198,7 +1211,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自動車"
+        "自動車",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2016_main/2016_main_d6_q6.png",
       "clipPdfPath": null,

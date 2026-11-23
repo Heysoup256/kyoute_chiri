@@ -430,8 +430,6 @@ export function WorldRankingsView({
 
   useEffect(() => {
     if (!focusedItemId) return;
-    setActiveTab('all');
-    setFilterText('');
     const t = window.setTimeout(() => {
       document
         .getElementById(`ranking-${focusedItemId}`)

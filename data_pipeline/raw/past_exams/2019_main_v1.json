@@ -80,8 +80,7 @@
       "title": "第1問 問3: 問3河川流量の年変化は,流域の気候環境などを反映する",
       "promptSummary": "問3河川流量の年変化は,流域の気候環境などを反映する。次の図3は,ェニセイ川,コンゴ川,ミシシッピ川の流域と主な河道および流量観測地点を示したものであり,下の図4中のF ~ Hは,図3中のいずれかの河川の流量観測地点における月平均流量を示したものである。河川名とF ~ Hとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ロコンゴ川ミシシッピ川ェニセイ川/」,主な河道(こ)流域・流量観測地点それぞれの地図は,同縮尺で,正積図法...",
       "relatedCountries": [
-        "USA",
-        "COD"
+        "USA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -216,11 +215,13 @@
       "promptSummary": "第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,いくつかの農作物について, 1990年と2016年の世界における生産量の割合を地域別に示したものであり,①~④は,オリープ,オレンジ類,コーヒー,トウモロコシのいずれかである。コーヒーに該当するものを,図1中の①~④のうちから一つ選べ。7 1990年2016年0 20 40 80 100 % 1990年・◆・◆2016年20 100 % 0 ...",
       "relatedCountries": [
         "USA",
-        "MEX"
+        "MEX",
+        "PAN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "トウモロコシ"
+        "トウモロコシ",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q1.png",
       "clipPdfPath": null,
@@ -249,11 +250,13 @@
       "title": "第2問 問2: 問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している",
       "promptSummary": "問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している。コーヒーの主要な種となっているアラビカ種の原産地(栽培起源地)に該当するものを,次の①~④のうちから一つ選べ。工①アラブ首長国連邦②ウルグアイ③工チオピア④ジャマイカ",
       "relatedCountries": [
-        "ARE"
+        "ARE",
+        "JAM",
+        "URY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q2.png",
       "clipPdfPath": null,
@@ -286,7 +289,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q3.png",
       "clipPdfPath": null,
@@ -321,7 +324,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q4.png",
       "clipPdfPath": null,
@@ -351,11 +354,14 @@
       "promptSummary": "問5次の表2は,コーヒーを輸出しているいくつかの国の輸出品目について,輸出金額の上位4品目を示したものであり,①~④は,インド,工チオピア,コートジボワール,ベトナムのいずれかである。ベトナムに該当するものを,表2中の①~④のうちから一つ選べ。表2宝石・貴金属位カカオ豆・同関連品電子機器・機械コーヒ1ー豆植物油用種子類位石油衣料品石油製品2天然ゴム位金鉱はきもの衣料品3位金鉱産業用機械輸送機械豆類4統計年次は2016年。UN Co...",
       "relatedCountries": [
         "VNM",
-        "IND"
+        "IND",
+        "CIV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "カカオ",
+        "コーヒー",
+        "天然ゴム"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d2_q5.png",
       "clipPdfPath": null,
@@ -455,7 +461,8 @@
         "CHN",
         "KOR",
         "TWN",
-        "MYS"
+        "MYS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -493,7 +500,8 @@
       ],
       "topicTags": [
         "三角州",
-        "宗教"
+        "宗教",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d3_q3.png",
       "clipPdfPath": null,
@@ -524,12 +532,12 @@
       "relatedCountries": [
         "IDN",
         "VNM",
-        "IND",
         "FRA",
         "ITA",
         "ESP",
         "NLD",
-        "ARG"
+        "ARG",
+        "LBY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -671,7 +679,8 @@
         "GBR",
         "FRA",
         "ITA",
-        "ESP"
+        "ESP",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -704,7 +713,8 @@
       "title": "第4問 問3: 問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている",
       "promptSummary": "問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている。次の図2中のカ~クは,コルクガシ,テンサイ,ナツメヤシのいずれかについて,それらの主な産地を示したものである。農作物名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。△△△今ゝ公△△△0〇9カキク0△0 D尾Ⅳに〃〃〃, 2015により作成。図2〇キクカ⑤クカキ⑥クキカ②カクキ③キカクコルクガシカキテンサイナツメヤシクー151ー( 2602ー15D",
       "relatedCountries": [
-        "ITA"
+        "ITA",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -778,11 +788,12 @@
       "relatedCountries": [
         "FRA",
         "ITA",
-        "EGY"
+        "EGY",
+        "GRC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d4_q5.png",
       "clipPdfPath": null,
@@ -817,7 +828,10 @@
         "UKR",
         "COL",
         "MAR",
-        "DZA"
+        "DZA",
+        "GRC",
+        "ROU",
+        "TUN"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -891,7 +905,8 @@
       "topicTags": [
         "小麦",
         "鉄鉱石",
-        "石炭"
+        "石炭",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d5_q2.png",
       "clipPdfPath": null,
@@ -1068,7 +1083,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2019_main/2019_main_d6_q2.png",
       "clipPdfPath": null,

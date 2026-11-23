@@ -576,6 +576,7 @@ export function App() {
         {activeView === 'rankings' && (
           <div className="h-full min-w-0 flex-1">
             <WorldRankingsView
+              key={focusedRankingId ?? 'all'}
               dataset={worldRankingsData}
               focusedItemId={focusedRankingId}
               onSelectCountry={handleSelectCountry}

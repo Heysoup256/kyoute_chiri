@@ -3511,5 +3511,214 @@
         ]
       ]
     }
+  ],
+  "GRC": [
+    {
+      "id": "hv_grc_aging",
+      "placement": "population",
+      "kind": "bar",
+      "title": "南欧・日本の高い老年人口割合（65歳以上・%）",
+      "subtitle": "高齢社会比較 (2023年)",
+      "bars": [
+        {
+          "label": "日本",
+          "value": 29.1
+        },
+        {
+          "label": "イタリア",
+          "value": 24.5
+        },
+        {
+          "label": "ポルトガル",
+          "value": 24.1
+        },
+        {
+          "label": "ギリシャ",
+          "value": 23.3,
+          "isTarget": true
+        },
+        {
+          "label": "OECD平均",
+          "value": 18.0
+        }
+      ],
+      "unit": "%",
+      "maxValue": 32,
+      "note": "ギリシャやポルトガルなど南欧は出生率低迷と若年層の北西欧への頭脳流出もあり高齢化率が高い。",
+      "source": "World Bank / Eurostat"
+    }
+  ],
+  "IRL": [
+    {
+      "id": "hv_irl_gdp",
+      "placement": "overview",
+      "kind": "bar",
+      "title": "1人当たり名目GDPの突出例（外資誘致・金融小国）",
+      "subtitle": "1人当たりGDP比較 (千USドル・2023年)",
+      "bars": [
+        {
+          "label": "アイルランド",
+          "value": 103.7,
+          "isTarget": true
+        },
+        {
+          "label": "スイス",
+          "value": 99.9
+        },
+        {
+          "label": "アメリカ合衆国",
+          "value": 81.7
+        },
+        {
+          "label": "ドイツ",
+          "value": 52.8
+        },
+        {
+          "label": "イギリス",
+          "value": 48.9
+        },
+        {
+          "label": "日本",
+          "value": 33.8
+        }
+      ],
+      "unit": "千$",
+      "maxValue": 115,
+      "note": "アイルランドは外資系多国籍企業（IT・製薬）の利益計上や輸出集積により1人当たりGDPが極めて高い値となる。",
+      "source": "World Bank / IMF"
+    }
+  ],
+  "SVK": [
+    {
+      "id": "hv_svk_power",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "スロバキアの電源構成（原子力特化型・%）",
+      "subtitle": "発電電力量シェア (2023年)",
+      "slices": [
+        {
+          "label": "原子力",
+          "value": 61.3,
+          "color": "#a855f7"
+        },
+        {
+          "label": "水力・再エネ",
+          "value": 24.5,
+          "color": "#10b981"
+        },
+        {
+          "label": "天然ガス・石炭等",
+          "value": 14.2,
+          "color": "#64748b"
+        }
+      ],
+      "unit": "%",
+      "note": "フランス（約65%）に並ぶ世界最高水準の原子力発電比率。石炭火力廃止も進めた。",
+      "source": "Ember / IEA"
+    }
+  ],
+  "PAN": [
+    {
+      "id": "hv_pan_sector",
+      "placement": "industry",
+      "kind": "table",
+      "title": "世界の2大国際運河の徹底比較（共テ必出）",
+      "headers": [
+        "比較項目",
+        "パナマ運河（パナマ）",
+        "スエズ運河（エジプト）"
+      ],
+      "rows": [
+        [
+          "接続海域",
+          "大西洋（カリブ海）↔ 太平洋",
+          "地中海 ↔ 紅海（インド洋）"
+        ],
+        [
+          "運河の構造",
+          "閘門式（水位差あり・ガトゥン湖経由）",
+          "水平式（水位差ほぼなし・閘門なし）"
+        ],
+        [
+          "最大の課題",
+          "淡水不足・エルニーニョ時の渇水",
+          "通過船の大型化（複線化）と中東情勢"
+        ],
+        [
+          "完成・管理",
+          "1914年開通 / 1999年末パナマ完全返還",
+          "1869年開通 / 1956年エジプト国有化"
+        ]
+      ],
+      "note": "「淡水（雨量）を必要とする閘門式かどうか」が最大の見分けポイント！"
+    }
+  ],
+  "GHA": [
+    {
+      "id": "hv_civ_gha_cacao",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "カカオ豆の世界生産シェア（ギニア湾2カ国で約6割）",
+      "subtitle": "世界生産割合 (%)",
+      "bars": [
+        {
+          "label": "コートジボワール",
+          "value": 38.0,
+          "isTarget": true
+        },
+        {
+          "label": "ガーナ",
+          "value": 18.9,
+          "isTarget": true
+        },
+        {
+          "label": "インドネシア",
+          "value": 11.4
+        },
+        {
+          "label": "エクアドル",
+          "value": 5.8
+        },
+        {
+          "label": "ブラジル",
+          "value": 4.6
+        }
+      ],
+      "unit": "%",
+      "maxValue": 45,
+      "note": "日本が輸入するカカオ豆の大部分は品質管理の整ったガーナ産。",
+      "source": "FAOSTAT / ICCO"
+    }
+  ],
+  "MDV": [
+    {
+      "id": "hv_mdv_elev",
+      "placement": "overview",
+      "kind": "bar",
+      "title": "モルディブの超低平な最高標高（他国比較・単位:m）",
+      "subtitle": "国内最高地点の標高比較（目安）",
+      "bars": [
+        {
+          "label": "ネパール（ヒマラヤ）",
+          "value": 8848
+        },
+        {
+          "label": "日本（富士山）",
+          "value": 3776
+        },
+        {
+          "label": "オランダ（低い国代表）",
+          "value": 322
+        },
+        {
+          "label": "モルディブ（最高地点）",
+          "value": 2.4,
+          "isTarget": true
+        }
+      ],
+      "unit": "m",
+      "note": "平均標高は約1.5m、国土の最高地点でも約2.4mのため、地球温暖化による海面上昇・高波で国家存続の危機に直面。",
+      "source": "CIA World Factbook / IPCC"
+    }
   ]
 }

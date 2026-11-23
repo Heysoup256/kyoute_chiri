@@ -360,7 +360,6 @@
         "IDN",
         "VNM",
         "SGP",
-        "IND",
         "CAN"
       ],
       "relatedLayerIds": [],
@@ -401,11 +400,12 @@
         "CHN",
         "KOR",
         "TWN",
-        "USA"
+        "USA",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q6.png",
       "clipPdfPath": null,
@@ -442,7 +442,8 @@
         "CHN",
         "TWN",
         "FRA",
-        "CAN"
+        "CAN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -548,7 +549,8 @@
         "プランテーション",
         "鉄鉱石",
         "石炭",
-        "人口"
+        "人口",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q4.png",
       "clipPdfPath": null,
@@ -822,7 +824,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "難民"
       ],
       "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q6.png",
       "clipPdfPath": null,

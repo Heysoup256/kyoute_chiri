@@ -388,9 +388,70 @@ COUNTRY_KEYWORDS = {
     "KEN": ["ケニア", "ナイロビ", "大地溝帯"],
     "ETH": ["エチオピア", "アディスアベバ", "青ナイル", "大地溝帯"],
     "ZAF": ["南アフリカ", "ヨハネスブルグ", "ケープタウン", "レアメタル", "白金", "ダイヤモンド"],
-    "COD": ["コンゴ", "キンシャサ", "コバルト"],
+    "COD": ["コンゴ民主", "キンシャサ", "コバルト"],
     "AUS": ["オーストラリア", "シドニー", "メルボルン", "キャンベラ", "パース", "ピルバラ", "グレートバリアリーフ", "グレートアーテジアン", "白豪主義"],
     "NZL": ["ニュージーランド", "ウェリントン", "オークランド", "南アルプス", "マオリ"],
+    # 追加詳細化26カ国
+    "GRC": ["ギリシャ", "ギリシア", "アテネ", "エーゲ海"],
+    "PRT": ["ポルトガル", "リスボン", "コルク"],
+    "IRL": ["アイルランド", "ダブリン"],
+    "CZE": ["チェコ", "プラハ"],
+    "HUN": ["ハンガリー", "ブダペスト"],
+    "ROU": ["ルーマニア", "ブカレスト"],
+    "SVK": ["スロバキア", "ブラチスラバ"],
+    "CUB": ["キューバ", "ハバナ"],
+    "PAN": ["パナマ", "パナマ運河", "パナマシティ"],
+    "JAM": ["ジャマイカ", "キングストン"],
+    "BOL": ["ボリビア", "ラパス", "ウユニ", "スクレ"],
+    "ECU": ["エクアドル", "キト", "ガラパゴス"],
+    "URY": ["ウルグアイ", "モンテビデオ"],
+    "LBY": ["リビア", "トリポリ"],
+    "TUN": ["チュニジア", "チュニス"],
+    "CIV": ["コートジボワール", "ヤムスクロ", "アビジャン"],
+    "GHA": ["ガーナ", "アクラ"],
+    "NAM": ["ナミビア", "ナミブ砂漠", "ベンゲラ海流", "ウィントフック"],
+    "MDG": ["マダガスカル", "アンタナナリボ"],
+    "NPL": ["ネパール", "カトマンズ"],
+    "QAT": ["カタール", "ドーハ"],
+    "OMN": ["オマーン", "マスカット"],
+    "KHM": ["カンボジア", "プノンペン", "アンコール"],
+    "FJI": ["フィジー", "スバ"],
+    "MDV": ["モルディブ", "マレ"],
+    "MUS": ["モーリシャス", "ポートルイス"],
+    # その他過去問出現頻出の基礎国
+    "SDN": ["スーダン", "ハルツーム"],
+    "MAC": ["マカオ"],
+    "KWT": ["クウェート"],
+    "JOR": ["ヨルダン", "アンマン"],
+    "SYR": ["シリア", "ダマスカス"],
+    "AFG": ["アフガニスタン", "カブール"],
+    "BWA": ["ボツワナ"],
+    "AGO": ["アンゴラ"],
+    "CMR": ["カメルーン"],
+    "SEN": ["セネガル", "ダカール"],
+    "TZA": ["タンザニア", "キリマンジャロ"],
+    "UGA": ["ウガンダ"],
+    "ZMB": ["ザンビア"],
+    "ZWE": ["ジンバブエ"],
+    "PRY": ["パラグアイ"],
+    "GTM": ["グアテマラ"],
+    "CRI": ["コスタリカ"],
+    "DOM": ["ドミニカ共和国"],
+    "BLR": ["ベラルーシ", "ミンスク"],
+    "EST": ["エストニア", "タリン"],
+    "LVA": ["ラトビア", "リガ"],
+    "LTU": ["リトアニア", "ビリニュス"],
+    "HRV": ["クロアチア", "ダルマチア"],
+    "SRB": ["セルビア", "ベオグラード"],
+    "BGR": ["ブルガリア", "ソフィア"],
+    "SYC": ["セーシェル"],
+    "WSM": ["サモア"],
+    "TON": ["トンガ"],
+    "PNG": ["パプアニューギニア"],
+    "LAO": ["ラオス", "ビエンチャン"],
+    "BRN": ["ブルネイ"],
+    "KGZ": ["キルギス"],
+    "TKM": ["トルクメニスタン"],
 }
 
 LAYER_KEYWORDS = {
@@ -428,7 +489,10 @@ TOPIC_KEYWORDS = [
     "鉄鉱石", "石炭", "原油", "天然ガス", "シェール", "再生可能エネルギー", "水力発電", "原子力",
     "鉄鋼業", "自動車", "半導体", "ICT", "経済特区", "EU", "ASEAN", "USMCA", "メルコスール",
     "人口", "少子高齢化", "都市圏", "移民", "ヒスパニック", "宗教", "イスラム教", "キリスト教",
-    "言語", "自然災害", "洪水", "地球温暖化", "砂漠化", "国際河川", "地形図", "GIS"
+    "言語", "自然災害", "洪水", "地球温暖化", "砂漠化", "国際河川", "地形図", "GIS",
+    "カカオ", "オリーブ", "ワイン", "綿花", "コーヒー", "天然ゴム", "パーム油",
+    "リチウム", "コバルト", "ウラン", "アルミニウム", "ボーキサイト", "地熱", "養殖",
+    "ハザードマップ", "観光", "世界遺産", "難民"
 ]
 
 
@@ -597,9 +661,16 @@ def compact_cjk(text: str) -> str:
 
 def extract_keywords_and_countries(text: str) -> tuple[list[str], list[str], list[str]]:
     clean_txt = compact_cjk(text)
+    clean_no_ind_noise = (
+        clean_txt.replace("インドネシア", "")
+        .replace("インド洋", "")
+        .replace("インドシナ", "")
+        .replace("インド・ヨーロッパ", "")
+    )
     countries: list[str] = []
     for iso3, kws in COUNTRY_KEYWORDS.items():
-        if any(kw in clean_txt for kw in kws):
+        hay = clean_no_ind_noise if iso3 == "IND" else clean_txt
+        if any(kw in hay for kw in kws):
             countries.append(iso3)
 
     layers: list[str] = []
@@ -838,23 +909,24 @@ def process_exam(exam_cfg: dict, overrides: dict) -> list[dict]:
                     clips.append((next_page, y0_n, y1_n))
                     raw_text_parts.append(extract_clip_text(next_page, y0_n, y1_n))
 
-        # 縦結合PNGを生成
+        # 縦結合PNGを生成（既に有効なクリップが存在する場合は上書きせずスキップ）
         out_png = clip_dir / f"{question_id}.png"
-        page_w = doc[start_page].rect.width
-        total_h = sum((c[2] - c[1]) for c in clips) + max(0, len(clips) - 1) * 8.0
-        merged_pdf = pymupdf.open()
-        merged_page = merged_pdf.new_page(width=page_w, height=max(100.0, total_h))
-        cur_y = 0.0
-        for p_idx, cy0, cy1 in clips:
-            seg_h = cy1 - cy0
-            dest_rect = pymupdf.Rect(0, cur_y, page_w, cur_y + seg_h)
-            src_rect = pymupdf.Rect(0, cy0, page_w, cy1)
-            merged_page.show_pdf_page(dest_rect, doc, p_idx, clip=src_rect)
-            cur_y += seg_h + 8.0
+        if not (out_png.exists() and out_png.stat().st_size > 1000):
+            page_w = doc[start_page].rect.width
+            total_h = sum((c[2] - c[1]) for c in clips) + max(0, len(clips) - 1) * 8.0
+            merged_pdf = pymupdf.open()
+            merged_page = merged_pdf.new_page(width=page_w, height=max(100.0, total_h))
+            cur_y = 0.0
+            for p_idx, cy0, cy1 in clips:
+                seg_h = cy1 - cy0
+                dest_rect = pymupdf.Rect(0, cur_y, page_w, cur_y + seg_h)
+                src_rect = pymupdf.Rect(0, cy0, page_w, cy1)
+                merged_page.show_pdf_page(dest_rect, doc, p_idx, clip=src_rect)
+                cur_y += seg_h + 8.0
 
-        pix = merged_page.get_pixmap(dpi=145, alpha=False)
-        pix.save(str(out_png))
-        merged_pdf.close()
+            pix = merged_page.get_pixmap(dpi=145, alpha=False)
+            pix.save(str(out_png))
+            merged_pdf.close()
 
         # メタデータ生成
         ov = m["override"]

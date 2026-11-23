@@ -115,7 +115,8 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "自然災害",
+        "アルミニウム"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d1_q4.png",
       "clipPdfPath": null,
@@ -256,11 +257,15 @@
         "LKA",
         "TUR",
         "NGA",
-        "KEN"
+        "KEN",
+        "MDV",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "プランテーション"
+        "プランテーション",
+        "天然ゴム",
+        "パーム油"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d2_q2.png",
       "clipPdfPath": null,
@@ -294,7 +299,8 @@
         "MYS",
         "GBR",
         "NLD",
-        "USA"
+        "USA",
+        "MDV"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -334,7 +340,8 @@
         "小麦",
         "トウモロコシ",
         "大豆",
-        "酪農"
+        "酪農",
+        "綿花"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d2_q4.png",
       "clipPdfPath": null,
@@ -369,7 +376,8 @@
         "CHN",
         "TWN",
         "THA",
-        "DEU"
+        "DEU",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -554,7 +562,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d3_q4.png",
       "clipPdfPath": null,
@@ -726,7 +734,8 @@
       "topicTags": [
         "トウモロコシ",
         "大豆",
-        "プランテーション"
+        "プランテーション",
+        "コーヒー"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d4_q3.png",
       "clipPdfPath": null,
@@ -758,7 +767,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "鉄鋼業",
-        "人口"
+        "人口",
+        "天然ゴム"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d4_q4.png",
       "clipPdfPath": null,
@@ -826,7 +836,9 @@
         "USA",
         "ARG",
         "COL",
-        "VEN"
+        "VEN",
+        "PRT",
+        "URY"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1008,11 +1020,12 @@
         "TWN",
         "GBR",
         "USA",
-        "AUS"
+        "AUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d5_q5.png",
       "clipPdfPath": null,
@@ -1046,7 +1059,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q1.png",
       "clipPdfPath": null,
@@ -1080,7 +1093,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q2.png",
       "clipPdfPath": null,
@@ -1114,7 +1127,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地形図"
+        "地形図",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q3.png",
       "clipPdfPath": null,
@@ -1148,7 +1162,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q4.png",
       "clipPdfPath": null,
@@ -1182,7 +1196,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q5.png",
       "clipPdfPath": null,
@@ -1216,7 +1230,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2015_main/2015_main_d6_q6.png",
       "clipPdfPath": null,

@@ -84,7 +84,8 @@
       "promptSummary": "問3コハルさんたちはまとめとして，気候変動などに関連した世界各地の自然災害の原因について，各班で調べてカードに書き出した。次のａ～ｄは，タカシさんの班とコハルさんの班のカードであり，次ページの会話文は，その内容について意見交換したときのものである。会話文中の空欄タにはａとｂのいずれか，空欄チにはｃとｄのいずれか，空欄ツには次ページの文ＧとＨのいずれかが当てはまる。空欄タとチのそれぞれに当てはまるカードと，空欄ツに当てはまる文との組...",
       "relatedCountries": [
         "THA",
-        "PER"
+        "PER",
+        "TZA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -124,7 +125,8 @@
       "relatedCountries": [
         "USA",
         "PER",
-        "AUS"
+        "AUS",
+        "TZA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -265,11 +267,12 @@
       "promptSummary": "問2次の図1中のカとキは，2000年と2017年のいずれかについて，漁獲量＊と養殖業生産量の合計の上位(1)か国を示したものであり，凡例ＥとＦは，漁獲量と養殖業生産量のいずれかである。2017年の図と養殖業生産量の凡例との正しい組合せを，下の(2)～(3)のうちから一つ選べ。9＊養殖業生産量を含まない。カ百万トンE F 80 5 20キ中国の数値には台湾，ホンコン，マカオを含まない。FAOSTATにより作成。図1 (2) (4) ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d2_q2.png",
       "clipPdfPath": null,
@@ -376,8 +379,9 @@
         "THA",
         "MYS",
         "PHL",
-        "IND",
-        "USA"
+        "USA",
+        "MDV",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -522,7 +526,8 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "人口",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d3_q3.png",
       "clipPdfPath": null,
@@ -592,7 +597,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
-        "都市圏"
+        "都市圏",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d3_q5.png",
       "clipPdfPath": null,
@@ -935,7 +941,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d5_q3.png",
       "clipPdfPath": null,
@@ -1034,7 +1040,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2021_main/2021_main_d5_q6.png",
       "clipPdfPath": null,

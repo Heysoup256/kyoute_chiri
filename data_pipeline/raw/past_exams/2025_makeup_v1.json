@@ -57,7 +57,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "オリーブ"
       ],
       "clipImagePath": "/data/clips/2025_makeup/2025_makeup_d1_q2.png",
       "clipPdfPath": null,
@@ -594,7 +594,9 @@
         "USA",
         "CAN",
         "BRA",
-        "NZL"
+        "NZL",
+        "CZE",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -635,7 +637,8 @@
         "TWN",
         "PHL",
         "IND",
-        "RUS"
+        "RUS",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -742,7 +745,6 @@
       "relatedCountries": [
         "JPN",
         "IDN",
-        "IND",
         "USA"
       ],
       "relatedLayerIds": [],
@@ -958,7 +960,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "観光"
       ],
       "clipImagePath": "/data/clips/2025_makeup/2025_makeup_d6_q2.png",
       "clipPdfPath": null,
@@ -988,7 +990,13 @@
       "promptSummary": "問3中央アメリカの国々には，歴史的な背景などにより社会構造に違いがみられる。次の図3中のサ～スは，中央アメリカの主な国＊における国土に占める農地面積の割合，GDPに占める第三次産業の割合，人種・民族構成に占めるアフリカ系の割合のいずれかを示したものである。指標名とサ～スとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。28＊国土面積が(3)万km2以上の13か国。バハマホンジュラスハイチドミニカ共和国ジャマイカパナマコスタ...",
       "relatedCountries": [
         "USA",
-        "MEX"
+        "MEX",
+        "CUB",
+        "PAN",
+        "JAM",
+        "GTM",
+        "CRI",
+        "DOM"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1064,7 +1072,8 @@
       "relatedCountries": [
         "USA",
         "CAN",
-        "MEX"
+        "MEX",
+        "CUB"
       ],
       "relatedLayerIds": [],
       "topicTags": [

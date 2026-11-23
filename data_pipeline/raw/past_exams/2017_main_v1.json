@@ -347,7 +347,8 @@
       "promptSummary": "問5次の図2中のア~ウは,石炭の生産量,輸出量,消費量のいずれかについて,上位8か国・地域とそれらが世界に占める割合を示したものである。指標名とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。50 % 25中国の数値には台湾,ホンコン,マカオを含まない。統計年次は2013年。IEA, Coわゾ襯砒〃により作成。ー150 - ( 2602ー150 )①アイウ②アウィ③ィアウ@イウア⑤ウアイ⑥ウィア生輸消産出費量量量",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -667,7 +668,8 @@
       "promptSummary": "問3次の図3は,いくつかの農作物の作付面積について,中国*全体に占める省* *ごとの割合を上位10省まで示したものであり,カ~クはイモ類,茶,野菜のいずれかである。カ~クと品目名との正しい組合せを,下の①~⑥のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。省に相当する市・自治区を含む。〇カキ20 %ク統計年次は2011年。『中国統計年により作成。①②③〇⑤⑥カイモ類イモ類茶茶野菜野菜キ茶野菜イモ類野菜イモ類茶野菜ク茶野菜イ...",
       "relatedCountries": [
         "CHN",
-        "TWN"
+        "TWN",
+        "MAC"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -778,7 +780,8 @@
       "relatedLayerIds": [],
       "topicTags": [
         "人口",
-        "言語"
+        "言語",
+        "観光"
       ],
       "clipImagePath": "/data/clips/2017_main/2017_main_d4_q6.png",
       "clipPdfPath": null,
@@ -915,7 +918,8 @@
       "relatedCountries": [
         "FRA",
         "DEU",
-        "ESP"
+        "ESP",
+        "PRT"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -1112,7 +1116,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "地理B"
+        "養殖"
       ],
       "clipImagePath": "/data/clips/2017_main/2017_main_d6_q5.png",
       "clipPdfPath": null,
