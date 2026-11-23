@@ -210,6 +210,7 @@ export interface PlaceEntry {
   photoUrl?: string;
   photoCaption?: string;
   photoCredit?: string;
+  skipCameraMove?: boolean;
 }
 
 export interface CountryData {
@@ -298,6 +299,7 @@ export interface GeoLayerProperties {
   photoUrl?: string;
   photoCaption?: string;
   photoCredit?: string;
+  skipCameraMove?: boolean;
 }
 
 export interface GeoCountryProperties {

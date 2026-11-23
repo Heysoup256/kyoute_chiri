@@ -3,7 +3,6 @@ import {
   ChevronDown,
   ChevronUp,
   CloudRainWind,
-  Compass,
   Layers,
   Palette,
   WifiOff,
@@ -66,12 +65,12 @@ interface WorldMapProps {
   onChangeMapColorMode: (mode: MapColorMode) => void;
   highlightedIso3s: string[] | null;
   markedIso3s: string[];
-  blindMode: boolean;
   layerVisibility: LayerVisibilityState;
   onToggleLayer: (layerType: GeoLayerType) => void;
   climateOverlay: ClimateOverlayState;
   onChangeClimateOverlay: (next: ClimateOverlayState) => void;
   focusedPlace: PlaceEntry | null;
+  mobileBottomOffsetVh?: number;
   onClearFocusedPlace: () => void;
   onClearSearchHighlight?: () => void;
   onSelectCountry: (iso3: string, fallbackNameEn?: string) => void;
@@ -95,12 +94,6 @@ interface LngTickItem {
 interface EdgeTickState {
   latTicks: LatTickItem[];
   lngTicks: LngTickItem[];
-}
-
-interface CoordReadoutState {
-  lat: number;
-  lng: number;
-  source: 'cursor' | 'center';
 }
 
 interface HoveredInfo {
@@ -476,12 +469,12 @@ export function WorldMap({
   onChangeMapColorMode,
   highlightedIso3s,
   markedIso3s,
-  blindMode,
   layerVisibility,
   onToggleLayer,
   climateOverlay,
   onChangeClimateOverlay,
   focusedPlace,
+  mobileBottomOffsetVh = 0,
   onClearFocusedPlace,
   onClearSearchHighlight,
   onSelectCountry,
@@ -491,10 +484,8 @@ export function WorldMap({
   const popupRef = useRef<maplibregl.Popup | null>(null);
   const isStyleReadyRef = useRef(false);
   const hoveredIdRef = useRef<number | string | null>(null);
-  const isCursorInsideRef = useRef(false);
 
   const onSelectCountryRef = useRef(onSelectCountry);
-  const blindModeRef = useRef(blindMode);
 
   const [hoveredInfo, setHoveredInfo] = useState<HoveredInfo | null>(null);
   const [isFallbackMode, setIsFallbackMode] = useState(false);
@@ -505,11 +496,6 @@ export function WorldMap({
   const [climateMenuOpen, setClimateMenuOpen] = useState<boolean>(false);
   const [showGraticule, setShowGraticule] = useState<boolean>(true);
   const showGraticuleRef = useRef(showGraticule);
-  const [coordReadout, setCoordReadout] = useState<CoordReadoutState>({
-    lat: 20,
-    lng: 20,
-    source: 'center',
-  });
   const [edgeTicks, setEdgeTicks] = useState<EdgeTickState>({
     latTicks: [],
     lngTicks: [],
@@ -560,9 +546,6 @@ export function WorldMap({
   useEffect(() => {
     onSelectCountryRef.current = onSelectCountry;
   }, [onSelectCountry]);
-  useEffect(() => {
-    blindModeRef.current = blindMode;
-  }, [blindMode]);
   useEffect(() => {
     enrichedGeoJsonRef.current = enrichedCountriesGeoJson;
   }, [enrichedCountriesGeoJson]);
@@ -1285,17 +1268,11 @@ export function WorldMap({
 
         isStyleReadyRef.current = true;
         setEdgeTicks(computeEdgeTicks(map, container, showGraticuleRef.current));
-        const initC = map.getCenter();
-        setCoordReadout({ lat: initC.lat, lng: wrapLng180(initC.lng), source: 'center' });
       });
 
       map.on('move', () => {
         if (!map || !container || !isStyleReadyRef.current) return;
         setEdgeTicks(computeEdgeTicks(map, container, showGraticuleRef.current));
-        if (!isCursorInsideRef.current) {
-          const c = map.getCenter();
-          setCoordReadout({ lat: c.lat, lng: wrapLng180(c.lng), source: 'center' });
-        }
       });
 
       const queryHitLayerFirst = (point: maplibregl.Point) => {
@@ -1329,12 +1306,6 @@ export function WorldMap({
 
       map.on('mousemove', (e: maplibregl.MapMouseEvent) => {
         if (!map || !isStyleReadyRef.current) return;
-        isCursorInsideRef.current = true;
-        setCoordReadout({
-          lat: e.lngLat.lat,
-          lng: wrapLng180(e.lngLat.lng),
-          source: 'cursor',
-        });
         const top = queryHitLayerFirst(e.point);
 
         if (!top) {
@@ -1427,8 +1398,8 @@ export function WorldMap({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: blindModeRef.current ? '？？？' : (props.nameJa || props.nameEn || ''),
-            subtitle: blindModeRef.current ? '暗記モード中（タップで確認）' : modeLabel,
+            title: props.nameJa || props.nameEn || '',
+            subtitle: modeLabel,
           });
         } else if (lid === 'capitals-points' || lid === 'capitals-minor-points') {
           const p = top.properties as { nameJa?: string; countryNameJa?: string };
@@ -1436,7 +1407,7 @@ export function WorldMap({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: blindModeRef.current ? '？？？' : `★ 首都: ${p.nameJa ?? ''}`,
+            title: `★ 首都: ${p.nameJa ?? ''}`,
             subtitle: `${p.countryNameJa ?? ''}（クリックで詳細）`,
           });
         } else if (lid === 'volcanoes-points') {
@@ -1445,7 +1416,7 @@ export function WorldMap({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: blindModeRef.current ? '？？？' : `▲ 火山: ${p.nameJa ?? ''}`,
+            title: `▲ 火山: ${p.nameJa ?? ''}`,
             subtitle: p.volcanoTypeJa ?? '',
           });
         } else if (lid === 'cities-climate-points') {
@@ -1454,7 +1425,7 @@ export function WorldMap({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: blindModeRef.current ? '？？？' : `${p.nameJa ?? ''}（${p.countryNameJa ?? ''}）`,
+            title: `${p.nameJa ?? ''}（${p.countryNameJa ?? ''}）`,
             subtitle: `気候区分 ${p.koppenCode ?? ''}（クリックで国詳細）`,
           });
         } else if (lid.startsWith('plate-')) {
@@ -1490,7 +1461,7 @@ export function WorldMap({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: blindModeRef.current ? '？？？' : (p.nameJa ?? '自然・地形レイヤー'),
+            title: p.nameJa ?? '自然・地形レイヤー',
             subtitle: p.subTypeJa || p.flowDirection
               ? `${p.subTypeJa ?? meta?.label ?? ''}（クリックで詳細・写真）`
               : `${meta?.label ?? ''}（クリックで詳細）`,
@@ -1500,9 +1471,6 @@ export function WorldMap({
 
       map.on('mouseout', () => {
         if (!map || !isStyleReadyRef.current) return;
-        isCursorInsideRef.current = false;
-        const c = map.getCenter();
-        setCoordReadout({ lat: c.lat, lng: wrapLng180(c.lng), source: 'center' });
         if (hoveredIdRef.current !== null) {
           map.setFeatureState({ source: 'countries-source', id: hoveredIdRef.current }, { hover: false });
           hoveredIdRef.current = null;
@@ -1865,6 +1833,11 @@ export function WorldMap({
       features: focusFeatures,
     });
 
+    if (focusedPlace.skipCameraMove) {
+      popupRef.current?.remove();
+      return;
+    }
+
     const curCenter = map.getCenter();
     const isLeftPanelCovering = controlsOpenRef.current && container.clientWidth >= 768;
     const visibleWorldLng = isPlaceComfortablyInViewport(
@@ -1960,8 +1933,6 @@ export function WorldMap({
     Number(climateOverlay.enso) +
     Number(climateOverlay.cyclone);
 
-  const coordTexts = formatCoordJa(coordReadout.lat, coordReadout.lng);
-
   return (
     <div className="relative h-full w-full overflow-hidden bg-blue-50">
       <div ref={mapContainerRef} className="h-full w-full" />
@@ -1990,24 +1961,26 @@ export function WorldMap({
         <div
           key={t.key}
           style={{ top: `${t.topPx}px` }}
-          className={`pointer-events-none absolute right-1.5 z-10 -translate-y-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none shadow-2xs ${
-            t.isEquator
-              ? 'bg-rose-600/90 font-extrabold text-white'
-              : t.isSpecial
-                ? 'border border-amber-300/80 bg-amber-50/90 font-semibold text-amber-800'
-                : 'border border-slate-300/70 bg-white/85 font-semibold text-slate-600'
-          }`}
+          className={`pointer-events-none absolute right-1.5 z-10 -translate-y-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none shadow-2xs ${t.isEquator
+            ? 'bg-rose-600/90 font-extrabold text-white'
+            : t.isSpecial
+              ? 'border border-amber-300/80 bg-amber-50/90 font-semibold text-amber-800'
+              : 'border border-slate-300/70 bg-white/85 font-semibold text-slate-600'
+            }`}
         >
           {t.label}
         </div>
       ))}
 
-      {/* 下端：経度目盛り（スマホではアトリビューションとの重なり防止で非表示） */}
+      {/* 下端（スマホでボトムシート表示時はシート直上）：経度目盛り */}
       {edgeTicks.lngTicks.map((t) => (
         <div
           key={t.key}
-          style={{ left: `${t.leftPx}px` }}
-          className={`pointer-events-none absolute bottom-1 z-10 hidden -translate-x-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none sm:block ${
+          style={{
+            left: `${t.leftPx}px`,
+            '--lng-bottom': mobileBottomOffsetVh > 0 ? `calc(${mobileBottomOffsetVh}vh + 6px)` : '4px',
+          } as React.CSSProperties}
+          className={`pointer-events-none absolute bottom-[var(--lng-bottom)] z-10 -translate-x-1/2 rounded px-1.5 py-0.5 font-mono text-[9.5px] leading-none shadow-2xs md:bottom-1 ${
             t.isPrime
               ? 'border border-slate-400/80 bg-white/92 font-extrabold text-slate-800'
               : 'border border-slate-300/70 bg-white/85 font-semibold text-slate-600'
@@ -2016,20 +1989,6 @@ export function WorldMap({
           {t.label}
         </div>
       ))}
-
-      {/* 左下：ライブ緯度・経度表示ピル */}
-      <div
-        className="pointer-events-none absolute bottom-9 left-2.5 z-10 inline-flex items-center gap-1.5 rounded-lg border border-slate-200/90 bg-white/92 px-2.5 py-1 font-mono text-[10.5px] font-semibold text-slate-800 shadow-xs backdrop-blur-xs sm:bottom-5 sm:left-3"
-        aria-label="緯度経度"
-      >
-        <Compass className="h-3.5 w-3.5 shrink-0 text-rose-600" />
-        <span>
-          {coordTexts.latText} / {coordTexts.lngText}
-        </span>
-        {coordReadout.source === 'center' && (
-          <span className="hidden text-[9.5px] font-normal text-slate-500 sm:inline">(中心)</span>
-        )}
-      </div>
 
       {/* ホバーツールチップ（デスクトップ用） */}
       {hoveredInfo && (
@@ -2381,29 +2340,6 @@ export function WorldMap({
   );
 }
 
-function wrapLng180(lng: number): number {
-  const n = ((((lng + 180) % 360) + 360) % 360) - 180;
-  return Object.is(n, -0) ? 0 : n;
-}
-
-function formatCoordJa(lat: number, lng: number): { latText: string; lngText: string } {
-  const clampedLat = Math.max(-90, Math.min(90, lat));
-  const wLng = wrapLng180(lng);
-  const latText =
-    Math.abs(clampedLat) < 0.05
-      ? '赤道 0.0°'
-      : `${clampedLat >= 0 ? '北緯' : '南緯'} ${Math.abs(clampedLat).toFixed(1)}°`;
-  let lngText: string;
-  if (Math.abs(wLng) < 0.05) {
-    lngText = '本初子午線 0.0°';
-  } else if (Math.abs(Math.abs(wLng) - 180) < 0.05) {
-    lngText = '経度 180.0°';
-  } else {
-    lngText = `${wLng >= 0 ? '東経' : '西経'} ${Math.abs(wLng).toFixed(1)}°`;
-  }
-  return { latText, lngText };
-}
-
 function buildGraticuleGeoJson(): FeatureCollection<Geometry> {
   const features: Feature<Geometry>[] = [];
 
@@ -2493,14 +2429,20 @@ function computeEdgeTicks(
       { key: '180', lng: 180, label: '180°' },
       { key: 'w120', lng: -120, label: '120°W' },
       { key: 'w60', lng: -60, label: '60°W' },
+      { key: 'e30', lng: 30, label: '30°E' },
+      { key: 'e90', lng: 90, label: '90°E' },
+      { key: 'e150', lng: 150, label: '150°E' },
+      { key: 'w150', lng: -150, label: '150°W' },
+      { key: 'w90', lng: -90, label: '90°W' },
+      { key: 'w30', lng: -30, label: '30°W' },
     ];
-    const minLeft = w >= 640 ? 195 : 44;
-    const maxRight = w >= 640 ? w - 315 : w - 50;
+    const minLeft = 22;
+    const maxRight = w - 38;
     for (const item of lngDefs) {
       for (const offset of [-360, 0, 360]) {
         const pt = map.project([item.lng + offset, 0]);
         if (pt.x < minLeft || pt.x > maxRight) continue;
-        if (lngTicks.some((existing) => Math.abs(existing.leftPx - pt.x) < 46)) continue;
+        if (lngTicks.some((existing) => Math.abs(existing.leftPx - pt.x) < 44)) continue;
         lngTicks.push({
           key: `${item.key}_${offset}`,
           label: item.label,

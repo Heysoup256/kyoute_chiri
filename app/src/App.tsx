@@ -1,26 +1,22 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import {
-  ArrowLeftRight,
   BookOpen,
   Compass,
-  Eye,
-  EyeOff,
   Filter,
   Loader2,
+  Search,
+  X,
 } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { z } from 'zod';
-import { CityCompareModal } from './components/charts/CityCompareModal';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
 import { ReverseSearchDrawer } from './components/study/ReverseSearchDrawer';
-import { buildPlaceMatcher } from './utils/places';
 import { useMarkedCountries } from './hooks/useMarkedCountries';
 import type {
   ClimateOverlayState,
   CountriesDataset,
-  CountryData,
   GeoCountryProperties,
   GeoLayerProperties,
   GeoLayerType,
@@ -34,6 +30,7 @@ import {
   IS_PUBLIC_MODE,
   normalizeKoppen13,
 } from './utils/constants';
+import { buildPlaceMatcher } from './utils/places';
 import {
   EMPTY_FILTERS,
   hasActiveFilters,
@@ -78,7 +75,7 @@ export function App() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [selectedIso3, setSelectedIso3] = useState<string | null>(null);
   const [fallbackNameEn, setFallbackNameEn] = useState<string | undefined>(undefined);
-  const [panelMinimized, setPanelMinimized] = useState<boolean>(false);
+  const [mobileSheetVh, setMobileSheetVh] = useState<number>(52);
   const [focusedPlace, setFocusedPlace] = useState<PlaceEntry | null>(null);
   const [mapColorMode, setMapColorMode] = useState<MapColorMode>('heatmap');
   const [layerVisibility, setLayerVisibility] = useState<LayerVisibilityState>(
@@ -92,13 +89,10 @@ export function App() {
     ensoPhase: 'normal',
     cyclone: false,
   });
-  const [blindMode, setBlindMode] = useState<boolean>(false);
 
-  // 学習ツール（検索・比較・過去問演習）のモーダル/ドロワー状態
+  // 検索・フィルターパネル＆過去問モーダル状態
   const [searchOpen, setSearchOpen] = useState<boolean>(false);
   const [filters, setFilters] = useState<SearchFilterCriteria>(EMPTY_FILTERS);
-  const [compareModalOpen, setCompareModalOpen] = useState<boolean>(false);
-  const [compareInitialCityId, setCompareInitialCityId] = useState<string | undefined>(undefined);
   const [examModalMode, setExamModalMode] = useState<'closed' | 'country' | 'archive'>('closed');
   const [examModalInitialId, setExamModalInitialId] = useState<string | undefined>(undefined);
 
@@ -219,15 +213,11 @@ export function App() {
   const handleSelectCountry = useCallback((iso3: string, nameEn?: string) => {
     setSelectedIso3(iso3);
     setFallbackNameEn(nameEn);
-    setPanelMinimized(false);
     setFocusedPlace(null);
   }, []);
 
   const handleFocusPlace = useCallback((place: PlaceEntry) => {
     setFocusedPlace(place);
-    if (typeof window !== 'undefined' && window.innerWidth < 768) {
-      setPanelMinimized(true);
-    }
   }, []);
 
   const handleClearFocusedPlace = useCallback(() => {
@@ -242,21 +232,6 @@ export function App() {
     if (!selectedIso3 || !pastExamsData) return [];
     return pastExamsData.questions.filter((q) => q.relatedCountries.includes(selectedIso3));
   }, [selectedIso3, pastExamsData]);
-
-  // 地域別に整理された国リスト（クイック選択用）
-  const groupedCountries = useMemo(() => {
-    if (!countriesData) return [];
-    const groups = new Map<string, CountryData[]>();
-    for (const c of Object.values(countriesData.countries)) {
-      const reg = c.region;
-      if (!groups.has(reg)) groups.set(reg, []);
-      groups.get(reg)!.push(c);
-    }
-    return Array.from(groups.entries()).map(([region, list]) => ({
-      region,
-      list: list.sort((a, b) => a.nameJa.localeCompare(b.nameJa, 'ja')),
-    }));
-  }, [countriesData]);
 
   // 87気候都市ポイント GeoJSON（ケッペン気候区分モードで重ねて表示）
   const citiesGeoJson = useMemo<FeatureCollection<Geometry>>(() => {
@@ -285,7 +260,7 @@ export function App() {
     return { type: 'FeatureCollection', features };
   }, [countriesData]);
 
-  // 逆引き検索の実行
+  // 検索・フィルターの実行
   const searchHits = useMemo(() => {
     if (!countriesData) return [];
     return searchCountries(countriesData.countries, filters);
@@ -296,14 +271,15 @@ export function App() {
     return searchHits.map((h) => h.country.iso3);
   }, [filters, searchHits]);
 
+  const activeFilterCount =
+    Number(Boolean(filters.koppenCode)) +
+    Number(Boolean(filters.rank)) +
+    Number(Boolean(filters.integration)) +
+    Number(Boolean(filters.examYear));
+
   const handleOpenCountryExamModal = useCallback((initialQuestionId?: string) => {
     setExamModalInitialId(initialQuestionId);
     setExamModalMode('country');
-  }, []);
-
-  const handleOpenCompareWithCity = useCallback((cityId: string) => {
-    setCompareInitialCityId(cityId);
-    setCompareModalOpen(true);
   }, []);
 
   if (loadError) {
@@ -349,15 +325,15 @@ export function App() {
 
   return (
     <div className="flex h-full w-full flex-col bg-slate-50">
-      {/* トップヘッダー（PC: 全機能1行 / スマホ: 上段ブランド＋クイック選択、下段ツールバー） */}
+      {/* トップヘッダー（スマホ: サイト名とすぐ入力できる検索バーのみ / PC: サイト名＋検索バー＋検索ボタン等） */}
       <header className="z-20 shrink-0 border-b border-slate-200 bg-white shadow-2xs">
-        <div className="flex h-14 items-center justify-between gap-2 px-3 md:px-5">
-          <div className="flex min-w-0 items-center gap-2">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white">
-              <Compass className="h-5 w-5" />
+        <div className="flex h-13 items-center justify-between gap-2.5 px-3 md:px-5">
+          <div className="flex shrink-0 items-center gap-2">
+            <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-indigo-600 text-white md:h-8 md:w-8">
+              <Compass className="h-4 w-4 md:h-5 md:w-5" />
             </div>
-            <div className="min-w-0">
-              <h1 className="truncate text-sm font-extrabold text-slate-900 md:text-base">
+            <div>
+              <h1 className="text-sm font-extrabold text-slate-900 md:text-base">
                 共テ地理ナビ
               </h1>
               <p className="hidden text-[11px] text-slate-500 xl:block">
@@ -368,177 +344,102 @@ export function App() {
             </div>
           </div>
 
-          {/* ツールボタン群（PC表示） */}
-          <div className="hidden items-center gap-1.5 lg:flex">
-            <button
-              type="button"
-              onClick={() => setSearchOpen((v) => !v)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${searchOpen || highlightedIso3s
-                ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
-                : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
-                }`}
-            >
-              <Filter className="h-3.5 w-3.5" />
-              逆引き検索
-              {highlightedIso3s && (
-                <span className="rounded-full bg-cyan-600 px-1.5 py-0.2 text-[10px] text-white">
-                  {highlightedIso3s.length}
-                </span>
-              )}
-            </button>
-
-            <button
-              type="button"
-              onClick={() => {
-                setCompareInitialCityId(undefined);
-                setCompareModalOpen(true);
-              }}
-              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
-            >
-              <ArrowLeftRight className="h-3.5 w-3.5 text-sky-600" />
-              2都市グラフ比較
-            </button>
-
-            {!IS_PUBLIC_MODE && (
-              <button
-                type="button"
-                onClick={() => {
-                  setExamModalInitialId(undefined);
-                  setExamModalMode('archive');
+          {/* すぐ入力できる検索バー（タップで入力開始と同時にフィルター＆候補パネルを展開） */}
+          <div className="flex min-w-0 flex-1 items-center justify-end gap-2">
+            <div className="relative min-w-0 flex-1 md:max-w-md">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+              <input
+                type="text"
+                aria-label="国名・地名・特産品・気候を検索"
+                value={filters.query}
+                onFocus={() => setSearchOpen(true)}
+                onClick={() => setSearchOpen(true)}
+                onChange={(e) => {
+                  setFilters((prev) => ({ ...prev, query: e.target.value }));
+                  setSearchOpen(true);
                 }}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
-              >
-                <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
-                過去問演習 ({pastExamsData.questions.length})
-              </button>
-            )}
-
-            <button
-              type="button"
-              onClick={() => setBlindMode((v) => !v)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${blindMode
-                ? 'border-amber-400 bg-amber-50 text-amber-800'
-                : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+                placeholder="国名・地名・気候・特産品を検索..."
+                className={`w-full rounded-full border py-1.5 pl-8 pr-14 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none ${
+                  searchOpen || highlightedIso3s
+                    ? 'border-cyan-500 bg-cyan-50/40'
+                    : 'border-slate-300 bg-slate-50'
                 }`}
-            >
-              {blindMode ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
-              暗記モード {blindMode ? 'ON' : 'OFF'}
-            </button>
+              />
+              <div className="absolute right-1.5 top-1/2 flex -translate-y-1/2 items-center gap-1">
+                {activeFilterCount > 0 && (
+                  <span className="rounded-full bg-cyan-600 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">
+                    {activeFilterCount}
+                  </span>
+                )}
+                {filters.query && (
+                  <button
+                    type="button"
+                    onClick={() => setFilters((prev) => ({ ...prev, query: '' }))}
+                    className="rounded-full p-0.5 text-slate-400 hover:bg-slate-200 hover:text-slate-700"
+                    aria-label="検索語句をクリア"
+                  >
+                    <X className="h-3.5 w-3.5" />
+                  </button>
+                )}
+              </div>
+            </div>
 
-            {markedCount > 0 && (
+            {/* PC表示用ボタン群（「検索」ボタン等） */}
+            <div className="hidden items-center gap-1.5 md:flex">
               <button
                 type="button"
-                onClick={() =>
-                  setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
-                }
-                className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${mapColorMode === 'marked'
-                  ? 'border-amber-400 bg-amber-100 text-amber-900'
-                  : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
-                  }`}
-                title="★マークを付けた国を地図上で強調表示切替"
+                onClick={() => setSearchOpen((v) => !v)}
+                className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
+                  searchOpen || highlightedIso3s
+                    ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
+                    : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'
+                }`}
               >
-                ★ マーク ({markedCount})
+                <Filter className="h-3.5 w-3.5" />
+                検索
+                {highlightedIso3s && (
+                  <span className="rounded-full bg-cyan-600 px-1.5 py-0.2 text-[10px] text-white">
+                    {highlightedIso3s.length}
+                  </span>
+                )}
               </button>
-            )}
+
+              {!IS_PUBLIC_MODE && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setExamModalInitialId(undefined);
+                    setExamModalMode('archive');
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
+                >
+                  <BookOpen className="h-3.5 w-3.5 text-indigo-600" />
+                  過去問演習 ({pastExamsData.questions.length})
+                </button>
+              )}
+
+              {markedCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() =>
+                    setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
+                  }
+                  className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition ${
+                    mapColorMode === 'marked'
+                      ? 'border-amber-400 bg-amber-100 text-amber-900'
+                      : 'border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100'
+                  }`}
+                  title="★マークを付けた国を地図上で強調表示切替"
+                >
+                  ★ マーク ({markedCount})
+                </button>
+              )}
+            </div>
           </div>
-
-          {/* 収録国ジャンプ（全デバイス共通） */}
-          <div className="flex items-center gap-1.5">
-            <select
-              aria-label="収録国を直接選択"
-              value={selectedIso3 && countriesData.countries[selectedIso3] ? selectedIso3 : ''}
-              onChange={(e) => {
-                if (e.target.value) handleSelectCountry(e.target.value);
-              }}
-              className="max-w-[155px] rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-xs font-medium text-slate-700 focus:border-indigo-500 focus:outline-none md:max-w-[200px]"
-            >
-              <option value="">全{totalCountriesCount}カ国から選択...</option>
-              {groupedCountries.map((grp) => (
-                <optgroup key={grp.region} label={grp.region}>
-                  {grp.list.map((c) => (
-                    <option key={c.iso3} value={c.iso3}>
-                      {isMarked(c.iso3) ? '★ ' : ''}
-                      {c.isBasicEntry ? `[基礎] ` : `[${c.examSummary.rank}] `}
-                      {c.nameJa}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-
-            <button
-              type="button"
-              onClick={() => setBlindMode((v) => !v)}
-              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1.5 text-xs font-bold lg:hidden ${blindMode
-                ? 'border-amber-400 bg-amber-50 text-amber-800'
-                : 'border-slate-300 bg-white text-slate-700'
-                }`}
-              aria-label="暗記モード切替"
-            >
-              {blindMode ? <EyeOff className="h-3.5 w-3.5" /> : <Eye className="h-3.5 w-3.5" />}
-              <span className="hidden sm:inline">暗記</span>
-            </button>
-          </div>
-        </div>
-
-        {/* モバイル・タブレット用サブツールバー */}
-        <div className="flex items-center gap-1.5 overflow-x-auto border-t border-slate-100 bg-slate-50 px-3 py-1.5 lg:hidden">
-          <button
-            type="button"
-            onClick={() => setSearchOpen((v) => !v)}
-            className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${searchOpen || highlightedIso3s
-              ? 'border-cyan-500 bg-cyan-50 text-cyan-800'
-              : 'border-slate-300 bg-white text-slate-700'
-              }`}
-          >
-            <Filter className="h-3 w-3" />
-            検索{highlightedIso3s ? `(${highlightedIso3s.length})` : ''}
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {
-              setCompareInitialCityId(undefined);
-              setCompareModalOpen(true);
-            }}
-            className="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700"
-          >
-            <ArrowLeftRight className="h-3 w-3 text-sky-600" />
-            都市比較
-          </button>
-
-          {!IS_PUBLIC_MODE && (
-            <button
-              type="button"
-              onClick={() => {
-                setExamModalInitialId(undefined);
-                setExamModalMode('archive');
-              }}
-              className="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700"
-            >
-              <BookOpen className="h-3 w-3 text-indigo-600" />
-              過去問{pastExamsData.questions.length}問
-            </button>
-          )}
-
-          {markedCount > 0 && (
-            <button
-              type="button"
-              onClick={() =>
-                setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
-              }
-              className={`inline-flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] font-bold ${mapColorMode === 'marked'
-                ? 'border-amber-400 bg-amber-100 text-amber-900'
-                : 'border-amber-200 bg-amber-50 text-amber-800'
-                }`}
-            >
-              ★ {markedCount}
-            </button>
-          )}
         </div>
       </header>
 
-      {/* メインワークスペース：左(検索ドロワー) ＋ 中央(地図) ＋ 右(国別詳細パネル) */}
+      {/* メインワークスペース：左(検索・フィルターパネル) ＋ 中央(地図) ＋ 右/下(国別詳細パネル) */}
       <main className="relative flex min-h-0 flex-1 overflow-hidden">
         <ReverseSearchDrawer
           isOpen={searchOpen}
@@ -546,6 +447,11 @@ export function App() {
           hits={searchHits}
           totalCountries={totalCountriesCount}
           examCoverage={countriesData.examCoverage}
+          markedCount={markedCount}
+          isMarkedMode={mapColorMode === 'marked'}
+          onToggleMarkedMode={() =>
+            setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'))
+          }
           onChangeFilters={setFilters}
           onSelectCountry={(iso) => {
             handleSelectCountry(iso);
@@ -573,68 +479,43 @@ export function App() {
             onChangeMapColorMode={setMapColorMode}
             highlightedIso3s={highlightedIso3s}
             markedIso3s={markedIso3s}
-            blindMode={blindMode}
             layerVisibility={layerVisibility}
             onToggleLayer={handleToggleLayer}
             climateOverlay={climateOverlay}
             onChangeClimateOverlay={setClimateOverlay}
             focusedPlace={focusedPlace}
+            mobileBottomOffsetVh={selectedIso3 ? mobileSheetVh : 0}
             onClearFocusedPlace={handleClearFocusedPlace}
             onClearSearchHighlight={() => setFilters(EMPTY_FILTERS)}
             onSelectCountry={handleSelectCountry}
           />
-
-          {selectedIso3 && panelMinimized && (
-            <div className="fixed inset-x-0 bottom-5 z-25 flex justify-center px-3 md:hidden">
-              <button
-                type="button"
-                onClick={() => setPanelMinimized(false)}
-                className="rounded-full bg-indigo-600 px-5 py-2 text-xs font-extrabold text-white shadow-lg ring-2 ring-white hover:bg-indigo-700"
-              >
-                {selectedCountry?.nameJa ?? fallbackNameEn ?? selectedIso3} の詳細に戻る
-              </button>
-            </div>
-          )}
-
-          {!selectedIso3 && !searchOpen && (
-            <div className="pointer-events-none absolute inset-x-0 bottom-16 z-10 flex justify-center px-3 sm:bottom-5">
-              <div className="rounded-full border border-slate-200 bg-white/95 px-4 py-1.5 text-center text-[11px] font-semibold text-slate-700 shadow-md backdrop-blur-xs md:text-xs">
-                {IS_PUBLIC_MODE
-                  ? '地図上の国・地形・首都・火山をタップして詳細・雨温図・出題履歴を表示'
-                  : '地図上の国・地形・首都・火山をタップして詳細・雨温図・過去問切り抜きを表示'}
-              </div>
-            </div>
-          )}
         </div>
 
         {selectedIso3 && (
-          <div className={panelMinimized ? 'hidden md:contents' : 'contents'}>
-            <CountryDetailPanel
-              key={selectedIso3}
-              iso3={selectedIso3}
-              fallbackNameEn={fallbackNameEn}
-              country={selectedCountry}
-              allCountries={countriesData.countries}
-              relatedQuestions={relatedQuestions}
-              blindMode={blindMode}
-              isMarked={isMarked(selectedIso3)}
-              placeMatcher={placeMatcher}
-              onFocusPlace={handleFocusPlace}
-              onToggleMark={toggleMark}
-              onCompareCity={handleOpenCompareWithCity}
-              onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
-              onClose={() => {
-                setSelectedIso3(null);
-                setPanelMinimized(false);
-                setFocusedPlace(null);
-              }}
-              onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
-            />
-          </div>
+          <CountryDetailPanel
+            key={selectedIso3}
+            iso3={selectedIso3}
+            fallbackNameEn={fallbackNameEn}
+            country={selectedCountry}
+            allCountries={countriesData.countries}
+            relatedQuestions={relatedQuestions}
+            isMarked={isMarked(selectedIso3)}
+            placeMatcher={placeMatcher}
+            mobileSheetVh={mobileSheetVh}
+            onChangeMobileSheetVh={setMobileSheetVh}
+            onFocusPlace={handleFocusPlace}
+            onToggleMark={toggleMark}
+            onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
+            onClose={() => {
+              setSelectedIso3(null);
+              setFocusedPlace(null);
+            }}
+            onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
+          />
         )}
       </main>
 
-      {/* 過去問閲覧・4択演習モーダル */}
+      {/* 過去問閲覧・4択演習モーダル（ローカルモードのみ） */}
       {!IS_PUBLIC_MODE && examModalMode !== 'closed' && (
         <PastExamModal
           isOpen={true}
@@ -642,17 +523,6 @@ export function App() {
           questions={examModalQuestions}
           initialQuestionId={examModalInitialId}
           onClose={() => setExamModalMode('closed')}
-        />
-      )}
-
-      {/* 2都市気候グラフ比較モーダル */}
-      {compareModalOpen && (
-        <CityCompareModal
-          key={compareInitialCityId ?? 'default'}
-          isOpen={true}
-          countries={countriesData.countries}
-          initialCityA={compareInitialCityId}
-          onClose={() => setCompareModalOpen(false)}
         />
       )}
     </div>

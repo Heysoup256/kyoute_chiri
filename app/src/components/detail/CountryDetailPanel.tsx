@@ -1,13 +1,10 @@
 import {
-  ArrowLeftRight,
   ArrowUpRight,
   Award,
   BookOpen,
   CheckCircle2,
   CloudSun,
   Compass,
-  Eye,
-  EyeOff,
   Factory,
   Globe2,
   Home,
@@ -22,7 +19,7 @@ import {
   Utensils,
   X,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type {
   CountryData,
   CountryRelation,
@@ -32,14 +29,13 @@ import type {
   PlaceEntry,
 } from '../../types/schema_v1';
 import { formatExamId, RANK_BADGE_CLASSES, RANK_LABELS } from '../../utils/constants';
+import type { PlaceMatcher } from '../../utils/places';
 import { ClimographChart } from '../charts/ClimographChart';
 import { HighlightVisualCard } from '../charts/HighlightVisualCard';
 import { HythergraphChart } from '../charts/HythergraphChart';
 import { IndustryTernaryChart } from '../charts/IndustryTernaryChart';
 import { PopulationPyramidChart } from '../charts/PopulationPyramidChart';
-import { ClozeTermButton } from '../study/ClozeText';
 import { RichGeoText } from '../study/RichGeoText';
-import type { PlaceMatcher } from '../../utils/places';
 
 const RELATION_CATEGORY_STYLE: Record<
   CountryRelation['category'],
@@ -57,12 +53,12 @@ interface CountryDetailPanelProps {
   country?: CountryData;
   allCountries?: Record<string, CountryData>;
   relatedQuestions: PastExamQuestion[];
-  blindMode: boolean;
   isMarked: boolean;
   placeMatcher?: PlaceMatcher | null;
+  mobileSheetVh: number;
+  onChangeMobileSheetVh: (vh: number) => void;
   onFocusPlace: (place: PlaceEntry) => void;
   onToggleMark: (iso3: string) => void;
-  onCompareCity: (cityId: string) => void;
   onSelectCountry: (iso3: string) => void;
   onClose: () => void;
   onOpenExamModal?: (initialQuestionId?: string) => void;
@@ -99,15 +95,11 @@ function formatJapaneseGdp(gdpBillion: number): string {
 
 function KnowledgeItemCard({
   item,
-  blindMode,
-  forceReveal,
   placeMatcher,
   onFocusPlace,
   onOpenQuestion,
 }: {
   item: KnowledgeItem;
-  blindMode: boolean;
-  forceReveal: boolean;
   placeMatcher?: PlaceMatcher | null;
   onFocusPlace: (place: PlaceEntry) => void;
   onOpenQuestion?: (questionId?: string) => void;
@@ -138,9 +130,6 @@ function KnowledgeItemCard({
           <h4 className="mt-1.5 text-sm font-bold text-slate-900">
             <RichGeoText
               text={item.label}
-              clozeTerms={item.clozeTerms}
-              blindMode={blindMode}
-              forceReveal={forceReveal}
               placeMatcher={placeMatcher}
               onFocusPlace={onFocusPlace}
             />
@@ -152,9 +141,6 @@ function KnowledgeItemCard({
         <p className="mt-1 text-xs font-medium text-indigo-700">
           <RichGeoText
             text={item.worldRankNote}
-            clozeTerms={item.clozeTerms}
-            blindMode={blindMode}
-            forceReveal={forceReveal}
             placeMatcher={placeMatcher}
             onFocusPlace={onFocusPlace}
           />
@@ -165,16 +151,13 @@ function KnowledgeItemCard({
         <p className="mt-1.5 text-xs leading-relaxed text-slate-600 md:text-[13px]">
           <RichGeoText
             text={item.detail}
-            clozeTerms={item.clozeTerms}
-            blindMode={blindMode}
-            forceReveal={forceReveal}
             placeMatcher={placeMatcher}
             onFocusPlace={onFocusPlace}
           />
         </p>
       )}
 
-      {/* タグと過去問リンク */}
+      {/* タグと出題履歴 */}
       <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2">
         <div className="flex flex-wrap gap-1">
           {item.tags?.map((tag) => (
@@ -218,7 +201,9 @@ function KnowledgeItemCard({
 }
 
 /**
- * 選択した国の詳細ビュー（PC: 右サイドパネル / スマホ: 全画面ボトムオーバーレイ）
+ * 選択した国の詳細ビュー
+ * - PC (md以上): 右サイドパネル
+ * - スマホ (md未満): 下からスライド出現し、ドラッグで高さを自由に調節して地図と同時に見られるボトムシート
  */
 export function CountryDetailPanel({
   iso3,
@@ -226,12 +211,12 @@ export function CountryDetailPanel({
   country,
   allCountries,
   relatedQuestions,
-  blindMode,
   isMarked,
   placeMatcher,
+  mobileSheetVh,
+  onChangeMobileSheetVh,
   onFocusPlace,
   onToggleMark,
-  onCompareCity,
   onSelectCountry,
   onClose,
   onOpenExamModal,
@@ -240,19 +225,160 @@ export function CountryDetailPanel({
   const [selectedCityId, setSelectedCityId] = useState<string>(
     () => country?.climate.cities[0]?.cityId ?? '',
   );
+  const [selectedKoppenCode, setSelectedKoppenCode] = useState<string | null>(null);
   const [chartMode, setChartMode] = useState<ChartViewMode>('both');
-  const [forceReveal, setForceReveal] = useState(false);
   const [zoomPhoto, setZoomPhoto] = useState<DailyLifePhoto | null>(null);
   const [failedPhotoUrls, setFailedPhotoUrls] = useState<Record<string, boolean>>({});
   const [showAllExamYears, setShowAllExamYears] = useState(false);
+
+  // スマホ用ボトムシートのスライドイン＆ドラッグ状態
+  const [sheetEntered, setSheetEntered] = useState(false);
+  const [isDraggingSheet, setIsDraggingSheet] = useState(false);
+  const dragStateRef = useRef<{
+    startY: number;
+    startVh: number;
+    moved: boolean;
+  } | null>(null);
+
+  useEffect(() => {
+    const raf = window.requestAnimationFrame(() => {
+      setSheetEntered(true);
+    });
+    return () => window.cancelAnimationFrame(raf);
+  }, []);
+
+  const activeCity =
+    country?.climate.cities.find((c) => c.cityId === selectedCityId) ??
+    country?.climate.cities[0];
+
+  const handlePlaceClick = useCallback(
+    (place: PlaceEntry) => {
+      onFocusPlace(place);
+      if (
+        !place.skipCameraMove &&
+        typeof window !== 'undefined' &&
+        window.innerWidth < 768 &&
+        mobileSheetVh > 45
+      ) {
+        onChangeMobileSheetVh(40);
+      }
+    },
+    [onFocusPlace, mobileSheetVh, onChangeMobileSheetVh],
+  );
+
+  // 気候タブ表示中は現在選択中の気候都市（または代表地点）をカメラ移動なしで自動ハイライト
+  useEffect(() => {
+    if (activeTab !== 'climate' || !country) return;
+    if (activeCity) {
+      onFocusPlace({
+        id: `clim-city-${activeCity.cityId}`,
+        name: `${activeCity.nameJa}（${activeCity.koppenCode}）`,
+        aliases: [],
+        category: `気候区分 ${activeCity.koppenCode}`,
+        summary: `${country.nameJa}の${activeCity.nameJa}（${activeCity.koppenCode}${activeCity.koppenNameJa ? ` / ${activeCity.koppenNameJa}` : ''}）`,
+        lng: activeCity.lng,
+        lat: activeCity.lat,
+        zoom: 6.5,
+        iso3: country.iso3,
+        skipCameraMove: true,
+      });
+      return;
+    }
+    const fallbackCity = country.topCities?.[0];
+    if (fallbackCity) {
+      const kCode = selectedKoppenCode ?? country.climate.koppenCodes[0] ?? '';
+      onFocusPlace({
+        id: `clim-country-${country.iso3}-${kCode}`,
+        name: `${country.nameJa}（${kCode}）`,
+        aliases: [],
+        category: `気候区分 ${kCode}`,
+        summary: `${country.nameJa}の代表気候区分（${kCode}）`,
+        lng: fallbackCity.lng,
+        lat: fallbackCity.lat,
+        zoom: 5.5,
+        iso3: country.iso3,
+        skipCameraMove: true,
+      });
+    }
+  }, [activeTab, activeCity, country, selectedKoppenCode, onFocusPlace]);
 
   if (!iso3) {
     return null;
   }
 
-  const activeCity =
-    country?.climate.cities.find((c) => c.cityId === selectedCityId) ??
-    country?.climate.cities[0];
+  const handleKoppenBadgeClick = (code: string) => {
+    setSelectedKoppenCode(code);
+    if (!country) return;
+    const matchedCity = country.climate.cities.find((c) => c.koppenCode === code);
+    if (matchedCity) {
+      setSelectedCityId(matchedCity.cityId);
+      onFocusPlace({
+        id: `clim-city-${matchedCity.cityId}`,
+        name: `${matchedCity.nameJa}（${matchedCity.koppenCode}）`,
+        aliases: [],
+        category: `気候区分 ${matchedCity.koppenCode}`,
+        summary: `${country.nameJa}の${matchedCity.nameJa}（${matchedCity.koppenCode}${matchedCity.koppenNameJa ? ` / ${matchedCity.koppenNameJa}` : ''}）`,
+        lng: matchedCity.lng,
+        lat: matchedCity.lat,
+        zoom: 6.5,
+        iso3: country.iso3,
+        skipCameraMove: true,
+      });
+      return;
+    }
+    const fallbackCity = activeCity ?? country.topCities?.[0];
+    if (fallbackCity) {
+      onFocusPlace({
+        id: `clim-code-${country.iso3}-${code}`,
+        name: `${country.nameJa}（${code}）`,
+        aliases: [],
+        category: `気候区分 ${code}`,
+        summary: `${country.nameJa}に分布する気候区分 ${code}`,
+        lng: fallbackCity.lng,
+        lat: fallbackCity.lat,
+        zoom: 5.5,
+        iso3: country.iso3,
+        skipCameraMove: true,
+      });
+    }
+  };
+
+  const handleSheetPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    dragStateRef.current = {
+      startY: e.clientY,
+      startVh: mobileSheetVh,
+      moved: false,
+    };
+    setIsDraggingSheet(true);
+    e.currentTarget.setPointerCapture(e.pointerId);
+  };
+
+  const handleSheetPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    const st = dragStateRef.current;
+    if (!st || typeof window === 'undefined') return;
+    const dy = st.startY - e.clientY;
+    if (Math.abs(dy) > 4) {
+      st.moved = true;
+    }
+    const deltaVh = (dy / Math.max(320, window.innerHeight)) * 100;
+    const nextVh = Math.round(Math.min(86, Math.max(22, st.startVh + deltaVh)));
+    onChangeMobileSheetVh(nextVh);
+  };
+
+  const handleSheetPointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    const st = dragStateRef.current;
+    dragStateRef.current = null;
+    setIsDraggingSheet(false);
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
+    if (st && !st.moved) {
+      // タップ時は「半分(52%) → 大きく(82%) → 低め(28%)」をサイクル切替
+      if (mobileSheetVh < 40) onChangeMobileSheetVh(52);
+      else if (mobileSheetVh < 70) onChangeMobileSheetVh(82);
+      else onChangeMobileSheetVh(28);
+    }
+  };
 
   const tabs: { id: DetailTab; shortLabel: string; label: string; icon: typeof Mountain }[] = [
     { id: 'overview', shortLabel: '概要', label: '概要・生活', icon: Sparkles },
@@ -265,24 +391,31 @@ export function CountryDetailPanel({
 
   return (
     <aside
-      className="fixed inset-x-0 bottom-0 top-14 z-30 flex flex-col bg-slate-50 shadow-2xl md:static md:inset-auto md:z-20 md:h-full md:w-[470px] md:shrink-0 md:border-l md:border-slate-200 lg:w-[540px]"
+      style={{ '--sheet-h': `${mobileSheetVh}vh` } as React.CSSProperties}
+      className={`fixed inset-x-0 bottom-0 z-30 flex h-[var(--sheet-h)] flex-col rounded-t-2xl border-t border-slate-300 bg-slate-50 shadow-2xl ${
+        isDraggingSheet ? '' : 'transition-transform duration-300 ease-out'
+      } ${sheetEntered ? 'translate-y-0' : 'translate-y-full'} md:static md:inset-auto md:z-20 md:h-full md:w-[470px] md:shrink-0 md:translate-y-0 md:rounded-none md:border-l md:border-t-0 md:border-slate-200 lg:w-[540px]`}
       aria-label="国別詳細パネル"
     >
+      {/* スマホ用ボトムシート・ドラッグハンドル（上下ドラッグで地図との分割比を自由調整） */}
+      <div
+        onPointerDown={handleSheetPointerDown}
+        onPointerMove={handleSheetPointerMove}
+        onPointerUp={handleSheetPointerUp}
+        onPointerCancel={handleSheetPointerUp}
+        className="flex cursor-ns-resize touch-none select-none flex-col items-center justify-center rounded-t-2xl bg-white pb-1 pt-2 md:hidden"
+        aria-label="上下にドラッグしてパネルの高さを調整"
+      >
+        <div className="h-1.5 w-11 rounded-full bg-slate-300" />
+      </div>
+
       {/* パネルヘッダー */}
-      <div className="border-b border-slate-200 bg-white px-4 py-3">
+      <div className="border-b border-slate-200 bg-white px-4 pb-2.5 pt-1 md:py-3">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2">
-              <h2 className="truncate text-lg font-extrabold text-slate-900 md:text-xl">
-                {country ? (
-                  blindMode && !forceReveal ? (
-                    <ClozeTermButton term={country.nameJa} forceReveal={forceReveal} />
-                  ) : (
-                    country.nameJa
-                  )
-                ) : (
-                  fallbackNameEn ?? iso3
-                )}
+              <h2 className="truncate text-base font-extrabold text-slate-900 md:text-xl">
+                {country ? country.nameJa : (fallbackNameEn ?? iso3)}
               </h2>
               <span className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-600">
                 {iso3}
@@ -302,18 +435,12 @@ export function CountryDetailPanel({
             </div>
 
             {country ? (
-              <p className="mt-1 text-xs text-slate-500">
+              <p className="mt-0.5 text-xs text-slate-500">
                 {country.nameEn} ／ {country.region}（{country.subRegion}） ／ 首都：
-                <strong className="text-slate-700">
-                  {blindMode ? (
-                    <ClozeTermButton term={country.capital} forceReveal={forceReveal} />
-                  ) : (
-                    country.capital
-                  )}
-                </strong>
+                <strong className="text-slate-700">{country.capital}</strong>
               </p>
             ) : (
-              <p className="mt-1 text-xs text-slate-500">
+              <p className="mt-0.5 text-xs text-slate-500">
                 {fallbackNameEn ?? ''}（詳細データ未登録）
               </p>
             )}
@@ -344,61 +471,48 @@ export function CountryDetailPanel({
           </div>
         </div>
 
-        {/* 暗記確認操作・出題履歴タグ・過去問ボタン */}
+        {/* 出題履歴タグ・過去問ボタン */}
         {country &&
           (!country.isBasicEntry ||
             country.examSummary.years.length > 0 ||
             relatedQuestions.length > 0) && (
-            <div className="mt-2.5 space-y-2">
-              <div className="flex flex-wrap items-center justify-between gap-1.5">
-                <div className="flex flex-wrap items-center gap-1">
-                  {country.examSummary.years.length > 0 && (
-                    <span className="text-[10px] font-bold text-slate-500">出題履歴</span>
-                  )}
-                  {(showAllExamYears
-                    ? [...country.examSummary.years].reverse()
-                    : [...country.examSummary.years].reverse().slice(0, 6)
-                  ).map((yr) => (
-                    <span
-                      key={yr}
-                      className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
-                    >
-                      {formatExamId(yr)}
-                    </span>
-                  ))}
-                  {country.examSummary.years.length > 6 && (
-                    <button
-                      type="button"
-                      onClick={() => setShowAllExamYears((v) => !v)}
-                      className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 transition hover:bg-slate-300"
-                      title={country.examSummary.years.map(formatExamId).join('、')}
-                    >
-                      {showAllExamYears
-                        ? '折りたたむ'
-                        : `+${country.examSummary.years.length - 6}回`}
-                    </button>
-                  )}
-                  {!country.isBasicEntry &&
-                    country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
-                      <span
-                        key={topic}
-                        className="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700"
-                      >
-                        ★ {topic}
-                      </span>
-                    ))}
-                </div>
-
-                {blindMode && (
+            <div className="mt-2 space-y-2">
+              <div className="flex flex-wrap items-center gap-1">
+                {country.examSummary.years.length > 0 && (
+                  <span className="text-[10px] font-bold text-slate-500">出題履歴</span>
+                )}
+                {(showAllExamYears
+                  ? [...country.examSummary.years].reverse()
+                  : [...country.examSummary.years].reverse().slice(0, 6)
+                ).map((yr) => (
+                  <span
+                    key={yr}
+                    className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
+                  >
+                    {formatExamId(yr)}
+                  </span>
+                ))}
+                {country.examSummary.years.length > 6 && (
                   <button
                     type="button"
-                    onClick={() => setForceReveal((v) => !v)}
-                    className="inline-flex items-center gap-1 rounded-md border border-amber-300 bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-800 hover:bg-amber-100"
+                    onClick={() => setShowAllExamYears((v) => !v)}
+                    className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 transition hover:bg-slate-300"
+                    title={country.examSummary.years.map(formatExamId).join('、')}
                   >
-                    {forceReveal ? <EyeOff className="h-3 w-3" /> : <Eye className="h-3 w-3" />}
-                    {forceReveal ? '隠す' : '全開示'}
+                    {showAllExamYears
+                      ? '折りたたむ'
+                      : `+${country.examSummary.years.length - 6}回`}
                   </button>
                 )}
+                {!country.isBasicEntry &&
+                  country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
+                    <span
+                      key={topic}
+                      className="rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-medium text-red-700"
+                    >
+                      ★ {topic}
+                    </span>
+                  ))}
               </div>
 
               {onOpenExamModal && relatedQuestions.length > 0 && (
@@ -426,7 +540,7 @@ export function CountryDetailPanel({
             地域データ未登録
           </h3>
           <p className="mt-1.5 max-w-sm text-xs leading-relaxed text-slate-500">
-            選択した地域の個別統計は未登録です。地図上の各国をクリックするか、ヘッダーの一覧・逆引き検索から対象国・地域を選択してください。
+            選択した地域の個別統計は未登録です。地図上の各国をタップするか、上部の検索バーから対象国・地域を選択してください。
           </p>
         </div>
       ) : (
@@ -472,11 +586,8 @@ export function CountryDetailPanel({
                     <p className="mt-2 text-xs leading-relaxed text-slate-700 md:text-[13px]">
                       <RichGeoText
                         text={country.quickOverview.summary}
-                        clozeTerms={country.examSummary.frequentTopics}
-                        blindMode={blindMode}
-                        forceReveal={forceReveal}
                         placeMatcher={placeMatcher}
-                        onFocusPlace={onFocusPlace}
+                        onFocusPlace={handlePlaceClick}
                       />
                     </p>
                     <ul className="mt-3 space-y-1.5 border-t border-indigo-100 pt-2.5">
@@ -489,10 +600,8 @@ export function CountryDetailPanel({
                           <span>
                             <RichGeoText
                               text={pt}
-                              blindMode={blindMode}
-                              forceReveal={forceReveal}
                               placeMatcher={placeMatcher}
-                              onFocusPlace={onFocusPlace}
+                              onFocusPlace={handlePlaceClick}
                             />
                           </span>
                         </li>
@@ -588,7 +697,7 @@ export function CountryDetailPanel({
                   <div className="rounded-xl border border-violet-200 bg-violet-50/50 p-3.5 shadow-2xs">
                     <div className="mb-2 flex items-center gap-1.5 text-xs font-extrabold text-violet-900">
                       <Compass className="h-3.5 w-3.5 text-violet-600" />
-                      注目地域・飛び地・特異地形（タップで地図移動）
+                      注目地域・飛び地・特異地形（タップで地図表示）
                     </div>
                     <div className="space-y-2">
                       {country.specialRegions.map((sr) => (
@@ -596,7 +705,7 @@ export function CountryDetailPanel({
                           key={sr.name}
                           type="button"
                           onClick={() =>
-                            onFocusPlace({
+                            handlePlaceClick({
                               id: `sr-${country.iso3}-${sr.name}`,
                               name: sr.name,
                               aliases: [],
@@ -771,10 +880,8 @@ export function CountryDetailPanel({
                     <p className="text-xs leading-relaxed text-slate-700">
                       <RichGeoText
                         text={country.dailyLife.summary}
-                        blindMode={blindMode}
-                        forceReveal={forceReveal}
                         placeMatcher={placeMatcher}
-                        onFocusPlace={onFocusPlace}
+                        onFocusPlace={handlePlaceClick}
                       />
                     </p>
 
@@ -800,10 +907,8 @@ export function CountryDetailPanel({
                           <span className="text-slate-700">
                             <RichGeoText
                               text={country.dailyLife.streetNote}
-                              blindMode={blindMode}
-                              forceReveal={forceReveal}
                               placeMatcher={placeMatcher}
-                              onFocusPlace={onFocusPlace}
+                              onFocusPlace={handlePlaceClick}
                             />
                           </span>
                         </div>
@@ -825,11 +930,7 @@ export function CountryDetailPanel({
                         key={belt}
                         className="rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-900"
                       >
-                        {blindMode ? (
-                          <ClozeTermButton term={belt} forceReveal={forceReveal} />
-                        ) : (
-                          belt
-                        )}
+                        {belt}
                       </span>
                     ))}
                   </div>
@@ -837,10 +938,8 @@ export function CountryDetailPanel({
                     <p className="mt-2.5 text-xs leading-relaxed text-slate-700 md:text-[13px]">
                       <RichGeoText
                         text={country.nature.summary}
-                        blindMode={blindMode}
-                        forceReveal={forceReveal}
                         placeMatcher={placeMatcher}
-                        onFocusPlace={onFocusPlace}
+                        onFocusPlace={handlePlaceClick}
                       />
                     </p>
                   )}
@@ -854,10 +953,8 @@ export function CountryDetailPanel({
                     <KnowledgeItemCard
                       key={item.id}
                       item={item}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
                     />
                   ))}
@@ -870,29 +967,36 @@ export function CountryDetailPanel({
               <div className="space-y-4">
                 <div className="rounded-xl border border-slate-200 bg-white p-3.5">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="text-xs font-bold text-slate-500">ケッペンの気候区分</div>
+                    <div className="text-xs font-bold text-slate-500">
+                      ケッペンの気候区分（タップで該当都市を地図ハイライト）
+                    </div>
                     <div className="flex flex-wrap gap-1">
-                      {country.climate.koppenCodes.map((code) => (
-                        <span
-                          key={code}
-                          className="rounded-md bg-sky-100 px-2 py-0.5 font-mono text-xs font-bold text-sky-800"
-                        >
-                          {blindMode ? (
-                            <ClozeTermButton term={code} forceReveal={forceReveal} />
-                          ) : (
-                            code
-                          )}
-                        </span>
-                      ))}
+                      {country.climate.koppenCodes.map((code) => {
+                        const isCodeActive =
+                          (activeCity && activeCity.koppenCode === code) ||
+                          selectedKoppenCode === code;
+                        return (
+                          <button
+                            key={code}
+                            type="button"
+                            onClick={() => handleKoppenBadgeClick(code)}
+                            className={`rounded-md border px-2 py-0.5 font-mono text-xs font-bold transition ${
+                              isCodeActive
+                                ? 'border-sky-600 bg-sky-600 text-white shadow-2xs'
+                                : 'border-sky-200 bg-sky-100 text-sky-800 hover:bg-sky-200'
+                            }`}
+                          >
+                            {code}
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
                   <p className="mt-2 text-xs leading-relaxed text-slate-700 md:text-[13px]">
                     <RichGeoText
                       text={country.climate.summary}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                     />
                   </p>
                 </div>
@@ -914,9 +1018,7 @@ export function CountryDetailPanel({
                           }`}
                         >
                           <MapPin className="h-3 w-3" />
-                          {blindMode && !forceReveal
-                            ? `都市 ${country.climate.cities.indexOf(city) + 1}`
-                            : `${city.nameJa} (${city.koppenCode})`}
+                          {`${city.nameJa} (${city.koppenCode})`}
                         </button>
                       );
                     })}
@@ -948,7 +1050,7 @@ export function CountryDetailPanel({
 
                 {!activeCity && (
                   <div className="rounded-xl border border-slate-200 bg-white p-4 text-xs leading-relaxed text-slate-600">
-                    この国・地域の代表都市別の月別気温・降水量（雨温図）は未収録です。地図左上の主題図「気候区分」で地域の気候帯分布を直接確認できるほか、ヘッダーの「2都市グラフ比較」から主要87都市の雨温図を比較できます。
+                    この国・地域の代表都市別の月別気温・降水量（雨温図）は未収録です。地図左上の主題図「気候区分」で地域の気候帯分布を直接確認できます。
                   </div>
                 )}
 
@@ -957,9 +1059,7 @@ export function CountryDetailPanel({
                     <div className="rounded-xl border border-sky-100 bg-sky-50/70 p-3 text-xs">
                       <div className="flex flex-wrap items-center justify-between gap-1 font-semibold text-slate-800">
                         <span>
-                          {blindMode && !forceReveal
-                            ? '暗記モード中（下のグラフ内で都市名を確認できます）'
-                            : `${activeCity.nameJa}（${activeCity.koppenNameJa ?? activeCity.koppenCode}）`}
+                          {`${activeCity.nameJa}（${activeCity.koppenNameJa ?? activeCity.koppenCode}）`}
                         </span>
                         <span className="font-mono text-[11px] text-slate-500">
                           緯度 {activeCity.lat.toFixed(1)}° / 経度 {activeCity.lng.toFixed(1)}°
@@ -977,54 +1077,18 @@ export function CountryDetailPanel({
                             </span>
                           ))}
                         </div>
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          {(!blindMode || forceReveal) && (
-                            <button
-                              type="button"
-                              onClick={() =>
-                                onFocusPlace({
-                                  id: `clim-city-${activeCity.cityId}`,
-                                  name: activeCity.nameJa,
-                                  aliases: [],
-                                  category: `気候都市（${activeCity.koppenCode}）`,
-                                  summary: `${country.nameJa}の${activeCity.nameJa}（${activeCity.koppenCode} / ${activeCity.koppenNameJa ?? ''}）`,
-                                  lng: activeCity.lng,
-                                  lat: activeCity.lat,
-                                  zoom: 6.5,
-                                  iso3: country.iso3,
-                                })
-                              }
-                              className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 hover:bg-indigo-50"
-                            >
-                              <Navigation className="h-3 w-3" />
-                              地図で位置を見る
-                            </button>
-                          )}
-                          <button
-                            type="button"
-                            onClick={() => onCompareCity(activeCity.cityId)}
-                            className="inline-flex items-center gap-1 rounded-lg border border-sky-300 bg-white px-2.5 py-1 text-[11px] font-bold text-sky-700 hover:bg-sky-50"
-                          >
-                            <ArrowLeftRight className="h-3 w-3" />
-                            他都市とグラフ比較
-                          </button>
-                        </div>
+                        <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2.5 py-0.5 text-[10.5px] font-bold text-amber-900">
+                          <MapPin className="h-3 w-3 text-amber-700" />
+                          地図上で位置をハイライト中
+                        </span>
                       </div>
                     </div>
 
                     {(chartMode === 'both' || chartMode === 'climograph') && (
-                      <ClimographChart
-                        city={activeCity}
-                        height={250}
-                        blindMode={blindMode && !forceReveal}
-                      />
+                      <ClimographChart city={activeCity} height={250} />
                     )}
                     {(chartMode === 'both' || chartMode === 'hythergraph') && (
-                      <HythergraphChart
-                        city={activeCity}
-                        height={260}
-                        blindMode={blindMode && !forceReveal}
-                      />
+                      <HythergraphChart city={activeCity} height={260} />
                     )}
                     {activeCity.dataSource && (
                       <p className="text-right text-[11px] text-slate-400">
@@ -1084,11 +1148,7 @@ export function CountryDetailPanel({
                         key={type}
                         className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-900"
                       >
-                        {blindMode ? (
-                          <ClozeTermButton term={type} forceReveal={forceReveal} />
-                        ) : (
-                          type
-                        )}
+                        {type}
                       </span>
                     ))}
                   </div>
@@ -1100,10 +1160,8 @@ export function CountryDetailPanel({
                     <KnowledgeItemCard
                       key={item.id}
                       item={item}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
                     />
                   ))}
@@ -1115,10 +1173,8 @@ export function CountryDetailPanel({
                     <KnowledgeItemCard
                       key={item.id}
                       item={item}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
                     />
                   ))}
@@ -1130,10 +1186,8 @@ export function CountryDetailPanel({
                     <KnowledgeItemCard
                       key={item.id}
                       item={item}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
                     />
                   ))}
@@ -1249,7 +1303,7 @@ export function CountryDetailPanel({
                           key={city.nameJa}
                           type="button"
                           onClick={() =>
-                            onFocusPlace({
+                            handlePlaceClick({
                               id: `tc-${country.iso3}-${idx}`,
                               name: city.nameJa,
                               aliases: [],
@@ -1269,7 +1323,7 @@ export function CountryDetailPanel({
                           <div className="min-w-0 flex-1">
                             <div className="flex flex-wrap items-center justify-between gap-1">
                               <span className="text-xs font-bold text-slate-900">
-                                {blindMode && !forceReveal ? `都市 ${idx + 1}` : city.nameJa}
+                                {city.nameJa}
                                 {city.isCapital && (
                                   <span className="ml-1.5 rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-800">
                                     首都
@@ -1300,14 +1354,7 @@ export function CountryDetailPanel({
                   <div>
                     <div className="font-bold text-slate-500">言語系統・公用語</div>
                     <p className="mt-1 font-medium text-slate-800">
-                      {blindMode ? (
-                        <ClozeTermButton
-                          term={country.cultureAndHistory.languageFamily}
-                          forceReveal={forceReveal}
-                        />
-                      ) : (
-                        country.cultureAndHistory.languageFamily
-                      )}
+                      {country.cultureAndHistory.languageFamily}
                     </p>
                     <div className="mt-1 flex flex-wrap gap-1">
                       {country.cultureAndHistory.officialLanguages.map((lang) => (
@@ -1355,11 +1402,7 @@ export function CountryDetailPanel({
                           key={org}
                           className="rounded-full border border-teal-200 bg-teal-50 px-2.5 py-0.5 font-semibold text-teal-800"
                         >
-                          {blindMode ? (
-                            <ClozeTermButton term={org} forceReveal={forceReveal} />
-                          ) : (
-                            org
-                          )}
+                          {org}
                         </span>
                       ))}
                     </div>
@@ -1378,10 +1421,8 @@ export function CountryDetailPanel({
                     <KnowledgeItemCard
                       key={item.id}
                       item={item}
-                      blindMode={blindMode}
-                      forceReveal={forceReveal}
                       placeMatcher={placeMatcher}
-                      onFocusPlace={onFocusPlace}
+                      onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
                     />
                   ))}
@@ -1405,7 +1446,7 @@ export function CountryDetailPanel({
               src={zoomPhoto.url}
               alt={zoomPhoto.caption}
               referrerPolicy="no-referrer"
-              className="max-h-[75vh] w-full object-contain bg-slate-900"
+              className="max-h-[75vh] w-full bg-slate-900 object-contain"
             />
             <div className="flex items-center justify-between gap-3 p-3 text-xs">
               <div>
