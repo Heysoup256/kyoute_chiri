@@ -7,10 +7,12 @@ import {
   Globe2,
   Loader2,
   MapPin,
+  PenTool,
   Search,
 } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { z } from 'zod';
+import { BlankMapView } from './components/blankmap/BlankMapView';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
 import { JapanAndMapView } from './components/guide/JapanAndMapView';
@@ -59,6 +61,7 @@ const PastExamsBasicSchema = z.object({
 
 const HEADER_VIEW_TABS: { id: AppViewMode; label: string; icon: typeof Globe2 }[] = [
   { id: 'map', label: '地図', icon: Globe2 },
+  { id: 'blank', label: '白地図', icon: PenTool },
   { id: 'rankings', label: '統計', icon: BarChart3 },
   { id: 'systematic', label: '系統', icon: BookOpen },
   { id: 'japan', label: '日本', icon: MapPin },
@@ -455,7 +458,7 @@ export function App() {
 
   return (
     <div className="flex h-full w-full flex-col bg-slate-50">
-      {/* 1行ヘッダー：サイト名 ＋ 4ビュー切替（地図・統計・系統・日本） ＋ コンパクト検索ボタン */}
+      {/* 1行ヘッダー：サイト名 ＋ 5ビュー切替（地図・白地図・統計・系統・日本） ＋ コンパクト検索ボタン */}
       <header className="z-20 shrink-0 border-b border-slate-200 bg-white shadow-2xs">
         <div className="flex h-12 items-center justify-between gap-1 px-2 md:h-13 md:gap-3 md:px-5">
           {/* サイト名 */}
@@ -464,8 +467,8 @@ export function App() {
               <Compass className="h-3.5 w-3.5 md:h-5 md:w-5" />
             </div>
             <div>
-              <h1 className="text-[12.5px] font-extrabold tracking-tight text-slate-900 md:text-base">
-                共テ地理ナビ
+              <h1 className="text-[12px] font-extrabold tracking-tight text-slate-900 md:text-base">
+                <span className="hidden sm:inline">共テ</span>地理ナビ
               </h1>
               <p className="hidden text-[11px] text-slate-500 xl:block">
                 {IS_PUBLIC_MODE
@@ -475,7 +478,7 @@ export function App() {
             </div>
           </div>
 
-          {/* 4ビュー切替セグメント（地図 / 統計 / 系統 / 日本） */}
+          {/* 5ビュー切替セグメント（地図 / 白地図 / 統計 / 系統 / 日本） */}
           <nav
             aria-label="学習モード切替"
             className="inline-flex shrink-0 items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5"
@@ -488,7 +491,7 @@ export function App() {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveView(tab.id)}
-                  className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[11px] font-extrabold transition md:px-3 md:py-1.5 md:text-xs ${
+                  className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[10.5px] font-extrabold transition sm:px-2 md:px-3 md:py-1.5 md:text-xs ${
                     active
                       ? 'bg-white text-indigo-700 shadow-xs'
                       : 'text-slate-600 hover:text-slate-900'
@@ -680,7 +683,28 @@ export function App() {
           )}
         </div>
 
-        {/* 2. 世界統計ランキング＆データブックビュー */}
+        {/* 2. 白地図クイズ＆ケッペン塗り絵ビュー */}
+        {activeView === 'blank' && (
+          <div className="h-full min-w-0 flex-1">
+            <BlankMapView
+              countriesData={countriesData}
+              countriesGeoJson={countriesGeoJson}
+              layersGeoJson={layersGeoJson}
+              capitalsGeoJson={capitalsGeoJson}
+              volcanoesGeoJson={volcanoesGeoJson}
+              thematicGrid={thematicGrid}
+              onOpenCountryInMap={(targetIso) => {
+                handleSelectCountry(targetIso);
+                setFlyToCountryRequest((prev) => ({
+                  iso3: targetIso,
+                  nonce: Math.max(Date.now(), (prev?.nonce ?? 0) + 1),
+                }));
+              }}
+            />
+          </div>
+        )}
+
+        {/* 3. 世界統計ランキング＆データブックビュー */}
         {activeView === 'rankings' && (
           <div className="h-full min-w-0 flex-1">
             <WorldRankingsView

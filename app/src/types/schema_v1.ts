@@ -386,7 +386,7 @@ export type MapColorMode =
   | 'marked'
   | 'plain';
 
-export type AppViewMode = 'map' | 'rankings' | 'systematic' | 'japan';
+export type AppViewMode = 'map' | 'blank' | 'rankings' | 'systematic' | 'japan';
 
 export type RankingCategory = 'agriculture' | 'resource' | 'industry' | 'society';
 
