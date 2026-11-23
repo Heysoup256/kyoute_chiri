@@ -12,6 +12,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { z } from 'zod';
 import { CountryDetailPanel } from './components/detail/CountryDetailPanel';
 import { PastExamModal } from './components/exam/PastExamModal';
+import { JapanAndMapView } from './components/guide/JapanAndMapView';
 import { SystematicGuideView } from './components/guide/SystematicGuideView';
 import { WorldRankingsView } from './components/guide/WorldRankingsView';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
@@ -24,6 +25,7 @@ import type {
   GeoCountryProperties,
   GeoLayerProperties,
   GeoLayerType,
+  JapanGeographyDataset,
   LayerVisibilityState,
   MapColorMode,
   PastExamsDataset,
@@ -66,6 +68,7 @@ export function App() {
   const [pastExamsData, setPastExamsData] = useState<PastExamsDataset | null>(null);
   const [worldRankingsData, setWorldRankingsData] = useState<WorldRankingsDataset | null>(null);
   const [systematicData, setSystematicData] = useState<SystematicGuideDataset | null>(null);
+  const [japanData, setJapanData] = useState<JapanGeographyDataset | null>(null);
   const [countriesGeoJson, setCountriesGeoJson] = useState<FeatureCollection<
     Geometry,
     GeoCountryProperties
@@ -111,6 +114,7 @@ export function App() {
   const [filters, setFilters] = useState<SearchFilterCriteria>(EMPTY_FILTERS);
   const [focusedRankingId, setFocusedRankingId] = useState<string | null>(null);
   const [focusedSystematicId, setFocusedSystematicId] = useState<string | null>(null);
+  const [focusedJapanRegionId, setFocusedJapanRegionId] = useState<string | null>(null);
   const [rankingHighlight, setRankingHighlight] = useState<{
     label: string;
     iso3s: string[];
@@ -143,6 +147,7 @@ export function App() {
           placesRes,
           rankingsRes,
           systematicRes,
+          japanRes,
           examsRes,
         ] = await Promise.all([
           fetch(`${base}data/countries_v1.json`),
@@ -157,6 +162,7 @@ export function App() {
           fetch(`${base}data/places_v1.json`),
           fetch(`${base}data/world_rankings_v1.json`),
           fetch(`${base}data/systematic_geography_v1.json`),
+          fetch(`${base}data/japan_geography_v1.json`),
           IS_PUBLIC_MODE ? Promise.resolve(null) : fetch(`${base}data/past_exams_v1.json`),
         ]);
 
@@ -173,6 +179,7 @@ export function App() {
           !placesRes.ok ||
           !rankingsRes.ok ||
           !systematicRes.ok ||
+          !japanRes.ok ||
           (!IS_PUBLIC_MODE && (!examsRes || !examsRes.ok))
         ) {
           throw new Error('静的データファイルの読み込みに失敗しました。');
@@ -191,6 +198,7 @@ export function App() {
           placesJson,
           rankingsJson,
           systematicJson,
+          japanJson,
           examsJson,
         ] = await Promise.all([
           cRes.json(),
@@ -205,6 +213,7 @@ export function App() {
           placesRes.json(),
           rankingsRes.json(),
           systematicRes.json(),
+          japanRes.json(),
           examsRes ? examsRes.json() : Promise.resolve(emptyPastExams),
         ]);
 
@@ -225,6 +234,7 @@ export function App() {
         setPlacesData((placesJson as { places?: PlaceEntry[] }).places ?? []);
         setWorldRankingsData(rankingsJson as WorldRankingsDataset);
         setSystematicData(systematicJson as SystematicGuideDataset);
+        setJapanData(japanJson as JapanGeographyDataset);
       } catch (err) {
         if (!cancelled) {
           setLoadError(err instanceof Error ? err.message : 'データ読込エラーが発生しました。');
@@ -502,6 +512,7 @@ export function App() {
           isMarkedMode={mapColorMode === 'marked'}
           rankingItems={worldRankingsData?.items}
           systematicTopics={systematicData?.topics}
+          japanRegions={japanData?.regions}
           onToggleMarkedMode={() => {
             setMapColorMode((prev) => (prev === 'marked' ? 'heatmap' : 'marked'));
             setActiveView('map');
@@ -521,6 +532,11 @@ export function App() {
           onSelectSystematic={(topicId) => {
             setFocusedSystematicId(topicId);
             setActiveView('systematic');
+            setSearchOpen(false);
+          }}
+          onSelectJapanRegion={(regionId) => {
+            setFocusedJapanRegionId(regionId);
+            setActiveView('japan');
             setSearchOpen(false);
           }}
           onClose={() => setSearchOpen(false)}
@@ -619,16 +635,17 @@ export function App() {
           </div>
         )}
 
-        {/* 4. 日本地理・地域調査ビュー（Phase 2bで完全実装予定） */}
+        {/* 4. 日本地理・地域調査＆地形図マスタービュー */}
         {activeView === 'japan' && (
-          <div className="flex h-full min-w-0 flex-1 flex-col items-center justify-center p-6 text-center">
-            <MapPin className="h-10 w-10 text-emerald-500" />
-            <h2 className="mt-3 text-base font-extrabold text-slate-800">
-              日本地理・地域調査＆地形図マスター
-            </h2>
-            <p className="mt-1 max-w-md text-xs text-slate-500">
-              次のステップで地形図新旧比較・地域調査手法・日本9地方データマップを追加します。
-            </p>
+          <div className="h-full min-w-0 flex-1">
+            <JapanAndMapView
+              key={focusedJapanRegionId ?? 'jp-default'}
+              dataset={japanData}
+              placeMatcher={placeMatcher}
+              focusedRegionId={focusedJapanRegionId}
+              onFocusPlace={handleFocusPlace}
+              onOpenJapanCountry={() => handleSelectCountry('JPN')}
+            />
           </div>
         )}
       </main>

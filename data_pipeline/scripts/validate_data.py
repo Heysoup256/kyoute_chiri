@@ -225,6 +225,21 @@ def main() -> None:
         if hits:
             errors.append(f"{fname}: 13区分以外のケッペンコードが残存しています: {sorted(set(hits))}")
 
+    # 学習図鑑・統計データブックの検証
+    for guide_name in ("world_rankings_v1.json", "systematic_geography_v1.json", "japan_geography_v1.json"):
+        gp = DATA_DIR / guide_name
+        if not gp.exists() or gp.stat().st_size < 5_000:
+            errors.append(f"学習データファイルが不足または空です: {guide_name}")
+    wr = json.loads((DATA_DIR / "world_rankings_v1.json").read_text(encoding="utf-8"))
+    sg = json.loads((DATA_DIR / "systematic_geography_v1.json").read_text(encoding="utf-8"))
+    jg = json.loads((DATA_DIR / "japan_geography_v1.json").read_text(encoding="utf-8"))
+    if len(wr.get("items", [])) < 30 or len(wr.get("scatters", [])) < 2:
+        errors.append("world_rankings_v1.json の品目または散布図数が不足しています")
+    if len(sg.get("topics", [])) < 30:
+        errors.append("systematic_geography_v1.json のトピック数が30未満です")
+    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 5:
+        errors.append("japan_geography_v1.json の地方または地形図スキル数が不足しています")
+
     if errors:
         print("VALIDATION FAILED:")
         for e in errors:
