@@ -1,0 +1,1197 @@
+{
+  "examId": "2017_main",
+  "year": 2017,
+  "session": "main",
+  "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2017_main_d1_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 2,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ",
+      "promptSummary": "第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ。(配点17 )ア・ウ・エ線A ~ Dの実距離は等しい。問1地球には多様な海底地形がみられる。次ページの図2中の①~〇は,図1中の線A ~ Dのいすれかに沿った海底の地形断面を示したものである。線Bに該当するものを,図2中の①~④のうちから一つ選べ。ただし,深さは強調して表現してある。ロー142ー( 2602ー142 ) 0 0ー2000ー2000ー4...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d1_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2北半球の高緯度の海域では,海氷の分布に違いがみられる",
+      "promptSummary": "問2北半球の高緯度の海域では,海氷の分布に違いがみられる。図1中に示した海域J ~ Mのうち,海氷に覆われにくい海域の組合せとして最も適当なものを,次の①~⑥のうちから一つ選べ。①②JとL③JとK JとM④KとL⑤KとM⑥LとMー143ー( 2602ー143 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d1_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3次の図3は,いくつかの地点における最寒月と最暖月の月平均気温,および最少雨月と最多雨月...",
+      "promptSummary": "問3次の図3は,いくつかの地点における最寒月と最暖月の月平均気温,および最少雨月と最多雨月の月降水量を示している。図3中のp ~ sは,図1中に示した地点ア~工のいずれかである。工に該当するものを,下の①~④のうちから一つ選べ。30 200 7月11月7月150 20 9月7月2月100 2月10 1月50 1 1月7月7月最寒月と最暖月の月平均気温最少雨月と最多雨月の月降水量気象庁の資料により作成。ー144ー( 2602ー144 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d1_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4次の図4は,アドリア海沿岸のヴェネッィア(ベネチア)周辺の地形を示したものである",
+      "promptSummary": "問4次の図4は,アドリア海沿岸のヴェネッィア(ベネチア)周辺の地形を示したものである。図4に関連したことがらについて述べた下の文章中の下線部①~〇のうちから,適当でないものを一つ選べ。0 0ノキ: /をす、アドリア海河川・水路10km DなⅣé″, 2008により作成。ヴェネッィア(ベネチア)周辺には,河川や海の営力によって形成された様々な地形がみられる。沿岸流で運ばれた砂や泥などによって構成される力の①がみられ,それによてアドリ...",
+      "relatedCountries": [
+        "ITA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d1_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5自然災害にともなう被害は,各地域の自然環境とともに社会・経済状況などに影響される",
+      "promptSummary": "問5自然災害にともなう被害は,各地域の自然環境とともに社会・経済状況などに影響される。次の図5は, 1978年から2008年の期間に世界で発生した自然災害*について,発生件数* * ,被害額,被災者数の割合を地域別に示したものであり,図5中のX ~ Zは,アジア,アフリカ,南北アメリカのいずれかである。x ~ zと地域名との正しい組合せを,下の①~⑥のうちから一つ選べ。5 *死者10人以上,被災者100人以上,非常事態宣言の発令,...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d1_q6",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6次の図6は,ある地域の火山防災マップである",
+      "promptSummary": "問6次の図6は,ある地域の火山防災マップである。図6から読み取れることがらを述べた文として下線部が適当でないものを,下の①~④のうちから一つ選6凡例想定噴火地点火山灰、、年間に最も多いサ:風向の場合に予ノ想される降灰範囲と厚さシ熱風部)火砕流スセ火砕流の本体土石流国道0 5自治体の資料により作成。①地点サの農地では,火山噴火が生じた場合,火山灰が降って農作物に被害が出る可能性がある。②地点シの国道では,火山噴火が終わった後にも,土...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1日本の農業とそれに関連したことがらについて述べた文として下線部が適当でないものを,次の①~〇のうちから一つ選べ。ロ①外国産の安価な農産物の輸入増加を受け,政府は農業経営の効率化を支援している。②消費者が食料品の生産地を知ることができるように,牛肉についてはトレーサビリティ(生産履歴追跡)制度が整備されている。③世界的に遺伝子組み換え作物の生産量が増えてお...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2次の図1は,いくつかの地域について,農林水産業*従事者1人当たりの農地面積とGDP (...",
+      "promptSummary": "問2次の図1は,いくつかの地域について,農林水産業*従事者1人当たりの農地面積とGDP (域内総生産)に占める農林水産業の割合を示したものであり,①~④は,アジア,アフリカ,オセアニア,北アメリカのいずれかである。アジアに該当するものを,図1中の①~④のうちから一つ選べ。*狩猟業を含む。20農林水産業の割合に占める10②ヨーロッパ0 0 20 40 60 80 100 ha農林水産業従事者1人当たりの農地面積統計年次は2010年。...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 2,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3バイオマスエネルギーとその利用について述べた文として適当でないものを,次の①~④のうち...",
+      "promptSummary": "問3バイオマスエネルギーとその利用について述べた文として適当でないものを,次の①~④のうちから一つ選べ。①EU (欧州連合)では,環境負荷を減らすために木くずなどを発電用の燃料として利用することが推進されている。②食用の穀物がエネルギー源として利用されることもあるため,食料価格の高騰をまねくおそれがある。③大規模な発電施設の開発を必要とするため,発展途上国ではほとんど利用されていない。〇燃焼しても大気中の二酸化炭素の総量に与える影...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の表1は,いくつかの国について,エネルギー輸入依存度*と鉱工業就業人口の割合を示した...",
+      "promptSummary": "問4次の表1は,いくつかの国について,エネルギー輸入依存度*と鉱工業就業人口の割合を示したものであり,①~〇は,イギリス,オーストラリア,ドイツ,日本のいずれかである。ドイツに該当するものを,表1中の①~④のうちから一つ選べ。* 1次エネルギーの総供給量に対する輸出入量の比率で,マイナス値は輸出量が輸入量を上回っていることを示す。(単位: % )エネルギー輸入依存度鉱工業就業人口の割合93. 7 17. 9 60. 5 21. 0...",
+      "relatedCountries": [
+        "JPN",
+        "GBR",
+        "DEU",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5次の図2中のア~ウは,石炭の生産量,輸出量,消費量のいずれかについて,上位8か国・地域...",
+      "promptSummary": "問5次の図2中のア~ウは,石炭の生産量,輸出量,消費量のいずれかについて,上位8か国・地域とそれらが世界に占める割合を示したものである。指標名とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。50 % 25中国の数値には台湾,ホンコン,マカオを含まない。統計年次は2013年。IEA, Coわゾ襯砒〃により作成。ー150 - ( 2602ー150 )①アイウ②アウィ③ィアウ@イウア⑤ウアイ⑥ウィア生輸消産出費量量量",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d2_q6",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次のカ~クの文は,デトロイト,バンコク,ロッテルダム(ユーロポート)のいずれかを中心と...",
+      "promptSummary": "問6次のカ~クの文は,デトロイト,バンコク,ロッテルダム(ユーロポート)のいずれかを中心とする工業地域の特徴をそれぞれ述べたものである。地域名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選、ロカ20世紀中頃に貨物輸送のための港湾施設が河川沿いに整備され,石油化学コンビナートが立地する大規模な臨海工業地域として発達した。キ水運をいかして,周辺地域で生産された粗鋼やエネルギー資源と結びつき, 20世紀初頭から大量生産方式により...",
+      "relatedCountries": [
+        "THA",
+        "NLD"
+      ],
+      "relatedLayerIds": [
+        "rv_rhine"
+      ],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d3_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市・村落と生活文化に関する次の問い(問1 ~ 5 )に答えよ",
+      "promptSummary": "第3問都市・村落と生活文化に関する次の問い(問1 ~ 5 )に答えよ。(配点15 )問1次の写真1中のア~工は,世界の都市でみられる住宅景観を示したものである。写真1中のア~工を説明した文として下線部が適当でないものを,下の①~④のうちから一つ選べ。この部分につきましてはこの部分につきましては著作権処理中の為著作権処理中の為現在公開できません現在公開できませんアイこの部分につきましてはこの部分につきましては著作権処理中の為著作権処...",
+      "relatedCountries": [
+        "CHN",
+        "DEU",
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d3_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2都市や村落の成り立ちについて述べた文として最も適当なものを,次の①~④のうちから一つ選べ",
+      "promptSummary": "問2都市や村落の成り立ちについて述べた文として最も適当なものを,次の①~④のうちから一つ選べ。①唐の長安を模して,放射・環状の街路網を特徴とする計画都市が,古代の日本にも建設された。②江戸時代の日本では,社会が安定したことで,主要な街道の中継点や分岐点に自治権をもつ自由都市が形成された。③西部開拓時代のアメリカ合衆国では,タウンシップ制のもとで,直交する道路に沿って家屋が隣接する集村が形成された。〇近代には,産業革命の進展にともな...",
+      "relatedCountries": [
+        "JPN",
+        "GBR",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d3_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の図1は,いくつかの国における人口の偏在の度合い*と1人当たり総生産の国内地域間格差...",
+      "promptSummary": "問3次の図1は,いくつかの国における人口の偏在の度合い*と1人当たり総生産の国内地域間格差を示したものであり,①~〇は,オーストラリア,オランダ,南アフリカ共和国,メキシコのいすれかである。オーストラリアに該当するものを,図1中の①~〇のうちから一つ選べ。ロ*総人口のうち,人口密度の高い上位10 %の地域に住む人口の比率。大きい③・1人当たり総生産の国内地域間格差インド①・②・・日本小さい低い高い人口の偏在の度合い統計年次は,人口...",
+      "relatedCountries": [
+        "JPN",
+        "IND",
+        "NLD",
+        "MEX",
+        "ZAF",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d3_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: とうしよ問4次の図2は,いくつかの時期における東京圏(島嶼部を除く東京都,神奈川県,埼玉県...",
+      "promptSummary": "とうしよ問4次の図2は,いくつかの時期における東京圏(島嶼部を除く東京都,神奈川県,埼玉県,千葉県)の市区町村別人口増加率を示したものであり,カ~クは, 1985年~ 1990年, 1995年~ 2000年, 2005年~ 2010年のいずれかである。図2中のカ~クについて古いものから年代順に正しく配列したものを,下の①~⑥のうちから一つ選べ。埼玉県東京都神奈川県千葉県◎東京都心部0 50kmカ10 %以上増加0 ~ 10 %増加...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d3_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図3は,老年人口率* ,老年人口の増加率,老年人口1 , 000人当たりの養護老人...",
+      "promptSummary": "問5次の図3は,老年人口率* ,老年人口の増加率,老年人口1 , 000人当たりの養護老人ホーム* *定員数を都道府県別に示したものである。図3に関することがらについて述べた下の文章中の下線部①~④のうちから,適当でないものをーっ選べ。17 *総人口に占める65歳以上の人口の割合。* *自宅での介護が難しい高齢者が入所する介護施設。1 3 3高位中位低位老年人口率老年人口の増加率老年人口1 , 000人当たりの養護老人ホーム定員数...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号18）",
+      "title": "第4問 問1: 第4問次の図1を見て,中国に関する下の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第4問次の図1を見て,中国に関する下の問い(問1 ~ 6 )に答えよ。(配点17 )チンハイ(青海)省0シャンハイ(上海)市M・0問1次のア~ウの文は,図1中のA ~ C付近のいずれかにみられる特徴的な地形について述べたものである。ア~ウとA ~ Cとの正しい組合せを,下の①~⑥のうちから一つ選べ。ア風で運ばれたレスが厚く堆積している高原がみられる。イ石灰岩が侵食されたタワーカルストがみられる。ウ氷河によって形成されたモレーンがみ...",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "氷河"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号19）",
+      "title": "第4問 問2: 問2次の図2中の①~④は,図1中のJ ~ Mのいずれかの都市における月平均気温と月降水量を...",
+      "promptSummary": "問2次の図2中の①~④は,図1中のJ ~ Mのいずれかの都市における月平均気温と月降水量をハイサーグラフで示したものである。Mに該当するものを,図2中の①~@のうちからーっ選べ。℃30 20月平均気温月平均気温11ー10ー20ー20 50 100 150 200 250 mm 50 100 150 200 250 mm月降水量月降水量℃20月平均気温月平均気温11 11ー10ー10ー20ー20 50 100 150 200 250...",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "ハイサーグラフ"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号20）",
+      "title": "第4問 問3: 問3次の図3は,いくつかの農作物の作付面積について,中国*全体に占める省* *ごとの割合を...",
+      "promptSummary": "問3次の図3は,いくつかの農作物の作付面積について,中国*全体に占める省* *ごとの割合を上位10省まで示したものであり,カ~クはイモ類,茶,野菜のいずれかである。カ~クと品目名との正しい組合せを,下の①~⑥のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。省に相当する市・自治区を含む。〇カキ20 %ク統計年次は2011年。『中国統計年により作成。①②③〇⑤⑥カイモ類イモ類茶茶野菜野菜キ茶野菜イモ類野菜イモ類茶野菜ク茶野菜イ...",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号21）",
+      "title": "第4問 問4: 問4次の図4は,中国各地の観測地点における,冬季の大気中の硫黄酸化物濃度を示したものである",
+      "promptSummary": "問4次の図4は,中国各地の観測地点における,冬季の大気中の硫黄酸化物濃度を示したものである。図4から読み取れることがらとその背景について述べた下の文章中の下線部①~@のうちから,適当でないものを一つ選べ。・高位第中位ロ低位観測値は2015年2月のもの。Harvard University Center for Geographic AnaIysisの資料により作成。中国では大気汚染が深刻化しており,原因物質の一つである硫黄酸化物の...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "KOR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭",
+        "経済特区"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 22,
+      "points": 2,
+      "questionLabel": "第4問 問5（解答番号22）",
+      "title": "第4問 問5: 問5中国では,沿海部と内陸部の経済発展に違いがある",
+      "promptSummary": "問5中国では,沿海部と内陸部の経済発展に違いがある。図1中のシャンハイ(上海)市とチンハイ(青海)省にかかわることがらについて述べた文として最も適当なものを,次の①~〇のうちから一つ選べ。①シャンハイ市では,都市出身者と農村出身者の戸籍の違いによる医療などの社会保障の格差は小さい。②シャンハイ市の経済成長は著しいが,冷蔵庫やカラーテレビの普及率はいまだに低い。③チンハイ省では西部大開発が進み,中国最大の油田から沿海部に石油が供給さ...",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "relatedLayerIds": [
+        "mr_himalaya"
+      ],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d4_q6",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号23）",
+      "title": "第4問 問6: 問6中国には,数多くの民族が居住している",
+      "promptSummary": "問6中国には,数多くの民族が居住している。少数民族が多く居住する地域にかかわることがらについて述べた文として適当でないものを,次の①~④のうちから一つ選べ。23①学校教育では,少数民族独自の言語の使用が認められていない。②漢族の人口が増加し,少数民族と漢族との摩擦や衝突が発生している。③少数民族の風俗習慣には独自性があり,漢族と異なる信仰や食文化もみられる。④地域独自の自然環境や文化が観光資源となり,観光客が増加している。ー160...",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d5_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号24）",
+      "title": "第5問 問1: 第5問スペインとドイツに関する次の問い(問1 ~ 5 )に答えよ",
+      "promptSummary": "第5問スペインとドイツに関する次の問い(問1 ~ 5 )に答えよ。(配点14 )問1次の図1はスペインとドイツの国土を模式的に示したものである。また,下の図2中のアとイは,図1中のXとYのいずれかの経線*に沿った標高の分布を示したものであり,次ページの図3中のAとBは,図1中のxとYのいずれかの経線に沿った年降水量の分布を示したものである。図2中のアとイおよび図3中のAとBのうち,ドイツに該当する正しい組合せを,次ページの①~④の...",
+      "relatedCountries": [
+        "IND",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d5_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 25,
+      "points": 2,
+      "questionLabel": "第5問 問2（解答番号25）",
+      "title": "第5問 問2: 問2次の図4は,スペインとドイツにおけるいくつかの農作物の主な産地を示したものであり,①~...",
+      "promptSummary": "問2次の図4は,スペインとドイツにおけるいくつかの農作物の主な産地を示したものであり,①~④はオリープ,小麦,ブドウ,ライ麦のいずれかである。ブドウに該当するものを,図4中の①~@のうちから一つ選べ。スペインドイツD尾ルél〃, 2008により作成。ー163ー( 2602ー163 )",
+      "relatedCountries": [
+        "IND",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d5_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号26）",
+      "title": "第5問 問3: 問3次の図5は,スペインとドイツの国土を四分割*したものであり,下の図6中の力とキは,図5...",
+      "promptSummary": "問3次の図5は,スペインとドイツの国土を四分割*したものであり,下の図6中の力とキは,図5のように分割した範囲に含まれるスペインとドイツのいすれかの人口規模上位20位までの都市について,都市数を示したものである。また,次ページの表1は,スペインとドイツの人口規模上位5都市における日系現地法人数* *を示したものであり, DとEはスペインまたはドイツのいずれかである。図6中の力とキおよび表1中のDとEのうち,ドイツに該当する正しい組...",
+      "relatedCountries": [
+        "JPN",
+        "IND",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d5_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号27）",
+      "title": "第5問 問4: 問4スペインとドイツはともにEU (欧州連合)諸国と密接な経済関係がある",
+      "promptSummary": "問4スペインとドイツはともにEU (欧州連合)諸国と密接な経済関係がある。次の図7は,いくつかの国におけるそれそれの国に対する輸出額を示したものであり,サ~セはスペイン,ドイツ,フランス,ポルトガルのいずれかである。スペインに該当するものを,下の①~〇のうちから一つ選べ。ロ単位: 10億ドル132 94 42 31 39 50 15 23統計年次は2013年。UN Comtradeにより作成。①サー166ー( 2602ー166 )",
+      "relatedCountries": [
+        "FRA",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d5_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号28）",
+      "title": "第5問 問5: 問5スペインとドイツの移民および外国旅行について述べた次の文章中の下線部①~〇のうちから,...",
+      "promptSummary": "問5スペインとドイツの移民および外国旅行について述べた次の文章中の下線部①~〇のうちから,適当でないものを一つ選、。スペインには,歴史的経緯や文化の共通性により, 1南アジアからの移民が多い。ドイツにはトルコからの移民労働者が多く流入し,西ドイツの経済発展に大きな役割を果たした。外国旅行をみると,ドイツもスペインも海外への旅行者の送り出し,海外からの旅行者の受け入れが活発である。外国旅行の送り出し数と受け入れ数を比較すると,③ドイ...",
+      "relatedCountries": [
+        "TUR",
+        "DEU",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "移民"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q1",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号29）",
+      "title": "第6問 問1: 問1ノゾミさんは,壱岐島に向かう前に,次の図2の20万分の1地勢図(原寸,一部改変)を使っ...",
+      "promptSummary": "問1ノゾミさんは,壱岐島に向かう前に,次の図2の20万分の1地勢図(原寸,一部改変)を使って壱岐島の地形を調べた。図2から読み取れる地形について説明した下の文章中の下線部①~〇のうちから,適当でないものを一つ選べ。29赤瀬鼻芦辺港壱岐島は溶岩台地が広い範囲を占める平坦な島で,①最も高い地点の標高うちめは100m以下である。地点X付近は島内で最も広い沖積平野であり,内海に流入する河川の流域に属する。3島の西部にはリアス海岸がみられ,...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "リアス海岸"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q2",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号30）",
+      "title": "第6問 問2: 問2芦辺港に着いたノゾミさんは周囲の景観を観察した",
+      "promptSummary": "問2芦辺港に着いたノゾミさんは周囲の景観を観察した。次の図3は,図2中のYの範囲における1926年と2006年に発行された2万5千分の1地形図(原寸,一部改変)である。図3から読み取れるこの地域の変化について述べた文として最も適当なものを,次ページの①~④のうちから一つ選べ。30 1926年当田」騰: S谷・芦辺港、村河(、、2006年辺大橋匸=コ匚こコ匚:コ匚ニこコー170ー( 2602ー17のとうだふれ①芦辺から当田触へ向かっ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "水力発電",
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q3",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号31）",
+      "title": "第6問 問3: 問3ノゾミさんは,芦辺港周辺を歩いて観察するうち,地形や農地の景観の違いに気づいた",
+      "promptSummary": "問3ノゾミさんは,芦辺港周辺を歩いて観察するうち,地形や農地の景観の違いに気づいた。次の写真1中のA ~ cは,図3中のア~ウのいずれかの地点において矢印の方向を撮影したものである。A ~ cとア~ウとの正しい組合せを,下の①~⑥のうちから一つ選べ。ロ写真①アイウ②アウィ③ィアウ〇イウア⑤ウアイ⑥ウィア< Oー171ー( 2602ー171 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q4",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 32,
+      "points": 2,
+      "questionLabel": "第6問 問4（解答番号32）",
+      "title": "第6問 問4: 問4バスで壱岐島を回ったノゾミさんは,図2中のz付近で,背後に樹林をともなった民家が数多く...",
+      "promptSummary": "問4バスで壱岐島を回ったノゾミさんは,図2中のz付近で,背後に樹林をともなった民家が数多くあることに気づき,図書館に立ち寄って収集した資料かせどのやまら,その樹林が背戸山と呼ばれることを知った。次の図4は,その資料に掲載されていた,背戸山を備える伝統的な民家の模式図である。この背戸山が形成された主な目的を述べた文として最も適当なものを,下の①~④のうちから一っ選べ。この部分につきましては著作権処理中の為現在公開できません加藤仁美・...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q5",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号33）",
+      "title": "第6問 問5: 問5芦辺港に戻って漁港を見学したノゾミさんは,漁業協同組合で話を聞くことにした",
+      "promptSummary": "問5芦辺港に戻って漁港を見学したノゾミさんは,漁業協同組合で話を聞くことにした。次ページのノゾミさんと漁業協同組合職員との会話文中の空欄力とキに当てはまる語の正しい組合せを,次ページの①~④のうちから一つ選べ。33ノゾミ「壱岐島では漁業が盛んなのですね。どんなものがとれるのですか」職員「ウニやマグロ,プリも有名だけど,最も多いのはやつばりイカだね。イカ釣り漁船がたくさん見えるだろう」ノゾミ「壱岐島の周りは好漁場になっているというこ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q6",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号34）",
+      "title": "第6問 問6: 問6壱岐島の離島としての特徴に関心をもったノゾミさんは,いくつかの社会的な指標から壱岐市と...",
+      "promptSummary": "問6壱岐島の離島としての特徴に関心をもったノゾミさんは,いくつかの社会的な指標から壱岐市と長崎県内の他の市町とを比較した。次の図5は,長崎県内の人口5万人以上の市の分布と,長崎県におけるいくつかの指標を市町ごとに示したものであり, E—Gは,居住する市町内で買い物をする割合* ,小学校の複式学級率* * ,人口1 , 000人当たりの医師数のいずれかである。指標名とE ~ Gとの正しい組合せを,次ページの①~⑥のうちから一つ選、*...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_main_d6_q7",
+      "examId": "2017_main",
+      "year": 2017,
+      "session": "main",
+      "sessionLabel": "2017年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 7,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問7（解答番号35）",
+      "title": "第6問 問7: 問7ノゾミさんは,壱岐島の自然災害や防災について詳しく調べることにした",
+      "promptSummary": "問7ノゾミさんは,壱岐島の自然災害や防災について詳しく調べることにした。調査の目的とその方法について述べた文として適当でないものを,次の①~④のうちから一つ選べ。35①壱岐島と九州本土を結ふ船が欠航した日の風の強さや波の高さを知るために,気象庁のウエプサイトを参照する。②近世以降に発生した災害やその対策について調べるために,壱岐島の郷土史に関する文献を参照する。③近年発生した大雨による災害にともなう被災家屋や被災者の数を知るために...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_main/2017_main_d6_q7.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

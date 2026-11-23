@@ -128,9 +128,20 @@ def main() -> None:
         if not is_basic and len(c.get("topCities", [])) < 1:
             errors.append(f"{iso3}: topCities が未登録です")
 
+    raw_past_exams_dir = ROOT_DIR / "data_pipeline" / "raw" / "past_exams"
+    raw_exam_files = list(raw_past_exams_dir.glob("*_v1.json"))
+    expected_q_count = sum(
+        len(json.loads(ep.read_text(encoding="utf-8")).get("questions", []))
+        for ep in raw_exam_files
+    )
+
     questions = past_exams_json.get("questions", [])
-    if len(questions) != 180:
-        errors.append(f"過去問設問数が180ではありません: {len(questions)}")
+    if len(questions) != expected_q_count or len(questions) < 700:
+        errors.append(
+            f"過去問設問数が期待値({expected_q_count})または最低700問と一致しません: {len(questions)}"
+        )
+    if len(countries_json.get("examCoverage", [])) < 22:
+        errors.append(f"収録試験回数が22回未満です: {len(countries_json.get('examCoverage', []))}")
 
     seen_qids = set()
     for q in questions:

@@ -99,7 +99,18 @@ export const EXAM_ID_LABELS: Record<string, string> = {
 };
 
 export function formatExamId(examId: string): string {
-  return EXAM_ID_LABELS[examId] ?? examId;
+  if (EXAM_ID_LABELS[examId]) return EXAM_ID_LABELS[examId];
+  const m = /^(\d{4})_(main|makeup)$/.exec(examId);
+  if (!m) return examId;
+  const yr = Number(m[1]);
+  const sess = m[2];
+  if (yr === 2021) {
+    return sess === 'main' ? '2021第1日程' : '2021第2日程';
+  }
+  if (yr <= 2020) {
+    return `${yr}センター${sess === 'main' ? '本試' : '追試'}`;
+  }
+  return `${yr}${sess === 'main' ? '本試' : '追試'}`;
 }
 
 /** 地図の主題図・塗り分けモード定義 */

@@ -1,0 +1,1235 @@
+{
+  "examId": "2015_main",
+  "year": 2015,
+  "session": "main",
+  "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2015_main_d1_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 2,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ",
+      "promptSummary": "第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ。(配点16 )東経20度東経120度北緯80度~南緯60度の範囲を示す。問1次のア~ウの文は,図1中のA ~ cに位置するいずれかの山脈や高原にみられる地形の特徴を述べたものである。ア~ウとA ~ cとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ロおおア地殻変動がほとんど起きていない地域であり,玄武岩に覆われた起伏の小さな高原状の地形となっ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d1_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2次の図2は,図1中のE , Fの経線上の月降水量を示したものであり,図2中の①~④は,...",
+      "promptSummary": "問2次の図2は,図1中のE , Fの経線上の月降水量を示したものであり,図2中の①~④は, Eの1月, Eの7月, Fの1月, Fの7月のいすれかである。Eの1月に該当するものを,図2中の①~@のうちから一つ選べ。600 600 500 500 400 400 300 300 200 200 100 100 0 0 80。N 40。N 0。40。S 60。S 80。N 40。N 0。40。S 60。S 600 600 500 50...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d1_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3次の図3は,乾燥地域にあるいくつかの地点について,最暖月と最寒月の月平均気温を示したも...",
+      "promptSummary": "問3次の図3は,乾燥地域にあるいくつかの地点について,最暖月と最寒月の月平均気温を示したものであり,①~④は,図1中の地点J ~ Mのいすれかである。Kに該当するものを,図3中の①~〇のうちから一つ選べ。℃最暖月最寒月①②③④『理科年表』などにより作成。",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d1_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 2,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4図1中のP ~ Sでみられる土壌の特徴と成因を述べた文として適当でないものを,次の①~...",
+      "promptSummary": "問4図1中のP ~ Sでみられる土壌の特徴と成因を述べた文として適当でないものを,次の①~④のうちから一つ選べ。①Pでは,腐植の集積や,風化作用にともない,褐色の土壌が形成される。ようだっ②Qでは,鉄分の溶脱が進み,灰白色の土壌が形成される。③Rでは,水分の蒸発により塩類が集積し,灰色の土壌が形成される。〇sでは,鉄やアルミニウムが集積し,赤色の土壌が形成される。ー142ー( 2602ー142 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d1_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5世界各地では,その土地の気候条件や地質条件によって異なる侵食作用がはたらき,多様な地形...",
+      "promptSummary": "問5世界各地では,その土地の気候条件や地質条件によって異なる侵食作用がはたらき,多様な地形がみられる。次の写真1は,それぞれ図1中の地点xとyで撮影されたものである。写真1にみられる地形を説明した下の文章中の空欄力とキに当てはまる語句の正しい組合せを,下の①~〇のうちから一つ選べ。5この部分につきましてはこの部分につきましては著作権処理中の為著作権処理中の為現在公開できません現在公開できません地点X地点Y写真1地点Xの付近には,テ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "氷河",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d1_q6",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6次の図4中のサ~スは, 1991年から2010年の期間における火山噴火,地震・津波,熱...",
+      "promptSummary": "問6次の図4中のサ~スは, 1991年から2010年の期間における火山噴火,地震・津波,熱帯低気圧のいずれかによる自然災害の発生数*を,国・地域別* *に示したものである。サ~スと災害をもたらした自然現象名との正しい組合せを,次ページの①~⑥のうちから一つ選べ。*死者10名以上,避難者100名以上,非常事態宣言の発令,国際援助の要請のいずれかの状況をもたらした自然災害の合計。* *海外領土での自然災害はその地点に示した。ーー144...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問世界の農業に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第2問世界の農業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,イタリア,インド,カナダ,フランスの小麦の生産量の推移を, 1970年を100として示したものである。図1から読み取れることがらとその背景について述べた文として下線部が適当でないものを,下の①~〇のうちから一つ選べ。7 450インド400 350フランス300、/カナダ250 200 150 100 .イタリア50 0 1970 1975 1...",
+      "relatedCountries": [
+        "IND",
+        "FRA",
+        "ITA",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 2,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2次の表1は,いくつかのプランテーション作物について,生産量の上位5か国と,それぞれの国...",
+      "promptSummary": "問2次の表1は,いくつかのプランテーション作物について,生産量の上位5か国と,それぞれの国の生産量が世界に占める割合を示したものであり,ア~ウは,茶,天然ゴム,パーム油の生産量のいずれかである。ア~ウと作物名との正しい組合せを,下の①~⑥のうちから一つ選べ。(単位: % )アイウインドネシア中国* 1位45. 0 35. 1 30.4インドマレーシアインドネシア2位39. 6 20. 9 27. 1ケニアマレーシア3位コロンピアス...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IDN",
+        "VNM",
+        "MYS",
+        "IND",
+        "LKA",
+        "TUR",
+        "NGA",
+        "KEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "プランテーション"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3次の図2は,いくつかの国における農地lha当たりの農業生産額と農業人ロ1人当たりの農業...",
+      "promptSummary": "問3次の図2は,いくつかの国における農地lha当たりの農業生産額と農業人ロ1人当たりの農業生産額を示したものであり,①~@は,アメリカ合衆国,イギリス,オランダ,マレーシアのいずれかである。オランダに該当するものを,図2中の①~④のうちから一つ選べ。9千ドル160 1農業人口1人当たりの農業生産額120 80 40 0 0 2 4 6 8 10 12千ドル農地lha当たりの農業生産額統計年次は2011年。FAOSTATにより作成。",
+      "relatedCountries": [
+        "MYS",
+        "GBR",
+        "NLD",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4アメリカ合衆国の農業は,自然環境などに応じて地域的に多様である",
+      "promptSummary": "問4アメリカ合衆国の農業は,自然環境などに応じて地域的に多様である。次ページの図3中のK ~ Mは,地点aを起点に三つの鉄道ルートを示したものであり,次ページのカ~クの文は,それぞれのルート上の地点b ~ d付近の農業地域の特徴について述べたものである。K ~ Mとカ~クとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。一148ー( 2602ー148 )カ地点b付近ではトウモロコシなどの大規模栽培が,地点c付近では肉牛肥かん...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦",
+        "トウモロコシ",
+        "大豆",
+        "酪農"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5次の図4は,いくつかの国における農産物貿易の輸出額と輸入額をそれぞれ示したものであり,...",
+      "promptSummary": "問5次の図4は,いくつかの国における農産物貿易の輸出額と輸入額をそれぞれ示したものであり,①~@は,タイ,中国* ,ドイツ,日本のいずれかである。タイに該当するものを,図4中の①~④のうちから一つ選べ。ロ*台湾,ホンコン,マカオを含まない。①②③〇ロ輸出額輸入額0 200 400 600 1000億ドル800統計年次は2011年。FAOSTATにより作成。ー150ー( 2602ー150 )",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "THA",
+        "DEU"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d2_q6",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6農産物流通と農業政策にかかわる特徴や課題について述べた文として適当でないものを,次の①...",
+      "promptSummary": "問6農産物流通と農業政策にかかわる特徴や課題について述べた文として適当でないものを,次の①~@のうちから一つ選べ。①アメリカ合衆国には,穀物メジャーとよばれる大規模な多国籍企業の本拠地が存在しており,世界の穀物市場に強い影響を与えている。②オーストラリアは,イギリスに重点を置いたかっての農産物輸出戦略を,アジアを中心とした輸出戦略に転換してきた。③日本では,農産物市場の対外開放にともなって,小規模な農家を保護するために営農の大規模...",
+      "relatedCountries": [
+        "JPN",
+        "GBR",
+        "USA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市と村落に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第3問都市と村落に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の①~④の文は,カイロ,ハンプルク,ベネチア(ヴェネッィア) ,ベルゲンのいずれかの都市の立地とその特徴について説明したものである。ハンプルクに該当するものを,次の①~〇のうちから一つ選べ。1 3さんかくこう①三角江(工スチュアリー)をなす河口から約100kmほど内陸に発達した都市で,国内最大の港湾都市となっている。せき②潟(ラグーン)の中に形成された...",
+      "relatedCountries": [
+        "ITA",
+        "NOR",
+        "EGY"
+      ],
+      "relatedLayerIds": [
+        "lf_elbe_estuary",
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "三角州"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 2,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2首都は,その国の政治の中心であるが,必ずしも人口最大の都市であるとは限らない",
+      "promptSummary": "問2首都は,その国の政治の中心であるが,必ずしも人口最大の都市であるとは限らない。首都がその国における人口第1位の都市である国として適当でないものを,次の①~〇のうちから一つ選べ。①スペイン3ニュージーランド〇メキシコー152ー( 2602ー152 )",
+      "relatedCountries": [
+        "ESP",
+        "MEX",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の図1中のA ~ Cは,いくつかの都市における街路の形態を示したものであり,下のア~...",
+      "promptSummary": "問3次の図1中のA ~ Cは,いくつかの都市における街路の形態を示したものであり,下のア~ウの文はそれらの都市について述べたものである。A—cとア~ウとの正しい組合せを,下の①~⑥のうちから一つ選べ。・〇- 0 0 2開m 0 200m 0 2 mいかく囲郭都市に由来するドイツの都市である。アイイスラームの都市の特徴を示すモロッコの都市である。ウ計画的に建設されたイギリスの都市である。①②③④⑤⑥Aアー153ー( 2602ーユ53 )",
+      "relatedCountries": [
+        "GBR",
+        "DEU",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4都市のランドマークとなる高層建築物の建設は,その都市の発展の過程と密接にかかわっている",
+      "promptSummary": "問4都市のランドマークとなる高層建築物の建設は,その都市の発展の過程と密接にかかわっている。次の①~〇の文は,工ッフェル塔(パリ) ,工ンパイア・とうほうめいじゅとうステート・ピル(ニューヨーク) ,東方明珠塔(シャンハイ) ,文化科学宮殿(ワルシャワ)のいずれかについて述べたものである。工ッフェル塔に該当するものを,次の①~④のうちから一つ選べ。①国際金融拠点としてのこの都市を代表する建築物であり,その周辺は世界まてんろうでも有...",
+      "relatedCountries": [
+        "FRA",
+        "POL",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5 1990年代以降における,日本の農山村地域の変化について述べた文として適当でないもの...",
+      "promptSummary": "問5 1990年代以降における,日本の農山村地域の変化について述べた文として適当でないものを,次の①~〇のうちから一つ選べ。①過疎化した村落では,高齢化が進むにつれて伝統的な文化や社会組織が衰退してきた。②後継者不足などによる農業就業人口の減少にともない,民間企業が農業に参入するようになった。③食の安心・安全への関心の高まりから地産地消が推進されたことにより,耕作放棄地が減少した。④農作物の生産・供給機能に加えて,自然環境の保全や...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d3_q6",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6人口移動から地域間の結びつきを読み取ることができる",
+      "promptSummary": "問6人口移動から地域間の結びつきを読み取ることができる。次の図2中の①~④は,東北,甲信越* ,北陸* * ,中国の各地方の人口移動について,三大都市圏(東京圏,名古屋圏,大阪圏)およびそれ以外* * *への転出人口の内訳を示したものである。北陸地方に該当するものを,図2中の①~④のうちから一つ選*新潟県,山梨県,長野県。* *富山県,石川県,福井県。* * *自地方内での移動を除く。■東京圏(東京都,埼玉県,千葉県,神奈川県)名...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 問1南アメリカ大陸の西部では,東西方向での短い距離の移動で景観が大きく変化する",
+      "promptSummary": "問1南アメリカ大陸の西部では,東西方向での短い距離の移動で景観が大きく変化する。次の写真1中のア~ウは,図1中のA ~ Cのいすれかの地点でみられる景観を撮影したものである。AからBを経てCまで移動した場合にみられる景観を順に並べたものとして最も適当なものを,下の①~⑥のうちから一つ選イアこの部分につきましては著作権処理中の為現在公開できませんウ写真1①②③ア→イ→ウア→ウ→イイ→ア→ウ〇⑤⑥イ→ウ→アウ→ア→イウ→イ→アー157...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 2,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2図1中のE ~ Hの地域の地形について述べた文として適当でないものを,次の①~@のうち...",
+      "promptSummary": "問2図1中のE ~ Hの地域の地形について述べた文として適当でないものを,次の①~@のうちから一つ選べ。20①Eにはサバナを流れる河川が形成した三角州(デルタ)がみられる。②Fは新期造山帯に属し,標高の高い火山がみられる。③Gは古期造山帯に属し,起伏の小さな高原がみられる。@ Hには大規模な山岳水河があり, U字谷(水食谷)がみられる。",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "造山帯",
+        "火山",
+        "三角州"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の①~④の文は,図1中のK ~ Nのいずれかの地域にみられる農牧業の特徴を述べたものである",
+      "promptSummary": "問3次の①~④の文は,図1中のK ~ Nのいずれかの地域にみられる農牧業の特徴を述べたものである。Mに該当するものを,次の①~④のうちから一つ選21①穀物メジャーによる企業的農業が行われ,大豆やトウモロコシなどが生産されている。②植民地時代に起源をもつプランテーション農業が行われ,コーヒーやバナナなどの商品作物が栽培されている。③粗放的な農牧業が営まれ,ジャガイモなどの栽培とリヤマや牛などの放牧が行われている。〇大土地所有制度を背...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "トウモロコシ",
+        "大豆",
+        "プランテーション"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4図1中のP ~ Rはプラジルにおける人口100万人以上の三つの都市を示したものであり,...",
+      "promptSummary": "問4図1中のP ~ Rはプラジルにおける人口100万人以上の三つの都市を示したものであり,次のカ~クの文はP ~ Rのいずれかの特徴を述べたものである。P ~ Rとカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。22カ19世紀後半から20世紀初頭に天然ゴムの集散地として栄え,自由貿易地域に指定されてからは電気機械工業や輸送機械工業が発展した。キイタビラ鉄山を含む「鉄の四辺形地帯」の近くに位置し,豊富な鉱産資源を利用した鉄鋼...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "鉄鋼業",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5貿易による国々の結びつきは,相手国との近接性や自由貿易協定の存在などにより異なる",
+      "promptSummary": "問5貿易による国々の結びつきは,相手国との近接性や自由貿易協定の存在などにより異なる。次の図2中の①~④は,南アメリカ諸国におけるアメリカ合衆国,日本, EU (欧州連合) , MERCOSUR(南米南部共同市場) *へのそれぞれの輸出額が輸出総額に占める割合を示したものである。MERCOSURに該当するものを,図2中の①~@のうちから一つ選べ。23 *準加盟国は含まない。25以上10 ~ 25 5 ~ 10 5未満統計年次は20...",
+      "relatedCountries": [
+        "JPN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d4_q6",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6南アメリカの国々では多民族・多文化の社会が形成されている",
+      "promptSummary": "問6南アメリカの国々では多民族・多文化の社会が形成されている。次の図3は南アメリカのいくつかの国における住民の民族構成を示したものである。図3に関することがらについて述べた文章として,下線部が最も適当なものを,下の①~④のうちから一つ選べ。・先住民ヨーロッパ系住民メスチソ(メスチーソ)ロムフトロその他三一=を朝”げgの尾, 2005により作成。①アルゼンチンやウルグアイではヨーロッパ系住民の割合が高い。これは,独立後に北アメリカか...",
+      "relatedCountries": [
+        "USA",
+        "ARG",
+        "COL",
+        "VEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "移民",
+        "宗教"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d5_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 第5問現代世界の諸課題に関する次の問い(問1 ~ 5 )に答えよ",
+      "promptSummary": "第5問現代世界の諸課題に関する次の問い(問1 ~ 5 )に答えよ。(配点16 )問1人々の健康を取りまく状況は,生活習慣や医療制度など国により異なる。次の表1は,いくつかの国における20歳以上の人口に占める肥満*の人の割合,医療費に占める公的支出の割合,人口1 , 000人当たりの病床数を示したものであり,①~〇は,アメリカ合衆国,アラブ首長国連邦,デンマーク,フィリピンのいすれかである。アラブ首長国連邦に該当するものを,表1中の...",
+      "relatedCountries": [
+        "PHL",
+        "ARE",
+        "DNK",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d5_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2次ページの図1は,アフリカを5地域に区分して50年間の人口増加指数を示したものである",
+      "promptSummary": "問2次ページの図1は,アフリカを5地域に区分して50年間の人口増加指数を示したものである。また,次ページの図2はこれらのうち3地域について出生率および死亡率の推移を示したものであり,ア~ウは,北部アフリカ,中部アフリカ,南部アフリカのいずれかである。地域名とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。26ー162ー( 2602ー162 )北部アフリカ( 310 )西部アフリカ( 355 )東部アフリカ( 396 ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d5_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 4,
+      "questionLabel": "第5問 問3（解答番号27・28）",
+      "title": "第5問 問3: 問3世界の大都市の社会経済的状況について述べた文として適当でないものを,次の①~⑥のうちか...",
+      "promptSummary": "問3世界の大都市の社会経済的状況について述べた文として適当でないものを,次の①~⑥のうちから二つ選べ。ただし,解答の順序は問わない。ロ①シェンチェン(深蜩)では,外資導入による工業化が短期間に実現したが,これは内陸地域からの出稼ぎ労働者に支えられている。②ノンガポールでは,都市の過密にともなって,多国籍企業の中枢管理機能が隣国に流出して経済的衰退に直面している。③デリーでは,社会資本の整備が人口増加に追いつかず,激しい交通渋滞や列...",
+      "relatedCountries": [
+        "PHL",
+        "IND",
+        "FRA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "移民"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解（解答番号27・28）：2・4（計4点／順序不問（解答番号27・28＝2・4、各2点））】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d5_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号29）",
+      "title": "第5問 問4: 問4土壌劣化とは,表土の流出,土壌の汚染,貧栄養化,酸性化,塩性化(塩類集積) ,湿地化な...",
+      "promptSummary": "問4土壌劣化とは,表土の流出,土壌の汚染,貧栄養化,酸性化,塩性化(塩類集積) ,湿地化などのことをいう。次の表2は,世界のいくっかの地域について,土壌劣化の原因別面積率を示したものであり,カ~クは,アフリカ,北・中央アメリカ,南アメリカのいずれかである。地域名とカ~クとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。回(単位: % )過放牧森林破壊農業その他カ11 4・11 24 00 LO「ーキ26ク58Ⅳの・M02 0...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d5_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号30）",
+      "title": "第5問 問5: 問5次の図3は,いくつかの国における二酸化硫黄排出量の推移を示したものであり,①~@はアメ...",
+      "promptSummary": "問5次の図3は,いくつかの国における二酸化硫黄排出量の推移を示したものであり,①~@はアメリカ合衆国,イギリス,オーストラリア,中国'のいずれかである。イギリスに該当するものを,図3中の①~@のうちから一つ選べ。30 *台湾,ホンコン,マカオを含まない。百万トン35 30 25一一酸化硫黄排出量①②③日④10 5 0 1950 1955 1960 1965 1970 1975 1980 1985 1990 1995 2000 20...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "GBR",
+        "USA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q1",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号31）",
+      "title": "第6問 問1: 問1アヤネさんは, JR富良野線の列車に乗り,図1中のP駅からs駅に向かって移動し,車窓か...",
+      "promptSummary": "問1アヤネさんは, JR富良野線の列車に乗り,図1中のP駅からs駅に向かって移動し,車窓から東側の景観を観察した。その景観を説明した文として最も適当なものを,次の①~④のうちから一つ選べ。31①P駅を出発すると, Q駅まで連続して市街地が見えた。ふらのだけ②Q駅とR駅の間では,富良野岳の斜面が見えた。③R駅への到着直前に,駅前の市街地や公共施設が見えた。④R駅とS駅の間では,一面に広がる果樹園が見えた。",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q2",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 32,
+      "points": 2,
+      "questionLabel": "第6問 問2（解答番号32）",
+      "title": "第6問 問2: 問2次の写真1中の①~@は,この地域の気候に対応した生活のあり方に関心をもったアヤネさんが...",
+      "promptSummary": "問2次の写真1中の①~@は,この地域の気候に対応した生活のあり方に関心をもったアヤネさんが,様々な場所で撮影したものである。主に積雪に対応したものとして適当でないものを,次の写真1中の①~〇のうちから一つ選べ。32 40上部に太陽電池が付いた時計縦機型信号の道路の境界を示す標識ホース取り付け部の位置が高い消火栓写真1ー167ー( 2602ー167 )",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q3",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号33）",
+      "title": "第6問 問3: 問3アヤネさんは,富良野市の土地利用変化を調べるために新旧地形図の比較を行うことにした",
+      "promptSummary": "問3アヤネさんは,富良野市の土地利用変化を調べるために新旧地形図の比較を行うことにした。次の図2は,図1中のxの範囲における1921年と2004年に発行された5万分の1地形図(原寸,一部改変)である。図2から読み取れるこの地域の変化について述べた文として適当でないものを,次ページの①~〇のうちから一つ選べ。33三區“、日町珱穂町夫沼4東、北扇山ー168ー( 2602ー168 )①市街地は鉄道駅に接して形成されていたが,その周辺に主...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q4",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号34）",
+      "title": "第6問 問4: 問4地域の農作物や乳製品を利用したご当地カレーを食べたアヤネさんは,富良野地域の農業に関心...",
+      "promptSummary": "問4地域の農作物や乳製品を利用したご当地カレーを食べたアヤネさんは,富良野地域の農業に関心をもち,統計資料を収集した。次の図3は,図1中のYにばれいしよ示された範囲における米,ジャガイモ(馬鈴薯) ,乳牛の集落別の農家の戸数を示している。戸数の分布とその背景に関して説明した文として適当でないものを,下の①~④のうちから一つ選べ。34ジャガイモ米(戸数)・1 10 ~統計年次は2010年。農林業センサスにより作成。①米は,北海道特有...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q5",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号35）",
+      "title": "第6問 問5: 問5アヤネさんは,富良野地域において森林開発が大きな役割を果たしてきたことを知り,地元の博...",
+      "promptSummary": "問5アヤネさんは,富良野地域において森林開発が大きな役割を果たしてきたことを知り,地元の博物館をたずねた。アヤネさんと博物館の学芸員との会話文中の空欄サとシに当てはまる語の正しい組合せを,下の①~〇のうちから一つアヤネ「富良野には多くの森がありますね。その特徴は何ですか」学芸員「冷帯(亜寒帯)に属するこの地域では,針葉樹と(サ)の混交林(混おお合林)に広く覆われ,その樹種の構成をいかし,森がもつ再生力を活かんばっ用した林業を行って...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2015_main_d6_q6",
+      "examId": "2015_main",
+      "year": 2015,
+      "session": "main",
+      "sessionLabel": "2015年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 36,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号36）",
+      "title": "第6問 問6: 問6富良野地域における多様な観光資源のあり方に関心をもったアヤネさんは,月別観光客数の推移...",
+      "promptSummary": "問6富良野地域における多様な観光資源のあり方に関心をもったアヤネさんは,月別観光客数の推移について富良野市役所で統計資料を入手し,図4を作成した。この地域の観光に関連したことがらをまとめた表2も参考にしながら,図4から読み取れる富良野市の年度ごとの夏季・冬季*の観光客数の傾向と,その背景に関して説明した文の下線部が適当でないものを,次ページの①~④のうちから一つ選べ。*夏季は7 ~ 9月,冬季は1 ~ 3月。万菊年度ー-←ー197...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2015_main/2015_main_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

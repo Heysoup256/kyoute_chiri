@@ -1,0 +1,1217 @@
+{
+  "examId": "2016_main",
+  "year": 2016,
+  "session": "main",
+  "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2016_main_d1_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ",
+      "promptSummary": "第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ。(配点17 ) Cロ0。0。180。緯線・経線は30。間隔。問1地震の発生頻度や震源の深さは,プレートの運動や火山活動の影響を受ける。次ページの図2は,いくつかの範囲*における地震* *の震源分布を深さ別に示したものであり,①~@は図1中のA ~ Dのいずれかである。Aに該当するものを,図2中の①~④のうちから一つ選べ。ロ*緯度・経度ともに6。の範囲...",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "pb_japan_trench"
+      ],
+      "topicTags": [
+        "プレート",
+        "火山",
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d1_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2火山は自然災害を引き起こす一方で,人間生活を豊かにする側面もある",
+      "promptSummary": "問2火山は自然災害を引き起こす一方で,人間生活を豊かにする側面もある。火山地域に関する事象について述べた文として適当でないものを,次の①~@のうちから一つ選へ。①美しい風景や温泉などに恵まれているため,観光地化がみられる。②地熱エネルギーが豊富であるため,地熱発電による電力供給がみられる。③噴火直後の火山灰に有機物が多く含まれるため,穀物生産に適している。④豊富な地下水が存在するため,生活用水としての利用がみられる。ー141ー( ...",
+      "relatedCountries": [
+        "ISL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d1_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 2,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3次の図3中の①~④は,図1中のE ~ Hのいずれかの線に沿った植生の高さ、を示したものである",
+      "promptSummary": "問3次の図3中の①~④は,図1中のE ~ Hのいずれかの線に沿った植生の高さ、を示したものである。Hに該当するものを,図3中の①~④のうちから一つ選べ。*その地域の植生を構成する樹木の最大の高さ。樹木が生育していない地域では()mとなる。4・00 4 00 20 20 10 10 0 0 50 5 4・00 40 30 20 10 0経度0.25。ごとに示した。NASAの資料などにより作成。",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d1_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4湖沼の成因は,湖岸線形状と周辺地形の特徴から特定できる場合がある",
+      "promptSummary": "問4湖沼の成因は,湖岸線形状と周辺地形の特徴から特定できる場合がある。次ページの図4は,図1中のJ ~ Lにみられるいくつかの湖沼の衛星画像を示したものであり,次ページのア~ウの文は, J ~ Lのいずれかの成因を説明したものである。J ~ Lとア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ー142ー( 2102ー142 )川km 10Skmネ0 km黒色の部分が水面にあたる。United States Geolo...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d1_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5次の図5は,南アメリカ大陸とその周辺地域における風向と降水量を示したものである",
+      "promptSummary": "問5次の図5は,南アメリカ大陸とその周辺地域における風向と降水量を示したものである。WとXは1月または7月の風向を, Yとzは1月または7月の月降水量200mm以上の地域を,それぞれ示している。7月の風向と降水量に該当する正しい組合せを,次ページの①~④のうちから一つ選へ。イ′イ降水量ロ月降水量200 mm以上の地域降水量は陸上のみ示した。D尾Ⅳ〃, 2008により作成。ー144ー( 2102ー144 )②N降水量",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d1_q6",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: ふぞん問6次の表1は,いくつかの国における1人当たり水資源賦存量*と,国外水資源賦存量' ...",
+      "promptSummary": "ふぞん問6次の表1は,いくつかの国における1人当たり水資源賦存量*と,国外水資源賦存量' 'の割合を示したものであり,①~④はエジプト,中国,チリ,バングラデシュのいずれかである。エジプトに該当するものを,表1中の①~④のうちから一つ選べ。*理論上,人間が最大限利用可能な水の量を指す。国内水資源賦存量と国外水資源賦存量の合計。* *隣接国から流入する河川水・地下水および国境をなす河川水の量。①②③④1人当たり水資源賦存量( m3 ...",
+      "relatedCountries": [
+        "CHN",
+        "BGD",
+        "CHL",
+        "EGY"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問世界の工業に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第2問世界の工業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1中のア~工は,アメリカ合衆国とヨーロッパにおける主な工業地域を,その成り立ちの特徴ごとに示したものである。ア~工を説明した文として適当でないものを,下の①~@のうちから一つ選べ。7 0 0 0ロ0アウロ工①アでは,付近で産出される石炭を用いて鉄鋼業が発達した。②イでは,付近で産出される原油を用いて石油化学工業が発達した。③ウでは,近隣に集積した部...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭",
+        "原油",
+        "鉄鋼業",
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 2,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2工業立地に関することがらについて述べた文として適当でないものを,次の①~④のうちから一つ選べ",
+      "promptSummary": "問2工業立地に関することがらについて述べた文として適当でないものを,次の①~④のうちから一つ選べ。①アパレル(服飾)製品の企画やデザインを行う事業所は,消費市場の情報を求めて大都市に立地する傾向がある。②アルミニウムエ業は,大量の電力が安価に得られる地域に立地する傾向がある。③電気機械工業は,安価で大量に生産される製品ほど,豊富な労働力を求めて先進国以外の地域に立地する傾向がある。④ビール工業は,原料の大麦やホップが豊富に得られる...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3次の図2中のカ~クは,技術貿易の受取額* ,工業部門の二酸化炭素排出量,産業用ロボット...",
+      "promptSummary": "問3次の図2中のカ~クは,技術貿易の受取額* ,工業部門の二酸化炭素排出量,産業用ロボットの稼働台数のいずれかについて,上位8位までの国・地域とそれらが世界全体に占める割合を示したものである。指標名とカ~クとの正しい組合せを,次ページの①~⑥のうちから一つ選、。*研究開発により得られた技術など(特許権,商標権,意匠権,ノウハウおよび技術指導)を提供して受け取った金額。イ・」マ参物LO -0】LO統計年次は2011年。ルの・D“0カ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の表1は,いくつかの国について,製造業の雇用者1人当たりの工業付加価値額*とGDP ...",
+      "promptSummary": "問4次の表1は,いくつかの国について,製造業の雇用者1人当たりの工業付加価値額*とGDP (国内総生産)に占める鉱工業の割合を示したものであり,①~〇は,韓国,スイス,中国'をメキシコのいずれかである。韓国に該当するものを,表1中の①~④のうちから一つ選べ。ロ*生産額から,賃金を除く原材料費などの諸費用を差し引いた,新たに作り出された価値の金額で,各国の経済発展と関係している。* *台湾,ホンコン,マカオを含まない。製造業の雇用者...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "KOR",
+        "TWN",
+        "CHE",
+        "MEX"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5次の図3は,輸出入品目の第1位が機械類である,いくつかの国・地域間における貿易額を示し...",
+      "promptSummary": "問5次の図3は,輸出入品目の第1位が機械類である,いくつかの国・地域間における貿易額を示したものであり, P ~ Rは, ASEAN (東南アジア諸国連合) ,アメリカ合衆国,中国*のいすれかである。P ~ Rと国・地域名との正しい組合せを,下の①~⑥のうちから一つ選べ。ロ*台湾,ホンコン,マカオを含まない。単位: 10億ドル65 134 122 115 369日本129 122 150 111 157 244統計年次は2013年...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "ASEAN"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d2_q6",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6世界の工業化と産業地域について説明した文として最も適当なものを,次の①~④のうちから一つ選べ",
+      "promptSummary": "問6世界の工業化と産業地域について説明した文として最も適当なものを,次の①~④のうちから一つ選べ。1 2①サハラ以南のアフリカでは,内陸部の鉱産資源を用いた重化学工業のコンピナートが沿岸部に発達している。②中央・南アメリカでは,ペンチャーピジネスの集積地域として輸出加工区が発展している。③東南アジアでは,輸出指向型から輸入代替型へ転換することで工業化が進展している。④日本では,アニメや音楽,ゲームなどを制作するコンテンツ産業が都市...",
+      "relatedCountries": [
+        "JPN",
+        "USA",
+        "DZA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市・村落と生活文化に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第3問都市・村落と生活文化に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,いくつかの国における1人当たりGDP (国内総生産)と都市人ロ率の推移を示したものであり,①~〇はアルゼンチン,イギリス,ナイジェリア,マレーシアのいずれかである。アルゼンチンに該当するものを,図1中の①~④のうちから一つ選べ。1 3 100都市人口率60 40ロ1990年20 2010年△0 100 1000 10000 1000...",
+      "relatedCountries": [
+        "MYS",
+        "GBR",
+        "ARG",
+        "NGA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 2,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2特定の機能が発達した都市について説明した文として最も適当なものを,次の①~④のうちから...",
+      "promptSummary": "問2特定の機能が発達した都市について説明した文として最も適当なものを,次の①~④のうちから一つ選~①ターチン(大慶)は,石油関連産業が発達した鉱工業都市である。②ニースは,スキーリゾートを中心とした観光保養都市である。③パナマシティは,地中海と紅海を結ぶ運河沿いの交通都市である。④モントリオールは,首都として計画的に建設された政治都市である。ー152ー( 2102ー152 )",
+      "relatedCountries": [
+        "ITA",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の図2は,人口約40万人の日本のある都市を対象に,小地域*を単位として人口特性を示す...",
+      "promptSummary": "問3次の図2は,人口約40万人の日本のある都市を対象に,小地域*を単位として人口特性を示すいくつかの指標を地図で表現したものであり,ア~ウは,人口密度,農業・林業就業者割合,老年人口割合* *のいずれかである。指標名とア~ウとの正しい組合せを,下の①~⑥のうちから一つ選べ。1 5 *おおむね市区町村内の「△△町」「〇〇2丁目」「字ロロ」などに対応する区域。* *総人口に占める65歳以上人口の割合小地域の境界と鉄道路線ア高中低位位位...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: となみ問4次の写真1は,富山県の砺波平野の散村を撮影したものである",
+      "promptSummary": "となみ問4次の写真1は,富山県の砺波平野の散村を撮影したものである。写真1から読み取れることがらとそれにかかわる散村の特徴について説明した下の文章中の下線部①~@のうちから,適当でないものを一つ選べ。写真1日本の伝統的な村落形態の一つに散村があり,砺波平野の散村はその代表例である。砺波平野では,第二次世界大戦後に1耕地の区画や道路の多くが直線状に整備され,その中に屋敷林を有する家屋が点在するという景観が広がっている。散村は海外でも...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5地域の気候にあわせた伝統的な住居について述べた文として下線部が適当でないものを,次の①...",
+      "promptSummary": "問5地域の気候にあわせた伝統的な住居について述べた文として下線部が適当でないものを,次の①~@のうちから一つ選、。ロ①カナダ北部の寒さが厳しい地域では,プロック状に切り出した水や雪をドーム状に積み上げた住居がみられる。②北アフリカの乾燥した地域では,石や土を建材に使用し,室内に熱がこもらないように外壁の開口部を大きくした住居がみられる。③朝鮮半島の冬の寒さが厳しい地域では,炊事の煙を床下に通して,床から室内を暖める仕組みがみられる...",
+      "relatedCountries": [
+        "KOR",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d3_q6",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6宗教は社会や人々の生活と大きくかかわるとともに,国家の成立にも影響を及ぼすことがある",
+      "promptSummary": "問6宗教は社会や人々の生活と大きくかかわるとともに,国家の成立にも影響を及ぼすことがある。次の表1はインドとその周辺諸国における宗教別人口割合を示したものであり,①~@は,スリランカ,ネパール,パキスタン,バングラデシュのいずれかである。スリランカに該当するものを,表1中の①~④のうちから一つ選べ。(単位: % )イスラームヒンドウー教その他(イスラム教)①96. 4「ーれ0②89. 8インド14. 4 79. 5 13. 6 6...",
+      "relatedCountries": [
+        "IND",
+        "PAK",
+        "BGD",
+        "LKA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "イスラム教"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 問1次の①~〇の文は,図1中のA ~ Dのいずれかの地域における自然環境と土Dに該当するも...",
+      "promptSummary": "問1次の①~〇の文は,図1中のA ~ Dのいずれかの地域における自然環境と土Dに該当するものを,次の①~④のうちか地利用について述べたものである。ら一つ選べ。①河川の堆積作用によって形成された平野で,稲作を含む穀物生産や酪農を中心に豊かな農業地域となっている。②侵食作用によって緩斜面と急斜面が交互に現れる地形を示し,緩斜面上では小麦の大規模栽培が行われている。③石灰岩の分布する地域で,ポリエと呼ばれる溶食盆地が貴重な農耕地となって...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "稲作",
+        "小麦",
+        "酪農",
+        "混合農業"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 2,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2次の①~④の文は,図1中のJ ~ Mに示したライン川またはドナウ川に面する都市について...",
+      "promptSummary": "問2次の①~④の文は,図1中のJ ~ Mに示したライン川またはドナウ川に面する都市について述べたものである。Jに該当するものを,次の①~④のうちから一つ選べ。①強大な帝国の中心地として成長を遂げた都市で,各種工業が栄えたほか,今日では「音楽の都」として観光客を集めている。②ヨーロッパでも有数の連接都市(コナベーション)を後背地にもち,外国企業や金融機関など中枢管理機能の集積がみられる。③隣国との間で帰属の移り変わりがあった都市で,...",
+      "relatedCountries": [
+        "DEU",
+        "NLD",
+        "AUT"
+      ],
+      "relatedLayerIds": [
+        "rv_rhine"
+      ],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の図2中のア~ウは, EU (欧州連合)加盟国について,農業人口1人当たりの農業生産...",
+      "promptSummary": "問3次の図2中のア~ウは, EU (欧州連合)加盟国について,農業人口1人当たりの農業生産額,農地面積1 ha当たりの農業生産額,農産物の輸出入比*のいすれかの指標を示したものである。指標名とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。*輸出額を輸入額で除した値。高位中位低位匚こU非加盟高位中位匚こ」EU非加盟ー158ー( 2102ー158 )高位中位低位ウ匚こ] EU非加盟統計年次は,農業人口1人当たりの農業生...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4ヨーロッパでは国を越えた労働力の移動が盛んで,外国人労働者の就業状態は各国の置かれた状...",
+      "promptSummary": "問4ヨーロッパでは国を越えた労働力の移動が盛んで,外国人労働者の就業状態は各国の置かれた状況に応じて多様である。次の図3は,ヨーロッパのいくつかの国における自国民の失業率と外国人の失業率を示したものであり,カ~ケは,下の①~④の国群のいずれかである。キに該当する国群を,下の①~④のうちから一つ選べ。40◆30外国人の失業率◆△〇■カキクケ△10 0 0 0 10 20 30 40 %自国民の失業率統計年次は2012年。OECDの資...",
+      "relatedCountries": [
+        "FRA",
+        "ESP",
+        "NLD",
+        "CHE",
+        "NOR",
+        "POL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次のサ~スの文は,イタリア,ドイツ,ベルギーのいずれかの国内における地域間経済格差につ...",
+      "promptSummary": "問5次のサ~スの文は,イタリア,ドイツ,ベルギーのいずれかの国内における地域間経済格差について述べたものである。国名とサ~スとの正しい組合せを,下の①~⑥のうちから一つ選べ。23サ西側の資本主義経済体制をとる国に,東側の社会主義経済体制をとっていた国が編入された結果,東西の経済格差が生じている。シ北部で工業が発達したのに対し,南部では製鉄所などの国営による工場の建設がすすめられたものの,南部の経済発展が依然として立ち遅れている。ス...",
+      "relatedCountries": [
+        "DEU",
+        "ITA",
+        "BEL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭",
+        "鉄鋼業"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d4_q6",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6 EU (欧州連合)発足後のヨーロッパの地域経済について述べた文として適当でないものを...",
+      "promptSummary": "問6 EU (欧州連合)発足後のヨーロッパの地域経済について述べた文として適当でないものを,次の①~④のうちから一つ選べ。24①EU域内の人々の移動が自由化され,国境を越えた通勤や買物行動が活発になった。②EUの東欧への拡大によってEU域内の経済関係が強化され,ヨーロッパ域外からの直接投資が減少した。③農業生産性が低い山間部の農業地域では,農業生産以外にも観光などの多面的機能が評価され,地域の活性化が図られている。④古くからの重工...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d5_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 第5問インドと南アフリカ共和国に関する次の文章を読んで,下の問い(問1 ~ 5 )に答えよ",
+      "promptSummary": "第5問インドと南アフリカ共和国に関する次の文章を読んで,下の問い(問1 ~ 5 )に答えよ。(配点14 )インドと南アフリカ共和国は,三方を海に囲まれるといった⑧自然環境上の共通点をもつ。また,ともに⑩経済成長の著しい国として注目されているが,その背景の一つに◎豊かな鉱産資源がある。さらにイギリスの植民地であった歴里をもっことも共通している。その一方で,宗教や人種にかかわる◎社会制度は大きく異なっている。問1下線部③に関して,農業...",
+      "relatedCountries": [
+        "IND",
+        "GBR",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "プランテーション",
+        "宗教"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d5_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2下線部⑩に関して,近年は経済成長の著しいBRlCs (プラジル,ロシア,インド,中国)...",
+      "promptSummary": "問2下線部⑩に関して,近年は経済成長の著しいBRlCs (プラジル,ロシア,インド,中国)に南アフリカ共和国を加え, BRICSと表現することも多くなった。次の図2は, BRICS諸国の1人当たりGDP (国内総生産)と輸出額に占める工業製品の割合を示したものであり,①~④はプラジル,ロシア,インド,中国\"のいずれかである。インドに該当するものを,図2中の①~〇のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。100輸出額に...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IND",
+        "RUS",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d5_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 2,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3下線部◎に関して,インドと南アフリカ共和国の鉱産資源について述べた次の文章中の空欄アと...",
+      "promptSummary": "問3下線部◎に関して,インドと南アフリカ共和国の鉱産資源について述べた次の文章中の空欄アとイに当てはまる語の正しい組合せを,下の①~④のうちから一つ選べ。27インドと南アフリカ共和国は,ともに鉱産資源の豊富な国である。特に合金材料に使われる(ア)は,インドと南アフリカ共和国で合わせて世界の全産出量の約50 %を占めている。ダイヤモンドに関しては両国が世界で重要な役割を果たしているが,その役割は異なっている。ダイヤモンドは産出とカッ...",
+      "relatedCountries": [
+        "IND",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d5_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4下線部@に関して,イギリスとの関係からみたインドと南アフリカ共和国に共通する点について...",
+      "promptSummary": "問4下線部@に関して,イギリスとの関係からみたインドと南アフリカ共和国に共通する点について述べた文として最も適当なものを,次の①~@のうちからーっ選べ。①イギリスが最大の貿易相手国である。②イギリス連邦に加盟している。③英語は使用されているが公用語にはなっていない。〇第二次世界大戦前に独立した。",
+      "relatedCountries": [
+        "IND",
+        "GBR",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d5_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5下線部◎に関して,インドと南アフリカ共和国の社会について説明した次の文章中の下線部①~...",
+      "promptSummary": "問5下線部◎に関して,インドと南アフリカ共和国の社会について説明した次の文章中の下線部①~④のうちから,適当でないものを一つ選べ。29インドのヒンドゥー教社会は, 1身分の上下関係と職業の分業が結びついカースト制に規定されてきた。都市部では近年,カースト制にもとづかない職業が情報通信技術( ICT )産業に登場するなど,新たな動きが社会に影響を与えている。一方,就業機会を求めて貧困層が農村部から都市部へ流入する状況がみられる。南ア...",
+      "relatedCountries": [
+        "IND",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "ICT"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q1",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号30）",
+      "title": "第6問 問1: ちょうかん問1現地を訪れる前に,ケイタさんは数値標高データを用いた鳥瞰図*から,北上市周辺...",
+      "promptSummary": "ちょうかん問1現地を訪れる前に,ケイタさんは数値標高データを用いた鳥瞰図*から,北上市周辺のおおまかな地形を確認することにした。次の図2中の①~④は,図1中のア~工のいすれかの地点の上空から矢印の方向に見た地形の様子を描いたものである。工に該当するものを,図2中の①~④のうちから一つ選べ。30 *高さは強調して表現してある。ーq67 -ー( 2102ー167 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q2",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号31）",
+      "title": "第6問 問2: げとうがわさかいづか問2ケイタさんが夏油川周辺を調査していると,境塚という史跡を見つけた",
+      "promptSummary": "げとうがわさかいづか問2ケイタさんが夏油川周辺を調査していると,境塚という史跡を見つけた。そこでその史跡を詳しく調べるため博物館を訪ねることにした。次の図3は図1中のXの範囲を示した2008年発行の5万分の1地形図(原寸,一部改変)である。図3に関する次ページのケイタさんと学芸員との会話文中の空欄カ~なんぶケには,南部藩,伊達藩のいずれかが当てはまる。伊達藩に該当する空欄の正しい組合せを,次ページの①~@のうちから一つ選べ。ロ下三...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q3",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号32）",
+      "title": "第6問 問3: 問3ケイタさんは北上市内を散策し,場所によって道路沿いの景観が異なることに気がついた",
+      "promptSummary": "問3ケイタさんは北上市内を散策し,場所によって道路沿いの景観が異なることに気がついた。次の写真1中のサ~スは,図1中のA ~ cのいずれかの地点での景観を撮影したものである。サ~スとA ~ cとの正しい組合せを,下の①~⑥のうちから一つ選べ。をー:ま物斉第姦を一サス真写①< O②< O③< O④O <⑤O <⑥O <サシスー170ー( 2102ー17の",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q4",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号33）",
+      "title": "第6問 問4: 問4幹線道路沿いに工業団地が造成されていることに気づいたケイタさんは,次に北上市の工業の変...",
+      "promptSummary": "問4幹線道路沿いに工業団地が造成されていることに気づいたケイタさんは,次に北上市の工業の変遷について調べることにした。次の表1は, 1960年, 1985年, 2010年の各年次について北上市における製造品出荷額の上位5業種と総従業者数を示したものであり,タ~ツは電気機械器具,輸送用機械器具,ようぎよう窯業・土石製品のいずれかである。業種名とタ~ツとの正しい組合せを,下の①~⑥のうちから一つ選べ。位位位位順1960年1985年20...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q5",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号34）",
+      "title": "第6問 問5: 問5交通網と地域の産業や生活とのかかわりをみるために,ケイタさんは岩手県全体の主題図を作成...",
+      "promptSummary": "問5交通網と地域の産業や生活とのかかわりをみるために,ケイタさんは岩手県全体の主題図を作成することにした。次の図4は岩手県の主な交通網と,岩手県におけるいくつかの指標を市町村別に示したものであり,マ~ムはlklⅡ2当たりの事業所数, 1世帯当たりの自動車保有台数,通勤・通学者数に占める他市町村への通勤・通学者の割合のいずれかである。指標名とマ~ムとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。34岡盛崗第高幹鉄速線道道道路...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2016_main_d6_q6",
+      "examId": "2016_main",
+      "year": 2016,
+      "session": "main",
+      "sessionLabel": "2016年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号35）",
+      "title": "第6問 問6: 問6調査結果を発表するために,ケイタさんは交通網の発達にともなう地域への影響を統計地図で表...",
+      "promptSummary": "問6調査結果を発表するために,ケイタさんは交通網の発達にともなう地域への影響を統計地図で表現することにした。地図表現の方法について述べた文として下線部が適当でないものを,次の①~④のうちから一つ選、。はなまき①近隣の花巻空港発着の国際チャーター便就航の影響を表現するため,異なる年次における市内観光地を訪れる外国人客数を図形表現図で示す。②自家用車の普及にともなうバス交通への影響を表現するため,異なる年次における地区別バス利用者の割...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2016_main/2016_main_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

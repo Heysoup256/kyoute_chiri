@@ -1,7 +1,23 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-23T02:38:48Z",
+  "generatedAt": "2026-11-23T03:29:45Z",
   "examCoverage": [
+    "2015_main",
+    "2016_main",
+    "2017_main",
+    "2017_makeup",
+    "2018_main",
+    "2018_makeup",
+    "2019_main",
+    "2019_makeup",
+    "2020_main",
+    "2020_makeup",
+    "2021_main",
+    "2021_makeup",
+    "2022_main",
+    "2022_makeup",
+    "2023_main",
+    "2023_makeup",
     "2024_main",
     "2024_makeup",
     "2025_main",
@@ -20,8 +36,13 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 6,
+        "appearanceCount": 12,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2018_makeup",
+          "2019_main",
+          "2020_makeup",
           "2026_main",
           "2026_makeup"
         ],
@@ -31,7 +52,7 @@
           "スエズ運河の地政学とエチオピア（大エチオピア・ルネサンスダム）との水紛争",
           "アラビア語・イスラム教スンニ派・コプト教と小麦輸入依存",
           "国際河川",
-          "ケッペンの気候区分"
+          "地理B"
         ]
       },
       "nature": {
@@ -62,6 +83,18 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q1",
+                  "questionLabel": "第3問 問1",
+                  "note": "関連語句: 三角州"
+                },
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q6",
+                  "questionLabel": "第1問 問6",
+                  "note": "関連語句: 水資源"
+                },
                 {
                   "examId": "2026_main",
                   "questionId": "2026_main_d6_q4",
@@ -184,7 +217,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: スエズ運河"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: スエズ運河"
+                }
+              ]
             }
           }
         ],
@@ -202,9 +248,22 @@
               "スエズ運河"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: スエズ運河"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: スエズ運河"
+                }
+              ]
             }
           }
         ],
@@ -271,6 +330,12 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: イスラム教"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d5_q4",
@@ -705,15 +770,21 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 9,
         "years": [
+          "2015_main",
+          "2019_main",
+          "2021_makeup",
+          "2023_makeup",
           "2026_main"
         ],
         "frequentTopics": [
           "アトラス山脈（新期造山帯）と伝統的地下水路フォガラ（カナート）・オアシス農業",
           "リン鉱石（世界埋蔵約7割・輸出世界1位級）",
           "EU向け自動車組立（タンジェ港）とジブラルタル海峡・対欧移民・西サハラ問題",
-          "地理総合・探究"
+          "地理B",
+          "人口",
+          "イスラム教"
         ]
       },
       "nature": {
@@ -1110,12 +1181,19 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 6,
+        "years": [
+          "2016_main",
+          "2019_main",
+          "2020_makeup",
+          "2022_makeup"
+        ],
         "frequentTopics": [
           "アフリカ最大の面積とサハラ砂漠（天然ガス・原油輸出・OPEC）",
           "EU（イタリア・スペイン）向け地中海海底ガスパイプライン",
-          "旧フランス領・アルジェリア戦争（独立）とフランス国内のアルジェリア系移民"
+          "旧フランス領・アルジェリア戦争（独立）とフランス国内のアルジェリア系移民",
+          "地理B",
+          "人口"
         ]
       },
       "nature": {
@@ -1324,7 +1402,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: フランス"
+                }
+              ]
             }
           }
         ]
@@ -1500,14 +1585,17 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 1,
+        "appearanceCount": 3,
         "years": [
+          "2015_main",
+          "2016_main",
           "2025_makeup"
         ],
         "frequentTopics": [
           "アフリカ最大の人口（2.2億人超）と今後の爆発的人口増加予測（今世紀中に世界3位級へ）",
           "ニジェール川デルタの原油（アフリカ最大級産油国・OPEC）と環境汚染",
           "南部（キリスト教・ヨルバ/イボ）と北部（イスラム教・ハウサ・サヘル乾燥/ボコハラム）の南北対立",
+          "プランテーション",
           "小麦",
           "トウモロコシ"
         ]
@@ -1741,7 +1829,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q1",
+                  "questionLabel": "第3問 問1",
+                  "note": "関連語句: 人口"
+                }
+              ]
             }
           }
         ]
@@ -2024,12 +2119,20 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 10,
+        "years": [
+          "2015_main",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_makeup",
+          "2021_main"
+        ],
         "frequentTopics": [
           "東アフリカ大地溝帯（リフトバレー）と標高1600mの常春（ナイロビCw）",
           "高地プランテーションの紅茶（輸出世界1位級）・コーヒー・切り花（バラ空輸）",
-          "サバンナ観光と携帯電話決済（M-Pesa）の急速な普及・スラム（キベラ）"
+          "サバンナ観光と携帯電話決済（M-Pesa）の急速な普及・スラム（キベラ）",
+          "地理B",
+          "人口"
         ]
       },
       "nature": {
@@ -2147,7 +2250,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: プランテーション"
+                },
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 紅茶"
+                }
+              ]
             }
           }
         ],
@@ -2517,17 +2633,20 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 4,
         "years": [
+          "2020_main",
+          "2022_main",
+          "2023_main",
           "2026_main"
         ],
         "frequentTopics": [
           "エチオピア高原（青ナイル川源流）と大エチオピア・ルネサンスダム（エジプトとの水紛争）",
           "アフリカ第2位の人口（1.2億人超）とコーヒー原産地",
           "欧米に植民地化されなかった独立の歴史・AU（アフリカ連合）本部・エチオピア正教",
-          "国際河川",
-          "ケッペンの気候区分",
-          "ドナウ川"
+          "地理B",
+          "少子高齢化",
+          "国際河川"
         ]
       },
       "nature": {
@@ -2757,7 +2876,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d3_q5",
+                  "questionLabel": "第3問 問5",
+                  "note": "関連語句: 人口"
+                }
+              ]
             }
           }
         ]
@@ -3013,12 +3145,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 14,
+        "years": [
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2022_main"
+        ],
         "frequentTopics": [
           "レアメタル（白金＝プラチナ・クロム・マンガン世界1位）・金・ダイヤモンド・石炭",
           "ケープタウンの地中海性気候（Cs・ベンゲラ海流）と内陸ヨハネスブルグ（Cw・メイズ地帯）",
-          "アパルトヘイト撤廃（1994年）後の貧富格差・タウンシップとBRICS・11公用語"
+          "アパルトヘイト撤廃（1994年）後の貧富格差・タウンシップとBRICS・11公用語",
+          "地理B",
+          "人口",
+          "プランテーション"
         ]
       },
       "nature": {
@@ -3209,7 +3353,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: ダイヤモンド"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: レアメタル, マンガン"
+                }
+              ]
             }
           }
         ],
@@ -3229,7 +3386,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: BRICS"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: BRICS"
+                }
+              ]
             }
           }
         ],
@@ -3305,7 +3481,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: BRICS"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: BRICS"
+                }
+              ]
             }
           }
         ]
@@ -3510,12 +3699,18 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 2,
+        "years": [
+          "2019_main",
+          "2019_makeup"
+        ],
         "frequentTopics": [
           "EV電池用「コバルト」産出世界1位（約7割）と銅・タンタル（コルタン）・ダイヤモンド",
           "コンゴ盆地の熱帯雨林（Af）とコンゴ川・世界有数の包蔵水力",
-          "旧ベルギー領の負の遺産・紛争鉱物（東部紛争）・児童労働と急激な人口増加"
+          "旧ベルギー領の負の遺産・紛争鉱物（東部紛争）・児童労働と急激な人口増加",
+          "自然災害",
+          "プランテーション",
+          "移民"
         ]
       },
       "nature": {
@@ -3542,7 +3737,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d1_q3",
+                  "questionLabel": "第1問 問3",
+                  "note": "関連語句: コンゴ川"
+                }
+              ]
             }
           }
         ]
@@ -3909,8 +4111,19 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 13,
+        "appearanceCount": 35,
         "years": [
+          "2015_main",
+          "2017_main",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -3922,8 +4135,8 @@
           "鉄鉱石（ピルバラ）・リチウム世界1位、石炭・LNG・ボーキサイト世界有数と露天掘り",
           "グレートアーテジアン盆地（被圧地下水）の牧羊・小麦羊地帯と南半球の気候帯",
           "白豪主義の撤廃と多文化主義・アジア系移民（アジア太平洋貿易シフト）・アボリジニ",
-          "自然災害",
-          "地理総合・探究"
+          "人口",
+          "地理B"
         ]
       },
       "nature": {
@@ -4225,7 +4438,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d4_q4",
+                  "questionLabel": "第4問 問4",
+                  "note": "関連語句: 鉄鉱石, ボーキサイト"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 鉄鉱石, ボーキサイト"
+                },
+                {
+                  "examId": "2024_main",
+                  "questionId": "2024_main_d2_q3",
+                  "questionLabel": "第2問 問3",
+                  "note": "関連語句: 石炭"
+                }
+              ]
             }
           }
         ],
@@ -4326,6 +4558,18 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 多文化主義, 移民"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: 移民"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d6_q5",
@@ -4665,8 +4909,13 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 5,
+        "appearanceCount": 17,
         "years": [
+          "2015_main",
+          "2017_makeup",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
           "2024_main",
           "2025_makeup",
           "2026_main",
@@ -4676,9 +4925,9 @@
           "新期造山帯（環太平洋造山帯＝南アルプス山脈・火山・地震・地熱発電＋水力発電で再エネ8割超）",
           "偏西風の風上（西岸多雨・氷食フィヨルド）と風下（東岸カンタベリー平野の少雨・牧草地）",
           "酪農・牧羊（乳製品世界有数輸出）とキウイフルーツ・マオリ共生（ワイタンギ条約）",
-          "自然災害",
-          "地理総合・探究",
-          "小麦"
+          "地理B",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -4708,6 +4957,12 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: 地震, フィヨルド"
+                },
                 {
                   "examId": "2024_main",
                   "questionId": "2024_main_d1_q1",
@@ -4975,7 +5230,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: 言語"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: マオリ, 先住民"
+                },
+                {
+                  "examId": "2026_makeup",
+                  "questionId": "2026_makeup_d6_q5",
+                  "questionLabel": "第6問 問5",
+                  "note": "関連語句: 移民"
+                }
+              ]
             }
           }
         ]
@@ -5192,8 +5466,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 40,
+        "appearanceCount": 136,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -5206,7 +5496,7 @@
           "適地適作の企業的農業帯（酪農・コーン・春/冬小麦・綿花・地中海式・牧畜）とアグリビジネス",
           "ラストベルト（スノーベルト）からサンベルト（シリコンバレー等）への移動とシェール革命",
           "サラダボウル・WASP・ヒスパニック急増・メガロポリス・インナーシティ・ジェントリフィケーション",
-          "地理総合・探究",
+          "地理B",
           "人口"
         ]
       },
@@ -5241,6 +5531,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d2_q6",
+                  "questionLabel": "第2問 問6",
+                  "note": "関連語句: 水資源"
+                },
+                {
                   "examId": "2026_main",
                   "questionId": "2026_main_d3_q5",
                   "questionLabel": "第3問 問5",
@@ -5272,22 +5568,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d3_q3",
-                  "questionLabel": "第3問 問3",
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q5",
+                  "questionLabel": "第1問 問5",
                   "note": "関連語句: 自然災害"
                 },
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d3_q4",
-                  "questionLabel": "第3問 問4",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d1_q5",
+                  "questionLabel": "第1問 問5",
                   "note": "関連語句: 自然災害"
                 },
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d3_q4",
-                  "questionLabel": "第3問 問4",
-                  "note": "関連語句: 自然災害, ミシシッピ川"
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d1_q6",
+                  "questionLabel": "第1問 問6",
+                  "note": "関連語句: 自然災害"
                 }
               ]
             }
@@ -5584,22 +5880,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q3",
-                  "questionLabel": "第4問 問3",
-                  "note": "関連語句: 大豆"
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: トウモロコシ, 大豆"
                 },
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d1_q1",
-                  "questionLabel": "第1問 問1",
-                  "note": "関連語句: トウモロコシ, 小麦"
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: トウモロコシ"
                 },
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
-                  "note": "関連語句: トウモロコシ, 小麦"
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: トウモロコシ"
                 }
               ]
             }
@@ -5622,21 +5918,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d1_q1",
-                  "questionLabel": "第1問 問1",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q4",
+                  "questionLabel": "第2問 問4",
                   "note": "関連語句: トウモロコシ"
                 },
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
-                  "note": "関連語句: トウモロコシ"
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q6",
+                  "questionLabel": "第2問 問6",
+                  "note": "関連語句: 穀物メジャー"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: トウモロコシ"
                 }
               ]
@@ -5667,21 +5963,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q3",
-                  "questionLabel": "第2問 問3",
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 石炭, 原油"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d3_q3",
+                  "questionLabel": "第3問 問3",
                   "note": "関連語句: 石炭"
                 },
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d2_q2",
-                  "questionLabel": "第2問 問2",
-                  "note": "関連語句: 原油"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q5",
-                  "questionLabel": "第4問 問5",
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: 原油"
                 }
               ]
@@ -5713,22 +6009,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d4_q6",
-                  "questionLabel": "第4問 問6",
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: 自動車"
                 },
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d6_q4",
-                  "questionLabel": "第6問 問4",
-                  "note": "関連語句: 自動車"
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: ICT"
                 },
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d5_q4",
-                  "questionLabel": "第5問 問4",
-                  "note": "関連語句: デトロイト"
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: 自動車"
                 }
               ]
             }
@@ -5813,22 +6109,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d3_q3",
-                  "questionLabel": "第3問 問3",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q3",
+                  "questionLabel": "第2問 問3",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d3_q6",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q6",
                   "questionLabel": "第3問 問6",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
-                  "note": "関連語句: 人口"
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 多民族, 移民"
                 }
               ]
             }
@@ -5854,21 +6150,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 大都市圏, 都市圏"
+                },
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: 都市圏"
+                },
+                {
                   "examId": "2024_main",
                   "questionId": "2024_main_d3_q5",
                   "questionLabel": "第3問 問5",
-                  "note": "関連語句: 都市圏"
-                },
-                {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d3_q6",
-                  "questionLabel": "第3問 問6",
-                  "note": "関連語句: 都市圏"
-                },
-                {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d5_q1",
-                  "questionLabel": "第5問 問1",
                   "note": "関連語句: 都市圏"
                 }
               ]
@@ -6214,8 +6510,21 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 10,
+        "appearanceCount": 32,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2018_main",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2025_makeup",
           "2026_main",
@@ -6225,9 +6534,9 @@
           "カナダ楯状地・氷河湖（五大湖）とタイガ林（紙・パルプ世界有数）",
           "安価な水力発電によるアルミニウム精錬（キティマット等）とオイルサンド・ウラン",
           "英語・フランス語（ケベック州）の2公用語とモザイク国家・多文化主義・プレーリー春小麦",
-          "地理総合・探究",
-          "自然災害",
-          "人口"
+          "地理B",
+          "人口",
+          "自動車"
         ]
       },
       "nature": {
@@ -6399,7 +6708,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 小麦"
+                }
+              ]
             }
           }
         ],
@@ -6425,7 +6741,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 原油"
+                }
+              ]
             }
           }
         ],
@@ -6448,6 +6771,18 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 自動車"
+                },
                 {
                   "examId": "2025_makeup",
                   "questionId": "2025_makeup_d6_q4",
@@ -6789,8 +7124,19 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 8,
+        "appearanceCount": 29,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2024_main",
           "2025_makeup",
           "2026_main",
@@ -6800,9 +7146,9 @@
           "マキラドーラ（米国国境沿いの保税加工区）とUSMCAによる自動車・家電輸出",
           "メキシコ高原（標高約2200mの常春都市メキシコシティ）と大気汚染・地震",
           "銀産出世界1位・原油・アボカドと対米移民（送金）・メスティーソ",
-          "地理総合・探究",
+          "地理B",
           "人口",
-          "自然災害"
+          "トウモロコシ"
         ]
       },
       "nature": {
@@ -6829,7 +7175,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 地震"
+                }
+              ]
             }
           }
         ]
@@ -6917,7 +7270,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: トウモロコシ"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: トウモロコシ"
+                }
+              ]
             }
           }
         ],
@@ -6963,9 +7329,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d6_q4",
-                  "questionLabel": "第6問 問4",
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: 自動車"
                 }
               ]
@@ -7313,8 +7691,15 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 5,
+        "appearanceCount": 19,
         "years": [
+          "2017_makeup",
+          "2018_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2024_makeup",
           "2025_makeup",
           "2026_makeup"
@@ -7324,8 +7709,8 @@
           "アマゾン川流域の熱帯雨林（セルバ）伐採・焼畑（ロサ）と牧場化",
           "カラジャス鉄山などの鉄鉱石と水力発電中心の電源構成（イタイプダム）",
           "ポルトガル語・人種構成・計画都市ブラジリア・ファヴェーラ・メルコスール",
-          "人口",
-          "地理総合・探究"
+          "地理B",
+          "人口"
         ]
       },
       "nature": {
@@ -7501,10 +7886,16 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q3",
+                  "questionLabel": "第4問 問3",
+                  "note": "関連語句: 大豆"
+                },
+                {
                   "examId": "2024_makeup",
                   "questionId": "2024_makeup_d4_q3",
                   "questionLabel": "第4問 問3",
-                  "note": "関連語句: 大豆, コーヒー"
+                  "note": "関連語句: コーヒー, 大豆"
                 },
                 {
                   "examId": "2026_makeup",
@@ -7536,7 +7927,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 原油"
+                }
+              ]
             }
           }
         ],
@@ -7557,7 +7955,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d3_q3",
+                  "questionLabel": "第3問 問3",
+                  "note": "関連語句: サンパウロ"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 自動車"
+                }
+              ]
             }
           }
         ],
@@ -7632,7 +8043,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d3_q3",
+                  "questionLabel": "第3問 問3",
+                  "note": "関連語句: スラム"
+                }
+              ]
             }
           }
         ]
@@ -7929,8 +8347,13 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 5,
+        "appearanceCount": 11,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2019_main",
+          "2020_makeup",
+          "2022_main",
           "2024_makeup",
           "2026_makeup"
         ],
@@ -7939,8 +8362,8 @@
           "パタゴニアの乾燥気候（アンデス山脈の偏西風雨蔭効果）と羊牧畜",
           "ヨーロッパ系住民多数（イタリア・スペイン系）・メルコスールとインフレ危機",
           "人口",
-          "大豆",
-          "EU"
+          "宗教",
+          "地理B"
         ]
       },
       "nature": {
@@ -8177,7 +8600,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 移民"
+                }
+              ]
             }
           }
         ]
@@ -8415,8 +8845,14 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 2,
+        "appearanceCount": 11,
         "years": [
+          "2016_main",
+          "2017_makeup",
+          "2020_makeup",
+          "2022_main",
+          "2023_makeup",
+          "2024_main",
           "2024_makeup",
           "2026_main"
         ],
@@ -8425,8 +8861,8 @@
           "ナスカプレート沈み込み・アンデス山脈と銅鉱石世界1位・リチウム世界2位",
           "ペルー海流（寒流）による海岸砂漠と好漁場・エルニーニョ",
           "南半球の季節逆転を活かしたブドウ・ワイン・サケ対日輸出とFTA網",
-          "人口",
-          "地理総合・探究"
+          "地理B",
+          "自然災害"
         ]
       },
       "nature": {
@@ -8455,7 +8891,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: フィヨルド"
+                }
+              ]
             }
           }
         ]
@@ -8591,7 +9034,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: フィヨルド"
+                }
+              ]
             }
           }
         ],
@@ -8960,8 +9410,13 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 3,
+        "appearanceCount": 14,
         "years": [
+          "2018_makeup",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2023_makeup",
           "2024_main",
           "2024_makeup"
         ],
@@ -8969,9 +9424,9 @@
           "アンデス山脈の高度別農業・生活（ティエラ・フリア/ヘラーダ、リャマ・アルパカ、ジャガイモ原産）",
           "ペルー海流（寒流）の湧昇流によるアンチョビ（魚粉）漁業とエルニーニョ現象",
           "インカ帝国（マチュピチュ）と先住民（インディオ）・銅/亜鉛/銀資源",
-          "地理総合・探究",
+          "地理B",
           "人口",
-          "大豆"
+          "トウモロコシ"
         ]
       },
       "nature": {
@@ -9088,7 +9543,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d2_q3",
+                  "questionLabel": "第2問 問3",
+                  "note": "関連語句: 漁業, 湧昇流"
+                }
+              ]
             }
           }
         ],
@@ -9109,7 +9571,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 亜鉛"
+                }
+              ]
             }
           }
         ],
@@ -9194,7 +9663,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 先住民"
+                }
+              ]
             }
           }
         ]
@@ -9377,8 +9853,14 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 4,
+        "appearanceCount": 11,
         "years": [
+          "2015_main",
+          "2017_makeup",
+          "2019_main",
+          "2020_makeup",
+          "2021_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup"
         ],
@@ -9386,8 +9868,8 @@
           "赤道付近の高地（ボゴタ標高2600mの常春・年較差1℃未満）と標高別コーヒー栽培",
           "アラビカ種コーヒー（世界3〜4位）と切り花空輸（対米輸出）",
           "石炭・原油・エメラルドとベネズエラ難民受入",
-          "自然災害",
-          "洪水",
+          "地理B",
+          "移民",
           "人口"
         ]
       },
@@ -9415,6 +9897,12 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: コーヒー"
+                },
                 {
                   "examId": "2024_makeup",
                   "questionId": "2024_makeup_d4_q3",
@@ -9509,6 +9997,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: コーヒー"
+                },
+                {
                   "examId": "2024_makeup",
                   "questionId": "2024_makeup_d4_q3",
                   "questionLabel": "第4問 問3",
@@ -9555,21 +10049,21 @@
               "importance": "C",
               "pastExamRefs": [
                 {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 南アメリカ"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d2_q3",
+                  "questionLabel": "第2問 問3",
+                  "note": "関連語句: 南アメリカ"
+                },
+                {
                   "examId": "2024_makeup",
                   "questionId": "2024_makeup_d4_q2",
                   "questionLabel": "第4問 問2",
-                  "note": "関連語句: 南アメリカ"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q3",
-                  "questionLabel": "第4問 問3",
-                  "note": "関連語句: 南アメリカ"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q4",
-                  "questionLabel": "第4問 問4",
                   "note": "関連語句: 南アメリカ"
                 }
               ]
@@ -9815,14 +10309,17 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 1,
+        "appearanceCount": 2,
         "years": [
+          "2015_main",
           "2024_makeup"
         ],
         "frequentTopics": [
           "世界最大級の原油埋蔵量（オリノコタール・マラカイボ湖・OPEC原加盟国）",
           "石油モノカルチャー経済の破綻によるハイパーインフレと700万人超の難民流出",
           "オリノコ川流域の熱帯草原「リャノ」とギアナ高地",
+          "移民",
+          "宗教",
           "人口"
         ]
       },
@@ -10036,6 +10533,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 移民"
+                },
+                {
                   "examId": "2024_makeup",
                   "questionId": "2024_makeup_d4_q2",
                   "questionLabel": "第4問 問2",
@@ -10224,8 +10727,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 82,
+        "appearanceCount": 264,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -10238,7 +10757,7 @@
           "モンスーンと太平洋側・日本海側・瀬戸内の気候差",
           "臨海型製鉄所と太平洋ベルトの産業立地変化",
           "少子高齢化・三大都市圏・過疎・防災（地形図・ハザードマップ）",
-          "地理総合・探究",
+          "地理B",
           "人口"
         ]
       },
@@ -10270,22 +10789,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d3_q2",
-                  "questionLabel": "第3問 問2",
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d1_q5",
+                  "questionLabel": "第1問 問5",
+                  "note": "関連語句: 地震"
+                },
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d6_q6",
+                  "questionLabel": "第6問 問6",
+                  "note": "関連語句: 地震"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d1_q5",
+                  "questionLabel": "第1問 問5",
                   "note": "関連語句: 火山"
-                },
-                {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d3_q6",
-                  "questionLabel": "第3問 問6",
-                  "note": "関連語句: 地震"
-                },
-                {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d2_q2",
-                  "questionLabel": "第2問 問2",
-                  "note": "関連語句: 地震"
                 }
               ]
             }
@@ -10314,21 +10833,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d1_q4",
-                  "questionLabel": "第1問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d6_q3",
+                  "questionLabel": "第6問 問3",
+                  "note": "関連語句: 地形図"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d6_q7",
+                  "questionLabel": "第6問 問7",
                   "note": "関連語句: 自然災害"
                 },
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d1_q6",
-                  "questionLabel": "第1問 問6",
-                  "note": "関連語句: 自然災害"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d1_q3",
-                  "questionLabel": "第1問 問3",
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d1_q5",
+                  "questionLabel": "第1問 問5",
                   "note": "関連語句: 自然災害"
                 }
               ]
@@ -10584,10 +11103,22 @@
               "importance": "A",
               "pastExamRefs": [
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d3_q2",
-                  "questionLabel": "第3問 問2",
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d6_q3",
+                  "questionLabel": "第6問 問3",
                   "note": "関連語句: 海流"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d1_q3",
+                  "questionLabel": "第1問 問3",
+                  "note": "関連語句: 海流, 潮目"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d6_q5",
+                  "questionLabel": "第6問 問5",
+                  "note": "関連語句: 漁業"
                 }
               ]
             }
@@ -10614,16 +11145,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d4_q1",
-                  "questionLabel": "第4問 問1",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d2_q4",
+                  "questionLabel": "第2問 問4",
                   "note": "関連語句: エネルギー"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d4_q4",
-                  "questionLabel": "第4問 問4",
-                  "note": "関連語句: 原油"
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: エネルギー"
+                },
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: エネルギー, 再生可能エネルギー"
                 }
               ]
             }
@@ -10688,21 +11225,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d4_q6",
-                  "questionLabel": "第4問 問6",
-                  "note": "関連語句: 自動車"
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: 半導体"
                 },
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d2_q5",
-                  "questionLabel": "第2問 問5",
-                  "note": "関連語句: 自動車"
-                },
-                {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d2_q4",
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d2_q4",
                   "questionLabel": "第2問 問4",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d3_q5",
+                  "questionLabel": "第3問 問5",
                   "note": "関連語句: 自動車"
                 }
               ]
@@ -10783,22 +11320,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q2",
-                  "questionLabel": "第2問 問2",
-                  "note": "関連語句: 都市圏"
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q5",
+                  "questionLabel": "第3問 問5",
+                  "note": "関連語句: 人口, 過疎"
                 },
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q4",
-                  "questionLabel": "第2問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 大都市圏, 人口"
+                },
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q3",
+                  "questionLabel": "第3問 問3",
                   "note": "関連語句: 人口"
-                },
-                {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q5",
-                  "questionLabel": "第2問 問5",
-                  "note": "関連語句: 都市圏, 大都市圏"
                 }
               ]
             }
@@ -10822,22 +11359,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d1_q4",
-                  "questionLabel": "第1問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d6_q3",
+                  "questionLabel": "第6問 問3",
+                  "note": "関連語句: 地形図"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d6_q7",
+                  "questionLabel": "第6問 問7",
                   "note": "関連語句: 自然災害"
                 },
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d1_q6",
-                  "questionLabel": "第1問 問6",
-                  "note": "関連語句: 自然災害"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d1_q3",
-                  "questionLabel": "第1問 問3",
-                  "note": "関連語句: 自然災害"
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d1_q5",
+                  "questionLabel": "第1問 問5",
+                  "note": "関連語句: 旧河道, 自然災害"
                 }
               ]
             }
@@ -11198,8 +11735,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 25,
+        "appearanceCount": 85,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -11212,8 +11765,8 @@
           "経済特区（深圳）からハイテク・EV・巨大消費市場への転換",
           "西部大開発・西気東輸・南水北調・一帯一路",
           "一人っ子政策の反動（少子高齢化・人口減少）・民工潮と戸籍・55少数民族",
-          "地理総合・探究",
-          "国際河川"
+          "地理B",
+          "自然災害"
         ]
       },
       "nature": {
@@ -11245,6 +11798,18 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 小麦"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 小麦"
+                },
                 {
                   "examId": "2026_main",
                   "questionId": "2026_main_d4_q1",
@@ -11304,7 +11869,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: カルスト, タワーカルスト"
+                },
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d1_q3",
+                  "questionLabel": "第1問 問3",
+                  "note": "関連語句: 黄河"
+                }
+              ]
             }
           }
         ]
@@ -11594,16 +12172,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 小麦"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 小麦"
+                },
+                {
                   "examId": "2026_main",
                   "questionId": "2026_main_d4_q1",
                   "questionLabel": "第4問 問1",
                   "note": "関連語句: 小麦"
-                },
-                {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
-                  "note": "関連語句: 大豆"
                 }
               ]
             }
@@ -11632,7 +12216,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: 石炭"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q4",
+                  "questionLabel": "第4問 問4",
+                  "note": "関連語句: 石炭"
+                },
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: 再生可能エネルギー"
+                }
+              ]
             }
           }
         ],
@@ -11660,9 +12263,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d6_q2",
-                  "questionLabel": "第6問 問2",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q4",
+                  "questionLabel": "第4問 問4",
+                  "note": "関連語句: 経済特区"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: 西部大開発"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d4_q3",
+                  "questionLabel": "第4問 問3",
                   "note": "関連語句: 経済特区"
                 }
               ]
@@ -11748,21 +12363,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q4",
-                  "questionLabel": "第2問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q6",
+                  "questionLabel": "第3問 問6",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q5",
-                  "questionLabel": "第6問 問5",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q6",
+                  "questionLabel": "第4問 問6",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d5_q2",
-                  "questionLabel": "第5問 問2",
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d3_q2",
+                  "questionLabel": "第3問 問2",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -11787,10 +12402,22 @@
               "importance": "A",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q5",
-                  "questionLabel": "第6問 問5",
-                  "note": "関連語句: 宗教"
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 言語, 少数民族"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: 宗教, 言語"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: 宗教, 少数民族"
                 }
               ]
             }
@@ -12216,8 +12843,19 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 4,
+        "appearanceCount": 20,
         "years": [
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2019_main",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2025_main",
           "2026_main",
           "2026_makeup"
@@ -12226,8 +12864,9 @@
           "漢江の奇跡と財閥（半導体・造船・自動車）",
           "ソウル一極集中と少子高齢化（世界最低水準の出生率）",
           "オンドルとキムチなどの生活文化",
-          "地理総合・探究",
-          "人口"
+          "地理B",
+          "人口",
+          "石炭"
         ]
       },
       "nature": {
@@ -12382,7 +13021,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 自動車"
+                }
+              ]
             }
           }
         ],
@@ -12457,9 +13103,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d5_q3",
-                  "questionLabel": "第5問 問3",
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d3_q2",
+                  "questionLabel": "第3問 問2",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -12726,8 +13384,23 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 22,
+        "appearanceCount": 61,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -12739,9 +13412,9 @@
           "世界の半導体ファウンドリ拠点（TSMC・新竹）",
           "新期造山帯と台風・地震",
           "二期作・亜熱帯農業",
-          "地理総合・探究",
-          "鉄鋼業",
-          "人口"
+          "地理B",
+          "人口",
+          "ASEAN"
         ]
       },
       "nature": {
@@ -12768,6 +13441,12 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d1_q5",
+                  "questionLabel": "第1問 問5",
+                  "note": "関連語句: 地震, 自然災害"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d3_q5",
@@ -12878,6 +13557,12 @@
               "importance": "B",
               "pastExamRefs": [
                 {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: エネルギー"
+                },
+                {
                   "examId": "2025_main",
                   "questionId": "2025_main_d4_q1",
                   "questionLabel": "第4問 問1",
@@ -12907,7 +13592,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 半導体"
+                }
+              ]
             }
           }
         ],
@@ -12971,15 +13663,21 @@
               "importance": "B",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q4",
-                  "questionLabel": "第2問 問4",
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d3_q2",
+                  "questionLabel": "第3問 問2",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d5_q2",
-                  "questionLabel": "第5問 問2",
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d3_q1",
+                  "questionLabel": "第3問 問1",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -13173,12 +13871,17 @@
       "examSummary": {
         "rank": "C",
         "manualRankOverride": "C",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 2,
+        "years": [
+          "2023_makeup",
+          "2026_main"
+        ],
         "frequentTopics": [
           "ステップ気候・草原の遊牧（ゲル）とゾド（雪害）",
           "石炭・銅の鉱産資源輸出（対中依存）",
-          "ウランバートルの大気汚染と定住化"
+          "ウランバートルの大気汚染と定住化",
+          "人口",
+          "砂漠化"
         ]
       },
       "nature": {
@@ -13204,7 +13907,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2026_main",
+                  "questionId": "2026_main_d1_q4",
+                  "questionLabel": "第1問 問4",
+                  "note": "関連語句: 砂漠化"
+                }
+              ]
             }
           }
         ]
@@ -13289,7 +13999,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2026_main",
+                  "questionId": "2026_main_d1_q4",
+                  "questionLabel": "第1問 問4",
+                  "note": "関連語句: 砂漠化"
+                }
+              ]
             }
           }
         ],
@@ -13567,8 +14284,23 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 11,
+        "appearanceCount": 57,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2025_main",
           "2025_makeup",
@@ -13578,9 +14310,9 @@
           "古期造山帯（ペニン山脈炭田）とロンドン盆地ケスタ地形・テムズ川エスチュアリー",
           "西岸海洋性気候（Cfb）と混合農業・酪農・北海油田（ブレント原油）",
           "脱工業化とロンドン金融センター（シティ）・ブレグジット（EU離脱）と移民/スコットランド",
-          "地理総合・探究",
-          "自然災害",
-          "人口"
+          "地理B",
+          "人口",
+          "プランテーション"
         ]
       },
       "nature": {
@@ -13720,7 +14452,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 産業革命"
+                }
+              ]
             }
           }
         ],
@@ -13824,14 +14563,20 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q5",
-                  "questionLabel": "第6問 問5",
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q6",
+                  "questionLabel": "第4問 問6",
                   "note": "関連語句: 移民"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d6_q5",
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: EU"
+                },
+                {
+                  "examId": "2025_main",
+                  "questionId": "2025_main_d6_q5",
                   "questionLabel": "第6問 問5",
                   "note": "関連語句: 移民"
                 }
@@ -14061,8 +14806,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 8,
+        "appearanceCount": 43,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_makeup",
           "2025_main",
           "2025_makeup",
@@ -14074,8 +14835,8 @@
           "原子力発電比率（約65〜70%）世界トップ級と電力純輸出国",
           "エアバス（トゥールーズ）・TGV・ファッションと旧植民地（マグレブ）移民・ライシテ",
           "人口",
-          "原油",
-          "火山"
+          "地理B",
+          "宗教"
         ]
       },
       "nature": {
@@ -14103,7 +14864,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: アルプス山脈"
+                }
+              ]
             }
           }
         ]
@@ -14244,15 +15012,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q4",
-                  "questionLabel": "第4問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 小麦"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q4",
+                  "questionLabel": "第5問 問4",
                   "note": "関連語句: EU"
                 },
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d4_q2",
-                  "questionLabel": "第4問 問2",
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: 小麦"
                 }
               ]
@@ -14298,7 +15072,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q6",
+                  "questionLabel": "第2問 問6",
+                  "note": "関連語句: 観光"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q4",
+                  "questionLabel": "第4問 問4",
+                  "note": "関連語句: 観光"
+                }
+              ]
             }
           }
         ],
@@ -14375,16 +15162,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d4_q4",
-                  "questionLabel": "第4問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: 移民"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q4",
+                  "questionLabel": "第5問 問4",
                   "note": "関連語句: EU"
                 },
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q5",
-                  "questionLabel": "第6問 問5",
-                  "note": "関連語句: 移民, イスラム教"
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d3_q1",
+                  "questionLabel": "第3問 問1",
+                  "note": "関連語句: イスラム教"
                 }
               ]
             }
@@ -14743,8 +15536,19 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 14,
+        "appearanceCount": 42,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -14757,7 +15561,7 @@
           "ライン川国際水運・ルール工業地域の構造転換と南部先端産業",
           "褐炭・再生可能エネルギー（風力・太陽光）・脱原発完了",
           "東西ドイツ統一の地域差・ガストアルバイター由来トルコ系移民・難民受入",
-          "国際河川",
+          "地理B",
           "人口"
         ]
       },
@@ -14791,6 +15595,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: ライン川"
+                },
+                {
                   "examId": "2026_main",
                   "questionId": "2026_main_d6_q1",
                   "questionLabel": "第6問 問1",
@@ -14800,12 +15610,6 @@
                   "examId": "2026_main",
                   "questionId": "2026_main_d6_q2",
                   "questionLabel": "第6問 問2",
-                  "note": "関連語句: 国際河川"
-                },
-                {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d6_q3",
-                  "questionLabel": "第6問 問3",
                   "note": "関連語句: 国際河川"
                 }
               ]
@@ -14942,6 +15746,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: ライ麦, 小麦"
+                },
+                {
                   "examId": "2025_main",
                   "questionId": "2025_main_d4_q2",
                   "questionLabel": "第4問 問2",
@@ -14972,7 +15782,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: 再生可能エネルギー"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 褐炭"
+                }
+              ]
             }
           }
         ],
@@ -14995,6 +15818,18 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 自動車"
+                },
                 {
                   "examId": "2026_main",
                   "questionId": "2026_main_d6_q3",
@@ -15077,7 +15912,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: EU"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 移民"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 難民"
+                }
+              ]
             }
           }
         ]
@@ -15482,8 +16336,20 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 4,
+        "appearanceCount": 32,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_makeup",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2024_main",
           "2025_main"
         ],
@@ -15491,9 +16357,9 @@
           "北部の工業三角地帯・第三のイタリア（サードイタリー）と南部（メッツォジョルノ）の南北格差",
           "ポー川流域の混合農業・欧州最大の稲作と南部の地中海式農業",
           "アルプス・アペニン山脈の地震・火山と地中海難民玄関口・少子高齢化",
+          "地理B",
           "人口",
-          "自然災害",
-          "都市圏"
+          "三角州"
         ]
       },
       "nature": {
@@ -15520,7 +16386,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d3_q1",
+                  "questionLabel": "第3問 問1",
+                  "note": "関連語句: ラグーン"
+                }
+              ]
             }
           }
         ]
@@ -15698,7 +16571,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d2_q3",
+                  "questionLabel": "第2問 問3",
+                  "note": "関連語句: 第三のイタリア"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 自動車"
+                }
+              ]
             }
           }
         ],
@@ -15767,7 +16653,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: EU"
+                }
+              ]
             }
           }
         ]
@@ -16096,8 +16989,18 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 2,
+        "appearanceCount": 26,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2024_main",
           "2025_main"
         ],
@@ -16105,9 +17008,9 @@
           "オリーブ油生産世界1位・地中海式農業とアルメリアの施設園芸（プラスチックの海）",
           "EU加盟後の安価賃金を活かした自動車生産（欧州2位級）・観光世界2位",
           "カタルーニャ・バスクの自治・分離運動と中南米（ラテンアメリカ）との歴史的紐帯",
-          "都市圏",
-          "言語",
-          "地理総合・探究"
+          "地理B",
+          "人口",
+          "小麦"
         ]
       },
       "nature": {
@@ -16134,7 +17037,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 海峡"
+                }
+              ]
             }
           }
         ]
@@ -16268,8 +17178,20 @@
               "importance": "A",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d4_q4",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: EU"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q4",
                   "questionLabel": "第4問 問4",
                   "note": "関連語句: 観光"
                 }
@@ -16343,6 +17265,12 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: EU"
+                },
                 {
                   "examId": "2024_main",
                   "questionId": "2024_main_d3_q6",
@@ -16582,17 +17510,27 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 15,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
           "2025_main"
         ],
         "frequentTopics": [
           "ポルダー（干拓地）と海抜以下の低地・ライン川デルタ",
           "ロッテルダム（ユーロポート）の欧州最大港湾・中継貿易機能",
           "施設園芸（チューリップ・野菜）と酪農による驚異的農産物輸出世界2位級",
-          "火山",
-          "サンゴ礁",
-          "人口"
+          "地理B",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -16751,7 +17689,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: ライン川"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d2_q6",
+                  "questionLabel": "第2問 問6",
+                  "note": "関連語句: 港湾, ユーロポート"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 港湾, ロッテルダム"
+                }
+              ]
             }
           }
         ],
@@ -17010,15 +17967,21 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 5,
         "years": [
+          "2016_main",
+          "2020_makeup",
+          "2022_main",
+          "2022_makeup",
           "2025_makeup"
         ],
         "frequentTopics": [
           "北部フランデレン（オランダ語系＝フラマン語）と南部ワロン（フランス語）の言語境界・連邦制",
           "EU本部・NATO本部が置かれる「ヨーロッパの首都」ブリュッセル",
           "アントワープ港（ダイヤモンド取引）と南部の石炭重工業衰退→北部臨海工業発展",
-          "地理総合・探究"
+          "地理B",
+          "鉄鋼業",
+          "人口"
         ]
       },
       "nature": {
@@ -17240,7 +18203,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q3",
+                  "questionLabel": "第3問 問3",
+                  "note": "関連語句: 都市"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d3_q4",
+                  "questionLabel": "第3問 問4",
+                  "note": "関連語句: 都市"
+                }
+              ]
             }
           }
         ]
@@ -17446,12 +18422,24 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 9,
+        "years": [
+          "2016_main",
+          "2018_makeup",
+          "2019_main",
+          "2020_main",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
+          "2025_main"
+        ],
         "frequentTopics": [
           "アルプス山脈の氷河地形・移牧（アルプ）・水力発電中心の電源",
           "4公用語（ドイツ語・フランス語・イタリア語・ロマンシュ語）の多言語連邦",
-          "精密機械・時計・製薬（バーゼル）と永世中立・国際金融・非EU/EFTA加盟"
+          "精密機械・時計・製薬（バーゼル）と永世中立・国際金融・非EU/EFTA加盟",
+          "人口",
+          "地理B",
+          "三角州"
         ]
       },
       "nature": {
@@ -17480,7 +18468,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: アルプス"
+                }
+              ]
             }
           }
         ]
@@ -17677,7 +18672,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 国際機関, ジュネーブ"
+                }
+              ]
             }
           }
         ]
@@ -17937,8 +18939,12 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 6,
+        "appearanceCount": 10,
         "years": [
+          "2016_main",
+          "2019_main",
+          "2022_main",
+          "2023_makeup",
           "2025_makeup",
           "2026_main"
         ],
@@ -17947,8 +18953,8 @@
           "ドナウ川水運の要衝（ウィーン）と旧ハプスブルク圏・中欧経済連携",
           "EU加盟・シェンゲン参加の中立国",
           "国際河川",
-          "地理総合・探究",
-          "ケッペンの気候区分"
+          "地理B",
+          "三角州"
         ]
       },
       "nature": {
@@ -17977,21 +18983,21 @@
               "importance": "A",
               "pastExamRefs": [
                 {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: ドナウ川"
+                },
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: アルプス, アルプス山脈"
+                },
+                {
                   "examId": "2026_main",
                   "questionId": "2026_main_d6_q1",
                   "questionLabel": "第6問 問1",
-                  "note": "関連語句: 国際河川, ドナウ川"
-                },
-                {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d6_q2",
-                  "questionLabel": "第6問 問2",
-                  "note": "関連語句: 国際河川"
-                },
-                {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d6_q3",
-                  "questionLabel": "第6問 問3",
                   "note": "関連語句: 国際河川, ドナウ川"
                 }
               ]
@@ -18076,9 +19082,16 @@
               "EU"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: EU"
+                }
+              ]
             }
           }
         ],
@@ -18122,9 +19135,22 @@
               "EU"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 観光"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: EU"
+                }
+              ]
             }
           }
         ],
@@ -18190,9 +19216,16 @@
               "国際機関"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: EU"
+                }
+              ]
             }
           }
         ]
@@ -18369,12 +19402,17 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 4,
+        "years": [
+          "2018_main"
+        ],
         "frequentTopics": [
           "バルト楯状地のキルナ鉄山（高品位鉄鉱石）と氷河湖・針葉樹林（タイガ）",
           "高福祉・高負担国家（北欧モデル）と水力・原子力による低炭素電源",
-          "EU加盟・非ユーロ圏・2024年NATO加盟と移民統合課題"
+          "EU加盟・非ユーロ圏・2024年NATO加盟と移民統合課題",
+          "地理B",
+          "再生可能エネルギー",
+          "言語"
         ]
       },
       "nature": {
@@ -18507,7 +19545,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 再生可能エネルギー"
+                }
+              ]
             }
           }
         ],
@@ -18907,8 +19952,13 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 3,
+        "appearanceCount": 11,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2018_main",
+          "2022_main",
+          "2023_makeup",
           "2024_main",
           "2026_makeup"
         ],
@@ -18917,8 +19967,8 @@
           "北大西洋海流（暖流）と偏西風による高緯度不凍港（ベルゲン・ナルヴィク）",
           "水力発電約9割・アルミ精錬・EV新車普及世界1位・北海油田/天然ガス輸出",
           "EU非加盟（EFTA・EEA）とサーモン養殖世界1位・サーミ人",
-          "自然災害",
-          "氷河地形"
+          "地理B",
+          "人口"
         ]
       },
       "nature": {
@@ -18949,6 +19999,12 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: フィヨルド"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d3_q2",
@@ -19041,7 +20097,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: フィヨルド"
+                }
+              ]
             }
           }
         ],
@@ -19458,15 +20521,19 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 1,
+        "appearanceCount": 6,
         "years": [
+          "2018_main",
+          "2021_makeup",
           "2026_main"
         ],
         "frequentTopics": [
           "氷河に削られた数万の湖沼と森林（タイガ・スオミ）",
           "ウラル語族（スウェーデン・ノルウェーと系統が異なるフィンランド語）",
           "林業・製紙・ICT（ノキア由来）と高水準の教育・2023年NATO加盟",
-          "人口"
+          "地理B",
+          "人口",
+          "再生可能エネルギー"
         ]
       },
       "nature": {
@@ -19593,9 +20660,16 @@
               "再生可能エネルギー"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 原子力, 再生可能エネルギー"
+                }
+              ]
             }
           }
         ],
@@ -19682,7 +20756,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 言語"
+                }
+              ]
             }
           }
         ]
@@ -19914,12 +20995,21 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 5,
+        "years": [
+          "2015_main",
+          "2018_main",
+          "2019_main",
+          "2019_makeup",
+          "2023_makeup"
+        ],
         "frequentTopics": [
           "協同組合による酪農・養豚（バター・チーズ・豚肉輸出）",
           "風力発電比率世界1位級（約5〜6割・洋上風力ヴェスタス）",
-          "グリーンランド自治領と環境・高福祉社会"
+          "グリーンランド自治領と環境・高福祉社会",
+          "人口",
+          "自然災害",
+          "地理B"
         ]
       },
       "nature": {
@@ -20409,15 +21499,21 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 6,
         "years": [
+          "2016_main",
+          "2019_makeup",
+          "2022_main",
+          "2023_makeup",
           "2025_main"
         ],
         "frequentTopics": [
           "大西洋中央海嶺（広がる境界）の地上露出と火山・氷河・間欠泉（ガイシール）",
           "地熱発電＋水力発電で電力約100%再生可能エネルギー",
           "安価な電力を活かしたアルミニウム精錬・データセンターと漁業・EU非加盟",
-          "原子力"
+          "原子力",
+          "地理B",
+          "自然災害"
         ]
       },
       "nature": {
@@ -20445,7 +21541,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q2",
+                  "questionLabel": "第1問 問2",
+                  "note": "関連語句: 火山"
+                }
+              ]
             }
           }
         ]
@@ -20551,7 +21654,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q2",
+                  "questionLabel": "第1問 問2",
+                  "note": "関連語句: 地熱発電"
+                },
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: 再生可能エネルギー"
+                },
+                {
+                  "examId": "2022_main",
+                  "questionId": "2022_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 再生可能エネルギー"
+                }
+              ]
             }
           }
         ],
@@ -20571,7 +21693,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q2",
+                  "questionLabel": "第1問 問2",
+                  "note": "関連語句: 地熱発電"
+                }
+              ]
             }
           }
         ],
@@ -20890,15 +22019,22 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 1,
+        "appearanceCount": 6,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_makeup",
+          "2018_main",
+          "2023_main",
           "2026_makeup"
         ],
         "frequentTopics": [
           "シレジア炭田による石炭火力依存（EU内脱炭素の焦点）",
           "EU東方拡大後の西欧（ドイツ等）製造業・自動車組立の生産拠点化",
           "北ドイツ平原続きの氷河堆積地形（ライ麦・ジャガイモ・豚）とカトリック・ウクライナ難民受入",
-          "人口"
+          "地理B",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -21123,7 +22259,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d3_q1",
+                  "questionLabel": "第3問 問1",
+                  "note": "関連語句: カトリック, キリスト教"
+                }
+              ]
             }
           }
         ]
@@ -21338,12 +22481,16 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 6,
+        "years": [
+          "2019_main"
+        ],
         "frequentTopics": [
           "肥沃な黒土「チェルノーゼム」と「欧州のパン籠」（小麦・トウモロコシ・ヒマワリ油輸出）",
           "ドンバス地方の石炭・鉄鉱石（クリヴィー・リフ）と黒海・オデーサ輸出ルート",
-          "ロシア侵攻（2022年）による食料危機・難民流出と東西の言語/歴史構造"
+          "ロシア侵攻（2022年）による食料危機・難民流出と東西の言語/歴史構造",
+          "地理B",
+          "人口"
         ]
       },
       "nature": {
@@ -21458,7 +22605,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 小麦"
+                }
+              ]
             }
           }
         ],
@@ -21480,7 +22634,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 鉄鉱石, 石炭"
+                }
+              ]
             }
           }
         ],
@@ -21565,7 +22726,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: 旧ソ連"
+                }
+              ]
             }
           }
         ]
@@ -21868,8 +23036,21 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 8,
+        "appearanceCount": 32,
         "years": [
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2022_main",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_makeup",
@@ -21881,7 +23062,7 @@
           "世界最大の気温年較差（ヤクーツク60℃超：Dw）と温暖化による永久凍土融解",
           "原油・天然ガス・石炭・ダイヤモンド・ニッケル等の資源モノカルチャー輸出と小麦世界1位級",
           "シベリア鉄道・バム鉄道（第二シベリア）・北極海航路と少子化・少数民族共和国",
-          "地理総合・探究",
+          "地理B",
           "自然災害"
         ]
       },
@@ -21916,9 +23097,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d1_q2",
-                  "questionLabel": "第1問 問2",
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: 永久凍土, タイガ"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q3",
+                  "questionLabel": "第4問 問3",
+                  "note": "関連語句: バイカル湖, ウラル山脈"
+                },
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d1_q4",
+                  "questionLabel": "第1問 問4",
                   "note": "関連語句: 永久凍土"
                 }
               ]
@@ -22059,6 +23252,18 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: タイガ"
+                },
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 小麦"
+                },
+                {
                   "examId": "2025_makeup",
                   "questionId": "2025_makeup_d1_q1",
                   "questionLabel": "第1問 問1",
@@ -22114,7 +23319,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: シベリア鉄道, 鉄道"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 鉄道"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 鉄鉱石"
+                }
+              ]
             }
           }
         ],
@@ -22189,15 +23413,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d3_q6",
-                  "questionLabel": "第3問 問6",
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q2",
+                  "questionLabel": "第4問 問2",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2026_makeup",
-                  "questionId": "2026_makeup_d5_q3",
-                  "questionLabel": "第5問 問3",
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d4_q3",
+                  "questionLabel": "第4問 問3",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2024_makeup",
+                  "questionId": "2024_makeup_d3_q6",
+                  "questionLabel": "第3問 問6",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -22475,8 +23705,18 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 8,
+        "appearanceCount": 18,
         "years": [
+          "2015_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2019_main",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_makeup",
+          "2023_makeup",
           "2024_main",
           "2025_main",
           "2025_makeup",
@@ -22488,7 +23728,7 @@
           "世界最多のイスラム教徒（スンニ派）とバリ島ヒンドゥー教",
           "ジャワ島の過密とカリマンタン島への首都移転",
           "環太平洋造山帯の火山・地震津波とニッケル・石炭資源",
-          "地理総合・探究",
+          "地理B",
           "人口"
         ]
       },
@@ -22608,10 +23848,16 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: 天然ゴム, プランテーション"
+                },
+                {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d3_q4",
                   "questionLabel": "第3問 問4",
-                  "note": "関連語句: プランテーション, アブラヤシ"
+                  "note": "関連語句: アブラヤシ, プランテーション"
                 }
               ]
             }
@@ -22639,6 +23885,12 @@
               "importance": "S",
               "pastExamRefs": [
                 {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: 石炭"
+                },
+                {
                   "examId": "2024_main",
                   "questionId": "2024_main_d2_q3",
                   "questionLabel": "第2問 問3",
@@ -22664,7 +23916,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: ASEAN"
+                }
+              ]
             }
           }
         ],
@@ -22739,15 +23998,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_makeup",
-                  "questionId": "2025_makeup_d5_q1",
-                  "questionLabel": "第5問 問1",
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 人口, イスラム教"
+                },
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q1",
+                  "questionLabel": "第3問 問1",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d5_q2",
-                  "questionLabel": "第5問 問2",
+                  "examId": "2025_makeup",
+                  "questionId": "2025_makeup_d5_q1",
+                  "questionLabel": "第5問 問1",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -23096,8 +24361,16 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 8,
+        "appearanceCount": 22,
         "years": [
+          "2015_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2022_makeup",
           "2025_main",
           "2026_main"
         ],
@@ -23105,8 +24378,8 @@
           "チャオプラヤ川デルタの稲作と米・天然ゴム（世界1位）・エビ養殖",
           "「アジアのデトロイト」自動車産業集積とチャオプラヤ洪水",
           "上座部仏教と少子高齢化の進行",
+          "地理B",
           "国際河川",
-          "地理総合・探究",
           "自然災害"
         ]
       },
@@ -23134,7 +24407,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d1_q3",
+                  "questionLabel": "第1問 問3",
+                  "note": "関連語句: 洪水"
+                }
+              ]
             }
           }
         ]
@@ -23262,9 +24542,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d6_q3",
-                  "questionLabel": "第6問 問3",
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d2_q6",
+                  "questionLabel": "第2問 問6",
+                  "note": "関連語句: 自動車"
+                },
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: ASEAN"
+                },
+                {
+                  "examId": "2022_makeup",
+                  "questionId": "2022_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
                   "note": "関連語句: 自動車"
                 }
               ]
@@ -23568,8 +24860,16 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 9,
+        "appearanceCount": 20,
         "years": [
+          "2015_main",
+          "2017_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2021_makeup",
+          "2022_makeup",
+          "2023_makeup",
           "2024_main",
           "2026_main",
           "2026_makeup"
@@ -23578,9 +24878,9 @@
           "ドイモイ政策とチャイナプラスワン（繊維・スマホ・電子部品組立）",
           "メコン・紅河両デルタの稲作とコーヒー（ロブスタ種世界2位）",
           "少子化と日本への技能実習生送り出し上位",
-          "国際河川",
-          "鉄鋼業",
-          "人口"
+          "地理B",
+          "人口",
+          "国際河川"
         ]
       },
       "nature": {
@@ -23761,7 +25061,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: コーヒー"
+                },
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: コーヒー"
+                }
+              ]
             }
           }
         ],
@@ -23777,9 +25090,16 @@
               "石炭"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: 石炭"
+                }
+              ]
             }
           }
         ],
@@ -23867,6 +25187,12 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 移民"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d6_q5",
@@ -24056,12 +25382,25 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 11,
+        "years": [
+          "2015_main",
+          "2016_main",
+          "2018_main",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2021_main",
+          "2022_main",
+          "2022_makeup"
+        ],
         "frequentTopics": [
           "ブミプトラ政策（マレー系優先）と多民族社会",
           "マラッカ海峡・パーム油（世界2位）・LNG",
-          "ルックイースト政策と電子・半導体組立"
+          "ルックイースト政策と電子・半導体組立",
+          "人口",
+          "プランテーション",
+          "地理B"
         ]
       },
       "nature": {
@@ -24086,7 +25425,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: パーム油"
+                }
+              ]
             }
           }
         ]
@@ -24170,7 +25516,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: パーム油, プランテーション"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: プランテーション"
+                }
+              ]
             }
           }
         ],
@@ -24210,7 +25569,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2021_main",
+                  "questionId": "2021_main_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: ASEAN"
+                }
+              ]
             }
           }
         ],
@@ -24282,7 +25648,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d3_q3",
+                  "questionLabel": "第3問 問3",
+                  "note": "関連語句: 多民族"
+                }
+              ]
             }
           }
         ]
@@ -24459,8 +25832,17 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 2,
+        "appearanceCount": 13,
         "years": [
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_makeup",
           "2025_main",
           "2026_main"
         ],
@@ -24468,8 +25850,9 @@
           "マラッカ海峡の要衝・中継貿易・国際金融センター",
           "ジュロン工業団地と石油精製・高付加価値工業",
           "多民族社会（4公用語）と水資源自給（NEWater）",
-          "移民",
-          "地理総合・探究"
+          "人口",
+          "地理B",
+          "移民"
         ]
       },
       "nature": {
@@ -24495,7 +25878,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 中継貿易"
+                }
+              ]
             }
           }
         ]
@@ -24594,7 +25984,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 原油, 中継貿易"
+                }
+              ]
             }
           }
         ],
@@ -24908,8 +26305,16 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 3,
+        "appearanceCount": 18,
         "years": [
+          "2015_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2022_makeup",
           "2025_main",
           "2025_makeup"
         ],
@@ -24917,9 +26322,9 @@
           "東南アジア唯一のカトリック多数国（旧スペイン・米国領）",
           "英語力とBPO（コールセンター）・海外出稼ぎ送金（OFW）",
           "バナナプランテーション・ニッケル・台風災害",
-          "プレート",
-          "火山",
-          "氷河"
+          "地理B",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -25041,6 +26446,12 @@
               "importance": "A",
               "pastExamRefs": [
                 {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: バナナ"
+                },
+                {
                   "examId": "2025_makeup",
                   "questionId": "2025_makeup_d4_q1",
                   "questionLabel": "第4問 問1",
@@ -25091,6 +26502,12 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: 移民, 出稼ぎ"
+                },
                 {
                   "examId": "2025_makeup",
                   "questionId": "2025_makeup_d4_q4",
@@ -25165,7 +26582,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q3",
+                  "questionLabel": "第5問 問3",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d5_q1",
+                  "questionLabel": "第5問 問1",
+                  "note": "関連語句: 人口, 言語"
+                }
+              ]
             }
           }
         ]
@@ -25486,12 +26922,16 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 1,
+        "years": [
+          "2019_makeup"
+        ],
         "frequentTopics": [
           "エーヤワディー川デルタの稲作",
           "上座部仏教と多民族国家（ロヒンギャ問題等）",
-          "天然ガス輸出とネピドー遷都"
+          "天然ガス輸出とネピドー遷都",
+          "プランテーション",
+          "移民"
         ]
       },
       "nature": {
@@ -25876,8 +27316,24 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 21,
+        "appearanceCount": 78,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_main",
+          "2017_makeup",
+          "2018_main",
+          "2018_makeup",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_main",
+          "2021_makeup",
+          "2022_main",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_main",
           "2024_makeup",
           "2025_main",
@@ -25890,8 +27346,8 @@
           "緑の革命（穀物自給）・白の革命（牛乳世界1位）",
           "バンガロールのICT産業（欧米からの受託開発）と人口世界1位（人口ボーナス）",
           "ヒンドゥー教・カースト・多言語（ヒンディー＋英語）とカシミール問題",
-          "地理総合・探究",
-          "自然災害"
+          "地理B",
+          "宗教"
         ]
       },
       "nature": {
@@ -25920,7 +27376,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: 綿花"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: ヒマラヤ"
+                }
+              ]
             }
           }
         ]
@@ -26112,10 +27581,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q2",
-                  "questionLabel": "第6問 問2",
-                  "note": "関連語句: 稲作"
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 小麦"
+                },
+                {
+                  "examId": "2017_main",
+                  "questionId": "2017_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 小麦"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d1_q2",
+                  "questionLabel": "第1問 問2",
+                  "note": "関連語句: モンスーン"
                 }
               ]
             }
@@ -26143,10 +27624,22 @@
               "importance": "A",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d2_q3",
-                  "questionLabel": "第2問 問3",
-                  "note": "関連語句: 石炭, 鉄鋼業"
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d3_q3",
+                  "questionLabel": "第3問 問3",
+                  "note": "関連語句: 石炭"
+                },
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d2_q5",
+                  "questionLabel": "第2問 問5",
+                  "note": "関連語句: 石炭"
+                },
+                {
+                  "examId": "2023_makeup",
+                  "questionId": "2023_makeup_d2_q1",
+                  "questionLabel": "第2問 問1",
+                  "note": "関連語句: 鉄鉱石"
                 }
               ]
             }
@@ -26171,7 +27664,26 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: ICT"
+                },
+                {
+                  "examId": "2017_makeup",
+                  "questionId": "2017_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: バンガロール, ICT"
+                },
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d2_q4",
+                  "questionLabel": "第2問 問4",
+                  "note": "関連語句: バンガロール"
+                }
+              ]
             }
           }
         ],
@@ -26252,22 +27764,22 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_main",
-                  "questionId": "2024_main_d3_q6",
-                  "questionLabel": "第3問 問6",
-                  "note": "関連語句: 言語"
-                },
-                {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d2_q3",
-                  "questionLabel": "第2問 問3",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q3",
+                  "questionLabel": "第5問 問3",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2025_main",
-                  "questionId": "2025_main_d6_q4",
-                  "questionLabel": "第6問 問4",
-                  "note": "関連語句: 人口, 言語"
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: ヒンドゥー教"
                 }
               ]
             }
@@ -26722,14 +28234,20 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 1,
+        "appearanceCount": 5,
         "years": [
+          "2016_main",
+          "2019_makeup",
+          "2023_main",
           "2026_makeup"
         ],
         "frequentTopics": [
           "外来河川インダス川の灌漑農業（小麦・綿花）",
           "人口増加世界5位とイスラム教",
-          "カシミール問題と中国CPEC（グワダル港）"
+          "カシミール問題と中国CPEC（グワダル港）",
+          "宗教",
+          "地理B",
+          "モンスーン"
         ]
       },
       "nature": {
@@ -26755,7 +28273,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: インダス川"
+                }
+              ]
             }
           }
         ]
@@ -26840,7 +28365,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q1",
+                  "questionLabel": "第4問 問1",
+                  "note": "関連語句: 綿花, 小麦"
+                }
+              ]
             }
           }
         ],
@@ -26949,6 +28481,18 @@
               "isFrequent": true,
               "importance": "A",
               "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 人口, イスラム教"
+                },
+                {
+                  "examId": "2023_main",
+                  "questionId": "2023_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 人口"
+                },
                 {
                   "examId": "2026_makeup",
                   "questionId": "2026_makeup_d5_q4",
@@ -27268,8 +28812,12 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 3,
+        "appearanceCount": 9,
         "years": [
+          "2016_main",
+          "2018_main",
+          "2020_makeup",
+          "2022_main",
           "2024_main",
           "2025_main",
           "2026_main"
@@ -27278,9 +28826,9 @@
           "ガンジス・ブラマプトラデルタの洪水・サイクロン高潮・海面上昇リスク",
           "既製服（衣料品）縫製輸出世界2位級と低賃金女性労働",
           "米（3期作）とジュート（黄麻）・グラミン銀行",
-          "地理総合・探究",
           "人口",
-          "都市圏"
+          "地理B",
+          "自然災害"
         ]
       },
       "nature": {
@@ -27310,6 +28858,18 @@
               "isFrequent": true,
               "importance": "S",
               "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d1_q6",
+                  "questionLabel": "第1問 問6",
+                  "note": "関連語句: 自然災害"
+                },
+                {
+                  "examId": "2025_main",
+                  "questionId": "2025_main_d3_q4",
+                  "questionLabel": "第3問 問4",
+                  "note": "関連語句: 自然災害, 高潮"
+                },
                 {
                   "examId": "2025_main",
                   "questionId": "2025_main_d6_q1",
@@ -27513,7 +29073,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: イスラム教"
+                }
+              ]
             }
           }
         ]
@@ -27833,15 +29400,24 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 1,
+        "appearanceCount": 14,
         "years": [
+          "2015_main",
+          "2016_main",
+          "2017_makeup",
+          "2018_makeup",
+          "2019_makeup",
+          "2020_makeup",
+          "2023_makeup",
           "2025_makeup"
         ],
         "frequentTopics": [
           "中央高地の紅茶プランテーション（セイロンティー）",
           "シンハラ人（上座部仏教）とタミル人（ヒンドゥー教）の民族対立",
           "インド洋海上交通路・ハンバントタ港（一帯一路）",
-          "稲作"
+          "地理B",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -27863,9 +29439,16 @@
               "モンスーン"
             ],
             "examMeta": {
-              "isFrequent": false,
+              "isFrequent": true,
               "importance": "B",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: モンスーン"
+                }
+              ]
             }
           }
         ]
@@ -27951,7 +29534,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d2_q2",
+                  "questionLabel": "第2問 問2",
+                  "note": "関連語句: プランテーション"
+                },
+                {
+                  "examId": "2018_makeup",
+                  "questionId": "2018_makeup_d5_q4",
+                  "questionLabel": "第5問 問4",
+                  "note": "関連語句: 紅茶"
+                }
+              ]
             }
           }
         ],
@@ -28060,7 +29656,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2016_main",
+                  "questionId": "2016_main_d3_q6",
+                  "questionLabel": "第3問 問6",
+                  "note": "関連語句: 宗教"
+                },
+                {
+                  "examId": "2019_makeup",
+                  "questionId": "2019_makeup_d4_q5",
+                  "questionLabel": "第4問 問5",
+                  "note": "関連語句: 宗教"
+                }
+              ]
             }
           }
         ]
@@ -28236,14 +29845,16 @@
       "examSummary": {
         "rank": "S",
         "manualRankOverride": "S",
-        "appearanceCount": 1,
+        "appearanceCount": 2,
         "years": [
+          "2018_main",
           "2026_makeup"
         ],
         "frequentTopics": [
           "世界最大級の原油埋蔵・輸出国（ガワール油田・OPEC）",
           "海水淡水化プラントとセンターピボット灌漑（化石水枯渇問題）",
           "イスラム教スンニ派・聖地メッカとメディナ・外国人労働者依存・ビジョン2030",
+          "地理B",
           "人口"
         ]
       },
@@ -28813,12 +30424,18 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 3,
+        "years": [
+          "2018_main",
+          "2020_main"
+        ],
         "frequentTopics": [
           "イスラム教シーア派中心国・ペルシャ語（インド・ヨーロッパ語族）",
           "カナート（地下水路）によるオアシス農業",
-          "ホルムズ海峡に面する海上交通の要衝と原油・天然ガス・経済制裁"
+          "ホルムズ海峡に面する海上交通の要衝と原油・天然ガス・経済制裁",
+          "半導体",
+          "人口",
+          "宗教"
         ]
       },
       "nature": {
@@ -29216,12 +30833,15 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 1,
+        "years": [
+          "2018_main"
+        ],
         "frequentTopics": [
           "外来河川ティグリス・ユーフラテス川と塩害（メソポタミア）",
           "シーア派・スンニ派・クルド人の3層構成",
-          "世界有数の原油産出（OPEC）"
+          "世界有数の原油産出（OPEC）",
+          "地理B"
         ]
       },
       "nature": {
@@ -29611,12 +31231,22 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 11,
+        "years": [
+          "2015_main",
+          "2017_main",
+          "2018_main",
+          "2019_main",
+          "2020_main",
+          "2021_makeup"
+        ],
         "frequentTopics": [
           "ボスポラス・ダーダネルス海峡（欧州とアジアの架け橋）と新期造山帯地震",
           "地中海式農業（オリーブ・ヘーゼルナッツ世界1位）と内陸ステップ小麦",
-          "EU関税同盟下の欧州向け自動車・繊維工場とテュルク語族・世俗主義・クルド問題"
+          "EU関税同盟下の欧州向け自動車・繊維工場とテュルク語族・世俗主義・クルド問題",
+          "地理B",
+          "人口",
+          "プランテーション"
         ]
       },
       "nature": {
@@ -29643,7 +31273,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d4_q2",
+                  "questionLabel": "第4問 問2",
+                  "note": "関連語句: 海峡"
+                }
+              ]
             }
           }
         ]
@@ -29821,7 +31458,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d2_q3",
+                  "questionLabel": "第2問 問3",
+                  "note": "関連語句: 衣類"
+                }
+              ]
             }
           }
         ],
@@ -29892,7 +31536,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d5_q5",
+                  "questionLabel": "第5問 問5",
+                  "note": "関連語句: 言語"
+                },
+                {
+                  "examId": "2021_makeup",
+                  "questionId": "2021_makeup_d4_q6",
+                  "questionLabel": "第4問 問6",
+                  "note": "関連語句: 難民"
+                }
+              ]
             }
           }
         ]
@@ -30075,12 +31732,19 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 5,
+        "years": [
+          "2018_main",
+          "2019_main",
+          "2023_makeup"
+        ],
         "frequentTopics": [
           "点滴灌漑・ハイテク農業とシリコンワディ（スタートアップ国家）",
           "ユダヤ教とパレスチナ問題・エルサレム（3宗教の聖地）",
-          "死海（大地溝帯延長）と水資源・海水淡水化"
+          "死海（大地溝帯延長）と水資源・海水淡水化",
+          "自然災害",
+          "地理B",
+          "火山"
         ]
       },
       "nature": {
@@ -30107,7 +31771,20 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d1_q1",
+                  "questionLabel": "第1問 問1",
+                  "note": "関連語句: 死海"
+                },
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d1_q2",
+                  "questionLabel": "第1問 問2",
+                  "note": "関連語句: 死海, 地溝帯"
+                }
+              ]
             }
           }
         ]
@@ -30301,7 +31978,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d4_q3",
+                  "questionLabel": "第4問 問3",
+                  "note": "関連語句: ユダヤ教, 宗教"
+                }
+              ]
             }
           }
         ]
@@ -30478,8 +32162,18 @@
       "examSummary": {
         "rank": "A",
         "manualRankOverride": "A",
-        "appearanceCount": 3,
+        "appearanceCount": 13,
         "years": [
+          "2015_main",
+          "2018_main",
+          "2019_main",
+          "2019_makeup",
+          "2020_main",
+          "2020_makeup",
+          "2021_makeup",
+          "2022_makeup",
+          "2023_main",
+          "2023_makeup",
           "2024_makeup",
           "2025_main",
           "2026_main"
@@ -30488,7 +32182,9 @@
           "ドバイの「脱石油」経済多角化（金融・観光・ハブ空港・自由貿易区）",
           "外国人労働者が人口の約88%を占める特殊な人口ピラミッド（20〜40代男性突出）",
           "アブダビの原油・LNGとアルミ精錬・海水淡水化",
-          "移民"
+          "イスラム教",
+          "移民",
+          "宗教"
         ]
       },
       "nature": {
@@ -30614,7 +32310,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 原油"
+                }
+              ]
             }
           }
         ],
@@ -30637,7 +32340,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "S",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2020_makeup",
+                  "questionId": "2020_makeup_d3_q2",
+                  "questionLabel": "第3問 問2",
+                  "note": "関連語句: 中継貿易"
+                }
+              ]
             }
           }
         ],
@@ -30707,15 +32417,21 @@
               "importance": "S",
               "pastExamRefs": [
                 {
-                  "examId": "2024_makeup",
-                  "questionId": "2024_makeup_d3_q4",
-                  "questionLabel": "第3問 問4",
+                  "examId": "2015_main",
+                  "questionId": "2015_main_d5_q1",
+                  "questionLabel": "第5問 問1",
                   "note": "関連語句: 人口"
                 },
                 {
-                  "examId": "2026_main",
-                  "questionId": "2026_main_d5_q2",
-                  "questionLabel": "第5問 問2",
+                  "examId": "2018_main",
+                  "questionId": "2018_main_d4_q3",
+                  "questionLabel": "第4問 問3",
+                  "note": "関連語句: 人口"
+                },
+                {
+                  "examId": "2020_main",
+                  "questionId": "2020_main_d2_q6",
+                  "questionLabel": "第2問 問6",
                   "note": "関連語句: 人口"
                 }
               ]
@@ -31397,12 +33113,17 @@
       "examSummary": {
         "rank": "B",
         "manualRankOverride": "B",
-        "appearanceCount": 0,
-        "years": [],
+        "appearanceCount": 5,
+        "years": [
+          "2019_main"
+        ],
         "frequentTopics": [
           "「二重内陸国」（隣国もすべて内陸国）",
           "アムダリア・シルダリア川の綿花大規模灌漑とアラル海縮小・塩害",
-          "シルクロードのオアシス都市（サマルカンド・ブハラ）"
+          "シルクロードのオアシス都市（サマルカンド・ブハラ）",
+          "人口",
+          "小麦",
+          "鉄鉱石"
         ]
       },
       "nature": {
@@ -31513,7 +33234,14 @@
             "examMeta": {
               "isFrequent": true,
               "importance": "A",
-              "pastExamRefs": []
+              "pastExamRefs": [
+                {
+                  "examId": "2019_main",
+                  "questionId": "2019_main_d5_q2",
+                  "questionLabel": "第5問 問2",
+                  "note": "関連語句: 綿花"
+                }
+              ]
             }
           }
         ],

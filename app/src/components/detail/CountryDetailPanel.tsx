@@ -338,14 +338,25 @@ export function CountryDetailPanel({
           <div className="mt-2.5 space-y-2">
             <div className="flex flex-wrap items-center justify-between gap-1.5">
               <div className="flex flex-wrap items-center gap-1">
-                {country.examSummary.years.map((yr) => (
+                {[...country.examSummary.years]
+                  .reverse()
+                  .slice(0, 6)
+                  .map((yr) => (
+                    <span
+                      key={yr}
+                      className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
+                    >
+                      {formatExamId(yr)}
+                    </span>
+                  ))}
+                {country.examSummary.years.length > 6 && (
                   <span
-                    key={yr}
-                    className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-700"
+                    className="rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-600"
+                    title={country.examSummary.years.map(formatExamId).join('、')}
                   >
-                    {formatExamId(yr)}
+                    +{country.examSummary.years.length - 6}回
                   </span>
-                ))}
+                )}
                 {!country.isBasicEntry &&
                   country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
                     <span

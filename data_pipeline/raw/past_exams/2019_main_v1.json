@@ -1,0 +1,1224 @@
+{
+  "examId": "2019_main",
+  "year": 2019,
+  "session": "main",
+  "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2019_main_d1_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 2,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ",
+      "promptSummary": "第1問次の図1を見て,世界の自然環境と自然災害に関する下の問い(問1 ~に答えよ。(配点17 )ケウイ◇ア工キ・線A—Dの実距離は等しい。問1図1中のア~工の地域で特徴的にみられる土壌と植生について述べた文として適当でないものを,次の①~〇のうちから一つ選べ。1くりいろ①アの地域では,腐植による栗色の土壌と丈の低い草原がみられる。②イの地域では,主に岩石や砂からなる乾燥した色の薄い土壌と荒原がみられる。③ウの地域では,腐植の集積し...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d1_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2次の図2中の①~〇は,図1中の線A ~ Dのいずれかに沿った地形断面を示したものである",
+      "promptSummary": "問2次の図2中の①~〇は,図1中の線A ~ Dのいずれかに沿った地形断面を示したものである。線Bに該当するものを,図2中の①~〇のうちから一つ選2 4000 4000 3000 3000 2000 2000 1000 1000 0 0 4000 4000 3000 3000 2000 2000 1000 1000 0 0 USGSの資料により作成。ーー135ー( 2602ー135 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d1_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3河川流量の年変化は,流域の気候環境などを反映する",
+      "promptSummary": "問3河川流量の年変化は,流域の気候環境などを反映する。次の図3は,ェニセイ川,コンゴ川,ミシシッピ川の流域と主な河道および流量観測地点を示したものであり,下の図4中のF ~ Hは,図3中のいずれかの河川の流量観測地点における月平均流量を示したものである。河川名とF ~ Hとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ロコンゴ川ミシシッピ川ェニセイ川/」,主な河道(こ)流域・流量観測地点それぞれの地図は,同縮尺で,正積図法...",
+      "relatedCountries": [
+        "USA",
+        "COD"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d1_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4次の図5中の①~④は,図1中のカ~ケのいずれかの地点における月平均気温と月降水量をハイ...",
+      "promptSummary": "問4次の図5中の①~④は,図1中のカ~ケのいずれかの地点における月平均気温と月降水量をハイサーグラフで示したものである。キに該当するものを,図5中の①~④のうちから一つ選べ。℃℃30 30 9月平均気温月平均気温5 3 9 7 1 0 0 0 50 100 150 mm 0 50 100 150 mm月降水量月降水量℃℃30 7月平均気温9 1平5均気9 3 7 1 0 0 0 50 100 150 mm 0 100 150 mm...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "ハイサーグラフ",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d1_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5北極海の海氷分布域は季節変動し, 9月に最小となる",
+      "promptSummary": "問5北極海の海氷分布域は季節変動し, 9月に最小となる。次の図6は,北極海および周辺地域における海氷分布について, 2012年9月の分布域と, 1981 ~ 2010年における9月の平均的な分布域の境界線*を示したものである。図6に関して,北極海および周辺地域の環境変化やその影響について述べた文として下線部が適当でないものを,下の①~④のうちから一つ選べ。5 *中央値を用いて推定したもの。- 2012年9月の海氷分布域1981 ~...",
+      "relatedCountries": [
+        "DNK",
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d1_q6",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6熱帯低気圧や台風は,東・東南アジア地域に甚大な被害をもたらしてきた",
+      "promptSummary": "問6熱帯低気圧や台風は,東・東南アジア地域に甚大な被害をもたらしてきた。次の図7は, 2013年の7 ~ 10月に発生した一部の熱帯低気圧・台風の経路を示したものである。図7から読み取れることがらと熱帯低気圧・台風による災害の特徴について述べた下の文章中の下線部①~〇のうちから,適当でないものを一つ選べ。月月月月気象庁の資料により作成。熱帯低気圧は,地球の自転の影響で①赤道上では発生しない。熱帯低気圧・台風は,低緯度地域から大陸方...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,いくつかの農作物について, 1990年と2016年の世界における生産量の割合を地域別に示したものであり,①~④は,オリープ,オレンジ類,コーヒー,トウモロコシのいずれかである。コーヒーに該当するものを,図1中の①~④のうちから一つ選べ。7 1990年2016年0 20 40 80 100 % 1990年・◆・◆2016年20 100 % 0 ...",
+      "relatedCountries": [
+        "USA",
+        "MEX"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "トウモロコシ"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 2,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している",
+      "promptSummary": "問2コーヒーの一種であるアラビカ種の栽培には,標高500 ~ 2000 mの高地が適している。コーヒーの主要な種となっているアラビカ種の原産地(栽培起源地)に該当するものを,次の①~④のうちから一つ選べ。工①アラブ首長国連邦②ウルグアイ③工チオピア④ジャマイカ",
+      "relatedCountries": [
+        "ARE"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3次の図2は,アフリカ産のコーヒー豆がイギリスで販売されるまでの流通過程と取引の価格を模...",
+      "promptSummary": "問3次の図2は,アフリカ産のコーヒー豆がイギリスで販売されるまでの流通過程と取引の価格を模式的に示したものである。図2に関連することがらについて述べた文として下線部が適当でないものを,下の①~〇のうちから一つ選9輸輸入業者加工業者小売業者生産者仲消費者出買業人者買取価格買取価格買取価格買取価格平均小売0.14ドル0.26ドル0.52ドル1.64ドル価格26.40ドル各段階での1キログラム当たりの価格を示している。オックスフアム・イ...",
+      "relatedCountries": [
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4コーヒーには,砂糖やミルクが供されることも多い",
+      "promptSummary": "問4コーヒーには,砂糖やミルクが供されることも多い。次の表1は,いくつかの国について,牛乳,サトウキビ,テンサイの生産量を示したものであり,①~〇は,アメリカ合衆国,日本,プラジル,ロシアのいすれかである。アメリカ合衆国に該当するものを,表1中の①~④のうちから一つ選べ。ロ(単位:万トン)牛サトウキピ乳テンサイ①9 , 346 2 , 760 2 , 838②3 , 512 73 , 610 0③3 , 051 0 3 , 351...",
+      "relatedCountries": [
+        "JPN",
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5次の表2は,コーヒーを輸出しているいくつかの国の輸出品目について,輸出金額の上位4品目...",
+      "promptSummary": "問5次の表2は,コーヒーを輸出しているいくつかの国の輸出品目について,輸出金額の上位4品目を示したものであり,①~④は,インド,工チオピア,コートジボワール,ベトナムのいずれかである。ベトナムに該当するものを,表2中の①~④のうちから一つ選べ。表2宝石・貴金属位カカオ豆・同関連品電子機器・機械コーヒ1ー豆植物油用種子類位石油衣料品石油製品2天然ゴム位金鉱はきもの衣料品3位金鉱産業用機械輸送機械豆類4統計年次は2016年。UN Co...",
+      "relatedCountries": [
+        "VNM",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d2_q6",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次の図3中のア~ウは,いくつかの産業における事業所について,全国に占める各都道府県の事...",
+      "promptSummary": "問6次の図3中のア~ウは,いくつかの産業における事業所について,全国に占める各都道府県の事業所数の割合を示したものであり,ア~ウは,喫茶店* ,牛乳処理場・乳製品工場,水産食料品製造業のいずれかである。項目名とア~ウとの正しい組合せを,下の①~⑥のうちから一つ選べ。1 2 *カフェを含む,飲料や簡単な食事などをその場で提供する飲食店。〇〇0 0 0加00「イウア統計年次は2014年。経済センサスなどにより作成。図3①アイウ②アウィ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市と村落,生活文化に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第3問都市と村落,生活文化に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1都市内部の各地区の景観には,その地区のもつ機能が反映されている。次の図1は,パリとその周辺地域の交通網を模式的に示したものであり,次ページの写真1中のア~ウは,図1中のA ~ Cのいずれかの地点における景観を撮影したものである。A ~ cとア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。ロ5 km 0高速道路他の主な道路主な鉄道河...",
+      "relatedCountries": [
+        "FRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2首都が有する政治・経済的機能やその集積の度合いには,都市によって異なる特徴がみられる",
+      "promptSummary": "問2首都が有する政治・経済的機能やその集積の度合いには,都市によって異なる特徴がみられる。次の表1は,いくつかの首都における,巨大企業*の本社数,国の総人口に占める人口割合,国際会議* *の年間開催件数を示したものであり,①~〇は,キャンべラ,クアラルンプール,ソウル,ベキンのいすれかである。クアラルンプールに該当するものを,表1中の①~④のうちから一つ選べ。*総利益が世界上位500位以内の企業。* *国際機関が主催した会議のうち...",
+      "relatedCountries": [
+        "CHN",
+        "KOR",
+        "TWN",
+        "MYS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3都市の形成には,河川が重要な役割を果たしてきた",
+      "promptSummary": "問3都市の形成には,河川が重要な役割を果たしてきた。次の①~〇の文は,ヴァラナシ(ペナレス) ,チョンチン(重慶) ,ャンゴン,リヴァプールのいずれかの都市の河川とのかかわりについて説明したものである。ャンゴンに該当するものを,次の①~〇のうちから一つ選べ。ようしよう①河口から約2 , 500kmに位置する水運の要衝として繁栄し,近年ではダム建設や資源開発により,内陸部の物流や工業の拠点としてさらなる発展がみられる。②河口の三角州...",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "三角州",
+        "宗教"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 2,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4ヨーロッパ諸国の植民地であった国々では,人々の信仰する宗教が旧宗主国の影響を受ける場合がある",
+      "promptSummary": "問4ヨーロッパ諸国の植民地であった国々では,人々の信仰する宗教が旧宗主国の影響を受ける場合がある。信仰する人々が最も多い宗教が共通する,旧宗主次の①~〇のうちから一つ選べ。国と植民地であった国との正しい組合せを, 1 6①イタリアとリビア②オランダとインドネシア③スペインとアルゼンチン④フランスとベトナムー147ーー( 2602ー147 )",
+      "relatedCountries": [
+        "IDN",
+        "VNM",
+        "IND",
+        "FRA",
+        "ITA",
+        "ESP",
+        "NLD",
+        "ARG"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "宗教"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図2は,奈良盆地における1997年発行の2万5千分の1地形図(原寸,一部改変)であ...",
+      "promptSummary": "問5次の図2は,奈良盆地における1997年発行の2万5千分の1地形図(原寸,一部改変)であり,カ~クは,それぞれ異なる時期に形成された集落や街区,建造物などの特徴をよく表す区域を示したものである。カ~クの区域の特徴が形成された時代を古いものから順に並べたものとして正しいものを,下の①~⑥のうちから一つ選べ。ロ\"西井戸堂町一霍設備機器工場- !ロ九紫。町。-町カ中央分離帯のある幅の広い道路キ直交する格子状の道路や四角形や大規模な工場...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d3_q6",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6文化・レジャーにかかわる施設や文化財の分布には,自然環境や歴史,都市規模によって様々な...",
+      "promptSummary": "問6文化・レジャーにかかわる施設や文化財の分布には,自然環境や歴史,都市規模によって様々な傾向がみられる。次の図3中のサ~スは,公立の劇場・音楽堂* ,国宝(建造物) ,国立公園の広報・展示施設* *のいずれかの分布を示したものである。指標名とサ~スとの正しい組合せを,下の①~⑥のうちから一つ選べ。1 8 *客席数1 , 500以上のホールをもっ施設であり,国立の施設を含まない。* *環境省直轄の施設に限る。統計年次は,公立の劇場...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問次の図1を見て,地中海沿岸地域に関する下の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第4問次の図1を見て,地中海沿岸地域に関する下の問い(問1 ~ 6 )に答えよ。(配点17 )イアウ・工問1図1中に示された地域・地点の自然環境について述べた文として下線部が適当でないものを,次の①~④のうちから一つ選べ。ロ①ア地域では,赤色土壤のテラロッサが分布しており,その土壌に適した作物の栽培が行われている。②イ地域では,秋から冬にかけて,東ヨーロッパからディナルアルプス山脈を越えてアドリア海へ冷涼なフェーンが吹きおろす。③...",
+      "relatedCountries": [
+        "FRA",
+        "ITA",
+        "CHE",
+        "AUT"
+      ],
+      "relatedLayerIds": [
+        "mr_alps",
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "三角州"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 2,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2地中海は,沿岸の地域間の交流の舞台となってきた",
+      "promptSummary": "問2地中海は,沿岸の地域間の交流の舞台となってきた。なかでも海峡は,人々や物資の往来において,また軍事上の要所として重要な役割をになってきた。図1中のA ~ Dの地域にみられる特徴について述べた次ページの文章中の下線部①~〇のうちから,適当でないものを一つ選べ。ー150ー( 2602ー150 )大西洋と地中海をつなぐ玄関口にあたるAの海峡には,現在も海峡をはさんで①スペインとイギリスの軍港がおかれている。Bの海峡は,フランスとイタ...",
+      "relatedCountries": [
+        "TUR",
+        "GBR",
+        "FRA",
+        "ITA",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている",
+      "promptSummary": "問3地中海沿岸地域では,各地の自然環境をいかして農作物が栽培されている。次の図2中のカ~クは,コルクガシ,テンサイ,ナツメヤシのいずれかについて,それらの主な産地を示したものである。農作物名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。△△△今ゝ公△△△0〇9カキク0△0 D尾Ⅳに〃〃〃, 2015により作成。図2〇キクカ⑤クカキ⑥クキカ②カクキ③キカクコルクガシカキテンサイナツメヤシクー151ー( 2602ー15D",
+      "relatedCountries": [
+        "ITA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の図3中のサ~スは,アルジェリア,イスラエル,モロッコのいずれかの国における総輸出額...",
+      "promptSummary": "問4次の図3中のサ~スは,アルジェリア,イスラエル,モロッコのいずれかの国における総輸出額に占める品目別の割合を示したものである。国名とサ~スとの正しい組合せを,下の①~⑥のうちから一つ選べ。サ・原材料と燃料乙食料品住工業製品ロその他ス0 20 40 60 100 %統計年次は,アルジェリアが2015年,イスラエルとモロッコが2016年。『国際連合貿易統計年鑑』により作成。図3①サシス②サスシ③シサス④シスサ⑤スサシ⑥スシサいスア...",
+      "relatedCountries": [
+        "ISR",
+        "MAR",
+        "DZA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5地中海沿岸地域の都市の成り立ちや社会経済状況について述べた文として下線部が適当でないも...",
+      "promptSummary": "問5地中海沿岸地域の都市の成り立ちや社会経済状況について述べた文として下線部が適当でないものを,次の①~〇のうちから一つ選べ。23①北アフリカの中心都市の一つであるカイロでは, 19世紀後半から開発された新市街に迷路型の道路網が発達している。②古代都市国家として発展したアテネは,近代にギリシャの首都として再出発したが,近年,国の債務危機に端を発する経済の混乱に見舞われた。③長らくフランスの保護国であったモナコでは, 19世紀半ばに...",
+      "relatedCountries": [
+        "FRA",
+        "ITA",
+        "EGY"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d4_q6",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6次の表1中の①~〇は,イタリア,ギリシャ,スペイン,フランスのいずれかの国について,そ...",
+      "promptSummary": "問6次の表1中の①~〇は,イタリア,ギリシャ,スペイン,フランスのいずれかの国について,それらの国の国籍を新たに取得した人の,取得前の国籍の上位3か国とその人数を示したものである。イタリアに該当するものを,表1中の①~〇のうちから一つ選べ。(単位:人) 2位3位ジョージア(グルジア)アルバニアウクライナ( 54 , 904 ) ( 774 ) ( 665 )アルバニアモロッコルーマニア( 86 , 894 ) ( 69 , 953...",
+      "relatedCountries": [
+        "FRA",
+        "ITA",
+        "ESP",
+        "UKR",
+        "COL",
+        "MAR",
+        "DZA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d5_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 第5問ウクライナとウズベキスタンは,旧ソ連諸国の中で,国土面積や人口規模が相対的に近い",
+      "promptSummary": "第5問ウクライナとウズベキスタンは,旧ソ連諸国の中で,国土面積や人口規模が相対的に近い。両国に関する下の問い(問1 ~ 5 )に答えよ。(配点14 )ウクライナウズベキスタン問1ウクライナとウズベキスタンの自然環境の違いに関して,次ページの表1中のアとイは,ウクライナとウズベキスタンのいずれかにおける高度別面積の割合を示したものであり,次ページの図2中のAとBは,図1中のXとYのいずれかの地点における月平均気温と月降水量を示したも...",
+      "relatedCountries": [
+        "UZB",
+        "UKR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d5_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2次の表2と表3は,ウクライナとウズベキスタンで生産されるいくつかの農産物と鉱産物の生産...",
+      "promptSummary": "問2次の表2と表3は,ウクライナとウズベキスタンで生産されるいくつかの農産物と鉱産物の生産量を示しており,表2中の力とキおよび表3中のDとEは,それぞれウクライナとウズベキスタンのいずれかである。ウズベキスタンの農産物と鉱産物に該当する正しい組合せを,下の①~④のうちから一つ選26表2 (単位:万トン)農産物国名小麦ヒマワリ種子綿花2 , 411 ( 10位) 1 , 013 ( 1位)カ0 111 ( 6位)キ696 5統計年次...",
+      "relatedCountries": [
+        "UZB",
+        "UKR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦",
+        "鉄鉱石",
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d5_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3ウクライナとウズベキスタンの経済の変化に関して,次の図3は, 1990年以降の1人当た...",
+      "promptSummary": "問3ウクライナとウズベキスタンの経済の変化に関して,次の図3は, 1990年以降の1人当たりGDP (国内総生産)の変化を示したものである。両国の経済活動の変化とその要因について説明した下の文章中の下線部①~④のうちから,適当でないものを一つ選べ。ドル4000ウクライナ3000 1人当たりウズベキスタン2000 1000 0 2016年1990 2000 2010Ⅳの・〃, elの川のな/〃市c厩の・sにより作成。図3 1991年...",
+      "relatedCountries": [
+        "UZB",
+        "UKR",
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d5_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4ウクライナとウズベキスタンでは,食生活の違いに関連して畜産業にも違いがみられる",
+      "promptSummary": "問4ウクライナとウズベキスタンでは,食生活の違いに関連して畜産業にも違いがみられる。次の表4中のサ~スは,ウクライナ,ウズベキスタン,日本のいずれかにおける牛肉,鶏肉,豚肉,羊肉の人口1人当たりの年間生産量,および1人1日当たりの食料供給量を示したものである。国名とサ~スとの正しい組合せを,下の①~⑥のうちから一つ選べ。人口1人当たりの年間生産量( kg ) 1人1日当たりの食料供給量( kcal)牛肉鶏肉豚肉羊肉サ25. 9 2...",
+      "relatedCountries": [
+        "JPN",
+        "UZB",
+        "UKR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d5_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 2,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5次の表5は, 1 ~ 4の数字をいくつかの言語で示したものであり,タとチは,ウクライナ...",
+      "promptSummary": "問5次の表5は, 1 ~ 4の数字をいくつかの言語で示したものであり,タとチは,ウクライナ語とウズベク語のいすれかである。また,下の写真1中のGとHは,図1中のXとYのいずれかの地点における街並みを撮影したものである。ウクライナ語とxの地点における街並みとの正しい組合せを,下の①~④のうちから一つ選べ。数トルコ語1 )ⅳdört bir ikki uch to'rtロシア語odin dva triöetyre Odin dva t...",
+      "relatedCountries": [
+        "JPN",
+        "TUR",
+        "UZB",
+        "UKR",
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q1",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号30）",
+      "title": "第6問 問1: 問1ヒナタさんは,祖父母が「新婚旅行で訪れた1969年当時は東海道新幹線しかなくて,大阪か...",
+      "promptSummary": "問1ヒナタさんは,祖父母が「新婚旅行で訪れた1969年当時は東海道新幹線しかなくて,大阪から宮崎までは鉄道で長い時間がかかったよ」と言っていたことを思い出し,交通の発達による都市のつながりの変化を調べてみた。次の表1は,大阪市と大阪市からの直線距離がおおむね等しいいくつかの都市との間における, 1969年と2016年の鉄道所要時間*を示したものであり,ア~ウは,水戸市,佐賀市,宮崎市のいずれかである。都市名とア~ウとの正しい組合せ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q2",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号31）",
+      "title": "第6問 問2: 問2宮崎空港に着いたヒナタさんは,「南国」らしさをアピールする観光案内に興味をもち,宮崎市...",
+      "promptSummary": "問2宮崎空港に着いたヒナタさんは,「南国」らしさをアピールする観光案内に興味をもち,宮崎市への観光客数の特徴を気候との関係から調べてみることにした。次の図2は,宮崎市を訪れる月別の観光客数を宮崎県内と県外で分けて示したものであり,図3は,月別の日照時間の平年値を宮崎市と全国平均*について示したものである。図2と図3から読み取れることがらとその背景について述べた下の文章中の下線部①~④のうちから,適当でないものを一つ選べ。31 *都...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q3",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号32）",
+      "title": "第6問 問3: あおしま問3ヒナタさんはその後,祖父母の思い出の地である青島とその周辺を訪れた",
+      "promptSummary": "あおしま問3ヒナタさんはその後,祖父母の思い出の地である青島とその周辺を訪れた。次の図4は,図1中のXの範囲を示した2006年発行の5万分の1地形図(原寸,一部改変)と, A ~ Dの地点でヒナタさんが撮影した写真,および周辺の自然環境や土地利用について説明した文である。A ~ Dを説明した図4中の文の下線部①~〇のうちから,適当でないものを一つ選べ。' ,炉生橋物群落戸崎鼻“0材4疊れー撮影地点と方向Aなだらかに見えるゴルフ場は...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [
+        "oc_kuroshio"
+      ],
+      "topicTags": [
+        "海流",
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q4",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号33）",
+      "title": "第6問 問4: 問4宮崎市の市街地の変化に興味をもったヒナタさんは,図書館でGIS (地理情報システム)な...",
+      "promptSummary": "問4宮崎市の市街地の変化に興味をもったヒナタさんは,図書館でGIS (地理情報システム)などを用いて土地利用の変化を確認することにした。次の図5は,図1中のYの範囲における1976年と2014年の土地利用のうち,建物用地,農地,森林を示したものである。図5から読み取れることがらについて述べた文として適当でないものを,下の①~〇のうちから一つ選べ。1976年2014年日向灘大淀川0匚コ農地0森林匚コ水域・その他建物用地◎県庁主要道路...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "GIS"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q5",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号34）",
+      "title": "第6問 問5: 問5県庁近くの朝市で地元産の様々な農林産物を見たヒナタさんは,宮崎県の農林業の地域的特徴を...",
+      "promptSummary": "問5県庁近くの朝市で地元産の様々な農林産物を見たヒナタさんは,宮崎県の農林業の地域的特徴を,統計データや図1の地形の情報からとらえようとした。次の図6は,耕地面積当たり農業産出額*と,乾燥シイタケの生産量,キュウリの作付面積,早場米* *の作付面積のいずれかについて宮崎県全体に占める割合を市町村別に示したものである。品目名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。*畜産物と加工農産物を除く推計値。* *通常の水稲よ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2019_main_d6_q6",
+      "examId": "2019_main",
+      "year": 2019,
+      "session": "main",
+      "sessionLabel": "2019年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号35）",
+      "title": "第6問 問6: こうていえき問6ヒナタさんは,宮崎県の特産物を調べる中で, 2010年に発生したロ蹄疫*に...",
+      "promptSummary": "こうていえき問6ヒナタさんは,宮崎県の特産物を調べる中で, 2010年に発生したロ蹄疫*にたかなべちょうよって畜産農家が大きな被害を受けたことを知り,高鍋町にあるロ蹄疫メモリアルセンターを訪れた。次の図7は,図1中のZの範囲における各自治体でロ蹄疫が最初に確認された月と主な消毒ポイント* *の位置を示したものであり,写真1は,消毒ポイントに設置された消毒設備の例である。図7と写真1に関連する次ページのヒナタさんと職員との会話文中の...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2019_main/2019_main_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

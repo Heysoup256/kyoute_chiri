@@ -1,0 +1,1234 @@
+{
+  "examId": "2018_main",
+  "year": 2018,
+  "session": "main",
+  "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2018_main_d1_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 2,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ",
+      "promptSummary": "第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ。（配点17）レマン湖死海パトス湖C H B D A F J Diercke Weltatlas, 2015などにより作成。図1問1図1中のＡ～Ｄ付近のいずれかにみられる特徴的な地形について説明した文として適当でないものを，次の(1)～(2)のうちから一つ選べ。1 (1)Ａの盆地では，ケスタがみられる。(3)Ｂの山脈には，活火山が点在する。(4)Ｃの...",
+      "relatedCountries": [
+        "ISR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d1_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2湖沼は，様々な自然要因によって形成される",
+      "promptSummary": "問2湖沼は，様々な自然要因によって形成される。次の表1は，いくつかの湖の特徴を示したものであり，表1中のア～ウは図1中の死海，パトス湖，レマン湖のいずれかである。湖名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。2表1湖面標高（m）最大水深（m）主な成因ア372 310氷食谷を流れる河川がせ堰き止められた。イ1 5入江が砂州によって閉じられた。ウ－400 426地殻変動によって地溝帯が形成された。『理科年表』な...",
+      "relatedCountries": [
+        "ISR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d1_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3図1中のＦは，ある土壌の主な分布域を示したものである",
+      "promptSummary": "問3図1中のＦは，ある土壌の主な分布域を示したものである。この土壌の特徴について説明した文として最も適当なものを，次の(1)～(3)のうちから一つ選べ。3 (1)風化した火山岩からなる赤紫色の間帯土壌である。(4)風化した石灰岩からなる赤色の間帯土壌である。(5)腐植に乏しい灰白色の成帯土壌である。(3)腐植に富む黒色の成帯土壌である。",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d1_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4次の図2は，図1中のＨの線上にみられる植生の分布を模式的に示したものである",
+      "promptSummary": "問4次の図2は，図1中のＨの線上にみられる植生の分布を模式的に示したものである。図2中の植生の分布とその主な要因について述べた文として適当でないものを，下の(1)～(2)のうちから一つ選べ。4熱帯雨林熱帯山地林荒地低木林砂漠高山草地雲帯東側斜面西側斜面6000 8000 4000 2000 0チチカカ湖m Troll, Geo-ecology of the Mountainous Regions of the Tropical A...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d1_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5図1中のＪは，サヘルの範囲を示したものである",
+      "promptSummary": "問5図1中のＪは，サヘルの範囲を示したものである。サヘルにおける干ばつや砂漠化について述べた次ページの文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。5サヘルでは，雨季・乾季が明瞭で，(1)年ごとの降水量の変動が大きいために，干ばつが起こりやすい。干ばつは，この地域の(2)砂漠化が進行する要因の一つであり，(3)環境難民が発生する要因の一つともなっている。サヘルにおける農地の拡大や家畜の増加は，(4)砂漠化の進行...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "砂漠化"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d1_q6",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6次の図3は，エルニーニョ現象発生時の12～(5)月における気温と降水量の明瞭な変化傾向...",
+      "promptSummary": "問6次の図3は，エルニーニョ現象発生時の12～(5)月における気温と降水量の明瞭な変化傾向のみられる地域を示したものである。図3から読み取れる，エルニーニョ現象の発生が地域にもたらし得る気象への影響について述べた下の文章中の空欄カとキに当てはまる語の正しい組合せを，下の(1)～(4)のうちから一つ選べ。6高温・少雨高温・多雨低温・多雨NOAAの資料により作成。図3エルニーニョ現象は，太平洋東部の赤道付近における海面水温の上昇が数か...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点17）問1スマートフォンは，次の写真1に示すように各種の鉱産資源を原料とする部品が用いられ，また多くの技術が集約された通信機器である。これらの資源や技術に関して，下の図1中のア～ウは，国際特許出願件数＊，アルミ合金ケースの原料となるボーキサイトの生産量，リチウムの生産量のいずれかについて，上位(1)位までの国・地域とそれらが世界全体に占める割合を示したものである。項目名と...",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "半導体"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2スマートフォンに用いられている半導体に関して，次の図2は日本の九州地方（離島など一部を...",
+      "promptSummary": "問2スマートフォンに用いられている半導体に関して，次の図2は日本の九州地方（離島など一部を除く）における空港・高速道路・主要メーカーの半導体生産工場の分布を示したものである。図2から読み取れることがらやその背景について述べた下の文章中の空欄カとキに当てはまる語句の正しい組合せを，下の(1)～(2)のうちから一つ選べ。8空港高速道路主要メーカーの半導体生産工場『半導体産業計画総覧2014―2015年度版』などにより作成。図2「シリコ...",
+      "relatedCountries": [
+        "JPN",
+        "IRN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "半導体"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3産業地域の発展は，技術の革新や移転と関連している",
+      "promptSummary": "問3産業地域の発展は，技術の革新や移転と関連している。次の(1)～(2)の文は，アメリカ合衆国のシリコンヴァレー，イタリアのサードイタリー（第三のイタリア），シンガポール，ドイツのルールのいずれかの産業地域について，その特徴を述べたものである。ルールに該当するものを，次の(1)～(2)のうちから一つ選べ。9 (1)技能をもつ職人や中小企業の集積をいかして，繊維や機械などの業種で市場に対応した多品種少量生産が盛んである。(3)大学や...",
+      "relatedCountries": [
+        "SGP",
+        "DEU",
+        "ITA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "鉄鋼業",
+        "半導体"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 2,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の図3は，2000～2014年の日本の自動車メーカーの生産台数について国・地域別の割...",
+      "promptSummary": "問4次の図3は，2000～2014年の日本の自動車メーカーの生産台数について国・地域別の割合を示したものであり，(1)～(2)は，日本，アジア（日本を除く），北アメリカ，中央・南アメリカのいずれかである。アジア（日本を除く）に該当するものを，図3中の(1)～(2)のうちから一つ選べ。10 70％0 10 20 30 40 50 60年2014 2010 2005 2000ǏǐǑǒ日本自動車工業会の資料により作成。図3",
+      "relatedCountries": [
+        "JPN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5技術の革新と移転は，自然条件の制約を強く受ける農業分野においても変化をもたらしている",
+      "promptSummary": "問5技術の革新と移転は，自然条件の制約を強く受ける農業分野においても変化をもたらしている。科学技術の進展と農業の変化について述べた文として下線部が適当でないものを，次の(1)～(2)のうちから一つ選べ。11 (1)遺伝子組み換え作物は生産量が安定することから，自給的農業が盛んな国で導入がすすんでいる。(3)高収量品種による飼料生産や肉牛を集中的に肥育するフィードロットの導入など，アグリビジネスの展開にともない生産の大規模化がすすん...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "酪農"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d2_q6",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6経済活動の発展にともない，様々な種類のサービス業が成長することがある",
+      "promptSummary": "問6経済活動の発展にともない，様々な種類のサービス業が成長することがある。次の図4中のサ～スは，各都道府県における情報関連サービス業，道路貨物運送業，農業関連サービス業＊のいずれかについて，事業所数が全国の合計に占める割合を示したものである。業種名とサ～スとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。12＊作物の栽培から出荷までのいずれか(3)種類以上の作業を請け負う事業。サシス20％5 10統計年次は2012年。経済...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問生活文化と都市に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問生活文化と都市に関する次の問い（問1～6）に答えよ。（配点17）問1次の表1はヨーロッパのいくつかの国における主要な宗教・宗派別人口割合＊を示したものであり，(1)～(2)は，ギリシャ，ドイツ，フランス，ポーランドのいずれかである。ドイツに該当するものを，表1中の(1)～(2)のうちから一つ選べ。13＊外国籍の住民を含む。表1（単位：％）イスラーム（イスラム教）キリスト教その他・無宗教カトリック正教プロテスタント(1) 7．...",
+      "relatedCountries": [
+        "FRA",
+        "DEU",
+        "POL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "イスラム教",
+        "キリスト教"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2衣服は地域の気候・風土と密接な関係がある",
+      "promptSummary": "問2衣服は地域の気候・風土と密接な関係がある。次のア～ウの文は，東南アジアの熱帯地域，西アジアの乾燥地域，南アメリカの高山地域のいずれかの地域にみられる伝統的な衣服の主な特徴について述べたものである。地域名とア～ウとの正しい組合せを，次ページの(1)～(5)のうちから一つ選べ。14はつすいアこの地域には，四角形の布の中央に頭の通る穴をあけた外衣があり，撥水せい性・断熱性に優れた毛織物でつくられている。イこの地域には，横にスリットの...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 2,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3多民族国家として知られるマレーシアの取組みを説明した次の文中の空欄カとキに当てはまる語...",
+      "promptSummary": "問3多民族国家として知られるマレーシアの取組みを説明した次の文中の空欄カとキに当てはまる語句の正しい組合せを，下の(1)～(4)のうちから一つ選べ。15マレーシアでは，マレー系住民に対して，雇用や教育の面を優遇する（カ）政策をとることで，国内において大きな経済力をもつ（キ）系住民とマレー系住民との格差縮小を図っている。(1) (2) (3) (4)カブミプトラブミプトラルックイーストルックイーストキアラブ中国アラブ中国",
+      "relatedCountries": [
+        "CHN",
+        "MYS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4次の図1は，いくつかの国における総人口に占める首位都市の人口割合と都市人口率を示したも...",
+      "promptSummary": "問4次の図1は，いくつかの国における総人口に占める首位都市の人口割合と都市人口率を示したものであり，(1)～(2)は，イタリア，インド，カナダ，バングラデシュのいずれかである。バングラデシュに該当するものを，図1中の(1)～(2)のうちから一つ選べ。16 0 20 40 60都市人口率80 100％％0 10総人口に占める首位都市の人口割合20ǏǐǒǑ統計年次は2010年。World Urbanization Prospectsな...",
+      "relatedCountries": [
+        "IND",
+        "BGD",
+        "ITA",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図2は，城下町としての歴史をもつ日本のある都市の概略を示したものであり，下の(1)...",
+      "promptSummary": "問5次の図2は，城下町としての歴史をもつ日本のある都市の概略を示したものであり，下の(1)～(2)の文は，図2中のＡ～Ｄのいずれかの地点の状況について述べたものである。地点Ｃに該当するものを，下の(1)～(2)のうちから一つ選べ。17私J鉄R城跡ＤＡ江戸時代の町人地江戸時代の城下町区域水域0 500 m国道駅ＣＢ『日本図誌大系』などにより作成。図2 (1) 1970年代以降に開発された地区であり，住宅が建ち並んでいる。(3)江戸時...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d3_q6",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6次の図3中のサ～スは日本の三つの市区の年齢階級別人口構成を男女別に示したものであり，下...",
+      "promptSummary": "問6次の図3中のサ～スは日本の三つの市区の年齢階級別人口構成を男女別に示したものであり，下のＸ～Ｚの文は，いずれかの市区の特徴を説明したものである。サ～スとＸ～Ｚとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。18サシ10 5 0ス80～歳70～74 60～64 50～54 40～44 30～34 20～24 10～14 0～4男性女性10 5 0 5 80～歳70～74 60～64 50～54 40～44 30～34 ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 2,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問次の図1を見て，西アジアとその周辺地域に関する下の問い（問1～6）に答えよ",
+      "promptSummary": "第4問次の図1を見て，西アジアとその周辺地域に関する下の問い（問1～6）に答えよ。（配点17）アイウエＡＢＣＤZＸＹ図1問1図1中のア～エの地域のうち，最も標高の高い地点を含むものを，次の(1)～(2)のうちから一つ選べ。19 (1)ア(3)イ(4)ウ(2)エ",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2図1中に示したA～Dの地域でみられる農牧業について述べた文として下線部が適当でないもの...",
+      "promptSummary": "問2図1中に示したA～Dの地域でみられる農牧業について述べた文として下線部が適当でないものを，次の(1)～(2)のうちから一つ選べ。20 (1) A地域では，夏に乾燥する気候に適したオリーブが栽培されている。かんがい(3) B地域では，大規模な灌漑施設を利用して小麦や野菜が栽培されている。(4) C地域では，ため池の水を利用してコーヒーが栽培されている。(2) D地域では，家畜を飼養して乳製品や羊毛が生産されている。",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の図2中の(1)～(2)は，アラブ首長国連邦，イスラエル，イラン，レバノンのいずれか...",
+      "promptSummary": "問3次の図2中の(1)～(2)は，アラブ首長国連邦，イスラエル，イラン，レバノンのいずれかにおける宗教別人口割合＊を示したものである。アラブ首長国連邦に該当するものを，図2中の(1)～(2)のうちから一つ選べ。21＊外国籍の住民を含む。キリスト教ヒンドゥー教イスラーム(イスラム教)ユダヤ教その他・無宗教ǏǐǒǑ38.3 61.3％12.6 6.6 76.9％18.6 2.0 75.6％99.5％統計年次は2010年。Pew Res...",
+      "relatedCountries": [
+        "IND",
+        "IRN",
+        "ISR",
+        "ARE"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "イスラム教",
+        "キリスト教"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の図3中のカ～クは，西アジアとその周辺における，GDP（国内総生産）に占める農林水産...",
+      "promptSummary": "問4次の図3中のカ～クは，西アジアとその周辺における，GDP（国内総生産）に占める農林水産業の割合，人口(1)人当たりGNI（国民総所得），輸出額に占める石油・石油製品の割合のいずれかの指標について，国・地域別に示したものである。指標名とカ～クとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。22カキク低位中位高位統計年次は，GDPに占める農林水産業の割合が2012年，人口(1)人当たりGNIが2014年，輸出額に占める石...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次の表1中の(1)～(2)は，イラク，カタール，サウジアラビア，トルコにおける，外国か...",
+      "promptSummary": "問5次の表1中の(1)～(2)は，イラク，カタール，サウジアラビア，トルコにおける，外国からの年間訪問者数＊と日本からの(3)週当たり直行航空便数を示したものである。トルコに該当するものを，表1中の(1)～(2)のうちから一つ選べ。23＊観光客以外の短期入国者を含む。表1外国からの年間訪問者数（万人）日本からの(3)週当たり直行航空便数（便）(1) 3，780 14 (4) 1，577 0 (5) 261 14 (2) 89 0統...",
+      "relatedCountries": [
+        "JPN",
+        "SAU",
+        "IRQ",
+        "TUR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d4_q6",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6次のサ～スの文は，図1中のX～Zのいずれかの国で第二次世界大戦後に発生した紛争（戦争）...",
+      "promptSummary": "問6次のサ～スの文は，図1中のX～Zのいずれかの国で第二次世界大戦後に発生した紛争（戦争）について述べたものである。サ～スとX～Zとの正しい組合せを，下の(1)～(6)のうちから一つ選べ。24サアメリカ合衆国で発生した同時多発テロ事件をきっかけに，イスラム原理主義組織が支配する地域での戦闘が開始された。シ北部のトルコ系住民と南部のギリシャ系住民との対立が激化し，ギリシャへの併合の動きに対するトルコ軍の介入によって北部が独立を宣言し...",
+      "relatedCountries": [
+        "TUR",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d5_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 第5問東京在住の高校生のヨシエさんは，次の図1に示すルートのように，デンマークを経由して，...",
+      "promptSummary": "第5問東京在住の高校生のヨシエさんは，次の図1に示すルートのように，デンマークを経由して，ノルウェー，スウェーデン，フィンランドを旅行した。そして，夏休みの宿題として(1)か国を比較したレポートを作成した。このレポートに関する下の問い（問1～5）に答えよ。（配点14）ノルウェーノルウェースウェーデンスウェーデン8月10日ベルゲンオスロ8月12日ストックホルム8月14日ヘルシンキ8月17日8月9日コペンハーゲンノルウェースウェーデン...",
+      "relatedCountries": [
+        "JPN",
+        "SWE",
+        "NOR",
+        "FIN",
+        "DNK"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d5_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2ヨシエさんは，(7)か国の産業の違いが自然環境や資源の違いによると考え，(7)か国の発...",
+      "promptSummary": "問2ヨシエさんは，(7)か国の産業の違いが自然環境や資源の違いによると考え，(7)か国の発電のエネルギー源の割合を調べた。次の図3中のカ～クは，火力，原子力，水力のいずれかである。エネルギー源とカ～クとの正しい組合せを，下の(1)～(6)のうちから一つ選べ。26スウェーデンノルウェーフィンランドカキク再生可能エネルギー(水力を除く) 33.1％18.0 47.3 1.6 40.1 10.0 43.4％6.5 96.1％1.5 2....",
+      "relatedCountries": [
+        "JPN",
+        "SWE",
+        "NOR",
+        "FIN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "再生可能エネルギー",
+        "原子力"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d5_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3ヨシエさんは，(1)か国を旅行中に工場や店舗を見て，産業の違いに気づき，(1)か国の貿...",
+      "promptSummary": "問3ヨシエさんは，(1)か国を旅行中に工場や店舗を見て，産業の違いに気づき，(1)か国の貿易について調べた。次の図4は(1)か国の総輸出額に占める品目別の割合，下の表1は(1)か国の輸出額上位(1)位までの国と，それらの国への輸出額が総輸出額に占める割合を示したものである。国名と図4中のサ～スとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。27 0 20 40 60 80 100％サシス工業製品原材料と燃料食料品その他統...",
+      "relatedCountries": [
+        "JPN",
+        "GBR",
+        "DEU",
+        "NLD",
+        "SWE",
+        "NOR",
+        "FIN",
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d5_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4ヨシェさんは, 3か国の街を散策して,言語の違いに気づいた",
+      "promptSummary": "問4ヨシェさんは, 3か国の街を散策して,言語の違いに気づいた。そして, 3か国の童話をモチーフにしたアニメーションが日本のテレピで放映されていたことを知り, 3か国の文化の共通性と言語の違いを調べた。次の図5中のタとチはノルウェーとフィンランドを舞台にしたアニメーション, AとBはノルウェー語とフィンランド語のいすれかを示したものである。フィンランドに関するアニメーションと言語との正しい組合せを,下の①~④のうちから一つ選28ス...",
+      "relatedCountries": [
+        "JPN",
+        "SWE",
+        "NOR",
+        "FIN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d5_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 2,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5ヨシエさんは，旅行中に子どもや高齢者を見かけ，(1)か国の福祉に興味をもった",
+      "promptSummary": "問5ヨシエさんは，旅行中に子どもや高齢者を見かけ，(1)か国の福祉に興味をもった。そして，(1)か国とOECD（経済協力開発機構）加盟国＊のGDP（国内総生産）に対する公的社会支出の割合とGNI（国民総所得）に対する租税負担率を調べた。次の図6中の(2)～(3)は，二つの指標の平均値を原点として，各国の値を(4)象限に分割したものである。(1)か国が属する象限を，図6中の(2)～(3)のうちから一つ選べ。29＊トルコを除く。OEC...",
+      "relatedCountries": [
+        "JPN",
+        "TUR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q1",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号30）",
+      "title": "第6問 問1: 問1高山市に向かう前に，イズミさんはいくつかの指標から高山市の気候を他都市と比較した",
+      "promptSummary": "問1高山市に向かう前に，イズミさんはいくつかの指標から高山市の気候を他都市と比較した。次の表1は，図1中に示した高山市を含む(1)都市について，気温の年較差，冬季（12～(2)月）の日照時間を示したものであり，ア～ウは高山はままつ市，富山市，浜松市のいずれかである。都市名とア～ウとの正しい組合せを，下の(3)～(4)のうちから一つ選べ。30表1気温の年較差（℃）冬季（12～(2)月）の日照時間（時間）ア21．1 580．2イ23．...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q2",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号31）",
+      "title": "第6問 問2: 問2高山市は2005年に周辺の(1)町村を編入合併し，全国で最も面積の大きな市となった",
+      "promptSummary": "問2高山市は2005年に周辺の(1)町村を編入合併し，全国で最も面積の大きな市となった。イズミさんは，高山市内の人口の地域的差異について理解するために，統計データを用いて主題図を作成した。次の図2は，高山市の標高段彩図と旧市町村別の人口密度，老年人口割合＊，平均世帯人員数を示したものである。これらの図から読み取れることがらとその背景について述べた下の文章中の下線部(2)～(3)のうちから，適当でないものを一つ選べ。31＊総人口に占...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q3",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号32）",
+      "title": "第6問 問3: 問3市内の朝市とスーパーマーケットを見学したイズミさんは，高山市の農林水産物の流通に関心をもった",
+      "promptSummary": "問3市内の朝市とスーパーマーケットを見学したイズミさんは，高山市の農林水産物の流通に関心をもった。イズミさんは市役所を訪問し，詳しい話を聞くことにした。イズミさんと市役所の職員との会話文中の空欄カとキに当てはまる語の正しい組合せを，下の(1)～(2)のうちから一つ選べ。32イズミ「高山市の農業にはどのような特徴がありますか」職員「高山市の農業産出額は県内最大であり，野菜と肉用牛の産地として有名です。現在は大都市圏を中心に出荷されて...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q4",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号33）",
+      "title": "第6問 問4: 問4高山市の歴史に関心をもったイズミさんは，市街地を徒歩で観察した",
+      "promptSummary": "問4高山市の歴史に関心をもったイズミさんは，市街地を徒歩で観察した。次の図3は，高山市の中心市街地周辺を範囲とする2011年発行の(1)万(2)千分の(3)地形図（原寸，一部改変）である。図3から読み取れるこの地域の歴史的な特徴についてイズミさんの訪問した順路に沿って説明した文として下線部が適当でないものを，下の(4)～(5)のうちから一つ選べ。33吹屋町宮川苔川上二之町岡本町一丁目城山図3かみにのまち(4)上二之町から南へ向かう...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q5",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号34）",
+      "title": "第6問 問5: 問5高山市内をめぐり，観光についての興味を深めたイズミさんは，高山市の観光統計＊を整理した",
+      "promptSummary": "問5高山市内をめぐり，観光についての興味を深めたイズミさんは，高山市の観光統計＊を整理した。次の図4は高山市の旅行者数の推移を示したものであり，表2は2015年の高山市と全国の外国人旅行者の地域別割合を示したものである。図4と表2から読み取れることがらとその背景について述べた下の文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。34＊高山市は，旧高山市の値。1985 1995 2005 200 100 0 300 ...",
+      "relatedCountries": [
+        "JPN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_main_d6_q6",
+      "examId": "2018_main",
+      "year": 2018,
+      "session": "main",
+      "sessionLabel": "2018年度 センター試験 本試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号35）",
+      "title": "第6問 問6: 問6高山市の観光資源について調べていくなかで，イズミさんは長野県との県境のりくらだけにある...",
+      "promptSummary": "問6高山市の観光資源について調べていくなかで，イズミさんは長野県との県境のりくらだけにある乗鞍岳に興味をもった。バスの車窓からイズミさんは，標高の高低によって植生に違いがみられることに気づいた。次の図5はイズミさんが乗鞍岳たたみだいら山頂付近の畳平（標高2702m）にある展示室で植生の分布について学んだことをまとめたメモである。また，下の写真1中のＡ～Ｃは，図5中の各植生帯の代表的な植生を撮影したものである。植生帯とＡ～Ｃとの正し...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_main/2018_main_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

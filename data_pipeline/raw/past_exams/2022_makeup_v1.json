@@ -1,0 +1,1048 @@
+{
+  "examId": "2022_makeup",
+  "year": 2022,
+  "session": "makeup",
+  "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2022_makeup_d1_q1",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問世界の自然環境と自然災害に関する次の問い（Ａ・Ｂ）に答えよ",
+      "promptSummary": "第1問世界の自然環境と自然災害に関する次の問い（Ａ・Ｂ）に答えよ。（配点20）Ａ次の図1を見て，世界の自然環境に関する後の問い（問1～3）に答えよ。P Q s x y R t図1問1大陸の東西では，同緯度帯でも気候が大きく異なることがある。次の表1は，図1中の線ｓとｔの西端と東端における月降水量を示したものであり，(1)～(2)は，線ｓの(3)月と(4)月，線ｔの(3)月と(4)月のいずれかである。線ｓの(4)月に該当するものを表...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d1_q2",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2土壌や植生の特徴は気候帯の影響を受けている",
+      "promptSummary": "問2土壌や植生の特徴は気候帯の影響を受けている。次の写真1中のア～ウは，図1中の線分ｘ―ｙに沿った地域にみられる植生を撮影したものである。また，後の文Ｊ～Ｌは，ア～ウのいずれかの土壌の特徴について述べたものである。ア～ウとＪ～Ｌとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。2アイウ写真1Ｊ鉄分が溶脱した灰白色のやせた酸性土壌が分布する。とＫ腐植層の発達が悪く，夏は凍土が融け湿地状になるやせた土壌が分布する...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d1_q3",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3世界の湖は，様々な成因により水深が異なり，また湖が位置する地域の気候により塩分に違いが...",
+      "promptSummary": "問3世界の湖は，様々な成因により水深が異なり，また湖が位置する地域の気候により塩分に違いが生じている。次の表2中のカ～クは，図1中のＰ～Ｒのいずれかにおける最大水深と塩分を示したものである。カ～クとＰ～Ｒとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。3表2最大水深（m）塩分（g/リットル）カ1，471 0．6キ1，025 12．8ク406 0．1『理科年表』などにより作成。(1) (3) (4) (5) (6) (2)...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d1_q4",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 4,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4気候変動と海岸線の変化は密接に関係している",
+      "promptSummary": "問4気候変動と海岸線の変化は密接に関係している。次の図2中のdとeは,温暖期と寒冷期のいずれかの時期における関東地方の海岸線を示したものである。また,後の文章は,図2に関連することがらを述べたものである。温暖期に該当する図と文章中の空欄サに当てはまる語句との組合せとして最も適当なものを,後の①~〇のうちから一つ選べ。省略省略- -現在の海岸線河川過去の海岸線貝塚爽平『日本の地形』により作成。図2地球は温暖期と寒冷期を繰り返してきた...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d1_q5",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 4,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: とつてい問5次の図3は，ある港における突堤建設以降の海岸線の変化を示したものであり，後の写...",
+      "promptSummary": "とつてい問5次の図3は，ある港における突堤建設以降の海岸線の変化を示したものであり，後の写真2は，港と突堤付近を上空から撮影したものである。図3と写真2から考えられることがらについて述べた文として最も適当なものを，後の(1)～(2)のうちから一つ選べ。5突堤建設以降の海岸線の変化量東西m建設された突堤の位置突堤海側陸側15年後20年後24年後33年後2 3 2 1 0 1 3 km 100 0－100 200小池一之・太田陽子編『...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d1_q6",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6津波の被害は，地形の違いにより異なる",
+      "promptSummary": "問6津波の被害は，地形の違いにより異なる。次の図4は，インドネシアのある平野における2004年インド洋大津波の浸水範囲と浸水深，および地形の分布を示したものである。図4の範囲における津波の状況について考えられることがらを述べた文(1)～(2)のうちから，適当でないものを一つ選べ。6 2 km 0タチ300 25 50 580 320 270 355 355 325 600 810 380 400 610 200浸水範囲浸水深(cm...",
+      "relatedCountries": [
+        "IDN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q1",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 4,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問ゲンさんたちは，地理の授業で製造業のグローバル化について探究した",
+      "promptSummary": "第2問ゲンさんたちは，地理の授業で製造業のグローバル化について探究した。ゲンさんたちが探究したことに関する次の問い（問1～6）に答えよ。（配点20）問1ゲンさんたちは，自動車産業のグローバル化に関する新聞記事の切抜きをまとめた次の資料1を先生から提示された。資料1中の記事ＡとＢの発行年は，1992年と2005年のいずれかである。また，後の図1は，資料1を見てゲンさんたちが作成した2000年と2019年における国別の国内自動車生産台...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "KOR",
+        "TWN",
+        "THA",
+        "IND",
+        "FRA",
+        "DEU",
+        "ESP",
+        "USA",
+        "CAN",
+        "MEX",
+        "BRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q2",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた",
+      "promptSummary": "問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた。次の図2は，いくつかの工業製品について，輸出金額の上位15か国・地域が世界の輸出金額に占める割合を示したものであり，カ～クは，衣類，航空機＊，テレビのいずれかである。工業製品名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。8＊航空機の部分品や人工衛星などを含む。40 20 5％カキク中国の数値には台湾，ホンコン，マカオ...",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q3",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3ゲンさんたちは，製造業の生産拠点が国境を越えて広がっていることを知り，日本企業がどのよ...",
+      "promptSummary": "問3ゲンさんたちは，製造業の生産拠点が国境を越えて広がっていることを知り，日本企業がどのような対応をとってきたのかを非製造業と対比しながら調べた。次の表1は，いくつかの国における2000年と2019年の日本企業の海外現地法人に占める製造業と非製造業の割合を示したものであり，サとシは製造業と非製造業のいずれか，ＤとＥはアメリカ合衆国とベトナムのいずれかである。製造業とアメリカ合衆国との正しい組合せを，後の(1)～(4)のうちから一つ...",
+      "relatedCountries": [
+        "JPN",
+        "VNM",
+        "SGP",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q4",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 4,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4ゲンさんたちは，製造業のグローバル化と産業構造の変化について考えるため，いくつかの国タ...",
+      "promptSummary": "問4ゲンさんたちは，製造業のグローバル化と産業構造の変化について考えるため，いくつかの国タ～ツの1980年，1995年，2016年の産業別就業者割合を次の図3に示した。また，文Ｊ～Ｌは，タ～ツのいずれかにおける製造業のグローバル化と産業構造の変化について述べたものである。タ～ツとＪ～Ｌとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。10 0 25 0 25 50 75 100％50 75 100％1980年...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q5",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5ゲンさんたちは，製造業において知的財産の役割が大きくなっていることを知り，次の図4に，...",
+      "promptSummary": "問5ゲンさんたちは，製造業において知的財産の役割が大きくなっていることを知り，次の図4に，いくつかの国における知的財産使用料の受取額と支払額との関係を(1)人当たりGNI（国民総所得）別に示した。図4を見たゲンさんたちの会話文中の下線部(2)～(3)のうちから，誤りを含むものを一つ選べ。11支払額100000 10000 1000 100 10 1 100000 1 10 100 1000 10000百万ドル百万ドル受取額3000...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d2_q6",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6製造業のグローバル化について探究してきたゲンさんたちは，先進工業国と新興工業国における...",
+      "promptSummary": "問6製造業のグローバル化について探究してきたゲンさんたちは，先進工業国と新興工業国における製造業のグローバル化による課題とそれに対する企業の取組みについて，次の資料2にまとめた。資料2中の空欄ａには先進工業国の取組みを示した語句マとミのいずれか，空欄ｂには新興工業国の取組みを示した語句ＰとＱのいずれかが当てはまる。空欄ａとｂに当てはまる語句の組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。12製造業のグローバル...",
+      "relatedCountries": [
+        "JPN",
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q1",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問人口と都市に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問人口と都市に関する次の問い（問1～6）に答えよ。（配点20）問1次の表1は，いくつかの国について，人口密度と人口増加率の変化を示したものであり，(1)～(2)は，アルジェリア，カタール，ニュージーランド，ベトナムのいずれかである。アルジェリアに該当するものを，表1中の(1)～(2)のうちから一つ選べ。13表1人口密度（人/km2）人口増加率（％）1980～2000年2000～2020年(1) 294 47．2 21．8 (3...",
+      "relatedCountries": [
+        "VNM",
+        "DZA",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q2",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 4,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2次の図1は，いくつかの国における人口千人当たり死亡数の推移を示したものであり，Ａ～Ｃは...",
+      "promptSummary": "問2次の図1は，いくつかの国における人口千人当たり死亡数の推移を示したものであり，Ａ～Ｃは，日本，アメリカ合衆国，フィリピンのいずれかである。また，後の図2中のア～ウは，これら(1)か国のいずれかについて，年齢別人口構成を示したものである。アメリカ合衆国に該当する正しい組合せを，後の(2)～(3)のうちから一つ選べ。14 1950～55 0人10～15年2000～05 90～95 80～85 70～75 60～65 15 10 5...",
+      "relatedCountries": [
+        "JPN",
+        "PHL",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q3",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の図3は，先進国＊と発展途上国＊＊における都市人口と農村人口のいずれかの推移を示した...",
+      "promptSummary": "問3次の図3は，先進国＊と発展途上国＊＊における都市人口と農村人口のいずれかの推移を示したものである。先進国の都市人口に該当するものを，図3中の(1)～(2)のうちから一つ選べ。15＊北アメリカとヨーロッパの国々，日本，オーストラリア，ニュージーランド。＊＊先進国以外の国・地域でメキシコを含む。1900 0 2025年億人2000 1975 1950 1925 40 30 20 10ǏǐǑǒ2025年は予測値。World Urba...",
+      "relatedCountries": [
+        "JPN",
+        "USA",
+        "MEX",
+        "AUS",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q4",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4多国籍企業の集中度などが特に高い都市を世界都市とみなすことがある",
+      "promptSummary": "問4多国籍企業の集中度などが特に高い都市を世界都市とみなすことがある。次の図4は，2000年と2020年のいずれかの時点における上位20の世界都市の地理的な位置を模式的に示したものであり，凡例EとFは，この20年間に上位20に加わった都市と外れた都市のいずれかである。また，後の文章は，世界都市に関連することがらを述べたものである。図4中の凡例Fと文章中の空欄ａに当てはまる語句との組合せとして最も適当なものを，後の(1)～(2)のう...",
+      "relatedCountries": [
+        "JPN",
+        "THA",
+        "MYS",
+        "SGP",
+        "IND",
+        "ARE",
+        "GBR",
+        "FRA",
+        "ITA",
+        "ESP",
+        "NLD",
+        "BEL",
+        "CHE",
+        "USA",
+        "CAN",
+        "MEX",
+        "BRA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q5",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 4,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図5中のカ～クは，日本のある大都市を中心とする地域において世帯総数に占める，高齢者...",
+      "promptSummary": "問5次の図5中のカ～クは，日本のある大都市を中心とする地域において世帯総数に占める，高齢者夫婦のみ世帯，20～29歳の単身者世帯，乳幼児のいる世帯の割合のいずれかを示したものである。項目名と図5中のカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。17クキカ世帯数0 50 km高位中位低位(3)kmメッシュの値。統計年次は2015年。国勢調査により作成。図5 (1) (4) (5) (6) (7) (2)高齢者夫婦の...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d3_q6",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6次の図6は，日本の大都市圏郊外に位置し，1970年代に入居が始まったニュータウン内のあ...",
+      "promptSummary": "問6次の図6は，日本の大都市圏郊外に位置し，1970年代に入居が始まったニュータウン内のある地区における人口ピラミッドを時期別に示したものであり，J～Lは，1975年，1995年，2015年のいずれかである。また，後の文サ～スは，いずれかの時期に地区で生じていた現象を述べたものである。J～Lとサ～スとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。18 0～4 5～9 10～14 15～19 20～24 25...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q1",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問ヨーロッパに関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第4問ヨーロッパに関する次の問い（問1～6）に答えよ。（配点20）問1次の図1中のＡ～Ｄは，いくつかの都市の位置を示したものであり，後の図2中の(1)～(2)は，都市Ａ～Ｄのいずれかの雨温図である。都市Ａに該当するものを，図2中の(1)～(2)のうちから一つ選べ。19 C y x A B D z図1 mm℃気温降水量月－5 0 120 10 20 30 1 3 5 7 9 11 80 40 0－5 10 20 30 0－5 10 ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "雨温図"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q2",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2次の写真1中のア~ウは,図1中のx ~ zのいずれかの範囲における,侵食により形成され...",
+      "promptSummary": "問2次の写真1中のア~ウは,図1中のx ~ zのいずれかの範囲における,侵食により形成された特徴的な地形を撮影したものである。ア~ウとx ~ zとの組合せとして最も適当なものを,後の①~⑥のうちから一つ選べ。20溶食による凹地が多数みられ,そ省略の底では農作物が栽培されていアる。霻驀み深い谷が形成されており,大型のイ遊覧船の往来がみられる。水はけのよい谷の斜面をいかしウて,果樹栽培が行われている。写真①>< N②>< N⑤N X⑥...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q3",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 4,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の図3中のＪ～Ｌは，人口密度，外国生まれの人口の割合，第(1)次産業就業者割合のいず...",
+      "promptSummary": "問3次の図3中のＪ～Ｌは，人口密度，外国生まれの人口の割合，第(1)次産業就業者割合のいずれかを示したものである。項目名とＪ～Ｌとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。21ＪＫＬ高位中位低位データなし統計年次は，人口密度と第(1)次産業就業者割合が2018年，外国生まれの人口の割合が2020年。World Population Prospectsなどにより作成。図3 (2) (4) (5) (6) (7) (3)...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q4",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 4,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の図4中のＰとＱは，EU圏内の都市の空港から出発した年間の旅客数と貨物量のいずれかに...",
+      "promptSummary": "問4次の図4中のＰとＱは，EU圏内の都市の空港から出発した年間の旅客数と貨物量のいずれかについて，2018年の上位12都市＊を示したものである。また，図4中の凡例は，旅客数または貨物量と，その目的地の内訳を示したものであり，カとキは国内またはEU圏外のいずれかである。貨物量の図とEU圏外の凡例との正しい組合せを，後の(1)～(2)のうちから一つ選べ。22＊一つの都市に複数の空港が存在する場合は合計値。P Q EU圏内カキEU圏内カ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q5",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次の図5中のＳ～Ｕは，いくつかの同系統の言語の分布を示したものであり，文サ～スは，Ｓ～...",
+      "promptSummary": "問5次の図5中のＳ～Ｕは，いくつかの同系統の言語の分布を示したものであり，文サ～スは，Ｓ～Ｕのいずれかの言語について述べたものである。Ｓ～Ｕとサ～スとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。23 S U Tロン・E・アシャー『世界民族言語地図』などにより作成。図5サかつて広い範囲で使用されていた形跡がヨーロッパ各地の地名などに残るが，現在は限られた地域で使用されている。シ周囲に分布するラテン語派の言語...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d4_q6",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: かつたん問6次の図6は，旧東ドイツ地域に存在し，1993年に閉山した褐炭＊の採掘場とその周...",
+      "promptSummary": "かつたん問6次の図6は，旧東ドイツ地域に存在し，1993年に閉山した褐炭＊の採掘場とその周辺について，1980年と2015年の土地利用を示したものである。図6に関連することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。24＊石炭の一種で不純物を多く含む。1980年2015年褐炭採掘場の範囲ボタ山(鉱山廃棄物を積み上げたもの)旧褐炭採掘場の範囲自然保護地区森林展望塔ボート乗り場0 3 km水面計...",
+      "relatedCountries": [
+        "DEU"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q1",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: いいだ第5問長野県飯田市の高校に通うリュウさんたちは，飯田市の地域調査を行った",
+      "promptSummary": "いいだ第5問長野県飯田市の高校に通うリュウさんたちは，飯田市の地域調査を行った。この地域調査に関する次の問い（問1～6）に答えよ。（配点20）問1リュウさんたちは，飯田市の自然環境を理解するために，飯田市を南北に流てんりゆうがわれる天竜川の流域全体に関する特徴を図書館やインターネットで調べ，次の図1～3を入手した。これらの図をもとにしたリュウさんたちによる会話文中の下線部(1)～(2)のうちから，誤りを含むものを一つ選べ。25 m...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "雨温図"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q2",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 4,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2リュウさんたちは，飯田市の市域が天竜川をまたいで広がっていることに興味をもち，飯田市の...",
+      "promptSummary": "問2リュウさんたちは，飯田市の市域が天竜川をまたいで広がっていることに興味をもち，飯田市の地表面の傾斜，人口，小学校と児童数に関する次の図4を作成した。図4から読み取れることがらについて述べた文として最も適当なものを，後の(1)～(2)のうちから一つ選べ。26通学区域小学校児童数100 1000人小学校と児童数1～50人未満50～500人500人以上人口0～10°未満10～20°20°以上地表面の傾斜0 10 km天竜川傾斜および...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q3",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 400 m 0跡問3リュウさんたちは，地理院地図の機能を活用して作成した次の図5を見ながら...",
+      "promptSummary": "400 m 0跡問3リュウさんたちは，地理院地図の機能を活用して作成した次の図5を見ながら現地調査を行い，地形の特徴を確認した。リュウさんたちが話し合った会話文中の下線部(1)～(2)のうちから，誤りを含むものを一つ選べ。27図5まつかわリュウ「市街地には，天竜川の支流である松川が西から東に流れているよ。飯田駅や飯田市役所は松川の北側にあるね。崖Ａは松川の流れに沿っているけど，崖Ｂは松川の流れにほぼ直交するから，(1)崖Ｂは，松川...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q4",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4リュウさんたちは，1947年の大火をきっかけに飯田駅の南東側で大規模な復興事業が実施さ...",
+      "promptSummary": "問4リュウさんたちは，1947年の大火をきっかけに飯田駅の南東側で大規模な復興事業が実施されたことを知った。そこで，リュウさんたちは市街地にどのような大規模火災の被害軽減策がみられるかを観察し，地点E～Hで写真を撮影し，次の資料1にまとめた。大規模火災の被害軽減策として当てはまらないものを，資料1中の(1)～(2)のうちから一つ選べ。28ǐＦ：公園にも利用されている緑地帯ǑＧ：建物の間隔を広げてつくられた小道ǏＥ：斜めに横断するこ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q5",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 4,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5飯田市の農業に興味を持ったリュウさんたちは，飯田市周辺で盛んに栽培されているリンゴとキ...",
+      "promptSummary": "問5飯田市の農業に興味を持ったリュウさんたちは，飯田市周辺で盛んに栽培されているリンゴとキュウリについて，長野県全体の出荷時期と出荷先を調べた。次の図6は，東京および名古屋の中央卸売市場における都道府県別の入荷量の月ごとの変化を，年間の入荷量を100としたときの割合で示したものである。図6中のＪとＫはリンゴとキュウリのいずれか，カとキは東京と名古屋のいずれかである。東京の中央卸売市場におけるリンゴの入荷割合に該当するものを，図6中...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2022_makeup_d5_q6",
+      "examId": "2022_makeup",
+      "year": 2022,
+      "session": "makeup",
+      "sessionLabel": "2022年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 6,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第5問 問6（解答番号30）",
+      "title": "第5問 問6: 0 1966 71 76 81 86 90 95 2002 07 12 17年1000 2...",
+      "promptSummary": "0 1966 71 76 81 86 90 95 2002 07 12 17年1000 2000 3000 4000 5000 6000百万m 3問6リュウさんたちは高校に戻って，環境モデル都市に選定されている飯田市の取組みについて先生も交えて話し合った。先生が用意した次の図7は，日本の森林資源量の年別の数値を示したものであり，後の資料2は，リュウさんたちがまとめた森林資源の活用案である。リュウさんたちと先生との会話文中の空欄サに...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d5_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

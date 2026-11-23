@@ -1,0 +1,1049 @@
+{
+  "examId": "2021_makeup",
+  "year": 2021,
+  "session": "makeup",
+  "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+  "questions": [
+    {
+      "questionId": "2021_makeup_d1_q1",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 問1マキさんたちは，図1から「土砂災害を発生させる要因は山脈の地形的特徴にあるのではないか...",
+      "promptSummary": "問1マキさんたちは，図1から「土砂災害を発生させる要因は山脈の地形的特徴にあるのではないか」という仮説を立て，世界の山脈について調べることにした。次の図2中のアとイは，図1中の線ＤとＥのいずれかに沿った地形断面である。また，下の文ＧとＨは，図1中の線ＤとＥのいずれかが横断する山脈について述べたものである。図1中の線Ｄに該当する図と文との組合せとして最も適当なものを，下の(1)～(2)のうちから一つ選べ。1－8000 2000 km...",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "pb_japan_trench"
+      ],
+      "topicTags": [
+        "プレート",
+        "火山"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d1_q2",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 4,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2マキさんたちは，降雨と土砂災害との関係について考察するために，いくつかの地域における月...",
+      "promptSummary": "問2マキさんたちは，降雨と土砂災害との関係について考察するために，いくつかの地域における月別の土砂災害発生地点の違いを調べた。次の図3中のカとキは，図1中のＪとＫの範囲における，(1)月と(2)月のいずれかの土砂災害発生地点を示したものである。図3をもとに話し合った，下の会話文中の下線部(3)～(4)のうちから，誤りを含むものを一つ選べ。2カ土砂災害発生地点キ統計年次は2005～2014年。Froude and Petley（20...",
+      "relatedCountries": [
+        "JPN",
+        "USA",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "モンスーン"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d1_q3",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3マキさんたちは，土砂災害が多発している東アジアにおける人間の営みと土砂の流出との関係に...",
+      "promptSummary": "問3マキさんたちは，土砂災害が多発している東アジアにおける人間の営みと土砂の流出との関係について調べることにした。先生から提示された次の図4は，黄河から海への土砂流出量の変化を示したものである。図4で示された土砂流出量の変化について，その背景と影響をマキさんたちがまとめた下のカード(1)～(2)のうちから，適当でないものを一つ選べ。3 20 15 10 5 0 4000 2000 1950 1960 1970 1980 1990 ...",
+      "relatedCountries": [
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "水力発電"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d1_q4",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 4,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4最初に，研究員は人工衛星の観測から得られた世界の森林分布を示し，その特徴について考えて...",
+      "promptSummary": "問4最初に，研究員は人工衛星の観測から得られた世界の森林分布を示し，その特徴について考えてみようと提案した。フミさんたちは，次の図5のように森まば林が密な地域と疎らな地域の組合せを，(1)つの大陸から一つずつ選び出して話し合った。下の会話の条件に当てはまる地域の組合せとして最も適当なものを，図5中の(2)～(3)のうちから一つ選べ。4ǏǑǒǐ点は森林の分布を示す。JAXAの資料により作成。図5フミ「地図帳を見ると，森林が密な地域よ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d1_q5",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5次に，研究員は，世界の森林のうち，熱帯雨林，温帯林，亜寒帯林を対象に森林の違いを考えて...",
+      "promptSummary": "問5次に，研究員は，世界の森林のうち，熱帯雨林，温帯林，亜寒帯林を対象に森林の違いを考えてみようと提案した。次の資料1は，世界全体におけるそれぞれの森林の炭素量を，植物と土壌が占める割合に分けて研究員が示したものである。資料1をもとに，森林の特徴についてフミさんたちがまとめた文として下線部が最も適当なものを，下の(1)～(2)のうちから一つ選べ。5森林の炭素量の割合植物の占める割合土壌の占める割合％60 80 100 40 20 ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d1_q6",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6最後に，研究員とフミさんたちは，世界の森林で起きる災害の一つとして，カナダの森林火災を...",
+      "promptSummary": "問6最後に，研究員とフミさんたちは，世界の森林で起きる災害の一つとして，カナダの森林火災を取り上げ，次の図6と下の写真1を見ながら話し合った。次ページの会話文中の空欄ＰとＱに当てはまる語句と文との組合せとして最も適当なものを，次ページの(1)～(2)のうちから一つ選べ。6森林火災が発生した地域7月の気温が平年よりも2℃以上高い地域Natural Resources Canadaの資料などにより作成。図6高い今日の森林火災の危険性写...",
+      "relatedCountries": [
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q1",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問産業と貿易に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問産業と貿易に関する次の問い（問1～6）に答えよ。（配点20）問1産業の立地と地域の人口は深く結びついているが，その関係は産業の特性によって異なる。次の図1は，都道府県の人口と産業別就業者数を示したものであり，ア～ウは，農林業，製造業，小売業のいずれかである。産業とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。7 100 10 1 1000万人100 10万人人口就業者数ア100 10 1 1000万人100...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q2",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2農業の立地には，地域の自然条件のほか，市場からの距離が重要な要因となる",
+      "promptSummary": "問2農業の立地には，地域の自然条件のほか，市場からの距離が重要な要因となる。市場からの距離と農業地域の形成を説明した仮想のモデルに関する次の条件と下の説明文を読んで，空欄カに当てはまるものを，下の図2中の(1)～(2)のうちから一つ選べ。8条件・市場が一つだけ存在する。・自然条件はどこも同じで，生産にかかる費用は一定である。・作物を市場へ運ぶ輸送費は距離に比例する。・農地面積当たり収益は，作物の販売価格から生産にかかる費用と輸送費...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q3",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 4,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3農業の立地には市場からの距離に加え様々な要因が作用する",
+      "promptSummary": "問3農業の立地には市場からの距離に加え様々な要因が作用する。次の図3中のサ～スは，米，野菜，果樹のいずれかについて，東日本の14都県における，東京からの距離と農地面積当たり収益の推計値＊を示したものである。また，次ページの図4中のＤ～Ｆは，田，畑，樹園地のいずれかについて，その14都県の農地面積の構成比を指数で示したものである。野菜と畑との正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。9＊農地面積当たり収益は，作物別...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q4",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の(1)～(4)の文は，世界各地の産業の立地について述べたものである",
+      "promptSummary": "問4次の(1)～(4)の文は，世界各地の産業の立地について述べたものである。このうち，市場からの距離の近さが立地に強く影響している例として最も適当なものを，(1)～(4)のうちから一つ選べ。10 (1)アメリカ合衆国のシアトルには，航空機組立産業が立地している。(2)イタリアのフィレンツェには，付加価値の高い繊維産業が立地している。(3)インドのバンガロールには，英語対応のコールセンターが立地している。(4)東京には，出版や印刷に...",
+      "relatedCountries": [
+        "JPN",
+        "IND",
+        "ITA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q5",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 4,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5(1)国間で行われる貿易は，各国の資源や産業構造の影響を受ける",
+      "promptSummary": "問5(1)国間で行われる貿易は，各国の資源や産業構造の影響を受ける。次の表1は，いくつかの国について，(2)人当たりGDP（国内総生産）と輸出依存度＊をもとに(3)つに分類したものであり，Ｊ～Ｌは，シンガポール，ベトナム，カナダのいずれかである。また，下のタ～ツは，日本がＪ～Ｌのいずれかの国から輸入する主要な品目である。Ｊ～Ｌとタ～ツとの正しい組合せを，下の(4)～(5)のうちから一つ選べ。11＊輸出額をGDPで割った値。表1輸出...",
+      "relatedCountries": [
+        "JPN",
+        "IDN",
+        "VNM",
+        "SGP",
+        "IND",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d2_q6",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次の図5は，ある(1)か国の2017年における訪日観光客数と，(2)人当たり旅行消費額...",
+      "promptSummary": "問6次の図5は，ある(1)か国の2017年における訪日観光客数と，(2)人当たり旅行消費額およびその内訳を示したものであり，マ～ムは，アメリカ合衆国，韓国，中国＊のいずれかである。また，図5中の凡例ＰとＱは，買い物代と宿泊費のいずれかである。アメリカ合衆国と買い物代との正しい組合せを，下の(3)～(4)のうちから一つ選べ。12＊台湾，ホンコン，マカオを含まない。0 5 10 1人当たり旅行消費額15 20 25 736万人観光客数...",
+      "relatedCountries": [
+        "CHN",
+        "KOR",
+        "TWN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q1",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問人口と村落・都市に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問人口と村落・都市に関する次の問い（問1～6）に答えよ。（配点20）問1次の図1は，いくつかの国について，老年人口率が(1)％，14％，21％に達した年，または達すると予測されている年を示したものであり，(2)～(3)は，カナダ，中国＊，日本，フランスのいずれかである。カナダに該当するものを，図1中の(2)～(3)のうちから一つ選べ。13＊台湾，ホンコン，マカオを含まない。1850 1875 1950 1975 2025 20...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "FRA",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q2",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2次の図2は，いくつかの国における女性の労働力率を年齢階級別に示したものであり，凡例ア～...",
+      "promptSummary": "問2次の図2は，いくつかの国における女性の労働力率を年齢階級別に示したものであり，凡例ア～ウは，アメリカ合衆国，韓国，フィンランドのいずれかである。国名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。14アイウ25～29 35～39 45～49 55～59 65～歳15～19 20 40 60 80 0女性の労働力率100％アメリカ合衆国の15～19歳は16～19歳の値。統計年次は2017年。『世界の統計』により...",
+      "relatedCountries": [
+        "KOR",
+        "FIN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q3",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の写真1は，ある集落の景観を撮影したものである",
+      "promptSummary": "問3次の写真1は，ある集落の景観を撮影したものである。下の文カとキのいずれかは，写真1のような形態の集落が分布する地域について述べたものであり，文ａとｂのいずれかは，このような形態の利点を説明したものである。写真1のような形態の集落に該当する文の組合せとして最も適当なものを，下の(1)～(2)のうちから一つ選べ。15 50 m 0 Googleマップにより作成。写真1分布する地域カ開発の歴史が新しく，村落が計画的につくられた地域キ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q4",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 4,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4次の図3は，ある三つの国Ａ～Ｃにおける都市人口率の推移を示したものであり，下の文サ～ス...",
+      "promptSummary": "問4次の図3は，ある三つの国Ａ～Ｃにおける都市人口率の推移を示したものであり，下の文サ～スは，Ａ～Ｃのいずれかの国における社会・経済的な状況について述べたものである。Ａ～Ｃとサ～スとの組合せとして最も適当なものを，下の(1)～(2)のうちから一つ選べ。16 0 20 40 60 80 100％1970 1980 1990 2000 2010 2015年A B C World Urbanization Prospectsにより作成。...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "プランテーション",
+        "鉄鉱石",
+        "石炭",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q5",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図4は，ある大都市における主な鉄道網と，いくつかの移動手段について，出勤目的の移動...",
+      "promptSummary": "問5次の図4は，ある大都市における主な鉄道網と，いくつかの移動手段について，出勤目的の移動者数が多い地区間を線で結んだものであり，ＥとＦは，自動車と鉄道のいずれかである。また，下の文章は，図4から読み取れることがらを述べたものであり，空欄Ｘには，図4中の地区タとチのいずれかが当てはまる。自動車に該当する図と空欄Ｘに当てはまる地区との正しい組合せを，下の(1)～(2)のうちから一つ選べ。17 0 10 km鉄道タチＥＦ主な鉄道網地区...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d3_q6",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 4,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6次の図5は，日本のある県庁所在都市の中心部におけるいくつかの施設の立地を示したものであ...",
+      "promptSummary": "問6次の図5は，日本のある県庁所在都市の中心部におけるいくつかの施設の立地を示したものであり，凡例マ～ムは，公立中学校，コンビニエンスストア，ビジネスホテルのいずれかである。施設名とマ～ムとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。18主な鉄道鉄道駅主要道路中心業務地区マミム0 1km総務省の資料などにより作成。図5 (1) (3) (4) (5) (6) (2)公立中学校ママミミムムコンビニエンスストアミムマムマミ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q1",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問西アジアに関する次の問い（Ａ・Ｂ）に答えよ",
+      "promptSummary": "第4問西アジアに関する次の問い（Ａ・Ｂ）に答えよ。（配点20）Ａ西アジアの自然環境や社会経済に関する次の問い（問1～4）に答えよ。問1次の図1は，西アジアの地形を示したものであり，下の図2は，図1中のＤ～Ｇのいずれかの地点における(1)月と(2)月の月平均気温および月降水量を示したものである。Ｆに該当するものを，図2中の(3)～(4)のうちから一つ選べ。19ＤＥＦＧウイア色の濃い部分ほど標高の高い地域を示し，陰影を付けている。図1...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q2",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2次の写真1中のＪ～Ｌは，図1中のア～ウのいずれかの地点における水資源の確保に関する景観...",
+      "promptSummary": "問2次の写真1中のＪ～Ｌは，図1中のア～ウのいずれかの地点における水資源の確保に関する景観を撮影したものである。Ｊ～Ｌとア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。20Ｊ外来河川Ｋ淡水化施設Ｌ地下水路Google Earthにより作成。写真1 (1) (3) (4) (5) (6) (2)ＪアアイイウウＫイウアウアイＬウイウアイア",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q3",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 4,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の図3は，(1)人当たりGNI（国民総所得）と(1)日当たり原油生産量によって西アジ...",
+      "promptSummary": "問3次の図3は，(1)人当たりGNI（国民総所得）と(1)日当たり原油生産量によって西アジアの国々をａ～ｄの(2)つのグループに分けたものであり，下の図4は，各グループの分布を示したものである。図4中の凡例カ～クは，図3中のａ～ｃのいずれかである。ａ～ｃとカ～クとの正しい組合せを，次ページの(3)～(4)のうちから一つ選べ。21 0 1 200 1 0 2 3 4 5 1日当たり原油生産量万キロリットル6万ドル1人当たりGNI a...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "原油"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q4",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の図5は，アラブ首長国連邦のドバイにおける人口の推移を示したものであり，図6は，20...",
+      "promptSummary": "問4次の図5は，アラブ首長国連邦のドバイにおける人口の推移を示したものであり，図6は，2015年のドバイにおける人口ピラミッドを示したものである。図5と図6をもとに考えられる，2000年以降のドバイの人口増加に寄与している要因として最も適当なものを，下の(1)～(4)のうちから一つ選べ。22 0 50 100 150 200 250 300万人2000 2005 2010 2015年Dubai Statistics Centerの...",
+      "relatedCountries": [
+        "TUR",
+        "ARE",
+        "ITA",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "イスラム教"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q5",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次の表2は，いくつかの食料品について，トルコとモロッコの(1)人当たり年間供給量を示し...",
+      "promptSummary": "問5次の表2は，いくつかの食料品について，トルコとモロッコの(1)人当たり年間供給量を示したものであり，ＰとＱはナツメヤシと豚肉のいずれか，サとシはトルコとモロッコのいずれかである。ナツメヤシとモロッコとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。23表2（単位：kg）(1)人当たり年間供給量ＰＱ国名サ0．01 0．64シ0．01 2．88統計年次は2013年。FAOSTATにより作成。(2) (4) (5) (3)ナ...",
+      "relatedCountries": [
+        "TUR",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d4_q6",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 4,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6人口の国際移動には，教育・雇用機会の獲得や紛争からの逃避など，様々な背景がある",
+      "promptSummary": "問6人口の国際移動には，教育・雇用機会の獲得や紛争からの逃避など，様々な背景がある。次ページの図7中の凡例ＳとＴは，ヨーロッパ各国に居住するトルコ人とモロッコ人の数のいずれかを示したものである。また，次ページの図8中のタとチは，トルコとモロッコのいずれかが受け入れている難民数の推移を示したものである。モロッコに該当する正しい組合せを，次ページの(2)～(3)のうちから一つ選べ。24 S T 0 50 100万人ヨーロッパ各国のうち...",
+      "relatedCountries": [
+        "TUR",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q1",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 第5問福岡市の高校に通うヨウジさんは，夏休みに関東地方から来た友人のユウタさんと一緒に福岡...",
+      "promptSummary": "第5問福岡市の高校に通うヨウジさんは，夏休みに関東地方から来た友人のユウタさんと一緒に福岡市とその周辺の地域調査を行った。この地域調査に関する次の問い（問1～6）に答えよ。（配点20）問1ユウタさんは，福岡市付近の地形を確認するため，飛行機の中から写真を撮影した。次の写真1中のア～ウは，福岡市とその周辺を示した次ページの図1中のＡ～Ｃのいずれかの地点の上空から，矢印の方向の景観を撮影したものである。ア～ウとＡ～Ｃとの正しい組合せを...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q2",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2ヨウジさんは，ユウタさんに福岡市の都市圏を説明するために，GIS（地理情報システム）を...",
+      "promptSummary": "問2ヨウジさんは，ユウタさんに福岡市の都市圏を説明するために，GIS（地理情報システム）を用いて主題図を作成した。次の図2は，人口集中地区＊の分布と福岡市への通勤・通学率を示したものである。図2に関連することがらを述べた文として最も適当なものを，下の(1)～(2)のうちから一つ選べ。26＊国勢調査において人口密度が4，000人/km2以上，かつ隣接した地域の人口が5，000人以上を有する地域を指す。20 km 0人口集中地区鉄道(...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏",
+        "GIS"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q3",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3福岡市の産業に関心を持ったヨウジさんたちは，市役所を訪問し，職員から詳しい話を聞いた",
+      "promptSummary": "問3福岡市の産業に関心を持ったヨウジさんたちは，市役所を訪問し，職員から詳しい話を聞いた。次の表1は，産業別の就業者数の上位(1)業種を示したものであり，ＥとＦは全国と福岡市のいずれかである。また，下の会話文中の空欄カには，下の語句ＸとＹのいずれかが当てはまる。福岡市に該当する記号とカに当てはまる語句との組合せとして最も適当なものを，下の(2)～(3)のうちから一つ選べ。27表1順位ＥＦ(4)位製造業卸売業・小売業(5)位卸売業・...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q4",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 4,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4ヨウジさんたちは，福岡市都心の始発駅から電車に乗り，景観の変化を調べてみた",
+      "promptSummary": "問4ヨウジさんたちは，福岡市都心の始発駅から電車に乗り，景観の変化を調べてみた。次の写真2中のＪ～Ｌは，ヨウジさんたちがいくつかの駅の周辺で景観を撮影したものである。また，次ページの表2中のサ～スは，Ｊ～Ｌの写真を撮影した地点を含む市区町村のいずれかにおける，2005年から2015年の人口増加率と老年人口増加率を示したものである。Ｊ～Ｌとサ～スとの正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。28Ｊ始発駅から数分で着...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q5",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 4,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5福岡市の海岸線に埋立地が多いことに気が付いたヨウジさんたちは，地理院地図に1950年頃...",
+      "promptSummary": "問5福岡市の海岸線に埋立地が多いことに気が付いたヨウジさんたちは，地理院地図に1950年頃の海岸線を書き入れた次の図3を見ながら付近を歩いて，土地利用を観察した。ヨウジさんたちが話し合った下の会話文中の下線部(1)～(2)のうちから，誤りを含むものを一つ選べ。29 0 300 m 19 50年頃の海岸線19 50年頃の海岸線19 50年頃の海岸線飛石橋愛宕大橋藤崎駅地理院地図により作成。図3ふじさきえきげんこうぼうるいヨウジ「藤崎...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2021_makeup_d5_q6",
+      "examId": "2021_makeup",
+      "year": 2021,
+      "session": "makeup",
+      "sessionLabel": "2021年度 共通テスト 第2日程（地理B）",
+      "daimon": 5,
+      "toi": 6,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第5問 問6（解答番号30）",
+      "title": "第5問 問6: 問6福岡市での地域調査を通じて地方中心都市の役割に関心を持ったユウタさんは，福岡市からみた...",
+      "promptSummary": "問6福岡市での地域調査を通じて地方中心都市の役割に関心を持ったユウタさんは，福岡市からみた日本の人口移動について考えた。次の図4は，各都道府県から福岡市への転入者数の方が多い場合は転入超過とし，福岡市から各都道府県への転出者数の方が多い場合は転出超過として，その超過人数を示したものである。図4に関連することがらを述べた文として下線部が適当でないものを，下の(1)～(2)のうちから一つ選べ。30 1000人100転入超過転出超過統計...",
+      "relatedCountries": [
+        "JPN",
+        "CHN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2021_makeup/2021_makeup_d5_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

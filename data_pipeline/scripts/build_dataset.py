@@ -73,24 +73,21 @@ def normalize_koppen_in_text(obj):
         return {k: normalize_koppen_in_text(v) for k, v in obj.items()}
     return obj
 
-EXAM_ORDER = [
-    "2024_main",
-    "2024_makeup",
-    "2025_main",
-    "2025_makeup",
-    "2026_main",
-    "2026_makeup",
-]
+def exam_sort_key(exam_id: str) -> tuple[int, int, str]:
+    parts = exam_id.split("_", 1)
+    yr = int(parts[0]) if parts[0].isdigit() else 9999
+    sess_rank = 0 if len(parts) > 1 and parts[1] == "main" else 1
+    return (yr, sess_rank, exam_id)
 
 
 def compute_rank(appearance_count: int, override: str | None) -> str:
     if override in ("S", "A", "B", "C"):
         return override
-    if appearance_count >= 6:
+    if appearance_count >= 18:
         return "S"
-    if appearance_count >= 3:
+    if appearance_count >= 8:
         return "A"
-    if appearance_count >= 1:
+    if appearance_count >= 2:
         return "B"
     return "C"
 
@@ -143,14 +140,15 @@ def main() -> None:
                 raise ValueError(f"Duplicate ISO3 {iso3} in {p.name}")
             countries[iso3] = cdata
 
-    # 2. 過去問抽出データ読込
+    # 2. 過去問抽出データ読込（全収録試験回を年度・本試/追試順に動的統合）
     all_questions: list[dict] = []
-    for exam_id in EXAM_ORDER:
-        ep = PAST_EXAMS_DIR / f"{exam_id}_v1.json"
-        if not ep.exists():
-            continue
+    exam_files = sorted(PAST_EXAMS_DIR.glob("*_v1.json"), key=lambda p: exam_sort_key(p.stem.removesuffix("_v1")))
+    exam_coverage: list[str] = []
+    for ep in exam_files:
         with ep.open("r", encoding="utf-8") as f:
             edata = json.load(f)
+        eid = edata.get("examId") or ep.stem.removesuffix("_v1")
+        exam_coverage.append(eid)
         all_questions.extend(edata.get("questions", []))
 
     # 2.5. 概要文・暮らし・写真・世界主題図・関係性・特徴カードデータの読込
@@ -181,7 +179,7 @@ def main() -> None:
         appearance_count = len(c_questions)
         years = sorted(
             list({q["examId"] for q in c_questions}),
-            key=lambda eid: EXAM_ORDER.index(eid) if eid in EXAM_ORDER else 999,
+            key=exam_sort_key,
         )
 
         # 既存の手動トピックをベースに、過去問から抽出された頻出トピックも上位補完
@@ -267,11 +265,14 @@ def main() -> None:
             appearance_count = len(c_questions)
             years = sorted(
                 list({q["examId"] for q in c_questions}),
-                key=lambda eid: EXAM_ORDER.index(eid) if eid in EXAM_ORDER else 999,
+                key=exam_sort_key,
             )
             if appearance_count > 0:
                 bdata["examSummary"]["appearanceCount"] = appearance_count
                 bdata["examSummary"]["years"] = years
+                bdata["examSummary"]["rank"] = compute_rank(
+                    appearance_count, bdata["examSummary"].get("manualRankOverride")
+                )
             countries[iso3] = bdata
 
     # 4.5. 他国との関係・特徴適応ビジュアル統合 + ケッペン13区分完全統一
@@ -318,7 +319,7 @@ def main() -> None:
             {
                 "schemaVersion": "1.0.0",
                 "generatedAt": now_iso,
-                "examCoverage": EXAM_ORDER,
+                "examCoverage": exam_coverage,
                 "countries": countries,
             },
             f,

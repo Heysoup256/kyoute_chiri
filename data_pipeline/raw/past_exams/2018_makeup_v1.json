@@ -1,0 +1,1238 @@
+{
+  "examId": "2018_makeup",
+  "year": 2018,
+  "session": "makeup",
+  "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2018_makeup_d1_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ",
+      "promptSummary": "第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ。（配点17）ＣケカＢクＧＡＥキ水深200 mより浅い海域USGSの資料などにより作成。図1問1次のア～ウの文は，図1中のＡ～Ｃのいずれかにみられる地形について述べたものである。Ａ～Ｃとア～ウとの正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。1ア山頂部が平坦な山が分布し，世界最大の落差を有する滝がみられる。イ大陸氷河（氷床）による侵食に...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "氷河",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d1_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2沿岸地域における気候には，海流が大きく影響する",
+      "promptSummary": "問2沿岸地域における気候には，海流が大きく影響する。次の図2中の(1)～(4)は，図1中のカ～ケのいずれかの地点の月平均気温と月降水量の関係を示したものである。ケに該当するものを，図2中の(1)～(4)のうちから一つ選べ。2月降水量ǏǐǑǒ1 3 5 7 9 11 mm－100 50 100 150 200 10 20 30℃月平均気温0 0月降水量mm－100 50 100 150 200 10 20 30℃月平均気温0月降水量...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "海流",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d1_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3図1中に示した水深200mより浅い海域について述べた次の文章中の下線部(1)～(2)の...",
+      "promptSummary": "問3図1中に示した水深200mより浅い海域について述べた次の文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。3とうしよこの浅海域のうち，大陸や島嶼に隣接する大陸棚の分布する海域は，(1)全海域の約30％を占めている。そこは栄養塩やプランクトンが多いため，(3)すぐれた漁場になっている海域が多い。また，(4)海底から地下資源が採掘されている場所がある。大陸棚はかつての陸地と考えられており，(2)最終氷期には海面が低...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d1_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4気候帯によって水循環の特徴は大きく異なる",
+      "promptSummary": "問4気候帯によって水循環の特徴は大きく異なる。図1中のＥの河川流域でみられる水循環の特徴について説明した文として最も適当なものを，次の(1)～(2)のうちから一つ選べ。4 (1)永久凍土が連続して厚く分布するため，樹木は水を吸い上げることができず，森林は分布しない。(3)永久凍土の表層が夏季に融解して，平坦地に湿地が形成される。かんよう(4)河川への水の主要な供給源は，永久凍土から涵養される地下水である。ひんぱん(2)冬季に凍結し...",
+      "relatedCountries": [
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d1_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 2,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5砂漠化は世界各地で発生している地球環境問題の一つであるが，地域ごとに特徴がある",
+      "promptSummary": "問5砂漠化は世界各地で発生している地球環境問題の一つであるが，地域ごとに特徴がある。図1中のＧ地域で進行している砂漠化の主な要因について述べた文として適当でないものを，次の(1)～(2)のうちから一つ選べ。5かんがい(1)灌漑農業による河川水の過剰利用(3)気温の上昇による乾燥化(4)酸性雨による草原の減少さじん(2)干上がった湖底から発生する砂塵",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "砂漠化"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d1_q6",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6災害は自然現象と人間のかかわりとして発生する",
+      "promptSummary": "問6災害は自然現象と人間のかかわりとして発生する。次の図3中のサ～スは，2000～2009年に発生した干ばつ，極端気温＊，洪水のいずれかによる災害の報告件数＊＊を国・地域別に示したものである。サ～スと災害をもたらした自然現象名との正しい組合せを，下の(1)～(2)のうちから一つ選べ。6＊特異的に高い気温（熱波）や低い気温（寒波）。＊＊死者10人以上，被災者100人以上，発生国による非常事態宣言や国際援助要請の発表のいずれか一つ以上...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点17）問1次の図1は，日本における食料品の生産量と輸入量の推移を示したものであり，Ａ～Ｃは魚介類，穀類，野菜のいずれかである。食料品名とＡ～Ｃとの正しい組合せを，次ページの(1)～(2)のうちから一つ選べ。7万トン3500 3000 2000 1000 0 1960 1970 1980 1990 2000 2010年ＣＢＡ万トン3500 3000 2000 1000 0 ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 2,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2農産物の生産目的は，自国内の消費や他国への輸出など様々である",
+      "promptSummary": "問2農産物の生産目的は，自国内の消費や他国への輸出など様々である。生産量と輸出量について，世界第(7)位の国が同一である農産物を，次の(1)～(4)のうちから一つ選べ。8 (1)オレンジ(2)カカオ豆(3)キャッサバ(4)バナナ",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3水産資源とそれにかかわることがらについて述べた文として適当でないものを，次の(1)～(...",
+      "promptSummary": "問3水産資源とそれにかかわることがらについて述べた文として適当でないものを，次の(1)～(4)のうちから一つ選べ。9 (1)インドネシアでは，エビの養殖のためにマングローブ林が破壊されている。(2)北ヨーロッパでは，魚介類を卵から育てて放流する漁業が盛んに行われている。ゆうしようりゆう(3)ペルー沖は，湧昇流によって，魚介類の餌となるプランクトンが発生しにくい海域となっている。(4)マグロの乱獲を背景として，その漁獲を規制する国際...",
+      "relatedCountries": [
+        "IDN",
+        "IND",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の図2は，いくつかの国における農林漁業就業者率と製造業就業者率を示したものであり，(...",
+      "promptSummary": "問4次の図2は，いくつかの国における農林漁業就業者率と製造業就業者率を示したものであり，(1)～(2)は，イタリア，オランダ，タイ，フィリピンのいずれかである。タイに該当するものを，図2中の(1)～(2)のうちから一つ選べ。10製造業就業者率農林漁業就業者率20％％16 12 8 4 00 10 20 30 40ǐǏǑǒ統計年次は2014年。ILOSTATにより作成。図2",
+      "relatedCountries": [
+        "THA",
+        "PHL",
+        "ITA",
+        "NLD"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問51980年代以降における日本の製造業の海外展開とその影響について述べた文として下線部が...",
+      "promptSummary": "問51980年代以降における日本の製造業の海外展開とその影響について述べた文として下線部が適当でないものを，次の(1)～(2)のうちから一つ選べ。11 (1)国際分業の進展にともない，アジアにおける域内貿易が拡大した。(3)大企業による海外進出は，国内における工場の閉鎖を引き起こした。(4)貿易摩擦を背景として，アメリカ合衆国での自動車の現地生産が進展した。(2)輸出指向型の工業化政策に転換する国・地域が増えたことで，低付加価値製...",
+      "relatedCountries": [
+        "JPN",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d2_q6",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次の図3は，いくつかの製造業について，全国の事業所数に占める各都道府県の事業所数の割合...",
+      "promptSummary": "問6次の図3は，いくつかの製造業について，全国の事業所数に占める各都道府県の事業所数の割合を示したものであり，ア～ウは，出版・印刷業，電気機械ようぎよう器具製造業，窯業・土石製品製造業のいずれかである。業種名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。12アイウ中位下位上位統計年次は2014年。『工業統計表』により作成。図3 (1) (3) (4) (5) (6) (2)出版・印刷業アアイイウウ電気機械器具製...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市と村落に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問都市と村落に関する次の問い（問1～6）に答えよ。（配点17）問1村落の立地について説明した次の文章中の空欄アとイに当てはまる語の正しい組合せを，下の(1)～(2)のうちから一つ選べ。13村落の立地には，自然環境や社会条件が影響している。日本の沖積平野でのうびは，自然堤防などの微高地に集落が多く，濃尾平野では洪水被害を避けるため，集落と耕地の周囲に堤防をめぐらせた（ア）もみられる。フランスのプロバンス地方では，外敵の侵入や病気...",
+      "relatedCountries": [
+        "JPN",
+        "FRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 2,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2都市の発展やグローバル化の進展にともなって，人口規模によらず，特定の分野について世界的...",
+      "promptSummary": "問2都市の発展やグローバル化の進展にともなって，人口規模によらず，特定の分野について世界的に大きな影響を与える都市がみられる。都市名と関連する項目との組合せとして適当でないものを，次の(1)～(2)のうちから一つ選べ。14 (1)シアトルと穀物市場(3)ジュネーブと国際機関(4)パリとファッションショー(2)ロンドンと金融センター",
+      "relatedCountries": [
+        "GBR",
+        "FRA",
+        "CHE"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の図1は，リオデジャネイロの地形と不良住宅地（スラム）および階層別の住宅地区の分布を...",
+      "promptSummary": "問3次の図1は，リオデジャネイロの地形と不良住宅地（スラム）および階層別の住宅地区の分布を示したものである。図1に関連することがらについて説明した下の文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。15 5 km 0海300 300 300 300 300 100 100 100 300 300 300 300 300 300 700 700 700 500 500 500 500 500 500 500 500...",
+      "relatedCountries": [
+        "BRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4次の表1は，いくつかの都市について，コンテナ貨物取扱量と都市別の総生産を示したものであ...",
+      "promptSummary": "問4次の表1は，いくつかの都市について，コンテナ貨物取扱量と都市別の総生産を示したものであり，(1)～(2)は，シドニー，シャンハイ（上海），シンガポール，東京のいずれかである。シャンハイに該当するものを，表1中の(1)～(2)のうちから一つ選べ。16表1コンテナ貨物取扱量（千TEU＊）都市別の総生産（億ドル，2015年）1990年2010年(1) 5，224 28，431 3，079 (3) 1，555 4，285 9，598 ...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "SGP",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5次の図2は，関東，近畿，東北の各地方における人口の推移を，1950年の人口を100とし...",
+      "promptSummary": "問5次の図2は，関東，近畿，東北の各地方における人口の推移を，1950年の人口を100として示したものである。図2中のカ～クと地方名との正しい組合せを，下の(1)～(5)のうちから一つ選べ。17 250 200 150 100 501950 1960 1970 1980 1990 2000 2010年カキク国勢調査により作成。図2 (1) (3) (4) (2) (6) (5)カ関東関東近畿近畿東北東北キ近畿東北関東東北関東近畿ク...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d3_q6",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6現在の出生率や人口構造は，村落や都市の将来の人口に影響する",
+      "promptSummary": "問6現在の出生率や人口構造は，村落や都市の将来の人口に影響する。次の図3は，都道府県別の合計特殊出生率＊と自然増加率を示したものである。図3に関連することがらを述べた下の文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。18＊女性(3)人が生涯に産む子どもの数の推計値。合計特殊出生率1.2～1.4 1.2未満1.4～1.6 1.6以上自然増加率－6.0～－3.0－6.0未満－3.0～0 0以上(％)統計年次は，合計...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 2,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問次の図1を見て，北アメリカとその周辺地域に関する下の問い（問1～6）に答えよ",
+      "promptSummary": "第4問次の図1を見て，北アメリカとその周辺地域に関する下の問い（問1～6）に答えよ。（配点17）ニューヨークニューヨークX Z B A D C X Y Zヒューストンニューヨークロサンゼルスロサンゼルスロサンゼルス図1問1図1中のＡ～Ｄの地域の地形とその特徴について述べた文として適当でないものを，次の(1)～(2)のうちから一つ選べ。19きゆうしゆん(1)Ａでは，標高が高く急峻な山々がみられる。(3)Ｂでは，大河川の河口部に三角州...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "三角州"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2次ページの図2中のア～ウは，図1中のＸ～Ｚのいずれかの地点の最暖月と最寒月の月平均気温...",
+      "promptSummary": "問2次ページの図2中のア～ウは，図1中のＸ～Ｚのいずれかの地点の最暖月と最寒月の月平均気温を示したものである。Ｘ～Ｚとア～ウとの正しい組合せを，次ページの(1)～(5)のうちから一つ選べ。20－10－20－30最寒月最暖月℃30 20 10 0アイウ気象庁の資料により作成。図2 (1) (2) (3) (4) (5) (6)ＸアアイイウウＹイウアウアイＺウイウアイア",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3北アメリカの国々は多様な人種・民族で構成されている",
+      "promptSummary": "問3北アメリカの国々は多様な人種・民族で構成されている。アメリカ合衆国の人種・民族について説明した文として下線部が適当でないものを，次の(1)～(2)のうちから一つ選べ。21 (1) 1960年代に移民法が改正された後，アジア系移民の流入人口がヨーロッパ系移民の流入人口を下回る傾向がみられる。(3) 19世紀中ごろまで，アフリカ系の人々は，その多くがプランテーション農園で労働に従事していたため，南部に比較的集中している。(4)エス...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "プランテーション",
+        "人口",
+        "移民",
+        "ヒスパニック"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の表1は，アメリカ合衆国のいくつかの都市における住宅の月平均賃料と通勤手段の割合を示...",
+      "promptSummary": "問4次の表1は，アメリカ合衆国のいくつかの都市における住宅の月平均賃料と通勤手段の割合を示したものであり，カ～クは，ニューヨーク，ヒューストン，ロサンゼルスのいずれかである。都市名とカ～クとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。22表1住宅の月平均賃料（USドル）通勤手段の割合（％）自家用車公共交通手段その他カ1，378 77．2 10．6 12．2キ1，330 26．7 56．5 16．8ク921 87．9 4...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次の図3は，アメリカ合衆国とその周辺の(1)か国における第(2)次産業従事者率と穀物自...",
+      "promptSummary": "問5次の図3は，アメリカ合衆国とその周辺の(1)か国における第(2)次産業従事者率と穀物自給率を示したものであり，(3)～(4)は，アメリカ合衆国，カナダ，キューバ，メキシコのいずれかである。メキシコに該当するものを，図3中の(3)～(4)のうちから一つ選べ。23 220 200 40 80 0 5 10 15 20％％0 120 160穀物自給率第1次産業従事者率ǏǐǑǒ統計年次は，第(2)次産業従事者率が2010年，穀物自給率...",
+      "relatedCountries": [
+        "USA",
+        "CAN",
+        "MEX"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d4_q6",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6次の図4は，アメリカ合衆国の各州＊における全従業者に占めるいくつかの産業別従業者の割合...",
+      "promptSummary": "問6次の図4は，アメリカ合衆国の各州＊における全従業者に占めるいくつかの産業別従業者の割合の上位(1)位を示したものであり，サ～スはコンピュータ・電子部品製造業，食品製造業，石油・ガス採掘業のいずれかである。業種名とサ～スとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。24＊ハワイ州を除く。サシス統計年次は2011年。U.S. Bureau of Economic Analysisの資料により作成。図4 (2) (4) ...",
+      "relatedCountries": [
+        "IND",
+        "LKA",
+        "GBR",
+        "USA",
+        "EGY",
+        "KEN"
+      ],
+      "relatedLayerIds": [
+        "sc_suez"
+      ],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d5_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 2,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 問1下線部に関して，インド洋航路の特徴とそれに関することがらについて説明した次の文章中の...",
+      "promptSummary": "問1下線部に関して，インド洋航路の特徴とそれに関することがらについて説明した次の文章中の空欄アとイに当てはまる語の正しい組合せを，下の(1)～(2)のうちから一つ選べ。25きぼうほうイギリスからケニアおよびスリランカまで航海するには，かつては喜望峰を経由せねばならず長い日数を要した。アフリカ東岸からスリランカへ向かう際は，（ア）に追い風を受けることができたため，所要日数の短縮につながった。19世紀にスエズ運河が開通したことにより...",
+      "relatedCountries": [
+        "IND",
+        "LKA",
+        "GBR",
+        "EGY",
+        "KEN"
+      ],
+      "relatedLayerIds": [
+        "sc_suez"
+      ],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d5_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2下線部に関して，次の図2中のカ～クは，図1中のコロンボ，ナイロビ，ロンドンにおける月...",
+      "promptSummary": "問2下線部に関して，次の図2中のカ～クは，図1中のコロンボ，ナイロビ，ロンドンにおける月平均気温と月降水量を示したものである。地点名とカ～クとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。26 30 20 10 1 3 5 7 9 11月気温降水量1 3 5 7 9 11月0 400℃mm 300 200 100 0 30 20 10 1 3 5 7 9 11月0 400℃mm 300 200 100 0 30 20 ...",
+      "relatedCountries": [
+        "LKA",
+        "GBR",
+        "KEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d5_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3下線部に関して，次の図3は，ケニアまたはスリランカにおける，主要輸出品目とそれらが輸...",
+      "promptSummary": "問3下線部に関して，次の図3は，ケニアまたはスリランカにおける，主要輸出品目とそれらが輸出総額に占める割合を示したものであり，(1)～(2)は，ケニアの1976年または2013年における輸出，スリランカの1976年または2013年における輸出のいずれかである。スリランカの2013年における輸出に該当するものを，図3中の(1)～(2)のうちから一つ選べ。27ǐ野菜2.3コーヒー3.4石油製品3.9花卉8.7茶22.0％その他ǏǑǒ...",
+      "relatedCountries": [
+        "LKA",
+        "GBR",
+        "KEN",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d5_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4下線部に関して，次の表1は，イギリスにおける茶の種類別・包装形態別の輸出入量を示した...",
+      "promptSummary": "問4下線部に関して，次の表1は，イギリスにおける茶の種類別・包装形態別の輸出入量を示したものであり，ＡとＢは，紅茶または緑茶のいずれか，サとシは，消費者向け少量包装＊または加工・流通業者向け大量包装＊＊のいずれかである。紅茶と消費者向け少量包装に該当する正しい組合せを，下の(1)～(2)のうちから一つ選べ。28＊(3)個当たり(4)kg未満に小分けされた包装。＊＊(3)個当たり(4)kg以上にまとめられた包装。表1（単位：トン）...",
+      "relatedCountries": [
+        "LKA",
+        "GBR",
+        "KEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d5_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5下線部に関して，次の図4中のタ～ツは，イギリス，インド，オーストラリアのいずれかにつ...",
+      "promptSummary": "問5下線部に関して，次の図4中のタ～ツは，イギリス，インド，オーストラリアのいずれかについて，1975年と2014年のケニアおよびスリランカからの留学生数を示したものである。国名とタ～ツとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。29 0 1000 1000 2000 3000 4000 0 2000 3000 4000 5000人ケニアからの留学生数2014年スリランカからの留学生数1975年5000人アメリカ合...",
+      "relatedCountries": [
+        "IND",
+        "LKA",
+        "GBR",
+        "USA",
+        "KEN",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q1",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号30）",
+      "title": "第6問 問1: あわじしま第6問大阪市に住むマオさんは，近所のスーパーマーケットで兵庫県の淡路島産の野菜が...",
+      "promptSummary": "あわじしま第6問大阪市に住むマオさんは，近所のスーパーマーケットで兵庫県の淡路島産の野菜が多く売られていることを興味深く思い，淡路島の自然環境と人間活動にかかわる調査を行うことにした。次の図1を見て，下の問い（問1～6）に答えよ。（配点18）神戸市神戸市神戸市大阪市大阪市大阪市淡路島和歌山市和歌山市和歌山市関西国際空港明石海峡大橋北淡震災記念公園X 20 km 0ＡB C陸地については，色の濃い部分ほど標高の高い地域を示している。...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q2",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号31）",
+      "title": "第6問 問2: すもと問2マオさんは，新旧の地形図を比較して，洲本市の市街地の変化を調べることにした",
+      "promptSummary": "すもと問2マオさんは，新旧の地形図を比較して，洲本市の市街地の変化を調べることにした。次の図3は，図1中のXの範囲における1932年と2005年に発行された(1)万(2)千分の(3)地形図（原寸，一部改変）である。図3から読み取れることがらについて述べた文として適当でないものを，次ページの(4)～(5)のうちから一つ選べ。31 1932年川本紡績洲2005年川本洲図3 (1)郊外化がすすむなかで，中心市街地の西部にあった寺社の多く...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q3",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号32）",
+      "title": "第6問 問3: 問3マオさんは，採算性の問題から民営バスの路線の一部が廃止され，それに代わって住民の利便性...",
+      "promptSummary": "問3マオさんは，採算性の問題から民営バスの路線の一部が廃止され，それに代わって住民の利便性を確保するため自治体が運営にかかわるコミュニティバスの路線が新設されたことを知り，主題図を作成した。次の図4は，いくつかの指標を平成の大合併以前の市町別に示したものであり，図4中のカとキは人口密度，通勤・通学者数に占める自家用車利用者数の割合のいずれかである。下の図5中のサとシは，淡路島における民営バス，コミュニティバスの路線網＊のいずれかを...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q4",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号33）",
+      "title": "第6問 問4: 問4マオさんは，兵庫県産と北海道産のタマネギの生産時期と，大阪府と東京都における青果物市場...",
+      "promptSummary": "問4マオさんは，兵庫県産と北海道産のタマネギの生産時期と，大阪府と東京都における青果物市場での流通時期を示した次の図6を見ながら聞き取り調査を行った。下のマオさんと農業協同組合の職員との会話文中の空欄タとチに当てはまる語の正しい組合せを，下の(1)～(2)のうちから一つ選べ。33・生産時期兵庫県産月1 2 3 4 5 6 7 8 9 10 11 12北海道産・流通時期大阪兵庫県産月1 2 3 4 5 6 7 8 9 10 11 1...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q5",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号34）",
+      "title": "第6問 問5: 問5マオさんは，淡路島の地域開発として再生可能エネルギーの活用が推進されていることを知り，...",
+      "promptSummary": "問5マオさんは，淡路島の地域開発として再生可能エネルギーの活用が推進されていることを知り，調査後に淡路島における太陽光発電の導入について整理した。次の写真1は，発電施設を撮影したものである。写真1に関することがらとその背景について述べた下の文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。34写真1淡路島は瀬戸内の気候で全国平均と比べて(1)年間の日照時間が長いため，太陽光発電に適している。太陽光発電は，主力エネル...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "再生可能エネルギー",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2018_makeup_d6_q6",
+      "examId": "2018_makeup",
+      "year": 2018,
+      "session": "makeup",
+      "sessionLabel": "2018年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号35）",
+      "title": "第6問 問6: はんしんあわじ問6自然災害に関心のあるマオさんは，阪神・淡路大震災を引き起こした兵庫県ほく...",
+      "promptSummary": "はんしんあわじ問6自然災害に関心のあるマオさんは，阪神・淡路大震災を引き起こした兵庫県ほくだん南部地震の後に整備された北淡震災記念公園を調査の最後に訪れた。次の図7は，マオさんが北淡震災記念公園において地震の特徴についての展示物を観察した時のメモの一部である。図7中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。35活断層ラボ活断層ラボ活断層ラボ震災体験館震災体験館震災体験館断層保存ゾーン断層保存ゾーン断層保存ゾーン順...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2018_makeup/2018_makeup_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

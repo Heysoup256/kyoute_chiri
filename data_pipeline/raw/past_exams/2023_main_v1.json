@@ -1,0 +1,1072 @@
+{
+  "examId": "2023_main",
+  "year": 2023,
+  "session": "main",
+  "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2023_main_d1_q1",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問自然環境と自然災害に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第1問自然環境と自然災害に関する次の問い（問1～6）に答えよ。（配点20）問1自然環境に関する様々な現象の理解には，それぞれの時間スケールと空間スケールの認識が必要になる。次の図1は，気候や気象に関するいくつかの現象についておおよその時間スケールと空間スケールを模式的に示したものであり，(1)～(2)は，エルニーニョ・ラニーニャ現象，地球温暖化，低気圧・台風，モンスーンのいずれかである。モンスーンを示したものとして最も適当なものを...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "モンスーン",
+        "自然災害",
+        "地球温暖化"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d1_q2",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: A A B B B B A Aだくど問2サンゴ礁やマングローブの分布は，海水温，海水の塩分...",
+      "promptSummary": "A A B B B B A Aだくど問2サンゴ礁やマングローブの分布は，海水温，海水の塩分，海水の濁度などの影響を受ける。次の図2中のアとイは，南北アメリカにおけるサンゴ礁とマングローブのいずれかの分布を示したものである。また，後の図3は，主な海流を示したものである。マングローブと海流の向きとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。2アイサンゴ礁またはマングローブUN Environment Programme W...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [
+        "lf_gbr"
+      ],
+      "topicTags": [
+        "サンゴ礁",
+        "海流",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d1_q3",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 4,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3次の図4は，東京といくつかの都市における月別・時間別の気温分布を等値線で示したものであ...",
+      "promptSummary": "問3次の図4は，東京といくつかの都市における月別・時間別の気温分布を等値線で示したものであり，カ～クは，オーストラリアのパース，ロシアのヤクーツク，ボリビアのラパスのいずれかである。都市名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。3 24時18 10 20 30 20 10 12 6 0 9 7東京5 3 1 24時18 12 6 0 11月11月11月11月9 7カ5 3 1 24時18 12 6 0 9...",
+      "relatedCountries": [
+        "JPN",
+        "RUS",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d1_q4",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 4,
+      "questionLabel": "第1問 問4（解答番号4・5）",
+      "title": "第1問 問4: 問4次の図5中の(1)～(2)は，自然災害の影響を受ける大西洋周辺のいくつかの地域を示した...",
+      "promptSummary": "問4次の図5中の(1)～(2)は，自然災害の影響を受ける大西洋周辺のいくつかの地域を示したものである。また，後の文ＪとＫは，いくつかの地域で発生する自然災害について述べたものである。これらのうち，ＪとＫの両方が当てはまる地域と，Ｊのみが当てはまる地域を，図5中の(1)～(2)のうちから一つずつ選べ。ＪとＫの両方4・Ｊのみ5ǓǒǑǏǐ図5Ｊ火山が分布し，噴火に伴う噴出物や火砕流などによる災害が発生する。Ｋ熱帯低気圧が頻繁に襲来し，強...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解（解答番号4・5）：1・5（計4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d1_q5",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号6）",
+      "title": "第1問 問5: 問5次の図6中のタ～ツは，図7中のＰ～Ｒのいずれかの範囲において発生した地震＊の震源につい...",
+      "promptSummary": "問5次の図6中のタ～ツは，図7中のＰ～Ｒのいずれかの範囲において発生した地震＊の震源について，東西方向の位置と深度を示したものである。タ～ツとＰ～Ｒとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。6＊2012～2020年に発生したマグニチュード(3)以上の地震。西東400 200 0 600 400 200 0 600 400 200 0 600 km深度西東km深度西東km深度ツチタUSGSの資料により作成。図6 P ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d1_q6",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号7）",
+      "title": "第1問 問6: 問6次の図8は，日本の都市内を流れる小規模な河川について，短時間の豪雨の降水量と河川の水位...",
+      "promptSummary": "問6次の図8は，日本の都市内を流れる小規模な河川について，短時間の豪雨の降水量と河川の水位の変化を模式的に示したものであり，凡例ＸとＹは，都市化の前と後のいずれかである。また，後の文章は，図8に関することがらについて述べたものである。空欄マに当てはまる語句と，空欄ミに当てはまる文との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。7水位降水量降水量多い少ないY X水位時間高い低い図8雨の降り方が同じであっても，...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q1",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号8）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点20）問1次の図1は，中世ヨーロッパにおける村落の模式図である。この村落の形態や農業に関することがらについて述べた文として最も適当なものを，後の(1)～(2)のうちから一つ選べ。8林地林地林地林地林地林地休閑地休閑地休閑地春耕地春耕地春耕地秋耕地秋耕地秋耕地教会教会教会池川川集落集落集落採草地採草地採草地共同放牧地共同放牧地共同放牧地William R. Shepherd...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q2",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号9）",
+      "title": "第2問 問2: かんがい問2次の図2は，いくつかの地域における耕作地に占める灌漑面積の割合と，(1)ha当...",
+      "promptSummary": "かんがい問2次の図2は，いくつかの地域における耕作地に占める灌漑面積の割合と，(1)ha当たりの穀物収量を示したものであり，(2)～(3)は，アフリカ，中央・西アジア，東アジア，ヨーロッパのいずれかである。東アジアに該当するものを，図2中の(2)～(3)のうちから一つ選べ。9 0 0 2 4 6 8 10 20 30 40 50 60 70 %トン耕作地に占める灌漑面積の割合1 ha当たりの穀物収量ǐǏǑǒ統計年次は2017年。A...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q3",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 10,
+      "points": 4,
+      "questionLabel": "第2問 問3（解答番号10）",
+      "title": "第2問 問3: 問3次の図3は，世界における遺伝子組み換え作物の栽培状況と栽培面積の上位(1)か国を示した...",
+      "promptSummary": "問3次の図3は，世界における遺伝子組み換え作物の栽培状況と栽培面積の上位(1)か国を示したものである。図3に関することがらについて述べた文章中の下線部(2)～(3)のうちから最も適当なものを一つ選べ。10栽培作物大豆トウモロコシ綿花ナタネその他栽培面積の上位5か国統計年次は2019年。International Service for the Acquisition of Agri-biotech Applicationsの資料な...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "トウモロコシ",
+        "大豆"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q4",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 11,
+      "points": 4,
+      "questionLabel": "第2問 問4（解答番号11）",
+      "title": "第2問 問4: 問4後の図4は，いくつかの食肉について，世界に占める生産量が(6)％以上の国・地域における...",
+      "promptSummary": "問4後の図4は，いくつかの食肉について，世界に占める生産量が(6)％以上の国・地域における生産量に占める輸出量の割合を示したものである。図4中のＡ～Ｃは，牛肉，鶏肉，羊肉のいずれかである。品目名とＡ～Ｃとの正しい組合せを，後の(2)～(7)のうちから一つ選べ。11高位中位低位ＡＢＣ加工品などを含む。牛肉には，水牛，ヤクなどの肉を含む。統計年次は2019年。FAOSTATにより作成。図4 (1) (2) (3) (4) (5) (6...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q5",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問5（解答番号12）",
+      "title": "第2問 問5: 問5輸出入の際に用いられる輸送手段は，国の地理的位置や運ばれる製品の性質によって異なる",
+      "promptSummary": "問5輸出入の際に用いられる輸送手段は，国の地理的位置や運ばれる製品の性質によって異なる。次の図5は，フランスとポルトガルにおける，2019年のEU＊域外への輸送手段別割合を示したものである。図5中のアとイはフランスとポルトガルのいずれか，ＥとＦは輸出額と輸出量＊＊のいずれかである。フランスの輸出額に該当するものを，図5中の(1)～(2)のうちから一つ選べ。12＊EUにはイギリスを含む。＊＊重量ベース。フランスまたはポルトガルアＥＦ...",
+      "relatedCountries": [
+        "GBR",
+        "FRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d2_q6",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号13）",
+      "title": "第2問 問6: 問6環境意識の高まりや技術開発により，紙の生産には，木材から作られるパルプに加え，古紙の再...",
+      "promptSummary": "問6環境意識の高まりや技術開発により，紙の生産には，木材から作られるパルプに加え，古紙の再生利用が進められている。次の図6は，いくつかの国におけるパルプと古紙の消費量を示したものである。図6中のカ～クはアメリカ合衆国，カナダ，ドイツのいずれか，凡例ＸとＹはパルプと古紙のいずれかである。ドイツとパルプとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。13 0 4 2 8 6 10千万トンＸＹカキク日本統計年次は2019年。F...",
+      "relatedCountries": [
+        "JPN",
+        "DEU",
+        "USA",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q1",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号14）",
+      "title": "第3問 問1: 第3問東京都に住む高校生のミノルさんは，祖父のカヲルさんが住む鹿児島県を訪ねたことをきっか...",
+      "promptSummary": "第3問東京都に住む高校生のミノルさんは，祖父のカヲルさんが住む鹿児島県を訪ねたことをきっかけに，日本の人口や都市をめぐる諸問題について考えた。この探究に関する次の問い（問1～6）に答えよ。（配点20）問1鹿児島県で生まれたカヲルさんは，1960年代前半に大学進学のため県外へ移動した。その話を聞いたミノルさんは，地方から大都市圏への人口移動について調べた。次の図1は，1960年と2018年における，日本のいくつかの地方から三大都市圏...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q2",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号15）",
+      "title": "第3問 問2: 問2大学を卒業したカヲルさんは東京で働いていたが，現在の東京は大きく変わったとミノルさんに話した",
+      "promptSummary": "問2大学を卒業したカヲルさんは東京で働いていたが，現在の東京は大きく変わったとミノルさんに話した。次の図2は，東京都区部のいくつかの指標の推移について，1970年を100とした指数で示したものである。図2中のカ～クは，工業地区の面積，住宅地の平均地価，(1)階以上の建築物数のいずれかである。項目名とカ～クとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。15クキカ1970 75 80 85 90 95 2000 05 10...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q3",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 16,
+      "points": 4,
+      "questionLabel": "第3問 問3（解答番号16）",
+      "title": "第3問 問3: 問3カヲルさんは，1980年代に転職にともなって鹿児島県へ戻った",
+      "promptSummary": "問3カヲルさんは，1980年代に転職にともなって鹿児島県へ戻った。次の図3は，カヲルさんが現在住んでいるある地方都市の様子を示したものである。また，後の会話文サ～スは，図3中の地点Ｄ～Ｆのいずれかの地点における，周辺の景観について話し合ったものである。Ｄ～Ｆとサ～スとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。16ＥＦＤ0 500 m市役所鉄道・駅幹線道路その他の道路水域地理院地図により作成。図3【会話】...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q4",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 17,
+      "points": 4,
+      "questionLabel": "第3問 問4（解答番号17）",
+      "title": "第3問 問4: 問4ミノルさんは，カヲルさんから過疎化の進行によって全国で様々な問題が起きていることを聞いた",
+      "promptSummary": "問4ミノルさんは，カヲルさんから過疎化の進行によって全国で様々な問題が起きていることを聞いた。次の図4は，過疎市町村＊の面積が都道府県面積に占める割合，老年人口の増加率，老年人口に占める食料品へのアクセスが困難な人口＊＊の割合を示したものである。図4を見てミノルさんたちが話し合った会話文中の下線部(1)～(2)のうちから，誤りを含むものを一つ選べ。17＊総務省が定める要件を満たす市町村。＊＊自宅から店舗まで500m以上，かつ自動車...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q5",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号18）",
+      "title": "第3問 問5: 問5東京に戻ったミノルさんは，少子高齢化に伴う労働力不足を考える指標として，従属人口指数＊...",
+      "promptSummary": "問5東京に戻ったミノルさんは，少子高齢化に伴う労働力不足を考える指標として，従属人口指数＊があることを先生から聞き，次の図5を作成した。図5は，いくつかの国における，将来予測を含む従属人口指数の推移を示したものであり，(1)～(2)は，日本，エチオピア，中国＊＊，フランスのいずれかである。日本に該当するものを，図5中の(1)～(2)のうちから一つ選べ。18＊（年少人口＋老年人口）÷生産年齢人口×100で算出。従属人口指数が60の場...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "TWN",
+        "FRA",
+        "ETH"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "少子高齢化"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d3_q6",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号19）",
+      "title": "第3問 問6: 問6ミノルさんは，労働力の不足を補うために外国から労働者を受け入れている国があることを学んだ",
+      "promptSummary": "問6ミノルさんは，労働力の不足を補うために外国から労働者を受け入れている国があることを学んだ。次の表1は，イギリスにおける1990年，2005年，2019年の外国生まれの人口について上位(1)か国を示したものである。表1中のマ～ムは，アイルランド，インド，ポーランドのいずれかである。国名とマ～ムとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。19表1（単位：万人）順位1990年2005年2019年(4)位マ61．2ミ54...",
+      "relatedCountries": [
+        "JPN",
+        "IND",
+        "PAK",
+        "GBR",
+        "DEU",
+        "POL",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q1",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号20）",
+      "title": "第4問 問1: 第4問インドと中国は地理的に連続しており，ともに人口が多く経済発展を遂げている",
+      "promptSummary": "第4問インドと中国は地理的に連続しており，ともに人口が多く経済発展を遂げている。この地域に関する次の問い（問1～6）に答えよ。（配点20）問1次の図1は，インドと中国周辺の地形を示したものであり，後の表1は，図らち1中のＡ～Ｄのいずれかの範囲における耕地，草地・裸地，森林の面積割合を示したものである。図1中のＣに該当するものを，表1中の(1)～(2)のうちから一つ選べ。20ＡＢＣＤ色の濃い部分ほど標高の高い地域を示している。国土地...",
+      "relatedCountries": [
+        "CHN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q2",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 21,
+      "points": 4,
+      "questionLabel": "第4問 問2（解答番号21）",
+      "title": "第4問 問2: 問2次の図2は，インドと中国＊の行政区＊＊を作付総面積に占める小麦と米の割合により区分した...",
+      "promptSummary": "問2次の図2は，インドと中国＊の行政区＊＊を作付総面積に占める小麦と米の割合により区分したものであり，凡例ａ～ｄは，行政区ごとの小麦と米の作付面積の割合により設定したグループを示したものである。また，図3は，図2中の凡例ａ～ｄのグループの設定基準を示したものであり，ａ～ｃは，ア～ウのいずれかである。ａ～ｃとア～ウとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。21＊台湾，ホンコン，マカオを含まない。とうしよ＊＊インドの州...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "小麦",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q3",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号22）",
+      "title": "第4問 問3: 問3次の図4は，インドと中国＊の行政区＊＊について，2001年と2018年の(1)人当たり...",
+      "promptSummary": "問3次の図4は，インドと中国＊の行政区＊＊について，2001年と2018年の(1)人当たり総生産と出生率を示したものである。図4に関することがらについて述べた文章中の下線部(2)～(3)のうちから，適当でないものを一つ選べ。22＊台湾，ホンコン，マカオを含まない。＊＊インドの州には連邦直轄地を含み，島嶼部を除く。中国の省には，省に相当する市・自治区を含む。いずれも国境係争地を除く。％インド中国インド中国0 1 3 4 0 5 10...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "経済特区",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q4",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号23）",
+      "title": "第4問 問4: 問4次の図5は，インドと中国＊における2000年と2017年の産業別GDPの割合を示したも...",
+      "promptSummary": "問4次の図5は，インドと中国＊における2000年と2017年の産業別GDPの割合を示したものである。図5中のＪとＫはインドと中国のいずれか，凡例サとシは運輸・通信業と農林水産業のいずれかである。インドと運輸・通信業との正しい組合せを，後の(1)～(2)のうちから一つ選べ。23＊台湾，ホンコン，マカオを含まない。Ｊ2000年100％2017年Ｋ2000年2017年サービス業鉱・工業卸売・小売業建設業サシ0 20 40 60 80『世...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q5",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 24,
+      "points": 4,
+      "questionLabel": "第4問 問5（解答番号24）",
+      "title": "第4問 問5: 問5次の図6は，インド，中国＊，オーストラリアについて，1995年と2019年における(1...",
+      "promptSummary": "問5次の図6は，インド，中国＊，オーストラリアについて，1995年と2019年における(1)か国間の輸出額と移民の送出数を示したものである。図6中のタとチはインドと中国のいずれか，ＰとＱは輸出額と移民の送出数のいずれかである。中国と輸出額との正しい組合せを，後の(2)～(3)のうちから一つ選べ。24＊台湾，ホンコン，マカオを含まない。ＰＱタチタチタチタチ輸出額または移民の送出数オーストラリアオーストラリアオーストラリアオーストラリ...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IND",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "移民"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d4_q6",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号25）",
+      "title": "第4問 問6: 問6次の図7は，インドと中国周辺におけるPM2．5＊の地表面での濃度を示したものであり，Ｓ...",
+      "promptSummary": "問6次の図7は，インドと中国周辺におけるPM2．5＊の地表面での濃度を示したものであり，ＳとＴは，2018年の(1)月と(2)月のいずれかである。図7に関することがらについて述べた文章中の空欄マとミに当てはまる語句の組合せとして最も適当なものを，後の(3)～(4)のうちから一つ選べ。25＊大気中に浮遊している直径2．5μm（マイクロメートル）以下の微粒子。S T 50以上10～50 5～10 5未満μg/m 3 SPRINTARS...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q1",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号26）",
+      "title": "第5問 問1: とねがわ第5問東京の高校に通うユキさんは，友人のツクシさんと利根川下流域の地域調査を行った",
+      "promptSummary": "とねがわ第5問東京の高校に通うユキさんは，友人のツクシさんと利根川下流域の地域調査を行った。この地域調査に関する次の問い（問1～6）に答えよ。（配点20）問1現地調査の前に，ユキさんたちは利根川の特徴を調べた。次の図1は，関東地方の主な河川の分布といくつかの地点Ａ～Ｃを示したものである。また，後の文章は，利根川の特徴についてユキさんたちがまとめたものである。文章中の空欄アに当てはまる語句と，空欄イに当てはまる数値との組合せとして最...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q2",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号27）",
+      "title": "第5問 問2: 問2ツクシさんは，利根川下流域の土地利用を調べた",
+      "promptSummary": "問2ツクシさんは，利根川下流域の土地利用を調べた。次の図2は，陰影をつけて地形の起伏を表現した地図であり，後の図3中の(1)～(2)は，図2中のＥ～Ｈのいずれかの範囲における土地利用の割合を示したものである。Ｆに該当するものを，図3中の(1)～(2)のうちから一つ選べ。27 5 km 0県境茨城県茨城県茨城県利根川利根川利根川千葉県千葉県千葉県市役所主な鉄道E F G H地理院地図により作成。図2 0 20 40 60 80 10...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q3",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 28,
+      "points": 4,
+      "questionLabel": "第5問 問3（解答番号28）",
+      "title": "第5問 問3: 1931年問3ユキさんたちは，利根川下流域での都市の発展や交通手段の変遷について調べた",
+      "promptSummary": "1931年問3ユキさんたちは，利根川下流域での都市の発展や交通手段の変遷について調べた。次の図4は，佐原周辺のある地域における，1931年と2019年に発行された(1)万(2)千分の(3)地形図（原寸，一部改変）である。また，後の図5は，取手から河口までの利根川本流における渡船と橋のいずれかの分布を示したものであり，サ～スは，1932年の橋，1981年の渡船，1981年の橋のいずれかである。後の会話文中の空欄Ｊには図4中のａとｂの...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車",
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q4",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 29,
+      "points": 4,
+      "questionLabel": "第5問 問4（解答番号29）",
+      "title": "第5問 問4: 問4ユキさんたちは，博物館を訪問し，この地域の水害とその対策について学んだ",
+      "promptSummary": "問4ユキさんたちは，博物館を訪問し，この地域の水害とその対策について学んだ。次の資料1は，佐原周辺で発生した水害の年表とその対策施設についてまとめたものである。また，後の図6は，現在の佐原周辺のある地域における水域の分布を示したものであり，タとチは，利根川の支流上の地点である。後の会話文中の空欄Ｐには地点タとチのいずれか，空欄Ｑには後の文ｆとｇのいずれかが当てはまる。空欄Ｐに当てはまる地点と，空欄Ｑに当てはまる文との組合せとして最...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q5",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号30）",
+      "title": "第5問 問5: 問5利根川下流域でウナギ漁が盛んであったことを知ったツクシさんは，ウナギの現状について調べ...",
+      "promptSummary": "問5利根川下流域でウナギ漁が盛んであったことを知ったツクシさんは，ウナギの現状について調べ，次の資料2にまとめた。資料2中のマとミは，国内の養殖生産量と，国外からの輸入量のいずれかである。また，後の写真1中のｓとｔは，利根川下流域の河川周辺において撮影したものであり，資料2中の空欄Ｘには，ｓとｔのいずれかが当てはまる。国内の養殖生産量に該当する記号と，空欄Ｘに当てはまる写真との組合せとして最も適当なものを，後の(1)～(2)のうち...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_main_d5_q6",
+      "examId": "2023_main",
+      "year": 2023,
+      "session": "main",
+      "sessionLabel": "2023年度 共通テスト 本試験（地理B）",
+      "daimon": 5,
+      "toi": 6,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第5問 問6（解答番号31）",
+      "title": "第5問 問6: 問6ユキさんたちは，さらに考察を深めるために，先生のアドバイスを参考にして新たに課題を探究...",
+      "promptSummary": "問6ユキさんたちは，さらに考察を深めるために，先生のアドバイスを参考にして新たに課題を探究することにした。次の表1は，新たな探究課題に関する調査方法を，ユキさんたちがまとめたものである。探究課題の調査方法としては適当でないものを，表1中の(1)～(4)のうちから一つ選べ。31表1新たな探究課題調査方法地域の都市化により，農地の分布はどのように変化したか？(1)撮影年代の異なる空中写真を入手し，年代別の土地利用図を作成する。橋の開通...",
+      "relatedCountries": [
+        "JPN",
+        "ARE"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "GIS"
+      ],
+      "clipImagePath": "/data/clips/2023_main/2023_main_d5_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

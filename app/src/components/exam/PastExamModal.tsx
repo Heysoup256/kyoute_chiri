@@ -44,6 +44,33 @@ export function PastExamModal({
   const [zoomImageUrl, setZoomImageUrl] = useState<string | null>(null);
   const [failedClipUrls, setFailedClipUrls] = useState<Record<string, boolean>>({});
 
+  const examOptions = useMemo(() => {
+    const map = new Map<
+      string,
+      { examId: string; year: number; session: string; label: string; count: number }
+    >();
+    for (const q of questions) {
+      const existing = map.get(q.examId);
+      if (existing) {
+        existing.count += 1;
+      } else {
+        const course = q.year >= 2025 ? '地理総合・探究' : '地理B';
+        map.set(q.examId, {
+          examId: q.examId,
+          year: q.year,
+          session: q.session,
+          label: `${formatExamId(q.examId)}（${course}）`,
+          count: 1,
+        });
+      }
+    }
+    return Array.from(map.values()).sort((a, b) => {
+      if (b.year !== a.year) return b.year - a.year;
+      if (a.session === b.session) return 0;
+      return a.session === 'main' ? -1 : 1;
+    });
+  }, [questions]);
+
   const filteredQuestions = useMemo(() => {
     const kw = keyword.trim().toLowerCase();
     return questions.filter((q) => {
@@ -138,13 +165,12 @@ export function PastExamModal({
                 }}
                 className="w-full rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-xs font-medium text-slate-700"
               >
-                <option value="all">すべての試験回</option>
-                <option value="2026_main">2026本試（地理総合・探究）</option>
-                <option value="2026_makeup">2026追試（地理総合・探究）</option>
-                <option value="2025_main">2025本試（地理総合・探究）</option>
-                <option value="2025_makeup">2025追試（地理総合・探究）</option>
-                <option value="2024_main">2024本試（地理B）</option>
-                <option value="2024_makeup">2024追試（地理B）</option>
+                <option value="all">すべての試験回（{examOptions.length}回）</option>
+                {examOptions.map((opt) => (
+                  <option key={opt.examId} value={opt.examId}>
+                    {opt.label} ({opt.count}問)
+                  </option>
+                ))}
               </select>
             </div>
           </div>

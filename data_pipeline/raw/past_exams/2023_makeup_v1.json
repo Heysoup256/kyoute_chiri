@@ -1,0 +1,1070 @@
+{
+  "examId": "2023_makeup",
+  "year": 2023,
+  "session": "makeup",
+  "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2023_makeup_d1_q1",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問自然環境と自然災害に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第1問自然環境と自然災害に関する次の問い（問1～6）に答えよ。（配点20）問1次の表1中の(1)～(2)は，後の図1中の地点ア～エのいずれかにおける年降水量，最少雨月，最少雨月の降水量を示したものである。地点エに該当するものを，表1中の(1)～(2)のうちから一つ選べ。1表1年降水量（mm）最少雨月最少雨月の降水量（mm）(1) 837．0 (3)月13．4 (4) 775．2 (5)月48．2 (6) 375．3 (7)月2．2...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d1_q2",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 4,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2次の図2は，図1中のある河川の流域Ａを示したものであり，次の図2中のｃとｄを結ぶ線は，...",
+      "promptSummary": "問2次の図2は，図1中のある河川の流域Ａを示したものであり，次の図2中のｃとｄを結ぶ線は，流域Ａを流れる河川の主な流路を示したものである。また，後の文章は，流域Ａについて説明したものであり，空欄Ｆには，後の文カとキのいずれかが当てはまる。河川の流れる方向と空欄Ｆに当てはまる文との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。2 c d図2流域Ａを流れる河川のように，河川が海洋には到達せず，湖や湿地に流れ込むも...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "自然災害",
+        "砂漠化"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d1_q3",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3侵食の速さは，その土地の地形や気候，地殻変動，土地利用などの影響を受ける",
+      "promptSummary": "問3侵食の速さは，その土地の地形や気候，地殻変動，土地利用などの影響を受ける。次の表2中のサ～スは，アペニン山脈，グレートディヴァイディング山脈，スリランカ高原のいずれかの地域における侵食の速さを示したものである。また，後の文Ｊ～Ｌは，サ～スのいずれかの地域の状況を説明したものである。サ～スとＪ～Ｌとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。3表2（単位：mm/千年）過去数千年間の侵食の速さ最近数十年間...",
+      "relatedCountries": [
+        "LKA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d1_q4",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 4,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4次の図3は，熱帯付近の海域を示したものである",
+      "promptSummary": "問4次の図3は，熱帯付近の海域を示したものである。また，後の図4中の(1)～(2)は，図3中のＰ～Ｓのいずれかの海域における，熱帯低気圧の移動経路と主な移動方向を示したものである。海域Ｒに該当するものを，図4中の(1)～(2)のうちから一つ選べ。4 Q P R S図3ǏǐǑǒ熱帯低気圧の移動経路を実線で，主な移動方向を矢印で，それぞれ示している。期間は2017～2019年。気象庁の資料などにより作成。図4",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d1_q5",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5次の図5中の地点Ｘ～Ｚは，いくつかの主要河川の流量観測地点を示したものである",
+      "promptSummary": "問5次の図5中の地点Ｘ～Ｚは，いくつかの主要河川の流量観測地点を示したものである。また，後の図6中のタ～ツは，図5中のＸ～Ｚのいずれかの地点における月平均流量の年変化＊を示したものである。Ｘ～Ｚとタ～ツとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。5＊各月の平均流量の合計を100％とした。ＸＹＺ図5 5 10 15 20 0 1 3 5 7 9 11％月タ5 10 15 20 0 1 3 5 7 9 11％月チ5 10...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d1_q6",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6次の図7は，日本のある地域について陰影をつけて地形の起伏を表現したものであり，図8は，...",
+      "promptSummary": "問6次の図7は，日本のある地域について陰影をつけて地形の起伏を表現したものであり，図8は，図7と同じ範囲の地形を分類して示したものである。図8中の凡例マ～メは，旧河道，自然堤防，扇状地＊，台地・段丘のいずれかである。また，後の文(1)～(2)は，マ～メのいずれかにおいて豪雨時に想定される危険性についてそれぞれを比較して述べたものである。凡例メの危険性について述べた文として最も適当なものを，後の(1)～(2)のうちから一つ選べ。6＊...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "扇状地",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q1",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点20）問1食物を長期間保存する手段の一つに缶詰がある。次の図1は，缶詰に利用される主な金属の生産国とその割合を示したものであり，アとイは，アルミニウムと粗鋼のいずれかである。また，後の図2は，それらの原料の主な産出地を示したものであり，凡例ＡとＢは，ボーキサイトと鉄鉱石のいずれかである。粗鋼に該当する記号と，鉄鉱石に該当する凡例との正しい組合せを，後の(1)～(2)のうち...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "KOR",
+        "TWN",
+        "IND",
+        "ARE",
+        "RUS",
+        "USA",
+        "CAN",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "鉄鉱石"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q2",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割...",
+      "promptSummary": "問2次の図3は，カツオ・マグロ類を使用したツナ缶詰の生産量と輸入量について，世界に占める割合が(1)％以上の国・地域を示したものである。図3に関することがらについて述べた文章中の下線部(2)～(3)のうちから，最も適当なものを一つ選べ。8生産量万トン50 25 5輸入量統計年次は2018年。FAOSTATにより作成。図3とうしよツナ缶詰の主要な生産地をみると，インド洋の島嶼国では，(2)原料の漁獲域に近いことをいかして，ツナ缶詰が...",
+      "relatedCountries": [
+        "IND",
+        "ESP",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q3",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3次の図4は，二つの地域における漁獲量＊と養殖業生産量の推移を示したものであり，カとキは...",
+      "promptSummary": "問3次の図4は，二つの地域における漁獲量＊と養殖業生産量の推移を示したものであり，カとキは，南アメリカの太平洋沿岸国＊＊と東南アジアのいずれかである。また，図4中のＤとＥは，漁獲量と養殖業生産量のいずれかである。南アメリカの太平洋沿岸国と漁獲量との正しい組合せを，後の(1)～(2)のうちから一つ選べ。9＊養殖業生産量を含まない。＊＊エクアドル，コロンビア，チリ，ペルー。0 1000 2000 3000 1960 1970 1980...",
+      "relatedCountries": [
+        "USA",
+        "CHL",
+        "PER",
+        "COL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q4",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 4,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の図5は，いくつかの国における米の栽培カレンダーを示したものであり，(1)～(2)は...",
+      "promptSummary": "問4次の図5は，いくつかの国における米の栽培カレンダーを示したものであり，(1)～(2)は，イタリア，インドネシア，コートジボワール，チリ＊のいずれかである。コートジボワールに該当するものを，図5中の(1)～(2)のうちから一つ選べ。10＊中南部。ǏǐǑǒ12月11 10 9 8 7 6 5 4 3 2 1第1期第2期第3期作付収穫U.S. Department of Agricultureの資料により作成。図5",
+      "relatedCountries": [
+        "IDN",
+        "IND",
+        "ITA",
+        "CHL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q5",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 4,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5次の図6は，世界における穀物の輸出入量を地域別に集計＊したものであり，サとシは輸出量と...",
+      "promptSummary": "問5次の図6は，世界における穀物の輸出入量を地域別に集計＊したものであり，サとシは輸出量と輸入量のいずれか，ＧとＨは北アメリカとヨーロッパのいずれかである。輸入量と北アメリカとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。11＊同一地域内の各国間の輸出入量も含まれる。G Hアジアアフリカ中央・南アメリカオセアニア1997～1999年の平均値2017～2019年の平均値25 0 0 5 5 10 10 15 15 20 2...",
+      "relatedCountries": [
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d2_q6",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次の図7は，携帯電話と固定電話について，いくつかの国における人口百人当たりの契約数の変...",
+      "promptSummary": "問6次の図7は，携帯電話と固定電話について，いくつかの国における人口百人当たりの契約数の変化を示したものであり，Ｊ～Ｌは，オーストラリア，ブラジル，モンゴルのいずれかである。国名とＪ～Ｌとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。12 20 40 60 0 50 100 0 150百人当たりの携帯電話契約数百人当たりの固定電話契約数1997年2007年2017年ＪＫＬWorld Development Indicat...",
+      "relatedCountries": [
+        "MNG",
+        "BRA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q1",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問日本の人口や都市について，ユミさんたちが行った探究に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問日本の人口や都市について，ユミさんたちが行った探究に関する次の問い（問1～6）に答えよ。（配点20）問1まず，ユミさんたちは，日本の人口動態や人口構成の特徴を世界と比較しながら考えた。次の図1は，日本を含む(1)つの国における1970年と2010年の年齢別人口構成を示したものである。また，後の資料1は，図1の国における出生率・死亡率の変化を示した(1)枚のカードと，それに関することがらをユミさんがメモしたものであり，カードＡ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "少子高齢化"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q2",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2ハヤトさんは，国際的な人の移動によっても人口が変化することに注目し，いくつかの国におけ...",
+      "promptSummary": "問2ハヤトさんは，国際的な人の移動によっても人口が変化することに注目し，いくつかの国における社会増加率の推移を調べ，日本と比較した。次の図2は，いくつかの国における社会増加率の推移を示したものであり，(1)～(2)は，日本，フランス，ベトナム，メキシコのいずれかである。日本に該当するものを，図2中の(1)～(2)のうちから一つ選べ。14 1950～55年1960～65 1970～75 1980～85 1990～95 2000～05...",
+      "relatedCountries": [
+        "JPN",
+        "VNM",
+        "FRA",
+        "MEX"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q3",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3ユミさんは，いくつかの国における現在の合計特殊出生率について日本と比較し，その背景を考察した",
+      "promptSummary": "問3ユミさんは，いくつかの国における現在の合計特殊出生率について日本と比較し，その背景を考察した。ユミさんが考察した内容として下線部に誤りを含むものを，次の(1)～(2)のうちから一つ選べ。15 (1)アメリカ合衆国の合計特殊出生率が日本より高い背景の一つとして，外国からの移民を多く受け入れてきたことがある。(3)韓国の合計特殊出生率が日本より低い背景の一つとして，大学進学率が高く，教育費の家計への負担が大きいことがある。(4)シ...",
+      "relatedCountries": [
+        "JPN",
+        "KOR",
+        "SGP",
+        "NOR",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "移民"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q4",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4先進国で少子化対策がとられてきたことを知ったハヤトさんは，取組みのための財源を国民がど...",
+      "promptSummary": "問4先進国で少子化対策がとられてきたことを知ったハヤトさんは，取組みのための財源を国民がどのように負担しているかに注目した。次の表1は，いくつかの国における社会保障負担率＊と租税負担率＊＊を示したものであり，サ～スは，日本，アメリカ合衆国，デンマークのいずれかである。国名とサ～スとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。16＊医療保険や年金保険などの社会保障負担額を国民所得で除した値。＊＊国税や地方税の合計である租...",
+      "relatedCountries": [
+        "JPN",
+        "FRA",
+        "DNK",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q5",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 4,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5子育て環境や出生率に日本国内でも地域差があることを知ったユミさんたちは，いくつかの指標...",
+      "promptSummary": "問5子育て環境や出生率に日本国内でも地域差があることを知ったユミさんたちは，いくつかの指標を都道府県単位で調べた。後の図3中のタ～ツは，単独世帯の割合，夫婦共働き世帯の割合，平日の平均通勤・通学時間のいずれかについて，全国を100とした場合の各都道府県の値を示したものである。項目名とタ～ツとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。17 115以上85未満100～115 85～100タ105以上95未満100～105...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d3_q6",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 4,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6ハヤトさんたちは，日本では保育サービス拡充によって待機児童問題の解消が図られていること...",
+      "promptSummary": "問6ハヤトさんたちは，日本では保育サービス拡充によって待機児童問題の解消が図られていることを知り，東京大都市圏内のある地域における保育所の整備状況を調べた。次の図4は，地域内に立地する認可保育所＊の定員と開設年，および(1)歳未満世帯員のいる世帯数の変化を示したものである。図4を見て話し合ったハヤトさんたちと先生の会話文中の下線部(2)～(3)のうちから，誤りを含むものを一つ選べ。18＊施設の広さや職員数などで国が定める基準を満た...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q1",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 第4問地中海を囲む北アフリカ，西アジア，ヨーロッパは，経済や歴史・文化など，様々な面で結び...",
+      "promptSummary": "第4問地中海を囲む北アフリカ，西アジア，ヨーロッパは，経済や歴史・文化など，様々な面で結びついている。地中海周辺の地域に関する次の問い（Ａ・Ｂ）に答えよ。（配点20）Ａ地中海周辺の地域の自然と社会に関する次の問い（問1～4）に答えよ。問1地中海周辺の地域では，自然環境をいかして様々な自然エネルギーが発電に利用されている。次の図1は，主な発電施設をエネルギー源別に示したものであり，凡例ア～ウは，水力，地熱，風力のいずれかである。エネ...",
+      "relatedCountries": [
+        "ITA",
+        "ISL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q2",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2北アフリカの農業には，ヨーロッパとの結びつきがみられる",
+      "promptSummary": "問2北アフリカの農業には，ヨーロッパとの結びつきがみられる。次の図2は，モロッコにおけるトマトの栽培面積と，生産量，輸出量，EU諸国向け輸出量＊の推移を示したものである。図2に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。20＊各年におけるEU加盟国の合計値。2011年はデータなし。栽培面積万トン生産量輸出量EU諸国向け輸出量千ha生産量・輸出量・E U諸国向け輸出量栽培面積0 5 ...",
+      "relatedCountries": [
+        "FRA",
+        "ITA",
+        "CHE",
+        "AUT",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "EU"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q3",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 4,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3次の図3は，2005年と2015年における，いくつかの国の完成乗用車＊の(1)万人当た...",
+      "promptSummary": "問3次の図3は，2005年と2015年における，いくつかの国の完成乗用車＊の(1)万人当たり輸出台数と輸入台数を示したものであり，Ｄ～Ｆは，イスラエル，スペイン，モロッコのいずれかである。国名とＤ～Ｆとの正しい組合せを，後の(2)～(3)のうちから一つ選べ。21＊トラック，バスを除く。台台0 100 200 300 400 500 0 100 200 300 400 500 1万人当たり輸出台数1万人当たり輸入台数2005年201...",
+      "relatedCountries": [
+        "ISR",
+        "ITA",
+        "ESP",
+        "MAR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q4",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 4,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4地中海周辺の地域の多様なつながりは，人や資金の流れからもみえてくる",
+      "promptSummary": "問4地中海周辺の地域の多様なつながりは，人や資金の流れからもみえてくる。次の図4は，北アフリカと西アジアの国々における，イギリスとフランスからの2018年の観光客数と国際援助額について示したものである。図4中のカとキは観光客数と国際援助額のいずれか，凡例ＪとＫはイギリスとフランスのいずれかである。国際援助額とフランスとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。22 240 120 0 J Kカ500 250 0 J ...",
+      "relatedCountries": [
+        "GBR",
+        "FRA",
+        "ITA",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q5",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5次の図5に示したスペインのセビリアとチュニジアのチュニスでは，類似した都市景観がみられる",
+      "promptSummary": "問5次の図5に示したスペインのセビリアとチュニジアのチュニスでは，類似した都市景観がみられる。後の写真1は，両都市の中心部を撮影した衛星画像と，旧市街を撮影した景観写真である。写真1に関することがらについて述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。23セビリアチュニス図5セビリアチュニス衛星画像景観写真100 m 0 100 m 0写真1セビリアとチュニスは，(1)都市中心部がともに旧市街と新市街に分...",
+      "relatedCountries": [
+        "ITA",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d4_q6",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6次の図6は，スペインとチュニジアについて，全就業人口に占める産業別・男女別の就業人口割...",
+      "promptSummary": "問6次の図6は，スペインとチュニジアについて，全就業人口に占める産業別・男女別の就業人口割合の推移を示したものである。チュニジアの第(5)次産業を示す図に該当するものを，図6中の(1)～(4)のうちから一つ選べ。24スペインまたはチュニジア女性男性第2次産業または第3次産業年% 1991 1998 2005 2012 2019 10 20 30 40 50 0年% 1991 1998 2005 2012 2019 10 20 30...",
+      "relatedCountries": [
+        "ITA",
+        "ESP"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q1",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: すさき第5問香川県高松市の高校に通うセイラさんたちは，高知県須崎市周辺の地域調査を行った",
+      "promptSummary": "すさき第5問香川県高松市の高校に通うセイラさんたちは，高知県須崎市周辺の地域調査を行った。この地域調査に関する次の問い（問1～6）に答えよ。（配点20）問1次の写真1のニホンカワウソをモチーフにしたキャラクターに興味をもったセイラさんたちは，須崎市の位置する高知県の特徴を考えるために，高知県と香川県から東京都，愛知県，大阪府，福岡県への公共交通機関別の旅客数を調べ，図1を作成した。図1中の凡例ア～ウは，航空，鉄道，バスのいずれかで...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q2",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: しんじよう問2ニホンカワウソが新荘川沿いにかつて生息していたことに関心をもったセイラさんた...",
+      "promptSummary": "しんじよう問2ニホンカワウソが新荘川沿いにかつて生息していたことに関心をもったセイラさんたちは，次の図2と図3を作成した。図3は，図2中の矢印の方向の景観を立体的に示したものである。図2と図3に関することがらについて述べた文として適当でないものを，後の(1)～(2)のうちから一つ選べ。26須崎市新荘川高松市高知市須崎市下図の範囲須崎駅須崎湾吾桑駅土讃線蟠蛇森2 km市町村界トンネル鉄道国道0 50 km 0地理院地図により作成。図...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q3",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3ニホンカワウソが絶滅種に認定されていることを知ったセイラさんたちは，絶滅の主な要因を次...",
+      "promptSummary": "問3ニホンカワウソが絶滅種に認定されていることを知ったセイラさんたちは，絶滅の主な要因を次の資料1にまとめ，人間活動の影響について調べることにした。まずセイラさんたちは，資料1に示した「市街地の拡大」に着目した。後の文章は，図4で示した須崎市中心部の1936年と2017年に発行された(1)万(2)千分の(3)地形図（原寸，一部改変）に関することがらを，セイラさんたちがまとめたものである。図4に関することがらについて述べた文章中の下...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害",
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q4",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 4,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4次にセイラさんたちは，資料1に示した「農業の近代化」に注目し，須崎市と高知県の農業の現...",
+      "promptSummary": "問4次にセイラさんたちは，資料1に示した「農業の近代化」に注目し，須崎市と高知県の農業の現状について調べ，次の資料2にまとめた。資料2中の表は，須崎市と高知県における主な野菜の品目別作付面積と産出額を示したものである。また，資料2中の図は，東京都中央卸売市場におけるミョウガの生産地別入荷量と市場価格の月ごとの変化を示したものである。資料2に関することがらについて述べた文として適当でないものを，後の(1)～(2)のうちから一つ選べ。...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q5",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5セイラさんたちは，資料1に示した「自然災害への対策」について，須崎市周辺でみられる津波...",
+      "promptSummary": "問5セイラさんたちは，資料1に示した「自然災害への対策」について，須崎市周辺でみられる津波への対策事例の写真とその目的を次の資料3にまとめた。津波への対策の目的として下線部に誤りを含むものを，資料3中の下線部(1)～(2)のうちから一つ選べ。29資料3写真河川の河口部にある水門目的(1)津波の際に，河川の周辺住民が一時的に避難すること写真集落の海沿いにある堤防目的(3)津波の際に，ゲートを閉め，堤防より陸地側の建物の被害を軽減する...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2023_makeup_d5_q6",
+      "examId": "2023_makeup",
+      "year": 2023,
+      "session": "makeup",
+      "sessionLabel": "2023年度 共通テスト 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 6,
+      "answerNo": 30,
+      "points": 4,
+      "questionLabel": "第5問 問6（解答番号30）",
+      "title": "第5問 問6: 問6セイラさんたちは，調査のまとめとして，次の図5を見ながら生物多様性について話し合った",
+      "promptSummary": "問6セイラさんたちは，調査のまとめとして，次の図5を見ながら生物多様性について話し合った。図5は，日本の在来種のカモシカと外来種のアライグマの生息分布を(1)kmメッシュで示したものであり，図5中のカとキは，カモシカとアライグマのいずれかである。また，後の会話文中の空欄ａにはカとキのいずれか，下線部ｂに関する取組みの具体例には後のＸとＹのいずれかが当てはまる。空欄ａに当てはまる分布図と，下線部ｂに関する取組みの具体例との組合せとし...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2023_makeup/2023_makeup_d5_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 4点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

@@ -1,0 +1,1268 @@
+{
+  "examId": "2020_makeup",
+  "year": 2020,
+  "session": "makeup",
+  "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2020_makeup_d1_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 2,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ",
+      "promptSummary": "第1問次の図1を見て，世界の自然環境と自然災害に関する下の問い（問1～6）に答えよ。（配点17）エC DウエイアB J A F G NOAAの資料などにより作成。図1問1図1中のA～Dは，いくつかの大陸と海洋のプレートの移動する方向＊を示したものである。プレートの移動する方向として適当でないものを，次の(1)～(2)のうちから一つ選べ。1＊国際的に定められた地球基準座標系にもとづく移動方向。(1) A (3) B (4) C (2) D",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "pb_japan_trench"
+      ],
+      "topicTags": [
+        "プレート",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d1_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2次の表1は，いくつかの緯度で地球を一周した場合の標高(1)～500mの陸地の割合と，標...",
+      "promptSummary": "問2次の表1は，いくつかの緯度で地球を一周した場合の標高(1)～500mの陸地の割合と，標高500mより高い陸地の割合を示したものであり，(2)～(3)は，赤道，北緯20度，北緯40度，北緯60度のいずれかである。北緯40度に該当するものを，表1中の(2)～(3)のうちから一つ選べ。2表1（単位：％）(2) (4) (5) (3)標高(1)～500mの陸地の割合16 17 18 48標高500mより高い陸地の割合29 4 14 1...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d1_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 3,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: だこう問3上空の偏西風（ジェット気流）の蛇行は，地上の気温変化に影響を与える",
+      "promptSummary": "だこう問3上空の偏西風（ジェット気流）の蛇行は，地上の気温変化に影響を与える。図1中のFとGは，北極周辺のジェット気流の蛇行を模式的に示したものであり，Fは平年の12月の位置を，Gは蛇行の大きかった2017年12月の位置を示したものである。また，図1中のア～エは，2017年12月の月平均気温が平年より高い地点か低い地点＊のいずれかである。平年より高い地点に該当する組合せとして正しいものを，次の(2)～(6)のうちから一つ選べ。3＊...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d1_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4図1中のJの地域でみられる気候と土壌，分布する森林の特徴を述べた次の文章中の下線部(2...",
+      "promptSummary": "問4図1中のJの地域でみられる気候と土壌，分布する森林の特徴を述べた次の文章中の下線部(2)～(3)のうちから，適当でないものを一つ選べ。4 Jの地域は，大河川の流域に位置し，平坦な地形がひろがっている。気温が冬季には大きく低下し，気温の(2)年較差は40℃を超える。降水量は(4)夏に多く冬に少ない。Jの地域の森林内の土壌は，地表面に堆積する有機物層の分解が遅く，(5)褐色森林土となっている。こうした気候と土壌の条件に合う樹種は限...",
+      "relatedCountries": [
+        "THA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d1_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5湖沼は，その成因に応じて様々な形状となる",
+      "promptSummary": "問5湖沼は，その成因に応じて様々な形状となる。次の図2は，世界と日本のいくつかの湖沼＊について，湖沼面積と最大水深の関係を成因別に示したものである。図2中の世界の湖沼のうち，カとキは，過去の大陸氷河（氷床）の侵食によるものと，地溝帯の運動などの地殻変動によるもののいずれかである。また，図2中の日本の湖沼のうち，LとMは，かつて海の入り江などであったものと，火山のカルデラにできたもののいずれかである。図2中のキとMに該当する正しい組...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "火山",
+        "氷河",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d1_q6",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6自然災害は直接的に生命を脅かすだけでなく，生活基盤となる居住環境にも大きな被害をもたらす",
+      "promptSummary": "問6自然災害は直接的に生命を脅かすだけでなく，生活基盤となる居住環境にも大きな被害をもたらす。次の図3は，いくつかの国で発生した自然災害による建築物の被害＊について，災害種別の割合で示したものであり，サ～スは，スリランカ，チリ，ボリビアのいずれかである。国名とサ～スとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。6＊1970～2014年に損壊した建築物の数の合計。サシス洪水洪水洪水強風強風地震地震暴風雨津波その他その他そ...",
+      "relatedCountries": [
+        "LKA",
+        "CHL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地震",
+        "自然災害",
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問資源と産業に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第2問資源と産業に関する次の問い（問1～6）に答えよ。（配点17）問1石油代替エネルギーの一つとしてバイオ燃料がある。次の表1は，いくつかの国における，バイオ燃料の生産量，原油の生産量と消費量および自給率＊を示したものであり，(1)～(2)は，アメリカ合衆国，カナダ，ドイツ，ブラジルのいずれかである。ブラジルに該当するものを，表1中の(1)～(2)のうちから一つ選べ。7＊各国の消費量に占める生産量の割合。表1バイオ燃料の生産量（万...",
+      "relatedCountries": [
+        "DEU",
+        "USA",
+        "CAN",
+        "BRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "原油"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2企業的農業の発展を背景として，畜産物の大量生産と国際取引が活発に行われている",
+      "promptSummary": "問2企業的農業の発展を背景として，畜産物の大量生産と国際取引が活発に行われている。次ページの図1中のア～ウは，牛肉，豚肉，羊肉のいずれかの輸出量について，上位(6)か国・地域とそれらが世界に占める割合を示したものである。項目名とア～ウとの正しい組合せを，次ページの(1)～(7)のうちから一つ選べ。8％20 10 5アイウ統計年次は2016年。FAOSTATにより作成。図1 (1) (2) (3) (4) (5) (6)牛肉アアイイ...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3日本と世界の農産物流通について述べた文として下線部が適当でないものを，次の(1)～(2...",
+      "promptSummary": "問3日本と世界の農産物流通について述べた文として下線部が適当でないものを，次の(1)～(2)のうちから一つ選べ。9 (1)オランダやケニア，コロンビアなどで生産されたバラのような高価な花が，日本へは空路で輸出されている。(3)タイでは，進出した日本企業の技術指導を受け，農産物を現地で加工して日本に輸出する形態がみられる。(4)トンガで生産されるカボチャは，日本へは主に(5)月から(6)月にかけて輸出されている。(2)日本に輸入され...",
+      "relatedCountries": [
+        "JPN",
+        "CHN",
+        "THA",
+        "NLD",
+        "COL",
+        "KEN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4次の図2は，いくつかの国について，製造業の工業付加価値額＊の総計に占める主要な工業の内...",
+      "promptSummary": "問4次の図2は，いくつかの国について，製造業の工業付加価値額＊の総計に占める主要な工業の内訳を示したものであり，(1)～(2)は，オランダ，韓国，ニュージーランド，バングラデシュのいずれかである。韓国に該当するものを，図2中の(1)～(2)のうちから一つ選べ。10＊生産額から，賃金以外の生産に必要な諸費用を引いた，新たに作り出された価値の金額。ǏǐǑǒ食品機械・輸送用機器繊維・衣料化学その他0 20 40 60 80 100％食品...",
+      "relatedCountries": [
+        "KOR",
+        "BGD",
+        "NLD",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 2,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問52016年の国際観光支出＊が国際観光収入＊を上回る国に該当するものを，次の(1)～(2...",
+      "promptSummary": "問52016年の国際観光支出＊が国際観光収入＊を上回る国に該当するものを，次の(1)～(2)のうちから一つ選べ。11＊中国の数値には台湾，ホンコン，マカオを含まない。(1)アメリカ合衆国(3)イタリア(4)オーストラリア(2)中国",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "ITA",
+        "USA",
+        "AUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d2_q6",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6次の表2中のカ～クは，日本のサービス業のうち，ゲームソフトウェア制作業，旅館・ホテル，...",
+      "promptSummary": "問6次の表2中のカ～クは，日本のサービス業のうち，ゲームソフトウェア制作業，旅館・ホテル，老人福祉・介護事業のいずれかについて，事業所数で上位(5)位までの都道府県とそれらが全国に占める割合を示したものである。業種名とカ～クとの正しい組合せを，下の(1)～(6)のうちから一つ選べ。12表2（単位：％）順位カキク(7)位東京都45．7長野県8．7東京都7．8位大阪府12．9北海道5．7大阪府7．4位神奈川県8．6静岡県5．4神奈川県...",
+      "relatedCountries": [
+        "JPN",
+        "GBR"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市と村落に関する次の問い（問1～6）に答えよ",
+      "promptSummary": "第3問都市と村落に関する次の問い（問1～6）に答えよ。（配点17）問1次の表1は，いくつかの国について，2015年の都市人口率と2010～2015年における人口の自然増加率を示したものであり，(1)～(2)は，アルゼンチン，インドネシア，日本，ルーマニアのいずれかである。インドネシアに該当するものを，表1中の(1)～(2)のうちから一つ選べ。13表1都市人口率（％）人口の自然増加率（‰）(1) 91．6 10．2 (3) 91．4...",
+      "relatedCountries": [
+        "JPN",
+        "IDN",
+        "IND",
+        "ARG"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2都市の立地や発展には，交通条件が大きな影響を及ぼす",
+      "promptSummary": "問2都市の立地や発展には，交通条件が大きな影響を及ぼす。次の(1)～(2)の文は，ウラジオストク，シンガポール，ドバイ，ロッテルダムのいずれかの都市について述べたものである。ロッテルダムに該当するものを，次の(1)～(2)のうちから一つ選べ。14 (1)海峡付近の中継貿易港として発展し，2016年時点で世界第(5)位のコンテナ取扱量を誇る港湾都市である。(3)海軍基地として建設された歴史をもち，大陸を横断する長距離鉄道と海上交通と...",
+      "relatedCountries": [
+        "SGP",
+        "ARE",
+        "NLD"
+      ],
+      "relatedLayerIds": [
+        "rv_rhine"
+      ],
+      "topicTags": [
+        "原油",
+        "国際河川"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 2,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3各国において，経済や文化の中心である大都市では，多くの国際会議が開催される",
+      "promptSummary": "問3各国において，経済や文化の中心である大都市では，多くの国際会議が開催される。2017年に最も多くの国際会議＊が首都以外の都市で開催された国を，次の(1)～(2)のうちから一つ選べ。15＊国際的な組織が主催した会議のうち，一定規模以上で定期的に開催されたもの。(1)カナダ(3)タイ(4)フランス(2)ベルギー",
+      "relatedCountries": [
+        "THA",
+        "FRA",
+        "BEL",
+        "CAN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4日本国内における都市間の結びつきには，都市の規模や位置関係が大きく影響する",
+      "promptSummary": "問4日本国内における都市間の結びつきには，都市の規模や位置関係が大きく影響する。次の図1は，日本のいくつかの都市やその近隣にある主な空港＊間の年間旅客数＊＊を示したものであり，ア～エは，大阪，札幌，長崎，新潟のいずれかである。長崎に該当するものを，下の(1)～(2)のうちから一つ選べ。16いたみしんちとせ＊大阪は伊丹空港，札幌は新千歳空港，東京は羽田空港，長崎は長崎空港，新潟は新潟空港。＊＊定期航空路線の直行便のみ。イアウエ東京9...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5都市の形態には，その国の歴史や文化などが反映されている",
+      "promptSummary": "問5都市の形態には，その国の歴史や文化などが反映されている。次の図2中のカ～クは，マニラ，モスクワ，ロサンゼルスのいずれかの都市における中心部とその周辺の道路網を模式的に示したものである。都市名とカ～クとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。17カ2 km 0キ2 km 0ク2 km 0 U.S. Census Bureauの資料などにより作成。図2 (1) (3) (4) (5) (6) (2)マニラカカキキク...",
+      "relatedCountries": [
+        "PHL",
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d3_q6",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 6,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第3問 問6（解答番号18）",
+      "title": "第3問 問6: 問6都市と村落では人口構成や世帯構成の特徴が異なる",
+      "promptSummary": "問6都市と村落では人口構成や世帯構成の特徴が異なる。次の図3中のサ～スは，近畿地方の(1)市区町村について，1990年と2015年の老年人口率＊と総世帯数に占める(2)人世帯割合を示したものであり，下のＡ～Ｃの文は，いずれかの市区町村の特徴を説明したものである。サ～スとＡ～Ｃとの正しい組合せを，下の(3)～(4)のうちから一つ選べ。18＊総人口に占める65歳以上の人口割合。0 10 20 30 40 50 70 60 0 10 2...",
+      "relatedCountries": [
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d3_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 19,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号19）",
+      "title": "第4問 問1: 問1次の図2中の(1)～(2)は，図1中のA～Dのいずれかの経線に沿った年降水量を示したも...",
+      "promptSummary": "問1次の図2中の(1)～(2)は，図1中のA～Dのいずれかの経線に沿った年降水量を示したものである。Dに該当するものを，図2中の(1)～(2)のうちから一つ選べ。19Ǐǐ0 500 1000 1500 2000 2500 mmǑ0 500 1000 1500 2000 2500 mm 0 500 1000 1500 2000 2500 mmǒ0 500 1000 1500 2000 2500 mmデータは緯度0．5度ごと。NOAA...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問2（解答番号20）",
+      "title": "第4問 問2: 問2次の図3は，サハラ以南の地域におけるいくつかの鉱産資源の主な産地を示したものであり，(...",
+      "promptSummary": "問2次の図3は，サハラ以南の地域におけるいくつかの鉱産資源の主な産地を示したものであり，(1)～(2)は，金鉱，石油，銅鉱，プラチナ鉱のいずれかである。金鉱に該当するものを，図3中の(1)～(2)のうちから一つ選べ。20ǏǐǑǒDiercke Weltatlas, 2015により作成。図3",
+      "relatedCountries": [
+        "DZA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号21）",
+      "title": "第4問 問3: 問3アフリカでは，国によって産業構造が大きく異なる",
+      "promptSummary": "問3アフリカでは，国によって産業構造が大きく異なる。次の図4は，図1中のいくつかの国における1970年，1993年，2016年のGDP（国内総生産）に占める各産業の割合を示したものであり，ア～ウは，ボツワナ，マリ，南アフリカ共和国のいずれかである。国名とア～ウとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。21第1次産業第2次産業第3次産業0 0 20 20 40 40 60 60 80 80 100％100％0 20 ...",
+      "relatedCountries": [
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号22）",
+      "title": "第4問 問4: 問4次の図5は，アフリカの地域区分＊と，いくつかの国におけるアフリカの各地域からの輸入額を...",
+      "promptSummary": "問4次の図5は，アフリカの地域区分＊と，いくつかの国におけるアフリカの各地域からの輸入額を示したものであり，カ～クは，イギリス，中国＊＊，フランスのいずれかである。国名とカ～クとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。22とうしよ＊マダガスカル以外の島嶼国を除く。＊＊台湾，ホンコン，マカオを含まない。北部東部中部地域区分西部南部カ46 69 72 325 247単位：億ドル165 47 12 13 14キ47 23...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "GBR",
+        "FRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号23）",
+      "title": "第4問 問5: 問5港は海路と陸路をつなぐ文化の結節点として機能し，アフリカの言語や宗教の地理的分布に影響...",
+      "promptSummary": "問5港は海路と陸路をつなぐ文化の結節点として機能し，アフリカの言語や宗教の地理的分布に影響を与えてきた。次の(1)～(2)の文は，図1中のJ～Mのいずれかの港湾都市とその周辺地域に関連することがらについて述べたものである。Kに該当するものを，次の(1)～(2)のうちから一つ選べ。23 (1)植民地開発における交易の拠点として発展し，旧宗主国の影響からフランス語が広く使われている。(3)スエズ運河が開通するまでヨーロッパ・アジア間の...",
+      "relatedCountries": [
+        "FRA",
+        "EGY"
+      ],
+      "relatedLayerIds": [
+        "sc_suez"
+      ],
+      "topicTags": [
+        "モンスーン",
+        "宗教",
+        "イスラム教",
+        "キリスト教",
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d4_q6",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 24,
+      "points": 2,
+      "questionLabel": "第4問 問6（解答番号24）",
+      "title": "第4問 問6: 問6サハラ以南の国々の経済発展に関連することがらについて述べた次の文章中の空欄サとシに当て...",
+      "promptSummary": "問6サハラ以南の国々の経済発展に関連することがらについて述べた次の文章中の空欄サとシに当てはまる語句の正しい組合せを，下の(1)～(2)のうちから一つ選べ。24サハラ以南の国々の大半に共通する植民地時代の特徴の一つは（サ）であった。20世紀後半に多くの国が独立したが，その後の経済成長の度合いは国際貿易の変化や国内外の紛争の影響などによって国ごとに異なり，（シ）問題とよばれる経済的な格差が生じた。(1) (3) (4) (2)サモノ...",
+      "relatedCountries": [
+        "ESP",
+        "USA",
+        "MEX",
+        "PER",
+        "DZA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d5_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号25）",
+      "title": "第5問 問1: 問1下線部に関して，次の図2中のDとEは，ペルーとメキシコのいずれかにおける高度別面積の...",
+      "promptSummary": "問1下線部に関して，次の図2中のDとEは，ペルーとメキシコのいずれかにおける高度別面積の割合を示したものであり，下のアとイは，図1中に示したAとBのいずれかの緯線に沿ってみられる代表的な植生景観を，西から東に向かって順に並べたものである。図2中のDとEおよび下のアとイのうち，メキシコに該当する正しい組合せを，下の(1)～(2)のうちから一つ選べ。25 4500～5000 4000～4500 3500～4000 3000～3500...",
+      "relatedCountries": [
+        "MEX",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d5_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 26,
+      "points": 2,
+      "questionLabel": "第5問 問2（解答番号26）",
+      "title": "第5問 問2: 問2下線部に関して，次の図3は，ペルーとメキシコについて，いくつかの人種・民族が総人口に...",
+      "promptSummary": "問2下線部に関して，次の図3は，ペルーとメキシコについて，いくつかの人種・民族が総人口に占める割合を示したものであり，カ～クは，先住民，メスチソ（メスチーソ），ヨーロッパ系住民のいずれかである。人種・民族名とカ～クとの正しい組合せを，下の(1)～(2)のうちから一つ選べ。26カキクその他メキシコペルー100％80 60 40 20 0統計年次は2017年。外務省の資料により作成。図3 (1) (3) (4) (5) (6) (2...",
+      "relatedCountries": [
+        "MEX",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d5_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問3（解答番号27）",
+      "title": "第5問 問3: 問3下線部に関して，次の表1は，イタリア，ドイツ，ペルー，メキシコについて，中央・南アメ...",
+      "promptSummary": "問3下線部に関して，次の表1は，イタリア，ドイツ，ペルー，メキシコについて，中央・南アメリカを原産地とするいくつかの作物の(1)人当たり年間食料供給量を示したものであり，J～Lは，ジャガイモ，トウモロコシ，トマトのいずれかである。作物名とJ～Lとの正しい組合せを，下の(2)～(3)のうちから一つ選べ。27表1（単位：kg）J K Lイタリア40．4 38．9 3．9ドイツ18．7 66．0 10．5ペルー5．6 80．2 19．...",
+      "relatedCountries": [
+        "DEU",
+        "ITA",
+        "USA",
+        "MEX",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "トウモロコシ"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 7,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d5_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号28）",
+      "title": "第5問 問4: 問4下線部@に関して,次の図4は,ベルーとメキシコについて,総輸出額に占める上位5品目の割...",
+      "promptSummary": "問4下線部@に関して,次の図4は,ベルーとメキシコについて,総輸出額に占める上位5品目の割合を示したものであり, PとQは,ベルーとメキシコのいずれか,サとシは, 1986年と2016年のいずれかである。ベルーと2016年に該当する正しい組合せを,下の①~④のうちから一つ選べ。サ自動車石油・などその他石油製品その他電気機器発電機器など通信機器など電気機器など石油・野菜・果実石油製品事務機器など自動車など国名銅・鉛・銅・鉛・亜鉛など...",
+      "relatedCountries": [
+        "MEX",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自動車"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d5_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 29,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号29）",
+      "title": "第5問 問5: 問5下線部◎に関して,ベルーとメキシコは日本を含む様々な国・地域との結びつきを強めてきた",
+      "promptSummary": "問5下線部◎に関して,ベルーとメキシコは日本を含む様々な国・地域との結びつきを強めてきた。次の表2中のXとYは,ベルーとメキシコのいずれかを出身とする,国外居住者*の居住国の上位4か国を示したものである。また,下の表3中のタとチは,ベルーとメキシコのいずれかについて,立地する日系企業* *の事業所数と,日本における在留外国人数を示したものである。メキシコに該当する正しい組合せを,下の①~④のうちから一つ選べ。29 *居住国において...",
+      "relatedCountries": [
+        "JPN",
+        "ESP",
+        "USA",
+        "CAN",
+        "MEX",
+        "ARG",
+        "PER"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q1",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問1（解答番号30）",
+      "title": "第6問 問1: 問1レイさんは地図帳を見て，志摩半島へ向かう鉄道が大阪平野から山地を越えいせて伊勢平野を経...",
+      "promptSummary": "問1レイさんは地図帳を見て，志摩半島へ向かう鉄道が大阪平野から山地を越えいせて伊勢平野を経由することを知り，沿線の自然環境について調べた。次の表1は，図1中に示した鳥羽市を含む(1)都市について，(2)月の最低気温＊，(3)月のいが最高気温＊＊，年降水量を示したものであり，ア～ウは，大阪市，伊賀市，鳥羽市のいずれかである。都市名とア～ウとの正しい組合せを，下の(4)～(5)のうちから一つ選べ。30＊日最低気温の月平均値。＊＊日最高...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q2",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号31）",
+      "title": "第6問 問2: 問2レイさんは鉄道で訪れた伊勢市の図書館で，市内にある(1)か所の主な神社に，年間合計80...",
+      "promptSummary": "問2レイさんは鉄道で訪れた伊勢市の図書館で，市内にある(1)か所の主な神社に，年間合計800万人以上の参拝客が訪れる一方，主要駅の駅前にあったデパートが2001年に閉店したことを知った。次の図2は，図1中のXの範囲を模式的に示したものである。また，下の表2は，伊勢市内のいくつかの地区における，大型小売店＊数，土産品店数，バス路線数＊＊を示したものであり，(2)～(3)は，図2中のA～Dのいずれかの地区である。Cに該当するものを，表...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q3",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号32）",
+      "title": "第6問 問3: 問3鳥羽市に着いたレイさんは，山に囲まれた狭い平地に中心市街地がひろがっている状況に気づき...",
+      "promptSummary": "問3鳥羽市に着いたレイさんは，山に囲まれた狭い平地に中心市街地がひろがっている状況に気づき，鳥羽港周辺の土地利用の変化について調べた。次の図3は，図1中のYの範囲における1930年と2008年に発行された(1)万分の(2)地形図の一部（原寸，一部改変）である。図3から読み取れることがらとその背景について述べた文として下線部が適当でないものを，下の(3)～(4)のうちから一つ選べ。32 1930年2008年浜辺図3あくし(3)安久志...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q4",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号33）",
+      "title": "第6問 問4: こうまきがき問4図1中の志摩市国府地区で槙垣という特徴的な景観を見かけたレイさんは，歴史資...",
+      "promptSummary": "こうまきがき問4図1中の志摩市国府地区で槙垣という特徴的な景観を見かけたレイさんは，歴史資料館の職員に話を聞いた。次の図4は，国府地区とその周辺地域を模式的に示したものであり，写真1は，国府地区で特徴的にみられる景観を撮影しあのりたものである。また，次ページの表3は，国府地区，それに隣接する安乗地区，志摩市全体における，総人口に占める65歳以上の人口割合と総世帯数に占める(1)世代世帯割合を示したものである。次ページのレイさんと職...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q5",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号34）",
+      "title": "第6問 問5: 問5志摩市の漁港を訪れたレイさんは，地域ごとに様々な漁業がみられることにあま気づいた",
+      "promptSummary": "問5志摩市の漁港を訪れたレイさんは，地域ごとに様々な漁業がみられることにあま気づいた。次の図5は，図1中のZの範囲における海女漁業とカキ類養殖の経営体数を漁業地区＊別に示したものである。図5から読み取れることがらとその背景について述べた下の文章中の空欄サとシに当てはまる語句の正しい組合せを，下の(1)～(2)のうちから一つ選べ。34＊共通の漁業条件のもとで漁業権や漁場を活用して漁業を営む世帯が居住する地区。2 km 0的矢湾伊雑ノ...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2020_makeup_d6_q6",
+      "examId": "2020_makeup",
+      "year": 2020,
+      "session": "makeup",
+      "sessionLabel": "2020年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号35）",
+      "title": "第6問 問6: ふなこしおおつ問6図書館で志摩市の歴史を調べたレイさんは，図1中の船越地区が過去に大津ばむ...",
+      "promptSummary": "ふなこしおおつ問6図書館で志摩市の歴史を調べたレイさんは，図1中の船越地区が過去に大津ばむら波村と呼ばれていたことを知り，この地域のハザードマップを見ながら現地を歩き，津波からの避難について考えた。次の図6は，船越地区における津波ハザードマップの一部である。図6から読み取れることがらを述べた文として下線部が適当でないものを，下の(1)～(2)のうちから一つ選べ。35幅員3m未満の道路幅員3m以上の道路等高線(m)海自治会指定の一時...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2020_makeup/2020_makeup_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

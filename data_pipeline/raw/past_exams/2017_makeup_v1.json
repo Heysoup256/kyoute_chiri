@@ -1,0 +1,1226 @@
+{
+  "examId": "2017_makeup",
+  "year": 2017,
+  "session": "makeup",
+  "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+  "questions": [
+    {
+      "questionId": "2017_makeup_d1_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 1,
+      "answerNo": 1,
+      "points": 3,
+      "questionLabel": "第1問 問1（解答番号1）",
+      "title": "第1問 問1: 第1問世界の自然環境と自然災害に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第1問世界の自然環境と自然災害に関する次の問い(問1 ~ 6 )に答えよ。(配点17 )問1次の図1は,赤道付近から南極付近を模式的に示したものである。図1中の地点A ~ D付近における大気の大循環と降水量・蒸発量との関係について述べた文として最も適当なものを,下の①~④のうちから一つ選べ。1 0。南回帰線60。①地点A付近では上昇気流が発生し,年降水量と年蒸発量が同程度である。②地点B付近では下降気流が発生し,年降水量は年蒸発量...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d1_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 2,
+      "answerNo": 2,
+      "points": 3,
+      "questionLabel": "第1問 問2（解答番号2）",
+      "title": "第1問 問2: 問2大気と海洋との相互作用は自然災害を発生させることがある",
+      "promptSummary": "問2大気と海洋との相互作用は自然災害を発生させることがある。次の図2中のJ ~ Mに示した地域でみられる災害をもたらす自然現象とその原因や背景について述べた文として下線部が最も適当なものを,下の①~④のうちから一つ選2ウ①J地域でみられる洪水の原因の一つとして,インド洋付近に停滞する梅雨前線がある。②K地域でみられる干ばつの背景として,太平洋西部の海水温が異常に上昇するエルニニョ現象などがある。③L地域でみられる豪雪の背景として,...",
+      "relatedCountries": [
+        "IND"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "モンスーン",
+        "自然災害",
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d1_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 3,
+      "answerNo": 3,
+      "points": 2,
+      "questionLabel": "第1問 問3（解答番号3）",
+      "title": "第1問 問3: 問3地形は様々な営力によって形成される",
+      "promptSummary": "問3地形は様々な営力によって形成される。図2中のア~工に示した地域でみられる地形と主な営力について述べた文として適当でないものを,次の①~〇のうちから一つ選べ。3①ア地域では,火山活動によりカルデラが形成されている。②イ地域では,風の作用により砂丘が形成されている。③ウ地域では,地殻変動により山地が形成されている。〇工地域では,河川の作用により三角州(デルタ)が形成されている。",
+      "relatedCountries": [],
+      "relatedLayerIds": [
+        "lf_nile_delta"
+      ],
+      "topicTags": [
+        "火山",
+        "三角州",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d1_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 4,
+      "answerNo": 4,
+      "points": 3,
+      "questionLabel": "第1問 問4（解答番号4）",
+      "title": "第1問 問4: 問4地球の歴史の中で,自然環境は変化し続けてきた",
+      "promptSummary": "問4地球の歴史の中で,自然環境は変化し続けてきた。次の図3は最近10万年間の気温変化を模式的に示したものである。図3中のpの時期に関連したことがらについて述べた文として適当でないものを,下の①~④のうちから一つ選4暖↓寒10万0年前5万縦軸の寒暖の気温差は約10℃。松岡憲知ほか編『地球環境学』により作成。①海岸線が現在より沖合に存在していた。②森林限界が現在より標高の高い地域に分布していた。③大陸氷河(氷床)が現在より低緯度側に広...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "氷河",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d1_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 5,
+      "answerNo": 5,
+      "points": 3,
+      "questionLabel": "第1問 問5（解答番号5）",
+      "title": "第1問 問5: 問5日本の沖積平野における地震災害について述べた文として適当でないものを,次の①~④のうち...",
+      "promptSummary": "問5日本の沖積平野における地震災害について述べた文として適当でないものを,次の①~④のうちから一つ選べ。①旧河道では液状化が発生しやすい。②震源の浅い直下型地震が発生すると,地表に断層の動きにともなう水平方向や垂直方向のずれが現れる場合がある。③沖積平野の地盤は台地に比べて強固であり,地震による揺れが小さい。④沖積平野は台地に比べて,津波による被害を受けやすい。ー147ー( 2702ー147 )",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地震",
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d1_q6",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 1,
+      "toi": 6,
+      "answerNo": 6,
+      "points": 3,
+      "questionLabel": "第1問 問6（解答番号6）",
+      "title": "第1問 問6: 問6次の図4は,ある平野の河川の位置と等高線を示したものである",
+      "promptSummary": "問6次の図4は,ある平野の河川の位置と等高線を示したものである。上流域での大雨によって河川が増水し,右岸の地点力で堤防が決壊したと仮定*した場合,図4中の地点X ~ Zとそれぞれの地点で浸水する可能性の高,中,低との正しい組合せを,下の①~⑥のうちから一つ選べ。*決壊部からのみ河川水があふれるものとする。・・・20 m . 20h1 10m 10 ni・・ロ低地ロ台地堤防= : (河川0 2 km低地のみに等高線を示した。自治体の...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "自然災害"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 1,
+      "answerNo": 7,
+      "points": 3,
+      "questionLabel": "第2問 問1（解答番号7）",
+      "title": "第2問 問1: 第2問世界の資源と産業に関する次の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第2問世界の資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点1の問1次の表1は,いくつかの農作物の生産量について,生産量の上位5か国と,それそれの国の生産量が世界に占める割合を示したものであり, A ~ Dは,インド,インドネシア,フィリピン,プラジルのいずれかである。インドネシアに該当するものを,下の①~④のうちから一つ選べ。(単位: % )位順コーヒー豆ココナツツバナナ位1 34.4 31. 2 26. 0ベトナム...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "IDN",
+        "VNM",
+        "PHL",
+        "IND",
+        "LKA",
+        "COL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 2,
+      "answerNo": 8,
+      "points": 3,
+      "questionLabel": "第2問 問2（解答番号8）",
+      "title": "第2問 問2: 問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,...",
+      "promptSummary": "問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,世界の上位10か国とそれらが世界に占める割合を示したものである。漁獲量,水産物輸出額,水産物輸入額とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選、*養殖を含まない。ー150ー( 2702ー15の20 % 10中国の数値には,台湾,ホンコン,マカオを含まない。統計年次は2010年。FAOSTATにより作成。①アイウ②アウィ③ィアウ...",
+      "relatedCountries": [
+        "CHN",
+        "TWN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 3,
+      "answerNo": 9,
+      "points": 3,
+      "questionLabel": "第2問 問3（解答番号9）",
+      "title": "第2問 問3: 問3次の図2は,いくつかの国について,木材の輸出量と輸入量をそれぞれ示したものであり,カ~...",
+      "promptSummary": "問3次の図2は,いくつかの国について,木材の輸出量と輸入量をそれぞれ示したものであり,カ~クはアメリカ合衆国,中国* ,ロシアのいずれかである。国名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。ロ輸出量カキクロ輸入量0 3 2000 4000 6000万m統計年次は2012年。FAOSTATにより作成。①カキク②カクキ③キカク〇キクカ⑤クカキ⑥クキカ合国アカ衆アメ国中ロシ",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 4,
+      "answerNo": 10,
+      "points": 3,
+      "questionLabel": "第2問 問4（解答番号10）",
+      "title": "第2問 問4: 問4日本のエネルギー資源について述べた文として適当でないものを,次の①~ @のうちから一つ選べ",
+      "promptSummary": "問4日本のエネルギー資源について述べた文として適当でないものを,次の①~ @のうちから一つ選べ。ロ①1970年代以降に国内の炭田が再開発され,石炭の自給率が高まっている。②太陽光発電の導入により,二酸化炭素排出量の削減が試みられている。③二度にわたる石油危機の経験から,石油の備蓄がすすめられている。〇メタンハイドレートが,新たなエネルギー資源として注目されている。ー152ー( 2702ー152 )",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 5,
+      "answerNo": 11,
+      "points": 2,
+      "questionLabel": "第2問 問5（解答番号11）",
+      "title": "第2問 問5: 問5世界遺産には鉱山に関わる登録地がある",
+      "promptSummary": "問5世界遺産には鉱山に関わる登録地がある。国名と世界遺産に登録されている鉱山の種類との組合せとして適当でないものを,次の①~④のうちから一つ選①シンガポールの金鉱山②チリの銅鉱山③ドイツの石炭鉱山④日本の銀鉱山",
+      "relatedCountries": [
+        "JPN",
+        "SGP",
+        "DEU",
+        "CHL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "石炭"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d2_q6",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 2,
+      "toi": 6,
+      "answerNo": 12,
+      "points": 3,
+      "questionLabel": "第2問 問6（解答番号12）",
+      "title": "第2問 問6: 問6外国からの観光客の増加は観光産業の活性化につながる",
+      "promptSummary": "問6外国からの観光客の増加は観光産業の活性化につながる。次の表2は,いくつかの国における国際観光収入について, 1990年と2013年の世界全体に占める割合,および1990年の値を100とした場合の2013年の値を示したものであり,①~④は,中国* ,フランス,ポーランド,メキシコのいずれかである。メキシコに該当するものを,表2中の①~@のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。世界全体に占める割合( % ) 199...",
+      "relatedCountries": [
+        "CHN",
+        "TWN",
+        "FRA",
+        "POL",
+        "MEX"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d3_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 1,
+      "answerNo": 13,
+      "points": 3,
+      "questionLabel": "第3問 問1（解答番号13）",
+      "title": "第3問 問1: 第3問都市と生活文化に関する次の問い(問1 ~ 5 )に答えよ",
+      "promptSummary": "第3問都市と生活文化に関する次の問い(問1 ~ 5 )に答えよ。(配点15 )問1次の図1は,日本のある都市の郊外を示した2008年発行の2万5千分の1地形図(原寸,一部改変)である。図1から読み取れることがらとその背景について説明した下の文章中の下線部①~④のうちから,適当でないものを一つ選1 3、山づ、.こ弖= ,たセンJ屯中沢ニ[員取ニ目、106合主丁ヶ丘取四丁ー-一、、五ニ=ータウンとよばれる住宅団地は,日本では①高度経済...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d3_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d3_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 2,
+      "answerNo": 14,
+      "points": 3,
+      "questionLabel": "第3問 問2（解答番号14）",
+      "title": "第3問 問2: 問2次の①~〇の文は,トウールーズ(フランス) ,バンガロール(インド) ,プラジリア,ロ...",
+      "promptSummary": "問2次の①~〇の文は,トウールーズ(フランス) ,バンガロール(インド) ,プラジリア,ロンドンのいずれかの都市について述べたものである。バンガロールに該当するものを,次の①~〇のうちから一つ選べ①首都の移転先として建設され,行政・文化施設が計画的に配置されている。②情報通信技術( ICT)産業の集積が進んでおり,北アメリカとの時差をいかして,連携先の企業と24時間連続したソフトウェア開発が行われている。③ドックランズとよばれるウ...",
+      "relatedCountries": [
+        "IND",
+        "GBR",
+        "FRA",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "ICT"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d3_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d3_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 3,
+      "answerNo": 15,
+      "points": 3,
+      "questionLabel": "第3問 問3（解答番号15）",
+      "title": "第3問 問3: 問3次の表1は,いくつかの都市における空港の国際線旅客数*と,外国人居住者率を示したもので...",
+      "promptSummary": "問3次の表1は,いくつかの都市における空港の国際線旅客数*と,外国人居住者率を示したものであり,①~④は,サンパウロ,シドニソウル,ニューヨークのいずれかである。ニューヨークに該当するものを,表1中の①~④のうちから一つ選べ。1 5 *出発客と到着客の合計。空港の国際線旅客数外国人居住者率(万人)①3 , 611 1. 7②3 , 538 37. 6③1 , 062 40. 1④884統計年次は,空港の国際線旅客数が2010年,外...",
+      "relatedCountries": [
+        "KOR",
+        "USA",
+        "BRA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d3_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d3_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 4,
+      "answerNo": 16,
+      "points": 3,
+      "questionLabel": "第3問 問4（解答番号16）",
+      "title": "第3問 問4: 問4消費支出には,国によって異なる特徴が表れる",
+      "promptSummary": "問4消費支出には,国によって異なる特徴が表れる。次の図2は,アメリカ合衆国,日本,南アフリカ共和国,メキシコにおける家計の目的別最終消費支出の内訳を示したものであり,ア~ウは,医療・保健,住居* ,食料* *のいすれかである。指標名とア~ウとの正しい組合せを,下の①~⑥のうちから一つ選*水道・光熱を含む。* *飲料・たばこを含む。アメリカ合衆国日本■交通・通信南アフリカロウ共和国ロその他メキシコ0 20 40 60 80 100 ...",
+      "relatedCountries": [
+        "JPN",
+        "USA",
+        "MEX",
+        "ZAF"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d3_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d3_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 3,
+      "toi": 5,
+      "answerNo": 17,
+      "points": 3,
+      "questionLabel": "第3問 問5（解答番号17）",
+      "title": "第3問 問5: 問5民族の文化的・歴史的背景の違いが,時として紛争に結びつくことがある",
+      "promptSummary": "問5民族の文化的・歴史的背景の違いが,時として紛争に結びつくことがある。下のカ~クの文は,次の図3中のA ~ Cのいずれかにおける地域紛争を説明したものである。A ~ Cとカ~クとの正しい組合せを,下の①~⑥のうちから一っ選べ。ロC;カ1948年に建国を宣言した民族と,これに反対する周辺諸国との間で,紛争が起きている。キヒンドウー教徒であるタミル人と,仏教徒であるシンハリ(シンハラ)人との間で,紛争が起きた。クムスリム(イスラム教...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "イスラム教"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d3_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 5,
+      "explanation": "【正解：5（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 1,
+      "answerNo": 18,
+      "points": 3,
+      "questionLabel": "第4問 問1（解答番号18）",
+      "title": "第4問 問1: 第4問次の図1を見て,ロシアに関する下の問い(問1 ~ 6 )に答えよ",
+      "promptSummary": "第4問次の図1を見て,ロシアに関する下の問い(問1 ~ 6 )に答えよ。(配点17 )をーモスクワ、、、、ウラル山脈′バイカル湖DなⅣ0″, 2008などにより作成。問1図1中の線ア~工は,針葉樹林(タイガ)の分布域,ツンドラ気候の地域,北極圏,連続した永久凍土の分布域のいすれかの南限を示したものである。針葉樹林(タイガ)の分布域の南限に該当するものを,次の①~@のうちから一つ選1 8①ァ〇ェ",
+      "relatedCountries": [
+        "THA",
+        "RUS"
+      ],
+      "relatedLayerIds": [
+        "mr_ural"
+      ],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 2,
+      "answerNo": 19,
+      "points": 2,
+      "questionLabel": "第4問 問2（解答番号19）",
+      "title": "第4問 問2: 問2次の①~@の文は,図1中に示したA ~ Dのいずれかの地域における特徴を述べたものである",
+      "promptSummary": "問2次の①~@の文は,図1中に示したA ~ Dのいずれかの地域における特徴を述べたものである。図1中のBに該当するものを,次の①~④のうちから一つ選べ。ロ①寒冷な気候のもとで,少数民族によるトナカイの遊牧が行われている。②自然資源を利用した軽工業が盛んで,シベリア鉄道の起点・終点でもある。③湿地を開発した港を中心に,国内第2位の人口をもつ都市圏が広がる。④比較的温暖な気候を利用した世界有数のリゾート地である。ー158一( 2702...",
+      "relatedCountries": [
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 3,
+      "answerNo": 20,
+      "points": 3,
+      "questionLabel": "第4問 問3（解答番号20）",
+      "title": "第4問 問3: 問3ロシアには,数多くの民族が居住している",
+      "promptSummary": "問3ロシアには,数多くの民族が居住している。次のカ~クの文は,イスラーム(イスラム教) ,キリスト教,仏教のいずれかを主に信仰する民族について説明したものである。宗教名とカ~クとの正しい組合せを,下の①~⑥のうちからーっ選べ。20カウラル山脈南部の西側に多く住むタタール人。キバイカル湖周辺に多く住むプリャート人。クロシアの全土に広く分布し,人口の多くを占めるロシア人。①②③〇⑤⑥イスラーム(イスラム教)カカキキククキリスト教キクカ...",
+      "relatedCountries": [
+        "RUS"
+      ],
+      "relatedLayerIds": [
+        "mr_ural"
+      ],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "イスラム教",
+        "キリスト教"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 4,
+      "answerNo": 21,
+      "points": 3,
+      "questionLabel": "第4問 問4（解答番号21）",
+      "title": "第4問 問4: 問4ロシアは,ソ連時代の計画経済から市場経済への転換を経て,経済や社会の大きな変化を経験してきた",
+      "promptSummary": "問4ロシアは,ソ連時代の計画経済から市場経済への転換を経て,経済や社会の大きな変化を経験してきた。転換と変化の状況について述べた文として下線部が適当でないものを,次の①~④のうちから一つ選べ。①コルホーズやソフホーズから再編された農業企業が生産を伸ばすなか,別荘(ダーチャ)の菜園からの収穫物も,引き続き市民の食生活を支えている。②ソ連が解体された直後の1990年代には,数年間にわたりGDP (国内総生産)の減少が続いた。③ソ連時代...",
+      "relatedCountries": [
+        "RUS"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 5,
+      "answerNo": 22,
+      "points": 3,
+      "questionLabel": "第4問 問5（解答番号22）",
+      "title": "第4問 問5: 問5次の図2中のサ~スは,人口密度,人口1人当たりの農業生産額,人口1人当たりの鉱工業出荷...",
+      "promptSummary": "問5次の図2中のサ~スは,人口密度,人口1人当たりの農業生産額,人口1人当たりの鉱工業出荷額のいずれかを連邦管区別に示したものである。項目名とサ~スとの正しい組合せを,下の①~⑥のうちから一つ選べ高中低位位位統計年次は2014年または2015年。FederaI State Statistics Serviceの資料により作成。①②③④⑤⑥人口密度ササシススン人口1人当たりの農業生産額サススンン・人口1人当たりの鉱工業出荷額ス.サス...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d4_q6",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 4,
+      "toi": 6,
+      "answerNo": 23,
+      "points": 3,
+      "questionLabel": "第4問 問6（解答番号23）",
+      "title": "第4問 問6: 問6次の図3は,ロシアといくつかの国との輸出入額の変化を示したものであり,①~〇はアメリカ...",
+      "promptSummary": "問6次の図3は,ロシアといくつかの国との輸出入額の変化を示したものであり,①~〇はアメリカ合衆国,オランダ,ドイツ,プラジルのいずれかである。アメリカ合衆国に該当するものを,図3中の①~④のうちから一つ選べ。23億ドル700 600ロシアから各国への輸出額500 4〇2005年2014年中国200 100 0 0 100 200 300 600億ドル400 500各国からロシアへの輸入額BRICSJoint &砒な尸励〃c砒io〃...",
+      "relatedCountries": [
+        "CHN",
+        "DEU",
+        "NLD",
+        "RUS",
+        "USA"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d4_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d5_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 1,
+      "answerNo": 24,
+      "points": 3,
+      "questionLabel": "第5問 問1（解答番号24）",
+      "title": "第5問 問1: 第5問ニュージーランドとフィリピンに関する次の文章を読み,下の問い(問~ 5 )に答えよ",
+      "promptSummary": "第5問ニュージーランドとフィリピンに関する次の文章を読み,下の問い(問~ 5 )に答えよ。(配点14 )ニュージーランドとフィリピンは,環太平洋に位置する島嶼国という共通点をもつが, a気候には違いがある。国土面積もほぼ同じであるが,両国の⑩土地利用には異なる特徴がみられる。また,両国ともに植民地の歴史を有し,現代の◎言語や宗教,民族にその歴史の影響が表れている一方, @都市の規模や人口の年齢構成には異なる点も多い。経済面では,輸...",
+      "relatedCountries": [
+        "JPN",
+        "PHL",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "宗教",
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 8,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6",
+        "選択肢 7",
+        "選択肢 8"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d5_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 2,
+      "answerNo": 25,
+      "points": 3,
+      "questionLabel": "第5問 問2（解答番号25）",
+      "title": "第5問 問2: 問2下線部⑩に関して,次の表1は,ニューシーランドとフィリピンについて,いくつかの土地利用...",
+      "promptSummary": "問2下線部⑩に関して,次の表1は,ニューシーランドとフィリピンについて,いくつかの土地利用が国土面積に占める割合を示したものであり, A—cは,耕地,森林,牧場・牧草地のいずれかである。土地利用とA ~ cとの正しい組合せを,下の①~⑥のうちから一つ選べ。25 (単位: % ) A B Cーユーシーランド41. 1 31.4フィリピン25. 9 36. 0統計年次は2011年。FAOSTATにより作成。①②③④⑤⑥耕地A A B ...",
+      "relatedCountries": [
+        "PHL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d5_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 3,
+      "answerNo": 26,
+      "points": 2,
+      "questionLabel": "第5問 問3（解答番号26）",
+      "title": "第5問 問3: 問3下線部◎に関して,ニュージーランドとフィリピンの言語や宗教,民族について説明した文とし...",
+      "promptSummary": "問3下線部◎に関して,ニュージーランドとフィリピンの言語や宗教,民族について説明した文として適当でないものを,次の①~④のうちから一つ選べ。26①両国とも,英語が公用語である。②両国とも,キリスト教を信仰している人が最も多い。③ニュージーランドにはマオリとよばれる先住民がいる。〇フィリピンの民族構成は中国系が多数を占める。",
+      "relatedCountries": [
+        "CHN",
+        "PHL",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "宗教",
+        "キリスト教",
+        "言語"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d5_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 4,
+      "answerNo": 27,
+      "points": 3,
+      "questionLabel": "第5問 問4（解答番号27）",
+      "title": "第5問 問4: 問4下線部@ー関して,次の図2は,いくつかの国における最大の都市圏人口とリ,ニュージーラン...",
+      "promptSummary": "問4下線部@ー関して,次の図2は,いくつかの国における最大の都市圏人口とリ,ニュージーランド,フィリピンのいずれかである。フィリピンに該当するものを,図2中の①~④のうちから一つ選、。*総人口に占める65歳以上人口の割合。16・④12老年人口率・③4 0 0 500 1000 1500 2000万人最大の都市圏人口統計年次は,最大の都市圏人口が2010年,老年人口率が2010年~ 2013年のいずれか。ⅣのUの砒〃尸cななどにより...",
+      "relatedCountries": [
+        "PHL",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口",
+        "都市圏"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d5_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 5,
+      "toi": 5,
+      "answerNo": 28,
+      "points": 3,
+      "questionLabel": "第5問 問5（解答番号28）",
+      "title": "第5問 問5: 問5下線部◎に関して,次の表2は,ニュージーランドとフィリピンから日本への輸出について,主...",
+      "promptSummary": "問5下線部◎に関して,次の表2は,ニュージーランドとフィリピンから日本への輸出について,主要な品目とそれらが日本への輸出総額に占める割合を示したものであり, X—Zは,機械類,野菜・果実,酪製品のいすれかである。表~ zと品目名との正しい組合せを,下の①~⑥のうちから一つ選べ。2中のX 28 (単位: % )ーユーン一ランドフィリピンアルミニウム* 13. 9 45. 3 13. 5 10. 3金属鉱・金属くず12. 7木製品・コ...",
+      "relatedCountries": [
+        "JPN",
+        "PHL",
+        "NZL"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d5_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 4,
+      "explanation": "【正解：4（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q1",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 1,
+      "answerNo": 29,
+      "points": 2,
+      "questionLabel": "第6問 問1（解答番号29）",
+      "title": "第6問 問1: ちょう問1アオイさんは,常陸太田市の地勢を知るために,数値標高データを使って鳥瞰図を作成した",
+      "promptSummary": "ちょう問1アオイさんは,常陸太田市の地勢を知るために,数値標高データを使って鳥瞰図を作成した。次の図2は,図1中のA ~ Dのいずれかの地点の上空から矢印の方向を見下ろした鳥瞰図の一部を切り出したものである。Bの地点に該当するものを,図2中の①~〇のうちから一つ選べ。ただし,高さは強調してあ29ー167ー( 2702ー167 )",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q1.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 2点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q2",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 2,
+      "answerNo": 30,
+      "points": 3,
+      "questionLabel": "第6問 問2（解答番号30）",
+      "title": "第6問 問2: 問2アオイさんは,常陸太田市の景観変化について調べることにした",
+      "promptSummary": "問2アオイさんは,常陸太田市の景観変化について調べることにした。次の図3は,図1中のXの範囲における1932年と2001年に発行された2万5千分の1地形図の一部(原寸,一部改変)である。図3から読み取れる変化を述べた文として適当でないものを,次ページの①~〇のうちから一つ選べ。30 1932年・い: .ほおれ一うや・2001年目:四のはめ、スSィミゞ三才町ー168ー( 2702ー168 )①旧市街地の東側では,道路が整備され新たな...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地形図"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q2.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 2,
+      "explanation": "【正解：2（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q3",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 3,
+      "answerNo": 31,
+      "points": 3,
+      "questionLabel": "第6問 問3（解答番号31）",
+      "title": "第6問 問3: 問3中心商店街で古い蔵や倉庫を見かけたアオイさんは,常陸太田市の商業の変遷を調べるために郷...",
+      "promptSummary": "問3中心商店街で古い蔵や倉庫を見かけたアオイさんは,常陸太田市の商業の変遷を調べるために郷土資料館を訪れた。アオイさんと職員との会話文中の空欄アとイに当てはまる語の正しい組合せを,下の①~@のうちから一つ選べ。31アオイ「中心商店街には古い蔵や倉庫が残されていますね」職員「これらの蔵や倉庫は,卸売業者によって使われていました。中心商店街は,近世以降には周辺地域から商品作物を集め,それらを出荷する集散地として発展しました。近世に増え...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q3.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q4",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 4,
+      "answerNo": 32,
+      "points": 3,
+      "questionLabel": "第6問 問4（解答番号32）",
+      "title": "第6問 問4: 問4アオイさんは,常陸太田市の農業について調べることにした",
+      "promptSummary": "問4アオイさんは,常陸太田市の農業について調べることにした。次の図4は,図1中のYの範囲のうち常陸太田市について,いくつかの農作物・家畜を販売目的で栽培・飼養した農家の戸数を集落ごとに示したものであり,カ~クは,稲,雑穀(ソバ,アワなど) ,肉牛のいずれかである。カ~クと品目名との正しい組合せを,下の①~⑥のうちから一つ選べ。尸50カキク統計年次は2010年。農林業センサスにより作成。①②③④⑤⑥稲雑穀雑穀肉牛肉牛キ雑穀肉牛稲肉牛...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q4.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q5",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 5,
+      "answerNo": 33,
+      "points": 3,
+      "questionLabel": "第6問 問5（解答番号33）",
+      "title": "第6問 問5: ひたち問5常陸太田市の近隣の日立市や水戸市では製造業が盛んであることを知ったアオイさんは,...",
+      "promptSummary": "ひたち問5常陸太田市の近隣の日立市や水戸市では製造業が盛んであることを知ったアオイさんは,常陸太田市の製造業の特徴について調べることにした。次の図5は常陸太田市,日立市,水戸市の製造業における事業所数の業種別割合を示したものであり,サ~スは,印刷・印刷関連,電気機械器具,木材・木製品のいずれかである。サ~スと業種名との正しい組合せを,下の①~⑥のうちから一っ選べ。常陸太田市食料品市日立ロ金属製品ロスロその他水市尸0 20 40 6...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "地理B"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q5.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 6,
+      "explanation": "【正解：6（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q6",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 6,
+      "answerNo": 34,
+      "points": 3,
+      "questionLabel": "第6問 問6（解答番号34）",
+      "title": "第6問 問6: 問6常陸太田市と周辺地域との関係に関心をもったアオイさんは,県庁所在都市である水戸市を含む...",
+      "promptSummary": "問6常陸太田市と周辺地域との関係に関心をもったアオイさんは,県庁所在都市である水戸市を含む周辺地域の主題図を作成した。次の図6は,人口と,いくつかの指標を市町村別に示したものであり,タ~ツは,人口減少率,第3次産業就業者率* ,通勤・通学者数に占める他市町村への通勤・通学者数の割合のいずれかである。指標名とタ~ツとの正しい組合せを,次ページの①~⑥のうちから一つ選べ。*その市町村で働く全就業者数に占める第3次産業就業者数の割合。常...",
+      "relatedCountries": [],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "人口"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q6.png",
+      "clipPdfPath": null,
+      "choicesCount": 6,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4",
+        "選択肢 5",
+        "選択肢 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "【正解：1（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    },
+    {
+      "questionId": "2017_makeup_d6_q7",
+      "examId": "2017_makeup",
+      "year": 2017,
+      "session": "makeup",
+      "sessionLabel": "2017年度 センター試験 追・再試験（地理B）",
+      "daimon": 6,
+      "toi": 7,
+      "answerNo": 35,
+      "points": 3,
+      "questionLabel": "第6問 問7（解答番号35）",
+      "title": "第6問 問7: やまだがわ問7山田川の上流部を歩いたアオイさんは,次の写真1のような山間部で「急傾斜地崩壊...",
+      "promptSummary": "やまだがわ問7山田川の上流部を歩いたアオイさんは,次の写真1のような山間部で「急傾斜地崩壊危険区域」と書かれた看板を目にし,図7のようにフィールドノートに付近の景観をスケッチして,後日,図書館で災害と防災について調べた。山間部の災害と防災に関する下のレポート中の下線部①~〇のうちから,適当でないものを一つ選べ。竹やにっている場所も加00年1月x ><日13:00山田川上第スケッ千新れた樹木「秬傾斜地崩壕危険区域」1 :工いれ何ろ与...",
+      "relatedCountries": [
+        "JPN"
+      ],
+      "relatedLayerIds": [],
+      "topicTags": [
+        "洪水"
+      ],
+      "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d6_q7.png",
+      "clipPdfPath": null,
+      "choicesCount": 4,
+      "choiceLabels": [
+        "選択肢 1",
+        "選択肢 2",
+        "選択肢 3",
+        "選択肢 4"
+      ],
+      "correctAnswer": 3,
+      "explanation": "【正解：3（配点 3点）】 問題画像の設問文および図表・選択肢を確認して復習してください。",
+      "isPrototypeSample": false
+    }
+  ]
+}

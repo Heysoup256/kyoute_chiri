@@ -328,12 +328,15 @@ export function App() {
   }
 
   const totalCountriesCount = Object.keys(countriesData.countries).length;
+  const examYearsList = pastExamsData.questions.map((q) => q.year);
+  const minExamYear = examYearsList.length > 0 ? Math.min(...examYearsList) : 2024;
+  const maxExamYear = examYearsList.length > 0 ? Math.max(...examYearsList) : 2026;
   const examModalQuestions =
     examModalMode === 'archive' ? pastExamsData.questions : relatedQuestions;
   const examModalTitle =
     examModalMode === 'archive'
-      ? `共通テスト過去問 全${pastExamsData.questions.length}問演習（2024〜2026年）`
-      : `${selectedCountry?.nameJa ?? fallbackNameEn ?? selectedIso3 ?? ''} に関連する共通テスト過去問`;
+      ? `共通テスト・センター過去問 全${pastExamsData.questions.length}問演習（${minExamYear}〜${maxExamYear}年）`
+      : `${selectedCountry?.nameJa ?? fallbackNameEn ?? selectedIso3 ?? ''} に関連する過去問`;
 
   return (
     <div className="flex h-full w-full flex-col bg-slate-50">
@@ -505,7 +508,7 @@ export function App() {
             className="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700"
           >
             <BookOpen className="h-3 w-3 text-indigo-600" />
-            過去問180問
+            過去問{pastExamsData.questions.length}問
           </button>
 
           {markedCount > 0 && (
