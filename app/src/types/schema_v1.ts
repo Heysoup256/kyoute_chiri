@@ -19,6 +19,27 @@ export interface ExamMeta {
   pastExamRefs: PastExamRef[];
 }
 
+export interface KnowledgeDeepDive {
+  mechanism?: string;
+  historicalShift?: string;
+  examTrap?: string;
+  compareNote?: string;
+  relatedIso3s?: string[];
+}
+
+export interface ExamConfusionPair {
+  partnerIso3: string;
+  partnerNameJa: string;
+  title: string;
+  diffPoint: string;
+}
+
+export interface ExamCheatSheet {
+  oneLineKey: string;
+  mustMemorizeStats: string[];
+  commonConfusions: ExamConfusionPair[];
+}
+
 export interface KnowledgeItem {
   id: string;
   category?: string;
@@ -28,6 +49,7 @@ export interface KnowledgeItem {
   worldRankNote?: string;
   clozeTerms?: string[];
   tags?: string[];
+  deepDive?: KnowledgeDeepDive;
   examMeta: ExamMeta;
 }
 
@@ -271,6 +293,7 @@ export interface CountryData {
   topCities?: TopCity[];
   specialRegions?: SpecialRegion[];
   subnational?: SubnationalProfile;
+  examCheatSheet?: ExamCheatSheet;
   relations?: CountryRelation[];
   highlightVisuals?: HighlightVisual[];
   examSummary: {

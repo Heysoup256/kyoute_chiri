@@ -3,9 +3,12 @@ import {
   Award,
   BookOpen,
   CheckCircle2,
+  ChevronDown,
+  ChevronUp,
   CloudSun,
   Compass,
   Factory,
+  GitCompareArrows,
   Globe2,
   Home,
   Landmark,
@@ -37,6 +40,7 @@ import { HythergraphChart } from '../charts/HythergraphChart';
 import { IndustryTernaryChart } from '../charts/IndustryTernaryChart';
 import { PopulationPyramidChart } from '../charts/PopulationPyramidChart';
 import { RichGeoText } from '../study/RichGeoText';
+import { CountryCompareModal } from './CountryCompareModal';
 import { SubnationalRegionTab } from './SubnationalRegionTab';
 
 const RELATION_CATEGORY_STYLE: Record<
@@ -98,14 +102,20 @@ function formatJapaneseGdp(gdpBillion: number): string {
 function KnowledgeItemCard({
   item,
   placeMatcher,
+  allCountries,
   onFocusPlace,
   onOpenQuestion,
+  onSelectCountry,
 }: {
   item: KnowledgeItem;
   placeMatcher?: PlaceMatcher | null;
+  allCountries?: Record<string, CountryData>;
   onFocusPlace: (place: PlaceEntry) => void;
   onOpenQuestion?: (questionId?: string) => void;
+  onSelectCountry?: (iso3: string) => void;
 }) {
+  const [deepDiveOpen, setDeepDiveOpen] = useState(false);
+
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
       <div className="flex flex-wrap items-start justify-between gap-2">
@@ -157,6 +167,97 @@ function KnowledgeItemCard({
             onFocusPlace={onFocusPlace}
           />
         </p>
+      )}
+
+      {item.deepDive && (
+        <div className="mt-2 border-t border-slate-100 pt-2">
+          <button
+            type="button"
+            onClick={() => setDeepDiveOpen((prev) => !prev)}
+            className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-indigo-200 bg-indigo-50/70 px-2.5 py-1.5 text-left text-[11.5px] font-bold text-indigo-800 transition hover:bg-indigo-100"
+          >
+            <span className="flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 shrink-0 text-indigo-600" />
+              深掘り解説（成因・時代変化・判別の決め手）
+            </span>
+            {deepDiveOpen ? (
+              <ChevronUp className="h-3.5 w-3.5 shrink-0" />
+            ) : (
+              <ChevronDown className="h-3.5 w-3.5 shrink-0" />
+            )}
+          </button>
+
+          {deepDiveOpen && (
+            <div className="mt-2 space-y-2 rounded-lg border border-slate-200 bg-slate-50/80 p-2.5 text-xs">
+              {item.deepDive.mechanism && (
+                <div className="rounded-md border border-sky-200 bg-sky-50/80 px-2.5 py-2">
+                  <div className="font-bold text-sky-900">成因・メカニズム</div>
+                  <p className="mt-0.5 leading-relaxed text-slate-700">
+                    <RichGeoText
+                      text={item.deepDive.mechanism}
+                      placeMatcher={placeMatcher}
+                      onFocusPlace={onFocusPlace}
+                    />
+                  </p>
+                </div>
+              )}
+              {item.deepDive.historicalShift && (
+                <div className="rounded-md border border-amber-200 bg-amber-50/80 px-2.5 py-2">
+                  <div className="font-bold text-amber-900">時代変化・最新動向</div>
+                  <p className="mt-0.5 leading-relaxed text-slate-700">
+                    <RichGeoText
+                      text={item.deepDive.historicalShift}
+                      placeMatcher={placeMatcher}
+                      onFocusPlace={onFocusPlace}
+                    />
+                  </p>
+                </div>
+              )}
+              {item.deepDive.examTrap && (
+                <div className="rounded-md border border-rose-200 bg-rose-50/80 px-2.5 py-2">
+                  <div className="font-bold text-rose-900">共テ判別の急所・ひっかけ注意</div>
+                  <p className="mt-0.5 leading-relaxed text-slate-700">
+                    <RichGeoText
+                      text={item.deepDive.examTrap}
+                      placeMatcher={placeMatcher}
+                      onFocusPlace={onFocusPlace}
+                    />
+                  </p>
+                </div>
+              )}
+              {item.deepDive.compareNote && (
+                <div className="rounded-md border border-emerald-200 bg-emerald-50/80 px-2.5 py-2">
+                  <div className="font-bold text-emerald-900">他国比較の視点</div>
+                  <p className="mt-0.5 leading-relaxed text-slate-700">
+                    <RichGeoText
+                      text={item.deepDive.compareNote}
+                      placeMatcher={placeMatcher}
+                      onFocusPlace={onFocusPlace}
+                    />
+                  </p>
+                </div>
+              )}
+              {item.deepDive.relatedIso3s &&
+                item.deepDive.relatedIso3s.length > 0 &&
+                onSelectCountry && (
+                  <div className="flex flex-wrap items-center gap-1 pt-0.5">
+                    <span className="text-[11px] font-bold text-slate-500">関連国へジャンプ:</span>
+                    {item.deepDive.relatedIso3s.map((relIso) => (
+                      <button
+                        key={relIso}
+                        type="button"
+                        onClick={() => onSelectCountry(relIso)}
+                        className="inline-flex items-center gap-0.5 rounded-full border border-indigo-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-indigo-700 hover:border-indigo-400 hover:bg-indigo-50"
+                      >
+                        {allCountries?.[relIso]?.nameJa ?? relIso}
+                        <ArrowUpRight className="h-3 w-3" />
+                      </button>
+                    ))}
+                  </div>
+                )}
+            </div>
+          )}
+        </div>
       )}
 
       {/* タグと出題履歴 */}
@@ -232,6 +333,8 @@ export function CountryDetailPanel({
   const [zoomPhoto, setZoomPhoto] = useState<DailyLifePhoto | null>(null);
   const [failedPhotoUrls, setFailedPhotoUrls] = useState<Record<string, boolean>>({});
   const [showAllExamYears, setShowAllExamYears] = useState(false);
+  const [isCompareOpen, setIsCompareOpen] = useState(false);
+  const [comparePartnerIso3, setComparePartnerIso3] = useState<string | null>(null);
 
   // スマホ用ボトムシートのスライドイン＆ドラッグ状態
   const [sheetEntered, setSheetEntered] = useState(false);
@@ -470,6 +573,20 @@ export function CountryDetailPanel({
           </div>
 
           <div className="flex shrink-0 items-center gap-0.5 md:gap-1">
+            {country && allCountries && (
+              <button
+                type="button"
+                onClick={() => {
+                  setComparePartnerIso3(null);
+                  setIsCompareOpen(true);
+                }}
+                className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-1.5 py-1 text-xs font-bold text-indigo-700 transition hover:bg-indigo-100 md:px-2.5"
+                title="他国と統計・特徴を並べて比較する"
+              >
+                <GitCompareArrows className="h-3.5 w-3.5" />
+                <span className="hidden md:inline">比較</span>
+              </button>
+            )}
             <button
               type="button"
               onClick={() => onToggleMark(iso3)}
@@ -673,6 +790,94 @@ export function CountryDetailPanel({
                       地域タブへ
                     </span>
                   </button>
+                )}
+                {country.examCheatSheet && (
+                  <div className="space-y-2.5 rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/90 via-white to-sky-50/70 p-3 shadow-2xs">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <span className="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-bold text-white">
+                        <Award className="h-3 w-3" />
+                        受験必勝・国別まとめ
+                      </span>
+                      {allCountries && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setComparePartnerIso3(null);
+                            setIsCompareOpen(true);
+                          }}
+                          className="inline-flex items-center gap-1 rounded-lg border border-indigo-300 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 transition hover:bg-indigo-50"
+                        >
+                          <GitCompareArrows className="h-3 w-3" />
+                          他国と並べて比較
+                        </button>
+                      )}
+                    </div>
+
+                    <p className="text-xs font-bold leading-relaxed text-slate-900 md:text-[13px]">
+                      {country.examCheatSheet.oneLineKey}
+                    </p>
+
+                    {country.examCheatSheet.mustMemorizeStats.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5">
+                        {country.examCheatSheet.mustMemorizeStats.map((statText) => (
+                          <span
+                            key={statText}
+                            className="rounded-md border border-indigo-200/80 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-700"
+                          >
+                            {statText}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    {country.examCheatSheet.commonConfusions.length > 0 && (
+                      <div className="space-y-1.5 border-t border-indigo-100 pt-2">
+                        <div className="text-[11px] font-bold text-indigo-800">
+                          紛らわしいライバル国との判別の決め手
+                        </div>
+                        <div className="grid grid-cols-1 gap-2">
+                          {country.examCheatSheet.commonConfusions.map((pair) => (
+                            <div
+                              key={pair.partnerIso3}
+                              className="rounded-lg border border-slate-200 bg-white p-2.5"
+                            >
+                              <div className="flex flex-wrap items-center justify-between gap-1.5">
+                                <span className="text-xs font-extrabold text-slate-900">
+                                  vs {pair.partnerNameJa}（{pair.title}）
+                                </span>
+                                <div className="flex items-center gap-1">
+                                  {allCountries && (
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        setComparePartnerIso3(pair.partnerIso3);
+                                        setIsCompareOpen(true);
+                                      }}
+                                      className="inline-flex items-center gap-1 rounded bg-indigo-600 px-2 py-0.5 text-[10.5px] font-bold text-white hover:bg-indigo-700"
+                                    >
+                                      <GitCompareArrows className="h-3 w-3" />
+                                      並べて比較
+                                    </button>
+                                  )}
+                                  <button
+                                    type="button"
+                                    onClick={() => onSelectCountry(pair.partnerIso3)}
+                                    className="inline-flex items-center gap-0.5 rounded border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10.5px] font-semibold text-slate-700 hover:bg-slate-100"
+                                  >
+                                    詳細
+                                    <ArrowUpRight className="h-3 w-3" />
+                                  </button>
+                                </div>
+                              </div>
+                              <p className="mt-1 text-[11.5px] leading-relaxed text-slate-600">
+                                {pair.diffPoint}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 )}
                 {!country.isBasicEntry && country.examSummary.frequentTopics.length > 0 && (
                   <div className="flex flex-wrap gap-1 md:hidden">
@@ -1076,8 +1281,10 @@ export function CountryDetailPanel({
                       key={item.id}
                       item={item}
                       placeMatcher={placeMatcher}
+                      allCountries={allCountries}
                       onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
+                      onSelectCountry={onSelectCountry}
                     />
                   ))}
                 </div>
@@ -1283,8 +1490,10 @@ export function CountryDetailPanel({
                       key={item.id}
                       item={item}
                       placeMatcher={placeMatcher}
+                      allCountries={allCountries}
                       onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
+                      onSelectCountry={onSelectCountry}
                     />
                   ))}
                 </div>
@@ -1296,8 +1505,10 @@ export function CountryDetailPanel({
                       key={item.id}
                       item={item}
                       placeMatcher={placeMatcher}
+                      allCountries={allCountries}
                       onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
+                      onSelectCountry={onSelectCountry}
                     />
                   ))}
                 </div>
@@ -1309,8 +1520,10 @@ export function CountryDetailPanel({
                       key={item.id}
                       item={item}
                       placeMatcher={placeMatcher}
+                      allCountries={allCountries}
                       onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
+                      onSelectCountry={onSelectCountry}
                     />
                   ))}
                 </div>
@@ -1544,8 +1757,10 @@ export function CountryDetailPanel({
                       key={item.id}
                       item={item}
                       placeMatcher={placeMatcher}
+                      allCountries={allCountries}
                       onFocusPlace={handlePlaceClick}
                       onOpenQuestion={onOpenExamModal}
+                      onSelectCountry={onSelectCountry}
                     />
                   ))}
                 </div>
@@ -1585,6 +1800,20 @@ export function CountryDetailPanel({
             </div>
           </div>
         </div>
+      )}
+
+      {isCompareOpen && country && allCountries && (
+        <CountryCompareModal
+          key={`${country.iso3}-${comparePartnerIso3 ?? 'default'}`}
+          initialLeftIso3={country.iso3}
+          initialRightIso3={comparePartnerIso3 ?? undefined}
+          allCountries={allCountries}
+          onClose={() => setIsCompareOpen(false)}
+          onJumpToCountry={(targetIso) => {
+            setIsCompareOpen(false);
+            onSelectCountry(targetIso);
+          }}
+        />
       )}
     </aside>
   );

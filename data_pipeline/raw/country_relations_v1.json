@@ -1005,18 +1005,25 @@
   ],
   "GRL": [
     {
-      "partnerIso3": "USA",
-      "partnerNameJa": "アメリカ",
-      "category": "trade",
+      "partnerIso3": "DNK",
+      "partnerNameJa": "デンマーク",
+      "category": "history",
       "direction": "mutual",
-      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+      "summary": "外交・防衛と年間多額の財政補助（ブロックグラント）を供与し、水産輸出の大半を受け入れる本国。"
     },
     {
-      "partnerIso3": "MEX",
-      "partnerNameJa": "メキシコ",
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
       "category": "trade",
+      "direction": "outgoing",
+      "summary": "回転寿司・スーパー等で馴染みの深い『北極エビ（甘エビ）』『カラスガレイ（エンガワ等）』重要輸出先！"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "history",
       "direction": "mutual",
-      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+      "summary": "北部のピトゥフィク（チューレ）宇宙軍基地を置き北極圏安全保障・レアアースに強く注目。"
     }
   ],
   "KAZ": [
@@ -1085,18 +1092,25 @@
   ],
   "MLI": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
-      "category": "trade",
+      "partnerIso3": "NER",
+      "partnerNameJa": "ニジェール",
+      "category": "history",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "ニジェール川を共有し、共に『サヘル諸国同盟(AES)』を結成してECOWASから離脱した軍政隣国。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "SEN",
+      "partnerNameJa": "セネガル",
       "category": "trade",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "海港への最短アクセス（ダカール港利用）として物資輸送で不可欠な西隣国。"
+    },
+    {
+      "partnerIso3": "ARE",
+      "partnerNameJa": "UAE",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "輸出総額の大部分を占める金の主要取引・精製拠点国。"
     }
   ],
   "MAR": [
@@ -1149,18 +1163,25 @@
   ],
   "NER": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "長年原発向けウランを採掘してきた旧宗主国だが、2023年クーデター後に仏軍撤退・資源契約見直し。"
+    },
+    {
+      "partnerIso3": "NGA",
+      "partnerNameJa": "ナイジェリア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "南部国境にまたがるハウサ人文化と電力を共有する人口・経済最大隣国。"
     },
     {
       "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "direction": "incoming",
+      "summary": "アガデム油田開発およびベナン港直結2,000km原油パイプラインを主導した投資相手国。"
     }
   ],
   "SWE": [
@@ -1277,18 +1298,25 @@
   ],
   "AGO": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "direction": "outgoing",
+      "summary": "輸出原油の半分前後を買い取る最大顧客であり、内戦後の『石油返済型インフラ整備（アンゴラモデル）』相手国。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
+      "partnerIso3": "PRT",
+      "partnerNameJa": "ポルトガル",
+      "category": "history",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "1975年まで支配した旧宗主国（逆にアンゴラ富裕層が近年リスボン不動産や企業を買収する逆投資も発生！）。"
+    },
+    {
+      "partnerIso3": "BRA",
+      "partnerNameJa": "ブラジル",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "大西洋対岸の同じポルトガル語姉妹国として食文化・建設事業・貿易で密接。"
     }
   ],
   "UZB": [
@@ -1408,18 +1436,25 @@
   ],
   "ZMB": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "TZA",
+      "partnerNameJa": "タンザニア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "中国の支援で敷かれたタンザン鉄道の終着ダルエスサラーム港を抱える外洋銅輸出口。"
     },
     {
       "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "1970年代のタンザン鉄道建設以来、銅鉱山保有・最大債権国として極めて深い関係。"
+    },
+    {
+      "partnerIso3": "COD",
+      "partnerNameJa": "コンゴ民主共和国",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "カッパーベルト鉱床地質を共有し、コンゴ側銅・硫酸輸送を通じる相互隣接圏。"
     }
   ],
   "CAF": [
@@ -1457,17 +1492,24 @@
   "TKM": [
     {
       "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "direction": "outgoing",
+      "summary": "中央アジア―中国天然ガスパイプラインを通じ輸出の7割以上を引き受ける絶対的顧客。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
-      "category": "trade",
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "history",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "オグズ・テュルク系の言語文化を共有し、首都建築工事等を請け負う親密パートナー。"
+    },
+    {
+      "partnerIso3": "UZB",
+      "partnerNameJa": "ウズベキスタン",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "アムダリヤ川の水利配分・カラクム運河取水を巡り調整が必要な隣国。"
     }
   ],
   "ESP": [
@@ -1550,18 +1592,25 @@
   ],
   "CMR": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
-      "category": "trade",
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "中部アフリカCFAフラン・教育インフラ・主要貿易で結ばれる旧仏側統治国。"
     },
     {
       "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "木材・原油の最大買手であり、新深水港クリビ港・水力発電ダムの主要建設融資国。"
+    },
+    {
+      "partnerIso3": "NGA",
+      "partnerNameJa": "ナイジェリア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "長い西国境を接しバカシ半島帰属平和解決・英語圏難民往来の重要隣国。"
     }
   ],
   "BWA": [
@@ -1658,18 +1707,25 @@
   ],
   "YEM": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
+      "partnerIso3": "SAU",
+      "partnerNameJa": "サウジアラビア",
+      "category": "history",
       "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "summary": "長い砂漠国境を共有する富裕産油隣国（出稼ぎ先かつ紛争直接介入当事国）。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
-      "category": "trade",
+      "partnerIso3": "IRN",
+      "partnerNameJa": "イラン",
+      "category": "history",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "北部のザイド派武装組織（フーシ派）との政治軍事連携を通じて地域緊張の背景となっている。"
+    },
+    {
+      "partnerIso3": "DJI",
+      "partnerNameJa": "ジブチ",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "幅30km未満のバブ・エル・マンデブ海峡を挟んだ対岸国（紅海避難ルートにも）。"
     }
   ],
   "OMN": [
@@ -1768,18 +1824,25 @@
   ],
   "BLR": [
     {
-      "partnerIso3": "DEU",
-      "partnerNameJa": "ドイツ",
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "軍事・経済同盟の中軸であり、割安な原油・天然ガスの供給元兼ベラルーシ機械・乳製品の最大輸出市場。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "一帯一路工業団地『グレートストーン』整備やカリ肥料の重要な対外取引パートナー。"
+    },
+    {
+      "partnerIso3": "UKR",
+      "partnerNameJa": "ウクライナ",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "南国境を接しプリピャチ流域とチェルノブイリの悲劇を共有する隣国だが2022年以降関係緊張。"
     }
   ],
   "BFA": [
@@ -1800,18 +1863,25 @@
   ],
   "KGZ": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
-      "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "約100万人規模のキルギス人が働きGDPの約25%に及ぶ出稼ぎ送金を送る最大依存先。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
+      "direction": "incoming",
+      "summary": "最大の輸入元かつ『中国―キルギス―ウズベキスタン鉄道』など一帯一路鉱業投資元。"
+    },
+    {
+      "partnerIso3": "UZB",
+      "partnerNameJa": "ウズベキスタン",
+      "category": "history",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "シルダリヤ川上流ダムの放水時期調整やフェルガナ飛び地国境画定を進める重要隣国。"
     }
   ],
   "ROU": [
@@ -1848,18 +1918,25 @@
   ],
   "GIN": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "direction": "outgoing",
+      "summary": "ボーキサイトの大半を中国へ輸出し、見返りに港湾鉄道・シマンドゥ鉱山インフラ建設を受ける。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "ARE",
+      "partnerNameJa": "UAE",
       "category": "trade",
+      "direction": "outgoing",
+      "summary": "国内産金の主要輸出・流通先および港湾ロジスティクス投資相手。"
+    },
+    {
+      "partnerIso3": "SEN",
+      "partnerNameJa": "セネガル",
+      "category": "migration",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "フータ・ジャロン地域出身のフラニ系商業ネットワークで深く繋がる北隣国。"
     }
   ],
   "CIV": [
@@ -2061,18 +2138,25 @@
   ],
   "UGA": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "KEN",
+      "partnerNameJa": "ケニア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "内陸国ウガンダの全輸入物資・コーヒー輸出の大半が通るモンバサ港回廊の要パートナー。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "SSD",
+      "partnerNameJa": "南スーダン",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "90万人規模の南スーダン難民を受け入れるとともに食品・建設材を輸出する最重要隣国。"
+    },
+    {
+      "partnerIso3": "TZA",
+      "partnerNameJa": "タンザニア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "アルバート湖原油パイプライン（EACOP）のタンガ港出口先であるEAC加盟隣国。"
     }
   ],
   "TUN": [
@@ -2109,18 +2193,25 @@
   ],
   "SEN": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "MLI",
+      "partnerNameJa": "マリ共和国",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "direction": "outgoing",
+      "summary": "内陸マリの海港（ダカール港・ダカール〜バマコ鉄道連絡）としての最大貿易相手。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "旧宗主国かつCFAフラン通貨ペッグ・語学文化・主要移民先としての密接パートナー。"
+    },
+    {
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "セネガル沿岸やモーリタニア沖で獲れるマダコ等の水産物重要供給国の一つ。"
     }
   ],
   "URY": [
@@ -2347,14 +2438,21 @@
       "partnerNameJa": "ドイツ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "最大の輸出先・投資元であり、自動車用電装・機械部品の委託生産およびブルガリア人移住労働者の主要先。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "500年のオスマン支配歴史（約8.4%トルコ系住民の存在）と陸路ボスポラス〜欧州物流の大関門。"
+    },
+    {
+      "partnerIso3": "ROU",
+      "partnerNameJa": "ルーマニア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "ドナウ川国境を挟み2007年同時EU加盟、ともに2024〜25年シェンゲン完全統合を果たした黒海隣国。"
     }
   ],
   "JOR": [
@@ -2412,34 +2510,48 @@
   ],
   "LVA": [
     {
+      "partnerIso3": "LTU",
+      "partnerNameJa": "リトアニア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "同じバルト語派・EUユーロ加盟国としてバルト貿易圏最大のパートナー。"
+    },
+    {
+      "partnerIso3": "EST",
+      "partnerNameJa": "エストニア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "北部隣国として自由移動・エネルギー・レイルバルティカ計画を共有。"
+    },
+    {
       "partnerIso3": "DEU",
       "partnerNameJa": "ドイツ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
-    },
-    {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
-      "category": "trade",
-      "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "歴史的ハンザ同盟時代以来の木製品・機械貿易および主要EU投資国。"
     }
   ],
   "LBR": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
-      "category": "trade",
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "history",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "米国解放奴隷が建国し米ドル流通・ファイアストン天然ゴム農園・安価船籍登録枠組みを築いた歴史的原点。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
       "category": "trade",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "日本の海運企業が税金・乗組員規制緩和を目的に大量登録する世界最大便宜置籍先の一つ。"
+    },
+    {
+      "partnerIso3": "GIN",
+      "partnerNameJa": "ギニア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "ニンバ鉄鉱石のブキャナン港鉄道輸送案を共有する北隣国。"
     }
   ],
   "IRL": [
@@ -2476,18 +2588,25 @@
   ],
   "GEO": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "summary": "最大の貿易パートナーでありバクー＝トビリシ＝ジェイハン(BTC)パイプラインと鉄道で直結。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
+      "partnerIso3": "AZE",
+      "partnerNameJa": "アゼルバイジャン",
       "category": "trade",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "燃料ガス供給元かつエネルギー・物流回廊（カスピ海⇄黒海）を共営する最重要隣国。"
+    },
+    {
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "2008年戦争による国交断絶を抱えつつも農産物・観光・露人IT避難民で複雑な相互依存残る。"
     }
   ],
   "CZE": [
@@ -2575,18 +2694,25 @@
   ],
   "LTU": [
     {
+      "partnerIso3": "POL",
+      "partnerNameJa": "ポーランド",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "歴史的ポーランド＝リトアニア共和国以来の共通カトリック基盤と、スヴァウキ回廊で結ばれるEU防衛・交通の生命線。"
+    },
+    {
       "partnerIso3": "DEU",
       "partnerNameJa": "ドイツ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "最大貿易パートナーの一つで精密機械・レーザー部品・EU防備提携相手。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
-      "category": "trade",
+      "partnerIso3": "RUS",
+      "partnerNameJa": "ロシア",
+      "category": "history",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "西側飛び地カリーニングラード州を挟んで接するが、ウクライナ侵攻以降は資源・電力取引を遮断。"
     }
   ],
   "PAN": [
@@ -2623,18 +2749,25 @@
   ],
   "EST": [
     {
-      "partnerIso3": "DEU",
-      "partnerNameJa": "ドイツ",
+      "partnerIso3": "FIN",
+      "partnerNameJa": "フィンランド",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "フィンランド湾を挟んで同じウラル語族（言語近似）を共有し、電力網・資本・観光・通勤で最も密接な経済関係。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
+      "partnerIso3": "LVA",
+      "partnerNameJa": "ラトビア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "バルト三国として電力・輸送網『レイル・バルティカ』を共有する最重要EU隣国。"
+    },
+    {
+      "partnerIso3": "SWE",
+      "partnerNameJa": "スウェーデン",
+      "category": "trade",
+      "direction": "incoming",
+      "summary": "銀行・通信・木材加工分野で主要北欧投資元・輸出パートナー。"
     }
   ],
   "MDA": [
@@ -2655,18 +2788,25 @@
   ],
   "BIH": [
     {
-      "partnerIso3": "DEU",
-      "partnerNameJa": "ドイツ",
+      "partnerIso3": "HRV",
+      "partnerNameJa": "クロアチア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "長い国境を共有しアドリア海プロチェ港を利用する最大級の貿易隣国（ネウムとペリェシャツ橋で関係深い）。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
-      "category": "trade",
+      "partnerIso3": "DEU",
+      "partnerNameJa": "ドイツ",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "内戦時からの難民定住と現在の最大級の貿易＆若年労働者移住・送金元。"
+    },
+    {
+      "partnerIso3": "TUR",
+      "partnerNameJa": "トルコ",
+      "category": "history",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "オスマン帝国の歴史遺産で結びつき、モスタル復興やインフラ投資・文化交流を展開。"
     }
   ],
   "NLD": [
@@ -2798,17 +2938,24 @@
   "DOM": [
     {
       "partnerIso3": "USA",
-      "partnerNameJa": "アメリカ",
-      "category": "trade",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "migration",
       "direction": "mutual",
-      "summary": "地理的近接性から貿易・観光・送金・人的往来で極めて密接。"
+      "summary": "総輸出の約半分（医療機器等）を吸収し、200万人規模の在米系移民・大リーガーからの送金＆観光客を送る。"
     },
     {
-      "partnerIso3": "MEX",
-      "partnerNameJa": "メキシコ",
-      "category": "trade",
+      "partnerIso3": "HTI",
+      "partnerNameJa": "ハイチ",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "一つの島に共存しつつも経済/人口/森林状態の差が激しく、難民流入規制と国境管理が最大焦点。"
+    },
+    {
+      "partnerIso3": "ESP",
+      "partnerNameJa": "スペイン",
+      "category": "tourism",
       "direction": "mutual",
-      "summary": "中北米・ラテンアメリカ地域枠組みでの交流。"
+      "summary": "スペイン語歴史縁を基盤にプンタカナ等の大型リゾートホテル資本投資を主導。"
     }
   ],
   "ARM": [
@@ -2845,18 +2992,25 @@
   ],
   "NCL": [
     {
-      "partnerIso3": "AUS",
-      "partnerNameJa": "オーストラリア",
-      "category": "trade",
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
       "direction": "mutual",
-      "summary": "南太平洋地域フォーラムや援助・航空ハブを通じて緊密。"
+      "summary": "フランス領（特別共同体）として年多額の財政補助・CFP通貨保証・フランス軍駐留を受ける。"
     },
     {
-      "partnerIso3": "NZL",
-      "partnerNameJa": "ニュージーランド",
+      "partnerIso3": "JPN",
+      "partnerNameJa": "日本",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "太平洋島嶼地域の教育・労働・観光・地域協力を共有。"
+      "direction": "outgoing",
+      "summary": "ステンレス鋼原料向けニッケル鉱・フェロニッケル輸出相手かつ歴史ある『天国に一番近い島』観光送客国。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "現在のニッケル関連最大の輸出先（ただしインドネシア台頭でシェア低下競争）。"
     }
   ],
   "ISR": [
@@ -2925,18 +3079,25 @@
   ],
   "BTN": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "summary": "水力ダム建設投資から電力のほぼ全量購入、生活物資供給まで外交・貿易約8割を占める特別パートナー。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
-      "category": "trade",
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "history",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "チベット自治区と国境接し国境画定・シルクロード地政学の均衡課題を抱える北隣国。"
+    },
+    {
+      "partnerIso3": "AUS",
+      "partnerNameJa": "オーストラリア",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "近年、英語教育を受けたブータン若年層の最大の留学・就労移住先となっている。"
     }
   ],
   "ALB": [
@@ -2977,14 +3138,21 @@
       "partnerNameJa": "ドイツ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "自動車部品・工作機械・医薬品の最大貿易相手国で製造サプライチェーンで一体化。"
     },
     {
-      "partnerIso3": "FRA",
-      "partnerNameJa": "フランス",
+      "partnerIso3": "ITA",
+      "partnerNameJa": "イタリア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "カルスト台地やアドリア海コペル〜トリエステ港圏を共有し貿易・歴史的に緊密。"
+    },
+    {
+      "partnerIso3": "HRV",
+      "partnerNameJa": "クロアチア",
+      "category": "trade",
+      "direction": "mutual",
+      "summary": "旧ユーゴから共に離脱し現在クルシュコ原発の共同所有・EU/ユーロ/シェンゲン完全一体関係。"
     }
   ],
   "BHS": [
@@ -3037,18 +3205,25 @@
   ],
   "RWA": [
     {
-      "partnerIso3": "ZAF",
-      "partnerNameJa": "南アフリカ",
+      "partnerIso3": "KEN",
+      "partnerNameJa": "ケニア",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アフリカ連合・地域経済圏における商業・物流交流。"
+      "summary": "EAC共通市場かつ海港モンバサを通じた外洋貿易の重要パートナー。"
     },
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
+      "partnerIso3": "GBR",
+      "partnerNameJa": "イギリス",
+      "category": "history",
       "direction": "mutual",
-      "summary": "資源開発・インフラ整備（道路・港湾等）で投資関係。"
+      "summary": "旧ベルギー領ながらフランスとの対立を経て2009年英連邦へ異例の加盟・開発協力関係を結ぶ。"
+    },
+    {
+      "partnerIso3": "COD",
+      "partnerNameJa": "コンゴ民主共和国",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "キヴ湖を挟んで接し東部資源・武装勢力巡る複雑な歴史・摩擦関係を持つ大隣国。"
     }
   ],
   "FLK": [
@@ -3085,18 +3260,25 @@
   ],
   "KWT": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
-      "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
-    },
-    {
       "partnerIso3": "JPN",
       "partnerNameJa": "日本",
       "category": "trade",
-      "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "direction": "outgoing",
+      "summary": "日本の総原油輸入の上位（約8〜9%）を占める重要な安定エネルギー供給パートナー。"
+    },
+    {
+      "partnerIso3": "CHN",
+      "partnerNameJa": "中華人民共和国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "最大の原油輸出先かつインフラ建設受注パートナー。"
+    },
+    {
+      "partnerIso3": "IND",
+      "partnerNameJa": "インド",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "クウェート国内最大の外国人労働者（約100万人超）出身国であり、原油の重要取引先。"
     }
   ],
   "BLZ": [
@@ -3213,18 +3395,25 @@
   ],
   "LBN": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
-      "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "partnerIso3": "SYR",
+      "partnerNameJa": "シリア",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "内戦に伴う100万人超のシリア難民流入先となり国内経済・宗派バランスに決定的影響。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
-      "category": "trade",
+      "partnerIso3": "FRA",
+      "partnerNameJa": "フランス",
+      "category": "history",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "第一次大戦後の仏委任統治時代以来のフランス語・文化・キリスト教マロン派保護の強い絆。"
+    },
+    {
+      "partnerIso3": "ARE",
+      "partnerNameJa": "UAE",
+      "category": "migration",
+      "direction": "outgoing",
+      "summary": "多数の高学歴レバノン人専門職が湾岸や世界へ渡り、母国へ重要な送金を行う。"
     }
   ],
   "GMB": [
@@ -3357,18 +3546,25 @@
   ],
   "BRN": [
     {
-      "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
-      "category": "trade",
-      "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
-    },
-    {
       "partnerIso3": "JPN",
       "partnerNameJa": "日本",
       "category": "trade",
+      "direction": "outgoing",
+      "summary": "1972年以来、日本のクリーンなLNG輸入の歴史的かつ極めて重要な安定輸出パートナー。"
+    },
+    {
+      "partnerIso3": "SGP",
+      "partnerNameJa": "シンガポール",
+      "category": "trade",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "通貨等価交換協定（シンガポールドルと1:1交換可能！）を結ぶ特殊な緊密金融パートナー。"
+    },
+    {
+      "partnerIso3": "MYS",
+      "partnerNameJa": "マレーシア",
+      "category": "history",
+      "direction": "mutual",
+      "summary": "陸上国境をすべて東マレーシア・サラワク州に囲まれる隣国（マレー文化・イスラム圏共有）。"
     }
   ],
   "CYP": [
@@ -3457,14 +3653,21 @@
       "partnerNameJa": "ドイツ",
       "category": "trade",
       "direction": "mutual",
-      "summary": "EU・欧州経済圏の中心国として貿易・産業サプライチェーンで連結。"
+      "summary": "最大の貿易相手であり毎日約5万人超がドイツ側から通勤する密接経済関係。"
     },
     {
       "partnerIso3": "FRA",
       "partnerNameJa": "フランス",
-      "category": "trade",
+      "category": "migration",
+      "direction": "incoming",
+      "summary": "最大約12万人の仏人越境通勤者を受け入れ、ビジネス公用語としてもフランス語が主流。"
+    },
+    {
+      "partnerIso3": "BEL",
+      "partnerNameJa": "ベルギー",
+      "category": "history",
       "direction": "mutual",
-      "summary": "欧州域内貿易・観光・EU市場で交流。"
+      "summary": "1921年のベルギー・ルクセンブルク経済同盟からベネルクス・EU創設まで一体で歩んだ最古パートナー。"
     }
   ],
   "PYF": [
@@ -3614,17 +3817,24 @@
   "HKG": [
     {
       "partnerIso3": "CHN",
-      "partnerNameJa": "中国",
+      "partnerNameJa": "中華人民共和国",
       "category": "trade",
       "direction": "mutual",
-      "summary": "アジア地域の主要な貿易・製造・資源取引パートナー。"
+      "summary": "水・食料・輸入再輸出の最大のパートナーかつグレーターベイエリアで一体化する母国特別行政区。"
     },
     {
-      "partnerIso3": "JPN",
-      "partnerNameJa": "日本",
+      "partnerIso3": "TWN",
+      "partnerNameJa": "台湾",
       "category": "trade",
       "direction": "mutual",
-      "summary": "インフラ協力・工業製品・観光面での地域交流。"
+      "summary": "台湾製半導体・電子部品の中継物流・日本産果実等の重要なアジア貿易相手。"
+    },
+    {
+      "partnerIso3": "USA",
+      "partnerNameJa": "アメリカ合衆国",
+      "category": "trade",
+      "direction": "outgoing",
+      "summary": "米国向け再輸出電子・精密製品の主要取引先（近年は米中緊張・優遇撤廃で課題）。"
     }
   ],
   "CUW": [

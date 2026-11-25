@@ -3321,102 +3321,70 @@
   ],
   "KWT": [
     {
-      "id": "hv_foreign_kwt",
+      "id": "hv_kwt_foreign_pop",
       "placement": "population",
       "kind": "bar",
-      "title": "総人口に占める外国籍・海外出身者割合（比較目安）",
-      "subtitle": "出稼ぎ労働・国際金融ハブ型国家の特徴",
+      "title": "湾岸GCC諸国の総人口に占める外国人割合比較（%）",
       "bars": [
         {
-          "label": "アラブ首長国連邦(UAE)",
-          "value": 88.5,
-          "isTarget": false
+          "label": "UAE",
+          "value": 88,
+          "color": "#64748b"
         },
         {
           "label": "カタール",
-          "value": 87.0,
-          "isTarget": false
+          "value": 77,
+          "color": "#94a3b8"
         },
         {
           "label": "クウェート",
-          "value": 68.0,
-          "isTarget": true
+          "value": 72,
+          "isTarget": true,
+          "color": "#2563eb"
         },
         {
-          "label": "ルクセンブルク",
-          "value": 47.0,
-          "isTarget": false
-        },
-        {
-          "label": "シンガポール",
-          "value": 40.0,
-          "isTarget": false
-        },
-        {
-          "label": "スイス",
-          "value": 27.0,
-          "isTarget": false
-        },
-        {
-          "label": "日本（参考）",
-          "value": 2.8,
-          "isTarget": false
+          "label": "サウジアラビア",
+          "value": 41,
+          "color": "#cbd5e1"
         }
       ],
       "unit": "%",
       "maxValue": 100,
-      "note": "湾岸産油国（UAE・カタール）では南アジア等からの建設・サービス男性労働者が人口の大半を占め、人口ピラミッドの青壮年男性が突出する。シンガポールやスイスは高度外国人材受入が特徴。",
-      "source": "UN International Migrant Stock 目安"
+      "note": "産油小国ほど国内労働力不足を海外出稼ぎ（インド・バングラ・比・エジプト等）で補う割合が極端に高い"
     }
   ],
   "LUX": [
     {
-      "id": "hv_foreign_lux",
-      "placement": "population",
+      "id": "hv_lux_gdp_trade",
+      "placement": "overview",
       "kind": "bar",
-      "title": "総人口に占める外国籍・海外出身者割合（比較目安）",
-      "subtitle": "出稼ぎ労働・国際金融ハブ型国家の特徴",
+      "title": "欧州・世界の突出した1人あたりGDP高水準国比較（USD）",
       "bars": [
         {
-          "label": "アラブ首長国連邦(UAE)",
-          "value": 88.5,
-          "isTarget": false
-        },
-        {
-          "label": "カタール",
-          "value": 87.0,
-          "isTarget": false
-        },
-        {
-          "label": "クウェート",
-          "value": 68.0,
-          "isTarget": false
-        },
-        {
-          "label": "ルクセンブルク",
-          "value": 47.0,
-          "isTarget": true
-        },
-        {
-          "label": "シンガポール",
-          "value": 40.0,
-          "isTarget": false
+          "label": "ルクセンブルク（金融＆越境通勤効果）",
+          "value": 147252,
+          "isTarget": true,
+          "color": "#4f46e5"
         },
         {
           "label": "スイス",
-          "value": 27.0,
-          "isTarget": false
+          "value": 100000,
+          "color": "#64748b"
         },
         {
-          "label": "日本（参考）",
-          "value": 2.8,
-          "isTarget": false
+          "label": "シンガポール",
+          "value": 89000,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ドイツ（参考大国）",
+          "value": 54000,
+          "color": "#cbd5e1"
         }
       ],
-      "unit": "%",
-      "maxValue": 100,
-      "note": "湾岸産油国（UAE・カタール）では南アジア等からの建設・サービス男性労働者が人口の大半を占め、人口ピラミッドの青壮年男性が突出する。シンガポールやスイスは高度外国人材受入が特徴。",
-      "source": "UN International Migrant Stock 目安"
+      "unit": "USD",
+      "maxValue": 160000,
+      "note": "分母（自国居住人口約68万）に越境通勤者20万人超が含まれないため見かけの1人あたりGDPが極めて高い特殊効果もある！"
     }
   ],
   "SGP": [
@@ -5782,6 +5750,912 @@
           "国内最大の商業都市ホーチミン＋外資繊維・IT拠点"
         ]
       ]
+    }
+  ],
+  "EST": [
+    {
+      "id": "hv_est_baltic_compare",
+      "placement": "culture",
+      "kind": "table",
+      "title": "バルト三国（EST・LVA・LTU）の必須識別比較表",
+      "headers": [
+        "国名",
+        "語族・系統（最頻出！）",
+        "伝統多数派宗教",
+        "特徴・強み"
+      ],
+      "rows": [
+        [
+          "エストニア",
+          "ウラル語族（フィン・ウゴル系）",
+          "無宗教/プロテスタント（ルーテル）",
+          "電子政府『e-Estonia』・北欧密接"
+        ],
+        [
+          "ラトビア",
+          "印欧語族（バルト語派）",
+          "プロテスタント（ルーテル中心）",
+          "最大都市リガ（歴史港湾）・水力・ロシア系24%"
+        ],
+        [
+          "リトアニア",
+          "印欧語族（バルト語派）",
+          "カトリック（約74%＝ポーランド影響）",
+          "レーザー産業・風力＆LNG脱露・ロシア系約5%"
+        ]
+      ]
+    }
+  ],
+  "LVA": [
+    {
+      "id": "hv_lva_power_mix",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "ラトビアの発電電力量構成（水力・バイオマス主体・脱露達成）",
+      "slices": [
+        {
+          "label": "水力（ダウガヴァ川ダム群）",
+          "value": 52,
+          "color": "#0284c7"
+        },
+        {
+          "label": "天然ガス等",
+          "value": 28,
+          "color": "#f59e0b"
+        },
+        {
+          "label": "バイオマス・風力等再エネ",
+          "value": 20,
+          "color": "#22c55e"
+        }
+      ],
+      "unit": "%",
+      "note": "ダウガヴァ川の豊富な水量によりバルト三国中最も水力発電比率が高い"
+    }
+  ],
+  "LTU": [
+    {
+      "id": "hv_ltu_wind_shift",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "バルト三国の1人あたりGDP（成長・購買力平価・名目比較 USD）",
+      "bars": [
+        {
+          "label": "エストニア",
+          "value": 34418,
+          "color": "#64748b"
+        },
+        {
+          "label": "リトアニア",
+          "value": 32959,
+          "isTarget": true,
+          "color": "#2563eb"
+        },
+        {
+          "label": "ラトビア",
+          "value": 26312,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ベラルーシ（非EU比較）",
+          "value": 10279,
+          "color": "#cbd5e1"
+        }
+      ],
+      "unit": "USD",
+      "maxValue": 38000,
+      "note": "EU・ユーロ加盟のバルト三国は同じ旧ソ連圏の非EU隣国ベラルーシの約3倍もの所得水準を実現！"
+    }
+  ],
+  "BLR": [
+    {
+      "id": "hv_blr_potash_export",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "世界のカリ塩（カリウム肥料）生産上位国比較（万t・K₂O換算目安）",
+      "bars": [
+        {
+          "label": "カナダ",
+          "value": 1350,
+          "color": "#64748b"
+        },
+        {
+          "label": "ロシア",
+          "value": 650,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "中国",
+          "value": 600,
+          "color": "#cbd5e1"
+        },
+        {
+          "label": "ベラルーシ",
+          "value": 420,
+          "isTarget": true,
+          "color": "#2563eb"
+        }
+      ],
+      "unit": "万t",
+      "maxValue": 1500,
+      "note": "制裁前は世界シェア約2割を占めた最重要農業肥料の供給源"
+    }
+  ],
+  "BGR": [
+    {
+      "id": "hv_bgr_pop_shrink",
+      "placement": "population",
+      "kind": "line",
+      "title": "ブルガリアの急激な総人口減少推移（万人・1989→2024年）",
+      "series": [
+        {
+          "label": "1989年（東欧革命時）",
+          "value": 899
+        },
+        {
+          "label": "2000年",
+          "value": 817
+        },
+        {
+          "label": "2007年（EU加盟）",
+          "value": 755
+        },
+        {
+          "label": "2015年",
+          "value": 718
+        },
+        {
+          "label": "2024年（約3割減！）",
+          "value": 643
+        }
+      ],
+      "unit": "万人",
+      "note": "低出生率＋EU加盟に伴う労働移動自由化による西欧流出が重なった極端な人口減少例"
+    }
+  ],
+  "SVN": [
+    {
+      "id": "hv_svn_gini_gdp",
+      "placement": "overview",
+      "kind": "bar",
+      "title": "旧ユーゴ諸国の1人あたりGDPの劇的な格差対比（2025目安 USD）",
+      "bars": [
+        {
+          "label": "スロベニア（2007ユーロ・優等生）",
+          "value": 37376,
+          "isTarget": true,
+          "color": "#10b981"
+        },
+        {
+          "label": "クロアチア（2023ユーロ）",
+          "value": 27104,
+          "color": "#3b82f6"
+        },
+        {
+          "label": "セルビア（EU未加盟）",
+          "value": 15262,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ボスニア・ヘルツェゴビナ",
+          "value": 10382,
+          "color": "#cbd5e1"
+        }
+      ],
+      "unit": "USD",
+      "maxValue": 40000,
+      "note": "北西の旧ハプスブルク工業帯（スロベニア）と内戦経験南部（ボスニア等）で3〜4倍近い所得差！"
+    }
+  ],
+  "BIH": [
+    {
+      "id": "hv_bih_mosaic",
+      "placement": "culture",
+      "kind": "donut",
+      "title": "ボスニア・ヘルツェゴビナの宗教・民族3極構成",
+      "slices": [
+        {
+          "label": "ボシュニャク人（イスラム教）",
+          "value": 50.7,
+          "color": "#10b981"
+        },
+        {
+          "label": "セルビア人（正教）",
+          "value": 30.8,
+          "color": "#3b82f6"
+        },
+        {
+          "label": "クロアチア人（カトリック）",
+          "value": 15.4,
+          "color": "#f59e0b"
+        },
+        {
+          "label": "その他",
+          "value": 3.1,
+          "color": "#94a3b8"
+        }
+      ],
+      "unit": "%",
+      "note": "同系言語を話しながら宗教で分かれた3民族がモザイク状に混住し、2構成体連邦制で均衡"
+    }
+  ],
+  "HKG": [
+    {
+      "id": "hv_hkg_cargo_trade",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "世界の国際航空貨物取扱量 上位拠点比較（万t/年・2023）",
+      "bars": [
+        {
+          "label": "香港（HKG・世界1位）",
+          "value": 433,
+          "isTarget": true,
+          "color": "#2563eb"
+        },
+        {
+          "label": "メンフィス（米・FedEx拠点）",
+          "value": 388,
+          "color": "#64748b"
+        },
+        {
+          "label": "上海浦東（中国）",
+          "value": 344,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "アンカレジ（米・極圏給油ハブ）",
+          "value": 338,
+          "color": "#cbd5e1"
+        },
+        {
+          "label": "仁川（韓国）",
+          "value": 274,
+          "color": "#cbd5e1"
+        }
+      ],
+      "unit": "万t",
+      "maxValue": 500,
+      "note": "精密電子・半導体・越境EC貨物の高付加価値空輸により香港空港は長年世界トップ"
+    }
+  ],
+  "LBN": [
+    {
+      "id": "hv_lbn_religion_split",
+      "placement": "culture",
+      "kind": "donut",
+      "title": "レバノンの独特な多宗派混成社会（公認18宗派均衡枠組み）",
+      "slices": [
+        {
+          "label": "イスラム教（スンニ派）",
+          "value": 31,
+          "color": "#10b981"
+        },
+        {
+          "label": "イスラム教（シーア派）",
+          "value": 30,
+          "color": "#0284c7"
+        },
+        {
+          "label": "キリスト教（マロン派・正教等）",
+          "value": 34,
+          "color": "#6366f1"
+        },
+        {
+          "label": "ドゥルーズ派",
+          "value": 5,
+          "color": "#f59e0b"
+        }
+      ],
+      "unit": "%",
+      "note": "中東アラブ諸国の中で例外的にキリスト教勢力が大きく、宗派ごとの議席・役職割当制を採用"
+    }
+  ],
+  "YEM": [
+    {
+      "id": "hv_yem_arabian_gdp",
+      "placement": "overview",
+      "kind": "bar",
+      "title": "アラビア半島諸国の極端な南北所得格差（1人あたりGDP USD）",
+      "bars": [
+        {
+          "label": "カタール",
+          "value": 81000,
+          "color": "#64748b"
+        },
+        {
+          "label": "UAE",
+          "value": 53000,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "サウジアラビア",
+          "value": 33000,
+          "color": "#cbd5e1"
+        },
+        {
+          "label": "イエメン（GCC外・内戦）",
+          "value": 634,
+          "isTarget": true,
+          "color": "#ef4444"
+        }
+      ],
+      "unit": "USD",
+      "maxValue": 85000,
+      "note": "同じアラビア半島なのに石油有無と内戦で50〜120倍もの1人当たりGDP格差が存在！"
+    }
+  ],
+  "TKM": [
+    {
+      "id": "hv_tkm_gas_export",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "旧ソ連中央アジア諸国の対外輸出構造の違い（資源特化比較・主輸出品割合）",
+      "bars": [
+        {
+          "label": "トルクメニスタン（天然ガス特化）",
+          "value": 82,
+          "isTarget": true,
+          "color": "#0284c7"
+        },
+        {
+          "label": "カザフスタン（原油中心）",
+          "value": 58,
+          "color": "#64748b"
+        },
+        {
+          "label": "キルギス（金・再輸出等）",
+          "value": 36,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ウズベキスタン（金・ガス・綿花/製品多様）",
+          "value": 34,
+          "color": "#cbd5e1"
+        }
+      ],
+      "unit": "%（燃料資源輸出依存概算）",
+      "maxValue": 100,
+      "note": "中央アジア最大のガス専業・対中依存輸出モデル"
+    }
+  ],
+  "KGZ": [
+    {
+      "id": "hv_kgz_elevation_water",
+      "placement": "overview",
+      "kind": "table",
+      "title": "中央アジア旧ソ連5カ国の『平坦砂漠ガス油田型 vs 山岳水力送金型』の完全対比",
+      "headers": [
+        "国タイプ",
+        "代表国",
+        "地形・資源",
+        "水・エネルギー立場"
+      ],
+      "rows": [
+        [
+          "山岳上流型",
+          "キルギス・タジキスタン",
+          "天山/パミール山脈・水力・金・氷河",
+          "上流国（冬発電放水）＝個人送金依存非常に高い"
+        ],
+        [
+          "平野下流型",
+          "ウズベク・トルクメン・カザフ",
+          "砂漠盆地・原油・天然ガス・綿花",
+          "下流国（夏灌漑取水）＝地下化石資源輸出依存"
+        ]
+      ]
+    }
+  ],
+  "BRN": [
+    {
+      "id": "hv_brn_asean_income",
+      "placement": "overview",
+      "kind": "bar",
+      "title": "ASEAN諸国の1人当たりGDPの極端な2極・多層構造（USD・2025目安）",
+      "bars": [
+        {
+          "label": "シンガポール（金融貿易）",
+          "value": 89000,
+          "color": "#64748b"
+        },
+        {
+          "label": "ブルネイ（産油ガス小国）",
+          "value": 32235,
+          "isTarget": true,
+          "color": "#10b981"
+        },
+        {
+          "label": "マレーシア",
+          "value": 14000,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "タイ",
+          "value": 7600,
+          "color": "#cbd5e1"
+        },
+        {
+          "label": "ミャンマー",
+          "value": 1200,
+          "color": "#e2e8f0"
+        }
+      ],
+      "unit": "USD",
+      "maxValue": 95000,
+      "note": "ASEAN10カ国の中ではシンガポールに次ぐ『唯一の高所得・福祉産油国』という異色ポジション"
+    }
+  ],
+  "BTN": [
+    {
+      "id": "hv_btn_forest_power",
+      "placement": "overview",
+      "kind": "donut",
+      "title": "ブータンの土地被覆＆クリーン発電体制（約100%水力）",
+      "slices": [
+        {
+          "label": "森林被覆（約70%・憲法60%下限義務）",
+          "value": 71,
+          "color": "#16a34a"
+        },
+        {
+          "label": "高山岩場・氷河（北部ヒマラヤ）",
+          "value": 21,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "農耕地・牧草地・居住地",
+          "value": 8,
+          "color": "#f59e0b"
+        }
+      ],
+      "unit": "%",
+      "note": "豊富な森林吸収により世界で極めて珍しいCO2『吸収超過（カーボンネガティブ）』国！"
+    }
+  ],
+  "GEO": [
+    {
+      "id": "hv_geo_caucasus_three",
+      "placement": "culture",
+      "kind": "table",
+      "title": "南コーカサス三国（ジョージア・アルメニア・アゼルバイジャン）の完全比較",
+      "headers": [
+        "国名",
+        "言語語族",
+        "主要宗教",
+        "地形・国際対立・エネルギー"
+      ],
+      "rows": [
+        [
+          "ジョージア",
+          "カルトヴェリ語族（固有文字）",
+          "キリスト教（正教）",
+          "黒海面す・通過回廊（BTC）／南オセチア・アブハジア問題"
+        ],
+        [
+          "アルメニア",
+          "印欧語族（固有文字）",
+          "キリスト教（東方諸教会）",
+          "内陸高原・国境封鎖（土/アゼ）／露から距離を置き欧米接近"
+        ],
+        [
+          "アゼルバイジャン",
+          "テュルク語族（ラテン文字）",
+          "イスラム教（シーア派）",
+          "カスピ海油田・ガス田／トルコ同盟・飛地ナヒチェヴァン"
+        ]
+      ]
+    }
+  ],
+  "GIN": [
+    {
+      "id": "hv_gin_bauxite_gap",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "ギニアの『ボーキサイト採掘2位 vs アルミ精錬ほぼゼロ』対比（2023・万t換算）",
+      "bars": [
+        {
+          "label": "オーストラリア（鉱石1位）",
+          "value": 9800,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ギニア（鉱石2位＝ほぼ原鉱輸出）",
+          "value": 9700,
+          "isTarget": true,
+          "color": "#ea580c"
+        },
+        {
+          "label": "ギニア アルミ精錬量（電力不足！）",
+          "value": 0,
+          "color": "#ef4444"
+        },
+        {
+          "label": "カナダ（鉱石ゼロでも精錬300万t）",
+          "value": 300,
+          "color": "#0284c7"
+        }
+      ],
+      "unit": "万t",
+      "maxValue": 10500,
+      "note": "安価電力あるカナダが精錬する一方、電力不足のギニアは原鉱のまま輸出（工業化ギャップの典型）"
+    }
+  ],
+  "SEN": [
+    {
+      "id": "hv_sen_trade_div",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "セネガルの輸出構造多角化（脱・落花生単作への移行目安）",
+      "slices": [
+        {
+          "label": "金（近年東部開発で急増）",
+          "value": 24,
+          "color": "#f59e0b"
+        },
+        {
+          "label": "精製油・新規原油ガス",
+          "value": 22,
+          "color": "#334155"
+        },
+        {
+          "label": "リン酸・肥料化学",
+          "value": 16,
+          "color": "#3b82f6"
+        },
+        {
+          "label": "水産物（タコ・魚）＆落花生油",
+          "value": 18,
+          "color": "#10b981"
+        },
+        {
+          "label": "農産・セメント他",
+          "value": 20,
+          "color": "#94a3b8"
+        }
+      ],
+      "unit": "%",
+      "note": "かつて輸出の7〜8割だった落花生から金・リン鉱石・水産・エネルギーへの多角化を達成"
+    }
+  ],
+  "MLI": [
+    {
+      "id": "hv_mli_gold_export",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "マリ共和国の輸出構成（金への極端なモノカルチャー依存）",
+      "slices": [
+        {
+          "label": "金（外資/小規模鉱山）",
+          "value": 80,
+          "color": "#eab308"
+        },
+        {
+          "label": "綿花（サバナ商業農産）",
+          "value": 10,
+          "color": "#10b981"
+        },
+        {
+          "label": "肥料・家畜・油糧種子他",
+          "value": 10,
+          "color": "#94a3b8"
+        }
+      ],
+      "unit": "%",
+      "note": "リチウムなど新鉱山開発も進むが金価格変動に国家経済が直結する典型構造"
+    }
+  ],
+  "NER": [
+    {
+      "id": "hv_ner_fertility_gap",
+      "placement": "population",
+      "kind": "bar",
+      "title": "合計特殊出生率の世界極値比較（2024–2025年統計）",
+      "bars": [
+        {
+          "label": "ニジェール（世界最高級）",
+          "value": 6.6,
+          "isTarget": true,
+          "color": "#ef4444"
+        },
+        {
+          "label": "ナイジェリア",
+          "value": 5.1,
+          "color": "#f59e0b"
+        },
+        {
+          "label": "インド",
+          "value": 2.0,
+          "color": "#64748b"
+        },
+        {
+          "label": "日本",
+          "value": 1.2,
+          "color": "#3b82f6"
+        },
+        {
+          "label": "韓国",
+          "value": 0.72,
+          "color": "#6366f1"
+        }
+      ],
+      "unit": "人（1人の女性が生む子の数）",
+      "maxValue": 7.5,
+      "note": "女子教育普及や乳児死亡改善が遅れ世界一高い出生率と極端なピラミッド型を維持"
+    }
+  ],
+  "CMR": [
+    {
+      "id": "hv_cmr_north_south",
+      "placement": "overview",
+      "kind": "table",
+      "title": "『アフリカの縮図』カメルーンの南北大対比",
+      "headers": [
+        "項目",
+        "南部（沿岸〜高原）",
+        "北部（チャド湖側）"
+      ],
+      "rows": [
+        [
+          "気候区分・植生",
+          "Af（ドゥアラ年3,800mm超）・Aw（熱帯雨林）",
+          "BSサヘル（年300〜700mm・草原/サバナ）"
+        ],
+        [
+          "農産・資源",
+          "カカオ・バナナ・天然ゴム・木材・原油・アルミ",
+          "綿花・落花生・雑穀・牛羊遊牧"
+        ],
+        [
+          "主要宗教・特徴",
+          "キリスト教（約7割）＋英仏言語問題",
+          "イスラム教主体・砂漠化/ボコハラム警戒"
+        ]
+      ]
+    }
+  ],
+  "UGA": [
+    {
+      "id": "hv_uga_refugee",
+      "placement": "population",
+      "kind": "bar",
+      "title": "アフリカ・周辺主要国の難民保護受入数上位（2023–2024・万人目安）",
+      "bars": [
+        {
+          "label": "ウガンダ（アフリカ1位・先進保護）",
+          "value": 165,
+          "isTarget": true,
+          "color": "#10b981"
+        },
+        {
+          "label": "チャド（スーダン内戦流入で急増）",
+          "value": 115,
+          "color": "#64748b"
+        },
+        {
+          "label": "エチオピア",
+          "value": 98,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "ケニア",
+          "value": 72,
+          "color": "#cbd5e1"
+        }
+      ],
+      "unit": "万人",
+      "maxValue": 180,
+      "note": "南スーダンやコンゴ民主共和国からの難民へ耕地や居住権を認める先駆モデル"
+    }
+  ],
+  "RWA": [
+    {
+      "id": "hv_rwa_women_density",
+      "placement": "population",
+      "kind": "bar",
+      "title": "主要国の女性国会議員（下院）比率 世界比較（2024・%）",
+      "bars": [
+        {
+          "label": "ルワンダ（クオータ制・世界1位）",
+          "value": 63.8,
+          "isTarget": true,
+          "color": "#10b981"
+        },
+        {
+          "label": "キューバ",
+          "value": 55.7,
+          "color": "#64748b"
+        },
+        {
+          "label": "メキシコ",
+          "value": 50.2,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "スウェーデン",
+          "value": 46.4,
+          "color": "#cbd5e1"
+        },
+        {
+          "label": "日本（衆議院）",
+          "value": 15.7,
+          "color": "#ef4444"
+        }
+      ],
+      "unit": "%",
+      "maxValue": 70,
+      "note": "アフリカ内戦復興過程の積極的女性登用により北欧を抑え20年以上世界首位級を維持"
+    }
+  ],
+  "ZMB": [
+    {
+      "id": "hv_zmb_copper_power",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "ザンビアの輸出構造＆水力偏重リスク（輸出＝銅約7割・電力＝水力約85%）",
+      "slices": [
+        {
+          "label": "銅・粗銅（輸出総額の約72%）",
+          "value": 72,
+          "color": "#ea580c"
+        },
+        {
+          "label": "金・コバルト・エメラルド等鉱物",
+          "value": 12,
+          "color": "#eab308"
+        },
+        {
+          "label": "農産・電気機械・タバコ他",
+          "value": 16,
+          "color": "#10b981"
+        }
+      ],
+      "unit": "%",
+      "note": "一次産品（銅）価格と干ばつ（水力電力減）のダブルリスクに晒される典型内陸資源国"
+    }
+  ],
+  "AGO": [
+    {
+      "id": "hv_ago_opec_oil",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "アンゴラの輸出収入構成（典型的な化石資源モノカルチャー型）",
+      "slices": [
+        {
+          "label": "原油・LNG（2024 OPEC脱退！）",
+          "value": 92,
+          "color": "#334155"
+        },
+        {
+          "label": "ダイヤモンド",
+          "value": 5,
+          "color": "#06b6d4"
+        },
+        {
+          "label": "花崗岩・魚介・コーヒー他",
+          "value": 3,
+          "color": "#10b981"
+        }
+      ],
+      "unit": "%",
+      "note": "輸出の9割超が原油（国内食料自給が育たないオランダ病と高い物価の根因）"
+    }
+  ],
+  "LBR": [
+    {
+      "id": "hv_lbr_foc_fleet",
+      "placement": "industry",
+      "kind": "bar",
+      "title": "世界の登録船籍（便宜置籍船等）上位国比較（2024・億DWT/総トン目安）",
+      "bars": [
+        {
+          "label": "リベリア（世界1位・米主導登録制度）",
+          "value": 415,
+          "isTarget": true,
+          "color": "#2563eb"
+        },
+        {
+          "label": "パナマ（世界2位・日本船籍定番）",
+          "value": 376,
+          "color": "#64748b"
+        },
+        {
+          "label": "マーシャル諸島（世界3位・微小島嶼国）",
+          "value": 308,
+          "color": "#94a3b8"
+        },
+        {
+          "label": "日本（実保有船主トップ級だが国内籍少）",
+          "value": 38,
+          "color": "#ef4444"
+        }
+      ],
+      "unit": "百万総トン（目安）",
+      "maxValue": 450,
+      "note": "船の『所有主（日・希・中）』と『登録船籍（リベリア・パナマ・マーシャル）』が完全乖離する試験必須統計！"
+    }
+  ],
+  "DOM": [
+    {
+      "id": "hv_dom_haiti_contrast",
+      "placement": "overview",
+      "kind": "table",
+      "title": "同一島（イスパニョーラ島）東西2国の衝撃的な対比データ",
+      "headers": [
+        "項目",
+        "ドミニカ共和国（東2/3）",
+        "ハイチ（西1/3）"
+      ],
+      "rows": [
+        [
+          "旧宗主国・公用語",
+          "スペイン（スペイン語）",
+          "フランス（仏語・ハイチクレオール語）"
+        ],
+        [
+          "1人当たりGDP",
+          "約11,000ドル（中南米優等成長）",
+          "約1,800ドル（西半球最貧水準・約6倍差！）"
+        ],
+        [
+          "森林被覆率と環境",
+          "約44%（保全政策により回復維持）",
+          "約3〜10%未満（薪炭過剰伐採で禿山・土石流）"
+        ],
+        [
+          "主力産業・特徴",
+          "医療機器FTZ・観光・金・カカオ",
+          "衣類委託加工・海外送金依存・治安崩壊危機"
+        ]
+      ]
+    }
+  ],
+  "NCL": [
+    {
+      "id": "hv_ncl_ethnic_vote",
+      "placement": "culture",
+      "kind": "donut",
+      "title": "ニューカレドニアの複雑な民族構成（独立投票の構図背景）",
+      "slices": [
+        {
+          "label": "カナック（メラネシア先住民＝独立支持多）",
+          "value": 41,
+          "color": "#10b981"
+        },
+        {
+          "label": "欧州系（カルドシュ・仏本土移住＝残留支持多）",
+          "value": 24,
+          "color": "#3b82f6"
+        },
+        {
+          "label": "混血・ポリネシア(ウォリス等)・アジア系",
+          "value": 35,
+          "color": "#f59e0b"
+        }
+      ],
+      "unit": "%",
+      "note": "先住民カナックが過半数を割る民族バランスのもと、選挙人資格をめぐる議論と独立投票が焦点"
+    }
+  ],
+  "GRL": [
+    {
+      "id": "hv_grl_fish_export",
+      "placement": "industry",
+      "kind": "donut",
+      "title": "グリーンランドの輸出品目構造（極端な冷寒水産モノカルチャー）",
+      "slices": [
+        {
+          "label": "北極エビ（甘エビ）・カニ・オヒョウ等魚介",
+          "value": 92,
+          "color": "#0284c7"
+        },
+        {
+          "label": "アザラシ皮・鉱物・調査機器再輸出等",
+          "value": 8,
+          "color": "#94a3b8"
+        }
+      ],
+      "unit": "%",
+      "note": "輸出の9割超が漁業依存！だからこそ共通漁業政策を避けるため1985年にECを離脱した"
     }
   ]
 }

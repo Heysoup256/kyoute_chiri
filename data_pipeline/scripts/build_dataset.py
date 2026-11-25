@@ -24,6 +24,7 @@ BASIC_COUNTRIES_PATH = RAW_DIR / "world_basic_countries_v1.json"
 RELATIONS_PATH = RAW_DIR / "country_relations_v1.json"
 HIGHLIGHT_VISUALS_PATH = RAW_DIR / "country_highlight_visuals_v1.json"
 SUBNATIONAL_PATH = RAW_DIR / "subnational_regions_v1.json"
+DEEP_DIVE_PATH = RAW_DIR / "country_deep_dive_v1.json"
 GEO_COUNTRIES_PATH = ROOT_DIR / "app" / "public" / "data" / "geo_countries_v1.geojson"
 OUT_COUNTRIES = ROOT_DIR / "app" / "public" / "data" / "countries_v1.json"
 OUT_PAST_EXAMS = ROOT_DIR / "app" / "public" / "data" / "past_exams_v1.json"
@@ -206,6 +207,11 @@ def main() -> None:
         if SUBNATIONAL_PATH.exists()
         else {}
     )
+    deep_dive_data = (
+        json.loads(DEEP_DIVE_PATH.read_text(encoding="utf-8"))
+        if DEEP_DIVE_PATH.exists()
+        else {}
+    )
 
     # 3. 国別出題統計＆個別項目リンク集計
     by_country: dict[str, list[dict]] = {}
@@ -313,7 +319,7 @@ def main() -> None:
             )
             countries[iso3] = bdata
 
-    # 4.5. 他国との関係・特徴適応ビジュアル・国内地域区分統合 + ケッペン13区分完全統一
+    # 4.5. 他国との関係・特徴適応ビジュアル・国内地域区分・深掘りデータ統合 + ケッペン13区分完全統一
     for iso3, cdata in countries.items():
         if iso3 in relations_data:
             cdata["relations"] = relations_data[iso3]
@@ -321,6 +327,23 @@ def main() -> None:
             cdata["highlightVisuals"] = visuals_data[iso3]
         if iso3 in subnational_data:
             cdata["subnational"] = subnational_data[iso3]
+        if iso3 in deep_dive_data:
+            dd = deep_dive_data[iso3]
+            if dd.get("examCheatSheet"):
+                cdata["examCheatSheet"] = dd["examCheatSheet"]
+            item_dds = dd.get("items") or {}
+            if item_dds:
+                for sec_parent, sec_key in (
+                    ("nature", "items"),
+                    ("industry", "agriculture"),
+                    ("industry", "resourcesAndEnergy"),
+                    ("industry", "industrialRegions"),
+                    ("cultureAndHistory", "historicalContext"),
+                ):
+                    for item in (cdata.get(sec_parent) or {}).get(sec_key) or []:
+                        iid = item.get("id")
+                        if iid in item_dds:
+                            item["deepDive"] = item_dds[iid]
 
         countries[iso3] = normalize_koppen_in_text(cdata)
         c_mod = countries[iso3]

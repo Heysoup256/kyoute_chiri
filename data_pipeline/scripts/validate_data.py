@@ -238,10 +238,22 @@ def main() -> None:
     wr = json.loads((DATA_DIR / "world_rankings_v1.json").read_text(encoding="utf-8"))
     sg = json.loads((DATA_DIR / "systematic_geography_v1.json").read_text(encoding="utf-8"))
     jg = json.loads((DATA_DIR / "japan_geography_v1.json").read_text(encoding="utf-8"))
-    if detailed_count < 100 or total_cities < 127:
-        errors.append(f"詳細収録国数({detailed_count}<100)または気候都市数({total_cities}<127)が不足しています")
-    if len(wr.get("items", [])) < 80 or len(wr.get("scatters", [])) < 7 or len(wr.get("comparisonCharts", [])) < 16 or len(wr.get("flowMaps", [])) < 8:
-        errors.append("world_rankings_v1.json の品目(80以上)・散布図(7以上)・比較グラフ(16以上)またはフロー地図数(8以上)が不足しています")
+    subnational_count = sum(1 for c in countries.values() if c.get("subnational"))
+    cheat_sheet_count = sum(
+        1 for c in countries.values() if not c.get("isBasicEntry") and c.get("examCheatSheet")
+    )
+    if detailed_count < 130 or total_cities < 158:
+        errors.append(f"詳細収録国数({detailed_count}<130)または気候都市数({total_cities}<158)が不足しています")
+    if subnational_count < 20:
+        errors.append(f"国内地域区分データ保有国数({subnational_count}<20)が不足しています")
+    if cheat_sheet_count < 130:
+        errors.append(f"受験必勝まとめカード保有国数({cheat_sheet_count}<130)が不足しています")
+    for guard_iso, max_cnt in (("MAC", 5), ("MDV", 5)):
+        cnt = countries.get(guard_iso, {}).get("examSummary", {}).get("appearanceCount", 0)
+        if cnt > max_cnt:
+            errors.append(f"過去問誤爆回帰エラー: {guard_iso} appearanceCount={cnt} > {max_cnt}")
+    if len(wr.get("items", [])) < 130 or len(wr.get("scatters", [])) < 9 or len(wr.get("comparisonCharts", [])) < 24 or len(wr.get("flowMaps", [])) < 10:
+        errors.append("world_rankings_v1.json の品目(130以上)・散布図(9以上)・比較グラフ(24以上)またはフロー地図数(10以上)が不足しています")
     if len(sg.get("categories", [])) < 7 or len(sg.get("topics", [])) < 45:
         errors.append("systematic_geography_v1.json のカテゴリ数(7以上)またはトピック数(45以上)が不足しています")
     for tp in sg.get("topics", []):
@@ -249,8 +261,8 @@ def main() -> None:
             if not tp.get(req_k):
                 errors.append(f"systematic {tp.get('id')}: 必須項目 {req_k} が空または欠落しています")
     dom = jg.get("domesticStats") or {}
-    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 7 or len(dom.get("prefRankings", [])) < 14:
-        errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データ(グラフ7以上・県ランキング14以上)が不足しています")
+    if len(jg.get("regions", [])) < 9 or len(jg.get("mapSkills", [])) < 7 or len(dom.get("charts", [])) < 10 or len(dom.get("prefRankings", [])) < 26:
+        errors.append("japan_geography_v1.json の地方・地形図スキル・国内統計データ(グラフ10以上・県ランキング26以上)が不足しています")
     for sk in jg.get("mapSkills", []):
         if not sk.get("checkPoints"):
             errors.append(f"japan mapSkill {sk.get('id')}: checkPoints が空または欠落しています")
@@ -262,7 +274,8 @@ def main() -> None:
         sys.exit(1)
 
     print(
-        f"VALIDATION PASSED! countries={len(countries)} (detailed={detailed_count}, basic={basic_count}), "
+        f"VALIDATION PASSED! countries={len(countries)} (detailed={detailed_count}, basic={basic_count}, "
+        f"subnational={subnational_count}, cheatSheet={cheat_sheet_count}), "
         f"cities={total_cities}, questions={len(questions)}, geo_countries={len(geo_iso3_set)}, "
         f"geo_layers={len(layer_feats)}, plate_boundaries={len(plate_feats)}, "
         f"capitals={len(capitals_json['features'])}, volcanoes={len(volcanoes_json['features'])}, "

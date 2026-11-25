@@ -4703,5 +4703,903 @@
         "description": "高地サツマイモ農耕と巨大金・銅・LNG資源を抱え西部は東経141度でインドネシアと接する"
       }
     ]
+  },
+  "EST": {
+    "topCities": [
+      {
+        "nameJa": "タリン",
+        "popMan": 45,
+        "metroPopMan": 62,
+        "lng": 24.75,
+        "lat": 59.44,
+        "isCapital": true,
+        "note": "人口の約3分の1が集まる首都・バルト海港湾・e-Estonia中枢"
+      },
+      {
+        "nameJa": "タルトゥ",
+        "popMan": 10,
+        "lng": 26.73,
+        "lat": 58.38,
+        "isCapital": false,
+        "note": "17世紀創設のタルトゥ大学を抱える国内第2の学術・IT都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "タリン〜バルト海沿岸",
+        "tag": "電子国家・ハンザ港湾",
+        "lng": 24.75,
+        "lat": 59.44,
+        "zoom": 6.4,
+        "description": "フィンランド・ヘルシンキとフェリー2時間で結ばれIT・金融・観光が集中する首都圏"
+      }
+    ]
+  },
+  "LVA": {
+    "topCities": [
+      {
+        "nameJa": "リガ",
+        "popMan": 61,
+        "metroPopMan": 92,
+        "lng": 24.11,
+        "lat": 56.95,
+        "isCapital": true,
+        "note": "バルト三国最大の歴史港湾都市・アールヌーヴォー世界遺産"
+      },
+      {
+        "nameJa": "ダウガフピルス",
+        "popMan": 8,
+        "lng": 26.54,
+        "lat": 55.87,
+        "isCapital": false,
+        "note": "南東部のロシア・ベラルーシ近接鉄道要衝"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "リガ湾岸・ダウガヴァ川水系",
+        "tag": "バルト海物流・水力ダム",
+        "lng": 24.11,
+        "lat": 56.95,
+        "zoom": 6.4,
+        "description": "不凍港リガ・ヴェンツピルスと複数の水力発電ダムが連なる経済大動脈"
+      }
+    ]
+  },
+  "LTU": {
+    "topCities": [
+      {
+        "nameJa": "ビリニュス",
+        "popMan": 59,
+        "metroPopMan": 72,
+        "lng": 25.28,
+        "lat": 54.69,
+        "isCapital": true,
+        "note": "バロック旧市街の世界遺産首都・レーザー・フィンテック集積"
+      },
+      {
+        "nameJa": "カウナス",
+        "popMan": 30,
+        "lng": 23.9,
+        "lat": 54.9,
+        "isCapital": false,
+        "note": "ネマン川沿いの戦間期首都（杉原千畝『命のビザ』記念地）"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "クルシュー砂州＆クライペダ港",
+        "tag": "砂嘴・潟（ラグーン）・脱露LNG拠点",
+        "lng": 21.12,
+        "lat": 55.6,
+        "zoom": 6.6,
+        "description": "沿岸流砂嘴に守られた唯一の不凍港クライペダ（LNGターミナル立地）"
+      }
+    ]
+  },
+  "BLR": {
+    "topCities": [
+      {
+        "nameJa": "ミンスク",
+        "popMan": 200,
+        "metroPopMan": 210,
+        "lng": 27.56,
+        "lat": 53.9,
+        "isCapital": true,
+        "note": "人口の2割超が集中する首都・トラクター/重機械・IT公園都市"
+      },
+      {
+        "nameJa": "ホメリ（ゴメリ）",
+        "popMan": 50,
+        "lng": 31.0,
+        "lat": 52.44,
+        "isCapital": false,
+        "note": "南東部第2都市・チェルノブイリ事故影響を受けたウクライナ国境近郊"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ソリゴルスク〜プリピャチ湿原",
+        "tag": "カリ塩鉱床・原発被害帯",
+        "lng": 27.54,
+        "lat": 52.79,
+        "zoom": 6.4,
+        "description": "世界有数のカリウム肥料産地ソリゴルスクと南部の大湿地・放射能立入制限域"
+      }
+    ]
+  },
+  "BGR": {
+    "topCities": [
+      {
+        "nameJa": "ソフィア",
+        "popMan": 128,
+        "metroPopMan": 155,
+        "lng": 23.32,
+        "lat": 42.7,
+        "isCapital": true,
+        "note": "西部盆地の政治経済首都・IT＆電子部品集積"
+      },
+      {
+        "nameJa": "プロヴディフ",
+        "popMan": 35,
+        "lng": 24.75,
+        "lat": 42.14,
+        "isCapital": false,
+        "note": "トラキア平原中心の古代都市・工業自動車部品拠点"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "カザンラク『バラの谷』＆トラキア平原",
+        "tag": "微気候特産ローズ・穀倉",
+        "lng": 25.4,
+        "lat": 42.62,
+        "zoom": 7.0,
+        "description": "バルカン山脈が冷風を遮ることで世界の高級香水原料ローズオイルを独占生産"
+      }
+    ]
+  },
+  "SVN": {
+    "topCities": [
+      {
+        "nameJa": "リュブリャナ",
+        "popMan": 29,
+        "metroPopMan": 54,
+        "lng": 14.51,
+        "lat": 46.06,
+        "isCapital": true,
+        "note": "政治文化中枢・欧州グリーン首都受賞経験"
+      },
+      {
+        "nameJa": "マリボル",
+        "popMan": 11,
+        "lng": 15.65,
+        "lat": 46.55,
+        "isCapital": false,
+        "note": "北東部の伝統的産業都市・ドラヴァ川水力"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "クラス地方＆ポストイナ鍾乳洞",
+        "tag": "カルスト地形発祥地",
+        "lng": 14.21,
+        "lat": 45.78,
+        "zoom": 7.4,
+        "description": "石灰岩の溶食が作るドリーネ・鍾乳洞・消える河川の教科書的標準地域"
+      }
+    ]
+  },
+  "BIH": {
+    "topCities": [
+      {
+        "nameJa": "サラエボ",
+        "popMan": 28,
+        "metroPopMan": 42,
+        "lng": 18.41,
+        "lat": 43.86,
+        "isCapital": true,
+        "note": "東西文明交差の首都（1914年第一次大戦勃発の地・1984五輪）"
+      },
+      {
+        "nameJa": "バニャ・ルカ",
+        "popMan": 19,
+        "lng": 17.19,
+        "lat": 44.77,
+        "isCapital": false,
+        "note": "北部スルプスカ共和国（セルビア系主体構成体）の事実上中枢"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "モスタル＆ネウム回廊",
+        "tag": "世界遺産橋・唯一20kmの海出口",
+        "lng": 17.81,
+        "lat": 43.34,
+        "zoom": 7.0,
+        "description": "ヘルツェゴビナ中心都市モスタルとアドリア海へ辛うじて達するネウム"
+      }
+    ]
+  },
+  "LUX": {
+    "topCities": [
+      {
+        "nameJa": "ルクセンブルク市",
+        "popMan": 13,
+        "metroPopMan": 25,
+        "lng": 6.13,
+        "lat": 49.61,
+        "isCapital": true,
+        "note": "国際金融投資・EU裁判所・SES衛星本社が集中する首都"
+      },
+      {
+        "nameJa": "エシュ＝シュル＝アルゼット",
+        "popMan": 4,
+        "lng": 5.98,
+        "lat": 49.5,
+        "isCapital": false,
+        "note": "仏国境の旧鉄鋼都市→ベルヴァル大学先端研究都市へ再生"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "シェンゲン（三国境界）",
+        "tag": "EU自由移動協定の聖地",
+        "lng": 6.37,
+        "lat": 49.47,
+        "zoom": 8.0,
+        "description": "独・仏・ルクセンブルク国境がモーゼル川上で交わる歴史的条約調印地"
+      }
+    ]
+  },
+  "HKG": {
+    "topCities": [
+      {
+        "nameJa": "香港（九龍・香港島）",
+        "popMan": 750,
+        "lng": 114.17,
+        "lat": 22.3,
+        "isCapital": true,
+        "note": "一極超高密度都市・国際金融＆世界一航空貨物ハブ"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "赤鱲角（チェクラップコク）空港＆新界深圳境界",
+        "tag": "世界一航空貨物・前店後廠境界",
+        "lng": 113.91,
+        "lat": 22.31,
+        "zoom": 7.4,
+        "description": "埋立巨大ハブ空港と珠江デルタ生産網を繋ぐ港珠澳大橋・深圳境界"
+      }
+    ]
+  },
+  "KWT": {
+    "topCities": [
+      {
+        "nameJa": "クウェート市",
+        "popMan": 320,
+        "metroPopMan": 430,
+        "lng": 47.98,
+        "lat": 29.38,
+        "isCapital": true,
+        "note": "人口の9割以上が集住する湾岸都市圏"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ブルガン油田・ミナアルアハマディ港",
+        "tag": "世界屈指の超低コスト油田",
+        "lng": 47.9,
+        "lat": 28.92,
+        "zoom": 7.0,
+        "description": "クウェート財政の9割以上を生み出す巨大油田地帯と石油積出ターミナル"
+      }
+    ]
+  },
+  "LBN": {
+    "topCities": [
+      {
+        "nameJa": "ベイルート",
+        "popMan": 45,
+        "metroPopMan": 240,
+        "lng": 35.5,
+        "lat": 33.89,
+        "isCapital": true,
+        "note": "総人口の約4割が集う地中海沿岸首都・金融商業中心"
+      },
+      {
+        "nameJa": "トリポリ",
+        "popMan": 35,
+        "lng": 35.85,
+        "lat": 34.44,
+        "isCapital": false,
+        "note": "北部沿岸第2都市・スンニ派中心・シリア避難民多い"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ベカー高原＆バールベック",
+        "tag": "地溝帯農業・ワイン・難民集積",
+        "lng": 36.1,
+        "lat": 33.9,
+        "zoom": 7.4,
+        "description": "レバノン山脈とアンチレバノン山脈に挟まれた肥沃地溝谷"
+      }
+    ]
+  },
+  "YEM": {
+    "topCities": [
+      {
+        "nameJa": "サナア",
+        "popMan": 295,
+        "metroPopMan": 340,
+        "lng": 44.19,
+        "lat": 15.37,
+        "isCapital": true,
+        "note": "標高2,250mの高原盆地首都・世界遺産の日干しレンガ旧市街"
+      },
+      {
+        "nameJa": "アデン",
+        "popMan": 100,
+        "lng": 45.03,
+        "lat": 12.78,
+        "isCapital": false,
+        "note": "インド洋アデン湾に面する天然火山カルデラ良港"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "バブ・エル・マンデブ海峡＆モカ",
+        "tag": "世界海運チョークポイント・珈琲原点",
+        "lng": 43.3,
+        "lat": 12.68,
+        "zoom": 6.6,
+        "description": "欧州〜アジア大動脈を握る紅海入口と古来珈琲積出港モカ"
+      }
+    ]
+  },
+  "TKM": {
+    "topCities": [
+      {
+        "nameJa": "アシガバート",
+        "popMan": 103,
+        "lng": 58.33,
+        "lat": 37.96,
+        "isCapital": true,
+        "note": "コペトダグ山麓オアシスの大理石都市・政治中心"
+      },
+      {
+        "nameJa": "トゥルクメナバート",
+        "popMan": 25,
+        "lng": 63.58,
+        "lat": 39.08,
+        "isCapital": false,
+        "note": "東部アムダリヤ川沿いの灌漑農業・綿花集散都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "カラクム運河＆ダルヴァザ（地獄の門）",
+        "tag": "長大砂漠運河・天然ガス帯",
+        "lng": 58.44,
+        "lat": 40.25,
+        "zoom": 6.0,
+        "description": "アムダリヤ水を取水してカラクム砂漠を横断する大運河とガス埋蔵地帯"
+      }
+    ]
+  },
+  "KGZ": {
+    "topCities": [
+      {
+        "nameJa": "ビシュケク",
+        "popMan": 114,
+        "lng": 74.59,
+        "lat": 42.87,
+        "isCapital": true,
+        "note": "北部チュイ谷の首都・製造商業・教育中心"
+      },
+      {
+        "nameJa": "オシュ",
+        "popMan": 34,
+        "lng": 72.8,
+        "lat": 40.53,
+        "isCapital": false,
+        "note": "南部フェルガナ盆地東端の古都・ウズベク系住民も多い多民族街"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "イシククル湖＆フェルガナ盆地縁",
+        "tag": "不凍高山湖・入り組む国境",
+        "lng": 77.25,
+        "lat": 42.45,
+        "zoom": 6.4,
+        "description": "冬季も凍結しない深湖イシククルとウズベク・タジク国境錯綜の南西部"
+      }
+    ]
+  },
+  "BRN": {
+    "topCities": [
+      {
+        "nameJa": "バンダルスリブガワン",
+        "popMan": 10,
+        "metroPopMan": 28,
+        "lng": 114.94,
+        "lat": 4.9,
+        "isCapital": true,
+        "note": "水上集落カンポン・アイールを抱く首都・王宮モスク中心"
+      },
+      {
+        "nameJa": "クアラ・ブライト／セリア",
+        "popMan": 7,
+        "lng": 114.2,
+        "lat": 4.58,
+        "isCapital": false,
+        "note": "西部のセリア油田・ルムットLNGプラント拠点"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "テンブロン地区（東側飛び地）",
+        "tag": "マレーシアに隔てられた原生熱帯林",
+        "lng": 115.14,
+        "lat": 4.55,
+        "zoom": 8.0,
+        "description": "30kmの海上連絡橋開通で本島側と直結した原生熱帯雨林保護区"
+      }
+    ]
+  },
+  "BTN": {
+    "topCities": [
+      {
+        "nameJa": "ティンプー",
+        "popMan": 12,
+        "lng": 89.64,
+        "lat": 27.47,
+        "isCapital": true,
+        "note": "標高2,320mの山間首都（高層ビル・信号なし伝統景観）"
+      },
+      {
+        "nameJa": "パロ",
+        "popMan": 2,
+        "lng": 89.41,
+        "lat": 27.43,
+        "isCapital": false,
+        "note": "唯一の国際空港・タクツァン僧院を擁する歴史盆地"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "プナカ〜チュカ水力発電谷",
+        "tag": "ゾン城塞・水力輸出拠点",
+        "lng": 89.56,
+        "lat": 26.95,
+        "zoom": 7.5,
+        "description": "旧冬都プナカとインド向け大型水力発電所が連なる南下河川渓谷"
+      }
+    ]
+  },
+  "GEO": {
+    "topCities": [
+      {
+        "nameJa": "トビリシ",
+        "popMan": 124,
+        "metroPopMan": 145,
+        "lng": 44.83,
+        "lat": 41.72,
+        "isCapital": true,
+        "note": "東部クラ川沿いの政治文化首都・ITサービス急伸拠点"
+      },
+      {
+        "nameJa": "バトゥミ",
+        "popMan": 18,
+        "lng": 41.64,
+        "lat": 41.64,
+        "isCapital": false,
+        "note": "南西黒海岸の亜熱帯超多雨港湾都市・観光カジノリゾート"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "大コーカサス山脈（カズベキ・スヴァネティ）＆アブハジア",
+        "tag": "氷河山岳・2008年分離紛争帯",
+        "lng": 44.6,
+        "lat": 42.66,
+        "zoom": 6.6,
+        "description": "5000m級の氷河峰と北側のアブハジア/南オセチア事実上分離地域"
+      }
+    ]
+  },
+  "GIN": {
+    "topCities": [
+      {
+        "nameJa": "コナクリ",
+        "popMan": 210,
+        "lng": -13.58,
+        "lat": 9.64,
+        "isCapital": true,
+        "note": "大西洋カラム半島に延びる首都・国内最大の交易港"
+      },
+      {
+        "nameJa": "カンカン",
+        "popMan": 48,
+        "lng": -9.31,
+        "lat": 10.39,
+        "isCapital": false,
+        "note": "東部サバナ地域の中心都市・ニジェール川上流商業地"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ボケ・ボーキサイト鉱床帯＆シマンドゥ鉄山",
+        "tag": "世界有数鉱物開発帯",
+        "lng": -14.29,
+        "lat": 10.94,
+        "zoom": 6.4,
+        "description": "中国・多国籍資本が掘削し専用港から世界へ積み出す巨大ボーキサイト地帯"
+      }
+    ]
+  },
+  "SEN": {
+    "topCities": [
+      {
+        "nameJa": "ダカール",
+        "popMan": 115,
+        "metroPopMan": 390,
+        "lng": -17.47,
+        "lat": 14.72,
+        "isCapital": true,
+        "note": "大陸最西端の大西洋ハブ港・西アフリカ経済学術中心"
+      },
+      {
+        "nameJa": "トゥバ",
+        "popMan": 90,
+        "lng": -15.88,
+        "lat": 14.86,
+        "isCapital": false,
+        "note": "イスラム・ムリッド教団の聖地として急成長した第2都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ゴレ島＆サン・ルイ",
+        "tag": "奴隷貿易史跡・旧仏領西ア首都",
+        "lng": -17.4,
+        "lat": 14.67,
+        "zoom": 8.0,
+        "description": "大西洋奴隷貿易の歴史遺産ゴレ島とセネガル川河口の旧植民都サン・ルイ"
+      }
+    ]
+  },
+  "MLI": {
+    "topCities": [
+      {
+        "nameJa": "バマコ",
+        "popMan": 280,
+        "metroPopMan": 420,
+        "lng": -8.0,
+        "lat": 12.64,
+        "isCapital": true,
+        "note": "ニジェール川沿いの急膨張首都・綿花と金の商業中枢"
+      },
+      {
+        "nameJa": "トンブクトゥ（歴史都市）",
+        "popMan": 6,
+        "lng": -3.01,
+        "lat": 16.77,
+        "isCapital": false,
+        "note": "サハラ南縁の岩塩・金・イスラム学問古都（砂漠化進行）"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ニジェール川内陸デルタ＆ジェンネ",
+        "tag": "外来河川の巨大湿地網",
+        "lng": -4.55,
+        "lat": 14.3,
+        "zoom": 6.2,
+        "description": "サヘル乾燥地に稲作と漁業の恵みをもたらす網状氾濫原と泥モスク"
+      }
+    ]
+  },
+  "NER": {
+    "topCities": [
+      {
+        "nameJa": "ニアメ",
+        "popMan": 140,
+        "lng": 2.11,
+        "lat": 13.51,
+        "isCapital": true,
+        "note": "南西端のニジェール川畔に位置する首都・商業教育中心"
+      },
+      {
+        "nameJa": "アガデス",
+        "popMan": 14,
+        "lng": 7.99,
+        "lat": 16.97,
+        "isCapital": false,
+        "note": "サハラ交易とアーリットウラン鉱山・対欧州不法移民通過の玄関都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "アーリット（ウラン鉱床）＆チャド湖",
+        "tag": "ウラン採掘・環境縮小湖",
+        "lng": 7.38,
+        "lat": 18.74,
+        "zoom": 5.8,
+        "description": "サハラ砂漠内の大ウラン鉱山と南東国境で干上がりつつあるチャド湖"
+      }
+    ]
+  },
+  "CMR": {
+    "topCities": [
+      {
+        "nameJa": "ドゥアラ",
+        "popMan": 280,
+        "metroPopMan": 390,
+        "lng": 9.77,
+        "lat": 4.05,
+        "isCapital": false,
+        "note": "ギニア湾奥最大の商業・港湾工業都市（エデア・アルミ至近）"
+      },
+      {
+        "nameJa": "ヤウンデ",
+        "popMan": 280,
+        "metroPopMan": 410,
+        "lng": 11.5,
+        "lat": 3.85,
+        "isCapital": true,
+        "note": "内陸標高約730mの高原に位置する政治首都"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "カメルーン山・西部英語圏＆エデア",
+        "tag": "火山多雨・言語境界・水力アルミ",
+        "lng": 9.2,
+        "lat": 4.2,
+        "zoom": 6.4,
+        "description": "世界有数豪雨地カメルーン山と英語圏2州、サナガ川アルミ精錬地帯"
+      }
+    ]
+  },
+  "UGA": {
+    "topCities": [
+      {
+        "nameJa": "カンパラ",
+        "popMan": 175,
+        "metroPopMan": 380,
+        "lng": 32.58,
+        "lat": 0.35,
+        "isCapital": true,
+        "note": "ヴィクトリア湖北岸7丘の首都（赤道直下なのに年平均22℃）"
+      },
+      {
+        "nameJa": "ジンジャ",
+        "popMan": 30,
+        "lng": 33.2,
+        "lat": 0.42,
+        "isCapital": false,
+        "note": "ナイル川（白ナイル）の正確な流出点・水力ダム発電中心"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ヴィクトリア湖＆アルバート湖油田帯",
+        "tag": "白ナイル源流・地溝帯石油",
+        "lng": 31.3,
+        "lat": 1.6,
+        "zoom": 6.2,
+        "description": "西部大地溝帯アルバート湖で進む原油パイプライン開発とナイル源流"
+      }
+    ]
+  },
+  "RWA": {
+    "topCities": [
+      {
+        "nameJa": "キガリ",
+        "popMan": 150,
+        "lng": 30.06,
+        "lat": -1.94,
+        "isCapital": true,
+        "note": "標高1,500mの清潔・ICT・国際会議ハブ首都"
+      },
+      {
+        "nameJa": "ギセニ（ルバヴ）",
+        "popMan": 15,
+        "lng": 29.26,
+        "lat": -1.7,
+        "isCapital": false,
+        "note": "キヴ湖畔リゾート＆メタンガス発電・コンゴ民主国境都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "キヴ湖＆ヴィルンガ火山帯",
+        "tag": "湖底メタン発電・ゴリラ保護観光",
+        "lng": 29.35,
+        "lat": -1.65,
+        "zoom": 7.4,
+        "description": "高付加価値マウンテンゴリラ・エコツーリズムとキヴ湖メタンエネルギー開発地"
+      }
+    ]
+  },
+  "ZMB": {
+    "topCities": [
+      {
+        "nameJa": "ルサカ",
+        "popMan": 220,
+        "metroPopMan": 310,
+        "lng": 28.28,
+        "lat": -15.42,
+        "isCapital": true,
+        "note": "中央高原の政治商業首都・COMESA本部所在"
+      },
+      {
+        "nameJa": "ンドラ / キトウェ",
+        "popMan": 65,
+        "lng": 28.64,
+        "lat": -12.97,
+        "isCapital": false,
+        "note": "北部カッパーベルト銅鉱業・製錬産業の中枢都市群"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "カッパーベルト（銅鉱帯）＆タンザン鉄道起点",
+        "tag": "世界有数銅鉱・対海港鉄道",
+        "lng": 28.2,
+        "lat": -12.8,
+        "zoom": 6.4,
+        "description": "コンゴ民主境に連なる銅鉱山群とタンザニアへ抜けるTAZARA鉄道路軸"
+      }
+    ]
+  },
+  "AGO": {
+    "topCities": [
+      {
+        "nameJa": "ルアンダ",
+        "popMan": 280,
+        "metroPopMan": 920,
+        "lng": 13.23,
+        "lat": -8.84,
+        "isCapital": true,
+        "note": "ベンゲラ寒流で低緯度BS乾燥気候となる巨大産油港首都"
+      },
+      {
+        "nameJa": "ロビト / ベンゲラ",
+        "popMan": 45,
+        "lng": 13.55,
+        "lat": -12.36,
+        "isCapital": false,
+        "note": "コンゴ民主・ザンビア銅ベルトへ直結する大西洋終端鉄道路港"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "カビンダ飛び地＆ロビト鉄道回廊",
+        "tag": "飛び地油田・米欧対中インフラ",
+        "lng": 12.19,
+        "lat": -5.56,
+        "zoom": 6.8,
+        "description": "コンゴ川河口北側に孤立した主要産油飛び地カビンダと銅輸送港ロビト"
+      }
+    ]
+  },
+  "LBR": {
+    "topCities": [
+      {
+        "nameJa": "モンロビア",
+        "popMan": 165,
+        "lng": -10.79,
+        "lat": 6.3,
+        "isCapital": true,
+        "note": "米大統領モンロー名由来の首都・自由港・世界一級多雨都市"
+      },
+      {
+        "nameJa": "ブキャナン",
+        "popMan": 5,
+        "lng": -10.05,
+        "lat": 5.88,
+        "isCapital": false,
+        "note": "内陸ニンバ山地の鉄鉱石積出港"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "ファイアストンゴム園＆ニンバ山鉄山",
+        "tag": "米資本ゴム・西ア鉄鉱石帯",
+        "lng": -10.35,
+        "lat": 6.29,
+        "zoom": 6.6,
+        "description": "世界最大の単一天然ゴム農園とギニア境ニンバ山地鉄鉱床"
+      }
+    ]
+  },
+  "DOM": {
+    "topCities": [
+      {
+        "nameJa": "サントドミンゴ",
+        "popMan": 110,
+        "metroPopMan": 350,
+        "lng": -69.93,
+        "lat": 18.49,
+        "isCapital": true,
+        "note": "新大陸最古植民都市・国内最大の経済＆医療機器フリーゾーン圏"
+      },
+      {
+        "nameJa": "サンティアゴ",
+        "popMan": 78,
+        "lng": -70.7,
+        "lat": 19.45,
+        "isCapital": false,
+        "note": "肥沃な北部シバオ谷の中心都市・葉巻タバコ・加工工業"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "プンタカナ＆ハイチ国境壁線",
+        "tag": "カリブ観光首位・森林明暗国境",
+        "lng": -71.7,
+        "lat": 19.2,
+        "zoom": 6.8,
+        "description": "東端の世界的ビーチリゾートと西端で森林保護と国境管理が対照をなす境目"
+      }
+    ]
+  },
+  "NCL": {
+    "topCities": [
+      {
+        "nameJa": "ヌメア",
+        "popMan": 10,
+        "metroPopMan": 18,
+        "lng": 166.46,
+        "lat": -22.27,
+        "isCapital": true,
+        "note": "全人口の約6割が集中する西南岸都市・ニッケル製錬所と国際観光拠点"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "コニアムボ（北部ニッケル）＆ウベア/イルデパン",
+        "tag": "ニッケル鉱床・世界遺産堡礁",
+        "lng": 164.75,
+        "lat": -21.0,
+        "zoom": 6.6,
+        "description": "北部の露天掘り鉱床・精錬施設と日本観光客にも知られる連続サンゴ礁島々"
+      }
+    ]
+  },
+  "GRL": {
+    "topCities": [
+      {
+        "nameJa": "ヌーク",
+        "popMan": 2,
+        "lng": -51.72,
+        "lat": 64.18,
+        "isCapital": true,
+        "note": "全人口の約3分の1が集中する西岸の行政・水産拠点首都"
+      },
+      {
+        "nameJa": "シシミウト / イルリサット",
+        "popMan": 1,
+        "lng": -51.1,
+        "lat": 69.22,
+        "isCapital": false,
+        "note": "北極圏の氷山世界遺産・エビ加工漁業基地都市"
+      }
+    ],
+    "specialRegions": [
+      {
+        "name": "イルリサット・アイスフィヨルド＆南端レアアース帯",
+        "tag": "氷床融解最前線・戦略鉱物",
+        "lng": -51.1,
+        "lat": 69.22,
+        "zoom": 5.8,
+        "description": "地球温暖化研究の最重要拠点である巨大氷河出口と南部クヴァネフィエル鉱床"
+      }
+    ]
   }
 }
