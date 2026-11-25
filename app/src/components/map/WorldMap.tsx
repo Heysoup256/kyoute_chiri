@@ -1404,10 +1404,30 @@ export function WorldMap({
           id: 'focus-place-line',
           type: 'line',
           source: 'focus-place-source',
-          filter: ['in', ['geometry-type'], ['literal', ['Polygon', 'LineString', 'MultiLineString']]],
+          filter: [
+            'all',
+            ['in', ['geometry-type'], ['literal', ['Polygon', 'LineString', 'MultiLineString']]],
+            ['!=', ['get', 'lineDash'], true],
+          ],
           paint: {
             'line-color': ['coalesce', ['get', 'fillColor'], '#f59e0b'],
-            'line-width': 3.5,
+            'line-width': ['coalesce', ['get', 'lineWidth'], 3.2],
+          },
+        });
+
+        map.addLayer({
+          id: 'focus-place-line-dash',
+          type: 'line',
+          source: 'focus-place-source',
+          filter: [
+            'all',
+            ['in', ['geometry-type'], ['literal', ['LineString', 'MultiLineString']]],
+            ['==', ['get', 'lineDash'], true],
+          ],
+          paint: {
+            'line-color': ['coalesce', ['get', 'fillColor'], '#dc2626'],
+            'line-width': ['coalesce', ['get', 'lineWidth'], 4.2],
+            'line-dasharray': [3, 2],
           },
         });
 
@@ -1978,6 +1998,8 @@ export function WorldMap({
             category: focusedPlace.category,
             summary: focusedPlace.summary,
             fillColor: sf.fillColor,
+            lineDash: Boolean(sf.lineDash),
+            lineWidth: sf.lineWidth ?? null,
             photoUrl: focusedPlace.photoUrl,
             photoCaption: focusedPlace.photoCaption,
             photoCredit: focusedPlace.photoCredit,

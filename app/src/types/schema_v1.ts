@@ -192,6 +192,49 @@ export interface PlaceSubFeature {
   label: string;
   fillColor: string;
   geometry: Geometry;
+  lineDash?: boolean;
+  lineWidth?: number;
+}
+
+export interface SubnationalBoundaryLine {
+  id: string;
+  name: string;
+  criterion: string;
+  sideALabel: string;
+  sideBLabel: string;
+  examPoint: string;
+  coordinates: [number, number][];
+  color: string;
+}
+
+export interface SubnationalZone {
+  id: string;
+  name: string;
+  tag: string;
+  climateAndSoil: string;
+  agriculture: string;
+  industryAndResources: string;
+  citiesAndCulture: string;
+  examTrap: string;
+  lng: number;
+  lat: number;
+  zoom: number;
+  bounds?: [number, number, number, number];
+  polygon?: [number, number][];
+  color: string;
+}
+
+export interface SubnationalProfile {
+  headline: string;
+  summary: string;
+  diagramId?: string;
+  boundaryLines: SubnationalBoundaryLine[];
+  comparisonTable: {
+    caption: string;
+    headers: string[];
+    rows: string[][];
+  };
+  zones: SubnationalZone[];
 }
 
 export interface PlaceEntry {
@@ -227,6 +270,7 @@ export interface CountryData {
   stats?: CountryStats;
   topCities?: TopCity[];
   specialRegions?: SpecialRegion[];
+  subnational?: SubnationalProfile;
   relations?: CountryRelation[];
   highlightVisuals?: HighlightVisual[];
   examSummary: {

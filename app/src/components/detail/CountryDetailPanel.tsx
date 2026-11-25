@@ -9,6 +9,7 @@ import {
   Globe2,
   Home,
   Landmark,
+  Layers,
   MapPin,
   Maximize2,
   Mountain,
@@ -36,6 +37,7 @@ import { HythergraphChart } from '../charts/HythergraphChart';
 import { IndustryTernaryChart } from '../charts/IndustryTernaryChart';
 import { PopulationPyramidChart } from '../charts/PopulationPyramidChart';
 import { RichGeoText } from '../study/RichGeoText';
+import { SubnationalRegionTab } from './SubnationalRegionTab';
 
 const RELATION_CATEGORY_STYLE: Record<
   CountryRelation['category'],
@@ -64,7 +66,7 @@ interface CountryDetailPanelProps {
   onOpenExamModal?: (initialQuestionId?: string) => void;
 }
 
-type DetailTab = 'overview' | 'nature' | 'climate' | 'industry' | 'population' | 'culture';
+type DetailTab = 'overview' | 'regions' | 'nature' | 'climate' | 'industry' | 'population' | 'culture';
 type ChartViewMode = 'both' | 'climograph' | 'hythergraph';
 
 function formatJapanesePopulation(pop: number): string {
@@ -247,6 +249,10 @@ export function CountryDetailPanel({
     return () => window.cancelAnimationFrame(raf);
   }, []);
 
+  const hasSubnational = Boolean(country?.subnational);
+  const effectiveTab: DetailTab =
+    activeTab === 'regions' && !hasSubnational ? 'overview' : activeTab;
+
   const activeCity =
     country?.climate.cities.find((c) => c.cityId === selectedCityId) ??
     country?.climate.cities[0];
@@ -268,7 +274,7 @@ export function CountryDetailPanel({
 
   // 気候タブ表示中は現在選択中の気候都市（または代表地点）をカメラ移動なしで自動ハイライト
   useEffect(() => {
-    if (activeTab !== 'climate' || !country) return;
+    if (effectiveTab !== 'climate' || !country) return;
     if (activeCity) {
       onFocusPlace({
         id: `clim-city-${activeCity.cityId}`,
@@ -300,7 +306,7 @@ export function CountryDetailPanel({
         skipCameraMove: true,
       });
     }
-  }, [activeTab, activeCity, country, selectedKoppenCode, onFocusPlace]);
+  }, [effectiveTab, activeCity, country, selectedKoppenCode, onFocusPlace]);
 
   if (!iso3) {
     return null;
@@ -388,6 +394,9 @@ export function CountryDetailPanel({
 
   const tabs: { id: DetailTab; shortLabel: string; label: string; icon: typeof Mountain }[] = [
     { id: 'overview', shortLabel: '概要', label: '概要・生活', icon: Sparkles },
+    ...(hasSubnational
+      ? [{ id: 'regions' as const, shortLabel: '地域', label: '国内地域', icon: Layers }]
+      : []),
     { id: 'nature', shortLabel: '自然', label: '自然・地形', icon: Mountain },
     { id: 'climate', shortLabel: '気候', label: '気候・雨温図', icon: CloudSun },
     { id: 'industry', shortLabel: '産業', label: '産業・経済', icon: Factory },
@@ -559,11 +568,15 @@ export function CountryDetailPanel({
         </div>
       ) : (
         <>
-          {/* 6カテゴリタブ */}
-          <div className="grid grid-cols-6 border-b border-slate-200 bg-white">
+          {/* 6〜7カテゴリタブ */}
+          <div
+            className={`grid border-b border-slate-200 bg-white ${
+              tabs.length === 7 ? 'grid-cols-7' : 'grid-cols-6'
+            }`}
+          >
             {tabs.map((tab) => {
               const Icon = tab.icon;
-              const isActive = activeTab === tab.id;
+              const isActive = effectiveTab === tab.id;
               return (
                 <button
                   key={tab.id}
@@ -639,8 +652,28 @@ export function CountryDetailPanel({
             </div>
 
             {/* 0. 概要・生活（初期表示タブ） */}
-            {activeTab === 'overview' && (
+            {effectiveTab === 'overview' && (
               <div className="space-y-3 md:space-y-4">
+                {country.subnational && (
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab('regions')}
+                    className="flex w-full items-center justify-between gap-2 rounded-xl border border-indigo-200 bg-indigo-50/70 px-3 py-2 text-left transition hover:border-indigo-400 hover:bg-indigo-50"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-1.5 text-xs font-extrabold text-indigo-900">
+                        <Layers className="h-3.5 w-3.5 shrink-0 text-indigo-600" />
+                        国内の地域差・境界線マップ（全{country.subnational.zones.length}地域・{country.subnational.boundaryLines.length}境界線）
+                      </div>
+                      <p className="mt-0.5 truncate text-[11px] text-indigo-700">
+                        {country.subnational.headline}
+                      </p>
+                    </div>
+                    <span className="shrink-0 rounded-md bg-indigo-600 px-2 py-1 text-[10.5px] font-bold text-white">
+                      地域タブへ
+                    </span>
+                  </button>
+                )}
                 {!country.isBasicEntry && country.examSummary.frequentTopics.length > 0 && (
                   <div className="flex flex-wrap gap-1 md:hidden">
                     {country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
@@ -998,8 +1031,18 @@ export function CountryDetailPanel({
               </div>
             )}
 
+            {/* 0.5. 国内地域差・境界線マップ（対象20カ国） */}
+            {effectiveTab === 'regions' && country.subnational && (
+              <SubnationalRegionTab
+                iso3={country.iso3}
+                countryNameJa={country.nameJa}
+                subnational={country.subnational}
+                onFocusPlace={handlePlaceClick}
+              />
+            )}
+
             {/* 1. 自然環境・地形 */}
-            {activeTab === 'nature' && (
+            {effectiveTab === 'nature' && (
               <div className="space-y-4">
                 <div className="rounded-xl border border-slate-200 bg-white p-3.5">
                   <div className="text-xs font-bold text-slate-500">属する造山帯・大地形</div>
@@ -1042,7 +1085,7 @@ export function CountryDetailPanel({
             )}
 
             {/* 2. 気候・グラフ動的描画 */}
-            {activeTab === 'climate' && (
+            {effectiveTab === 'climate' && (
               <div className="space-y-4">
                 <div className="rounded-xl border border-slate-200 bg-white p-3.5">
                   <div className="flex flex-wrap items-center justify-between gap-2">
@@ -1180,7 +1223,7 @@ export function CountryDetailPanel({
             )}
 
             {/* 3. 産業・経済 */}
-            {activeTab === 'industry' && (
+            {effectiveTab === 'industry' && (
               <div className="space-y-4">
                 {country.stats && (
                   <div className="space-y-3">
@@ -1310,7 +1353,7 @@ export function CountryDetailPanel({
             )}
 
             {/* 4. 人口・都市 */}
-            {activeTab === 'population' && (
+            {effectiveTab === 'population' && (
               <div className="space-y-4">
                 {country.stats && (
                   <>
@@ -1427,7 +1470,7 @@ export function CountryDetailPanel({
             )}
 
             {/* 5. 生活文化・歴史・国際関係 */}
-            {activeTab === 'culture' && (
+            {effectiveTab === 'culture' && (
               <div className="space-y-4">
                 <div className="space-y-2.5 rounded-xl border border-slate-200 bg-white p-3.5 text-xs">
                   <div>
