@@ -2939,7 +2939,7 @@
           "nameJa": "ロシア",
           "value": 4891,
           "sharePct": 18.7,
-          "note": "南部黒土地帯・Dfb気候で世界最大のてんさい生産"
+          "note": "南部黒土地帯・Df気候で世界最大のてんさい生産"
         },
         {
           "iso3": "FRA",
@@ -2953,7 +2953,7 @@
           "nameJa": "アメリカ合衆国",
           "value": 2955,
           "sharePct": 11.3,
-          "note": "北部Dfb州・灌漑地帯"
+          "note": "北部Df州・灌漑地帯"
         },
         {
           "iso3": "DEU",
@@ -6673,6 +6673,3831 @@
         "外来河川",
         "中東"
       ]
+    },
+    {
+      "id": "ag_wheat_exports",
+      "category": "agriculture",
+      "title": "小麦 輸出量 vs 輸入量（自給余剰国と急増する途上国輸入）",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT / USDA",
+      "examTrap": "小麦は自給できる国が多い一方で、エジプト（パン＝エイシ補助）・インドネシア（麺類急増）・トルコ（小麦粉加工再輸出）・中国・日本が巨大輸入国！輸出上位はロシア・カナダ・豪州・米国・フランス・ウクライナ。",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 4700,
+          "sharePct": 22.0,
+          "note": "南部黒土チェルノーゼム帯から黒海経由で中東アフリカへ輸出"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 2550,
+          "sharePct": 11.9,
+          "note": "プレーリー3州の高品質春小麦（日本輸入上位）"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 3180,
+          "sharePct": 14.9,
+          "note": "南東・南西部の企業的乾燥畑作＋羊輪作"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 2080,
+          "sharePct": 9.7,
+          "note": "冬小麦（カンザス）・春小麦（ダコタ）"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "value": 1600,
+          "sharePct": 7.5,
+          "note": "パリ盆地、EU最大輸出国"
+        },
+        {
+          "iso3": "UKR",
+          "nameJa": "ウクライナ",
+          "value": 1680,
+          "sharePct": 7.9,
+          "note": "黒土地帯（黒海穀物回廊問題）"
+        }
+      ],
+      "secondaryLabel": "輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "EGY",
+          "nameJa": "エジプト",
+          "value": 1150,
+          "sharePct": 5.5,
+          "note": "ナイル耕地狭小×人口1億人超で主食パン向け輸入世界トップ"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 1080,
+          "sharePct": 5.2,
+          "note": "即席麺・パン食普及で非栽培熱帯国ながら超巨大輸入国"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 1200,
+          "sharePct": 5.7,
+          "note": "世界1位生産国だが品質調整・飼料用等で大量輸入"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 980,
+          "sharePct": 4.7,
+          "note": "黒海小麦を輸入し小麦粉・パスタに加工して再輸出"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 720,
+          "sharePct": 3.4,
+          "note": "パスタ用デュラム小麦を北米等から輸入"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 540,
+          "sharePct": 2.6,
+          "note": "米豪加の3カ国からの輸入に9割以上依存"
+        }
+      ],
+      "tags": [
+        "小麦",
+        "輸出入乖離",
+        "エジプト",
+        "インドネシア"
+      ]
+    },
+    {
+      "id": "ag_maize_exports",
+      "category": "agriculture",
+      "title": "トウモロコシ 輸出量 vs 輸入量（飼料・エタノール需要）",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT / USDA",
+      "examTrap": "米国は最大生産＆大輸出国だが近年ブラジルがセラード二毛作で輸出世界1位を争う水準へ肉薄！輸入は中国・メキシコ・日本・EU（畜産飼料＋コーンスターチ用）が上位。",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 5400,
+          "sharePct": 28.0,
+          "note": "セラードの大豆収穫後『二期作（サフリーニャ）』で爆発的輸出"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 5200,
+          "sharePct": 27.0,
+          "note": "コーンベルト、生産の約4割弱をバイオエタノールにも転用"
+        },
+        {
+          "iso3": "ARG",
+          "nameJa": "アルゼンチン",
+          "value": 3400,
+          "sharePct": 17.6,
+          "note": "湿潤パンパの遺伝子組換え大規模栽培"
+        },
+        {
+          "iso3": "UKR",
+          "nameJa": "ウクライナ",
+          "value": 2700,
+          "sharePct": 14.0,
+          "note": "EU・中国向け重要輸出元"
+        }
+      ],
+      "secondaryLabel": "輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 2300,
+          "sharePct": 12.2,
+          "note": "豚肉・鶏肉消費急増で飼料用輸入が近年急拡大"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 1950,
+          "sharePct": 10.3,
+          "note": "主食トルティーヤ＆畜産用で米国から大規模輸入"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 1520,
+          "sharePct": 8.0,
+          "note": "配合飼料（肉・卵・乳）向けで世界トップ級輸入国"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 1150,
+          "sharePct": 6.1,
+          "note": "畜産飼料および加工でんぷん用"
+        }
+      ],
+      "tags": [
+        "トウモロコシ",
+        "輸出入",
+        "セラード",
+        "飼料"
+      ]
+    },
+    {
+      "id": "ag_rice_exports",
+      "category": "agriculture",
+      "title": "米 輸出量 vs 輸入量（生産と全く異なる国別順位）",
+      "unit": "万t（精米換算）",
+      "dataYear": "2022–2023",
+      "source": "USDA / FAOSTAT",
+      "examTrap": "超頻出の『生産vs輸出ギャップ』：米は自給的作物のため世界貿易比率は約1割にすぎない！世界生産1位の中国は実は『純輸入国（世界有数の輸入国）』、輸出1位は世界の約4割を握るインド！",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 1750,
+          "sharePct": 33.5,
+          "note": "世界の米貿易の3〜4割を独占（印輸出規制で世界米価高騰）"
+        },
+        {
+          "iso3": "THA",
+          "nameJa": "タイ",
+          "value": 880,
+          "sharePct": 16.8,
+          "note": "チャオプラヤデルタのインディカ米輸出伝統大国"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 820,
+          "sharePct": 15.7,
+          "note": "メコンデルタ年2〜3期作により世界2〜3位輸出"
+        },
+        {
+          "iso3": "PAK",
+          "nameJa": "パキスタン",
+          "value": 550,
+          "sharePct": 10.5,
+          "note": "インダス川灌漑によるバスマティ米等高級香り米輸出"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 280,
+          "sharePct": 5.4,
+          "note": "カリフォルニア・ミシシッピ下流の機械化稲作"
+        }
+      ],
+      "secondaryLabel": "輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 380,
+          "sharePct": 7.5,
+          "note": "人口急増と台風被害で近年世界トップ級の米輸入国に"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 260,
+          "sharePct": 5.1,
+          "note": "生産世界1位でも膨大な人口・飼料需要のため純輸入国"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 320,
+          "sharePct": 6.3,
+          "note": "ジャワ島等大生産国だがエルニーニョ干ばつ等で不足輸入"
+        },
+        {
+          "iso3": "NGA",
+          "nameJa": "ナイジェリア",
+          "value": 210,
+          "sharePct": 4.1,
+          "note": "都市部の簡便食（ライス食浸透）でサハラ以南最大級輸入"
+        }
+      ],
+      "tags": [
+        "米",
+        "貿易比率",
+        "インド",
+        "チャオプラヤ",
+        "メコン"
+      ]
+    },
+    {
+      "id": "ag_soybean_trade",
+      "category": "agriculture",
+      "title": "大豆 輸出量 vs 輸入量（中国一強の輸入構造）",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "USDA / FAOSTAT",
+      "examTrap": "大豆の世界輸入量の約6割強を中国1カ国が吸い込んでいる！中国国内の豚・鶏・乳製品増産＝植物油＋搾油粕（飼料）需要の爆発が、ブラジル（セラード）と米国の森林/草地転換を牽引。",
+      "primaryLabel": "輸入量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 9900,
+          "sharePct": 60.5,
+          "note": "世界総輸入の6割超！国内養豚・搾油需要で東北部生産を上回る爆輸入"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 640,
+          "sharePct": 3.9,
+          "note": "搾油・畜産飼料用"
+        },
+        {
+          "iso3": "ARG",
+          "nameJa": "アルゼンチン",
+          "value": 620,
+          "sharePct": 3.8,
+          "note": "豆粕・大豆油に加工して再輸出するための近隣(パラグアイ/伯)輸入"
+        },
+        {
+          "iso3": "EGY",
+          "nameJa": "エジプト",
+          "value": 380,
+          "sharePct": 2.3,
+          "note": "食用油・家畜飼料需要"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 330,
+          "sharePct": 2.0,
+          "note": "食用(豆腐納豆)＋搾油用（米・伯から大半を輸入）"
+        }
+      ],
+      "secondaryLabel": "輸出量上位",
+      "secondaryTop": [
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 9600,
+          "sharePct": 57.0,
+          "note": "米国を抜き圧倒的世界1位の大豆輸出大国"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 4700,
+          "sharePct": 27.9,
+          "note": "コーンベルトでのトウモロコシとの輪作"
+        },
+        {
+          "iso3": "PRY",
+          "nameJa": "パラグアイ",
+          "value": 630,
+          "sharePct": 3.7,
+          "note": "東部パラナ川流域の日系・ブラジル系移住者の大豆生産"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 490,
+          "sharePct": 2.9,
+          "note": "オンタリオ等の寒冷品種"
+        }
+      ],
+      "tags": [
+        "大豆",
+        "中国",
+        "ブラジル",
+        "飼料"
+      ]
+    },
+    {
+      "id": "ag_sugarcane_only",
+      "category": "agriculture",
+      "title": "サトウキビ（熱帯・亜熱帯糖料作物）生産＆砂糖輸出",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT",
+      "examTrap": "『砂糖』の国際取引では原料が熱帯サトウキビか冷涼帯テンサイかの区別が必須。サトウキビはブラジル（約半数をバイオエタノール化）とインド（国内消費極大）の2強！先進国オーストラリアは全工程機械化で輸出上位。",
+      "primaryLabel": "サトウキビ生産上位",
+      "primaryTop": [
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 72440,
+          "sharePct": 38.0,
+          "note": "南東部＋北東部、エタノール兼砂糖世界一輸出"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 43940,
+          "sharePct": 23.0,
+          "note": "ガンジス中上流、膨大な国内甘味消費向け"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 10390,
+          "sharePct": 5.4,
+          "note": "広西チワン自治区・雲南など華南"
+        },
+        {
+          "iso3": "THA",
+          "nameJa": "タイ",
+          "value": 9210,
+          "sharePct": 4.8,
+          "note": "東北部コラート高原等でブラジルに次ぐ砂糖輸出大国"
+        },
+        {
+          "iso3": "PAK",
+          "nameJa": "パキスタン",
+          "value": 8860,
+          "sharePct": 4.6,
+          "note": "インダス川灌漑耕地"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 5460,
+          "sharePct": 2.9,
+          "note": "ベラクルス等メキシコ湾岸"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 3160,
+          "sharePct": 1.7,
+          "note": "クイーンズランド沿岸の高度機械化栽培・高輸出率"
+        }
+      ],
+      "tags": [
+        "サトウキビ",
+        "砂糖",
+        "エタノール",
+        "タイ"
+      ]
+    },
+    {
+      "id": "ag_sugarbeet_only",
+      "category": "agriculture",
+      "title": "テンサイ（ビート：温帯・冷帯糖料作物）生産上位",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "サトウキビが熱帯〜亜熱帯（印・伯・タイ・沖縄）なのに対し、テンサイは冷涼な欧州混合農業（露・仏・独・波）・米北部・トルコ内陸・『日本の北海道（日本の砂糖生産の大半！）』で作られる点が気候判別に直結。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 4890,
+          "sharePct": 18.7,
+          "note": "南部チェルノーゼム地帯での大規模輪作"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "value": 3180,
+          "sharePct": 12.2,
+          "note": "パリ盆地等で小麦との輪作（EU首位級砂糖輸出）"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 2955,
+          "sharePct": 11.3,
+          "note": "北部Df州・灌漑地帯（レッドリバーバレー等）"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 2815,
+          "sharePct": 10.8,
+          "note": "中部レス地帯の混合農業輪作根菜"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 1925,
+          "sharePct": 7.4,
+          "note": "中央アナトリア高原内陸BSの主要作物"
+        },
+        {
+          "iso3": "POL",
+          "nameJa": "ポーランド",
+          "value": 1410,
+          "sharePct": 5.4,
+          "note": "中央低地の混合農業"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 395,
+          "sharePct": 1.5,
+          "note": "100%北海道（十勝・網走）生産で国内産砂糖の約8割を担う"
+        }
+      ],
+      "tags": [
+        "テンサイ",
+        "輪作",
+        "混合農業",
+        "北海道"
+      ]
+    },
+    {
+      "id": "ag_banana_prod_vs_exp",
+      "category": "agriculture",
+      "title": "バナナ 生産量 vs 輸出量（典型的な『途上国商品作物』乖離）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "バナナ生産量世界1位・2位はインドと中国だが、ほぼ全量を国内で食べるため輸出上位に影も形もない！輸出ランキングで上位に来る『エクアドル・フィリピン・コスタリカ・グアテマラ・コロンビア』と正確に見分ける！",
+      "primaryLabel": "生産量上位（自給消費型多）",
+      "primaryTop": [
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 3450,
+          "sharePct": 25.5,
+          "note": "世界1位だが国内消費用で輸出はごくわずか"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 1180,
+          "sharePct": 8.7,
+          "note": "世界2位の生産国だが逆に純輸入国！"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 920,
+          "sharePct": 6.8,
+          "note": "国内消費中心"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 685,
+          "sharePct": 5.1,
+          "note": "国内消費向け"
+        },
+        {
+          "iso3": "ECU",
+          "nameJa": "エクアドル",
+          "value": 660,
+          "sharePct": 4.9,
+          "note": "生産の大半を輸出に回す世界最大輸出国"
+        },
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 590,
+          "sharePct": 4.4,
+          "note": "ミンダナオ島の大規模輸出農園（日本輸入8割）"
+        }
+      ],
+      "secondaryLabel": "輸出量上位",
+      "secondaryTop": [
+        {
+          "iso3": "ECU",
+          "nameJa": "エクアドル",
+          "value": 650,
+          "sharePct": 28.0,
+          "note": "世界1位のバナナ輸出国"
+        },
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 235,
+          "sharePct": 10.1,
+          "note": "日本市場シェア圧倒的（プランテーション多国籍資本）"
+        },
+        {
+          "iso3": "GTM",
+          "nameJa": "グアテマラ",
+          "value": 245,
+          "sharePct": 10.6,
+          "note": "米国市場向け中米プランテーション拠点"
+        },
+        {
+          "iso3": "CRI",
+          "nameJa": "コスタリカ",
+          "value": 225,
+          "sharePct": 9.7,
+          "note": "コーヒー・パイナップルと並ぶ中米代表輸出農園"
+        },
+        {
+          "iso3": "COL",
+          "nameJa": "コロンビア",
+          "value": 210,
+          "sharePct": 9.0,
+          "note": "カリブ海側からの欧州/米国輸出"
+        }
+      ],
+      "tags": [
+        "バナナ",
+        "プランテーション",
+        "生産vs輸出",
+        "フィリピン",
+        "エクアドル"
+      ]
+    },
+    {
+      "id": "ag_orange",
+      "category": "agriculture",
+      "title": "オレンジ（柑橘）生産量（ブラジルと地中海・米の対比）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "ブラジルが生産1位かつ冷凍濃縮オレンジジュース輸出で世界を席巻（サンパウロ州内陸）！米フロリダ（近年病害・ハリケーン減産）や地中海式気候のスペイン・エジプト・モロッコも生果輸出で重要。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 1690,
+          "sharePct": 22.2,
+          "note": "サンパウロ州周辺、オレンジ果汁輸出の世界最大手"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 1020,
+          "sharePct": 13.4,
+          "note": "国内生食用需要中心"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 760,
+          "sharePct": 10.0,
+          "note": "長江中上流（重慶・江西等）・国内消費"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 485,
+          "sharePct": 6.4,
+          "note": "ベラクルス等、米国市場向け輸出"
+        },
+        {
+          "iso3": "EGY",
+          "nameJa": "エジプト",
+          "value": 365,
+          "sharePct": 4.8,
+          "note": "ナイルデルタ灌漑で欧州・中東向け生食オレンジ輸出世界首位圏！"
+        },
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 310,
+          "sharePct": 4.1,
+          "note": "バレンシア『ウエルタ』灌漑によるEU向け生果供給"
+        }
+      ],
+      "tags": [
+        "オレンジ",
+        "柑橘",
+        "ブラジル",
+        "地中海式農業"
+      ]
+    },
+    {
+      "id": "ag_apple",
+      "category": "agriculture",
+      "title": "リンゴ（冷涼温帯果樹）生産量＆対日輸出構図",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "中国が世界生産の約半分を占める圧倒的1位（山東・陝西の黄土高原斜面など）！トルコ・米国・ポーランド・イタリア（南チロル）が続く。日本のリンゴ輸出先1位は『台湾』（次いで香港）である点が2026年本試で出題！",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 4750,
+          "sharePct": 49.5,
+          "note": "山東半島・黄土高原で世界の約半分を生産"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 480,
+          "sharePct": 5.0,
+          "note": "アナトリア高原周縁の冷涼斜面"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 442,
+          "sharePct": 4.6,
+          "note": "北西部ワシントン州（コロンビア川灌漑）とNY州"
+        },
+        {
+          "iso3": "POL",
+          "nameJa": "ポーランド",
+          "value": 426,
+          "sharePct": 4.4,
+          "note": "EU最大のリンゴ生産国・加工果汁も大"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 258,
+          "sharePct": 2.7,
+          "note": "ヒマラヤ山麓冷涼高地（カシミール・ヒマーチャル）"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 74,
+          "sharePct": 0.8,
+          "note": "青森（約6割）・長野（2割）・山形、台湾・香港へ高品質輸出"
+        }
+      ],
+      "tags": [
+        "リンゴ",
+        "果樹",
+        "台湾",
+        "2026年出題"
+      ]
+    },
+    {
+      "id": "ag_olive_only",
+      "category": "agriculture",
+      "title": "オリーブ（地中海式農業 Cs の指標樹木）生産量",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "耐干性の常緑硬葉樹オリーブは『ケッペンの地中海性気候 Cs の分布域とほぼ完全一致』する！スペイン（アンダルシアが圧倒的世界1位）・イタリア・トルコ・モロッコ・ギリシャ・チュニジアがトップ集団。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 550,
+          "sharePct": 27.0,
+          "note": "南部アンダルシア（ハエン等）で世界最大のオリーブ油産地"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 216,
+          "sharePct": 10.6,
+          "note": "プーリア等南部中心、高付加価値エクストラバージン油"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 297,
+          "sharePct": 14.6,
+          "note": "エーゲ海・マルマラ沿岸Cs地帯"
+        },
+        {
+          "iso3": "MAR",
+          "nameJa": "モロッコ",
+          "value": 195,
+          "sharePct": 9.6,
+          "note": "北アフリカ地中海〜大西洋岸の重要輸出品"
+        },
+        {
+          "iso3": "GRC",
+          "nameJa": "ギリシャ",
+          "value": 210,
+          "sharePct": 10.3,
+          "note": "ペロポネソス半島・クレタ島、1人あたり消費世界最高"
+        },
+        {
+          "iso3": "TUN",
+          "nameJa": "チュニジア",
+          "value": 120,
+          "sharePct": 5.9,
+          "note": "乾燥耐性を活かし世界有数のオリーブ油輸出国"
+        }
+      ],
+      "tags": [
+        "オリーブ",
+        "地中海性気候",
+        "Cs",
+        "硬葉樹"
+      ]
+    },
+    {
+      "id": "ag_tomato",
+      "category": "agriculture",
+      "title": "トマト（露地・施設園芸＆加工缶詰）生産・輸出比較",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "生鮮トマト輸出は米国近接で気候温暖な『メキシコ』と施設ガラス温室集約園芸の『オランダ』・『スペイン（アルメリア）』が世界トップ。加工ペースト・ホール缶はイタリア・中国・米カリフォルニア。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 6830,
+          "sharePct": 36.7,
+          "note": "国内消費＋新疆等乾燥陽光地域の加工トマトペースト世界輸出"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 2070,
+          "sharePct": 11.1,
+          "note": "カレー基盤調味料として莫大な国内消費"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 1300,
+          "sharePct": 7.0,
+          "note": "エーゲ沿岸等で生鮮＆サルチャ加工"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 1020,
+          "sharePct": 5.5,
+          "note": "カリフォルニア・セントラルバレー（加工トマト機械収穫）"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 610,
+          "sharePct": 3.3,
+          "note": "南部カンパニア等で缶詰・ソース用ブランド産地"
+        }
+      ],
+      "secondaryLabel": "生鮮輸出上位（市場近接・施設園芸）",
+      "secondaryTop": [
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 185,
+          "sharePct": 24.5,
+          "note": "北米（米国）冬季生鮮需要向け圧倒的輸出国"
+        },
+        {
+          "iso3": "NLD",
+          "nameJa": "オランダ",
+          "value": 85,
+          "sharePct": 11.3,
+          "note": "高効率・水耕ICTガラス温室で単位面積収量世界最高峰"
+        },
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 64,
+          "sharePct": 8.5,
+          "note": "南部アルメリア『プラスチックの海』ビニールハウス産地"
+        },
+        {
+          "iso3": "MAR",
+          "nameJa": "モロッコ",
+          "value": 68,
+          "sharePct": 9.0,
+          "note": "アフリカからEU向け冬季園芸輸出急伸中！"
+        }
+      ],
+      "tags": [
+        "トマト",
+        "施設園芸",
+        "オランダ",
+        "アルメリア"
+      ]
+    },
+    {
+      "id": "ag_peanut",
+      "category": "agriculture",
+      "title": "落花生（ピーナッツ）生産量（アフリカ・サヘル＆アジア畑作）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "半乾燥砂質土壌に適した豆科作物。中国・インドに次いで『ナイジェリア（北部サヘル）』『スーダン』『セネガル』などアフリカの半乾燥（BS・Aw）諸国が上位に入り、旧植民地時代からのモノカルチャー輸出油糧作物の歴史を持つ！",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 1833,
+          "sharePct": 33.8,
+          "note": "山東省・河南省の砂質畑作"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 1010,
+          "sharePct": 18.6,
+          "note": "グジャラート州等半乾燥西部の植物油原料"
+        },
+        {
+          "iso3": "NGA",
+          "nameJa": "ナイジェリア",
+          "value": 428,
+          "sharePct": 7.9,
+          "note": "北部サヘル（カノ周辺）の代表換金・蛋白作物"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 252,
+          "sharePct": 4.6,
+          "note": "南東部ジョージア州（旧綿花地帯の作目転換！）"
+        },
+        {
+          "iso3": "SDN",
+          "nameJa": "スーダン",
+          "value": 250,
+          "sharePct": 4.6,
+          "note": "サヘル内陸の伝統輸出油糧作物"
+        },
+        {
+          "iso3": "SEN",
+          "nameJa": "セネガル",
+          "value": 150,
+          "sharePct": 2.8,
+          "note": "落花生モノカルチャー構造の脱却が課題"
+        }
+      ],
+      "tags": [
+        "落花生",
+        "サヘル",
+        "セネガル",
+        "ナイジェリア"
+      ]
+    },
+    {
+      "id": "ag_sunflower",
+      "category": "agriculture",
+      "title": "ヒマワリ種子（食用油・黒海ステップ作物）生産・輸出",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT / USDA",
+      "examTrap": "『ロシア＋ウクライナ』の2カ国だけで世界生産＆世界輸出（ヒマワリ油）の過半数を独占する！黒土（チェルノーゼム）とステップ草原地帯の指標油糧作物で、2022年ウクライナ紛争で世界の植物油価格が急騰した要因。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 1630,
+          "sharePct": 30.0,
+          "note": "南部ステップ・チェルノーゼム帯"
+        },
+        {
+          "iso3": "UKR",
+          "nameJa": "ウクライナ",
+          "value": 1220,
+          "sharePct": 22.5,
+          "note": "世界最大のヒマワリ油輸出国（黒海封鎖で打撃）"
+        },
+        {
+          "iso3": "ARG",
+          "nameJa": "アルゼンチン",
+          "value": 410,
+          "sharePct": 7.6,
+          "note": "乾燥寄りパンパでの栽培"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 255,
+          "sharePct": 4.7,
+          "note": "トラキア地方・アナトリア高原"
+        },
+        {
+          "iso3": "ROU",
+          "nameJa": "ルーマニア",
+          "value": 210,
+          "sharePct": 3.9,
+          "note": "EU最大のヒマワリ産地（ドナウ下流平原）"
+        }
+      ],
+      "tags": [
+        "ヒマワリ",
+        "チェルノーゼム",
+        "ウクライナ",
+        "ロシア"
+      ]
+    },
+    {
+      "id": "ag_rapeseed",
+      "category": "agriculture",
+      "title": "菜種（ナタネ・カノーラ）生産＆輸出（日本の植物油原料）",
+      "unit": "万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT / USDA",
+      "examTrap": "日本のサラダ油最大原料！冷涼気候にも強くカナダ（プレーリーで開発された品種＝『カノーラ』）と豪州・ウクライナが輸出3強。インドではマスタード油用として巨大消費。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 1870,
+          "sharePct": 21.0,
+          "note": "世界最大の菜種輸出国（日本輸入の大半を供給）"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 1550,
+          "sharePct": 17.4,
+          "note": "長江流域・冬の裏作（水田裏作）として莫大生産"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 1200,
+          "sharePct": 13.5,
+          "note": "北部乾季畑作、国内食用油向け"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 428,
+          "sharePct": 4.8,
+          "note": "バイオディーゼル・食用油用の黄色い菜の花畑"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 830,
+          "sharePct": 9.3,
+          "note": "小麦との輪作で近年生産・対日/欧輸出急伸"
+        }
+      ],
+      "tags": [
+        "菜種",
+        "カノーラ",
+        "カナダ",
+        "オーストラリア"
+      ]
+    },
+    {
+      "id": "ag_tea_exports",
+      "category": "agriculture",
+      "title": "茶 生産量 vs 輸出量（プランテーション東アフリカの躍進）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "生産は中国（約半数：緑茶・烏龍茶中心）＞インドだが、輸出量ランキングでは『ケニア』が世界1位〜2位争い！英国植民地時代に標高1500m超のケニア高地に導入された紅茶プランテーションが外貨獲得の柱。",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "KEN",
+          "nameJa": "ケニア",
+          "value": 52,
+          "sharePct": 24.5,
+          "note": "高地ケリチョ等の紅茶プランテーション、世界最大の茶輸出国！"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 37,
+          "sharePct": 17.4,
+          "note": "緑茶中心に生産圧倒的1位・輸出額トップ"
+        },
+        {
+          "iso3": "LKA",
+          "nameJa": "スリランカ",
+          "value": 25,
+          "sharePct": 11.8,
+          "note": "旧セイロン島中央高地紅茶（小規模/大規模農園併用・外貨支柱）"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 23,
+          "sharePct": 10.8,
+          "note": "アッサム・ダージリン紅茶（ただし膨大な国内チャイ消費あり）"
+        }
+      ],
+      "secondaryLabel": "生産量上位",
+      "secondaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 318,
+          "sharePct": 48.0,
+          "note": "江南丘陵等（世界の約半分）"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 136,
+          "sharePct": 20.5,
+          "note": "アッサム（平野/盆地多雨）・ダージリン（ヒマラヤ斜面）"
+        },
+        {
+          "iso3": "KEN",
+          "nameJa": "ケニア",
+          "value": 53,
+          "sharePct": 8.0,
+          "note": "ほぼ全量を世界へ輸出"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 28,
+          "sharePct": 4.2,
+          "note": "黒海東岸リゼ（Cfa多雨）で生産し1人あたり茶消費世界1位！"
+        }
+      ],
+      "tags": [
+        "茶",
+        "紅茶",
+        "ケニア",
+        "スリランカ",
+        "2015年出題"
+      ]
+    },
+    {
+      "id": "ag_cattle_head",
+      "category": "agriculture",
+      "title": "牛飼育頭数 vs 牛肉輸出（ヒンドゥー教タブー＆輸出国のズレ）",
+      "unit": "万頭 / 万t",
+      "dataYear": "2022–2023",
+      "source": "FAOSTAT / USDA",
+      "examTrap": "水牛を除いた狭義牛でもインド（ヒンドゥー教で牛を神聖視・食用不可のため老牛も残り『役用・乳用』が莫大）とブラジル（世界1位商業肉牛＆輸出）がトップ2！ちなみに近年『水牛肉（カラビーフ）輸出』としてインドも上位に出るため注記を必ず読むこと！",
+      "primaryLabel": "牛飼育頭数上位",
+      "primaryTop": [
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 23400,
+          "sharePct": 14.9,
+          "note": "セラード・アマゾン周辺で肉牛飼育・牛肉輸出ともに世界1位"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 19300,
+          "sharePct": 12.3,
+          "note": "水牛を加えると世界首位！宗教上の理由で乳用・農耕役畜中心"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 8900,
+          "sharePct": 5.7,
+          "note": "大平原放牧＋フィードロット穀物肥育、世界有数輸出入両立"
+        },
+        {
+          "iso3": "ETH",
+          "nameJa": "エチオピア",
+          "value": 6800,
+          "sharePct": 4.3,
+          "note": "アフリカ最大の畜産頭数国（半乾燥高原の牧畜文化）"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 6100,
+          "sharePct": 3.9,
+          "note": "都市部の牛肉消費急伸"
+        },
+        {
+          "iso3": "ARG",
+          "nameJa": "アルゼンチン",
+          "value": 5400,
+          "sharePct": 3.4,
+          "note": "パンパ放牧、1人当たり牛肉消費世界トップ級"
+        }
+      ],
+      "tags": [
+        "牛",
+        "ヒンドゥー教",
+        "ブラジル",
+        "肉牛"
+      ]
+    },
+    {
+      "id": "ag_pig_head",
+      "category": "agriculture",
+      "title": "豚飼育頭数（イスラム教不浄タブーがグラフに直結）",
+      "unit": "万頭",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "イスラム教（およびユダヤ教）では豚が禁止されているため、インドネシア・サウジ・トルコ・バングラデシュ等のイスラム諸国がグラフからスッポリ消える！中国1国で世界頭数の約45%を占め、欧州（スペイン・独・丁）と米伯が続くと即判別。",
+      "primaryLabel": "飼育頭数上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 45200,
+          "sharePct": 46.5,
+          "note": "世界最大の豚肉生産＆消費国（大豆・トウモロコシ飼料輸入の元）"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 7440,
+          "sharePct": 7.7,
+          "note": "コーンベルトに直結した養豚（アイオワ州など）"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 4440,
+          "sharePct": 4.6,
+          "note": "南部〜中西部の大豆粕・トウモロコシ飼料利用"
+        },
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 3400,
+          "sharePct": 3.5,
+          "note": "EU最大養豚国へ躍進（生ハム/イベリコ豚＆対中輸出）"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 2470,
+          "sharePct": 2.5,
+          "note": "仏教文化・東南アジア有数の養豚大国"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 2130,
+          "sharePct": 2.2,
+          "note": "北西部低地のジャガイモ/穀物飼料型大規模養豚"
+        }
+      ],
+      "tags": [
+        "豚",
+        "宗教タブー",
+        "イスラム教",
+        "中国"
+      ]
+    },
+    {
+      "id": "ag_sheep_goat_buffalo",
+      "category": "agriculture",
+      "title": "羊・ヤギ・水牛飼育頭数（気候・地形との完全対応）",
+      "unit": "万頭",
+      "dataYear": "2022",
+      "source": "FAOSTAT",
+      "examTrap": "家畜種別の判別決定打！羊＝半乾燥ステップ（中・印・豪・イラン・NZ・英）、ヤギ＝さらに荒れた急峻/極乾燥地（印・中・ナイジェリア・パキスタン）、水牛＝モンスーンアジアの水田地帯の沼沢農耕役畜（印が過半・パキスタン・中・尼）！",
+      "primaryLabel": "羊 飼育頭数上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 19400,
+          "sharePct": 14.7,
+          "note": "内モンゴル・新疆の乾燥草原遊牧＋農家飼育"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 7550,
+          "sharePct": 5.7,
+          "note": "デカン高原半乾燥部など"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 7020,
+          "sharePct": 5.3,
+          "note": "大鑽井盆地等の粗放牧羊、メリノ羊毛世界首位"
+        },
+        {
+          "iso3": "IRN",
+          "nameJa": "イラン",
+          "value": 5560,
+          "sharePct": 4.2,
+          "note": "乾燥高原遊牧＆イスラム教の主要食用肉（マトン）"
+        },
+        {
+          "iso3": "NGA",
+          "nameJa": "ナイジェリア",
+          "value": 5030,
+          "sharePct": 3.8,
+          "note": "北部サヘルの半乾燥牧畜"
+        },
+        {
+          "iso3": "NZL",
+          "nameJa": "ニュージーランド",
+          "value": 2510,
+          "sharePct": 1.9,
+          "note": "人口の約5倍の羊（近年は乳牛へ転換し頭数減少中！）"
+        }
+      ],
+      "secondaryLabel": "水牛（アジア水田）上位",
+      "secondaryTop": [
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 11180,
+          "sharePct": 54.0,
+          "note": "世界の半分超！ミルク（水牛乳）＋耕起＋水牛肉輸出"
+        },
+        {
+          "iso3": "PAK",
+          "nameJa": "パキスタン",
+          "value": 4370,
+          "sharePct": 21.1,
+          "note": "インダス流域の乳牛代わり重要家畜"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 2690,
+          "sharePct": 13.0,
+          "note": "秦嶺・淮河以南の水田地帯"
+        },
+        {
+          "iso3": "NPL",
+          "nameJa": "ネパール",
+          "value": 510,
+          "sharePct": 2.5,
+          "note": "ヒマラヤ山麓棚田・乳肉利用"
+        }
+      ],
+      "tags": [
+        "羊",
+        "ヤギ",
+        "水牛",
+        "遊牧",
+        "宗教"
+      ]
+    },
+    {
+      "id": "ag_wool_prod",
+      "category": "agriculture",
+      "title": "羊毛（原毛）生産・輸出（オセアニアの伝統特産）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAOSTAT / IWTO",
+      "examTrap": "オーストラリア（細手衣料用メリノウール独占）と中国（毛織物工場加工用・国内産＋豪から大量輸入）がトップ2、ニュージーランド（カーペット用太毛）とアルゼンチン（パタゴニア）・英国が続く。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 36,
+          "sharePct": 20.5,
+          "note": "内陸生産＋豪州原毛を輸入し世界最大の毛織物製造"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 32,
+          "sharePct": 18.2,
+          "note": "輸出額・高品質メリノ羊毛で世界1位"
+        },
+        {
+          "iso3": "NZL",
+          "nameJa": "ニュージーランド",
+          "value": 13,
+          "sharePct": 7.4,
+          "note": "冷涼湿潤Cfb丘陵、羊から酪農へ転換傾向でやや減少"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 8,
+          "sharePct": 4.5,
+          "note": "アナトリア伝統絨毯・毛織原料"
+        },
+        {
+          "iso3": "GBR",
+          "nameJa": "イギリス",
+          "value": 7,
+          "sharePct": 4.0,
+          "note": "西海岸丘陵・スコットランド牧羊（ツイード等）"
+        }
+      ],
+      "tags": [
+        "羊毛",
+        "オーストラリア",
+        "ニュージーランド"
+      ]
+    },
+    {
+      "id": "ag_salmon_shrimp_aquaculture",
+      "category": "agriculture",
+      "title": "サケ・マス海面養殖（NOR/CHL）vs エビ養殖（ECU/IND/VNM）",
+      "unit": "万t",
+      "dataYear": "2022",
+      "source": "FAO",
+      "examTrap": "サーモン海面養殖は『冷涼で波が穏やかなフィヨルド地形』の『ノルウェー』と『チリ南部（太平洋岸フィヨルド）』（＋日系・欧州資本進出）の2強！熱帯マングローブ沿岸のエビ養殖（バナメイ・ブラックタイガー）はエクアドル・印・越・尼。",
+      "primaryLabel": "サケ・マス養殖上位",
+      "primaryTop": [
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 156,
+          "sharePct": 52.0,
+          "note": "北大西洋海流の不凍フィヨルド湾を活用した世界1位の養殖サーモン"
+        },
+        {
+          "iso3": "CHL",
+          "nameJa": "チリ",
+          "value": 107,
+          "sharePct": 35.7,
+          "note": "南部チロエ島〜アイセンのフィヨルド（対日・対米輸出極大）"
+        },
+        {
+          "iso3": "GBR",
+          "nameJa": "イギリス",
+          "value": 17,
+          "sharePct": 5.7,
+          "note": "スコットランド西岸の氷河峡湾（スコティッシュサーモン）"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 12,
+          "sharePct": 4.0,
+          "note": "BC州フィヨルド沿岸"
+        }
+      ],
+      "secondaryLabel": "エビ養殖輸出上位",
+      "secondaryTop": [
+        {
+          "iso3": "ECU",
+          "nameJa": "エクアドル",
+          "value": 135,
+          "sharePct": 26.0,
+          "note": "近年アジアを抜き世界最大の養殖バナメイエビ輸出国！"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 95,
+          "sharePct": 18.3,
+          "note": "アンドラプラデシュ等ベンガル湾岸の日本・米向け輸出"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 85,
+          "sharePct": 16.4,
+          "note": "メコンデルタのマングローブ域開発養殖（環境保全と両立課題）"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 72,
+          "sharePct": 13.8,
+          "note": "ジャワ・スマトラ沿岸養殖"
+        }
+      ],
+      "tags": [
+        "養殖",
+        "フィヨルド",
+        "サーモン",
+        "エビ",
+        "マングローブ"
+      ]
+    },
+    {
+      "id": "soc_rice_coffee_percap",
+      "category": "society",
+      "title": "1人当たり食料・嗜好品消費（米消費 vs コーヒー消費の意外な逆転）",
+      "unit": "kg / 人・年",
+      "dataYear": "2022",
+      "source": "FAOSTAT / ICO",
+      "examTrap": "日本は今や1人当たり年間米消費約50kg前後でパン・麺に押され低下中（一方バングラデシュ約180kg、ベトナム・インドネシア約130〜145kg）！また『1人当たりコーヒー消費量』は産地ブラジルでなく日照短い冬の長い『北欧（フィンランド・ノルウェー・アイスランド等）』が世界トップ独占！",
+      "primaryLabel": "1人当たりコーヒー消費上位",
+      "primaryTop": [
+        {
+          "iso3": "FIN",
+          "nameJa": "フィンランド",
+          "value": 12.0,
+          "sharePct": 100.0,
+          "note": "世界1位！長く暗い冬の職場・家庭『カハヴィタウコ』文化"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 9.9,
+          "sharePct": 82.5,
+          "note": "北欧諸国上位の定番（冬の日照不足対策＋高所得）"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 9.0,
+          "sharePct": 75.0,
+          "note": "高緯度小国、北欧コーヒー文化圏"
+        },
+        {
+          "iso3": "DNK",
+          "nameJa": "デンマーク",
+          "value": 8.7,
+          "sharePct": 72.5,
+          "note": "『ヒュッゲ』文化と深い珈琲消費"
+        },
+        {
+          "iso3": "NLD",
+          "nameJa": "オランダ",
+          "value": 8.4,
+          "sharePct": 70.0,
+          "note": "東インド会社交易史＋ロッテルダム珈琲ハブ"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 3.5,
+          "sharePct": 29.0,
+          "note": "アジアでは高水準（缶コーヒー・コンビニ浸透）"
+        }
+      ],
+      "secondaryLabel": "1人当たり米消費量上位",
+      "secondaryTop": [
+        {
+          "iso3": "BGD",
+          "nameJa": "バングラデシュ",
+          "value": 182,
+          "sharePct": 100.0,
+          "note": "世界最高水準の米依存食文化"
+        },
+        {
+          "iso3": "LAO",
+          "nameJa": "ラオス",
+          "value": 165,
+          "sharePct": 90.7,
+          "note": "もち米主食文化"
+        },
+        {
+          "iso3": "KHM",
+          "nameJa": "カンボジア",
+          "value": 160,
+          "sharePct": 87.9,
+          "note": "トンレサップ流域稲作中心"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 146,
+          "sharePct": 80.2,
+          "note": "アジア式集約稲作"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 135,
+          "sharePct": 74.2,
+          "note": "人口2.8億の主食"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 51,
+          "sharePct": 28.0,
+          "note": "1962年の約118kgから食の欧米化で半減以下"
+        }
+      ],
+      "tags": [
+        "1人当たり消費",
+        "コーヒー",
+        "北欧",
+        "食文化変化"
+      ]
+    },
+    {
+      "id": "res_oil_exports_imports",
+      "category": "resource",
+      "title": "原油 輸出量 vs 輸入量（中国圧勝の輸入＆米国の純輸出国化）",
+      "unit": "百万t / 年",
+      "dataYear": "2023",
+      "source": "Energy Institute / OPEC",
+      "examTrap": "原油『生産1位＝米国（シェール革命）』だが国内消費も莫大なため純輸出はまだ中東サウジやロシアが大きい！一方、最大の原油輸入国は米国を抜いて『中国（日・印が続く）』、日本の輸入中東依存度は約9割と異常に高い。",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "SAU",
+          "nameJa": "サウジアラビア",
+          "value": 335,
+          "sharePct": 15.8,
+          "note": "世界最大の原油純輸出国（アジア向け7割超）"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 240,
+          "sharePct": 11.3,
+          "note": "欧州禁輸後に中国・インド向けへシフト"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 205,
+          "sharePct": 9.7,
+          "note": "アルバータ州オイルサンド原油の大半を米国へパイプライン輸出"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 200,
+          "sharePct": 9.4,
+          "note": "シェール軽質油を輸出しつつ重質油をカナダ/墨から輸入もする"
+        },
+        {
+          "iso3": "IRQ",
+          "nameJa": "イラク",
+          "value": 175,
+          "sharePct": 8.3,
+          "note": "バスラ南岸積出、国家歳入の9割超"
+        },
+        {
+          "iso3": "ARE",
+          "nameJa": "アラブ首長国連邦",
+          "value": 160,
+          "sharePct": 7.5,
+          "note": "アブダビ油田、日本最大の原油輸入先のひとつ"
+        }
+      ],
+      "secondaryLabel": "輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 564,
+          "sharePct": 26.0,
+          "note": "世界総輸入の4分の1超を買い占める最大の原油輸入大国"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 325,
+          "sharePct": 15.0,
+          "note": "輸出を伸ばしつつ精製施設適合のカナダ重質油を輸入"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 235,
+          "sharePct": 10.8,
+          "note": "経済成長＋露割安原油大量調達で急増"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 135,
+          "sharePct": 6.2,
+          "note": "石油化学精製＆再輸出拠点"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 122,
+          "sharePct": 5.6,
+          "note": "輸入先の中東（サウジ・UAE）依存率約90〜95%"
+        }
+      ],
+      "tags": [
+        "原油",
+        "貿易構造",
+        "中国",
+        "日本輸入"
+      ]
+    },
+    {
+      "id": "res_coal_exports_imports",
+      "category": "resource",
+      "title": "石炭 輸出量 vs 輸入量（インドネシア/豪州 vs 中/印/日）",
+      "unit": "百万t / 年",
+      "dataYear": "2023",
+      "source": "IEA / Energy Institute",
+      "examTrap": "中国は世界生産の約半分を掘る1位生産国でありながら、鉄鋼・発電向け消費が大きすぎて『世界第1位の石炭輸入国』でもある！インドネシア（一般炭輸出急伸・世界1位）とオーストラリア（製鉄用原料炭1位・一般炭2位）の対比が必須。",
+      "primaryLabel": "輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 515,
+          "sharePct": 34.5,
+          "note": "カリマンタン等の低硫黄一般炭を中国・インド・ASEANへ爆輸出"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 350,
+          "sharePct": 23.5,
+          "note": "グレートディバイディング山脈炭田、高品位原料炭で日本等へ"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 215,
+          "sharePct": 14.4,
+          "note": "クズバス・サハ等からアジア市場へ"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 90,
+          "sharePct": 6.0,
+          "note": "アパラチア・ワイオミング（パウダーリバー）"
+        },
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ",
+          "value": 72,
+          "sharePct": 4.8,
+          "note": "リチャーズベイ港積出（インド向け等）"
+        }
+      ],
+      "secondaryLabel": "輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 475,
+          "sharePct": 32.0,
+          "note": "世界1位生産国かつ世界1位輸入国！沿岸工業地帯向け"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 250,
+          "sharePct": 16.8,
+          "note": "製鉄用原料炭中心に急増中"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 165,
+          "sharePct": 11.1,
+          "note": "豪州6〜7割・尼等から製鉄・石炭火力向け輸入"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 118,
+          "sharePct": 7.9,
+          "note": "ポスコ製鉄・電力用"
+        }
+      ],
+      "tags": [
+        "石炭",
+        "インドネシア",
+        "オーストラリア",
+        "生産vs輸入"
+      ]
+    },
+    {
+      "id": "res_lng_pipeline_exports",
+      "category": "resource",
+      "title": "LNG（液化天然ガス）輸出（米・豪・カタール）vs 日本調達",
+      "unit": "百万t（LNG換算）",
+      "dataYear": "2023",
+      "source": "GIIGNL / Energy Institute",
+      "examTrap": "パイプラインが引けない島国日本は天然ガスをマイナス162℃で液体化した『LNG』で輸入。日本の原油輸入＝中東9割に対し、日本のLNG輸入＝『オーストラリア約4割・マレーシア・カタール・米国・ロシア』と環太平洋等に分散！またシェール革命で米国がLNG世界1位輸出国へ浮上！",
+      "primaryLabel": "LNG輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 86,
+          "sharePct": 21.4,
+          "note": "メキシコ湾岸LNG基地群、シェールガス革命で2023年世界1位！"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 80,
+          "sharePct": 19.9,
+          "note": "北西大陸棚・東岸、日本の最大LNG輸入相手国（約4割）"
+        },
+        {
+          "iso3": "QAT",
+          "nameJa": "カタール",
+          "value": 78,
+          "sharePct": 19.4,
+          "note": "ペルシャ湾ノースフィールド巨大ガス田（世界最強のLNG国家）"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 31,
+          "sharePct": 7.7,
+          "note": "サハリン2（対日重要）およびヤマルLNG"
+        },
+        {
+          "iso3": "MYS",
+          "nameJa": "マレーシア",
+          "value": 27,
+          "sharePct": 6.7,
+          "note": "サラワク州ビンツルLNG基地"
+        }
+      ],
+      "tags": [
+        "LNG",
+        "天然ガス",
+        "シェール革命",
+        "カタール",
+        "オーストラリア"
+      ]
+    },
+    {
+      "id": "res_bauxite_only",
+      "category": "resource",
+      "title": "ボーキサイト（アルミ原料鉱石）産出量単独",
+      "unit": "百万t",
+      "dataYear": "2023",
+      "source": "USGS",
+      "examTrap": "ボーキサイト（熱帯雨林・ラトソル風化層で形成される鉱石）は『豪・ギニア・中国・ブラジル・インドネシア（原鉱輸出禁止！）』に偏在するが、精錬には莫大な電力が要るため精錬国と一致しない！『ギニア＝ボーキサイト世界2位なのにアルミ精錬ゼロに近い』が鉄板比較！",
+      "primaryLabel": "産出量上位",
+      "primaryTop": [
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 98,
+          "sharePct": 24.5,
+          "note": "ヨーク半島ウェイパ等、露天掘りで世界1位"
+        },
+        {
+          "iso3": "GIN",
+          "nameJa": "ギニア",
+          "value": 97,
+          "sharePct": 24.2,
+          "note": "西アフリカ赤道付近の巨大鉱床・輸出依存極高（豪と1位争い）"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 93,
+          "sharePct": 23.2,
+          "note": "国内鉱掘削に加えギニア・豪から莫大輸入"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 31,
+          "sharePct": 7.7,
+          "note": "アマゾン低地トロンベタス等、国内水力製錬もあり"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 20,
+          "sharePct": 5.0,
+          "note": "2023年以降ボーキサイト未加工輸出を禁止し国内精錬化へ"
+        }
+      ],
+      "tags": [
+        "ボーキサイト",
+        "ギニア",
+        "オーストラリア",
+        "ラトソル"
+      ]
+    },
+    {
+      "id": "res_aluminum_smelting",
+      "category": "resource",
+      "title": "アルミニウム新地金（精錬量単独＝安価な電力立地！）",
+      "unit": "万t",
+      "dataYear": "2023",
+      "source": "USGS / International Aluminium",
+      "examTrap": "『電気の缶詰』と呼ばれるアルミ精錬は、原料ボーキサイト産地とは無関係に『①石炭・大消費市場（中国・インド）』または『②安価で余剰な水力・天然ガス・地熱電力（カナダケベック・ロシアシベリア・UAE/バーレーン砂漠・ノルウェー・アイスランド）』に立地！日本はオイルショックの電気代高騰でほぼ全廃→100%輸入！",
+      "primaryLabel": "新地金生産上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 4100,
+          "sharePct": 58.5,
+          "note": "世界生産の約6割（内陸石炭＋雲南省水力電力利用）"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 410,
+          "sharePct": 5.9,
+          "note": "安価国内炭田・原料とも豊富"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 380,
+          "sharePct": 5.4,
+          "note": "東シベリア・アンガラ川巨大水力発電（ブラーツク等）"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 300,
+          "sharePct": 4.3,
+          "note": "ボーキサイト産出ゼロだがケベック州巨大水力で世界4位！"
+        },
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE",
+          "value": 270,
+          "sharePct": 3.9,
+          "note": "余剰天然ガス火力による脱石油多角化産業（隣国BHRも上位）"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 135,
+          "sharePct": 1.9,
+          "note": "9割超の水力発電で精錬し日本・欧州へ輸出"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 85,
+          "sharePct": 1.2,
+          "note": "火山性地熱＋氷河水力の極めて安い電力で小国ながら上位！"
+        }
+      ],
+      "tags": [
+        "アルミニウム",
+        "電力立地",
+        "カナダ",
+        "アイスランド",
+        "UAE"
+      ]
+    },
+    {
+      "id": "res_gold_prod",
+      "category": "resource",
+      "title": "金（ゴールド）産出量（旧王者南アから中・豪・露・西アフリカへ）",
+      "unit": "t / 年",
+      "dataYear": "2023",
+      "source": "USGS / World Gold Council",
+      "examTrap": "20世紀まで『南アフリカが世界の約半数〜8割を独占』していた金は、南アの鉱脈超深部化と高コストで10位前後へ転落！現在のトップは中国・オーストラリア・ロシア・カナダ・米国、さらにアフリカではガーナ・マリ等の西アフリカとコンゴが南アを抜いている点に注意！",
+      "primaryLabel": "産出量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 370,
+          "sharePct": 12.0,
+          "note": "山東省・江西省などで現在世界1位"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 310,
+          "sharePct": 10.1,
+          "note": "西豪州カルグーリー大露頭等安定陸塊"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 310,
+          "sharePct": 10.1,
+          "note": "シベリア・極東砂金/鉱山"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 200,
+          "sharePct": 6.5,
+          "note": "カナダ楯状地オンタリオ・ケベック"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 170,
+          "sharePct": 5.5,
+          "note": "ネバダ州（カーリン鉱床など世界有数）"
+        },
+        {
+          "iso3": "GHA",
+          "nameJa": "ガーナ",
+          "value": 130,
+          "sharePct": 4.2,
+          "note": "南アを抜きアフリカ最大の産金国へ！旧称『黄金海岸』"
+        }
+      ],
+      "tags": [
+        "金",
+        "ガーナ",
+        "オーストラリア",
+        "歴史変化"
+      ]
+    },
+    {
+      "id": "res_silver_prod",
+      "category": "resource",
+      "title": "銀（シルバー）産出量（中南米アンデス・メキシコ歴史軸）",
+      "unit": "t / 年",
+      "dataYear": "2023",
+      "source": "USGS / Silver Institute",
+      "examTrap": "16世紀大航海時代・ポトシ銀山以来の中南米中心構造が今も健在！メキシコ（世界1位）・中国・ペルー（アンデス）が御三家。近年は太陽電池パネル電極材として工業需要急増。",
+      "primaryLabel": "産出量上位",
+      "primaryTop": [
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 6400,
+          "sharePct": 24.6,
+          "note": "サカテカス等の新期造山帯鉱床で圧倒的世界1位"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 3400,
+          "sharePct": 13.1,
+          "note": "鉛亜鉛鉱の副産含め世界2位"
+        },
+        {
+          "iso3": "PER",
+          "nameJa": "ペルー",
+          "value": 3100,
+          "sharePct": 11.9,
+          "note": "アンデス高地鉱山群（銅・亜鉛とともに産出）"
+        },
+        {
+          "iso3": "CHL",
+          "nameJa": "チリ",
+          "value": 1600,
+          "sharePct": 6.2,
+          "note": "アンデス銅山の副産中心"
+        },
+        {
+          "iso3": "BOL",
+          "nameJa": "ボリビア",
+          "value": 1300,
+          "sharePct": 5.0,
+          "note": "歴史的ポトシからサンクリストバル等へ"
+        },
+        {
+          "iso3": "POL",
+          "nameJa": "ポーランド",
+          "value": 1300,
+          "sharePct": 5.0,
+          "note": "欧州最大級、KGHM銅山の随伴産出"
+        }
+      ],
+      "tags": [
+        "銀",
+        "メキシコ",
+        "ペルー",
+        "太陽光"
+      ]
+    },
+    {
+      "id": "res_diamond_prod",
+      "category": "resource",
+      "title": "ダイヤモンド 産出量（旧ソ連＆南部・中部アフリカ楯状地）",
+      "unit": "万カラット / 年",
+      "dataYear": "2023",
+      "source": "USGS / Kimberley Process",
+      "examTrap": "先カンブリア代安定陸塊（キンバーライト）に特産：ロシア（サハ共和国）と『ボツワナ（高品質宝石用・GDP支柱）』『コンゴ民主』『アンゴラ』『カナダ北部』が上位。一方研磨加工（付加価値工程）の中心は『インド（スラト：世界9割）』『ベルギー（アントワープ）』！",
+      "primaryLabel": "産出量上位",
+      "primaryTop": [
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 3730,
+          "sharePct": 33.5,
+          "note": "サハ共和国の永久凍土下キンバーライト等"
+        },
+        {
+          "iso3": "BWA",
+          "nameJa": "ボツワナ",
+          "value": 2500,
+          "sharePct": 22.4,
+          "note": "宝石品質金額で世界1位級！政治安定で『アフリカの優等生』"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 1600,
+          "sharePct": 14.4,
+          "note": "北西部ツンドラ地域ダイアヴィク等"
+        },
+        {
+          "iso3": "AGO",
+          "nameJa": "アンゴラ",
+          "value": 970,
+          "sharePct": 8.7,
+          "note": "内戦後の重要資源（原油に次ぐ輸出品）"
+        },
+        {
+          "iso3": "COD",
+          "nameJa": "コンゴ民主",
+          "value": 850,
+          "sharePct": 7.6,
+          "note": "工業用ダイヤ比重が高い"
+        },
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ",
+          "value": 590,
+          "sharePct": 5.3,
+          "note": "キンバリー発祥地だが最盛期より低下"
+        }
+      ],
+      "tags": [
+        "ダイヤモンド",
+        "安定陸塊",
+        "ボツワナ",
+        "ロシア"
+      ]
+    },
+    {
+      "id": "res_manganese_chrome",
+      "category": "resource",
+      "title": "マンガン・クロム（鉄鋼添加レアメタル：南ア偏在の極み）",
+      "unit": "万t / 世界シェア%",
+      "dataYear": "2023",
+      "source": "USGS",
+      "examTrap": "ステンレス鋼に必須のクロム・製鉄脱酸剤マンガンなど重要レアメタルで『南アフリカ共和国（ブッシュフェルト岩体）』とカザフスタン・ガボンが極めて高い世界シェアを握る点は白金（プラチナ）と共に超頻出！",
+      "primaryLabel": "マンガン鉱産出上位",
+      "primaryTop": [
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ",
+          "value": 720,
+          "sharePct": 36.0,
+          "note": "世界最大のマンガン・クロム・プラチナ供給拠点"
+        },
+        {
+          "iso3": "GAB",
+          "nameJa": "ガボン",
+          "value": 460,
+          "sharePct": 23.0,
+          "note": "モアンダ鉱山（アフリカ中部、鉄鋼向け高品位）"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 300,
+          "sharePct": 15.0,
+          "note": "グルートアイラント島等"
+        },
+        {
+          "iso3": "GHA",
+          "nameJa": "ガーナ",
+          "value": 84,
+          "sharePct": 4.2,
+          "note": "沿岸積出可能"
+        }
+      ],
+      "secondaryLabel": "クロム鉱産出上位",
+      "secondaryTop": [
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ",
+          "value": 1800,
+          "sharePct": 44.0,
+          "note": "ブッシュフェルト複合岩体、日本重要輸入先"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 650,
+          "sharePct": 15.9,
+          "note": "アナトリア内陸各地に良質クロム鉱床"
+        },
+        {
+          "iso3": "KAZ",
+          "nameJa": "カザフスタン",
+          "value": 600,
+          "sharePct": 14.6,
+          "note": "世界で屈指の高品位クロム埋蔵国"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 420,
+          "sharePct": 10.2,
+          "note": "オディシャ州中心"
+        }
+      ],
+      "tags": [
+        "レアメタル",
+        "南アフリカ",
+        "カザフスタン",
+        "クロム"
+      ]
+    },
+    {
+      "id": "res_tungsten_tin",
+      "category": "resource",
+      "title": "スズ・タングステン（超硬工具・はんだ用希少金属・中国寡占）",
+      "unit": "万t",
+      "dataYear": "2023",
+      "source": "USGS",
+      "examTrap": "スズ（錫：缶詰ブリキ・電子基板はんだ）は『中国・インドネシア・ミャンマー・ペルー』（1970年代1位のマレーシアは枯渇→電子部品へ産業転換！）。超硬工具のタングステンは中国が世界8割以上を独占！",
+      "primaryLabel": "スズ鉱産出上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 6.8,
+          "sharePct": 23.4,
+          "note": "雲南省等、かつ精錬・消費も世界1位"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 5.2,
+          "sharePct": 17.9,
+          "note": "スマトラ沖バンカ島・ブリトゥン島（沖積砂鉱床）"
+        },
+        {
+          "iso3": "MMR",
+          "nameJa": "ミャンマー",
+          "value": 5.4,
+          "sharePct": 18.6,
+          "note": "シャン州等で中国向け原鉱供給が近年急伸"
+        },
+        {
+          "iso3": "PER",
+          "nameJa": "ペルー",
+          "value": 2.3,
+          "sharePct": 7.9,
+          "note": "アンデス南部鉱山"
+        },
+        {
+          "iso3": "BOL",
+          "nameJa": "ボリビア",
+          "value": 1.8,
+          "sharePct": 6.2,
+          "note": "伝統的鉱山資源（ポトシ・オルロ）"
+        }
+      ],
+      "secondaryLabel": "タングステン世界シェア（中国極端寡占）",
+      "secondaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 6.3,
+          "sharePct": 80.8,
+          "note": "江西省等で世界生産の8割を握る戦略希少金属"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 0.35,
+          "sharePct": 4.5,
+          "note": "北部タイグエン省等の新規開発"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 0.2,
+          "sharePct": 2.6,
+          "note": "極東沿海地方等"
+        }
+      ],
+      "tags": [
+        "スズ",
+        "タングステン",
+        "中国",
+        "インドネシア"
+      ]
+    },
+    {
+      "id": "res_cobalt_nickel_detail",
+      "category": "resource",
+      "title": "ニッケル（尼首位急伸・豪/ニューカレドニア）＆コバルト（コンゴ民主）",
+      "unit": "万t",
+      "dataYear": "2023",
+      "source": "USGS",
+      "examTrap": "EV（電気自動車）電池関連で最注目！ニッケルは『インドネシア』が2020年頃からの輸出禁止・中国資本現地製錬投資で世界シェア5割超の爆発的首位に躍進（ニューカレドニア＝仏領はシェア低下も重要地域）！コバルトは『コンゴ民主共和国』が世界7割超を独占。",
+      "primaryLabel": "ニッケル鉱産出上位",
+      "primaryTop": [
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 180,
+          "sharePct": 50.0,
+          "note": "スラウェシ島等で世界の半分を産出、国内製錬化を推進"
+        },
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 40,
+          "sharePct": 11.1,
+          "note": "ミンダナオ等から中国向けニッケル鉱輸出"
+        },
+        {
+          "iso3": "NCL",
+          "nameJa": "ニューカレドニア",
+          "value": 23,
+          "sharePct": 6.4,
+          "note": "仏海外領土、世界有数のニッケル島（独立問題と経済基盤）"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 20,
+          "sharePct": 5.6,
+          "note": "シベリア北部ノリリスク巨大複合鉱床"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 18,
+          "sharePct": 5.0,
+          "note": "サドベリー隕石衝突由来鉱床"
+        }
+      ],
+      "secondaryLabel": "コバルト産出上位",
+      "secondaryTop": [
+        {
+          "iso3": "COD",
+          "nameJa": "コンゴ民主共和国",
+          "value": 17.0,
+          "sharePct": 74.0,
+          "note": "カタンガ銅ベルトから世界7割超（児童労働・環境課題焦点）"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 1.7,
+          "sharePct": 7.4,
+          "note": "ニッケルラテライト鉱副産として急浮上し豪を抜き2位へ"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 0.9,
+          "sharePct": 3.9,
+          "note": "ノリリスク鉱山"
+        }
+      ],
+      "tags": [
+        "ニッケル",
+        "コバルト",
+        "EV",
+        "インドネシア",
+        "コンゴ民主"
+      ]
+    },
+    {
+      "id": "res_geothermal_cap",
+      "category": "resource",
+      "title": "地熱発電 設備容量＆比率（新期造山帯・拡大境界の自然の恵み）",
+      "unit": "万kW（設備容量）/ %",
+      "dataYear": "2023",
+      "source": "IRENA / ThinkGeoEnergy",
+      "examTrap": "プレート境界（新期造山帯・東アフリカ大地溝帯・大西洋中央海嶺）の熱源直結！総量では米国・『インドネシア・フィリピン』・トルコ・NZ・『ケニア（国内発電の約4割が地熱！）』が上位。日本の設備容量は温泉保護・国立公園規制で伸び悩み約10位。",
+      "primaryLabel": "設備容量上位",
+      "primaryTop": [
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 390,
+          "sharePct": 24.0,
+          "note": "カリフォルニア（ガイザーズ地熱帯）やネバダ"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 242,
+          "sharePct": 14.9,
+          "note": "ジャワ・スマトラ火山列、世界第2位の地熱活用"
+        },
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 195,
+          "sharePct": 12.0,
+          "note": "ルソン・レイテ島の環太平洋火山帯"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 169,
+          "sharePct": 10.4,
+          "note": "西アナトリア断層地熱で急増"
+        },
+        {
+          "iso3": "NZL",
+          "nameJa": "ニュージーランド",
+          "value": 106,
+          "sharePct": 6.5,
+          "note": "北島タウポ火山帯、国内電源約18%を地熱で賄う"
+        },
+        {
+          "iso3": "KEN",
+          "nameJa": "ケニア",
+          "value": 99,
+          "sharePct": 6.1,
+          "note": "大地溝帯（オルカリア地熱）で国内電力の約4割超！"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 76,
+          "sharePct": 4.7,
+          "note": "大西洋中央海嶺上、水力7割＋地熱3割＋熱供給"
+        }
+      ],
+      "tags": [
+        "地熱発電",
+        "プレート境界",
+        "ケニア",
+        "アイスランド",
+        "インドネシア"
+      ]
+    },
+    {
+      "id": "res_wind_power_share",
+      "category": "resource",
+      "title": "風力発電 発電比率上位（デンマーク・英・ウルグアイ等）",
+      "unit": "総発電に占める割合（%）",
+      "dataYear": "2023",
+      "source": "Ember Electricity Review",
+      "examTrap": "総発電『量』では中国・米国・ドイツだが、国内電源に占める風力『割合』で『デンマーク（約58%！偏西風＋北海浅瀬での世界先駆的洋上風力）』・リトアニア・アイルランド・ウルグアイ・イギリス・ポルトガル・ドイツが圧倒的上位！",
+      "primaryLabel": "総発電比 風力割合上位",
+      "primaryTop": [
+        {
+          "iso3": "DNK",
+          "nameJa": "デンマーク",
+          "value": 58.0,
+          "note": "偏西風＆北海の遠浅海＋原子力不使用で世界一の風力比率"
+        },
+        {
+          "iso3": "LTU",
+          "nameJa": "リトアニア",
+          "value": 42.0,
+          "note": "バルト海沿岸の風力で原発閉鎖後の電力を補完"
+        },
+        {
+          "iso3": "IRL",
+          "nameJa": "アイルランド",
+          "value": 34.0,
+          "note": "大西洋の強い偏西風を陸上・洋上で直接受ける"
+        },
+        {
+          "iso3": "GBR",
+          "nameJa": "イギリス",
+          "value": 29.0,
+          "note": "北海ドッガーバンク等世界最大級の洋上風力網"
+        },
+        {
+          "iso3": "URY",
+          "nameJa": "ウルグアイ",
+          "value": 33.0,
+          "note": "水力＋風力・太陽光で発電の約95%以上が再エネ"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 27.0,
+          "note": "脱原発・エネルギーヴェンデで北部平原・北海中心に拡大"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 1.1,
+          "note": "台風・急峻地形・深海（浅瀬少ない）で洋上設置課題"
+        }
+      ],
+      "tags": [
+        "風力発電",
+        "偏西風",
+        "デンマーク",
+        "イギリス"
+      ]
+    },
+    {
+      "id": "res_hydro_power_share",
+      "category": "resource",
+      "title": "水力発電 発電割合上位（地形・多雨/氷河溶水×電源依存）",
+      "unit": "総発電に占める割合（%）",
+      "dataYear": "2023",
+      "source": "Ember / IEA",
+      "examTrap": "発電『量』1位は中国だが『国内発電の7〜10割を水力が占める』のは『ノルウェー（約88%・フィヨルド氷河谷＋偏西風）』『パラグアイ（約100%・イタイプダム余剰電力を伯へ輸出）』『ブラジル（約60%）』『カナダ（約60%・ケベック）』『NZ・エチオピア・ラオス』！",
+      "primaryLabel": "水力発電比率 上位国",
+      "primaryTop": [
+        {
+          "iso3": "PRY",
+          "nameJa": "パラグアイ",
+          "value": 99.7,
+          "note": "ブラジルと共同のイタイプダム等、世界屈指の電力輸出国"
+        },
+        {
+          "iso3": "ETH",
+          "nameJa": "エチオピア",
+          "value": 96.0,
+          "note": "高原多雨＋大ルネサンスダム（下流エジプトとの水問題焦点）"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 88.5,
+          "note": "北海油ガスは全量輸出し国内電力は氷河谷水力で自給！"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 70.0,
+          "note": "水力約70%＋地熱約30%でほぼ100%再エネ発電"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 60.5,
+          "note": "イタイプ・ツクルイ等大河川水力（干ばつ年の停電対策課題）"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 58.0,
+          "note": "ケベック州・BC州の豊かな水力で安価電力を実現"
+        },
+        {
+          "iso3": "NZL",
+          "nameJa": "ニュージーランド",
+          "value": 60.0,
+          "note": "南アルプス多雨水力＋北島地熱で約85%再エネ"
+        }
+      ],
+      "tags": [
+        "水力発電",
+        "ノルウェー",
+        "パラグアイ",
+        "ブラジル",
+        "カナダ"
+      ]
+    },
+    {
+      "id": "ind_synthetic_fiber",
+      "category": "industry",
+      "title": "合成繊維（ポリエステル等）生産量（アジア集中8〜9割）",
+      "unit": "万t / 世界シェア%",
+      "dataYear": "2022–2023",
+      "source": "日本化学繊維協会 / Textile Exchange",
+      "examTrap": "石油化学由来の合成繊維は、かつての日米欧主力から今や『中国が世界の約7割強を独占』、続いてインド・台湾・米国・インドネシア・ベトナムへ生産集中！繊維原料とアパレル縫製がアジア内で分業（中国/台湾＝素材生地 → 越/バングラ＝縫製）。",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 6100,
+          "sharePct": 72.5,
+          "note": "ポリエステル等で世界7割超を握る絶対的ハブ"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 610,
+          "sharePct": 7.2,
+          "note": "国内アパレル＋綿混紡需要拡大で2位"
+        },
+        {
+          "iso3": "TWN",
+          "nameJa": "台湾",
+          "value": 195,
+          "sharePct": 2.3,
+          "note": "機能性合繊・スポーツ衣料生地で世界的強み"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 190,
+          "sharePct": 2.3,
+          "note": "高機能産業資材繊維・不織布"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 165,
+          "sharePct": 2.0,
+          "note": "日系合弁含むASEAN最大の繊維基地"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 125,
+          "sharePct": 1.5,
+          "note": "対EU向け短納期繊維サプライチェーン"
+        }
+      ],
+      "tags": [
+        "合成繊維",
+        "化学工業",
+        "中国",
+        "国際分業"
+      ]
+    },
+    {
+      "id": "ind_motorcycle_prod",
+      "category": "industry",
+      "title": "二輪車（オートバイ）生産・保有（南〜東南アジアの大衆の足）",
+      "unit": "万台 / 年",
+      "dataYear": "2023",
+      "source": "OICA / JAMA",
+      "examTrap": "日本の自動車メーカー（ホンダ・ヤマハ・スズキ等）の現地生産が大成功を収め、1人当たりGDPが3000〜1万ドル圏で四輪車に先んじて爆発普及する『インド・中国・インドネシア・ベトナム・タイ・ブラジル』が圧倒的上位！",
+      "primaryLabel": "生産・新車販売上位",
+      "primaryTop": [
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 2100,
+          "sharePct": 34.0,
+          "note": "電動二輪も含め現在世界一のバイク市場・生産国"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 1750,
+          "sharePct": 28.3,
+          "note": "都市部の電動スクーター規制＋輸出拠点"
+        },
+        {
+          "iso3": "IDN",
+          "nameJa": "インドネシア",
+          "value": 640,
+          "sharePct": 10.4,
+          "note": "日系メーカーシェア9割超、国民の日常移動手段"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 280,
+          "sharePct": 4.5,
+          "note": "ハノイ・ホーチミンで極めて高い世帯保有率"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 160,
+          "sharePct": 2.6,
+          "note": "マナウス自由貿易区（アマゾン内陸免税）で集中生産"
+        },
+        {
+          "iso3": "THA",
+          "nameJa": "タイ",
+          "value": 195,
+          "sharePct": 3.2,
+          "note": "東南アジアの組立輸出拠点"
+        }
+      ],
+      "tags": [
+        "二輪車",
+        "インド",
+        "インドネシア",
+        "マナウス"
+      ]
+    },
+    {
+      "id": "ind_shipbuilding_vs_foc",
+      "category": "industry",
+      "title": "新造船建造量（中韓日）vs 便宜置籍船保有（リベリア/パナマ/マーシャル）",
+      "unit": "万総トン（建造・船腹）",
+      "dataYear": "2023–2024",
+      "source": "UNCTAD Review of Maritime Transport",
+      "examTrap": "共テ運輸問題の極上ひっかけ！『船を造る国＝中国・韓国・日本（この3カ国で世界約95%）』と、『船の国籍登録をする国（便宜置籍船＝税金が安く労働安全規制が緩いため日本・欧州船主が登録するパナマ・リベリア・マーシャル諸島）』は完全に別世界！",
+      "primaryLabel": "新造船竣工量上位（建造能力）",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 3300,
+          "sharePct": 50.5,
+          "note": "バルカー・コンテナ船・近年LNG船も拡大しシェア過半"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 1850,
+          "sharePct": 28.3,
+          "note": "高付加価値のLNG運搬船・超大型コンテナ船に強い"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 980,
+          "sharePct": 15.0,
+          "note": "今治造船など瀬戸内・九州でばら積み船等世界3位"
+        }
+      ],
+      "secondaryLabel": "便宜置籍等 登録船腹量上位",
+      "secondaryTop": [
+        {
+          "iso3": "LBR",
+          "nameJa": "リベリア",
+          "value": 41500,
+          "sharePct": 17.5,
+          "note": "2023年パナマを抜き世界1位の船籍登録国！"
+        },
+        {
+          "iso3": "PAN",
+          "nameJa": "パナマ",
+          "value": 37600,
+          "sharePct": 15.9,
+          "note": "日本海運会社も大量に『パナマ船籍』として登録利用"
+        },
+        {
+          "iso3": "MHL",
+          "nameJa": "マーシャル諸島",
+          "value": 30800,
+          "sharePct": 13.0,
+          "note": "オセアニア微小島嶼国だが世界3位の商船籍国！"
+        },
+        {
+          "iso3": "HKG",
+          "nameJa": "香港",
+          "value": 20300,
+          "sharePct": 8.6,
+          "note": "国際海運金融税制を活かした登録ハブ"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール",
+          "value": 13600,
+          "sharePct": 5.7,
+          "note": "マラッカ海峡ハブの船籍拠点"
+        }
+      ],
+      "tags": [
+        "造船",
+        "便宜置籍船",
+        "パナマ",
+        "リベリア",
+        "マーシャル諸島"
+      ]
+    },
+    {
+      "id": "ind_wine_prod",
+      "category": "industry",
+      "title": "ワイン生産量（旧大陸地中海3強＋新大陸チリ/豪/米）",
+      "unit": "百万L",
+      "dataYear": "2023",
+      "source": "OIV（国際ブドウ・ワイン機構）",
+      "examTrap": "イタリア・フランス・スペイン（いずれもCs気候や丘陵斜面のブドウ園＝旧大陸）が世界生産＆輸出のトップ3だが、近年は低価格高品質・EPA関税引き下げ（チリは日本ワイン輸入で仏/伊と首位争い！）により『米国・豪州・チリ・アルゼンチン・南ア』の新大陸Cs勢が存在感を放つ！",
+      "primaryLabel": "生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "value": 4800,
+          "sharePct": 20.2,
+          "note": "2023年生産1位、高級銘柄輸出額では不動の世界1位"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 3830,
+          "sharePct": 16.1,
+          "note": "平年1〜2位（2023年は異常気象で減産）"
+        },
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 2830,
+          "sharePct": 11.9,
+          "note": "ブドウ畑面積は世界1位、バルク/スパークリング輸出大"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 2430,
+          "sharePct": 10.2,
+          "note": "カリフォルニア（Cs気候）が米国ワインの8割超"
+        },
+        {
+          "iso3": "CHL",
+          "nameJa": "チリ",
+          "value": 1100,
+          "sharePct": 4.6,
+          "note": "中部Cs気候・寒流ペルー海流＋日本とのEPAで日本輸入量トップ争い"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 960,
+          "sharePct": 4.0,
+          "note": "南豪バロッサバレー等Cs気候"
+        }
+      ],
+      "tags": [
+        "ワイン",
+        "ブドウ",
+        "チリ",
+        "地中海性気候"
+      ]
+    },
+    {
+      "id": "ind_beer_prod",
+      "category": "industry",
+      "title": "ビール生産量（大市場中・米）vs 1人当たり消費量（チェコ等欧州）",
+      "unit": "万kL / L(人・年)",
+      "dataYear": "2022",
+      "source": "キリンビール世界主要国調査",
+      "examTrap": "総生産量は人口・所得に比例し中国・米国・ブラジル・メキシコ（世界1位輸出国！米向けコロナ等）・ドイツが上位。しかし『1人あたりビール消費量』ではホップ栽培・歴史的醸造文化の『チェコ（約180L・断トツ世界1位30年連続！）』やオーストリア・ドイツなど中欧大麦地帯が独占！",
+      "primaryLabel": "総生産量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 3600,
+          "sharePct": 19.0,
+          "note": "青島ビール等、巨大人口により連続世界1位"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 1940,
+          "sharePct": 10.2,
+          "note": "クラフトビール多様化・中西部大麦地帯"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 1470,
+          "sharePct": 7.8,
+          "note": "温暖気候×巨大人口"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 1410,
+          "sharePct": 7.4,
+          "note": "世界最大のビール輸出国（米国市場向け巨大輸出）"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 880,
+          "sharePct": 4.6,
+          "note": "バイエルンのホップ＋ビール純粋令伝統"
+        }
+      ],
+      "secondaryLabel": "1人当たり消費上位（参考）",
+      "secondaryTop": [
+        {
+          "iso3": "CZE",
+          "nameJa": "チェコ",
+          "value": 188,
+          "note": "ボヘミア地方ホップ（ピルスナー発祥）で圧倒的30年連続1位"
+        },
+        {
+          "iso3": "AUT",
+          "nameJa": "オーストリア",
+          "value": 107,
+          "note": "中欧ビール文化圏"
+        },
+        {
+          "iso3": "POL",
+          "nameJa": "ポーランド",
+          "value": 98,
+          "note": "大麦栽培伝統地"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 92,
+          "note": "世界代表的醸造文化国"
+        }
+      ],
+      "tags": [
+        "ビール",
+        "チェコ",
+        "ドイツ",
+        "食文化"
+      ]
+    },
+    {
+      "id": "ind_hub_airports_passenger",
+      "category": "industry",
+      "title": "国際線旅客数 上位空港ハブ（ドバイ等中東・欧州）",
+      "unit": "万人 / 年",
+      "dataYear": "2023",
+      "source": "ACI（国際空港評議会）",
+      "examTrap": "総旅客数は国内線が巨大な『アトランタ・ダラス・デンバー（米国勢）』が上位を独占する一方、国境を越える『国際線旅客数』に限定すると、欧州―アジア―アフリカを結ぶ絶好の中継地理（ハブ＆スポーク）に立つ『ドバイ（UAE・不動の1位）』『ロンドン（ヒースロー）』『ドーハ（カタール）』『シンガポール』『仁川』が上位！",
+      "primaryLabel": "国際線旅客数 上位国（代表ハブ空港）",
+      "primaryTop": [
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE（ドバイ DXB）",
+          "value": 8700,
+          "note": "エミレーツ航空ハブ・世界人口8割に8時間以内到達の十字路"
+        },
+        {
+          "iso3": "GBR",
+          "nameJa": "イギリス（ロンドン LHR）",
+          "value": 7490,
+          "note": "大西洋横断＆旧連邦接続の欧州最大国際ゲート"
+        },
+        {
+          "iso3": "NLD",
+          "nameJa": "オランダ（アムステルダム）",
+          "value": 6190,
+          "note": "欧州大陸の超効率トランジットハブ"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス（パリ CDG）",
+          "value": 6140,
+          "note": "仏語圏アフリカ・アジア・北米接続"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール（チャンギ）",
+          "value": 5840,
+          "note": "東南アジア＆豪欧中継ハブ（国内線ゼロ！）"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ（イスタンブール）",
+          "value": 5820,
+          "note": "黒海/地中海境界で急成長した東西ハブ新空港"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国（ソウル仁川）",
+          "value": 5580,
+          "note": "北米―東アジア乗り継ぎと日本地方便吸収で躍進"
+        }
+      ],
+      "tags": [
+        "ハブ空港",
+        "ドバイ",
+        "シンガポール",
+        "仁川",
+        "交通"
+      ]
+    },
+    {
+      "id": "ind_air_cargo_hub",
+      "category": "industry",
+      "title": "国際・総航空貨物取扱量 上位拠点（半導体・越境EC時代）",
+      "unit": "万t / 年",
+      "dataYear": "2023",
+      "source": "ACI",
+      "examTrap": "航空貨物の世界1位は華南（深圳製造基地）直結＋精密機器/越境ECが飛ぶ『香港』！また世界2位は物流大手フェデックスの本拠である米国地方都市『メンフィス』、3〜4位に上海・『アンカレジ（アラスカ：北極大圏航路の貨物機給油テクニカルストップハブ！）』が入るのが入試最難関知識！",
+      "primaryLabel": "主要航空貨物ハブ国（代表空港）",
+      "primaryTop": [
+        {
+          "iso3": "HKG",
+          "nameJa": "香港（HKG・世界1位）",
+          "value": 433,
+          "note": "珠江デルタ電子/精密部品・越境EC輸出で不動の世界首位"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ（メンフィス/アンカレジ）",
+          "value": 388,
+          "note": "宅配ハブ『メンフィス』＋太平洋貨物給油拠点『アンカレジ』"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国（上海浦東 PVG）",
+          "value": 344,
+          "note": "長江デルタ半導体・IT機器輸出"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国（仁川 ICN）",
+          "value": 274,
+          "note": "半導体・医療品空輸ハブ"
+        },
+        {
+          "iso3": "TWN",
+          "nameJa": "台湾（台北桃園 TPE）",
+          "value": 211,
+          "note": "TSMC等半導体ウェハ/ICT製品の空輸極大"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（成田 NRT）",
+          "value": 190,
+          "note": "精密電子部品・医薬品・生鮮品等の主要拠点"
+        }
+      ],
+      "tags": [
+        "航空貨物",
+        "香港",
+        "アンカレジ",
+        "半導体",
+        "大圏航路"
+      ]
+    },
+    {
+      "id": "ind_container_ports",
+      "category": "industry",
+      "title": "世界のコンテナ港湾取扱量（『東アジア大集中』＋シンガポール）",
+      "unit": "万TEU / 年",
+      "dataYear": "2023",
+      "source": "Lloyd's List / 国交省",
+      "examTrap": "トップ10のうち7割以上を中国（上海・寧波・深圳・青島・広州・天津・香港）・シンガポール・韓国（釜山）が占め、欧米最大港のロッテルダム（蘭）・LA（米）・東京横浜は日本・欧州ともにトップ10外に落ちた！韓国・釜山が日本の地方港（新潟・博多等）のハブ・トランシップ港になっている構図も重要。",
+      "primaryLabel": "代表港湾取扱量（国/都市圏最大港比較）",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国（上海港＝連続1位）",
+          "value": 4916,
+          "note": "洋山深水港含め圧倒的世界1位（さらに寧波・深圳等上位独占）"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール港（世界2位）",
+          "value": 3901,
+          "note": "マラッカ海峡の超巨大トランシップ（積替え）中継港"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国（釜山港・アジア7位級）",
+          "value": 2315,
+          "note": "日本海側・西日本地方港とのフィーダー積み替えハブ"
+        },
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE（ドバイ・ジュベルアリ）",
+          "value": 1447,
+          "note": "中東・アフリカ最大コンテナハブ"
+        },
+        {
+          "iso3": "NLD",
+          "nameJa": "オランダ（ロッテルダム）",
+          "value": 1340,
+          "note": "ユーロポート（ライン川遡上水運で内陸欧州へ直結・欧州1位）"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（東京港・国内最大）",
+          "value": 457,
+          "note": "1980年代横浜/神戸世界上位→ハブ機能低下で40位前後へ"
+        }
+      ],
+      "tags": [
+        "コンテナ港",
+        "上海",
+        "シンガポール",
+        "ロッテルダム",
+        "釜山"
+      ]
+    },
+    {
+      "id": "ind_trade_dependency",
+      "category": "industry",
+      "title": "貿易依存度（輸出入額/GDP比：小国・中継貿易 vs 巨大内需国）",
+      "unit": "GDP比（%）",
+      "dataYear": "2023",
+      "source": "World Bank",
+      "examTrap": "貿易の『総額』は中国・米国だが、GDPに対する比率『貿易依存度』は内需が莫大な米国（約25%）や日本（約45%）はむしろ低く、国土が狭く国内市場が小さいか中継加工貿易を営む『シンガポール（300%超）・ルクセンブルク・香港・ベトナム（165%超）・オランダ・ベルギー』が極端に高い！",
+      "primaryLabel": "貿易依存度（高い国と低い大国の対比）",
+      "primaryTop": [
+        {
+          "iso3": "LUX",
+          "nameJa": "ルクセンブルク",
+          "value": 390,
+          "note": "金融・サービス・周辺EU密接経済で400%弱"
+        },
+        {
+          "iso3": "HKG",
+          "nameJa": "香港",
+          "value": 355,
+          "note": "中国本土との再輸出中継（仲介貿易）によりGDPの3倍超"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール",
+          "value": 310,
+          "note": "マラッカ海峡の無関税中継加工貿易（ASEAN中枢）"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 165,
+          "note": "外資組立輸出ハブ化により新興大国中突出した貿易依存"
+        },
+        {
+          "iso3": "NLD",
+          "nameJa": "オランダ",
+          "value": 158,
+          "note": "EUの玄関口ロッテルダム経由の中継大貿易国"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 83,
+          "note": "EU域内貿易が極めて活発な輸出工業大国"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 46,
+          "note": "実は『加工貿易国』イメージ以上に巨大内需あり中庸（米は約25%）"
+        }
+      ],
+      "tags": [
+        "貿易依存度",
+        "中継貿易",
+        "シンガポール",
+        "ルクセンブルク"
+      ]
+    },
+    {
+      "id": "ind_steel_exports_ratio",
+      "category": "industry",
+      "title": "粗鋼 輸出 vs 純輸入構造（中国過剰生産問題と米国輸入）",
+      "unit": "万t / 年",
+      "dataYear": "2023",
+      "source": "World Steel Association",
+      "examTrap": "2024年本試第2問問1でも出題！鉄鋼『生産1位＝中国(世界の過半)』、『輸出上位＝中国・日本・韓国（日韓は国内消費より生産多く輸出比率高！）』、一方『輸入上位＝米国（国内製造・建設需要）・ドイツ・トルコ（電炉スクラップ大輸入国！）・ASEAN諸国』！",
+      "primaryLabel": "鉄鋼輸出量上位",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 9400,
+          "sharePct": 22.5,
+          "note": "国内不動産不況で余剰鋼材がアジア・中東等へ大量輸出され摩擦"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 3200,
+          "sharePct": 7.7,
+          "note": "自動車向け高級鋼板等（臨海製鉄所からの強み）"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 2700,
+          "sharePct": 6.5,
+          "note": "ポスコ浦項・光陽等の輸出比率非常に高い"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 2250,
+          "sharePct": 5.4,
+          "note": "EU域内向け輸出入双方が活発（自動車用等）"
+        }
+      ],
+      "secondaryLabel": "鉄鋼輸入量上位",
+      "secondaryTop": [
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 2650,
+          "sharePct": 6.4,
+          "note": "安価鉄鋼流入＋自動車/インフラ需要で世界最大の純輸入国"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 1880,
+          "sharePct": 4.5,
+          "note": "EU域内鉄鋼取引の中軸"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 1980,
+          "sharePct": 4.7,
+          "note": "自動車/機械工業向け（高炉縮小・輸入増）"
+        },
+        {
+          "iso3": "TUR",
+          "nameJa": "トルコ",
+          "value": 1800,
+          "sharePct": 4.3,
+          "note": "鉄スクラップ電炉製鉄で世界最大級の輸入＆製品再輸出"
+        },
+        {
+          "iso3": "VNM",
+          "nameJa": "ベトナム",
+          "value": 1450,
+          "sharePct": 3.5,
+          "note": "急速なインフラ・建設ブームによる需要増"
+        }
+      ],
+      "tags": [
+        "粗鋼",
+        "鉄鋼貿易",
+        "2024年出題",
+        "日本",
+        "アメリカ"
+      ]
+    },
+    {
+      "id": "soc_primate_city_ratio",
+      "category": "society",
+      "title": "首位都市人口集中率（プライメイトシティ型 vs 多極分散型）",
+      "unit": "総人口比（%）",
+      "dataYear": "2022–2023",
+      "source": "UN World Urbanization Prospects",
+      "examTrap": "2018年共テ他超頻出！第1位都市の都市圏人口が総人口の2〜4割に達し第2位を圧倒する『プライメイトシティ』＝タイ（バンコク）・韓国（ソウル）・アルゼンチン（ブエノスアイレス）・日本（東京圏約3割）・ペルー・仏。逆に連邦制や多核型の『米国・ドイツ・インド・中国・イタリア』は1位比率が1割前後以下！",
+      "primaryLabel": "第1位都市圏 人口集中率（対比）",
+      "primaryTop": [
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国（ソウル首都圏）",
+          "value": 50.0,
+          "note": "韓国人口の約半数がソウル・仁川・京畿道に集中（世宗へ行政分散中）"
+        },
+        {
+          "iso3": "ARG",
+          "nameJa": "アルゼンチン（ブエノスアイレス）",
+          "value": 34.0,
+          "note": "農牧輸出積出港として歴史的巨大一極集中"
+        },
+        {
+          "iso3": "PER",
+          "nameJa": "ペルー（リマ）",
+          "value": 33.0,
+          "note": "アンデス高地農村からの離農流入（バリャーダ＝スラム形成）"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（東京都市圏）",
+          "value": 29.5,
+          "note": "単極集中非常に高い（約3700万人／総人口1.24億）"
+        },
+        {
+          "iso3": "THA",
+          "nameJa": "タイ（バンコク）",
+          "value": 16.0,
+          "note": "第2位都市（チェンマイ等）の約20倍超という典型プライメイト！"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル（サンパウロ）",
+          "value": 10.5,
+          "note": "リオ・ブラジリア等多都市あり10%台"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ（ベルリン・多極）",
+          "value": 4.5,
+          "note": "歴史的領邦分裂・連邦制でハンブルク/ミュンヘン/フランクフルトへ極分散！"
+        }
+      ],
+      "tags": [
+        "プライメイトシティ",
+        "都市人口率",
+        "タイ",
+        "ドイツ",
+        "2018年出題"
+      ]
+    },
+    {
+      "id": "soc_foreign_pop_share",
+      "category": "society",
+      "title": "外国人・移民居住者割合（湾岸オイルマネー諸国＆移住先進国）",
+      "unit": "総人口比（%）",
+      "dataYear": "2020–2024",
+      "source": "UN DESA International Migrant Stock",
+      "examTrap": "総人口の約8〜9割がインド・パキスタン・東南アジア等の外国人出稼ぎ労働者という『UAE（約88%）・カタール・クウェート』では『年齢別人口ピラミッドが20〜40代男性だけ異常に飛び出す（出稼ぎ歪み型）』が出題鉄板！先進国ではスイス・豪州・カナダが高く（2〜3割）、日本は約2.6%と低いが急増中。",
+      "primaryLabel": "移民・外国人比率上位国",
+      "primaryTop": [
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE",
+          "value": 88.0,
+          "note": "総人口の約9割が外国人労働者（主に南アジア建設・サービス従事）"
+        },
+        {
+          "iso3": "QAT",
+          "nameJa": "カタール",
+          "value": 77.0,
+          "note": "男女比約3:1の若壮年男性極端偏りピラミッド"
+        },
+        {
+          "iso3": "KWT",
+          "nameJa": "クウェート",
+          "value": 72.0,
+          "note": "産油湾岸諸国共通の外国人労働者依存"
+        },
+        {
+          "iso3": "LUX",
+          "nameJa": "ルクセンブルク",
+          "value": 47.4,
+          "note": "EU機関・国際金融により約半数が外国籍住民"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール",
+          "value": 43.0,
+          "note": "高度人材と建設・家事労働者（印・緬・尼・比）受入れ"
+        },
+        {
+          "iso3": "CHE",
+          "nameJa": "スイス",
+          "value": 30.0,
+          "note": "欧州中立・国際機関・金融で外国籍3割（豪・加も約23〜30%）"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 2.6,
+          "note": "約340万人へ過去最多更新中（技能実習/育成就労・留学生）"
+        }
+      ],
+      "tags": [
+        "移民",
+        "外国人労働者",
+        "人口ピラミッド",
+        "UAE",
+        "カタール"
+      ]
+    },
+    {
+      "id": "soc_remittances",
+      "category": "society",
+      "title": "国際出稼ぎ個人送金（受取額トップ vs 対GDP比4割の小国）",
+      "unit": "億ドル / GDP比%",
+      "dataYear": "2023",
+      "source": "World Bank / KNOMAD",
+      "examTrap": "2025年追試でも登場！送金『金額』のトップは人口莫大＆世界に移民散らばる『インド・メキシコ・中国・フィリピン（OFW：看護師・船員・家事）・エジプト』。一方『国の経済が送金で成り立つ（対GDP比25〜45%）』のはロシアへ出稼ぐ中央アジアの『タジキスタン・キルギス』やネパール・中米！",
+      "primaryLabel": "受取金額上位（億ドル）",
+      "primaryTop": [
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 1250,
+          "note": "湾岸・欧米のIT人材〜労働者からの送金でダントツ世界1位"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 662,
+          "note": "在米ヒスパニック出稼ぎ者からの母国送金が急増（原油輸出額超！）"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 495,
+          "note": "華僑・海外在住者からの送金"
+        },
+        {
+          "iso3": "PHL",
+          "nameJa": "フィリピン",
+          "value": 391,
+          "sharePct": 8.9,
+          "note": "国家政策『OFW』、GDP約9%を支える外貨柱（英語力強み）"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "value": 340,
+          "note": "周辺EU通勤者・在外報酬（先進国分類計上）"
+        },
+        {
+          "iso3": "EGY",
+          "nameJa": "エジプト",
+          "value": 240,
+          "note": "湾岸産油国（サウジ等）へのアラブ技術/一般出稼ぎ"
+        }
+      ],
+      "secondaryLabel": "対GDP比 上位（送金依存国家 %）",
+      "secondaryTop": [
+        {
+          "iso3": "TJK",
+          "nameJa": "タジキスタン",
+          "value": 48.0,
+          "note": "GDPの約半分！主にロシアへの建設出稼ぎ送金に依存"
+        },
+        {
+          "iso3": "TON",
+          "nameJa": "トンガ",
+          "value": 41.0,
+          "note": "NZ・豪・米へ移住した親族送金に島嶼経済が依存"
+        },
+        {
+          "iso3": "LBN",
+          "nameJa": "レバノン",
+          "value": 30.0,
+          "note": "通貨危機下、世界中のレバノン人ディアスポラ送金"
+        },
+        {
+          "iso3": "NPL",
+          "nameJa": "ネパール",
+          "value": 26.6,
+          "note": "湾岸・インド・マレーシア・日本等への出稼ぎ送金が柱"
+        },
+        {
+          "iso3": "KGZ",
+          "nameJa": "キルギス",
+          "value": 24.0,
+          "note": "ロシア・カザフスタン出稼ぎ依存"
+        }
+      ],
+      "tags": [
+        "出稼ぎ送金",
+        "フィリピン",
+        "タジキスタン",
+        "メキシコ",
+        "2025年出題"
+      ]
+    },
+    {
+      "id": "soc_female_parliament",
+      "category": "society",
+      "title": "女性国会議員比率・ジェンダーギャップ（ルワンダ・キューバ・北欧 vs 日本）",
+      "unit": "下院女性比率（%）",
+      "dataYear": "2024",
+      "source": "IPU / WEF ジェンダーギャップ報告書",
+      "examTrap": "先進国＝高いという先入観を覆す！世界1位はクオータ制を導入し6割超を誇る『ルワンダ（アフリカ！内戦復興での女性活躍）』、次いでキューバ・ニカラグア・メキシコ・UAE・アイスランド・北欧諸国がトップ層。日本（衆議院約10〜16%）は政治参画の遅れで先進国最低水準（WEF指数118位前後）。",
+      "primaryLabel": "女性国会議員比率上位",
+      "primaryTop": [
+        {
+          "iso3": "RWA",
+          "nameJa": "ルワンダ",
+          "value": 63.8,
+          "note": "圧倒的世界1位！虐殺後の憲法クオータ制と国家再建主導"
+        },
+        {
+          "iso3": "CUB",
+          "nameJa": "キューバ",
+          "value": 55.7,
+          "note": "社会主義下の男女平等・専門職参画で2位級"
+        },
+        {
+          "iso3": "NIC",
+          "nameJa": "ニカラグア",
+          "value": 53.9,
+          "note": "中米の比例クオータ法"
+        },
+        {
+          "iso3": "MEX",
+          "nameJa": "メキシコ",
+          "value": 50.2,
+          "note": "パリテ法により男女半数実現＋初の女性大統領誕生"
+        },
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE",
+          "value": 50.0,
+          "note": "連邦評議会の50%女性割り当て実施"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 47.6,
+          "note": "WEFジェンダーギャップ指数15年連続世界1位！"
+        },
+        {
+          "iso3": "SWE",
+          "nameJa": "スウェーデン",
+          "value": 46.4,
+          "note": "北欧型の福祉・育児休養・女性参画モデル"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 15.7,
+          "note": "教育/健康は高水準だが政治・管理職比率で先進国最下位圏"
+        }
+      ],
+      "tags": [
+        "ジェンダー",
+        "女性議員",
+        "ルワンダ",
+        "アイスランド",
+        "日本課題"
+      ]
+    },
+    {
+      "id": "soc_gini_inequality",
+      "category": "society",
+      "title": "所得格差（ジニ係数：南部アフリカ・中南米極大 vs 中東欧・北欧低格差）",
+      "unit": "ジニ係数（0〜100指数）",
+      "dataYear": "2020–2023",
+      "source": "World Bank",
+      "examTrap": "数値が大きいほど貧富の差が大きい！アパルトヘイトの歴史を残す『南アフリカ・ナミビア・ボツワナ』や植民地大土地所有制の『ブラジル・コロンビア』が世界最悪レベルの格差（50〜63）。一方、社会保障手厚い北欧（ノルウェー・フィンランド）や旧社会主義圏から移行した中東欧（スロベニア・スロバキア・チェコ）は世界最小級（23〜28）！",
+      "primaryLabel": "ジニ係数 高（格差大）vs 低（平等）比較",
+      "primaryTop": [
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ（世界最大級格差）",
+          "value": 63.0,
+          "note": "旧アパルトヘイト由来の人種間資産・教育・失業格差が継続"
+        },
+        {
+          "iso3": "NAM",
+          "nameJa": "ナミビア",
+          "value": 59.1,
+          "note": "土地所有偏在・南部アフリカ特有の極めて高い格差"
+        },
+        {
+          "iso3": "BRA",
+          "nameJa": "ブラジル",
+          "value": 52.0,
+          "note": "ラテンアメリカ代表格差（ファベーラと富裕層高層マンション隣り合う）"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 41.3,
+          "note": "自由競争・IT金融高額所得者増によりG7内で最も格差が大きい"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 32.9,
+          "note": "かつて一億総中流→高齢単身増・非正規増でやや上昇もG7中庸"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 27.7,
+          "note": "高福祉・累進課税により格差極めて小さい"
+        },
+        {
+          "iso3": "SVN",
+          "nameJa": "スロベニア（世界最平等級）",
+          "value": 24.3,
+          "note": "旧ユーゴの中で最も成功し福祉＆平等度世界トップ（SVK/CZE並）"
+        }
+      ],
+      "tags": [
+        "ジニ係数",
+        "貧富の格差",
+        "南アフリカ",
+        "ブラジル",
+        "北欧"
+      ]
+    },
+    {
+      "id": "soc_physicians_per1k",
+      "category": "society",
+      "title": "人口1000人あたり医師数（医療福祉水準の顕著な地域差）",
+      "unit": "人 / 1000人あたり",
+      "dataYear": "2020–2023",
+      "source": "WHO / World Bank",
+      "examTrap": "世界一級を誇るのは欧州勢に加えて何と社会主義で無料医療・医師海外派遣（医療外交！）を国策とする『キューバ（約8〜9人！世界突出）』！逆にサハラ以南アフリカ諸国（0.1〜0.3人）やアフガニスタン・東南アジア一部は深刻な医師不足・先進国への医療人材頭脳流出に直面。",
+      "primaryLabel": "医師密度 上位国・下位対比",
+      "primaryTop": [
+        {
+          "iso3": "CUB",
+          "nameJa": "キューバ（世界突出）",
+          "value": 8.4,
+          "note": "教育医療無償の国策・世界各地へ『医師団派遣』する医療外交大国"
+        },
+        {
+          "iso3": "GRC",
+          "nameJa": "ギリシャ",
+          "value": 6.3,
+          "note": "南部欧州の高い医師養成比率"
+        },
+        {
+          "iso3": "AUT",
+          "nameJa": "オーストリア",
+          "value": 5.5,
+          "note": "手厚い中欧医療制度"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 5.2,
+          "note": "北欧の高福祉医療環境"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 4.5,
+          "note": "欧州平均上回る医療供給"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 2.6,
+          "note": "長寿国だがG7内では医師密度やや低め（地域偏在・過労課題）"
+        },
+        {
+          "iso3": "TZA",
+          "nameJa": "タンザニア（途上国対比）",
+          "value": 0.1,
+          "note": "サハラ以南アフリカの医療体制・頭脳流出の厳しさを示す指標"
+        }
+      ],
+      "tags": [
+        "医師数",
+        "医療水準",
+        "キューバ",
+        "アフリカ課題"
+      ]
+    },
+    {
+      "id": "soc_co2_total_vs_percap",
+      "category": "society",
+      "title": "CO₂総排出量 vs 1人当たりCO₂排出量（責任論の対立構図）",
+      "unit": "億t / t(人・年)",
+      "dataYear": "2023",
+      "source": "EDGAR / Global Carbon Budget",
+      "examTrap": "総排出量では『中国（約31%）＞米国＞インド（3位へ急上昇）＞ロシア＞日本』だが、1人当たりでみると『カタール・クウェート・UAE（砂漠でエアコン・淡水化＋産油）』『オーストラリア・カナダ・米国（車社会＋石炭/資源産業）』が極端に高く、インドは1人当たり約2t（米の7分の1！）と極小＝気候変動交渉での『南北対立』の根拠！",
+      "primaryLabel": "CO₂ 総排出量上位（億t）",
+      "primaryTop": [
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 126,
+          "sharePct": 32.0,
+          "note": "石炭火力＆世界工場のため世界総排出量の約3分の1"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 47,
+          "sharePct": 12.0,
+          "note": "シェールガス転換等でやや減少傾向ながら2位"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 30,
+          "sharePct": 7.6,
+          "note": "石炭火力・人口14億により近年EU27計を抜き3位定着"
+        },
+        {
+          "iso3": "RUS",
+          "nameJa": "ロシア",
+          "value": 18,
+          "sharePct": 4.6,
+          "note": "寒冷・重工業・資源採掘ロス"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 10,
+          "sharePct": 2.5,
+          "note": "世界5〜6位、鉄鋼・火力依存残る"
+        }
+      ],
+      "secondaryLabel": "1人当たりCO₂排出量（t/人）",
+      "secondaryTop": [
+        {
+          "iso3": "QAT",
+          "nameJa": "カタール",
+          "value": 37.6,
+          "note": "圧倒的世界1位級（LNG液化・海水淡水化・猛暑冷房・車社会）"
+        },
+        {
+          "iso3": "KWT",
+          "nameJa": "クウェート",
+          "value": 24.0,
+          "note": "産油湾岸諸国"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "value": 14.5,
+          "note": "石炭火力依存＋長距離自動車・資源採掘で先進国最高水準"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ合衆国",
+          "value": 13.8,
+          "note": "自家用車・広い住宅・エアコン・肉食消費"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "value": 14.2,
+          "note": "冬の長時間暖房・広土輸送・オイルサンド採掘"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド（対比）",
+          "value": 2.1,
+          "note": "総量3位でも1人当たり排出は米国や豪州の約7分の1！"
+        }
+      ],
+      "tags": [
+        "CO2排出量",
+        "気候変動",
+        "カタール",
+        "インド",
+        "南北問題"
+      ]
+    },
+    {
+      "id": "soc_hdi_extreme",
+      "category": "society",
+      "title": "人間開発指数（HDI：所得×教育×平均寿命の総合到達度）",
+      "unit": "指数（0〜1.00）",
+      "dataYear": "2023–2024",
+      "source": "UNDP 人間開発報告書",
+      "examTrap": "1人当たりGNIだけでは測れない『健康（平均寿命）・知識（就学年数）』を含めた総合指標！1位は『スイス』『ノルウェー』『アイスランド』『香港』『スウェーデン』など西欧・北欧勢（日本は24位前後）。逆に最下位圏は内戦・乾燥・低就学のサヘル諸国（ソマリア・南スーダン・チャド・ニジェール）。",
+      "primaryLabel": "HDI 世界トップ層＆比較",
+      "primaryTop": [
+        {
+          "iso3": "CHE",
+          "nameJa": "スイス",
+          "value": 0.967,
+          "note": "世界1位！高所得＋長寿＋職業訓練含む教育制度"
+        },
+        {
+          "iso3": "NOR",
+          "nameJa": "ノルウェー",
+          "value": 0.966,
+          "note": "長年1〜2位、石油基金による福祉・教育・男女平等の極み"
+        },
+        {
+          "iso3": "ISL",
+          "nameJa": "アイスランド",
+          "value": 0.959,
+          "note": "高寿命・ジェンダー平等・清潔な再エネ社会"
+        },
+        {
+          "iso3": "HKG",
+          "nameJa": "香港",
+          "value": 0.956,
+          "note": "世界最長寿命圏（85歳前後）とアジア国際金融所得"
+        },
+        {
+          "iso3": "DNK",
+          "nameJa": "デンマーク",
+          "value": 0.952,
+          "note": "高福祉北欧モデル"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 0.92,
+          "note": "平均寿命は世界首位級だがジェンダー・賃金停滞でやや20位台"
+        },
+        {
+          "iso3": "NER",
+          "nameJa": "ニジェール（下位対比）",
+          "value": 0.394,
+          "note": "多産（出生率6超）・干ばつ・低就学で最下位圏"
+        }
+      ],
+      "tags": [
+        "HDI",
+        "人間開発指数",
+        "スイス",
+        "ノルウェー",
+        "ニジェール"
+      ]
+    },
+    {
+      "id": "soc_world_heritage",
+      "category": "society",
+      "title": "世界遺産登録数（文化遺産集積・地中海・東アジア）",
+      "unit": "件数",
+      "dataYear": "2024",
+      "source": "UNESCO",
+      "examTrap": "世界1位はローマ帝国〜ルネサンスの都市遺産が集中する『イタリア（60件）』、2位は広大な国土と悠久の歴史を持つ『中国（59件）』、次いでドイツ・フランス・スペイン！ヨーロッパ文化偏重是正のため近年はアフリカ・オセアニアや自然/産業遺産（日本は佐渡金山登録等で26件）の登録推進。",
+      "primaryLabel": "登録件数上位",
+      "primaryTop": [
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "value": 60,
+          "note": "ローマ・フィレンツェ・ヴェネツィア・エトナ山など世界1位！"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "value": 59,
+          "note": "万里の長城・秦始皇帝兵馬俑・桂林・九寨溝など"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "value": 54,
+          "note": "ルール工業遺産ツォルフェライン等産業遺産も多数"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "value": 53,
+          "note": "モンサンミッシェル・ベルサイユ・ニューカレドニア礁湖"
+        },
+        {
+          "iso3": "ESP",
+          "nameJa": "スペイン",
+          "value": 50,
+          "note": "アルハンブラ・サグラダファミリア・メセタ古都群"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "value": 43,
+          "note": "タージマハル・アジャンタ等アジア2位級"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "value": 26,
+          "note": "富士山・白川郷・知床・富岡製糸・佐渡金山など"
+        }
+      ],
+      "tags": [
+        "世界遺産",
+        "観光",
+        "イタリア",
+        "中国"
+      ]
+    },
+    {
+      "id": "soc_internet_speed_digital",
+      "category": "society",
+      "title": "デジタル行政・キャッシュレス社会（エストニア『e-Estonia』・北欧・中印）",
+      "unit": "電子公共サービス普及/指標",
+      "dataYear": "2023–2024",
+      "source": "UN E-Government Survey / FIS",
+      "examTrap": "ICT立国の驚くべき試験題材！ソ連独立後のバルト小国『エストニア』は行政手続の99%超をオンライン化し電子国民(e-Residency)や電子投票を導入する『世界最先端デジタル国家』。中国(Alipay/WeChat)・インド(UPI決済爆発)・スウェーデン(キャッシュレス現金ゼロに近い)と、まだ現金根強いドイツ・日本の対比が新しいテーマ。",
+      "primaryLabel": "電子政府開発指数・デジタル化注目国",
+      "primaryTop": [
+        {
+          "iso3": "DNK",
+          "nameJa": "デンマーク（UN電子政府1位）",
+          "value": 98,
+          "note": "国連電子政府ランキング連続1位・デジタル身分証普及"
+        },
+        {
+          "iso3": "EST",
+          "nameJa": "エストニア（電子国家モデル）",
+          "value": 97,
+          "note": "人口137万のIT小国・電子投票・オンライン起業・Skype発祥"
+        },
+        {
+          "iso3": "SGP",
+          "nameJa": "シンガポール",
+          "value": 97,
+          "note": "スマートネーション国家戦略・港湾電子化"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "value": 96,
+          "note": "クレジットカード/スマホ決済・高速光通信普及極めて高い"
+        },
+        {
+          "iso3": "SWE",
+          "nameJa": "スウェーデン",
+          "value": 95,
+          "note": "現金流通GDP比約1%以下の徹底キャッシュレス社会"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド（UPI革新的普及）",
+          "value": 85,
+          "note": "銀行口座未保有層を飛び越えたモバイルQR決済『UPI』が爆発"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本（参考）",
+          "value": 78,
+          "note": "デジタル化遅れからマイナカード・キャッシュレス4割超へ追い上げ中"
+        }
+      ],
+      "tags": [
+        "ICT",
+        "エストニア",
+        "デンマーク",
+        "インド",
+        "リープフロッグ"
+      ]
     }
   ],
   "scatters": [
@@ -7694,6 +11519,235 @@
           "group": "乾燥/高密・低中森林",
           "color": "#dc2626",
           "note": "サハラ砂漠内BW気候のためほぼ0%"
+        }
+      ]
+    },
+    {
+      "id": "female_labor_fertility",
+      "title": "女性労働力率 × 合計特殊出生率（先進国内の家族政策対比）",
+      "subtitle": "かつての負の相関（働くと少子化）から正の相関へ：フランス/スウェーデン vs 日本/韓国 vs アフリカ多産型",
+      "xLabel": "女性労働力率（15〜64歳・%）",
+      "yLabel": "合計特殊出生率（TFR）",
+      "quadrants": [
+        "【多産・働く途上型】高出生率×農林/インフォーマル女性労働多（サハラ以南）",
+        "【両立型福祉先進国】高い女性就業×保育福祉で1.5〜1.8維持（北欧・仏・米）",
+        "【家族責任・伝統極少子型】M字カーブや少子化極まる（韓国・日本・イタリア）",
+        "【多産・家庭専業型】イスラム伝統文化等で女性外就労率低め×高TFR（イラク・アフガン・サウジ）"
+      ],
+      "examPoint": "『女性がよく働く国＝子供が少ない』という単純図は現代先進国では逆転！育児支援・男性育休・男女平等が進む北欧・フランスは女性就業率が高くてもTFRを1.5〜1.8前後に保つが、韓国（0.72）・日本（1.20）・イタリア・スペインは極めて低い！また南アジア・西アジアでは女性就労率が低い点が際立つ。",
+      "points": [
+        {
+          "iso3": "NER",
+          "nameJa": "ニジェール",
+          "x": 61,
+          "y": 6.6,
+          "group": "サヘル多産",
+          "color": "#ef4444"
+        },
+        {
+          "iso3": "NGA",
+          "nameJa": "ナイジェリア",
+          "x": 54,
+          "y": 5.1,
+          "group": "サハラ以南",
+          "color": "#ef4444"
+        },
+        {
+          "iso3": "IRQ",
+          "nameJa": "イラク",
+          "x": 12,
+          "y": 3.4,
+          "group": "西アジア型",
+          "color": "#f59e0b",
+          "note": "女性公式就労率極めて低い"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "x": 32,
+          "y": 2.0,
+          "group": "南アジア型",
+          "color": "#f59e0b"
+        },
+        {
+          "iso3": "SWE",
+          "nameJa": "スウェーデン",
+          "x": 77,
+          "y": 1.52,
+          "group": "両立先進",
+          "color": "#10b981",
+          "note": "高就業×福祉支援両立"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "x": 69,
+          "y": 1.68,
+          "group": "両立先進",
+          "color": "#10b981",
+          "note": "家族手当・事実婚保障で欧州首位級TFR"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ",
+          "x": 68,
+          "y": 1.62,
+          "group": "両立・移民",
+          "color": "#10b981"
+        },
+        {
+          "iso3": "DEU",
+          "nameJa": "ドイツ",
+          "x": 74,
+          "y": 1.38,
+          "group": "中欧先進",
+          "color": "#3b82f6"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "x": 73,
+          "y": 1.2,
+          "group": "東アジア低出生",
+          "color": "#6366f1"
+        },
+        {
+          "iso3": "ITA",
+          "nameJa": "イタリア",
+          "x": 57,
+          "y": 1.2,
+          "group": "南欧低出生",
+          "color": "#6366f1"
+        },
+        {
+          "iso3": "KOR",
+          "nameJa": "韓国",
+          "x": 63,
+          "y": 0.72,
+          "group": "世界最低TFR",
+          "color": "#dc2626",
+          "note": "教育費高・住宅・非正規格差で世界最低水準"
+        }
+      ]
+    },
+    {
+      "id": "co2_gdp_per_capita",
+      "title": "1人当たりGDP × 1人当たりCO₂排出量（高所得の脱炭素度比較）",
+      "subtitle": "水力/原発でCO₂を抑える北欧・フランス・スイス vs 産油/資源/車社会で突出する湾岸・豪・米",
+      "xLabel": "1人当たりGDP（千ドル）",
+      "yLabel": "1人当たりCO₂排出（t/人・年）",
+      "quadrants": [
+        "【高排出資源/車型】超高1人当たりCO₂（湾岸産油・豪・米・加・露）",
+        "【脱炭素先進型】高所得だが水力/原発/再エネで低CO₂（スイス・仏・北欧・英）",
+        "【低排出途上型】工業未発達で人口比極小（印・バングラ・アフリカ）",
+        "【石炭工業急伸型】中所得だが石炭火災・重工で中高排出（中国・南ア・カザフ）"
+      ],
+      "examPoint": "同じ『豊かな先進国』でも、フランス・スイス・ノルウェー・スウェーデン（1人当たりCO₂は3〜6t台）と、アメリカ・カナダ・オーストラリア（13〜15t台）では排出量が約3倍違う！さらにカタール・クウェート等の湾岸産油国は25〜37t台で飛び抜ける。",
+      "points": [
+        {
+          "iso3": "QAT",
+          "nameJa": "カタール",
+          "x": 81,
+          "y": 37.6,
+          "group": "湾岸産油",
+          "color": "#dc2626"
+        },
+        {
+          "iso3": "ARE",
+          "nameJa": "UAE",
+          "x": 53,
+          "y": 21.0,
+          "group": "湾岸産油",
+          "color": "#dc2626"
+        },
+        {
+          "iso3": "USA",
+          "nameJa": "アメリカ",
+          "x": 82,
+          "y": 13.8,
+          "group": "資源・車先進",
+          "color": "#f59e0b"
+        },
+        {
+          "iso3": "AUS",
+          "nameJa": "オーストラリア",
+          "x": 65,
+          "y": 14.5,
+          "group": "石炭・車先進",
+          "color": "#f59e0b"
+        },
+        {
+          "iso3": "CAN",
+          "nameJa": "カナダ",
+          "x": 54,
+          "y": 14.2,
+          "group": "資源・寒冷先進",
+          "color": "#f59e0b"
+        },
+        {
+          "iso3": "CHE",
+          "nameJa": "スイス",
+          "x": 100,
+          "y": 3.8,
+          "group": "脱炭素高所得",
+          "color": "#10b981",
+          "note": "水力+原発+3次産業化で超高所得ながら超低排出！"
+        },
+        {
+          "iso3": "SWE",
+          "nameJa": "スウェーデン",
+          "x": 56,
+          "y": 3.6,
+          "group": "脱炭素高所得",
+          "color": "#10b981"
+        },
+        {
+          "iso3": "FRA",
+          "nameJa": "フランス",
+          "x": 45,
+          "y": 4.2,
+          "group": "原発低CO2",
+          "color": "#10b981"
+        },
+        {
+          "iso3": "JPN",
+          "nameJa": "日本",
+          "x": 34,
+          "y": 8.0,
+          "group": "東アジア工業",
+          "color": "#3b82f6"
+        },
+        {
+          "iso3": "CHN",
+          "nameJa": "中国",
+          "x": 12.6,
+          "y": 8.8,
+          "group": "石炭製造大国",
+          "color": "#8b5cf6"
+        },
+        {
+          "iso3": "ZAF",
+          "nameJa": "南アフリカ",
+          "x": 6.1,
+          "y": 6.7,
+          "group": "石炭8割中所得",
+          "color": "#8b5cf6"
+        },
+        {
+          "iso3": "IND",
+          "nameJa": "インド",
+          "x": 2.6,
+          "y": 2.1,
+          "group": "低排出巨人口",
+          "color": "#64748b"
+        },
+        {
+          "iso3": "NGA",
+          "nameJa": "ナイジェリア",
+          "x": 1.6,
+          "y": 0.6,
+          "group": "低排出アフリカ",
+          "color": "#64748b"
         }
       ]
     }
@@ -9014,6 +13068,517 @@
         }
       ],
       "examPoint": "米国は毎年1兆ドル超の巨大商品貿易赤字（基軸通貨ドルで輸入し世界消費を牽引＋ITサービスで黒字）。英国・フランス・インドもモノ貿易は大幅赤字。中国(8000億$超黒字)とドイツ(2000億$超黒字)は製造輸出立国。日本は1980〜2000年代の巨大黒字から、資源高・工場海外移転で近年均衡〜小幅赤字傾向に変化！"
+    },
+    {
+      "id": "cmp_grain_export_import",
+      "kind": "grouped_bar",
+      "title": "主要国の小麦・トウモロコシの『生産 vs 純輸出入』乖離比較",
+      "subtitle": "大生産国でも自国消費で純輸入国になる『中国・エジプト・日本』と圧倒的輸出余剰国の対比",
+      "unit": "百万t（＋輸出超 / －輸入超）",
+      "source": "USDA",
+      "dataYear": "2023",
+      "categories": [
+        "アメリカ",
+        "ブラジル",
+        "ロシア",
+        "オーストラリア",
+        "中国",
+        "日本",
+        "エジプト"
+      ],
+      "series": [
+        {
+          "name": "小麦 純輸出入",
+          "color": "#f59e0b",
+          "values": [
+            17.0,
+            -5.0,
+            47.0,
+            31.8,
+            -12.0,
+            -5.4,
+            -11.5
+          ]
+        },
+        {
+          "name": "トウモロコシ 純輸出入",
+          "color": "#10b981",
+          "values": [
+            51.0,
+            54.0,
+            4.5,
+            0.2,
+            -23.0,
+            -15.2,
+            -9.0
+          ]
+        }
+      ],
+      "examPoint": "中国は小麦もトウモロコシも米も生産トップ級なのに『いずれも純輸入国（マイナス）』！逆にブラジルは小麦輸入・トウモロコシ＆大豆超巨大輸出国！"
+    },
+    {
+      "id": "cmp_religion_livestock",
+      "kind": "stacked_bar",
+      "title": "宗教・食文化が作る主要国の家畜頭数構成比（牛・豚・羊・ヤギ比率）",
+      "subtitle": "イスラム圏＝豚0%、インド＝牛/水牛＋ヤギ中心（ヒンドゥー保護）、中国＝豚圧倒的という宗教地誌の決定打",
+      "unit": "%",
+      "source": "FAOSTAT（頭数ベース概算構成比）",
+      "dataYear": "2022",
+      "categories": [
+        "中国",
+        "インド",
+        "インドネシア",
+        "オーストラリア",
+        "ブラジル",
+        "トルコ",
+        "ドイツ"
+      ],
+      "series": [
+        {
+          "name": "牛（水牛含む）",
+          "color": "#92400e",
+          "values": [
+            10.0,
+            62.0,
+            26.0,
+            25.0,
+            74.0,
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "name": "豚",
+          "color": "#f43f5e",
+          "values": [
+            52.0,
+            2.0,
+            12.0,
+            2.5,
+            14.0,
+            0.0,
+            63.0
+          ]
+        },
+        {
+          "name": "羊",
+          "color": "#f59e0b",
+          "values": [
+            22.0,
+            14.0,
+            25.0,
+            72.0,
+            6.5,
+            60.0,
+            4.5
+          ]
+        },
+        {
+          "name": "ヤギ",
+          "color": "#10b981",
+          "values": [
+            16.0,
+            22.0,
+            37.0,
+            0.5,
+            5.5,
+            16.0,
+            0.5
+          ]
+        }
+      ],
+      "examPoint": "『豚がゼロ＝トルコ（イスラム）』、『牛水牛6割超で豚極小＝インド（ヒンドゥー・イスラム共存）』、『豚過半＝中国・ドイツ』、『羊7割＝オーストラリア』が一目瞭然！"
+    },
+    {
+      "id": "cmp_primate_vs_polycentric",
+      "kind": "grouped_bar",
+      "title": "第1位都市 vs 第2位都市の人口比較（プライメイト型 vs 分散型）",
+      "subtitle": "第1位都市だけ巨大に飛び抜けるタイ・韓国・アルゼンチン・日本 vs 均等分散のドイツ・豪州・カナダ",
+      "unit": "万人（都市圏推計）",
+      "source": "UN Urbanization Prospects",
+      "dataYear": "2023",
+      "categories": [
+        "韓国",
+        "タイ",
+        "アルゼンチン",
+        "フランス",
+        "ドイツ",
+        "オーストラリア",
+        "イタリア"
+      ],
+      "series": [
+        {
+          "name": "第1位都市圏",
+          "color": "#4f46e5",
+          "values": [
+            1000,
+            1100,
+            1550,
+            1120,
+            360,
+            510,
+            430
+          ]
+        },
+        {
+          "name": "第2位都市圏",
+          "color": "#94a3b8",
+          "values": [
+            340,
+            120,
+            160,
+            175,
+            185,
+            505,
+            315
+          ]
+        }
+      ],
+      "examPoint": "オーストラリアはシドニー(1位)とメルボルン(2位)がほぼ同規模の二眼レフ、ドイツもベルリン(1位)とハンブルク/ミュンヘンが接近、韓国・アルゼンチン・タイは第2位の数〜10倍もの首位都市集中！"
+    },
+    {
+      "id": "cmp_asian_nie_shift",
+      "kind": "stacked_bar",
+      "title": "アジア新興国（中国・ベトナム・バングラ等）の輸出品目構造比較",
+      "subtitle": "『世界の縫製工場（バングラ8割衣類）』から『電子機器組立（ベトナム・マレーシア・中国）』への高度化段階差",
+      "unit": "%",
+      "source": "UN Comtrade / WTO",
+      "dataYear": "2023",
+      "categories": [
+        "中国",
+        "韓国",
+        "ベトナム",
+        "バングラデシュ",
+        "インドネシア",
+        "ナイジェリア"
+      ],
+      "series": [
+        {
+          "name": "機械・電子・輸送機器",
+          "color": "#2563eb",
+          "values": [
+            48.0,
+            64.0,
+            46.0,
+            2.0,
+            11.0,
+            1.0
+          ]
+        },
+        {
+          "name": "衣類・繊維・軽工業品",
+          "color": "#ec4899",
+          "values": [
+            18.0,
+            4.0,
+            24.0,
+            88.0,
+            12.0,
+            1.0
+          ]
+        },
+        {
+          "name": "鉱産・燃料・金属資源",
+          "color": "#f59e0b",
+          "values": [
+            4.0,
+            12.0,
+            3.0,
+            1.0,
+            38.0,
+            91.0
+          ]
+        },
+        {
+          "name": "農林水産・化学その他",
+          "color": "#10b981",
+          "values": [
+            30.0,
+            20.0,
+            27.0,
+            9.0,
+            39.0,
+            7.0
+          ]
+        }
+      ],
+      "examPoint": "『バングラ＝約8〜9割が衣類縫製』『ナイジェリア＝9割が原油資源』『インドネシア＝石炭・パーム油・金属資源と農林の均衡』『ベトナム・中国＝今や衣類より電子機械輸出が最大！』を即判別する！"
+    },
+    {
+      "id": "cmp_energy_special_nations",
+      "kind": "stacked_bar",
+      "title": "特徴的な電源構成（再エネ特化・原発特化・石炭特化・ガス特化国）",
+      "subtitle": "共テ必出の『1〜2電源に極端に偏る特徴国』を見抜く訓練チャート",
+      "unit": "%",
+      "source": "Ember Electricity Review",
+      "dataYear": "2023",
+      "categories": [
+        "アイスランド",
+        "パラグアイ",
+        "スウェーデン",
+        "フランス",
+        "カタール",
+        "南アフリカ",
+        "ケニア"
+      ],
+      "series": [
+        {
+          "name": "水力",
+          "color": "#0284c7",
+          "values": [
+            70.0,
+            99.7,
+            40.0,
+            11.5,
+            0.0,
+            2.0,
+            22.0
+          ]
+        },
+        {
+          "name": "地熱・風力・太陽光等",
+          "color": "#10b981",
+          "values": [
+            30.0,
+            0.3,
+            27.0,
+            16.5,
+            1.0,
+            11.0,
+            68.0
+          ]
+        },
+        {
+          "name": "原子力",
+          "color": "#8b5cf6",
+          "values": [
+            0.0,
+            0.0,
+            30.0,
+            65.0,
+            0.0,
+            4.0,
+            0.0
+          ]
+        },
+        {
+          "name": "石炭・石油火力",
+          "color": "#334155",
+          "values": [
+            0.0,
+            0.0,
+            2.0,
+            1.0,
+            0.0,
+            82.0,
+            10.0
+          ]
+        },
+        {
+          "name": "天然ガス火力",
+          "color": "#f59e0b",
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            6.0,
+            99.0,
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "examPoint": "ケニアは水力+地熱(約45%!)で再エネ約9割、アイスランドは水力70+地熱30=100%、パラグアイは水力99.7%、カタールは天然ガス99%、南アは国内豊富な石炭82%、スウェーデンは水力+原子力+風力バランス！"
+    },
+    {
+      "id": "cmp_urban_pop_trajectory",
+      "kind": "line",
+      "title": "大陸・代表国別の都市人口率長期推移（1960→2023年）",
+      "subtitle": "すでに都市化済みの欧米日・ラテンアメリカ（約8〜9割）vs 爆発Urbanization中の中国（16%→65%）・ナイジェリア・インド",
+      "unit": "%",
+      "source": "UN / World Bank",
+      "dataYear": "1960–2023",
+      "categories": [
+        "1960年",
+        "1980年",
+        "2000年",
+        "2010年",
+        "2023年"
+      ],
+      "series": [
+        {
+          "name": "アルゼンチン",
+          "color": "#6366f1",
+          "values": [
+            73.6,
+            82.9,
+            89.1,
+            90.8,
+            92.5
+          ]
+        },
+        {
+          "name": "日本",
+          "color": "#2563eb",
+          "values": [
+            63.3,
+            76.2,
+            78.6,
+            90.8,
+            92.0
+          ]
+        },
+        {
+          "name": "メキシコ",
+          "color": "#f59e0b",
+          "values": [
+            50.8,
+            66.3,
+            74.7,
+            77.8,
+            81.6
+          ]
+        },
+        {
+          "name": "中国",
+          "color": "#ef4444",
+          "values": [
+            16.2,
+            19.4,
+            35.9,
+            49.2,
+            65.2
+          ]
+        },
+        {
+          "name": "ナイジェリア",
+          "color": "#10b981",
+          "values": [
+            15.4,
+            22.0,
+            34.8,
+            43.5,
+            54.3
+          ]
+        },
+        {
+          "name": "インド",
+          "color": "#8b5cf6",
+          "values": [
+            17.9,
+            23.1,
+            27.7,
+            30.9,
+            36.4
+          ]
+        }
+      ],
+      "examPoint": "2016年本試にも登場！ラテンアメリカ（アルゼンチン・ブラジル・メキシコ）は開発途上圏ながら所得比で『都市人口率が8〜9割と欧米並みに極めて高い（偽似都市化/大土地所有・農村貧困による向都離村）』のに対し、インドはまだ3割台後半で農村人口が圧倒的！"
+    },
+    {
+      "id": "cmp_steel_auto_shift_hist",
+      "kind": "grouped_bar",
+      "title": "工業生産覇権の交代（1990年 vs 2023年：粗鋼＆自動車）",
+      "subtitle": "かつての『日本・米国中心』から『中国の圧倒的単独過半（粗鋼）＋新興印・墨』への歴史的大シフト",
+      "unit": "百万t（粗鋼）/ 百万台（車）",
+      "source": "World Steel / OICA",
+      "dataYear": "1990 & 2023",
+      "categories": [
+        "中国(粗鋼)",
+        "日本(粗鋼)",
+        "インド(粗鋼)",
+        "中国(車・百万台)",
+        "米国(車・百万台)",
+        "日本(車・百万台)",
+        "インド(車・百万台)"
+      ],
+      "series": [
+        {
+          "name": "1990年",
+          "color": "#94a3b8",
+          "values": [
+            66,
+            110,
+            15,
+            0.5,
+            9.8,
+            13.5,
+            0.4
+          ]
+        },
+        {
+          "name": "2023年",
+          "color": "#2563eb",
+          "values": [
+            1019,
+            87,
+            140,
+            30.2,
+            10.6,
+            9.0,
+            5.9
+          ]
+        }
+      ],
+      "examPoint": "日本は国内の粗鋼生産も自動車生産台数（現地生産化のため）も1990〜2007年頃をピークに緩やかに減少した一方、中国が2000年代以降どちらも世界で突出した1位、近年インドが世界2位（粗鋼）・3〜4位（自動車）へ躍進！"
+    },
+    {
+      "id": "cmp_trade_partners_aus",
+      "kind": "stacked_bar",
+      "title": "オーストラリアの主要輸出相手国構成の歴史的変化（1965→2023年）",
+      "subtitle": "2026年追試でも出題！旧宗主国イギリス離れ → 高度経済成長の日本へ → 21世紀中国の爆買い（約4割）",
+      "unit": "%",
+      "source": "DFAT Australia / UN Comtrade",
+      "dataYear": "1965–2023",
+      "categories": [
+        "1965年（白豪主義期）",
+        "1985年（対日資源 boom）",
+        "2005年（対中拡大期）",
+        "2023年（現在）"
+      ],
+      "series": [
+        {
+          "name": "イギリス（旧宗主国）",
+          "color": "#3b82f6",
+          "values": [
+            20.0,
+            3.5,
+            3.5,
+            1.5
+          ]
+        },
+        {
+          "name": "日本（アジア転換第1波）",
+          "color": "#f59e0b",
+          "values": [
+            16.5,
+            27.0,
+            20.0,
+            15.5
+          ]
+        },
+        {
+          "name": "中国（21世紀の鉄鉱/炭爆需）",
+          "color": "#ef4444",
+          "values": [
+            5.0,
+            4.0,
+            11.0,
+            37.5
+          ]
+        },
+        {
+          "name": "アメリカ・韓国・ASEANその他",
+          "color": "#94a3b8",
+          "values": [
+            58.5,
+            65.5,
+            65.5,
+            45.5
+          ]
+        }
+      ],
+      "examPoint": "1965〜73年（英EC加盟と白豪主義廃止）で英向けシェアが激減し、日本の製鉄向け資源輸送で日本が長く1位だった後、2009年頃に中国が日本を抜き現在輸出の約4割弱を中国が占めるという完全推移グラフ！"
     }
   ],
   "flowMaps": [
@@ -10040,6 +14605,201 @@
           "displayValue": "近接短納期",
           "color": "#0d9488",
           "note": "EU関税同盟と地理的近接を活かしたZARA等の短納期アパレル供給"
+        }
+      ]
+    },
+    {
+      "id": "flow_ev_minerals_aluminum",
+      "title": "EV電池資源（リチウム・コバルト）＆ボーキサイト→精錬移動フロー",
+      "subtitle": "採掘国（豪・チリ・コンゴ民主・ギニア）から『電池/精錬中心（中国・カナダ・欧州）』へ向かうサプライチェーン",
+      "unit": "戦略重要フロー",
+      "source": "USGS / IEA Critical Minerals",
+      "dataYear": "2023",
+      "centerMode": "pacific",
+      "examPoint": "資源は『南米リチウム（豪＋チリ）』『コンゴのコバルト』『ギニア/豪ボーキサイト』で掘られるが、精製・電池材料加工の過半を『中国』が握り、アルミ精錬は安価電力地帯（カナダ・UAE・氷島）や中国へ運ばれて精製される分業構造！",
+      "arcs": [
+        {
+          "id": "min_cod_chn_co",
+          "fromName": "コンゴ民主(コバルト7割)",
+          "fromIso3": "COD",
+          "fromCoords": [
+            26.0,
+            -10.5
+          ],
+          "toName": "中国(精製・電池工場)",
+          "toIso3": "CHN",
+          "toCoords": [
+            117.0,
+            29.0
+          ],
+          "value": 450,
+          "displayValue": "世界コバルト大部分",
+          "color": "#4f46e5",
+          "note": "カタンガ鉱床のコバルト粗鉱→中国国内の正極材・車載電池工場へ"
+        },
+        {
+          "id": "min_aus_chn_li",
+          "fromName": "オーストラリア(リチウム1位)",
+          "fromIso3": "AUS",
+          "fromCoords": [
+            116.0,
+            -32.0
+          ],
+          "toName": "中国・韓国(リチウム精製)",
+          "toIso3": "CHN",
+          "toCoords": [
+            121.0,
+            31.2
+          ],
+          "value": 480,
+          "displayValue": "リチウム鉱世界1位",
+          "color": "#059669",
+          "note": "西豪州のリシア輝石鉱石→東アジアのEV電池産業へ"
+        },
+        {
+          "id": "min_chl_asia_li",
+          "fromName": "チリ(アタカマ塩湖リチウム)",
+          "fromIso3": "CHL",
+          "fromCoords": [
+            -68.3,
+            -23.5
+          ],
+          "toName": "中国・韓国・日本",
+          "toIso3": "KOR",
+          "toCoords": [
+            127.0,
+            36.0
+          ],
+          "value": 310,
+          "displayValue": "炭酸リチウム極大",
+          "color": "#0284c7",
+          "note": "乾燥塩湖天日蒸発カン水から抽出→東アジア電池メーカー向け"
+        },
+        {
+          "id": "min_gin_chn_baux",
+          "fromName": "ギニア(ボーキサイト2位)",
+          "fromIso3": "GIN",
+          "fromCoords": [
+            -13.7,
+            9.5
+          ],
+          "toName": "中国(アルミ精錬)",
+          "toIso3": "CHN",
+          "toCoords": [
+            118.0,
+            36.5
+          ],
+          "value": 420,
+          "displayValue": "対中ボーキサイト急増",
+          "color": "#ea580c",
+          "note": "インドネシア輸出禁止後にギニア産ボーキサイトの中国輸送が爆発増"
+        },
+        {
+          "id": "min_bra_can_al",
+          "fromName": "ブラジル/ジャマイカ(アルミナ)",
+          "fromIso3": "BRA",
+          "fromCoords": [
+            -55.0,
+            -2.0
+          ],
+          "toName": "カナダ(ケベック安価水力)",
+          "toIso3": "CAN",
+          "toCoords": [
+            -71.2,
+            48.0
+          ],
+          "value": 240,
+          "displayValue": "水力精錬向け輸送",
+          "color": "#10b981",
+          "note": "安価電力立地型アルミ精錬の古典的＆継続的国際分業"
+        }
+      ]
+    },
+    {
+      "id": "flow_eu_africa_semicon",
+      "title": "半導体（東アジア→米欧自動車/IT）＆越境人流（地中海・北米ルート）",
+      "subtitle": "先端半導体の超極在（台湾・韓国）× 世界の主要な国際航空/海上物流と人の移動軸",
+      "unit": "重要国際フロー",
+      "source": "WTO / UNODC / SIA",
+      "dataYear": "2023",
+      "centerMode": "atlantic",
+      "examPoint": "先端ロジック半導体は『台湾(TSMC)・韓国』が製造の大半を担い米欧日へ空輸（近年熊本やアリゾナに工場分散投資）。一方人の移動では中南米→米国、北アフリカ・シリア→地中海越え欧州という2大南北移動軸が継続。",
+      "arcs": [
+        {
+          "id": "sc_twn_usa_chip",
+          "fromName": "台湾・韓国(先端半導体)",
+          "fromIso3": "TWN",
+          "fromCoords": [
+            121.0,
+            24.8
+          ],
+          "toName": "アメリカ(設計本社・Apple等)",
+          "toIso3": "USA",
+          "toCoords": [
+            -122.0,
+            37.4
+          ],
+          "value": 460,
+          "displayValue": "先端半導体製造集中",
+          "color": "#6366f1",
+          "note": "米国設計(ファブレス)→台湾/韓製造(ファウンドリ)→世界市場の極度分業"
+        },
+        {
+          "id": "sc_mex_usa_mig",
+          "fromName": "メキシコ・中米(経済移動)",
+          "fromIso3": "MEX",
+          "fromCoords": [
+            -100.0,
+            20.0
+          ],
+          "toName": "アメリカ合衆国",
+          "toIso3": "USA",
+          "toCoords": [
+            -98.5,
+            29.4
+          ],
+          "value": 520,
+          "displayValue": "世界最大の二国間移民回廊",
+          "color": "#f59e0b",
+          "note": "賃金格差・治安課題で国境(リオグランデ川/壁)を越える南北アメリカ移動"
+        },
+        {
+          "id": "sc_mar_esp_mig",
+          "fromName": "マグレブ・西アフリカ",
+          "fromIso3": "MAR",
+          "fromCoords": [
+            -5.8,
+            35.8
+          ],
+          "toName": "西欧（スペイン・フランス）",
+          "toIso3": "ESP",
+          "toCoords": [
+            -5.3,
+            36.2
+          ],
+          "value": 310,
+          "displayValue": "ジブラルタル・地中海越え",
+          "color": "#dc2626",
+          "note": "旧仏・西植民地縁と言語を活かしたアフリカ→欧州の主要移民/難民軸"
+        },
+        {
+          "id": "sc_tur_deu_mig",
+          "fromName": "トルコ・中東地域",
+          "fromIso3": "TUR",
+          "fromCoords": [
+            29.0,
+            41.0
+          ],
+          "toName": "ドイツ・西欧",
+          "toIso3": "DEU",
+          "toCoords": [
+            10.4,
+            51.1
+          ],
+          "value": 350,
+          "displayValue": "ガストアルバイター〜難民軸",
+          "color": "#0d9488",
+          "note": "1960年代ドイツ高度成長期トルコ人労働者＋近年のシリア難民通過点"
         }
       ]
     }
