@@ -53,7 +53,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q2.png",
       "clipPdfPath": null,
@@ -86,7 +86,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q3.png",
       "clipPdfPath": null,
@@ -121,7 +121,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q4.png",
       "clipPdfPath": null,
@@ -154,7 +154,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q5.png",
       "clipPdfPath": null,
@@ -189,7 +189,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d1_q6.png",
       "clipPdfPath": null,
@@ -221,17 +221,8 @@
         "JPN",
         "CHN",
         "KOR",
-        "TWN",
-        "THA",
         "IND",
-        "FRA",
-        "DEU",
-        "ESP",
-        "USA",
-        "CAN",
-        "MEX",
-        "BRA",
-        "MAC"
+        "USA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -265,11 +256,7 @@
       "questionLabel": "第2問 問2（解答番号8）",
       "title": "第2問 問2: 問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた",
       "promptSummary": "問2次にゲンさんたちは，自動車以外の製造業にも興味をもち，様々な工業製品の貿易について調べた。次の図2は，いくつかの工業製品について，輸出金額の上位15か国・地域が世界の輸出金額に占める割合を示したものであり，カ～クは，衣類，航空機＊，テレビのいずれかである。工業製品名とカ～クとの正しい組合せを，後の(1)～(2)のうちから一つ選べ。8＊航空機の部分品や人工衛星などを含む。40 20 5％カキク中国の数値には台湾，ホンコン，マカオ...",
-      "relatedCountries": [
-        "CHN",
-        "TWN",
-        "MAC"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "自動車"
@@ -440,9 +427,9 @@
       "promptSummary": "第3問人口と都市に関する次の問い（問1～6）に答えよ。（配点20）問1次の表1は，いくつかの国について，人口密度と人口増加率の変化を示したものであり，(1)～(2)は，アルジェリア，カタール，ニュージーランド，ベトナムのいずれかである。アルジェリアに該当するものを，表1中の(1)～(2)のうちから一つ選べ。13表1人口密度（人/km2）人口増加率（％）1980～2000年2000～2020年(1) 294 47．2 21．8 (3...",
       "relatedCountries": [
         "VNM",
+        "QAT",
         "DZA",
-        "NZL",
-        "QAT"
+        "NZL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -515,7 +502,6 @@
       "promptSummary": "問3次の図3は，先進国＊と発展途上国＊＊における都市人口と農村人口のいずれかの推移を示したものである。先進国の都市人口に該当するものを，図3中の(1)～(2)のうちから一つ選べ。15＊北アメリカとヨーロッパの国々，日本，オーストラリア，ニュージーランド。＊＊先進国以外の国・地域でメキシコを含む。1900 0 2025年億人2000 1975 1950 1925 40 30 20 10ǏǐǑǒ2025年は予測値。World Urba...",
       "relatedCountries": [
         "JPN",
-        "USA",
         "MEX",
         "AUS",
         "NZL"
@@ -552,27 +538,22 @@
       "promptSummary": "問4多国籍企業の集中度などが特に高い都市を世界都市とみなすことがある。次の図4は，2000年と2020年のいずれかの時点における上位20の世界都市の地理的な位置を模式的に示したものであり，凡例EとFは，この20年間に上位20に加わった都市と外れた都市のいずれかである。また，後の文章は，世界都市に関連することがらを述べたものである。図4中の凡例Fと文章中の空欄ａに当てはまる語句との組合せとして最も適当なものを，後の(1)～(2)のう...",
       "relatedCountries": [
         "JPN",
-        "THA",
+        "HKG",
         "MYS",
         "SGP",
-        "IND",
-        "ARE",
-        "GBR",
-        "FRA",
-        "ITA",
+        "DEU",
         "ESP",
         "NLD",
         "BEL",
         "CHE",
         "USA",
-        "CAN",
         "MEX",
         "BRA",
         "AUS"
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q4.png",
       "clipPdfPath": null,
@@ -605,7 +586,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "人口"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2022_makeup/2022_makeup_d3_q5.png",
       "clipPdfPath": null,

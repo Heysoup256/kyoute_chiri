@@ -87,8 +87,7 @@
       ],
       "topicTags": [
         "火山",
-        "三角州",
-        "自然災害"
+        "三角州"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q3.png",
       "clipPdfPath": null,
@@ -119,8 +118,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "氷河",
-        "自然災害"
+        "氷河"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q4.png",
       "clipPdfPath": null,
@@ -153,8 +151,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "地震",
-        "自然災害"
+        "地震"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q5.png",
       "clipPdfPath": null,
@@ -185,7 +182,7 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d1_q6.png",
       "clipPdfPath": null,
@@ -217,14 +214,13 @@
       "promptSummary": "第2問世界の資源と産業に関する次の問い(問1 ~ 6 )に答えよ。(配点1の問1次の表1は,いくつかの農作物の生産量について,生産量の上位5か国と,それそれの国の生産量が世界に占める割合を示したものであり, A ~ Dは,インド,インドネシア,フィリピン,プラジルのいずれかである。インドネシアに該当するものを,下の①~④のうちから一つ選べ。(単位: % )位順コーヒー豆ココナツツバナナ位1 34.4 31. 2 26. 0ベトナム...",
       "relatedCountries": [
         "CHN",
-        "TWN",
         "IDN",
         "VNM",
         "PHL",
         "IND",
         "LKA",
-        "COL",
-        "MAC"
+        "BRA",
+        "COL"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -256,14 +252,10 @@
       "questionLabel": "第2問 問2（解答番号8）",
       "title": "第2問 問2: 問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,...",
       "promptSummary": "問2次ページの図1中のア~ウは,漁獲量* ,水産物輸出額,水産物輸入額のいずれかについて,世界の上位10か国とそれらが世界に占める割合を示したものである。漁獲量,水産物輸出額,水産物輸入額とア~ウとの正しい組合せを,次ページの①~⑥のうちから一つ選、*養殖を含まない。ー150ー( 2702ー15の20 % 10中国の数値には,台湾,ホンコン,マカオを含まない。統計年次は2010年。FAOSTATにより作成。①アイウ②アウィ③ィアウ...",
-      "relatedCountries": [
-        "CHN",
-        "TWN",
-        "MAC"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "養殖"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2017_makeup/2017_makeup_d2_q2.png",
       "clipPdfPath": null,
@@ -295,10 +287,8 @@
       "promptSummary": "問3次の図2は,いくつかの国について,木材の輸出量と輸入量をそれぞれ示したものであり,カ~クはアメリカ合衆国,中国* ,ロシアのいずれかである。国名とカ~クとの正しい組合せを,下の①~⑥のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。ロ輸出量カキクロ輸入量0 3 2000 4000 6000万m統計年次は2012年。FAOSTATにより作成。①カキク②カクキ③キカク〇キクカ⑤クカキ⑥クキカ合国アカ衆アメ国中ロシ",
       "relatedCountries": [
         "CHN",
-        "TWN",
         "RUS",
-        "USA",
-        "MAC"
+        "USA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -404,11 +394,9 @@
       "promptSummary": "問6外国からの観光客の増加は観光産業の活性化につながる。次の表2は,いくつかの国における国際観光収入について, 1990年と2013年の世界全体に占める割合,および1990年の値を100とした場合の2013年の値を示したものであり,①~④は,中国* ,フランス,ポーランド,メキシコのいずれかである。メキシコに該当するものを,表2中の①~@のうちから一つ選べ。*台湾,ホンコン,マカオを含まない。世界全体に占める割合( % ) 199...",
       "relatedCountries": [
         "CHN",
-        "TWN",
         "FRA",
         "POL",
-        "MEX",
-        "MAC"
+        "MEX"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -476,8 +464,7 @@
       "relatedCountries": [
         "IND",
         "GBR",
-        "FRA",
-        "USA"
+        "FRA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -510,7 +497,6 @@
       "title": "第3問 問3: 問3次の表1は,いくつかの都市における空港の国際線旅客数*と,外国人居住者率を示したもので...",
       "promptSummary": "問3次の表1は,いくつかの都市における空港の国際線旅客数*と,外国人居住者率を示したものであり,①~④は,サンパウロ,シドニソウル,ニューヨークのいずれかである。ニューヨークに該当するものを,表1中の①~④のうちから一つ選べ。1 5 *出発客と到着客の合計。空港の国際線旅客数外国人居住者率(万人)①3 , 611 1. 7②3 , 538 37. 6③1 , 062 40. 1④884統計年次は,空港の国際線旅客数が2010年,外...",
       "relatedCountries": [
-        "KOR",
         "USA",
         "BRA"
       ],
@@ -616,7 +602,6 @@
       "title": "第4問 問1: 第4問次の図1を見て,ロシアに関する下の問い(問1 ~ 6 )に答えよ",
       "promptSummary": "第4問次の図1を見て,ロシアに関する下の問い(問1 ~ 6 )に答えよ。(配点17 )をーモスクワ、、、、ウラル山脈′バイカル湖DなⅣ0″, 2008などにより作成。問1図1中の線ア~工は,針葉樹林(タイガ)の分布域,ツンドラ気候の地域,北極圏,連続した永久凍土の分布域のいすれかの南限を示したものである。針葉樹林(タイガ)の分布域の南限に該当するものを,次の①~@のうちから一つ選1 8①ァ〇ェ",
       "relatedCountries": [
-        "THA",
         "RUS"
       ],
       "relatedLayerIds": [
@@ -796,7 +781,8 @@
         "DEU",
         "NLD",
         "RUS",
-        "USA"
+        "USA",
+        "BRA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -979,8 +965,7 @@
       "relatedCountries": [
         "JPN",
         "PHL",
-        "NZL",
-        "PRT"
+        "NZL"
       ],
       "relatedLayerIds": [],
       "topicTags": [

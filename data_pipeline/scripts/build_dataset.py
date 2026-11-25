@@ -80,24 +80,51 @@ def exam_sort_key(exam_id: str) -> tuple[int, int, str]:
     return (yr, sess_rank, exam_id)
 
 
-def compute_rank(appearance_count: int, override: str | None) -> str:
-    if override in ("S", "A", "B", "C"):
-        return override
-    if appearance_count >= 18:
+# 手動で地域代表Sランクを維持する最重要資源・地域大国（出題文中で総称表現が多く単独国名出現数が少なめに出る国）
+CORE_REGIONAL_S_COUNTRIES = {"SAU", "NGA"}
+
+GENERIC_TAG_STOPWORDS = {
+    "農業", "工業", "気候", "人口", "都市", "貿易", "資源", "エネルギー",
+    "宗教", "言語", "観光", "環境", "地形", "河川", "山脈", "地震", "火山",
+    "発電", "輸出", "輸入", "経済", "歴史", "民族", "文化", "生活", "地理B",
+    "交通", "港湾", "産業", "気候区分", "地図", "統計", "世界遺産", "自然災害",
+}
+
+
+def compute_rank(appearance_count: int, override: str | None, iso3: str = "") -> str:
+    # 出題実績による最低ランク保証（誤爆除去後の純出題数に基づく）
+    if appearance_count >= 13 or iso3 in CORE_REGIONAL_S_COUNTRIES:
         return "S"
     if appearance_count >= 8:
+        return "S" if override == "S" else "A"
+    if appearance_count >= 5:
         return "A"
     if appearance_count >= 2:
+        if override in ("S", "A"):
+            return "A"
         return "B"
+    if override in ("A", "B", "C"):
+        return override
+    if override == "S":
+        return "A"
     return "C"
 
 
 def match_item_exam_refs(item: dict, country_questions: list[dict]) -> list[dict]:
-    """個別項目のタグ・語句と同一国の過去問トピック・本文が一致する設問をリンクする。"""
-    refs: list[dict] = []
-    search_tokens = set(item.get("tags", []) + item.get("clozeTerms", []))
-    # 短すぎる汎用トークンは除外してノイズを防ぐ
-    tokens = [t for t in search_tokens if len(t) >= 2]
+    """個別項目の固有用語（clozeTerms等）と同一国の過去問が一致する設問を精密リンクする。"""
+    cloze_tokens = [
+        t for t in item.get("clozeTerms", [])
+        if len(t) >= 2 and t not in GENERIC_TAG_STOPWORDS
+    ]
+    tag_tokens = [
+        t for t in item.get("tags", [])
+        if len(t) >= 2 and t not in GENERIC_TAG_STOPWORDS
+    ]
+    tokens = list(dict.fromkeys(cloze_tokens + tag_tokens))
+    if not tokens:
+        return []
+
+    scored_refs: list[tuple[int, dict]] = []
     for q in country_questions:
         q_blob = " ".join(
             [
@@ -106,20 +133,26 @@ def match_item_exam_refs(item: dict, country_questions: list[dict]) -> list[dict
                 " ".join(q.get("topicTags", [])),
             ]
         )
-        matched = [t for t in tokens if t in q_blob]
+        matched_cloze = [t for t in cloze_tokens if t in q_blob]
+        matched_tags = [t for t in tag_tokens if t in q_blob and t not in matched_cloze]
+        matched = matched_cloze + matched_tags
         if matched:
-            refs.append(
-                {
-                    "examId": q["examId"],
-                    "questionId": q["questionId"],
-                    "questionLabel": f"第{q['daimon']}問 問{q['toi']}",
-                    "note": f"関連語句: {', '.join(matched[:2])}",
-                }
+            score = len(matched_cloze) * 3 + len(matched_tags)
+            scored_refs.append(
+                (
+                    score,
+                    {
+                        "examId": q["examId"],
+                        "questionId": q["questionId"],
+                        "questionLabel": f"第{q['daimon']}問 問{q['toi']}",
+                        "note": f"関連語句: {', '.join(matched[:2])}",
+                    },
+                )
             )
-    # 重複除去しつつ最大3件に絞る
+    scored_refs.sort(key=lambda pair: -pair[0])
     seen = set()
     unique_refs = []
-    for r in refs:
+    for _, r in scored_refs:
         key = r["questionId"]
         if key not in seen:
             seen.add(key)
@@ -185,7 +218,7 @@ def main() -> None:
         # 既存の手動トピックをベースに、過去問から抽出された頻出トピックも上位補完
         base_summary = cdata.get("examSummary", {})
         override = base_summary.get("manualRankOverride")
-        rank = compute_rank(appearance_count, override)
+        rank = compute_rank(appearance_count, override, iso3)
 
         freq_topics = list(base_summary.get("frequentTopics", []))
         topic_counts: dict[str, int] = {}
@@ -267,12 +300,11 @@ def main() -> None:
                 list({q["examId"] for q in c_questions}),
                 key=exam_sort_key,
             )
-            if appearance_count > 0:
-                bdata["examSummary"]["appearanceCount"] = appearance_count
-                bdata["examSummary"]["years"] = years
-                bdata["examSummary"]["rank"] = compute_rank(
-                    appearance_count, bdata["examSummary"].get("manualRankOverride")
-                )
+            bdata["examSummary"]["appearanceCount"] = appearance_count
+            bdata["examSummary"]["years"] = years
+            bdata["examSummary"]["rank"] = compute_rank(
+                appearance_count, bdata["examSummary"].get("manualRankOverride"), iso3
+            )
             countries[iso3] = bdata
 
     # 4.5. 他国との関係・特徴適応ビジュアル統合 + ケッペン13区分完全統一

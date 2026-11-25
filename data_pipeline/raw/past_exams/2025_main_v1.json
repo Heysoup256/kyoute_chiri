@@ -86,11 +86,9 @@
       "relatedCountries": [
         "JPN",
         "CHN",
-        "TWN",
         "IDN",
         "GBR",
-        "ITA",
-        "MAC"
+        "ITA"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -323,8 +321,8 @@
       "promptSummary": "問2次の図3中のア～ウは，アフリカのナミビア，ネパール，フィリピンのいずれかの国における最高標高地点周辺の陰影起伏図である。また，後の文Ｆ～Ｈは，ア～ウのいずれかの範囲にみられる地形について述べたものである。ア～ウとＦ～Ｈとの組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。10アイウ範囲はいずれも50km四方。NASAの資料により作成。図3Ｆ固い岩盤が長い時間をかけて風化している。Ｇ山岳氷河による侵食作用がみら...",
       "relatedCountries": [
         "PHL",
-        "NAM",
-        "NPL"
+        "NPL",
+        "NAM"
       ],
       "relatedLayerIds": [
         "pb_japan_trench"
@@ -332,8 +330,7 @@
       "topicTags": [
         "プレート",
         "火山",
-        "氷河",
-        "自然災害"
+        "氷河"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d3_q2.png",
       "clipPdfPath": null,
@@ -363,13 +360,10 @@
       "questionLabel": "第3問 問3（解答番号11）",
       "title": "第3問 問3: 問3次の図4中のＪとＫは，エルニーニョ現象とラニーニャ現象のいずれかの発生時における海面水...",
       "promptSummary": "問3次の図4中のＪとＫは，エルニーニョ現象とラニーニャ現象のいずれかの発生時における海面水温について，平年値との差を示したものである。また，図4に関することがらについて述べた文章中の空欄カにはＪとＫのいずれか，空欄キには北と南のいずれかが当てはまる。空欄カとキに当てはまる記号と語句との組合せとして最も適当なものを，後の(1)～(2)のうちから一つ選べ。11 J K－2℃未満2℃以上－2～0℃0～2℃斜線は陸地を示す。NOAAの資料...",
-      "relatedCountries": [
-        "USA"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "海流",
-        "自然災害"
+        "海流"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d3_q3.png",
       "clipPdfPath": null,
@@ -405,7 +399,7 @@
       ],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害"
+        "地理B"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d3_q4.png",
       "clipPdfPath": null,
@@ -438,7 +432,6 @@
       "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
-        "自然災害",
         "地球温暖化"
       ],
       "clipImagePath": "/data/clips/2025_main/2025_main_d3_q5.png",
@@ -509,10 +502,7 @@
       "relatedCountries": [
         "JPN",
         "CHN",
-        "TWN",
-        "DEU",
-        "ISL",
-        "MAC"
+        "DEU"
       ],
       "relatedLayerIds": [],
       "topicTags": [
@@ -689,7 +679,6 @@
       "relatedCountries": [
         "JPN",
         "CHN",
-        "TWN",
         "USA"
       ],
       "relatedLayerIds": [],
@@ -894,9 +883,7 @@
       "questionLabel": "第6問 問1（解答番号26）",
       "title": "第6問 問1: 第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ",
       "promptSummary": "第6問インド洋とそれをとりまく地域に関する次の問い（問1～5）に答えよ。（配点17）問1インド洋沿岸には，サイクロン（熱帯低気圧）による被害を受けやすい地域が多く分布する。次の図1中の地域ア～エのうち，サイクロンの上陸頻度が最も低い地域として適当なものを，後の(1)～(2)のうちから一つ選べ。26 A C Dウエア150°E 120°E 90°E 60°E 30°E 0°30°S 30°NイB図1 (1)ア(3)イ(4)ウ(2)エ",
-      "relatedCountries": [
-        "BGD"
-      ],
+      "relatedCountries": [],
       "relatedLayerIds": [],
       "topicTags": [
         "地理B"
@@ -961,7 +948,6 @@
       "relatedCountries": [
         "IDN",
         "SGP",
-        "IND",
         "ARE"
       ],
       "relatedLayerIds": [],
@@ -1037,12 +1023,8 @@
       "promptSummary": "とうしよ問5次の資料1は，インド洋周辺の国々のうち，二つの島嶼国を取り上げて概観したものである。この二つの国について述べた文章中の下線部(1)～(2)のうちから，適当でないものを一つ選べ。30資料1モーリシャスモルディブモーリシャスモルディブ面積（km2）人口（万人）旧宗主国主な宗教主な産業モーリシャス2，040 126．5オランダフランスイギリスヒンドゥー教製糖業・繊維産業モルディブ298 55．7オランダイギリスイスラーム（イ...",
       "relatedCountries": [
         "CHN",
-        "IND",
-        "GBR",
-        "FRA",
-        "NLD",
-        "CHE",
         "MDV",
+        "FRA",
         "MUS"
       ],
       "relatedLayerIds": [
