@@ -1015,7 +1015,7 @@ EXTRA_FLOW_MAPS = [
         "source": "財務省 貿易統計",
         "dataYear": "2023",
         "centerMode": "pacific",
-        "examPoint": "日本の地域別輸入相手を見分ける最強チェック！①中東(UAE/サウジ)＝原油約94%、②豪州＝鉄鉱石・石炭・LNG・牛肉・チーズ、③米加伯＝トウモロコシ・大豆・小麦・牛肉豚肉鶏肉、④中国・ASEAN・台韓＝スマホ・衣料品・機械電子部品！",
+        "examPoint": "日本の地域別輸入相手を見分ける重要チェック！①中東(UAE/サウジ)＝原油約94%、②豪州＝鉄鉱石・石炭・LNG・牛肉・チーズ、③米加伯＝トウモロコシ・大豆・小麦・牛肉豚肉鶏肉、④中国・ASEAN・台韓＝スマホ・衣料品・機械電子部品！",
         "arcs": [
             {"id": "jpn_me_oil", "fromName": "UAE・サウジ", "fromIso3": "SAU", "fromCoords": [50.5, 26.2], "toName": "日本(原油94%)", "toIso3": "JPN", "toCoords": [139.7, 35.4], "value": 180, "displayValue": "原油94%", "color": "#dc2626", "note": "ホルムズ海峡・マラッカ海峡を経由する石油タンカー大動脈"},
             {"id": "jpn_aus_res", "fromName": "オーストラリア", "fromIso3": "AUS", "fromCoords": [134.0, -24.0], "toName": "日本(LNG/炭/鉄/牛)", "toIso3": "JPN", "toCoords": [136.9, 35.1], "value": 165, "displayValue": "資源40–60%", "color": "#ea580c", "note": "LNG約4割・石炭約6割・鉄鉱石約5割・牛肉約4割の最重要資源パートナー"},

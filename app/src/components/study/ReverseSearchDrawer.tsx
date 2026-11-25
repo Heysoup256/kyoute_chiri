@@ -1,8 +1,21 @@
-import { BarChart3, BookOpen, Compass, Filter, RotateCcw, Search, Star, X } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import {
+  ArrowUpRight,
+  BarChart3,
+  BookOpen,
+  Compass,
+  Filter,
+  MapPin,
+  RotateCcw,
+  Search,
+  Star,
+  X,
+} from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type {
+  CountryData,
   ImportanceRank,
   JapanRegionEntry,
+  PlaceEntry,
   SystematicTopic,
   WorldRankingItem,
 } from '../../types/schema_v1';
@@ -10,6 +23,7 @@ import { formatExamId, RANK_BADGE_CLASSES } from '../../utils/constants';
 import {
   EMPTY_FILTERS,
   hasActiveFilters,
+  searchMapPlaces,
   type SearchFilterCriteria,
   type SearchHit,
 } from '../../utils/search';
@@ -22,12 +36,15 @@ interface ReverseSearchDrawerProps {
   examCoverage: string[];
   markedCount: number;
   isMarkedMode: boolean;
+  places?: PlaceEntry[];
+  countriesMap?: Record<string, CountryData>;
   rankingItems?: WorldRankingItem[];
   systematicTopics?: SystematicTopic[];
   japanRegions?: JapanRegionEntry[];
   onToggleMarkedMode: () => void;
   onChangeFilters: (next: SearchFilterCriteria) => void;
   onSelectCountry: (iso3: string) => void;
+  onSelectPlace?: (place: PlaceEntry) => void;
   onSelectRanking?: (itemId: string) => void;
   onSelectSystematic?: (topicId: string) => void;
   onSelectJapanRegion?: (regionId: string) => void;
@@ -36,11 +53,23 @@ interface ReverseSearchDrawerProps {
 
 const KOPPEN_CHIPS = ['Af', 'Am', 'Aw', 'BW', 'BS', 'Cs', 'Cw', 'Cfa', 'Cfb', 'Df', 'Dw', 'ET', 'EF'];
 const INTEGRATION_CHIPS = ['EU', 'ASEAN', 'USMCA', 'メルコスール', 'BRICS', 'OPEC', 'EFTA', 'AU'];
-const KEYWORD_CHIPS = ['フィヨルド', 'エスチュアリー', '三角州', '小麦', '自動車', 'アルミニウム', '鉄鉱石', 'シェール', 'レアメタル', '難民', '少子高齢化'];
+const KEYWORD_CHIPS = [
+  'コーンベルト',
+  '秦嶺・淮河線',
+  'チェルノーゼム',
+  'サヘル',
+  'フィヨルド',
+  'マラッカ海峡',
+  '三角州',
+  '小麦',
+  '自動車',
+  'レアメタル',
+  '少子高齢化',
+];
 
 /**
  * 横断検索・複合フィルターパネル（ヘッダー検索ボタンから開閉）
- * 240カ国だけでなく、世界統計ランキング・系統地理トピック・日本地域も横断検索可能
+ * 世界地図上の全地域・国内区分・境界線・山川地形・都市と240カ国・統計・系統・日本ガイドを横断検索可能
  */
 export function ReverseSearchDrawer({
   isOpen,
@@ -50,18 +79,22 @@ export function ReverseSearchDrawer({
   examCoverage,
   markedCount,
   isMarkedMode,
+  places = [],
+  countriesMap = {},
   rankingItems = [],
   systematicTopics = [],
   japanRegions = [],
   onToggleMarkedMode,
   onChangeFilters,
   onSelectCountry,
+  onSelectPlace,
   onSelectRanking,
   onSelectSystematic,
   onSelectJapanRegion,
   onClose,
 }: ReverseSearchDrawerProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const [expandedPlaceQuery, setExpandedPlaceQuery] = useState<string | null>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -72,10 +105,18 @@ export function ReverseSearchDrawer({
     }
   }, [isOpen]);
 
+  const qNorm = filters.query.trim().toLowerCase();
+
+  const matchedPlaces = useMemo(() => {
+    if (!qNorm) return [];
+    return searchMapPlaces(places, countriesMap, filters.query, 120);
+  }, [places, countriesMap, filters.query, qNorm]);
+
   if (!isOpen) return null;
 
   const isFiltering = hasActiveFilters(filters);
-  const qNorm = filters.query.trim().toLowerCase();
+  const isPlacesExpanded = expandedPlaceQuery === qNorm;
+  const visiblePlaces = isPlacesExpanded ? matchedPlaces : matchedPlaces.slice(0, 12);
 
   const matchedRankings = qNorm
     ? rankingItems
@@ -96,11 +137,11 @@ export function ReverseSearchDrawer({
   const matchedJapan = qNorm
     ? japanRegions
         .filter((reg) =>
-          `${reg.name} ${reg.prefectures} ${reg.climateNote} ${reg.agricultureNote} ${reg.industryNote}`
+          `${reg.name} ${reg.prefectures} ${reg.climateNote} ${reg.agricultureNote} ${reg.industryNote} ${reg.urbanAndDisasterNote} ${reg.examPoints.join(' ')}`
             .toLowerCase()
             .includes(qNorm),
         )
-        .slice(0, 4)
+        .slice(0, 6)
     : [];
 
   return (
@@ -110,7 +151,7 @@ export function ReverseSearchDrawer({
         onClick={onClose}
       />
       <aside
-        className="fixed inset-x-0 top-12 z-30 flex max-h-[82vh] flex-col rounded-b-2xl border-b border-slate-200 bg-white shadow-2xl md:static md:inset-auto md:z-20 md:h-full md:max-h-none md:w-[360px] md:shrink-0 md:rounded-none md:border-b-0 md:border-r md:border-slate-200"
+        className="fixed inset-x-0 top-12 z-30 flex max-h-[82vh] flex-col rounded-b-2xl border-b border-slate-200 bg-white shadow-2xl md:static md:inset-auto md:z-20 md:h-full md:max-h-none md:w-[376px] md:shrink-0 md:rounded-none md:border-b-0 md:border-r md:border-slate-200"
         aria-label="検索・フィルターパネル"
       >
         {/* ヘッダー */}
@@ -119,12 +160,12 @@ export function ReverseSearchDrawer({
             <Filter className="h-4 w-4 text-cyan-600" />
             <div>
               <h2 className="text-xs font-extrabold text-slate-900 md:text-sm">
-                横断検索・フィルター絞り込み
+                横断検索・地域ジャンプ
               </h2>
               <p className="text-[11px] text-slate-500">
                 {isFiltering
-                  ? `国一致: ${hits.length} / ${totalCountries}カ国`
-                  : `国・統計品目・系統用語・日本地方を一括検索`}
+                  ? `地図地域 ${matchedPlaces.length}件 / 国 ${hits.length}件（全${totalCountries}国）`
+                  : `全地域・国内区分・山川・都市・統計・系統を一括検索`}
               </p>
             </div>
           </div>
@@ -174,7 +215,7 @@ export function ReverseSearchDrawer({
               aria-label="検索キーワード入力"
               value={filters.query}
               onChange={(e) => onChangeFilters({ ...filters, query: e.target.value })}
-              placeholder="例: 小麦, 扇状地, チェルノーゼム, オランダ..."
+              placeholder="地域・地形・山川・都市・国名・産品を検索..."
               className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2 pl-9 pr-8 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:bg-white focus:outline-none"
             />
             {filters.query && (
@@ -190,7 +231,9 @@ export function ReverseSearchDrawer({
           </div>
 
           <div>
-            <div className="mb-1 text-[11px] font-bold text-slate-500">頻出テーマ（ワンタップ）</div>
+            <div className="mb-1 text-[11px] font-bold text-slate-500">
+              地域・テーマ例（ワンタップ）
+            </div>
             <div className="flex flex-wrap gap-1">
               {KEYWORD_CHIPS.map((kw) => {
                 const active = filters.query.trim() === kw;
@@ -292,6 +335,71 @@ export function ReverseSearchDrawer({
 
         {/* 横断ヒット結果一覧 */}
         <div className="flex-1 divide-y divide-slate-100 overflow-y-auto">
+          {matchedPlaces.length > 0 && onSelectPlace && (
+            <div className="space-y-1.5 bg-sky-50/60 p-3">
+              <div className="flex items-center justify-between gap-2">
+                <div className="text-[10.5px] font-extrabold text-sky-900">
+                  地図上の地域・地形・境界線・都市（{matchedPlaces.length}件・タップで移動）
+                </div>
+                {matchedPlaces.length > 12 && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setExpandedPlaceQuery((prev) => (prev === qNorm ? null : qNorm))
+                    }
+                    className="shrink-0 rounded border border-sky-300 bg-white px-2 py-0.5 text-[10px] font-bold text-sky-800 hover:bg-sky-50"
+                  >
+                    {isPlacesExpanded ? '12件のみ表示' : `すべて表示（全${matchedPlaces.length}件）`}
+                  </button>
+                )}
+              </div>
+
+              <div className="space-y-1">
+                {visiblePlaces.map(({ place, countryNameJa }) => (
+                  <div
+                    key={place.id}
+                    className="flex items-stretch gap-1 rounded-lg border border-sky-200 bg-white p-1 transition hover:border-sky-400 hover:bg-sky-50/40"
+                  >
+                    <button
+                      type="button"
+                      onClick={() => onSelectPlace(place)}
+                      className="flex min-w-0 flex-1 items-start gap-2 rounded-md px-1.5 py-1 text-left text-xs"
+                    >
+                      <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-sky-600" />
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-1">
+                          <span className="truncate font-bold text-slate-900">{place.name}</span>
+                          <span className="rounded bg-sky-100 px-1.5 py-0.2 text-[10px] font-semibold text-sky-800">
+                            {place.category}
+                          </span>
+                          {countryNameJa && (
+                            <span className="rounded bg-slate-100 px-1.5 py-0.2 text-[10px] text-slate-600">
+                              {countryNameJa.split('（')[0]}
+                            </span>
+                          )}
+                        </div>
+                        <p className="mt-0.5 line-clamp-1 text-[10.5px] text-slate-500">
+                          {place.summary}
+                        </p>
+                      </div>
+                    </button>
+                    {place.iso3 && (
+                      <button
+                        type="button"
+                        onClick={() => onSelectCountry(place.iso3!)}
+                        className="inline-flex shrink-0 items-center gap-0.5 rounded-md border border-slate-200 bg-slate-50 px-1.5 text-[10px] font-bold text-slate-600 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700"
+                        title="この国の詳細パネルを開く"
+                      >
+                        国詳細
+                        <ArrowUpRight className="h-3 w-3" />
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {(matchedRankings.length > 0 || matchedSystematic.length > 0 || matchedJapan.length > 0) && (
             <div className="space-y-1.5 bg-indigo-50/50 p-3">
               <div className="text-[10.5px] font-extrabold text-indigo-800">
@@ -352,7 +460,9 @@ export function ReverseSearchDrawer({
 
           {hits.length === 0 ? (
             <div className="p-6 text-center text-xs text-slate-500">
-              条件に一致する国がありません。キーワードや絞り込みを緩めてください。
+              {matchedPlaces.length > 0
+                ? '国別カードの一致はありませんが、上の「地図上の地域・地形・都市」から直接移動できます。'
+                : '条件に一致する国や地域がありません。キーワードや絞り込みを緩めてください。'}
             </div>
           ) : (
             hits.map(({ country, matchedReasons }) => (

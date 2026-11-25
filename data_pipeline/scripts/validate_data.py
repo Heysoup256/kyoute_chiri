@@ -247,7 +247,7 @@ def main() -> None:
     if subnational_count < 20:
         errors.append(f"国内地域区分データ保有国数({subnational_count}<20)が不足しています")
     if cheat_sheet_count < 130:
-        errors.append(f"受験必勝まとめカード保有国数({cheat_sheet_count}<130)が不足しています")
+        errors.append(f"国別要点カード保有国数({cheat_sheet_count}<130)が不足しています")
     for guard_iso, max_cnt in (("MAC", 5), ("MDV", 5)):
         cnt = countries.get(guard_iso, {}).get("examSummary", {}).get("appearanceCount", 0)
         if cnt > max_cnt:

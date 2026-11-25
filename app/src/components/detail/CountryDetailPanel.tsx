@@ -178,7 +178,7 @@ function KnowledgeItemCard({
           >
             <span className="flex items-center gap-1.5">
               <Sparkles className="h-3.5 w-3.5 shrink-0 text-indigo-600" />
-              深掘り解説（成因・時代変化・判別の決め手）
+              詳細解説（成因・時代変化・比較の視点）
             </span>
             {deepDiveOpen ? (
               <ChevronUp className="h-3.5 w-3.5 shrink-0" />
@@ -215,7 +215,7 @@ function KnowledgeItemCard({
               )}
               {item.deepDive.examTrap && (
                 <div className="rounded-md border border-rose-200 bg-rose-50/80 px-2.5 py-2">
-                  <div className="font-bold text-rose-900">共テ判別の急所・ひっかけ注意</div>
+                  <div className="font-bold text-rose-900">出題上の注意点・判別ポイント</div>
                   <p className="mt-0.5 leading-relaxed text-slate-700">
                     <RichGeoText
                       text={item.deepDive.examTrap}
@@ -796,7 +796,7 @@ export function CountryDetailPanel({
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-bold text-white">
                         <Award className="h-3 w-3" />
-                        受験必勝・国別まとめ
+                        国の要点・比較ポイント
                       </span>
                       {allCountries && (
                         <button
@@ -833,7 +833,7 @@ export function CountryDetailPanel({
                     {country.examCheatSheet.commonConfusions.length > 0 && (
                       <div className="space-y-1.5 border-t border-indigo-100 pt-2">
                         <div className="text-[11px] font-bold text-indigo-800">
-                          紛らわしいライバル国との判別の決め手
+                          類似国・比較対象との相違点
                         </div>
                         <div className="grid grid-cols-1 gap-2">
                           {country.examCheatSheet.commonConfusions.map((pair) => (

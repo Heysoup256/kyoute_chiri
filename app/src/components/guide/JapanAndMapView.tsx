@@ -245,7 +245,7 @@ export function JapanAndMapView({
 
                 <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs">
                   <h3 className="text-xs font-extrabold tracking-wide text-slate-500 uppercase">
-                    共テ第2問・地形図読解の絶対ルール
+                    地形図読解の基本原則
                   </h3>
                   <ul className="mt-2.5 space-y-2">
                     {activeSkill.checkPoints.map((cp, idx) => (

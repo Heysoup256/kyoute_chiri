@@ -699,7 +699,7 @@ export function KoppenPaintGame({
             {bestRec && (
               <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-800">
                 <Trophy className="h-3 w-3 text-amber-500" />
-                自己ベスト {bestRec.exactPct}% ({bestRec.rank})
+                今回ベスト {bestRec.exactPct}% ({bestRec.rank})
               </span>
             )}
           </div>

@@ -41,6 +41,7 @@ NE_PLACES_URL = (
 
 COUNTRIES_PATH = DATA_DIR / "countries_v1.json"
 GEO_LAYERS_PATH = DATA_DIR / "geo_layers_v1.geojson"
+THEMATIC_REGIONS_PATH = DATA_DIR / "thematic_regions_v1.geojson"
 TOP_CITIES_PATH = RAW_DIR / "country_top_cities_v1.json"
 
 CAPITALS_OUT = DATA_DIR / "capitals_v1.geojson"
@@ -89,14 +90,19 @@ def box_poly(w: float, s: float, e: float, n: float) -> dict:
 
 
 def build_capitals(countries_json: dict, top_cities: dict) -> list[dict]:
-    req = urllib.request.Request(NE_PLACES_URL, headers={"User-Agent": "Mozilla/5.0"})
-    ne = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+    existing_ne_feats: list[dict] = []
+    if CAPITALS_OUT.exists():
+        existing_fc = json.loads(CAPITALS_OUT.read_text(encoding="utf-8"))
+        for feat in existing_fc.get("features", []):
+            props = feat.get("properties", {})
+            if str(props.get("id", "")).startswith("cap_ne_") and props.get("iso3"):
+                existing_ne_feats.append(feat)
 
     features: list[dict] = []
     seen_coords: set[tuple[float, float]] = set()
     covered_isos: set[str] = set()
 
-    # 1. Exact curated capitals from 60 detailed countries (including Pretoria/Cape Town/Bloemfontein for ZAF)
+    # 1. Exact curated capitals from detailed countries (including Pretoria/Cape Town/Bloemfontein for ZAF)
     for iso3, entry in sorted(top_cities.items()):
         c_info = countries_json.get(iso3, {})
         country_name = c_info.get("nameJa", iso3)
@@ -121,7 +127,34 @@ def build_capitals(countries_json: dict, top_cities: dict) -> list[dict]:
                 }
             )
 
-    # 2. World capitals from Natural Earth (for all remaining countries)
+    # 2. World capitals from cached GeoJSON (or Natural Earth fallback when absent)
+    if existing_ne_feats:
+        for feat in existing_ne_feats:
+            props = dict(feat.get("properties", {}))
+            iso = props.get("iso3") or ""
+            if iso in covered_isos:
+                continue
+            coords = feat.get("geometry", {}).get("coordinates", [])
+            if len(coords) < 2:
+                continue
+            lon, lat = round(float(coords[0]), 2), round(float(coords[1]), 2)
+            k = (round(lon, 1), round(lat, 1))
+            if k in seen_coords:
+                continue
+            seen_coords.add(k)
+            props["id"] = f"cap_ne_{iso}_{len(features)}"
+            features.append(
+                {
+                    "type": "Feature",
+                    "properties": props,
+                    "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                }
+            )
+        return features
+
+    req = urllib.request.Request(NE_PLACES_URL, headers={"User-Agent": "Mozilla/5.0"})
+    ne = json.loads(urllib.request.urlopen(req, timeout=20).read().decode("utf-8"))
+
     for feat in ne.get("features", []):
         props = feat.get("properties", {})
         if props.get("adm0cap") != 1:
@@ -857,6 +890,45 @@ SPECIAL_GAZETTEER_EXTRAS = [
 ]
 
 
+def _extract_all_points(geom: dict | None) -> list[list[float]]:
+    if not geom:
+        return []
+    gtype = geom.get("type")
+    coords = geom.get("coordinates") or []
+    pts: list[list[float]] = []
+    if gtype == "Point":
+        pts = [coords]
+    elif gtype == "LineString":
+        pts = coords
+    elif gtype in ("MultiLineString", "Polygon"):
+        for part in coords:
+            pts.extend(part)
+    elif gtype == "MultiPolygon":
+        for poly in coords:
+            for ring in poly:
+                pts.extend(ring)
+    return pts
+
+
+def _geom_center_and_bounds(geom: dict | None) -> tuple[float, float, list[float] | None]:
+    pts = _extract_all_points(geom)
+    if not pts:
+        return 0.0, 0.0, None
+    lons = [float(p[0]) for p in pts]
+    lats = [float(p[1]) for p in pts]
+    min_lon, max_lon = min(lons), max(lons)
+    min_lat, max_lat = min(lats), max(lats)
+    mid_lon = (min_lon + max_lon) / 2.0
+    mid_lat = (min_lat + max_lat) / 2.0
+    if geom and geom.get("type") == "Point":
+        return mid_lon, mid_lat, None
+    return (
+        mid_lon,
+        mid_lat,
+        [round(min_lon, 2), round(min_lat, 2), round(max_lon, 2), round(max_lat, 2)],
+    )
+
+
 def build_gazetteer(
     countries_json: dict,
     geo_layers: dict,
@@ -864,9 +936,11 @@ def build_gazetteer(
     volcanoes: list[dict],
     top_cities: dict,
     photos_map: dict[str, dict],
+    thematic_regions: dict | None = None,
 ) -> list[dict]:
     places: list[dict] = []
     seen_names: set[str] = set()
+    seen_keys: set[tuple[str, str]] = set()
 
     def register(
         pid: str,
@@ -882,15 +956,37 @@ def build_gazetteer(
         aliases: list[str] | None = None,
         sub_features: list[dict] | None = None,
         photo_id: str | None = None,
+        force_disambig: bool = False,
     ):
         clean_name = name.strip()
-        if not clean_name or clean_name in seen_names or len(clean_name) < 2:
+        if not clean_name or len(clean_name) < 2:
             return
+        dedup_key = (clean_name, iso3 or category.split("（")[0])
+        if not force_disambig and dedup_key in seen_keys:
+            return
+        extra_aliases = [a for a in (aliases or []) if len(a.strip()) >= 2]
+        if clean_name in seen_names:
+            c_short = (
+                countries_json.get(iso3, {}).get("nameJa", "").split("（")[0]
+                if iso3
+                else ""
+            )
+            cat_short = category.split("（")[0]
+            suffix = c_short or cat_short
+            disambig = f"{clean_name}（{suffix}）"
+            if disambig in seen_names:
+                disambig = f"{clean_name}（{cat_short}）"
+                if disambig in seen_names:
+                    return
+            if clean_name not in extra_aliases:
+                extra_aliases = [clean_name, *extra_aliases]
+            clean_name = disambig
         seen_names.add(clean_name)
+        seen_keys.add(dedup_key)
         entry: dict = {
             "id": pid,
             "name": clean_name,
-            "aliases": [a for a in (aliases or []) if len(a) >= 2],
+            "aliases": extra_aliases,
             "category": category,
             "summary": summary,
             "lng": round(float(lng), 3),
@@ -929,6 +1025,110 @@ def build_gazetteer(
             photo_id=ex["id"],
         )
 
+    # 1b. Subnational zones (20 major countries, 68 zones)
+    for iso3, cdata in sorted(countries_json.items()):
+        sub = cdata.get("subnational")
+        if not sub:
+            continue
+        c_short = cdata.get("nameJa", iso3).split("（")[0]
+        for z in sub.get("zones", []):
+            z_name = z.get("name") or ""
+            z_short = z_name.split("（")[0]
+            z_aliases = [z_short] if z_short and z_short != z_name else []
+            z_geom = (
+                {"type": "Polygon", "coordinates": [z["polygon"]]}
+                if z.get("polygon")
+                else None
+            )
+            z_summary = (
+                f"{z.get('climateAndSoil', '')} ／ 農牧: {z.get('agriculture', '')} ／ "
+                f"鉱工・都市: {z.get('industryAndResources', '')}"
+            )
+            register(
+                f"pl_subz_{iso3}_{z['id']}",
+                z_name,
+                f"国内地域（{c_short}・{z.get('tag', '')}）",
+                z_summary,
+                float(z["lng"]),
+                float(z["lat"]),
+                zoom=float(z.get("zoom", 5.2)),
+                iso3=iso3,
+                bounds=z.get("bounds"),
+                geometry=z_geom,
+                aliases=z_aliases,
+                force_disambig=True,
+            )
+
+    # 1c. Subnational boundary lines (20 major countries, 32 lines)
+    for iso3, cdata in sorted(countries_json.items()):
+        sub = cdata.get("subnational")
+        if not sub:
+            continue
+        c_short = cdata.get("nameJa", iso3).split("（")[0]
+        for b in sub.get("boundaryLines", []):
+            coords = b.get("coordinates") or []
+            if len(coords) < 2:
+                continue
+            b_geom = {"type": "LineString", "coordinates": coords}
+            mid_lon, mid_lat, b_bounds = _geom_center_and_bounds(b_geom)
+            b_name = b.get("name") or ""
+            b_short = b_name.split("（")[0]
+            b_aliases = [b_short] if b_short and b_short != b_name else []
+            b_summary = (
+                f"基準: {b.get('criterion', '')}（{b.get('sideALabel', '')} ⇄ {b.get('sideBLabel', '')}）。"
+                f"{b.get('examPoint', '')}"
+            )
+            sub_feats = [
+                {
+                    "label": b_name,
+                    "fillColor": b.get("color") or "#dc2626",
+                    "geometry": b_geom,
+                    "lineDash": True,
+                    "lineWidth": 3.5,
+                }
+            ]
+            register(
+                f"pl_subl_{iso3}_{b['id']}",
+                b_name,
+                f"地理境界線（{c_short}）",
+                b_summary,
+                mid_lon,
+                mid_lat,
+                zoom=5.0,
+                iso3=iso3,
+                bounds=b_bounds,
+                geometry=b_geom,
+                aliases=b_aliases,
+                sub_features=sub_feats,
+                force_disambig=True,
+            )
+
+    # 1d. Global thematic regions (thematic_regions_v1.geojson)
+    for idx, feat in enumerate((thematic_regions or {}).get("features", [])):
+        p = feat.get("properties") or {}
+        geom = feat.get("geometry")
+        name_full = (p.get("nameJa") or p.get("name") or p.get("label") or "").strip()
+        if not name_full or not geom:
+            continue
+        short = name_full.split("（")[0].strip()
+        aliases = [short] if short and short != name_full and len(short) >= 2 else []
+        cat = p.get("category") or "主題地域"
+        summary = p.get("note") or p.get("summary") or name_full
+        mid_lon, mid_lat, bounds = _geom_center_and_bounds(geom)
+        register(
+            f"pl_treg_{idx}",
+            name_full,
+            f"世界の地域帯（{cat}）",
+            summary,
+            mid_lon,
+            mid_lat,
+            zoom=4.0,
+            bounds=bounds,
+            geometry=geom,
+            aliases=aliases,
+            force_disambig=True,
+        )
+
     # 2. Volcanoes & hotspots
     for v in volcanoes:
         p = v["properties"]
@@ -963,7 +1163,7 @@ def build_gazetteer(
                 aliases=[sr["name"]] if sr["name"] != short else [],
             )
 
-    # 4. Climate 87 cities
+    # 4. Climate cities
     for iso3, cdata in countries_json.items():
         for ct in cdata.get("climate", {}).get("cities", []):
             register(
@@ -998,26 +1198,9 @@ def build_gazetteer(
         p = feat["properties"]
         geom = feat["geometry"]
         gtype = geom["type"]
-        coords = geom["coordinates"]
-        all_pts = []
-        if gtype == "Point":
-            all_pts = [coords]
-        elif gtype == "LineString":
-            all_pts = coords
-        elif gtype == "MultiLineString":
-            for ln in coords:
-                all_pts.extend(ln)
-        if not all_pts:
+        mid_lon, mid_lat, bounds = _geom_center_and_bounds(geom)
+        if not _extract_all_points(geom):
             continue
-        lons = [pt[0] for pt in all_pts]
-        lats = [pt[1] for pt in all_pts]
-        mid_lon = sum(lons) / len(lons)
-        mid_lat = sum(lats) / len(lats)
-        bounds = (
-            [round(min(lons), 2), round(min(lats), 2), round(max(lons), 2), round(max(lats), 2)]
-            if gtype != "Point"
-            else None
-        )
         short = p["nameJa"].split("（")[0]
         register(
             f"pl_geo_{p['id']}",
@@ -1054,6 +1237,11 @@ def build_gazetteer(
 def main() -> None:
     countries_json = json.loads(COUNTRIES_PATH.read_text(encoding="utf-8"))["countries"]
     geo_layers = json.loads(GEO_LAYERS_PATH.read_text(encoding="utf-8"))
+    thematic_regions = (
+        json.loads(THEMATIC_REGIONS_PATH.read_text(encoding="utf-8"))
+        if THEMATIC_REGIONS_PATH.exists()
+        else {"type": "FeatureCollection", "features": []}
+    )
     top_cities = json.loads(TOP_CITIES_PATH.read_text(encoding="utf-8"))
     photos_map: dict[str, dict] = {}
     if PLACE_PHOTOS_PATH.exists():
@@ -1081,7 +1269,15 @@ def main() -> None:
     print(f"Wrote {len(phenomena)} climate phenomena features to {PHENOMENA_OUT.name}")
 
     places = normalize_koppen_obj(
-        build_gazetteer(countries_json, geo_layers, capitals, volcanoes, top_cities, photos_map)
+        build_gazetteer(
+            countries_json,
+            geo_layers,
+            capitals,
+            volcanoes,
+            top_cities,
+            photos_map,
+            thematic_regions,
+        )
     )
     PLACES_OUT.write_text(
         json.dumps({"places": places}, ensure_ascii=False, separators=(",", ":")),

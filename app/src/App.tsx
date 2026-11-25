@@ -141,6 +141,33 @@ export function App() {
     };
   }, []);
 
+  // '/' または Ctrl/Cmd+K で横断検索パネルをすばやく開閉
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setSearchOpen((v) => !v);
+        return;
+      }
+      if (e.key === '/') {
+        const el = document.activeElement as HTMLElement | null;
+        const tag = el?.tagName ?? '';
+        if (
+          tag === 'INPUT' ||
+          tag === 'TEXTAREA' ||
+          tag === 'SELECT' ||
+          el?.isContentEditable
+        ) {
+          return;
+        }
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
+
   const { markedIso3s, markedCount, isMarked, toggleMark } = useMarkedCountries();
 
   useEffect(() => {
@@ -337,6 +364,28 @@ export function App() {
       setActiveView('map');
     }
   }, []);
+
+  const handleSelectPlaceFromSearch = useCallback(
+    (place: PlaceEntry) => {
+      if (place.id.startsWith('pl_geo_') && layersGeoJson) {
+        const layerId = place.id.slice('pl_geo_'.length);
+        const feat = layersGeoJson.features.find((f) => f.properties.id === layerId);
+        if (feat) {
+          const lt = feat.properties.layerType;
+          setLayerVisibility((prev) => (prev[lt] ? prev : { ...prev, [lt]: true }));
+        }
+      } else if (place.id.startsWith('vol_') || place.category.startsWith('火山')) {
+        setLayerVisibility((prev) => (prev.volcanoes ? prev : { ...prev, volcanoes: true }));
+      } else if (place.id.startsWith('cap_') || place.category.includes('首都')) {
+        setLayerVisibility((prev) => (prev.capitals ? prev : { ...prev, capitals: true }));
+      }
+      handleFocusPlace(place);
+      if (typeof window !== 'undefined' && window.innerWidth < 768) {
+        setSearchOpen(false);
+      }
+    },
+    [layersGeoJson, handleFocusPlace],
+  );
 
   const handleClearFocusedPlace = useCallback(() => {
     setFocusedPlace(null);
@@ -585,6 +634,8 @@ export function App() {
           examCoverage={countriesData.examCoverage}
           markedCount={markedCount}
           isMarkedMode={mapColorMode === 'marked'}
+          places={placesData}
+          countriesMap={countriesData.countries}
           rankingItems={worldRankingsData?.items}
           systematicTopics={systematicData?.topics}
           japanRegions={japanData?.regions}
@@ -599,6 +650,7 @@ export function App() {
               setSearchOpen(false);
             }
           }}
+          onSelectPlace={handleSelectPlaceFromSearch}
           onSelectRanking={(itemId) => {
             setFocusedRankingId(itemId);
             setActiveView('rankings');

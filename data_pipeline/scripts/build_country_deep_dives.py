@@ -1,4 +1,4 @@
-"""130カ国分の進化的深掘り解説・受験必勝カード (`country_deep_dive_v1.json`) 統合ビルド・検証スクリプト。"""
+"""130カ国分の進化的深掘り解説・国別要点カード (`country_deep_dive_v1.json`) 統合ビルド・検証スクリプト。"""
 
 from __future__ import annotations
 

@@ -93,16 +93,16 @@ export function BlankMapView({
 
         <div className="hidden shrink-0 items-center gap-2 text-[11px] text-slate-500 lg:flex">
           <span>
-            記録: 国 <b>{totalTriedCountries}</b> / 塗り絵 <b>{totalBestPainted}</b>地域
+            今回の演習: 国 <b>{totalTriedCountries}</b> / 塗り絵 <b>{totalBestPainted}</b>地域
           </span>
           {(totalTriedCountries > 0 || totalBestPainted > 0 || stats.climateQuiz.total > 0) && (
             <button
               type="button"
               onClick={resetStats}
               className="inline-flex items-center gap-0.5 rounded border border-slate-200 px-1.5 py-0.5 text-[10px] font-bold text-slate-500 hover:bg-slate-100 hover:text-slate-800"
-              title="学習記録をリセット"
+              title="今回の演習履歴をクリア"
             >
-              <RotateCcw className="h-2.5 w-2.5" /> リセット
+              <RotateCcw className="h-2.5 w-2.5" /> クリア
             </button>
           )}
         </div>

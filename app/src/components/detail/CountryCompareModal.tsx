@@ -198,7 +198,7 @@ export function CountryCompareModal({
             </span>
             <div>
               <h2 className="text-sm font-black text-slate-900 md:text-base">
-                2カ国 徹底比較モード（全{Object.keys(allCountries).length}カ国・地域対応）
+                2カ国 比較ビュー（全{Object.keys(allCountries).length}カ国・地域対応）
               </h2>
               <p className="text-[11px] text-slate-500">
                 紛らわしい国どうしを並べて統計・気候・産業・判別の決め手を整理
@@ -328,7 +328,7 @@ export function CountryCompareModal({
             <div className="rounded-xl border border-indigo-200 bg-gradient-to-r from-indigo-50 to-sky-50 px-3.5 py-2.5">
               <div className="mb-1 flex items-center gap-1.5 text-xs font-black text-indigo-900">
                 <Sparkles className="h-3.5 w-3.5 text-indigo-600" />
-                比較判別の決定打：{directMatchHint.title}
+                比較・判別のポイント：{directMatchHint.title}
               </div>
               <p className="text-xs leading-relaxed text-slate-700">{directMatchHint.diffPoint}</p>
             </div>

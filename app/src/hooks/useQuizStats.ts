@@ -23,44 +23,12 @@ export interface QuizStatsState {
   koppenBestScores: Record<string, KoppenBestRecord>;
 }
 
-const STORAGE_KEY = 'kyoute_chiri_blank_stats_v1';
-
 const EMPTY_STATS: QuizStatsState = {
   countryStats: {},
   featureStats: {},
   climateQuiz: { total: 0, correct: 0, bestStreak: 0 },
   koppenBestScores: {},
 };
-
-function loadInitialStats(): QuizStatsState {
-  if (typeof window === 'undefined') return EMPTY_STATS;
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return EMPTY_STATS;
-    const parsed = JSON.parse(raw) as Partial<QuizStatsState>;
-    return {
-      countryStats: parsed.countryStats ?? {},
-      featureStats: parsed.featureStats ?? {},
-      climateQuiz: {
-        total: parsed.climateQuiz?.total ?? 0,
-        correct: parsed.climateQuiz?.correct ?? 0,
-        bestStreak: parsed.climateQuiz?.bestStreak ?? 0,
-      },
-      koppenBestScores: parsed.koppenBestScores ?? {},
-    };
-  } catch {
-    return EMPTY_STATS;
-  }
-}
-
-function saveStats(next: QuizStatsState): void {
-  if (typeof window === 'undefined') return;
-  try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  } catch {
-    // ストレージ容量超過・プライベートモード等では静かに継続
-  }
-}
 
 function bumpCounter(
   map: Record<string, AccuracyCounter>,
@@ -77,44 +45,35 @@ function bumpCounter(
   };
 }
 
+/**
+ * 白地図演習の現在のセッション内正誤状態（ブラウザ永続保存は行わない）
+ */
 export function useQuizStats() {
-  const [stats, setStats] = useState<QuizStatsState>(loadInitialStats);
+  const [stats, setStats] = useState<QuizStatsState>(EMPTY_STATS);
 
   const recordCountryResult = useCallback((iso3: string, isCorrect: boolean) => {
-    setStats((prev) => {
-      const next: QuizStatsState = {
-        ...prev,
-        countryStats: bumpCounter(prev.countryStats, iso3, isCorrect),
-      };
-      saveStats(next);
-      return next;
-    });
+    setStats((prev) => ({
+      ...prev,
+      countryStats: bumpCounter(prev.countryStats, iso3, isCorrect),
+    }));
   }, []);
 
   const recordFeatureResult = useCallback((featureId: string, isCorrect: boolean) => {
-    setStats((prev) => {
-      const next: QuizStatsState = {
-        ...prev,
-        featureStats: bumpCounter(prev.featureStats, featureId, isCorrect),
-      };
-      saveStats(next);
-      return next;
-    });
+    setStats((prev) => ({
+      ...prev,
+      featureStats: bumpCounter(prev.featureStats, featureId, isCorrect),
+    }));
   }, []);
 
   const recordClimateQuizResult = useCallback((isCorrect: boolean, currentStreak: number) => {
-    setStats((prev) => {
-      const next: QuizStatsState = {
-        ...prev,
-        climateQuiz: {
-          total: prev.climateQuiz.total + 1,
-          correct: prev.climateQuiz.correct + (isCorrect ? 1 : 0),
-          bestStreak: Math.max(prev.climateQuiz.bestStreak, currentStreak),
-        },
-      };
-      saveStats(next);
-      return next;
-    });
+    setStats((prev) => ({
+      ...prev,
+      climateQuiz: {
+        total: prev.climateQuiz.total + 1,
+        correct: prev.climateQuiz.correct + (isCorrect ? 1 : 0),
+        bestStreak: Math.max(prev.climateQuiz.bestStreak, currentStreak),
+      },
+    }));
   }, []);
 
   const recordKoppenScore = useCallback(
@@ -124,7 +83,7 @@ export function useQuizStats() {
         if (existing && existing.exactPct > exactPct) {
           return prev;
         }
-        const next: QuizStatsState = {
+        return {
           ...prev,
           koppenBestScores: {
             ...prev.koppenBestScores,
@@ -136,8 +95,6 @@ export function useQuizStats() {
             },
           },
         };
-        saveStats(next);
-        return next;
       });
     },
     [],
@@ -156,7 +113,6 @@ export function useQuizStats() {
   }, [stats.featureStats]);
 
   const resetStats = useCallback(() => {
-    saveStats(EMPTY_STATS);
     setStats(EMPTY_STATS);
   }, []);
 
