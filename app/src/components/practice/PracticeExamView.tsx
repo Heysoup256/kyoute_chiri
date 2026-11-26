@@ -4,6 +4,8 @@ import {
   BookOpen,
   CheckCircle2,
   ClipboardCheck,
+  Eye,
+  EyeOff,
   MapPin,
   MessageSquare,
   RefreshCw,
@@ -27,6 +29,8 @@ import {
   generateDrillQuestion,
   type DrillGenre,
   type GeneratedDrillQuestion,
+  type ScatterDrillSpec,
+  type StackedBarDrillSpec,
 } from './drillGenerator';
 
 interface PracticeExamViewProps {
@@ -53,13 +57,262 @@ const BANK_CAT_OPTIONS: { id: BankCategoryFilter; label: string }[] = [
 
 const CHOICE_LABELS = ['①', '②', '③', '④', '⑤', '⑥'];
 
-function MiniPopulationPyramidSvg({ bins }: { bins: AgePyramidBin[] }) {
-  const maxPct = Math.max(
-    8,
-    ...bins.flatMap((b) => [b.malePct, b.femalePct]),
+function formatAxisTick(v: number): string {
+  if (Math.abs(v) >= 1000) return `${Math.round(v).toLocaleString('ja-JP')}`;
+  if (Math.abs(v) >= 10) return `${Math.round(v)}`;
+  return `${Number(v.toFixed(1))}`;
+}
+
+function MiniScatterPlotSvg({ spec }: { spec: ScatterDrillSpec }) {
+  const allPts = [...spec.backgroundPoints, ...spec.targetPoints];
+  const xs = allPts.map((p) => p.x);
+  const ys = allPts.map((p) => p.y);
+  const rawXMin = Math.min(...xs);
+  const rawXMax = Math.max(...xs);
+  const rawYMin = Math.min(...ys);
+  const rawYMax = Math.max(...ys);
+
+  const xSpan = Math.max(1e-6, rawXMax - rawXMin);
+  const ySpan = Math.max(1e-6, rawYMax - rawYMin);
+  const xMin = rawXMin >= 0 ? Math.max(0, rawXMin - xSpan * 0.08) : rawXMin - xSpan * 0.08;
+  const xMax = rawXMax + xSpan * 0.1;
+  const yMin = rawYMin >= 0 ? Math.max(0, rawYMin - ySpan * 0.08) : rawYMin - ySpan * 0.08;
+  const yMax = rawYMax + ySpan * 0.12;
+
+  const W = 380;
+  const H = 240;
+  const padL = 44;
+  const padR = 18;
+  const padT = 24;
+  const padB = 34;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+
+  const toX = (v: number) => padL + ((v - xMin) / Math.max(1e-6, xMax - xMin)) * plotW;
+  const toY = (v: number) => padT + ((yMax - v) / Math.max(1e-6, yMax - yMin)) * plotH;
+
+  const ticks = [0, 0.25, 0.5, 0.75, 1];
+
+  // 重なり回避ラベル位置計算
+  const placedLabels: { x: number; y: number }[] = [];
+  const labelOffsets: [number, number][] = [
+    [9, -5],
+    [-9, -5],
+    [9, 12],
+    [-9, 12],
+    [0, -11],
+    [0, 14],
+  ];
+
+  const resolvedTargets = spec.targetPoints.map((pt) => {
+    const cx = toX(pt.x);
+    const cy = toY(pt.y);
+    let bestDx = 9;
+    let bestDy = -5;
+    let bestScore = -Infinity;
+
+    for (const [dx, dy] of labelOffsets) {
+      const lx = cx + dx;
+      const ly = cy + dy;
+      if (lx < padL + 8 || lx > W - padR - 8 || ly < padT + 10 || ly > H - padB - 4) {
+        continue;
+      }
+      let minDist = Infinity;
+      for (const other of spec.targetPoints) {
+        if (other.code === pt.code) continue;
+        const ox = toX(other.x);
+        const oy = toY(other.y);
+        minDist = Math.min(minDist, Math.hypot(lx - ox, ly - oy));
+      }
+      for (const pl of placedLabels) {
+        minDist = Math.min(minDist, Math.hypot(lx - pl.x, ly - pl.y));
+      }
+      if (minDist > bestScore) {
+        bestScore = minDist;
+        bestDx = dx;
+        bestDy = dy;
+      }
+    }
+    placedLabels.push({ x: cx + bestDx, y: cy + bestDy });
+    const anchor: 'start' | 'middle' | 'end' =
+      bestDx < 0 ? 'end' : bestDx === 0 ? 'middle' : 'start';
+    return { ...pt, cx, cy, lx: cx + bestDx, ly: cy + bestDy, anchor };
+  });
+
+  return (
+    <div className="mx-auto max-w-lg rounded-xl border border-slate-200 bg-white p-3">
+      <div className="mb-1 flex items-center justify-between text-[11px] font-bold text-slate-700">
+        <span>{spec.title}</span>
+        <span className="text-[10px] font-medium text-slate-400">灰色点＝他国データ</span>
+      </div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full select-none">
+        <text x={8} y={13} fontSize="9.5" fontWeight="700" fill="#475569">
+          ↑ {spec.yLabel}
+        </text>
+
+        {ticks.map((ratio) => {
+          const xVal = xMin + (xMax - xMin) * ratio;
+          const yVal = yMin + (yMax - yMin) * ratio;
+          const px = padL + plotW * ratio;
+          const py = padT + plotH * (1 - ratio);
+          return (
+            <g key={ratio}>
+              <line
+                x1={padL}
+                y1={py}
+                x2={W - padR}
+                y2={py}
+                stroke={ratio === 0 ? '#94a3b8' : '#e2e8f0'}
+                strokeWidth={ratio === 0 ? 1 : 0.7}
+                strokeDasharray={ratio === 0 ? undefined : '2 2'}
+              />
+              <line
+                x1={px}
+                y1={padT}
+                x2={px}
+                y2={padT + plotH}
+                stroke={ratio === 0 ? '#94a3b8' : '#e2e8f0'}
+                strokeWidth={ratio === 0 ? 1 : 0.7}
+                strokeDasharray={ratio === 0 ? undefined : '2 2'}
+              />
+              <text x={padL - 4} y={py + 3} textAnchor="end" fontSize="8" fill="#64748b">
+                {formatAxisTick(yVal)}
+              </text>
+              <text x={px} y={padT + plotH + 11} textAnchor="middle" fontSize="8" fill="#64748b">
+                {formatAxisTick(xVal)}
+              </text>
+            </g>
+          );
+        })}
+
+        {spec.backgroundPoints.map((bp, idx) => (
+          <circle
+            key={`bg-${idx}`}
+            cx={toX(bp.x)}
+            cy={toY(bp.y)}
+            r={2.8}
+            fill="#cbd5e1"
+            stroke="#94a3b8"
+            strokeWidth={0.6}
+            opacity={0.78}
+          />
+        ))}
+
+        {resolvedTargets.map((pt) => (
+          <g key={pt.code}>
+            <circle
+              cx={pt.cx}
+              cy={pt.cy}
+              r={5.2}
+              fill={pt.color}
+              stroke="#ffffff"
+              strokeWidth={1.5}
+            />
+            <text
+              x={pt.lx}
+              y={pt.ly}
+              textAnchor={pt.anchor}
+              fontSize="11"
+              fontWeight="900"
+              fill={pt.color}
+              stroke="#ffffff"
+              strokeWidth={2.6}
+              paintOrder="stroke"
+            >
+              {pt.code}
+            </text>
+          </g>
+        ))}
+
+        <text
+          x={padL + plotW / 2}
+          y={H - 5}
+          textAnchor="middle"
+          fontSize="9.5"
+          fontWeight="700"
+          fill="#475569"
+        >
+          {spec.xLabel} →
+        </text>
+      </svg>
+    </div>
   );
+}
+
+function MiniStackedBarSvg({ spec }: { spec: StackedBarDrillSpec }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-white p-3.5">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="text-xs font-extrabold text-slate-800">{spec.caption}</span>
+        <span className="text-[10.5px] text-slate-400">単位：{spec.unit}</span>
+      </div>
+
+      <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+        {spec.series.map((s) => (
+          <div key={s.name} className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-700">
+            <span
+              className="h-2.5 w-2.5 shrink-0 rounded-xs"
+              style={{ backgroundColor: s.color }}
+            />
+            <span>{s.name}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-3 space-y-2.5">
+        {spec.rows.map((row) => {
+          const sum = Math.max(
+            1e-6,
+            row.values.reduce((a, b) => a + Math.max(0, b), 0),
+          );
+          return (
+            <div key={row.label} className="flex items-center gap-2.5">
+              <span className="w-6 shrink-0 text-center text-xs font-black text-slate-900">
+                {row.label}
+              </span>
+              <div className="flex h-7 flex-1 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
+                {row.values.map((val, si) => {
+                  const pct = (Math.max(0, val) / sum) * 100;
+                  if (pct <= 0.3) return null;
+                  const sMeta = spec.series[si];
+                  return (
+                    <div
+                      key={sMeta?.name ?? si}
+                      style={{
+                        width: `${pct}%`,
+                        backgroundColor: sMeta?.color ?? '#64748b',
+                      }}
+                      title={`${sMeta?.name ?? ''}: ${val}${spec.unit}`}
+                      className="flex items-center justify-center overflow-hidden text-[10px] font-bold text-white"
+                    >
+                      {pct >= 11 ? `${Math.round(pct)}%` : ''}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function MiniPopulationPyramidSvg({
+  bins,
+  fixedMaxPct,
+}: {
+  bins: AgePyramidBin[];
+  fixedMaxPct?: number;
+}) {
+  const maxPct =
+    fixedMaxPct ??
+    Math.max(
+      8,
+      ...bins.flatMap((b) => [b.malePct, b.femalePct]),
+    );
   const rows = [...bins].reverse();
-  const rowH = 11;
+  const rowH = 14;
   const H = rows.length * rowH + 22;
   const W = 280;
   const centerX = W / 2;
@@ -85,13 +338,13 @@ function MiniPopulationPyramidSvg({ bins }: { bins: AgePyramidBin[] }) {
               {idx % 2 === 0 && (
                 <text
                   x={centerX}
-                  y={y + rowH - 2}
+                  y={y + rowH - 3}
                   textAnchor="middle"
-                  fontSize="7"
+                  fontSize="7.5"
                   fill="#0f172a"
                   fontWeight="bold"
                   stroke="#ffffff"
-                  strokeWidth="2.2"
+                  strokeWidth="2.4"
                   paintOrder="stroke"
                 >
                   {b.ageGroup}
@@ -143,9 +396,17 @@ export function PracticeExamView({
     ),
   );
   const [drillChoice, setDrillChoice] = useState<number | null>(null);
-  const [drillStats, setDrillStats] = useState<{ total: number; correct: number }>({
+  const [showPhotoHint, setShowPhotoHint] = useState<boolean>(false);
+  const [drillStats, setDrillStats] = useState<{
+    total: number;
+    correct: number;
+    streak: number;
+    bestStreak: number;
+  }>({
     total: 0,
     correct: 0,
+    streak: 0,
+    bestStreak: 0,
   });
 
   const filteredBank = useMemo(() => {
@@ -172,11 +433,37 @@ export function PracticeExamView({
     return { correct, answered };
   }, [mockQuestions, bankAnswers]);
 
+  // 2都市比較用の共通スケール計算（雨温図／ハイサーグラフ）
+  const sharedClimateScale = useMemo(() => {
+    const list = currentDrill?.climateCities;
+    if (!list || list.length === 0) return null;
+    const allTemps = list.flatMap((it) => it.city.monthlyTempC);
+    const allPrecips = list.flatMap((it) => it.city.monthlyPrecipMm);
+    return {
+      tempRange: [
+        Math.floor(Math.min(-10, ...allTemps) / 5) * 5,
+        Math.ceil(Math.max(30, ...allTemps) / 5) * 5,
+      ] as [number, number],
+      precipMax: Math.ceil(Math.max(200, ...allPrecips) / 50) * 50,
+    };
+  }, [currentDrill]);
+
+  // 2国並列人口ピラミッドの共通横軸最大値
+  const sharedPyramidMaxPct = useMemo(() => {
+    const pair = currentDrill?.pyramidPair;
+    if (!pair || pair.length === 0) return undefined;
+    return Math.max(
+      8,
+      ...pair.flatMap((p) => p.bins.flatMap((b) => [b.malePct, b.femalePct])),
+    );
+  }, [currentDrill]);
+
   const handleNextDrill = (overrideGenre?: DrillGenre) => {
     const targetGenre = overrideGenre ?? drillGenre;
     const nextSeed = drillSeed + 1;
     setDrillSeed(nextSeed);
     setDrillChoice(null);
+    setShowPhotoHint(false);
     setCurrentDrill(
       generateDrillQuestion(
         targetGenre,
@@ -189,10 +476,16 @@ export function PracticeExamView({
   const handleAnswerDrill = (idx: number) => {
     if (!currentDrill || drillChoice !== null) return;
     setDrillChoice(idx);
-    setDrillStats((prev) => ({
-      total: prev.total + 1,
-      correct: prev.correct + (idx === currentDrill.correctIndex ? 1 : 0),
-    }));
+    const ok = idx === currentDrill.correctIndex;
+    setDrillStats((prev) => {
+      const nextStreak = ok ? prev.streak + 1 : 0;
+      return {
+        total: prev.total + 1,
+        correct: prev.correct + (ok ? 1 : 0),
+        streak: nextStreak,
+        bestStreak: Math.max(prev.bestStreak, nextStreak),
+      };
+    });
   };
 
   return (
@@ -234,7 +527,7 @@ export function PracticeExamView({
             {mode === 'bank' ? (
               <>
                 <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-800">
-                  今回正答: {bankStats.correct} / {bankStats.answered}問
+                  正答: {bankStats.correct} / {bankStats.answered}問
                 </span>
                 {bankStats.answered > 0 && (
                   <button
@@ -249,12 +542,17 @@ export function PracticeExamView({
             ) : (
               <>
                 <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-emerald-800">
-                  ドリル今回正答: {drillStats.correct} / {drillStats.total}問
+                  正答: {drillStats.correct} / {drillStats.total}問
                 </span>
+                {drillStats.streak >= 2 && (
+                  <span className="rounded-full bg-amber-50 px-2.5 py-1 text-amber-800">
+                    連続 {drillStats.streak}問
+                  </span>
+                )}
                 {drillStats.total > 0 && (
                   <button
                     type="button"
-                    onClick={() => setDrillStats({ total: 0, correct: 0 })}
+                    onClick={() => setDrillStats({ total: 0, correct: 0, streak: 0, bestStreak: 0 })}
                     className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2 py-1 text-[11px] text-slate-600 hover:bg-slate-50"
                   >
                     <RotateCcw className="h-3 w-3" /> クリア
@@ -341,8 +639,8 @@ export function PracticeExamView({
                   <div className="mx-auto max-w-3xl space-y-4">
                     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs md:p-5">
                       <div className="flex flex-wrap items-center justify-between gap-2">
-                        <span className="inline-flex items-center gap-1 rounded-full bg-indigo-100 px-2.5 py-0.5 text-[11px] font-bold text-indigo-800">
-                          <ClipboardCheck className="h-3 w-3" />
+                        <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-bold text-slate-700">
+                          <ClipboardCheck className="h-3 w-3 text-indigo-600" />
                           問題 {activeBankIndex + 1} / {filteredBank.length}
                         </span>
                         <span className="text-[11px] font-bold text-slate-400">
@@ -358,13 +656,13 @@ export function PracticeExamView({
                       </p>
 
                       {activeBankQ.dialogues && activeBankQ.dialogues.length > 0 && (
-                        <div className="mt-3 space-y-2 rounded-xl border border-indigo-100 bg-indigo-50/50 p-3">
-                          <div className="flex items-center gap-1 text-[11px] font-bold text-indigo-800">
-                            <MessageSquare className="h-3.5 w-3.5" />
+                        <div className="mt-3 space-y-2 rounded-xl border border-slate-200 bg-slate-50/80 p-3">
+                          <div className="flex items-center gap-1 text-[11px] font-bold text-slate-700">
+                            <MessageSquare className="h-3.5 w-3.5 text-indigo-600" />
                             会話メモ
                           </div>
                           {activeBankQ.dialogues.map((d, i) => (
-                            <div key={i} className="rounded-lg bg-white px-3 py-2 text-xs text-slate-800 shadow-2xs">
+                            <div key={i} className="rounded-lg border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-800">
                               <span className="mr-1.5 font-extrabold text-indigo-700">{d.speaker}:</span>
                               <span>{d.text}</span>
                             </div>
@@ -470,17 +768,17 @@ export function PracticeExamView({
                             }`}
                           >
                             {bankAnswers[activeBankQ.id] === activeBankQ.correctIndex
-                              ? '正解です！'
+                              ? '正解です'
                               : `不正解（正解は ${CHOICE_LABELS[activeBankQ.correctIndex] ?? activeBankQ.correctIndex + 1}）`}
                           </div>
 
-                          <div className="rounded-xl border border-sky-200 bg-sky-50/70 p-3 text-xs leading-relaxed text-slate-800">
-                            <div className="mb-1 font-extrabold text-sky-900">詳しい解説</div>
+                          <div className="rounded-xl border border-slate-200 border-l-2 border-l-sky-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-800">
+                            <div className="mb-1 font-extrabold text-slate-900">詳しい解説</div>
                             {activeBankQ.explanation}
                           </div>
 
-                          <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-3 text-xs leading-relaxed text-slate-800">
-                            <div className="mb-1 flex items-center gap-1 font-extrabold text-amber-900">
+                          <div className="rounded-xl border border-slate-200 border-l-2 border-l-amber-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-800">
+                            <div className="mb-1 flex items-center gap-1 font-extrabold text-slate-900">
                               <Award className="h-3.5 w-3.5 text-amber-600" />
                               整理ポイント
                             </div>
@@ -494,9 +792,9 @@ export function PracticeExamView({
                                   key={iso}
                                   type="button"
                                   onClick={() => onSelectCountry(iso)}
-                                  className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 hover:bg-indigo-50"
+                                  className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700"
                                 >
-                                  <MapPin className="h-3 w-3" />
+                                  <MapPin className="h-3 w-3 text-indigo-600" />
                                   {countriesData[iso]?.nameJa.split('（')[0] ?? iso}
                                 </button>
                               ))}
@@ -558,7 +856,7 @@ export function PracticeExamView({
               <button
                 type="button"
                 onClick={() => handleNextDrill()}
-                className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-indigo-300 bg-indigo-50 px-3 py-1 text-xs font-extrabold text-indigo-800 hover:bg-indigo-100"
+                className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-extrabold text-indigo-800 hover:bg-indigo-100"
               >
                 <RefreshCw className="h-3.5 w-3.5" />
                 新しい問題を生成
@@ -570,9 +868,9 @@ export function PracticeExamView({
             {currentDrill ? (
               <div className="mx-auto max-w-3xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs md:p-5">
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2.5 py-0.5 text-[11px] font-bold text-emerald-800">
-                    <Sparkles className="h-3 w-3" />
-                    {currentDrill.genreLabel}（自動生成問題）
+                  <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-bold text-slate-700">
+                    <Sparkles className="h-3 w-3 text-indigo-600" />
+                    {currentDrill.genreLabel}
                   </span>
                 </div>
 
@@ -594,7 +892,7 @@ export function PracticeExamView({
                       <thead className="bg-slate-100 text-slate-700">
                         <tr>
                           {currentDrill.table.headers.map((h) => (
-                            <th key={h} className="px-2.5 py-2 font-bold">
+                            <th key={h} className="whitespace-nowrap px-2.5 py-2 font-bold">
                               {h}
                             </th>
                           ))}
@@ -618,11 +916,47 @@ export function PracticeExamView({
                   </div>
                 )}
 
-                {currentDrill.climateCity && (
+                {currentDrill.scatterPlot && (
+                  <div className="mt-3">
+                    <MiniScatterPlotSvg spec={currentDrill.scatterPlot} />
+                  </div>
+                )}
+
+                {currentDrill.stackedBars && (
+                  <div className="mt-3">
+                    <MiniStackedBarSvg spec={currentDrill.stackedBars} />
+                  </div>
+                )}
+
+                {currentDrill.climateCities && sharedClimateScale && (
+                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                    {currentDrill.climateCities.map((entry) => (
+                      <div
+                        key={entry.label}
+                        className="rounded-xl border border-slate-200 bg-slate-50/70 p-3"
+                      >
+                        <div className="mb-1.5 flex items-center justify-between text-xs font-extrabold text-slate-800">
+                          <span>{entry.label}</span>
+                          <span className="font-mono text-[10.5px] font-semibold text-slate-500">
+                            {entry.metaText}
+                          </span>
+                        </div>
+                        <ClimateMiniChart
+                          city={entry.city}
+                          chartType={currentDrill.climateChartType ?? 'climograph'}
+                          tempRange={sharedClimateScale.tempRange}
+                          precipMax={sharedClimateScale.precipMax}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {currentDrill.climateCity && !currentDrill.climateCities && (
                   <div className="mx-auto mt-3 max-w-xs rounded-xl border border-slate-200 bg-slate-50/70 p-3">
                     <ClimateMiniChart
                       city={currentDrill.climateCity}
-                      chartType="climograph"
+                      chartType={currentDrill.climateChartType ?? 'climograph'}
                       tempRange={[
                         Math.floor(Math.min(-10, ...currentDrill.climateCity.monthlyTempC) / 5) * 5,
                         Math.ceil(Math.max(30, ...currentDrill.climateCity.monthlyTempC) / 5) * 5,
@@ -635,7 +969,23 @@ export function PracticeExamView({
                   </div>
                 )}
 
-                {currentDrill.pyramidBins && (
+                {currentDrill.pyramidPair && (
+                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                    {currentDrill.pyramidPair.map((p) => (
+                      <div key={p.label} className="space-y-1">
+                        <div className="text-center text-xs font-extrabold text-slate-800">
+                          {p.label}
+                        </div>
+                        <MiniPopulationPyramidSvg
+                          bins={p.bins}
+                          fixedMaxPct={sharedPyramidMaxPct}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {currentDrill.pyramidBins && !currentDrill.pyramidPair && (
                   <div className="mt-3">
                     <MiniPopulationPyramidSvg bins={currentDrill.pyramidBins} />
                   </div>
@@ -651,14 +1001,32 @@ export function PracticeExamView({
                         className="mx-auto max-h-64 w-full object-contain"
                       />
                     </div>
-                    {currentDrill.visualClues && (
-                      <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-xs">
-                        <div className="mb-1 font-bold text-slate-700">着眼点ヒント</div>
-                        <ul className="space-y-0.5 text-slate-600">
-                          {currentDrill.visualClues.map((cl) => (
-                            <li key={cl}>・{cl}</li>
-                          ))}
-                        </ul>
+                    {currentDrill.visualClues && currentDrill.visualClues.length > 0 && (
+                      <div>
+                        <button
+                          type="button"
+                          onClick={() => setShowPhotoHint((v) => !v)}
+                          className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-600 hover:border-indigo-300 hover:text-indigo-700"
+                        >
+                          {showPhotoHint ? (
+                            <EyeOff className="h-3.5 w-3.5" />
+                          ) : (
+                            <Eye className="h-3.5 w-3.5" />
+                          )}
+                          {showPhotoHint
+                            ? '観察のヒントを隠す'
+                            : `観察のヒントを見る（${currentDrill.visualClues.length}件）`}
+                        </button>
+                        {showPhotoHint && (
+                          <div className="mt-2 rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-xs">
+                            <div className="mb-1 font-bold text-slate-700">着眼点ヒント</div>
+                            <ul className="space-y-0.5 text-slate-600">
+                              {currentDrill.visualClues.map((cl) => (
+                                <li key={cl}>・{cl}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -716,14 +1084,25 @@ export function PracticeExamView({
                       }`}
                     >
                       {drillChoice === currentDrill.correctIndex
-                        ? '正解です！'
+                        ? '正解です'
                         : `不正解（正解は ${CHOICE_LABELS[currentDrill.correctIndex] ?? currentDrill.correctIndex + 1}）`}
                     </div>
 
-                    <div className="rounded-xl border border-sky-200 bg-sky-50/70 p-3 text-xs leading-relaxed text-slate-800">
-                      <div className="mb-1 font-extrabold text-sky-900">根拠・判別ポイント</div>
+                    <div className="rounded-xl border border-slate-200 border-l-2 border-l-sky-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-800">
+                      <div className="mb-1 font-extrabold text-slate-900">根拠・判別ポイント</div>
                       {currentDrill.explanation}
                     </div>
+
+                    {currentDrill.detailNotes && currentDrill.detailNotes.length > 0 && (
+                      <div className="rounded-xl border border-slate-200 border-l-2 border-l-indigo-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-700">
+                        <div className="mb-1 font-extrabold text-slate-900">各項目・選択肢の実データ</div>
+                        <ul className="space-y-1">
+                          {currentDrill.detailNotes.map((note) => (
+                            <li key={note}>・{note}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex flex-wrap gap-1.5">
@@ -732,9 +1111,9 @@ export function PracticeExamView({
                             key={iso}
                             type="button"
                             onClick={() => onSelectCountry(iso)}
-                            className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 hover:bg-indigo-50"
+                            className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700"
                           >
-                            <MapPin className="h-3 w-3" />
+                            <MapPin className="h-3 w-3 text-indigo-600" />
                             {countriesData[iso]?.nameJa.split('（')[0] ?? iso}
                           </button>
                         ))}

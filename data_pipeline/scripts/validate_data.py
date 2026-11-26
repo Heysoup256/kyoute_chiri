@@ -343,13 +343,17 @@ def main() -> None:
     if mq_path.exists():
         mq_data = json.loads(mq_path.read_text(encoding="utf-8"))
         mock_questions = mq_data.get("questions", [])
-        if len(mock_questions) < 30:
-            errors.append(f"mock_questions_v1.json の問題数が不足しています ({len(mock_questions)}<30)")
+        if len(mock_questions) < 38:
+            errors.append(f"mock_questions_v1.json の問題数が不足しています ({len(mock_questions)}<38)")
+        idx_set = set()
         for mq in mock_questions:
             choices = mq.get("choices", [])
             cidx = mq.get("correctIndex", -1)
+            idx_set.add(cidx)
             if len(choices) < 4 or not (0 <= cidx < len(choices)) or not mq.get("explanation") or not mq.get("keyTakeaway"):
                 errors.append(f"mock_question {mq.get('id')}: 選択肢数・correctIndex・解説・要点に不備があります")
+        if not {0, 1, 2, 3}.issubset(idx_set):
+            errors.append(f"mock_questions_v1.json の正解インデックスが分散していません: {sorted(idx_set)}")
 
     if errors:
         print("VALIDATION FAILED:")
