@@ -212,6 +212,9 @@ export interface SpecialRegion {
 
 export interface PlaceSubFeature {
   label: string;
+  category?: string;
+  summary?: string;
+  detailLines?: string[];
   fillColor: string;
   geometry: Geometry;
   lineDash?: boolean;
@@ -276,6 +279,7 @@ export interface PlaceEntry {
   photoCaption?: string;
   photoCredit?: string;
   skipCameraMove?: boolean;
+  skipPopup?: boolean;
 }
 
 export interface CountryData {

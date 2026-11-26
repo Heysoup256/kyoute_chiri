@@ -43,6 +43,8 @@ import { RichGeoText } from '../study/RichGeoText';
 import { CountryCompareModal } from './CountryCompareModal';
 import { SubnationalRegionTab } from './SubnationalRegionTab';
 
+const NOOP = () => {};
+
 const RELATION_CATEGORY_STYLE: Record<
   CountryRelation['category'],
   { label: string; badgeClass: string }
@@ -64,6 +66,7 @@ interface CountryDetailPanelProps {
   mobileSheetVh: number;
   onChangeMobileSheetVh: (vh: number) => void;
   onFocusPlace: (place: PlaceEntry) => void;
+  onClearSubnationalOverlay?: () => void;
   onToggleMark: (iso3: string) => void;
   onSelectCountry: (iso3: string) => void;
   onClose: () => void;
@@ -174,7 +177,7 @@ function KnowledgeItemCard({
           <button
             type="button"
             onClick={() => setDeepDiveOpen((prev) => !prev)}
-            className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-indigo-200 bg-indigo-50/70 px-2.5 py-1.5 text-left text-[11.5px] font-bold text-indigo-800 transition hover:bg-indigo-100"
+            className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-left text-[11.5px] font-bold text-slate-700 transition hover:border-indigo-200 hover:bg-indigo-50/60 hover:text-indigo-800"
           >
             <span className="flex items-center gap-1.5">
               <Sparkles className="h-3.5 w-3.5 shrink-0 text-indigo-600" />
@@ -190,8 +193,8 @@ function KnowledgeItemCard({
           {deepDiveOpen && (
             <div className="mt-2 space-y-2 rounded-lg border border-slate-200 bg-slate-50/80 p-2.5 text-xs">
               {item.deepDive.mechanism && (
-                <div className="rounded-md border border-sky-200 bg-sky-50/80 px-2.5 py-2">
-                  <div className="font-bold text-sky-900">成因・メカニズム</div>
+                <div className="rounded-md border border-slate-200 border-l-2 border-l-sky-500 bg-white px-2.5 py-2">
+                  <div className="font-bold text-slate-900">成因・メカニズム</div>
                   <p className="mt-0.5 leading-relaxed text-slate-700">
                     <RichGeoText
                       text={item.deepDive.mechanism}
@@ -202,8 +205,8 @@ function KnowledgeItemCard({
                 </div>
               )}
               {item.deepDive.historicalShift && (
-                <div className="rounded-md border border-amber-200 bg-amber-50/80 px-2.5 py-2">
-                  <div className="font-bold text-amber-900">時代変化・最新動向</div>
+                <div className="rounded-md border border-slate-200 border-l-2 border-l-amber-500 bg-white px-2.5 py-2">
+                  <div className="font-bold text-slate-900">時代変化・最新動向</div>
                   <p className="mt-0.5 leading-relaxed text-slate-700">
                     <RichGeoText
                       text={item.deepDive.historicalShift}
@@ -214,8 +217,8 @@ function KnowledgeItemCard({
                 </div>
               )}
               {item.deepDive.examTrap && (
-                <div className="rounded-md border border-rose-200 bg-rose-50/80 px-2.5 py-2">
-                  <div className="font-bold text-rose-900">出題上の注意点・判別ポイント</div>
+                <div className="rounded-md border border-slate-200 border-l-2 border-l-rose-400 bg-white px-2.5 py-2">
+                  <div className="font-bold text-slate-900">出題上の注意点・判別ポイント</div>
                   <p className="mt-0.5 leading-relaxed text-slate-700">
                     <RichGeoText
                       text={item.deepDive.examTrap}
@@ -226,8 +229,8 @@ function KnowledgeItemCard({
                 </div>
               )}
               {item.deepDive.compareNote && (
-                <div className="rounded-md border border-emerald-200 bg-emerald-50/80 px-2.5 py-2">
-                  <div className="font-bold text-emerald-900">他国比較の視点</div>
+                <div className="rounded-md border border-slate-200 border-l-2 border-l-emerald-500 bg-white px-2.5 py-2">
+                  <div className="font-bold text-slate-900">他国比較の視点</div>
                   <p className="mt-0.5 leading-relaxed text-slate-700">
                     <RichGeoText
                       text={item.deepDive.compareNote}
@@ -319,6 +322,7 @@ export function CountryDetailPanel({
   mobileSheetVh,
   onChangeMobileSheetVh,
   onFocusPlace,
+  onClearSubnationalOverlay,
   onToggleMark,
   onSelectCountry,
   onClose,
@@ -771,46 +775,10 @@ export function CountryDetailPanel({
             {/* 0. 概要・生活（初期表示タブ） */}
             {effectiveTab === 'overview' && (
               <div className="space-y-3 md:space-y-4">
-                {country.subnational && (
-                  <button
-                    type="button"
-                    onClick={() => setActiveTab('regions')}
-                    className="flex w-full items-center justify-between gap-2 rounded-xl border border-indigo-200 bg-indigo-50/70 px-3 py-2 text-left transition hover:border-indigo-400 hover:bg-indigo-50"
-                  >
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-1.5 text-xs font-extrabold text-indigo-900">
-                        <Layers className="h-3.5 w-3.5 shrink-0 text-indigo-600" />
-                        国内の地域差・境界線マップ（全{country.subnational.zones.length}地域・{country.subnational.boundaryLines.length}境界線）
-                      </div>
-                      <p className="mt-0.5 truncate text-[11px] text-indigo-700">
-                        {country.subnational.headline}
-                      </p>
-                    </div>
-                    <span className="shrink-0 rounded-md bg-indigo-600 px-2 py-1 text-[10.5px] font-bold text-white">
-                      地域タブへ
-                    </span>
-                  </button>
-                )}
                 {(country.quickOverview || country.examCheatSheet) && (
-                  <div className="space-y-3 rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/85 via-white to-amber-50/40 p-4 shadow-2xs">
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-bold text-white">
-                        <Sparkles className="h-3 w-3" />
-                        国の概要・重要ポイント
-                      </span>
-                      {allCountries && (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setComparePartnerIso3(null);
-                            setIsCompareOpen(true);
-                          }}
-                          className="inline-flex items-center gap-1 rounded-lg border border-indigo-300 bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-700 transition hover:bg-indigo-50"
-                        >
-                          <GitCompareArrows className="h-3 w-3" />
-                          他国と並べて比較
-                        </button>
-                      )}
+                  <div className="space-y-3 rounded-xl border border-slate-200 bg-white p-4 shadow-2xs">
+                    <div className="text-xs font-bold text-indigo-700">
+                      国の概要・重要ポイント
                     </div>
 
                     <h3 className="text-sm font-extrabold leading-snug text-slate-900 md:text-base">
@@ -833,7 +801,7 @@ export function CountryDetailPanel({
                           {country.examCheatSheet.mustMemorizeStats.map((statText) => (
                             <span
                               key={statText}
-                              className="rounded-md border border-indigo-200/80 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-700"
+                              className="rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-[11px] font-semibold text-slate-700"
                             >
                               {statText}
                             </span>
@@ -842,7 +810,7 @@ export function CountryDetailPanel({
                       )}
 
                     {country.quickOverview?.keyPoints && country.quickOverview.keyPoints.length > 0 && (
-                      <ul className="space-y-1.5 border-t border-indigo-100 pt-2.5">
+                      <ul className="space-y-1.5 border-t border-slate-100 pt-2.5">
                         {country.quickOverview.keyPoints.map((pt) => (
                           <li
                             key={pt}
@@ -956,23 +924,8 @@ export function CountryDetailPanel({
                 {country.examCheatSheet?.commonConfusions &&
                   country.examCheatSheet.commonConfusions.length > 0 && (
                     <div className="space-y-2 rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="text-xs font-extrabold text-slate-800">
-                          類似国・比較対象との相違点
-                        </span>
-                        {allCountries && (
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setComparePartnerIso3(null);
-                              setIsCompareOpen(true);
-                            }}
-                            className="inline-flex items-center gap-1 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-0.5 text-[10.5px] font-bold text-indigo-700 hover:bg-indigo-100"
-                          >
-                            <GitCompareArrows className="h-3 w-3" />
-                            比較画面を開く
-                          </button>
-                        )}
+                      <div className="text-xs font-extrabold text-slate-800">
+                        類似国・比較対象との相違点
                       </div>
                       <div className="grid grid-cols-1 gap-2">
                         {country.examCheatSheet.commonConfusions.map((pair) => (
@@ -1024,9 +977,9 @@ export function CountryDetailPanel({
                   ))}
 
                 {country.specialRegions && country.specialRegions.length > 0 && (
-                  <div className="rounded-xl border border-violet-200 bg-violet-50/50 p-3.5 shadow-2xs">
-                    <div className="mb-2 flex items-center gap-1.5 text-xs font-extrabold text-violet-900">
-                      <Compass className="h-3.5 w-3.5 text-violet-600" />
+                  <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
+                    <div className="mb-2 flex items-center gap-1.5 text-xs font-extrabold text-slate-900">
+                      <Compass className="h-3.5 w-3.5 text-indigo-600" />
                       注目地域・飛び地・特異地形（タップで地図表示）
                     </div>
                     <div className="space-y-2">
@@ -1047,13 +1000,13 @@ export function CountryDetailPanel({
                               iso3: country.iso3,
                             })
                           }
-                          className="w-full rounded-lg border border-violet-200 bg-white p-2.5 text-left transition hover:border-violet-400 hover:bg-violet-50/40"
+                          className="w-full rounded-lg border border-slate-200 bg-slate-50/70 p-2.5 text-left transition hover:border-indigo-300 hover:bg-indigo-50/40"
                         >
                           <div className="flex items-center justify-between gap-2">
-                            <span className="text-xs font-bold text-violet-900">
+                            <span className="text-xs font-bold text-slate-900">
                               {sr.name}
                             </span>
-                            <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-bold text-violet-800">
+                            <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-slate-200/80 px-2 py-0.5 text-[10px] font-bold text-slate-700">
                               <Navigation className="h-2.5 w-2.5" />
                               {sr.tag}
                             </span>
@@ -1255,7 +1208,9 @@ export function CountryDetailPanel({
                 iso3={country.iso3}
                 countryNameJa={country.nameJa}
                 subnational={country.subnational}
+                onAutoFocusPlace={onFocusPlace}
                 onFocusPlace={handlePlaceClick}
+                onClearSubnationalOverlay={onClearSubnationalOverlay ?? NOOP}
               />
             )}
 

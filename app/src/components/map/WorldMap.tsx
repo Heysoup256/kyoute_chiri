@@ -103,8 +103,12 @@ interface HoveredInfo {
   x: number;
   y: number;
   containerWidth: number;
+  containerHeight?: number;
   title: string;
+  badge?: string;
+  colorDot?: string;
   subtitle?: string;
+  description?: string;
 }
 
 const OPENFREEMAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
@@ -165,6 +169,7 @@ const POINT_HIT_LAYERS = [
 ] as const;
 
 const LINE_HIT_LAYERS = [
+  'focus-place-line-dash',
   'focus-place-line',
   'layer-mountain-new',
   'layer-mountain-old',
@@ -174,7 +179,7 @@ const LINE_HIT_LAYERS = [
   'phenom-wind-line',
 ] as const;
 
-const BASE_POLYGON_LAYERS = ['countries-fill', 'phenom-band-fill'] as const;
+const BASE_POLYGON_LAYERS = ['focus-place-fill', 'countries-fill', 'phenom-band-fill'] as const;
 
 function getDynamicHitRadii(zoom: number): { pointR: number; lineR: number } {
   const pointR = Math.round(Math.min(11, Math.max(3, 2.2 + (zoom - 1) * 1.8)));
@@ -488,7 +493,7 @@ function openPopupDom(
 
   if (descText) {
     const desc = document.createElement('p');
-    desc.className = 'leading-relaxed text-slate-600';
+    desc.className = 'leading-relaxed text-slate-600 whitespace-pre-line';
     desc.textContent = descText;
     dom.appendChild(desc);
   }
@@ -1658,12 +1663,22 @@ export function WorldMap({
             subtitle: 'クリックで成因・影響を表示',
           });
         } else if (lid.startsWith('focus-place')) {
+          const p = top.properties as {
+            name?: string;
+            category?: string;
+            summary?: string;
+            detailText?: string;
+            fillColor?: string;
+          };
           setHoveredInfo({
             x: e.point.x,
             y: e.point.y,
             containerWidth: container.clientWidth,
-            title: '選択中の注目地点・地域',
-            subtitle: 'クリックで解説を確認',
+            containerHeight: container.clientHeight,
+            title: p.name || '注目地点・地域',
+            badge: p.category || undefined,
+            colorDot: p.fillColor || undefined,
+            description: p.detailText || p.summary || undefined,
           });
         } else {
           const p = top.properties as Partial<GeoLayerProperties>;
@@ -1793,6 +1808,7 @@ export function WorldMap({
             name?: string;
             category?: string;
             summary?: string;
+            detailText?: string;
             photoUrl?: string;
             photoCaption?: string;
             photoCredit?: string;
@@ -1804,7 +1820,7 @@ export function WorldMap({
             p.category || '注目地点・地域',
             'bg-amber-100 text-amber-900',
             p.name || '注目地域',
-            p.summary,
+            p.detailText || p.summary,
             {
               photo: p.photoUrl ? { url: p.photoUrl, caption: p.photoCaption, credit: p.photoCredit } : undefined,
               onZoomPhoto: onZoomPhotoRef.current,
@@ -2012,8 +2028,9 @@ export function WorldMap({
           type: 'Feature',
           properties: {
             name: sf.label,
-            category: focusedPlace.category,
-            summary: focusedPlace.summary,
+            category: sf.category ?? focusedPlace.category,
+            summary: sf.summary ?? focusedPlace.summary,
+            detailText: sf.detailLines ? sf.detailLines.join('\n') : '',
             fillColor: sf.fillColor,
             lineDash: Boolean(sf.lineDash),
             lineWidth: sf.lineWidth ?? null,
@@ -2108,6 +2125,11 @@ export function WorldMap({
       }
     } else {
       targetLng = visibleWorldLng;
+    }
+
+    if (focusedPlace.skipPopup) {
+      popupRef.current?.remove();
+      return;
     }
 
     const subLegend = focusedPlace.subFeatures?.map((sf) => ({
@@ -2228,15 +2250,47 @@ export function WorldMap({
       {/* ホバーツールチップ（デスクトップ用） */}
       {hoveredInfo && (
         <div
-          className="pointer-events-none absolute z-10 hidden max-w-[270px] rounded-lg border border-slate-200 bg-white/95 px-2.5 py-1.5 shadow-md backdrop-blur-xs md:block"
+          className={`pointer-events-none absolute z-10 hidden rounded-lg border border-slate-200 bg-white/95 px-3 py-2 shadow-md backdrop-blur-xs md:block ${
+            hoveredInfo.description ? 'max-w-[330px]' : 'max-w-[260px]'
+          }`}
           style={{
-            left: Math.min(hoveredInfo.x + 14, hoveredInfo.containerWidth - 280),
-            top: Math.max(hoveredInfo.y - 44, 8),
+            left: Math.max(
+              8,
+              Math.min(
+                hoveredInfo.x + 14,
+                hoveredInfo.containerWidth - (hoveredInfo.description ? 344 : 276),
+              ),
+            ),
+            ...(hoveredInfo.description &&
+            hoveredInfo.containerHeight &&
+            hoveredInfo.y > hoveredInfo.containerHeight * 0.56
+              ? { top: Math.max(8, hoveredInfo.y - 12), transform: 'translateY(-100%)' }
+              : hoveredInfo.description
+                ? { top: Math.max(8, hoveredInfo.y + 14) }
+                : { top: Math.max(8, hoveredInfo.y - 36) }),
           }}
         >
-          <div className="truncate text-xs font-bold text-slate-900">{hoveredInfo.title}</div>
+          <div className="flex items-center gap-1.5">
+            {hoveredInfo.colorDot && (
+              <span
+                className="h-2.5 w-2.5 shrink-0 rounded-full border border-black/15"
+                style={{ backgroundColor: hoveredInfo.colorDot }}
+              />
+            )}
+            <div className="truncate text-xs font-bold text-slate-900">{hoveredInfo.title}</div>
+          </div>
+          {hoveredInfo.badge && (
+            <span className="mt-1 inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600">
+              {hoveredInfo.badge}
+            </span>
+          )}
           {hoveredInfo.subtitle && (
-            <div className="truncate text-[11px] text-slate-600">{hoveredInfo.subtitle}</div>
+            <div className="mt-0.5 truncate text-[11px] text-slate-600">{hoveredInfo.subtitle}</div>
+          )}
+          {hoveredInfo.description && (
+            <div className="mt-1 whitespace-pre-line text-[11px] leading-relaxed text-slate-600">
+              {hoveredInfo.description}
+            </div>
           )}
         </div>
       )}

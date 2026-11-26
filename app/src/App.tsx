@@ -419,6 +419,17 @@ export function App() {
     setFocusedPlace(null);
   }, []);
 
+  const handleClearSubnationalPlace = useCallback(() => {
+    setFocusedPlace((prev) =>
+      prev &&
+      (prev.id.startsWith('subnational-') ||
+        prev.id.startsWith('subline-') ||
+        prev.id.startsWith('subzone-'))
+        ? null
+        : prev,
+    );
+  }, []);
+
   const placeMatcher = useMemo(() => buildPlaceMatcher(placesData), [placesData]);
 
   const selectedCountry = selectedIso3 ? countriesData?.countries[selectedIso3] : undefined;
@@ -752,6 +763,7 @@ export function App() {
               mobileSheetVh={mobileSheetVh}
               onChangeMobileSheetVh={setMobileSheetVh}
               onFocusPlace={handleFocusPlace}
+              onClearSubnationalOverlay={handleClearSubnationalPlace}
               onToggleMark={toggleMark}
               onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
               onClose={() => {

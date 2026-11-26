@@ -1,4 +1,5 @@
-import { Layers, MapPin, Navigation, Sparkles } from 'lucide-react';
+import { MapPin, Navigation } from 'lucide-react';
+import { useEffect } from 'react';
 import type {
   PlaceEntry,
   PlaceSubFeature,
@@ -12,7 +13,9 @@ interface SubnationalRegionTabProps {
   iso3: string;
   countryNameJa: string;
   subnational: SubnationalProfile;
+  onAutoFocusPlace: (place: PlaceEntry) => void;
   onFocusPlace: (place: PlaceEntry) => void;
+  onClearSubnationalOverlay: () => void;
 }
 
 function computeZonesBounds(zones: SubnationalZone[]): [number, number, number, number] | undefined {
@@ -37,46 +40,75 @@ function computeZonesBounds(zones: SubnationalZone[]): [number, number, number, 
   return [minLng, minLat, maxLng, maxLat];
 }
 
+function buildSubnationalFeatures(
+  subnational: SubnationalProfile,
+  emphasizeId?: string,
+): PlaceSubFeature[] {
+  const subFeatures: PlaceSubFeature[] = [];
+  for (const z of subnational.zones) {
+    const hasPoly = Boolean(z.polygon && z.polygon.length >= 4);
+    subFeatures.push({
+      label: z.name,
+      category: z.tag,
+      fillColor: z.color,
+      lineWidth: emphasizeId === z.id ? 3.5 : 1.8,
+      summary: `${z.climateAndSoil} ${z.agriculture}`,
+      detailLines: [
+        `気候・土壌：${z.climateAndSoil}`,
+        `農林水産：${z.agriculture}`,
+        `資源・工業：${z.industryAndResources}`,
+        `都市・文化：${z.citiesAndCulture}`,
+      ],
+      geometry: hasPoly
+        ? {
+            type: 'Polygon',
+            coordinates: [z.polygon!],
+          }
+        : {
+            type: 'Point',
+            coordinates: [z.lng, z.lat],
+          },
+    });
+  }
+  for (const line of subnational.boundaryLines) {
+    if (line.coordinates.length >= 2) {
+      subFeatures.push({
+        label: line.name,
+        category: `国内境界線（${line.criterion}）`,
+        fillColor: line.color,
+        lineDash: true,
+        lineWidth: emphasizeId === line.id ? 5.5 : 4,
+        summary: `${line.sideALabel} ／ ${line.sideBLabel}`,
+        detailLines: [
+          `基準：${line.criterion}`,
+          line.sideALabel,
+          line.sideBLabel,
+          `要点：${line.examPoint}`,
+        ],
+        geometry: {
+          type: 'LineString',
+          coordinates: line.coordinates,
+        },
+      });
+    }
+  }
+  return subFeatures;
+}
+
 export function SubnationalRegionTab({
   iso3,
   countryNameJa,
   subnational,
+  onAutoFocusPlace,
   onFocusPlace,
+  onClearSubnationalOverlay,
 }: SubnationalRegionTabProps) {
   const shortName = countryNameJa.split('（')[0];
 
-  const handleOverlayAll = () => {
-    const subFeatures: PlaceSubFeature[] = [];
-    for (const z of subnational.zones) {
-      if (z.polygon && z.polygon.length >= 4) {
-        subFeatures.push({
-          label: z.name,
-          fillColor: z.color,
-          lineWidth: 2,
-          geometry: {
-            type: 'Polygon',
-            coordinates: [z.polygon],
-          },
-        });
-      }
-    }
-    for (const line of subnational.boundaryLines) {
-      if (line.coordinates.length >= 2) {
-        subFeatures.push({
-          label: `境界: ${line.name}`,
-          fillColor: line.color,
-          lineDash: true,
-          lineWidth: 4.5,
-          geometry: {
-            type: 'LineString',
-            coordinates: line.coordinates,
-          },
-        });
-      }
-    }
-    const bounds = computeZonesBounds(subnational.zones);
+  // 国内地域タブが開かれている間は地域区分ポリゴンと主要境界線を地図上に常時表示し、離れたら解除
+  useEffect(() => {
     const first = subnational.zones[0];
-    onFocusPlace({
+    onAutoFocusPlace({
       id: `subnational-all-${iso3}`,
       name: `${shortName}：国内地域区分＆境界線マップ`,
       aliases: [],
@@ -85,11 +117,15 @@ export function SubnationalRegionTab({
       lng: first?.lng ?? 0,
       lat: first?.lat ?? 0,
       zoom: first?.zoom ?? 4.5,
-      bounds,
+      bounds: computeZonesBounds(subnational.zones),
       iso3,
-      subFeatures,
+      subFeatures: buildSubnationalFeatures(subnational),
+      skipPopup: true,
     });
-  };
+    return () => {
+      onClearSubnationalOverlay();
+    };
+  }, [iso3, shortName, subnational, onAutoFocusPlace, onClearSubnationalOverlay]);
 
   const handleFocusLine = (line: SubnationalBoundaryLine) => {
     const mid = line.coordinates[Math.floor(line.coordinates.length / 2)] ?? [0, 0];
@@ -100,8 +136,8 @@ export function SubnationalRegionTab({
       id: `subline-${iso3}-${line.id}`,
       name: `${shortName}・${line.name}`,
       aliases: [],
-      category: '国内重要境界線',
-      summary: `${line.criterion} ／ ${line.examPoint}`,
+      category: '国内境界線',
+      summary: `${line.criterion}\n${line.examPoint}`,
       lng: mid[0],
       lat: mid[1],
       zoom: 4.8,
@@ -112,81 +148,46 @@ export function SubnationalRegionTab({
         Math.max(...lats) + pad,
       ],
       iso3,
-      subFeatures: [
-        {
-          label: line.name,
-          fillColor: line.color,
-          lineDash: true,
-          lineWidth: 5,
-          geometry: {
-            type: 'LineString',
-            coordinates: line.coordinates,
-          },
-        },
-      ],
+      subFeatures: buildSubnationalFeatures(subnational, line.id),
     });
   };
 
   const handleFocusZone = (zone: SubnationalZone) => {
-    const subFeatures: PlaceSubFeature[] =
-      zone.polygon && zone.polygon.length >= 4
-        ? [
-            {
-              label: zone.name,
-              fillColor: zone.color,
-              lineWidth: 3,
-              geometry: {
-                type: 'Polygon',
-                coordinates: [zone.polygon],
-              },
-            },
-          ]
-        : [];
     onFocusPlace({
       id: `subzone-${iso3}-${zone.id}`,
       name: `${shortName}：${zone.name}`,
       aliases: [],
       category: zone.tag,
-      summary: `${zone.climateAndSoil} ${zone.agriculture}`,
+      summary: `気候・土壌：${zone.climateAndSoil}\n農林水産：${zone.agriculture}\n資源・工業：${zone.industryAndResources}`,
       lng: zone.lng,
       lat: zone.lat,
       zoom: zone.zoom,
       bounds: zone.bounds,
       iso3,
-      subFeatures,
+      subFeatures: buildSubnationalFeatures(subnational, zone.id),
     });
   };
 
   return (
     <div className="space-y-4">
-      {/* ヘッダー要約＋一括マップ重ね合わせボタン */}
-      <div className="rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/80 via-white to-amber-50/40 p-3.5 shadow-2xs">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <span className="inline-flex items-center gap-1 rounded-full bg-indigo-100 px-2.5 py-0.5 text-[11px] font-bold text-indigo-800">
-            <Sparkles className="h-3 w-3" />
-            国内の地域差・境界線マスター
-          </span>
-          <button
-            type="button"
-            onClick={handleOverlayAll}
-            className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-bold text-white shadow-xs transition hover:bg-indigo-700"
-          >
-            <Layers className="h-3.5 w-3.5" />
-            地図に境界線＆地域区分を表示
-          </button>
-        </div>
-        <h3 className="mt-2 text-sm font-extrabold text-slate-900">{subnational.headline}</h3>
+      {/* 国内の地域差・境界線 サマリー */}
+      <div className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
+        <div className="text-[11px] font-bold text-indigo-700">国内の地域差・境界線</div>
+        <h3 className="mt-1 text-sm font-extrabold text-slate-900">{subnational.headline}</h3>
         <p className="mt-1.5 text-xs leading-relaxed text-slate-700">{subnational.summary}</p>
+        <p className="mt-2 border-t border-slate-100 pt-2 text-[11px] text-slate-500">
+          地図上の地域・境界線にカーソルを合わせると、詳しい解説を表示します。
+        </p>
       </div>
 
       {/* 専用SVG模式図（主要国は断面・帯図、他は境界対比カード） */}
       <SubnationalDiagram countryNameJa={shortName} subnational={subnational} />
 
-      {/* 境界線詳細（地図表示ボタン付き） */}
+      {/* 境界線詳細 */}
       {subnational.boundaryLines.length > 0 && (
         <section className="space-y-2">
-          <h4 className="text-xs font-extrabold tracking-wide text-slate-600 uppercase">
-            必出の国内境界線・分水界（{subnational.boundaryLines.length}本）
+          <h4 className="text-xs font-extrabold tracking-wide text-slate-600">
+            国内の主要境界線・分水界（{subnational.boundaryLines.length}本）
           </h4>
           {subnational.boundaryLines.map((line) => (
             <div
@@ -204,10 +205,10 @@ export function SubnationalRegionTab({
                 <button
                   type="button"
                   onClick={() => handleFocusLine(line)}
-                  className="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-[11px] font-bold text-indigo-700 hover:bg-indigo-50"
+                  className="inline-flex shrink-0 items-center gap-1 rounded-md border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-600 transition hover:border-indigo-300 hover:bg-indigo-50/50 hover:text-indigo-700"
                 >
                   <Navigation className="h-3 w-3" />
-                  地図に線を引く
+                  地図で注目
                 </button>
               </div>
               <div className="mt-1 text-[11px] font-semibold text-slate-500">
@@ -217,8 +218,8 @@ export function SubnationalRegionTab({
                 <div className="rounded-lg bg-slate-50 p-2 text-slate-700">{line.sideALabel}</div>
                 <div className="rounded-lg bg-slate-50 p-2 text-slate-700">{line.sideBLabel}</div>
               </div>
-              <div className="mt-2 rounded-lg border border-amber-200 bg-amber-50/70 px-2.5 py-1.5 text-[11px] leading-snug text-amber-950">
-                <strong>共テの急所：</strong>
+              <div className="mt-2 rounded-lg border border-slate-200 border-l-2 border-l-amber-500 bg-slate-50/80 px-2.5 py-1.5 text-[11px] leading-snug text-slate-700">
+                <strong className="text-slate-900">要点：</strong>
                 {line.examPoint}
               </div>
             </div>
@@ -264,7 +265,7 @@ export function SubnationalRegionTab({
 
       {/* 各ゾーン詳細カード */}
       <section className="space-y-2.5">
-        <h4 className="text-xs font-extrabold tracking-wide text-slate-600 uppercase">
+        <h4 className="text-xs font-extrabold tracking-wide text-slate-600">
           国内地域ブロック別の詳細分布（{subnational.zones.length}地域）
         </h4>
         {subnational.zones.map((zone) => (
@@ -290,10 +291,10 @@ export function SubnationalRegionTab({
               <button
                 type="button"
                 onClick={() => handleFocusZone(zone)}
-                className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-2.5 py-1 text-[11px] font-bold text-indigo-700 transition hover:bg-indigo-100"
+                className="inline-flex shrink-0 items-center gap-1 rounded-md border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-600 transition hover:border-indigo-300 hover:bg-indigo-50/50 hover:text-indigo-700"
               >
                 <MapPin className="h-3 w-3" />
-                地図で地域を表示
+                地図で注目
               </button>
             </div>
 
@@ -316,8 +317,8 @@ export function SubnationalRegionTab({
               </div>
             </div>
 
-            <div className="mt-2 rounded-lg border border-rose-200 bg-rose-50/70 px-2.5 py-1.5 text-[11px] leading-snug text-rose-900">
-              <strong>判別ポイント・ひっかけ注意：</strong>
+            <div className="mt-2 rounded-lg border border-slate-200 border-l-2 border-l-rose-400 bg-slate-50/80 px-2.5 py-1.5 text-[11px] leading-snug text-slate-700">
+              <strong className="text-slate-900">判別ポイント：</strong>
               {zone.examTrap}
             </div>
           </div>
