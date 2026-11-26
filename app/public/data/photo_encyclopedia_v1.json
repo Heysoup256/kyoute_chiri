@@ -1,0 +1,1132 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-26",
+  "entries": [
+    {
+      "id": "enc_ger",
+      "category": "housing",
+      "title": "移動式住居『ゲル』と草原の遊牧",
+      "locationLabel": "モンゴル草原地帯",
+      "koppenCodes": [
+        "BS",
+        "Dw"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/SK_yurt_camp_%281_of_1%29-8.jpg/960px-SK_yurt_camp_%281_of_1%29-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Yurt)",
+      "visualClues": [
+        "木枠と羊毛フェルトで組み立てられ、分解・運搬が1〜2時間で可能",
+        "出入口が南向きで周囲に柵のない広大なステップ草原が広がる",
+        "頂部の煙出し（トーノ）と太陽光パネルが併用される"
+      ],
+      "inferenceSummary": "年降水200〜300mm前後のステップ気候(BS)では定住農耕が困難なため、草を追って五畜（羊・ヤギ・牛・馬・ラクダ）を放牧する移動生活に適応した構造。",
+      "examPoint": "近年は冬の雪害（ゾド）で家畜を失った遊牧民がウランバートル郊外へ移住し、ゲル地区の石炭暖房による大気汚染が問題化。",
+      "relatedIso3s": [
+        "MNG",
+        "KGZ",
+        "KAZ"
+      ],
+      "lat": 47.9,
+      "lng": 106.9,
+      "zoom": 4.5
+    },
+    {
+      "id": "enc_stilt",
+      "category": "housing",
+      "title": "熱帯湿地・河川沿いの高床式住居",
+      "locationLabel": "東南アジア（マレーシア・インドネシア・ブルネイ等）",
+      "koppenCodes": [
+        "Af",
+        "Am"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Inle-Yawnghwe.jpg/960px-Inle-Yawnghwe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Stilt house)",
+      "visualClues": [
+        "床面が地面や水面より高く柱で持ち上げられている",
+        "大きな傾斜屋根と開放的な縁側・窓を持つ木造建築",
+        "熱帯雨林・モンスーンの河川や海岸湿地（カンポン・アエル等）に立地"
+      ],
+      "inferenceSummary": "高温多湿(Af/Am)環境で地面からの湿気・害虫・ヘビや洪水浸水を防ぎ、床下からの通風によって涼しさを確保するための気候適応型住居。",
+      "examPoint": "冷帯永久凍土地域（シベリア・アラスカ）の高床建築は「暖房熱で永久凍土を溶かし建物が傾くのを防ぐ目的」であり、熱帯の高床と目的を明確に区別する。",
+      "relatedIso3s": [
+        "BRN",
+        "MYS",
+        "IDN"
+      ],
+      "lat": 4.88,
+      "lng": 114.94,
+      "zoom": 5.5
+    },
+    {
+      "id": "enc_med_white",
+      "category": "housing",
+      "title": "地中海世界の白壁・小窓・石造住居",
+      "locationLabel": "ギリシャ（サントリーニ島）・南イタリア・アンダルシア",
+      "koppenCodes": [
+        "Cs"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg/960px-15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: La Rambla, Barcelona）",
+      "visualClues": [
+        "石灰漆喰で塗られた眩しい白壁と、面積を絞った小さな窓",
+        "木造が少なく石材や煉瓦を積み上げた厚い壁面と日陰の狭い路地",
+        "背後に乾いた岩山や紺碧の地中海が広がる景観"
+      ],
+      "inferenceSummary": "夏の強い日差し（亜熱帯高圧帯下）を白壁で反射し、厚い石壁と小窓によって昼の熱気流入を抑える地中海性気候(Cs)の建築。",
+      "examPoint": "「乾燥した夏に木材が乏しいため石造・日干し煉瓦が主体＋直射日光遮断の白壁小窓」という点をCs〜BWの共通特徴として押さえる。",
+      "relatedIso3s": [
+        "GRC",
+        "ESP",
+        "ITA"
+      ],
+      "lat": 36.4,
+      "lng": 25.4,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_mud_flat",
+      "category": "housing",
+      "title": "乾燥地の日干し煉瓦（アドベ）と陸屋根住居",
+      "locationLabel": "モロッコ（アイット・ベン・ハドゥ）・イエメン・マリ",
+      "koppenCodes": [
+        "BW",
+        "BS"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg/960px-Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Aït Benhaddou)",
+      "visualClues": [
+        "森林が少ないため粘土・泥を固めた日干し煉瓦と赤土色の外壁",
+        "降水が極めて少ないため雨水勾配が不要な平屋根（陸屋根）",
+        "昼夜の激しい日較差に耐える厚い壁と極小の窓"
+      ],
+      "inferenceSummary": "砂漠・半乾燥(BW/BS)で木材が乏しく粘土資源が豊富な環境に適応。平屋根は夜間に涼む場所やデーツ等を天日乾燥させる作業場にも使われる。",
+      "examPoint": "マリのジェンネ泥モスクは年1回住民総出で泥を塗り直し、イエメンのシバームでは泥レンガ高層都市が形成された。",
+      "relatedIso3s": [
+        "MAR",
+        "MLI",
+        "YEM"
+      ],
+      "lat": 31.05,
+      "lng": -7.13,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_log_cabin",
+      "category": "housing",
+      "title": "亜寒帯針葉樹林（タイガ）の丸太組木造住宅",
+      "locationLabel": "ロシア・スカンジナビア・カナダ森林帯",
+      "koppenCodes": [
+        "Df",
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Norskfolkemuseum_1.jpg/960px-Norskfolkemuseum_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Log cabin)",
+      "visualClues": [
+        "加工しやすいマツ・トウヒなどまっすぐな針葉樹の丸太を横に積んだ壁面",
+        "窓ガラスは二重〜三重で小さく、暖炉・ペチカの煙突が目立つ",
+        "急勾配の屋根により冬の積雪加重を滑り落とす形状"
+      ],
+      "inferenceSummary": "冷帯気候(Df)の豊富なタイガ（針葉樹林）の木材をそのまま断熱壁材に転用し、冬の零下数十度と積雪に耐える伝統木造構造。",
+      "examPoint": "東シベリアなど永久凍土帯では凍土融解沈下を防ぐため丸太・コンクリート杭による高床化が必須となる。",
+      "relatedIso3s": [
+        "RUS",
+        "NOR",
+        "CAN"
+      ],
+      "lat": 60.4,
+      "lng": 5.3,
+      "zoom": 5.0
+    },
+    {
+      "id": "enc_yaodong",
+      "category": "housing",
+      "title": "黄土高原の伝統横穴住居『ヤオトン（窯洞）』",
+      "locationLabel": "中国・黄土高原（陝西省・山西省周辺）",
+      "koppenCodes": [
+        "BS",
+        "Dw"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cave_houses_shanxi_6.jpg/960px-Cave_houses_shanxi_6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Yaodong)",
+      "visualClues": [
+        "黄色味を帯びた垂直に切り立つ崖面にアーチ型の入口が並ぶ",
+        "レンガをほとんど使わず分厚い土壌崖の内部をくり抜いた構造",
+        "上部の段々畑の法面に掘られ、屋根が畑として活用されているケースも多い"
+      ],
+      "inferenceSummary": "風積土である黄土（レス）は粒子が細かく垂直に切っても崩れにくい性質と高い断熱性を持つため、木材乏しい半乾燥高原で夏涼しく冬暖かい横穴住居が発達。",
+      "examPoint": "黄土層の侵食が進みやすいためガリー侵食防止の植林や現代的集合住宅への移住が進むが、中国地理の代表例として定番。",
+      "relatedIso3s": [
+        "CHN"
+      ],
+      "lat": 36.6,
+      "lng": 109.5,
+      "zoom": 5.5
+    },
+    {
+      "id": "enc_gassho",
+      "category": "housing",
+      "title": "豪雪地帯に適応した合掌造り急勾配屋根",
+      "locationLabel": "日本・岐阜県白川郷／富山県五箇山",
+      "koppenCodes": [
+        "Df",
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg/960px-Ogi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Historic Villages of Shirakawa-gō and Gokayama)",
+      "visualClues": [
+        "約45〜60度の極めて急傾斜を持つ茅葺（かやぶき）切妻屋根",
+        "雪を落としやすく、屋根裏空間が3〜4層に広く取られている",
+        "冬季の寒冷な季節風（北西風）を受け流す向きに統一配置"
+      ],
+      "inferenceSummary": "日本海側特有の冬の季節風による数メートル級の世界屈指の豪雪荷重に耐えつつ、広い屋根裏を養蚕（副業）の場として活用した複合的適応。",
+      "examPoint": "急勾配・軒下の雁木（がんぎ）など、日本の日本海側多雪地域に共通する積雪適応景観と関連づける。",
+      "relatedIso3s": [
+        "JPN"
+      ],
+      "lat": 36.26,
+      "lng": 136.91,
+      "zoom": 7.0
+    },
+    {
+      "id": "enc_permafrost_stilt",
+      "category": "housing",
+      "title": "永久凍土帯の断熱高床アパート・高架パイプライン",
+      "locationLabel": "ロシア（ヤクーツク）・アメリカ（アラスカ）",
+      "koppenCodes": [
+        "Df",
+        "ET"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Yakutsk_-_190228_DSC_5379.jpg/960px-Yakutsk_-_190228_DSC_5379.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Yakutsk)",
+      "visualClues": [
+        "コンクリート杭を地中に打ち込み1階床が地面から浮いている",
+        "給湯・暖房・水道管が地下埋設されず地上高架や断熱ボックスで通される",
+        "建物の外壁が鮮やかな原色で塗られる（長期間雪と曇天の中で視認性向上）"
+      ],
+      "inferenceSummary": "永久凍土(活性層下の氷層)に建物の暖房熱が伝わると地盤が溶けて泥濘化し傾倒するため、床下に冷たい外気を流して凍土を凍結維持する必要がある。",
+      "examPoint": "アラスカ縦断パイプライン等も凍土融解防止のために高架構造と冷却放熱フィンを備える。",
+      "relatedIso3s": [
+        "RUS",
+        "USA",
+        "CAN"
+      ],
+      "lat": 62.03,
+      "lng": 129.73,
+      "zoom": 5.0
+    },
+    {
+      "id": "enc_center_pivot",
+      "category": "agriculture",
+      "title": "乾燥・半乾燥帯の円形灌漑『センターピボット』",
+      "locationLabel": "アメリカ西部（オガララ帯水層）・サウジアラビア",
+      "koppenCodes": [
+        "BS",
+        "BW"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Crops_Kansas_AST_20010624.jpg/960px-Crops_Kansas_AST_20010624.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Center-pivot irrigation)",
+      "visualClues": [
+        "幾何学的な正円形の緑地が乾燥茶色大地に整然と並ぶ衛星・航空写真",
+        "半径400〜800mほどの円中心からスプリンクラー管が回転して散水",
+        "四隅は未灌漑で丸く切り抜かれたような農地境界線"
+      ],
+      "inferenceSummary": "西経100度以西グレートプレーンズの半乾燥ステップ(BS)等で、地下帯水層（オガララ等）の地下水を井戸中心から自走式スプリンクラーで効率散布する企業的大規模灌漑。",
+      "examPoint": "サウジアラビア等では化石地下水枯渇を悟り小麦国内自給を停止した点や、米国のオガララ帯水層水位低下問題が重要ポイント。",
+      "relatedIso3s": [
+        "USA",
+        "SAU",
+        "LBY"
+      ],
+      "lat": 38.5,
+      "lng": -100.8,
+      "zoom": 5.2
+    },
+    {
+      "id": "enc_polder",
+      "category": "agriculture",
+      "title": "干拓低地『ポルダー』の規則正しい水路網と酪農・施設園芸",
+      "locationLabel": "オランダ（北ホラント・フレヴォラント等）",
+      "koppenCodes": [
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Flevopolder_Larserbos.jpg/960px-Flevopolder_Larserbos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Polder)",
+      "visualClues": [
+        "海面より低い平坦な緑の牧草地を囲む堤防と格子状の排水路",
+        "歴史的な風車（現代は電動ポンプ）で低地の水を一段高い運河へ汲み上げ",
+        "細長い短冊状の農地区画や隣接する大型ガラス温室群"
+      ],
+      "inferenceSummary": "ライン＝マース・デルタで「海を埋め立てて排水」し造った干拓地（ポルダー）。肥沃牧草地で酪農（チーズ等）を行い、都市近郊・施設園芸と合わせて世界2位級の農産輸出を実現。",
+      "examPoint": "オランダのデルタ計画・マエスラント可動堰、日本の八郎潟・児島湾干拓など干拓地の土地利用図問題と連結。",
+      "relatedIso3s": [
+        "NLD",
+        "JPN"
+      ],
+      "lat": 52.5,
+      "lng": 5.4,
+      "zoom": 6.2
+    },
+    {
+      "id": "enc_rice_terraces",
+      "category": "agriculture",
+      "title": "モンスーンアジア急峻山地の『棚田（ライステラス）』",
+      "locationLabel": "フィリピン（バナウエ）・中国雲南省元陽・インドネシア（バリ）",
+      "koppenCodes": [
+        "Am",
+        "Aw",
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Banaue-terrace.JPG/960px-Banaue-terrace.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Banaue Rice Terraces)",
+      "visualClues": [
+        "山の等高線に沿って何十〜何百段も細かな水田の畦（あぜ）が階段状に連なる",
+        "山の上部森林から引いた農業用水が上段から下段へと順番に流下",
+        "手作業・水牛耕作中心で大型機械が入れない狭小・急斜面の集約的利用"
+      ],
+      "inferenceSummary": "夏に集中する多雨モンスーンと急峻な地形の制約下で、限られた可耕地を最大化し保水・洪水調節・土壌流出防止を兼ね備えた集約的水稲農業の結晶。",
+      "examPoint": "日本の棚田（千枚田）や中国南部・ジャワ・フィリピン・マダガスカル等の水稲文化と共通する労働集約型土地利用。",
+      "relatedIso3s": [
+        "PHL",
+        "CHN",
+        "IDN",
+        "JPN"
+      ],
+      "lat": 16.92,
+      "lng": 121.06,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_qanat_oasis",
+      "category": "agriculture",
+      "title": "乾燥砂漠の山麓地下水路『カナート』とオアシス農園",
+      "locationLabel": "イラン・オマーン（アフラジ）・モロッコ（フォガラ）",
+      "koppenCodes": [
+        "BW"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Ghasabe_Qanats_of_Gonabad2.jpg/960px-Ghasabe_Qanats_of_Gonabad2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Qanat)",
+      "visualClues": [
+        "乾燥した荒地の表面に一定間隔で一直線に並ぶ縦穴（掘り出し土のリング群）",
+        "山脈の麓からオアシスの緑のナツメヤシ林・集落へ向かって線が伸びる",
+        "蒸発を避ける地下横穴水路のため地表に川が見えないのに緑地が出現"
+      ],
+      "inferenceSummary": "降水量200mm未満の極乾燥砂漠(BW)で、山麓に降ったわずかな雪解け水を地表水路にせず地下数km〜数十kmへ自然勾配で導水する伝統的省蒸発灌漑。",
+      "examPoint": "イラン（カナート）、アフガン（カレーズ）、北アフリカ（フォガラ）、アラビア（アフラジ）の地域呼称違いを整理すること。",
+      "relatedIso3s": [
+        "IRN",
+        "AFG",
+        "MAR",
+        "OMN"
+      ],
+      "lat": 31.9,
+      "lng": 54.35,
+      "zoom": 5.5
+    },
+    {
+      "id": "enc_almeria_greenhouse",
+      "category": "agriculture",
+      "title": "南東スペイン『プラスチックの海』大規模施設園芸",
+      "locationLabel": "スペイン（アルメリア県）",
+      "koppenCodes": [
+        "BS",
+        "Cs"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Olivesfromjordan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons（出典: Olive）",
+      "visualClues": [
+        "海岸から山麓にかけて白いビニールハウス（温室）が途切れなく地表を覆い尽くす",
+        "衛星写真でも周囲の茶色い乾燥地と明確に区別できる白い反射帯",
+        "内部では点滴灌漑チューブにより水・肥料が根元に最小限供給"
+      ],
+      "inferenceSummary": "欧州で最も乾燥し日照時間に恵まれる南東スペインで、点滴灌漑とビニール被覆により「冬の北欧・西欧向け」のトマト・パプリカ・キュウリを年中促成輸出。",
+      "examPoint": "モロッコ人・サブサハラ人等の外国人農業労働者依存や地下水の過剰汲み上げ・塩水侵入が背景の社会地理課題。",
+      "relatedIso3s": [
+        "ESP",
+        "MAR",
+        "NLD"
+      ],
+      "lat": 36.77,
+      "lng": -2.76,
+      "zoom": 7.0
+    },
+    {
+      "id": "enc_med_olive",
+      "category": "agriculture",
+      "title": "地中海性農業のオリーブ・ブドウ段々畑",
+      "locationLabel": "スペイン（アンダルシア）・イタリア・ギリシャ",
+      "koppenCodes": [
+        "Cs"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Olivesfromjordan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Olive)",
+      "visualClues": [
+        "乾燥した石灰岩質（テラロッサ等）の丘陵に規則正しい間隔で植わる銀緑色の常緑樹",
+        "下草が少なく樹間を広く取って根の水分競合を抑えている景観",
+        "灌漑パイプなしで育つ耐乾性の高い樹木農業"
+      ],
+      "inferenceSummary": "夏に亜熱帯高圧帯に入り極端に雨が少なくなるCs気候では浅根の牧草が枯れるため、深く根を張り厚い葉（クチクラ層）で蒸散を抑えるオリーブ・コルク・ブドウが適応。",
+      "examPoint": "オリーブオイル生産世界1位はスペイン、2位イタリア。冬の降雨（偏西風）時に保水し夏の日照で糖度・油分を高める。",
+      "relatedIso3s": [
+        "ESP",
+        "ITA",
+        "GRC"
+      ],
+      "lat": 37.77,
+      "lng": -3.79,
+      "zoom": 6.2
+    },
+    {
+      "id": "enc_alps_transhumance",
+      "category": "agriculture",
+      "title": "アルプス高地の夏放牧『移牧（アルプ農業）』と酪農",
+      "locationLabel": "スイス・オーストリア（チロル等）",
+      "koppenCodes": [
+        "Cfb",
+        "ET"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Die_Alpen_um_Tierfehd.JPG/960px-Die_Alpen_um_Tierfehd.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Alpine transhumance)",
+      "visualClues": [
+        "氷河に削られた急峻なU字谷の崖上（肩の緩斜面）に広がる緑の牧草地",
+        "夏季にカウベルを付けた乳牛の群れと、木造の季節滞在用山小屋（シャレー）",
+        "谷底では冬の飼料用干し草の刈り取りや小集落の集約畑作が行われる"
+      ],
+      "inferenceSummary": "高緯度・高標高山岳の急峻斜面は穀物耕作に不向きだが夏のみ雪が解けて良質な高山草地が現れるため、季節移動してチーズ等の長期保存乳製品へ加工する。",
+      "examPoint": "夏＝高地アルプ草地、冬＝谷底牛舎（干し草）という「垂直移動」。平坦乾燥帯の水平移動の「遊牧」との対比が定番。",
+      "relatedIso3s": [
+        "CHE",
+        "AUT",
+        "ITA"
+      ],
+      "lat": 46.58,
+      "lng": 7.91,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_cerrado_soy",
+      "category": "agriculture",
+      "title": "サバナ草原『セラード』の大型機械化大豆・綿花畑",
+      "locationLabel": "ブラジル中西部（マットグロッソ州等）",
+      "koppenCodes": [
+        "Aw"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Morro_cabeludo_-_Parque_dos_Pireneus_-_Piren%C3%B3polis_-_Goi%C3%A1s_01.jpg/960px-Morro_cabeludo_-_Parque_dos_Pireneus_-_Piren%C3%B3polis_-_Goi%C3%A1s_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Cerrado)",
+      "visualClues": [
+        "地平線まで見渡す限り平坦または緩やかな波状台地に巨大な直線の農地区画",
+        "大型トラクター・コンバイン何台もが隊列を組んで同時収穫・播種する風景",
+        "乾季・雨季のある熱帯疎林と強酸性赤土を改良した大規模企業的畑作"
+      ],
+      "inferenceSummary": "かつて農業不毛とされたサバナ(Aw)酸性土壌を日本の国際協力（石灰によるpH中和と耐酸性品種改良）で克服し、世界最大の大豆輸出地帯へ転じた。",
+      "examPoint": "中国での豚肉消費増→飼料用大豆の大量輸入という現代世界食料フローの起点。アマゾン南縁伐採問題とも関わる。",
+      "relatedIso3s": [
+        "BRA",
+        "CHN",
+        "USA"
+      ],
+      "lat": -13.0,
+      "lng": -56.0,
+      "zoom": 5.0
+    },
+    {
+      "id": "enc_tea_plantation",
+      "category": "agriculture",
+      "title": "熱帯・亜熱帯高地の『プランテーション茶園』",
+      "locationLabel": "スリランカ（ヌワラエリヤ）・ケニア高原・インド（ダージリン）",
+      "koppenCodes": [
+        "Cw",
+        "Cfb",
+        "Am"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/NuwaraEliya_from_top.jpg/960px-NuwaraEliya_from_top.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Nuwara Eliya)",
+      "visualClues": [
+        "霧が立ち込めやすい緩やかな山麓斜面に、腰の高さで均一に刈り揃えられた濃緑の茶樹帯",
+        "背の高い日陰樹（シェードツリー）が一定間隔で点在する風景",
+        "茶葉を摘む女性労働者とイギリス植民地様式の茶工場（ファクトリー）"
+      ],
+      "inferenceSummary": "茶樹は水はけの良い酸性傾斜地・多雨・霧（紫外線緩和と適度な冷涼さ）を好むため、モンスーン山麓や赤道高地（標高1,500〜2,000m）にプランテーションが成立。",
+      "examPoint": "インド・中国は国内消費も大きいが、ケニア（世界輸出1位級）とスリランカは輸出特化。旧英領のタミル人移住史とも関連。",
+      "relatedIso3s": [
+        "LKA",
+        "KEN",
+        "IND"
+      ],
+      "lat": 6.97,
+      "lng": 80.78,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_palm_oil",
+      "category": "agriculture",
+      "title": "熱帯低地『アブラヤシ（パーム油）』大規模単作園と泥炭湿地開発",
+      "locationLabel": "インドネシア（スマトラ・カリマンタン）・マレーシア",
+      "koppenCodes": [
+        "Af"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Elaeis_guineensis0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Elaeis)",
+      "visualClues": [
+        "扇状の羽状複葉を持つヤシの樹木が格子状に何キロも連続し単一樹種で覆われる",
+        "密生した熱帯雨林（生物多様性高い多層林）が切り開かれた直後の焼畑・排水溝と隣接",
+        "幹の根元に密集した赤いパーム果房と工場へ運ぶトロッコ・トラック"
+      ],
+      "inferenceSummary": "年間降水2,000mm超・高温の赤道低地(Af)において他の油糧作物（大豆等）の数倍〜10倍近い面積当たり搾油効率を持つため東南アジア2国で世界約85%を生産。",
+      "examPoint": "食用加工食品・洗剤・バイオ燃料として世界中で消費される裏で、泥炭湿地林伐採によるヘイズ（煙害）と莫大なCO2排出が課題。",
+      "relatedIso3s": [
+        "IDN",
+        "MYS"
+      ],
+      "lat": 1.5,
+      "lng": 102.0,
+      "zoom": 5.2
+    },
+    {
+      "id": "enc_reindeer_nomad",
+      "category": "agriculture",
+      "title": "北極圏ツンドラのトナカイ遊牧（サーミ人・ネネツ人）",
+      "locationLabel": "北欧北部（ラップランド）・ロシア北極圏",
+      "koppenCodes": [
+        "ET",
+        "Df"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg/960px-Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Reindeer)",
+      "visualClues": [
+        "地衣類・コケ（ハナゴケ）が雪下から覗く樹木のない開けた極地ツンドラ草原",
+        "数百頭ものトナカイの群れとスノーモービル・防寒皮衣を纏う遊牧民",
+        "森林限界より北側の寒冷平原と夏季の浅い湿地"
+      ],
+      "inferenceSummary": "最暖月平均気温10℃未満のツンドラ(ET)では穀物・森林が育たないため、冬は針葉樹林帯縁辺へ南下し夏は蚊を避けて海岸や高地へ移動するトナカイ放牧が適応。",
+      "examPoint": "伝統的放牧に加え現在はスノーモービルやGPSを用い定住化・観光資源化が進んでいる。",
+      "relatedIso3s": [
+        "NOR",
+        "SWE",
+        "FIN",
+        "RUS"
+      ],
+      "lat": 69.0,
+      "lng": 23.0,
+      "zoom": 4.8
+    },
+    {
+      "id": "enc_fjord",
+      "category": "landform",
+      "title": "氷食谷が沈水したU字型断崖湾『フィヨルド』",
+      "locationLabel": "ノルウェー西岸・チリ南部・NZ南島ミルフォード",
+      "koppenCodes": [
+        "Cfb",
+        "ET"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Sognefjord%2C_Norway.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Sognefjord)",
+      "visualClues": [
+        "海面から標高1,000m級の急峻な岩壁がほぼ垂直に立ち上がるU字谷断面",
+        "屈曲しつつも狭く奥行きが極めて深い静穏な水路（水深数百〜1,300m）",
+        "崖上から流れ落ちる無数の滝と、暖流のおかげで冬も凍結しない湾内"
+      ],
+      "inferenceSummary": "最終氷期にスカンジナビア氷床などの巨大な山岳・大陸氷河が基盤岩をU字状に深く削り取り、後氷期の海面上昇（海進）によって海水が浸入した沈水氷食谷。",
+      "examPoint": "リアス海岸（河川のV字谷が沈水＝三陸等）との「U字崖 vs V字谷・水深差」と、寒流ではなく「暖流北大西洋海流で不凍」である点の対比。",
+      "relatedIso3s": [
+        "NOR",
+        "NZL",
+        "CHL"
+      ],
+      "lat": 61.1,
+      "lng": 6.2,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_rias",
+      "category": "landform",
+      "title": "V字谷の沈水による鋸歯状『リアス海岸』と養殖筏",
+      "locationLabel": "日本（三陸・志摩）・スペイン北西ガリシア",
+      "koppenCodes": [
+        "Cfa",
+        "Cfb"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Jyoudogahama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons（出典: Sanriku Coast）",
+      "visualClues": [
+        "複雑に出入りした細長い岬と湾が連続し、山頂まで緑の山地が海岸に迫る",
+        "穏やかな内湾の海面に整然と浮かぶカキ・ホタテ・ノリ・真珠等の養殖いかだ",
+        "湾奥ほど津波高が増幅されやすい奥細りの形状（V字湾入）"
+      ],
+      "inferenceSummary": "山地を流れる河川が刻んだ深いV字谷が地盤沈降または後氷期の海面上昇で海に沈み、尾根が岬・島に、谷が入り組んだ湾になった沈水海岸。",
+      "examPoint": "リアス海岸は天然の良港・養殖場に最適な半面、東日本大震災等での巨大津波来襲時に湾奥で波高が増幅される防災上の弱点がある。",
+      "relatedIso3s": [
+        "JPN",
+        "ESP"
+      ],
+      "lat": 39.6,
+      "lng": 142.0,
+      "zoom": 6.8
+    },
+    {
+      "id": "enc_tower_karst",
+      "category": "landform",
+      "title": "熱帯・亜熱帯の石灰岩溶食地形『タワーカルスト』",
+      "locationLabel": "中国（桂林）・ベトナム（ハロン湾）",
+      "koppenCodes": [
+        "Cfa",
+        "Cw"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg/960px-Xiangshan_Scenic_Area_89468-Guilin_%2831130832628%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Guilin)",
+      "visualClues": [
+        "平坦な水田や水面の上に、急峻で丸みを帯びた円錐〜塔状の岩山がニョキニョキ孤立林立",
+        "岩壁は白灰色で垂直に近い傾斜を示し、間に曲流河川が通る",
+        "温帯の秋吉台・スロベニアに比べ極めて急峻な起伏を持つ溶食景観"
+      ],
+      "inferenceSummary": "厚い石灰岩（CaCO3）層が高温多湿で有機酸を多く含む雨水によって激しい化学的溶食（カルスト化）を受け、溶け残った岩塊が塔状になった地形。",
+      "examPoint": "スロベニア・秋吉台などの「温帯カルスト（ドリーネ・カレンフェルト・鍾乳洞）」に対し、中国桂林・ハロン湾（海面上昇で水没）が熱帯亜熱帯の代表。",
+      "relatedIso3s": [
+        "CHN",
+        "VNM",
+        "SVN"
+      ],
+      "lat": 25.27,
+      "lng": 110.29,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_atoll",
+      "category": "landform",
+      "title": "環状にサンゴ礁が取り囲む低平島『環礁（アトール）』",
+      "locationLabel": "モルディブ・ツバル・マーシャル諸島",
+      "koppenCodes": [
+        "Af",
+        "Am"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tetiaroa_from_sky.JPG/960px-Tetiaroa_from_sky.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Atoll)",
+      "visualClues": [
+        "外洋の濃い紺青と浅い礁湖（ラグーン）のエメラルドグリーンの鮮やかな色差",
+        "白いサンゴ砂でできた海抜1〜2mの細い帯状島嶼がリング状に連なる",
+        "中心の火山島は海面下に完全に沈んで見えず、山や川が一切存在しない"
+      ],
+      "inferenceSummary": "ダーウィンのサンゴ礁発達論で「裾礁→堡礁（ニューカレドニア等）→環礁」の最終段階。中央の火山島沈降に合わせ温暖透明な浅海でサンゴが上方成長し続けた。",
+      "examPoint": "地球温暖化に伴う海面上昇・高潮や、地下の薄い淡水レンズへの塩水混入が国家存続上の最大危機となっている。",
+      "relatedIso3s": [
+        "MDV",
+        "FJI",
+        "NCL"
+      ],
+      "lat": 4.17,
+      "lng": 73.51,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_coastal_desert",
+      "category": "landform",
+      "title": "寒流の沿岸湧昇流が作る海沿いの『海岸砂漠』",
+      "locationLabel": "ナミビア（ナミブ砂漠）・チリ/ペルー（アタカマ砂漠）",
+      "koppenCodes": [
+        "BW"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Namib_desert_MODIS.jpg/960px-Namib_desert_MODIS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Namib)",
+      "visualClues": [
+        "巨大な赤橙色の砂丘が大西洋・太平洋の青い波打ち際まで直接迫っている",
+        "海の上空から濃い海霧（霧・ガルーア）が砂漠へ流れ込む幻想的景観",
+        "海岸線直下にありながら植生がほとんどなく乾燥砂丘が続く異常対照"
+      ],
+      "inferenceSummary": "中緯度西岸を流れる寒流（ベンゲラ海流・ペルー海流）と深層冷水湧昇が海上空気を下から冷却して逆転層を作り、上昇気流と降水（雨）の発生を完全にブロックするため、海辺なのに砂漠化。",
+      "examPoint": "「雨が降らなくても霧の露で生きる固有植物ウェルウィッチア」や「ペルー沿岸の豊漁(湧昇栄養塩)とエルニーニョ時の豪雨被害」が出題論点。",
+      "relatedIso3s": [
+        "NAM",
+        "PER",
+        "CHL"
+      ],
+      "lat": -24.7,
+      "lng": 15.3,
+      "zoom": 5.5
+    },
+    {
+      "id": "enc_estuary",
+      "category": "landform",
+      "title": "大きな潮汐差が作るラッパ状河口『三角江（エスチュアリー）』",
+      "locationLabel": "イギリス（テムズ）・ドイツ（エルベ）・アルゼンチン（ラプラタ）",
+      "koppenCodes": [
+        "Cfb",
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Rio_de_la_Plata_BA_2.JPG/960px-Rio_de_la_Plata_BA_2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Estuary)",
+      "visualClues": [
+        "河口に向けて川幅が外洋へ大きくラッパ状に広がり、中洲・三角州が育っていない",
+        "満潮時に大型の外航コンテナ船が内陸数10〜100kmの大都市（ハンブルク・ロンドン等）まで遡上",
+        "川岸に広大な港湾クレーン群や工場倉庫が立ち並ぶ風景"
+      ],
+      "inferenceSummary": "後氷期の海面上昇で河口低地が沈水したうえに大西洋・北海等の強い干満差（潮汐力）によって流下土砂が毎回外海へ洗い流されるため、三角州ではなく深い水深の三角江になる。",
+      "examPoint": "内陸水運と外航海運の結節点として古くから貿易港（ハンブルク・アントウェルペン・ロッテルダム・ロンドン）が発達した理由。",
+      "relatedIso3s": [
+        "DEU",
+        "GBR",
+        "NLD",
+        "ARG"
+      ],
+      "lat": 53.54,
+      "lng": 9.9,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_fan_alluvial",
+      "category": "landform",
+      "title": "山麓谷口の砂礫堆積『扇状地』と水利用別土地利用",
+      "locationLabel": "日本（甲府盆地・黒部川・濃尾）等",
+      "koppenCodes": [
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Alluvial_fan_01.JPG/960px-Alluvial_fan_01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Alluvial fan)",
+      "visualClues": [
+        "山の急斜面出口（扇頂）から扇形に緩やかに広がる扇面の果樹園（ブドウ・モモ・リンゴ等）",
+        "扇央を通る川が渇水期に伏流（水無川）となるが、扇端の湧水帯に沿って水田と古い帯状集落が列をなす",
+        "頂点の扇頂部には古い集落と神社・水門が集中"
+      ],
+      "inferenceSummary": "急勾配の山岳河川が平地に出た瞬間に流速が急落し運搬してきた礫・粗砂を扇形に堆積。透水性極めて高く扇央では地下へ水が潜るため、水田よりも果樹園・畑に適応した。",
+      "examPoint": "扇頂・扇央（伏流水・果樹・桑）・扇端（湧水帯・水田・古集落）の断面図と土地利用記号読図は地図学習の基本テーマ。",
+      "relatedIso3s": [
+        "JPN"
+      ],
+      "lat": 35.66,
+      "lng": 138.68,
+      "zoom": 6.8
+    },
+    {
+      "id": "enc_dalmatian",
+      "category": "landform",
+      "title": "海岸線に平行な細長島列『ダルマチア式海岸』",
+      "locationLabel": "クロアチア（アドリア海沿岸）",
+      "koppenCodes": [
+        "Cs",
+        "Cfb"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Kornati.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons（出典: Kornati）",
+      "visualClues": [
+        "海岸線と同じ方向（北西〜南東）に細長く平行に伸びる無数の白い石灰岩の島々と細い海峡",
+        "リアス海岸のような歯車状の無秩序さではなく明確な平行配列",
+        "白い岩肌とオレンジ瓦の歴史的港湾都市（ドゥブロヴニク・スプリット等）"
+      ],
+      "inferenceSummary": "海岸線と平行に走る褶曲山脈（ディナル・アルプス）が後氷期の海面上昇で半ば沈水したため、背斜の山脈稜線が細長い島列に、向斜の谷間が平行な水道となった特異な沈水海岸。",
+      "examPoint": "「山地と海岸が直交→リアス海岸」 vs 「山地と海岸が平行→ダルマチア海岸」という2大沈水海岸の対比整理が重要。",
+      "relatedIso3s": [
+        "HRV",
+        "BIH"
+      ],
+      "lat": 43.5,
+      "lng": 16.4,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_delta_flood",
+      "category": "landform",
+      "title": "大河川河口の超低平堆積『三角州（デルタ）』と水害",
+      "locationLabel": "バングラデシュ（ガンジス）・ベトナム（メコン）・エジプト（ナイル）",
+      "koppenCodes": [
+        "Am",
+        "Aw",
+        "BW"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Lena_River_Delta_-_Landsat_2000.jpg/960px-Lena_River_Delta_-_Landsat_2000.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (River delta)",
+      "visualClues": [
+        "見渡す限り海抜数メートル以下の平坦地に網目状の分流河川と水田・養殖池がぎっしり並ぶ",
+        "鳥瞰写真では本流から分かれた無数の支流と細かな水路、舟運中心の暮らし",
+        "周囲がほぼ平地で高台が乏しく、洪水やサイクロン高潮時には広範囲が水没"
+      ],
+      "inferenceSummary": "内湾や静穏な海域に流れ込む大河が大量の細かい泥・シルトを運び込み、潮汐や波浪による流失が弱いために河口を埋め立てて前進した堆積地形。",
+      "examPoint": "ナイル川（円弧状・アスワンダム後に泥減少で海岸浸食）、ミシシッピ川（鳥趾状）、ガンジス（世界最大・高潮被害）の類型比較。",
+      "relatedIso3s": [
+        "BGD",
+        "VNM",
+        "EGY",
+        "USA"
+      ],
+      "lat": 22.8,
+      "lng": 89.8,
+      "zoom": 5.5
+    },
+    {
+      "id": "enc_cuesta",
+      "category": "landform",
+      "title": "硬軟地層の傾きが生む非対称丘陵『ケスタ地形』",
+      "locationLabel": "フランス（パリ盆地・シャンパーニュ）・イギリス（ロンドン盆地）",
+      "koppenCodes": [
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Monte_Baldo%2C_Blick_zum_Monte_Brione.JPG/960px-Monte_Baldo%2C_Blick_zum_Monte_Brione.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Cuesta)",
+      "visualClues": [
+        "片側が急崖（ケスタ崖・森林やブドウ畑）、反対側が緩斜面（小麦等の大畑作地）という非対称の連なり",
+        "急崖の縁にブドウ畑（南〜東向き日照受けやすい斜面）と小さな村が点在",
+        "盆地の外縁を取り囲む同心円状の緩やかな段差"
+      ],
+      "inferenceSummary": "硬岩層（石灰岩・白亜層等）と軟岩層（粘土等）が緩やかに傾いて重なる堆積盆地で、軟岩が先に削られ硬岩の縁が切り立った崖として残る差別侵食地形。",
+      "examPoint": "急崖は日照良好で水はけも良くワイン（シャンパーニュ・ブルゴーニュ）に、緩斜面は肥沃ローム土で小麦・テンサイに利用。",
+      "relatedIso3s": [
+        "FRA",
+        "GBR"
+      ],
+      "lat": 49.0,
+      "lng": 4.0,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_glacial_lakes",
+      "category": "landform",
+      "title": "大陸氷床が削り残した無数の『氷食湖・モレーン群』",
+      "locationLabel": "フィンランド・カナダ楯状地・北ドイツ低地",
+      "koppenCodes": [
+        "Df",
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Manang_site_%2854%29.JPG/960px-Manang_site_%2854%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Moraine)",
+      "visualClues": [
+        "平らな針葉樹林帯の中に不規則な形をした大小無数の湖沼が迷路のように連なる",
+        "湖岸や畑の中に氷河が運び残した丸い岩礫（モレーン・迷子石）が見られる",
+        "土壌が薄く岩盤露出または灰白色ポドゾル土壌が多い景観"
+      ],
+      "inferenceSummary": "最終氷期に厚さ数千mの大陸氷床（スカンジナビア・ローレンタイド氷床）が楯状地の硬い岩盤表面を削り、さらに末端や退縮時に土砂（モレーン）を堰き止めて無数の湖沼を生んだ。",
+      "examPoint": "フィンランドの「森と湖（林業製紙と18万超の湖）」、カナダ五大湖、デンマーク・北ドイツ低地のライ麦/ジャガイモ適地とつながる。",
+      "relatedIso3s": [
+        "FIN",
+        "CAN",
+        "DEU",
+        "DNK"
+      ],
+      "lat": 62.6,
+      "lng": 28.0,
+      "zoom": 5.0
+    },
+    {
+      "id": "enc_europe_oldtown",
+      "category": "urban",
+      "title": "欧州の『同心円・旧城壁広場都市』と歴史保存",
+      "locationLabel": "チェコ（プラハ）・ドイツ・イタリア等",
+      "koppenCodes": [
+        "Cfb",
+        "Cs"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg/960px-15-10-27-Vista_des_de_l%27est%C3%A0tua_de_Colom_a_Barcelona-WMA_2791.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: La Rambla, Barcelona）",
+      "visualClues": [
+        "中心に市庁舎・教会を囲む石畳広場があり、周囲に4〜6階建ての統一された歴史的建築が密集",
+        "アメリカ型都心のような極端なガラス超高層ビルが少なく郊外に現代業務核（ラ・デファンス等）分離",
+        "徒歩・LRT路面電車・歩行者天国中心で郊外の大型ショッピングモール規制も強い"
+      ],
+      "inferenceSummary": "中世の城壁都市から発展し「中心部が富裕層・文化的威信・観光地」として厳格に景観保護され、逆に低所得者層や移民が郊外団地（バンリュー等）へ住む都市構造。",
+      "examPoint": "「中心＝貧困インナーシティ／郊外＝中富裕一戸建て」のアメリカ型都市構造との180度対比は都市地理の定番視点。",
+      "relatedIso3s": [
+        "CZE",
+        "FRA",
+        "ITA",
+        "DEU"
+      ],
+      "lat": 50.09,
+      "lng": 14.42,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_us_cbd",
+      "category": "urban",
+      "title": "北米大都市の『超高層CBDとスプロール郊外住宅地』",
+      "locationLabel": "アメリカ（シカゴ・ニューヨーク・ヒューストン等）",
+      "koppenCodes": [
+        "Cfa",
+        "Df"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/960px-New_york_times_square-terabass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: Times Square）",
+      "visualClues": [
+        "碁盤目状の街路中心部に高さ300m超のガラス超高層ビル群（CBD＝中心業務地区）が突き抜けて集中",
+        "CBDの外側すぐに巨大な高速道路インターチェンジ・駐車場群と古いレンガ倉庫・再開発地域",
+        "さらに外延部へ一戸建て芝生付き郊外住宅が際限なく広がる（自動車完全依存）"
+      ],
+      "inferenceSummary": "地価・固定資産税と徹底したゾーニング、戦後の高速道路網・マイホーム普及により、中心業務地(CBD)・インナーシティ空洞・富裕郊外という同心円〜扇形構造が形成。",
+      "examPoint": "近年は若年専門職が都心回帰し再開発（ジェントリフィケーション）も起きる一方、富裕層防犯柵付き住宅地ゲーテッドコミュニティも拡大。",
+      "relatedIso3s": [
+        "USA",
+        "CAN"
+      ],
+      "lat": 41.88,
+      "lng": -87.63,
+      "zoom": 6.2
+    },
+    {
+      "id": "enc_islamic_medina",
+      "category": "urban",
+      "title": "イスラム都市の『モスク中心＋迷路状メディナとスーク』",
+      "locationLabel": "モロッコ（フェズ・マラケシュ）・イラン・エジプト",
+      "koppenCodes": [
+        "BW",
+        "Cs"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Fes_Bab_Bou_Jeloud_2011.jpg/960px-Fes_Bab_Bou_Jeloud_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Fes el Bali)",
+      "visualClues": [
+        "城壁に囲まれた旧市街（メディナ）の中に自動車が通れない細い袋小路が網目状に走る",
+        "袋小路の奥はプライバシーを守る中庭型住宅（外窓最小、内側へ開く構造）",
+        "中心部には大モスクと日除けアーケードのかかった常設市場『スーク（バザール）』"
+      ],
+      "inferenceSummary": "強い日射と砂埃を避けるため狭い路地で相互に日陰を作り合い、イスラム社会のプライバシー重視とモスク中心・同業者別バザール配置という宗教社会的合理性が結晶。",
+      "examPoint": "仏領植民地期にはこの旧市街(メディナ)を壊さず横に近代的な直交道路網の新市街(ヴィル・ヌーヴェル)を並設する「二重都市構造」が多く見られる。",
+      "relatedIso3s": [
+        "MAR",
+        "EGY",
+        "IRN",
+        "TUN"
+      ],
+      "lat": 34.06,
+      "lng": -4.97,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_latin_favela",
+      "category": "urban",
+      "title": "ラテンアメリカ大都市の『急斜面スラム(ファヴェーラ)と高層富裕街』",
+      "locationLabel": "ブラジル（リオデジャネイロ・サンパウロ）・ペルー・ケニア",
+      "koppenCodes": [
+        "Aw",
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/1_rocinha_favela_closeup.JPG/960px-1_rocinha_favela_closeup.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Favela)",
+      "visualClues": [
+        "手前や斜面斜面に未塗装の赤レンガ・簡易屋根の無計画住宅が隙間なくぎっしり密集",
+        "すぐ近くまたは麓の海岸平地には近代的な白色超高層マンション・オフィス群が聳え立つ",
+        "電線が複雑に絡み合い、上下水道や街路整備が追いつかない急傾斜地"
+      ],
+      "inferenceSummary": "農村からの急激な人口流入（雇用に見合わない過都市化）と激しい貧富格差により、地価の高い平地に住めない低所得層が崖地・河川敷へ自己建設したインフォーマル居住区。",
+      "examPoint": "ブラジル＝「ファヴェーラ」、ペルー等中南米＝「バリオーダ/カンパメント」、アフリカ＝ナイロビ「キベラ」など地域ごとの呼び名と背景を整理。",
+      "relatedIso3s": [
+        "BRA",
+        "KEN",
+        "PER",
+        "COL"
+      ],
+      "lat": -22.95,
+      "lng": -43.25,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_sgp_hdb",
+      "category": "urban",
+      "title": "都市国家シンガポールの高層公共住宅群『HDB』と緑化政策",
+      "locationLabel": "シンガポール",
+      "koppenCodes": [
+        "Af"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Bishan_HDB.JPG/960px-Bishan_HDB.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Public housing in Singapore)",
+      "visualClues": [
+        "整然と配置された高層集合住宅群と1階ピロティの共用空間・ホーカーセンター",
+        "建物の間に豊富な熱帯緑地と都市鉄道(MRT)駅が高密度に整備",
+        "各棟ごとに華人・マレー系・インド系の混合居住が制度化"
+      ],
+      "inferenceSummary": "狭小な国土（東京23区強）で国民の約8割を収容しつつスラムと民族分断を防ぐため、国営住宅開発庁(HDB)が高層団地建設・緑化・多民族混住を計画推進。",
+      "examPoint": "シンガポールの「民族比例入居制度(EIP)」は、人種別住み分けを強制ではなく逆に防止するユニークな多民族統治モデル。",
+      "relatedIso3s": [
+        "SGP",
+        "HKG"
+      ],
+      "lat": 1.35,
+      "lng": 103.82,
+      "zoom": 6.8
+    },
+    {
+      "id": "enc_canal_city",
+      "category": "urban",
+      "title": "運河網に支えられた水辺の歴史商業都市（アムステルダム・ヴェネツィア）",
+      "locationLabel": "オランダ（アムステルダム）・イタリア（ヴェネツィア）",
+      "koppenCodes": [
+        "Cfb",
+        "Cfa"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png/960px-Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: Amsterdam）",
+      "visualClues": [
+        "半円形または網目状の運河沿いに荷揚げ用フックと切妻屋根を持つ細長い商業建築が並ぶ",
+        "間口（運河に面する幅）に課税されたため間口が狭く奥行きの深い建物構成",
+        "干潟や泥炭湿地の地盤を支える無数の木杭基礎と自転車・小型船交通"
+      ],
+      "inferenceSummary": "17世紀の海上貿易黄金期（アムステルダム）や地中海交易（ヴェネツィア）において水運による直接倉庫荷揚げを行うため、低平デルタ・干潟上に運河網を都市骨格として築いた。",
+      "examPoint": "ヴェネツィアでは近年の地球温暖化による高潮（アックア・アルタ）対策の可動防潮堤（モーゼ計画）とオーバーツーリズム対策が重要事項。",
+      "relatedIso3s": [
+        "NLD",
+        "ITA"
+      ],
+      "lat": 52.37,
+      "lng": 4.89,
+      "zoom": 6.5
+    },
+    {
+      "id": "enc_open_pit",
+      "category": "industry_energy",
+      "title": "階段状の大規模露天掘り鉱山（鉄鉱石・銅・ボーキサイト）",
+      "locationLabel": "チリ（チュキカマタ銅山）・豪（ピルバラ鉄鉱石）・南ア",
+      "koppenCodes": [
+        "BW",
+        "BS"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Mina_de_Chuquicamata%2C_Calama%2C_Chile%2C_2016-02-01%2C_DD_110-112_PAN.JPG/960px-Mina_de_Chuquicamata%2C_Calama%2C_Chile%2C_2016-02-01%2C_DD_110-112_PAN.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Chuquicamata)",
+      "visualClues": [
+        "地面が直径数km・深さ数百〜1,000m規模のすり鉢状の巨大な階段（ベンチ）に掘削",
+        "超大型ダンプトラックと赤い縞状鉄鉱石または青緑がかった銅鉱石の露頭",
+        "乾燥地域・植生の乏しい安定陸塊やアンデス高地に立地しやすい景観"
+      ],
+      "inferenceSummary": "鉱床が地表近くまで広く浅く分布し地下坑道より極めて低コストで大量採掘できるため、安定陸塊（ピルバラ・カラジャス）や乾燥アンデス斑岩銅鉱床で採用される手法。",
+      "examPoint": "近年はギニア・インドネシア等のように「未精製原鉱石そのままの輸出を制限し、国内製錬へ切り替える資源ナショナリズム」が進行。",
+      "relatedIso3s": [
+        "CHL",
+        "AUS",
+        "BRA",
+        "GIN"
+      ],
+      "lat": -22.29,
+      "lng": -68.9,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_offshore_wind",
+      "category": "industry_energy",
+      "title": "遠浅・強風の北海『洋上風力発電』パーク",
+      "locationLabel": "デンマーク（ホーンズ・レヴ）・イギリス・ドイツ北海岸",
+      "koppenCodes": [
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Bryggen%2C_Bergen%2C_Noruega%2C_2019-09-08%2C_DD_115-117_PAN.jpg/960px-Bryggen%2C_Bergen%2C_Noruega%2C_2019-09-08%2C_DD_115-117_PAN.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: Bryggen）",
+      "visualClues": [
+        "陸上から見渡す海上の遠浅海域に何十基もの巨大な風力タービンが等間隔で整列",
+        "周囲の海岸線は平坦で背の高い山脈がなく、年間を通じて強い偏西風が吹く",
+        "タービンの間を海底送電ケーブルで結び欧州大陸グリッドへ電力を融通"
+      ],
+      "inferenceSummary": "偏西風が一年中安定して強く、氷河堆積で水深が浅い（着床式基礎が建てやすい）北海・バルト海の特徴を活かした再生可能エネルギー電源。",
+      "examPoint": "デンマークは発電電力量の5割超が風力、イギリスも洋上風力拡大で2024年に石炭火力発電を完全終了した。",
+      "relatedIso3s": [
+        "DNK",
+        "GBR",
+        "DEU",
+        "NLD"
+      ],
+      "lat": 55.53,
+      "lng": 7.91,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_geothermal",
+      "category": "industry_energy",
+      "title": "プレート拡大境界・火山帯の『地熱発電所』",
+      "locationLabel": "アイスランド（ヘリスヘイジ）・ケニア（オルカリア）・NZ北島",
+      "koppenCodes": [
+        "ET",
+        "Cfb",
+        "Cw"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/HellisheidiPowerStation01.jpg/960px-HellisheidiPowerStation01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Hellisheiði Power Station)",
+      "visualClues": [
+        "溶岩台地や火山丘の荒野から白い水蒸気が幾筋も立ち上り銀色の蒸気パイプラインが延びる",
+        "発電所横に温泉水（ブルーラグーンや農業用温室）の青い池や温水ハウスを併設",
+        "周囲に化石燃料の大規模石炭ヤードや煙突が見当たらない"
+      ],
+      "inferenceSummary": "広がるプレート境界（海嶺・大地溝帯）や沈み込み火山帯では地下浅部にマグマ溜まりがあり、高温蒸気でタービンを回し暖房給湯にも使える純国産ベースロード電源。",
+      "examPoint": "アイスランドは水力7+地熱3で電力ほぼ100%、ケニアも大地溝帯地熱が発電約4割を担う。日本の地熱導入余地との比較でも問われる。",
+      "relatedIso3s": [
+        "ISL",
+        "KEN",
+        "NZL",
+        "JPN"
+      ],
+      "lat": 64.04,
+      "lng": -21.4,
+      "zoom": 6.2
+    },
+    {
+      "id": "enc_lithium_salars",
+      "category": "industry_energy",
+      "title": "アンデス高地塩湖の『リチウム太陽蒸発かん水池』",
+      "locationLabel": "チリ（アタカマ塩湖）・ボリビア（ウユニ）・アルゼンチン",
+      "koppenCodes": [
+        "BW",
+        "ET"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Salar_de_Atacama.jpg/960px-Salar_de_Atacama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons / Wikipedia (Salar de Atacama)",
+      "visualClues": [
+        "真っ白な塩の平原の真ん中にターコイズブルー・エメラルドグリーンの巨大な四角い人工池群",
+        "周囲には雪を戴く標高5,000〜6,000m級のアンデス火山連峰が連なる",
+        "強い日射と乾燥風で地下かん水（塩水）の水分を自然蒸発させリチウム濃度を濃縮"
+      ],
+      "inferenceSummary": "電気自動車(EV)電池の必須元素リチウムが、南米アンデス乾燥塩湖の地下塩水（かん水）から強日射・少雨気候を利用した天日乾燥方式で低コスト抽出される特徴的景観。",
+      "examPoint": "リチウム生産は鉱石抽出の豪州が1位、塩湖抽出のチリが2位、精製工程の大部分は中国が握る構造。",
+      "relatedIso3s": [
+        "CHL",
+        "ARG",
+        "BOL",
+        "AUS"
+      ],
+      "lat": -23.5,
+      "lng": -68.25,
+      "zoom": 6.0
+    },
+    {
+      "id": "enc_canal_locks",
+      "category": "industry_energy",
+      "title": "山越え閘門式『パナマ運河』と国際海上チョークポイント",
+      "locationLabel": "パナマ（ガトゥン湖・ミラフローレス閘門）",
+      "koppenCodes": [
+        "Am",
+        "Af"
+      ],
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/US_Navy_080813-N-6266K-036_American_and_Panamanian_security_forces_practice_water_steering_and_maneuvering-edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "photoCredit": "Wikimedia Commons（出典: Bridge of the Americas）",
+      "visualClues": [
+        "熱帯雨林に覆われた緑の丘陵の間に、大型コンテナ船がぎりぎり通る巨大な水門（閘門室）",
+        "左右両側に牽引機関車用の軌道があり、水位差を段階的に上げて人工湖（海抜26m）へ導く",
+        "並行して拡張された新大型パナマックス対応の三連閘門"
+      ],
+      "inferenceSummary": "北米と南米の狭小地峡（山岳地帯）を横切るため、海面と同じ高さで掘削したスエズ運河（砂漠平地）と異なりガトゥン湖の淡水で船舶を上下させる構造。",
+      "examPoint": "近年エルニーニョ干ばつでガトゥン湖の水位が低下し1日通航隻数が制限された点は、スエズ運河との比較で押さえるべき最新事象。",
+      "relatedIso3s": [
+        "PAN",
+        "EGY",
+        "USA"
+      ],
+      "lat": 9.08,
+      "lng": -79.68,
+      "zoom": 7.0
+    },
+    {
+      "id": "enc_rotterdam_port",
+      "category": "industry_energy",
+      "title": "国際内陸水運と接続する巨大臨海ハブ港『ユーロポート』",
+      "locationLabel": "オランダ（ロッテルダム）・シンガポール・中国上海洋山",
+      "koppenCodes": [
+        "Cfb"
+      ],
+      "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png/960px-Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "photoCredit": "Wikimedia Commons（出典記事: Amsterdam）",
+      "visualClues": [
+        "運河河口から北海へ細長く突き出した巨大な埋立埠頭に数kmにわたる石油タンク群とガントリークレーン",
+        "外航超大型タンカーから小型のライン川バージ（平底河船）へ積み替える荷役風景",
+        "背後に世界最大級の石油化学コンビナート（シェル等製油所）が連なる"
+      ],
+      "inferenceSummary": "ライン川・マース川河口の平坦デルタを活用してドイツ・ルール工業地帯など欧州内陸へ直結する玄関港として発達。原油輸送費・精製コストを最小化。",
+      "examPoint": "ユーロポート（ロッテルダム）・シンガポール（ジュロン島）・日本太平洋ベルトは「非産油国が輸入原油を臨海精製して周辺輸出」する典型立地。",
+      "relatedIso3s": [
+        "NLD",
+        "DEU",
+        "SGP",
+        "JPN"
+      ],
+      "lat": 51.95,
+      "lng": 4.12,
+      "zoom": 6.5
+    }
+  ]
+}

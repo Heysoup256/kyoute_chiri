@@ -791,12 +791,12 @@ export function CountryDetailPanel({
                     </span>
                   </button>
                 )}
-                {country.examCheatSheet && (
-                  <div className="space-y-2.5 rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/90 via-white to-sky-50/70 p-3 shadow-2xs">
+                {(country.quickOverview || country.examCheatSheet) && (
+                  <div className="space-y-3 rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/85 via-white to-amber-50/40 p-4 shadow-2xs">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <span className="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-bold text-white">
-                        <Award className="h-3 w-3" />
-                        国の要点・比較ポイント
+                        <Sparkles className="h-3 w-3" />
+                        国の概要・重要ポイント
                       </span>
                       {allCountries && (
                         <button
@@ -813,72 +813,56 @@ export function CountryDetailPanel({
                       )}
                     </div>
 
-                    <p className="text-xs font-bold leading-relaxed text-slate-900 md:text-[13px]">
-                      {country.examCheatSheet.oneLineKey}
-                    </p>
+                    <h3 className="text-sm font-extrabold leading-snug text-slate-900 md:text-base">
+                      {country.quickOverview?.headline ?? country.examCheatSheet?.oneLineKey}
+                    </h3>
 
-                    {country.examCheatSheet.mustMemorizeStats.length > 0 && (
-                      <div className="flex flex-wrap gap-1.5">
-                        {country.examCheatSheet.mustMemorizeStats.map((statText) => (
-                          <span
-                            key={statText}
-                            className="rounded-md border border-indigo-200/80 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-700"
-                          >
-                            {statText}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    {country.quickOverview?.summary ? (
+                      <p className="text-xs leading-relaxed text-slate-700 md:text-[13px]">
+                        <RichGeoText
+                          text={country.quickOverview.summary}
+                          placeMatcher={placeMatcher}
+                          onFocusPlace={handlePlaceClick}
+                        />
+                      </p>
+                    ) : null}
 
-                    {country.examCheatSheet.commonConfusions.length > 0 && (
-                      <div className="space-y-1.5 border-t border-indigo-100 pt-2">
-                        <div className="text-[11px] font-bold text-indigo-800">
-                          類似国・比較対象との相違点
-                        </div>
-                        <div className="grid grid-cols-1 gap-2">
-                          {country.examCheatSheet.commonConfusions.map((pair) => (
-                            <div
-                              key={pair.partnerIso3}
-                              className="rounded-lg border border-slate-200 bg-white p-2.5"
+                    {country.examCheatSheet?.mustMemorizeStats &&
+                      country.examCheatSheet.mustMemorizeStats.length > 0 && (
+                        <div className="flex flex-wrap gap-1.5">
+                          {country.examCheatSheet.mustMemorizeStats.map((statText) => (
+                            <span
+                              key={statText}
+                              className="rounded-md border border-indigo-200/80 bg-white px-2 py-0.5 text-[11px] font-semibold text-slate-700"
                             >
-                              <div className="flex flex-wrap items-center justify-between gap-1.5">
-                                <span className="text-xs font-extrabold text-slate-900">
-                                  vs {pair.partnerNameJa}（{pair.title}）
-                                </span>
-                                <div className="flex items-center gap-1">
-                                  {allCountries && (
-                                    <button
-                                      type="button"
-                                      onClick={() => {
-                                        setComparePartnerIso3(pair.partnerIso3);
-                                        setIsCompareOpen(true);
-                                      }}
-                                      className="inline-flex items-center gap-1 rounded bg-indigo-600 px-2 py-0.5 text-[10.5px] font-bold text-white hover:bg-indigo-700"
-                                    >
-                                      <GitCompareArrows className="h-3 w-3" />
-                                      並べて比較
-                                    </button>
-                                  )}
-                                  <button
-                                    type="button"
-                                    onClick={() => onSelectCountry(pair.partnerIso3)}
-                                    className="inline-flex items-center gap-0.5 rounded border border-slate-200 bg-slate-50 px-2 py-0.5 text-[10.5px] font-semibold text-slate-700 hover:bg-slate-100"
-                                  >
-                                    詳細
-                                    <ArrowUpRight className="h-3 w-3" />
-                                  </button>
-                                </div>
-                              </div>
-                              <p className="mt-1 text-[11.5px] leading-relaxed text-slate-600">
-                                {pair.diffPoint}
-                              </p>
-                            </div>
+                              {statText}
+                            </span>
                           ))}
                         </div>
-                      </div>
+                      )}
+
+                    {country.quickOverview?.keyPoints && country.quickOverview.keyPoints.length > 0 && (
+                      <ul className="space-y-1.5 border-t border-indigo-100 pt-2.5">
+                        {country.quickOverview.keyPoints.map((pt) => (
+                          <li
+                            key={pt}
+                            className="flex items-start gap-1.5 text-xs font-medium text-slate-800"
+                          >
+                            <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-indigo-600" />
+                            <span>
+                              <RichGeoText
+                                text={pt}
+                                placeMatcher={placeMatcher}
+                                onFocusPlace={handlePlaceClick}
+                              />
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                     )}
                   </div>
                 )}
+
                 {!country.isBasicEntry && country.examSummary.frequentTopics.length > 0 && (
                   <div className="flex flex-wrap gap-1 md:hidden">
                     {country.examSummary.frequentTopics.slice(0, 2).map((topic) => (
@@ -889,41 +873,6 @@ export function CountryDetailPanel({
                         ★ {topic}
                       </span>
                     ))}
-                  </div>
-                )}
-                {country.quickOverview && (
-                  <div className="rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50/80 via-white to-amber-50/40 p-4 shadow-2xs">
-                    <div className="inline-flex items-center gap-1 rounded-full bg-indigo-100 px-2.5 py-0.5 text-[11px] font-bold text-indigo-800">
-                      <Sparkles className="h-3 w-3" />
-                      これだけは押さえたい要点
-                    </div>
-                    <h3 className="mt-2 text-sm font-extrabold leading-snug text-slate-900 md:text-base">
-                      {country.quickOverview.headline}
-                    </h3>
-                    <p className="mt-2 text-xs leading-relaxed text-slate-700 md:text-[13px]">
-                      <RichGeoText
-                        text={country.quickOverview.summary}
-                        placeMatcher={placeMatcher}
-                        onFocusPlace={handlePlaceClick}
-                      />
-                    </p>
-                    <ul className="mt-3 space-y-1.5 border-t border-indigo-100 pt-2.5">
-                      {country.quickOverview.keyPoints.map((pt) => (
-                        <li
-                          key={pt}
-                          className="flex items-start gap-1.5 text-xs font-medium text-slate-800"
-                        >
-                          <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-indigo-600" />
-                          <span>
-                            <RichGeoText
-                              text={pt}
-                              placeMatcher={placeMatcher}
-                              onFocusPlace={handlePlaceClick}
-                            />
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 )}
 
@@ -1003,6 +952,70 @@ export function CountryDetailPanel({
                     )}
                   </div>
                 )}
+
+                {country.examCheatSheet?.commonConfusions &&
+                  country.examCheatSheet.commonConfusions.length > 0 && (
+                    <div className="space-y-2 rounded-xl border border-slate-200 bg-white p-3.5 shadow-2xs">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-xs font-extrabold text-slate-800">
+                          類似国・比較対象との相違点
+                        </span>
+                        {allCountries && (
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setComparePartnerIso3(null);
+                              setIsCompareOpen(true);
+                            }}
+                            className="inline-flex items-center gap-1 rounded-md border border-indigo-200 bg-indigo-50 px-2 py-0.5 text-[10.5px] font-bold text-indigo-700 hover:bg-indigo-100"
+                          >
+                            <GitCompareArrows className="h-3 w-3" />
+                            比較画面を開く
+                          </button>
+                        )}
+                      </div>
+                      <div className="grid grid-cols-1 gap-2">
+                        {country.examCheatSheet.commonConfusions.map((pair) => (
+                          <div
+                            key={pair.partnerIso3}
+                            className="rounded-lg border border-slate-200 bg-slate-50/70 p-2.5"
+                          >
+                            <div className="flex flex-wrap items-center justify-between gap-1.5">
+                              <span className="text-xs font-extrabold text-slate-900">
+                                vs {pair.partnerNameJa}（{pair.title}）
+                              </span>
+                              <div className="flex items-center gap-1">
+                                {allCountries && (
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      setComparePartnerIso3(pair.partnerIso3);
+                                      setIsCompareOpen(true);
+                                    }}
+                                    className="inline-flex items-center gap-1 rounded bg-indigo-600 px-2 py-0.5 text-[10.5px] font-bold text-white hover:bg-indigo-700"
+                                  >
+                                    <GitCompareArrows className="h-3 w-3" />
+                                    並べて比較
+                                  </button>
+                                )}
+                                <button
+                                  type="button"
+                                  onClick={() => onSelectCountry(pair.partnerIso3)}
+                                  className="inline-flex items-center gap-0.5 rounded border border-slate-200 bg-white px-2 py-0.5 text-[10.5px] font-semibold text-slate-700 hover:bg-slate-100"
+                                >
+                                  詳細
+                                  <ArrowUpRight className="h-3 w-3" />
+                                </button>
+                              </div>
+                            </div>
+                            <p className="mt-1 text-[11.5px] leading-relaxed text-slate-600">
+                              {pair.diffPoint}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                 {country.highlightVisuals
                   ?.filter((v) => v.placement === 'overview')

@@ -5,6 +5,7 @@ import {
   BarChart3,
   Factory,
   Fuel,
+  History,
   LineChart,
   Map as MapIcon,
   MapPin,
@@ -15,33 +16,39 @@ import {
 } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type {
+  CountryData,
   GeoCountryProperties,
   JapanDomesticStats,
   RankingCategory,
   RankingEntry,
+  TimeSeriesSliderItem,
   WorldRankingItem,
   WorldRankingsDataset,
   WorldScatterChart,
 } from '../../types/schema_v1';
 import { GuideChartCard } from './GuideChartCard';
 import { JapanDomesticStatsSection } from './JapanDomesticStatsSection';
+import { TimeSliderSection } from './TimeSliderSection';
 import { WorldFlowMapCard } from './WorldFlowMapCard';
 
 interface WorldRankingsViewProps {
   dataset: WorldRankingsDataset | null;
   countriesGeoJson: FeatureCollection<Geometry, GeoCountryProperties>;
+  countriesData?: Record<string, CountryData>;
+  timeSliders?: TimeSeriesSliderItem[];
   japanDomesticStats?: JapanDomesticStats | null;
   focusedItemId?: string | null;
   onSelectCountry: (iso3: string) => void;
   onHighlightCountries: (label: string, iso3s: string[]) => void;
 }
 
-type RankingsMainTab = 'rankings' | 'charts' | 'flows' | 'japan_stats';
+type RankingsMainTab = 'rankings' | 'charts' | 'sliders' | 'flows' | 'japan_stats';
 type CategoryFilter = 'all' | RankingCategory;
 
 const MAIN_TABS: { id: RankingsMainTab; label: string; icon: typeof BarChart3 }[] = [
   { id: 'rankings', label: '品目ランキング', icon: BarChart3 },
   { id: 'charts', label: '比較グラフ＆散布図', icon: LineChart },
+  { id: 'sliders', label: '時代変化スライダー', icon: History },
   { id: 'flows', label: '国際移動フロー地図', icon: Route },
   { id: 'japan_stats', label: '日本国内統計', icon: MapIcon },
 ];
@@ -457,6 +464,8 @@ function RankingCard({
 export function WorldRankingsView({
   dataset,
   countriesGeoJson,
+  countriesData,
+  timeSliders,
   japanDomesticStats,
   focusedItemId,
   onSelectCountry,
@@ -655,6 +664,14 @@ export function WorldRankingsView({
                 </div>
               </section>
             </div>
+          )}
+
+          {mainTab === 'sliders' && (
+            <TimeSliderSection
+              sliders={timeSliders ?? []}
+              countriesData={countriesData}
+              onSelectCountry={onSelectCountry}
+            />
           )}
 
           {mainTab === 'flows' && (

@@ -94,15 +94,15 @@ const REGION_OPTIONS: { id: RegionFilter; label: string }[] = [
 
 const FEATURE_CAT_OPTIONS: { id: BlankFeatureCategory | 'weak'; label: string }[] = [
   { id: 'mixed', label: '重要ミックス（山川海峡地形）' },
-  { id: 'mountain_range', label: '大山脈（15）' },
-  { id: 'river', label: '大河川（14）' },
-  { id: 'strait_canal', label: '重要海峡・運河（7）' },
-  { id: 'landform_point', label: '特徴的地形（35）' },
-  { id: 'ocean_current', label: '海流（24）' },
-  { id: 'volcanoes', label: '主な火山（26）' },
-  { id: 'capitals_60', label: '主要首都（102）' },
-  { id: 'capitals_all', label: '全首都（198）' },
-  { id: 'weak', label: '苦手のみ復習' },
+  { id: 'mountain_range', label: '大山脈' },
+  { id: 'river', label: '大河川' },
+  { id: 'strait_canal', label: '重要海峡・運河' },
+  { id: 'landform_point', label: '特徴的地形' },
+  { id: 'ocean_current', label: '海流' },
+  { id: 'volcanoes', label: '主な火山' },
+  { id: 'capitals_60', label: '主要首都' },
+  { id: 'capitals_all', label: '全首都' },
+  { id: 'weak', label: '今回の苦手復習' },
 ];
 
 function matchesRegion(country: CountryData, rf: RegionFilter): boolean {
@@ -317,6 +317,55 @@ export function PlaceQuizPanel({
     () => new Set(countriesGeoJson.features.map((f) => f.properties?.iso3).filter(Boolean) as string[]),
     [countriesGeoJson],
   );
+
+  // 国当てランク別実件数（現在の地域フィルター反映）
+  const rankCounts = useMemo(() => {
+    const weakSet = new Set(weakCountryIso3s);
+    const regionCountries = Object.values(countriesData)
+      .filter((c) => c.iso3 !== 'ATA' && geoIsoSet.has(c.iso3) && Boolean(c.nameJa))
+      .filter((c) => matchesRegion(c, regionFilter));
+    return {
+      S: regionCountries.filter((c) => !c.isBasicEntry && c.examSummary.rank === 'S').length,
+      SA: regionCountries.filter(
+        (c) => !c.isBasicEntry && (c.examSummary.rank === 'S' || c.examSummary.rank === 'A'),
+      ).length,
+      detailed: regionCountries.filter((c) => !c.isBasicEntry).length,
+      all: regionCountries.length,
+      weak: regionCountries.filter((c) => weakSet.has(c.iso3)).length,
+    };
+  }, [countriesData, geoIsoSet, regionFilter, weakCountryIso3s]);
+
+  // 地形当てカテゴリ別実件数
+  const featureCounts = useMemo<Record<BlankFeatureCategory | 'weak', number>>(() => {
+    const weakSet = new Set(weakFeatureIds);
+    const counts: Record<BlankFeatureCategory | 'weak', number> = {
+      mixed: 0,
+      mountain_range: 0,
+      river: 0,
+      strait_canal: 0,
+      landform_point: 0,
+      ocean_current: 0,
+      volcanoes: 0,
+      capitals_60: 0,
+      capitals_all: 0,
+      weak: 0,
+    };
+    for (const item of allFeatureItems) {
+      if (weakSet.has(item.id)) counts.weak += 1;
+      if (['mountain_range', 'river', 'strait_canal', 'landform_point'].includes(item.category)) {
+        counts.mixed += 1;
+      }
+      if (item.category === 'capitals_60') {
+        counts.capitals_60 += 1;
+        counts.capitals_all += 1;
+      } else if (item.category === 'capitals_all') {
+        counts.capitals_all += 1;
+      } else if (item.category in counts) {
+        counts[item.category] += 1;
+      }
+    }
+    return counts;
+  }, [allFeatureItems, weakFeatureIds]);
 
   // 国当て候補プール
   const countryPool = useMemo(() => {
@@ -764,11 +813,11 @@ export function PlaceQuizPanel({
                   <div className="grid grid-cols-2 gap-1.5 text-xs">
                     {(
                       [
-                        { id: 'S', label: 'Sランク最頻出 (22)' },
-                        { id: 'SA', label: 'S+A頻出 (86)' },
-                        { id: 'detailed', label: '詳細収録 (100)' },
-                        { id: 'all', label: '世界全240国 (上級)' },
-                        { id: 'weak', label: `苦手のみ復習 (${weakCountryIso3s.length})` },
+                        { id: 'S', label: `Sランク最頻出 (${rankCounts.S})` },
+                        { id: 'SA', label: `S+A頻出 (${rankCounts.SA})` },
+                        { id: 'detailed', label: `詳細収録 (${rankCounts.detailed})` },
+                        { id: 'all', label: `全対象国・地域 (${rankCounts.all})` },
+                        { id: 'weak', label: `今回の苦手復習 (${rankCounts.weak})` },
                       ] as { id: CountryRankFilter; label: string }[]
                     ).map((opt) => (
                       <button
@@ -863,7 +912,7 @@ export function PlaceQuizPanel({
                             : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
                         }`}
                       >
-                        {opt.id === 'weak' ? `${opt.label} (${weakFeatureIds.length})` : opt.label}
+                        {`${opt.label}（${featureCounts[opt.id]}）`}
                       </button>
                     ))}
                   </div>

@@ -184,6 +184,13 @@ export const SOIL_COLORS: Record<string, string> = {
   沖積土: '#06b6d4',
 };
 
+export const OROGENIC_COLORS: Record<string, string> = {
+  '新期造山帯（環太平洋・アルプス＝ヒマラヤ）': '#dc2626',
+  古期造山帯: '#7c3aed',
+  '安定陸塊（楯状地）': '#d97706',
+  '安定陸塊（卓状地・構造平野）': '#16a34a',
+};
+
 export const AGRICULTURE_COLORS: Record<string, string> = {
   アジア式稲作農業: '#16a34a',
   アジア式畑作農業: '#65a30d',
@@ -307,6 +314,16 @@ export const MAP_COLOR_MODES: MapModeMeta[] = [
       { label: '1500〜2500m（高山）', color: '#d97706' },
       { label: '2500m〜（ヒマラヤ・チベット等）', color: '#7c2d12' },
     ],
+  },
+  {
+    id: 'orogenic',
+    label: '大地形・造山帯区分',
+    shortLabel: '造山帯',
+    subtitle: '新期造山帯・古期造山帯・安定陸塊（楯状地・卓状地）と地下資源の対応',
+    legend: Object.entries(OROGENIC_COLORS).map(([label, color]) => ({
+      label,
+      color,
+    })),
   },
   {
     id: 'religion',

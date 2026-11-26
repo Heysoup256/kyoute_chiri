@@ -2,6 +2,7 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import {
   BarChart3,
   BookOpen,
+  ClipboardCheck,
   Compass,
   Dices,
   Globe2,
@@ -19,6 +20,7 @@ import { JapanAndMapView } from './components/guide/JapanAndMapView';
 import { SystematicGuideView } from './components/guide/SystematicGuideView';
 import { WorldRankingsView } from './components/guide/WorldRankingsView';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
+import { PracticeExamView } from './components/practice/PracticeExamView';
 import { ReverseSearchDrawer } from './components/study/ReverseSearchDrawer';
 import { useMarkedCountries } from './hooks/useMarkedCountries';
 import type {
@@ -31,9 +33,12 @@ import type {
   JapanGeographyDataset,
   LayerVisibilityState,
   MapColorMode,
+  MockQuestionsDataset,
   PastExamsDataset,
+  PhotoEncyclopediaDataset,
   PlaceEntry,
   SystematicGuideDataset,
+  TimeSeriesSlidersDataset,
   WorldRankingsDataset,
 } from './types/schema_v1';
 import {
@@ -62,6 +67,7 @@ const PastExamsBasicSchema = z.object({
 const HEADER_VIEW_TABS: { id: AppViewMode; label: string; icon: typeof Globe2 }[] = [
   { id: 'map', label: '地図', icon: Globe2 },
   { id: 'blank', label: '白地図', icon: PenTool },
+  { id: 'practice', label: '演習', icon: ClipboardCheck },
   { id: 'rankings', label: '統計', icon: BarChart3 },
   { id: 'systematic', label: '系統', icon: BookOpen },
   { id: 'japan', label: '日本', icon: MapPin },
@@ -73,6 +79,10 @@ export function App() {
   const [worldRankingsData, setWorldRankingsData] = useState<WorldRankingsDataset | null>(null);
   const [systematicData, setSystematicData] = useState<SystematicGuideDataset | null>(null);
   const [japanData, setJapanData] = useState<JapanGeographyDataset | null>(null);
+  const [timeSlidersData, setTimeSlidersData] = useState<TimeSeriesSlidersDataset | null>(null);
+  const [photoEncyclopediaData, setPhotoEncyclopediaData] =
+    useState<PhotoEncyclopediaDataset | null>(null);
+  const [mockQuestionsData, setMockQuestionsData] = useState<MockQuestionsDataset | null>(null);
   const [countriesGeoJson, setCountriesGeoJson] = useState<FeatureCollection<
     Geometry,
     GeoCountryProperties
@@ -194,6 +204,9 @@ export function App() {
           rankingsRes,
           systematicRes,
           japanRes,
+          slidersRes,
+          photoEncRes,
+          mockQRes,
           examsRes,
         ] = await Promise.all([
           fetch(`${base}data/countries_v1.json`),
@@ -209,6 +222,9 @@ export function App() {
           fetch(`${base}data/world_rankings_v1.json`),
           fetch(`${base}data/systematic_geography_v1.json`),
           fetch(`${base}data/japan_geography_v1.json`),
+          fetch(`${base}data/time_series_sliders_v1.json`),
+          fetch(`${base}data/photo_encyclopedia_v1.json`),
+          fetch(`${base}data/mock_questions_v1.json`),
           IS_PUBLIC_MODE ? Promise.resolve(null) : fetch(`${base}data/past_exams_v1.json`),
         ]);
 
@@ -226,6 +242,9 @@ export function App() {
           !rankingsRes.ok ||
           !systematicRes.ok ||
           !japanRes.ok ||
+          !slidersRes.ok ||
+          !photoEncRes.ok ||
+          !mockQRes.ok ||
           (!IS_PUBLIC_MODE && (!examsRes || !examsRes.ok))
         ) {
           throw new Error('静的データファイルの読み込みに失敗しました。');
@@ -245,6 +264,9 @@ export function App() {
           rankingsJson,
           systematicJson,
           japanJson,
+          slidersJson,
+          photoEncJson,
+          mockQJson,
           examsJson,
         ] = await Promise.all([
           cRes.json(),
@@ -260,6 +282,9 @@ export function App() {
           rankingsRes.json(),
           systematicRes.json(),
           japanRes.json(),
+          slidersRes.json(),
+          photoEncRes.json(),
+          mockQRes.json(),
           examsRes ? examsRes.json() : Promise.resolve(emptyPastExams),
         ]);
 
@@ -281,6 +306,9 @@ export function App() {
         setWorldRankingsData(rankingsJson as WorldRankingsDataset);
         setSystematicData(systematicJson as SystematicGuideDataset);
         setJapanData(japanJson as JapanGeographyDataset);
+        setTimeSlidersData(slidersJson as TimeSeriesSlidersDataset);
+        setPhotoEncyclopediaData(photoEncJson as PhotoEncyclopediaDataset);
+        setMockQuestionsData(mockQJson as MockQuestionsDataset);
       } catch (err) {
         if (!cancelled) {
           setLoadError(err instanceof Error ? err.message : 'データ読込エラーが発生しました。');
@@ -527,7 +555,7 @@ export function App() {
             </div>
           </div>
 
-          {/* 5ビュー切替セグメント（地図 / 白地図 / 統計 / 系統 / 日本） */}
+          {/* 6ビュー切替セグメント（地図 / 白地図 / 演習 / 統計 / 系統 / 日本） */}
           <nav
             aria-label="学習モード切替"
             className="inline-flex shrink-0 items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5"
@@ -540,7 +568,7 @@ export function App() {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveView(tab.id)}
-                  className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[10.5px] font-extrabold transition sm:px-2 md:px-3 md:py-1.5 md:text-xs ${
+                  className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[10px] font-extrabold transition sm:px-2 md:px-2.5 md:py-1.5 md:text-xs ${
                     active
                       ? 'bg-white text-indigo-700 shadow-xs'
                       : 'text-slate-600 hover:text-slate-900'
@@ -756,6 +784,20 @@ export function App() {
           </div>
         )}
 
+        {/* 2.5. 共テ風オリジナル実戦問題＆自動ドリルビュー */}
+        {activeView === 'practice' && (
+          <div className="h-full min-w-0 flex-1">
+            <PracticeExamView
+              mockQuestions={mockQuestionsData?.questions ?? []}
+              worldRankings={worldRankingsData}
+              countriesData={countriesData.countries}
+              timeSliders={timeSlidersData?.sliders ?? []}
+              photoEncyclopedia={photoEncyclopediaData?.entries ?? []}
+              onSelectCountry={handleSelectCountry}
+            />
+          </div>
+        )}
+
         {/* 3. 世界統計ランキング＆データブックビュー */}
         {activeView === 'rankings' && (
           <div className="h-full min-w-0 flex-1">
@@ -763,6 +805,8 @@ export function App() {
               key={focusedRankingId ?? 'all'}
               dataset={worldRankingsData}
               countriesGeoJson={countriesGeoJson}
+              countriesData={countriesData.countries}
+              timeSliders={timeSlidersData?.sliders ?? []}
               japanDomesticStats={japanData?.domesticStats ?? null}
               focusedItemId={focusedRankingId}
               onSelectCountry={handleSelectCountry}
@@ -777,6 +821,7 @@ export function App() {
             <SystematicGuideView
               key={focusedSystematicId ?? 'sys-default'}
               dataset={systematicData}
+              photoEncyclopedia={photoEncyclopediaData?.entries ?? []}
               countriesData={countriesData.countries}
               placeMatcher={placeMatcher}
               focusedTopicId={focusedSystematicId}

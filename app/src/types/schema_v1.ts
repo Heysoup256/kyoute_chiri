@@ -446,6 +446,7 @@ export type MapColorMode =
   | 'soil'
   | 'agriculture'
   | 'elevation'
+  | 'orogenic'
   | 'religion'
   | 'language'
   | 'population_density'
@@ -453,7 +454,7 @@ export type MapColorMode =
   | 'marked'
   | 'plain';
 
-export type AppViewMode = 'map' | 'blank' | 'rankings' | 'systematic' | 'japan';
+export type AppViewMode = 'map' | 'blank' | 'practice' | 'rankings' | 'systematic' | 'japan';
 
 export type RankingCategory = 'agriculture' | 'resource' | 'industry' | 'society';
 
@@ -651,4 +652,109 @@ export interface JapanGeographyDataset {
   mapSkills: JapanMapSkillTopic[];
   regions: JapanRegionEntry[];
   domesticStats?: JapanDomesticStats;
+}
+
+export type TimeSliderCategory = 'trade' | 'energy' | 'agriculture' | 'industry' | 'population';
+
+export interface TimeSliderDatum {
+  label: string;
+  iso3?: string;
+  value: number;
+  note?: string;
+  color?: string;
+}
+
+export interface TimeSliderFrame {
+  yearLabel: string;
+  periodNote: string;
+  items: TimeSliderDatum[];
+}
+
+export interface TimeSeriesSliderItem {
+  id: string;
+  category: TimeSliderCategory;
+  title: string;
+  subtitle: string;
+  displayMode: 'ranking_bar' | 'stacked_share';
+  unit: string;
+  source: string;
+  shiftSummary: string;
+  relatedIso3s: string[];
+  frames: TimeSliderFrame[];
+}
+
+export interface TimeSeriesSlidersDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  sliders: TimeSeriesSliderItem[];
+}
+
+export type PhotoEncyclopediaCategory =
+  | 'housing'
+  | 'agriculture'
+  | 'landform'
+  | 'urban'
+  | 'industry_energy';
+
+export interface PhotoEncyclopediaEntry {
+  id: string;
+  category: PhotoEncyclopediaCategory;
+  title: string;
+  locationLabel: string;
+  koppenCodes: string[];
+  photoUrl: string;
+  photoCredit: string;
+  visualClues: string[];
+  inferenceSummary: string;
+  examPoint: string;
+  relatedIso3s: string[];
+  lat: number;
+  lng: number;
+  zoom: number;
+}
+
+export interface PhotoEncyclopediaDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  entries: PhotoEncyclopediaEntry[];
+}
+
+export type MockQuestionCategory =
+  | 'nature_climate'
+  | 'agriculture'
+  | 'resource_industry'
+  | 'population_urban'
+  | 'culture_regional'
+  | 'map_disaster';
+
+export interface MockQuestionTable {
+  caption?: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface MockQuestionDialogue {
+  speaker: string;
+  text: string;
+}
+
+export interface MockQuestion {
+  id: string;
+  category: MockQuestionCategory;
+  title: string;
+  leadText: string;
+  dialogues?: MockQuestionDialogue[];
+  table?: MockQuestionTable;
+  questionText: string;
+  choices: string[];
+  correctIndex: number;
+  explanation: string;
+  keyTakeaway: string;
+  relatedIso3s: string[];
+}
+
+export interface MockQuestionsDataset {
+  schemaVersion: string;
+  generatedAt: string;
+  questions: MockQuestion[];
 }

@@ -36,6 +36,7 @@ export interface ThematicGridData {
   precip: number[][];
   elev: number[][];
   soil?: string[][];
+  orogenic?: string[][];
 }
 
 interface PopupPhotoInfo {
@@ -128,6 +129,7 @@ const REGIONAL_RASTER_MODES = [
   'soil',
   'agriculture',
   'elevation',
+  'orogenic',
   'religion',
   'language',
 ] as const;
@@ -275,7 +277,7 @@ function lookupThematicGrid(
   grid: ThematicGridData | null,
   lng: number,
   lat: number,
-): { koppen: string; precip: number; elev: number; soil: string } | null {
+): { koppen: string; precip: number; elev: number; soil: string; orogenic: string } | null {
   if (!grid) return null;
   const normLng = ((((lng + 180) % 360) + 360) % 360);
   const col = Math.min(grid.width - 1, Math.max(0, Math.floor(normLng)));
@@ -285,6 +287,7 @@ function lookupThematicGrid(
     precip: grid.precip[row]?.[col] ?? -1,
     elev: grid.elev[row]?.[col] ?? -9999,
     soil: grid.soil?.[row]?.[col] ?? '',
+    orogenic: grid.orogenic?.[row]?.[col] ?? '',
   };
 }
 
@@ -1559,6 +1562,20 @@ export function WorldMap({
             } else {
               const gHit = lookupThematicGrid(thematicGridRef.current, e.lngLat.lng, e.lngLat.lat);
               modeLabel = `地点土壌：${gHit?.soil || '-'}`;
+            }
+          } else if (cm === 'orogenic') {
+            const regFeats = map.queryRenderedFeatures(e.point, {
+              layers: ['thematic-regions-fill'],
+            });
+            const regMatch = regFeats.find(
+              (f) => (f.properties as { mode?: string })?.mode === 'orogenic',
+            );
+            if (regMatch) {
+              const rp = regMatch.properties as { nameJa?: string; category?: string };
+              modeLabel = `${rp.nameJa ?? ''}（${rp.category ?? ''}）`;
+            } else {
+              const gHit = lookupThematicGrid(thematicGridRef.current, e.lngLat.lng, e.lngLat.lat);
+              modeLabel = gHit?.orogenic || '-';
             }
           } else if (cm === 'agriculture' || cm === 'religion' || cm === 'language') {
             const regFeats = map.queryRenderedFeatures(e.point, {

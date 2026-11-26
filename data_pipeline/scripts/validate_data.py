@@ -225,13 +225,37 @@ def main() -> None:
     subcode_re = re.compile(
         r"(?<![A-Za-z])(BWh|BWk|BSh|BSk|Csa|Csb|Csc|Cwa|Cwb|Cwc|Cfc|Dfa|Dfb|Dfc|Dfd|Dwa|Dwb|Dwc|Dwd|Dsa|Dsb|Dsc|Dsd)(?![A-Za-z])"
     )
-    for fname in ("countries_v1.json", "places_v1.json", "geo_countries_v1.geojson"):
-        hits = subcode_re.findall((DATA_DIR / fname).read_text(encoding="utf-8"))
+    hype_re = re.compile(
+        r"(受験必勝|必勝|完全攻略|超鉄板|鉄板|爆伸び|大化け|最強|超頻出|絶対ルール|決定打)"
+    )
+    for fname in (
+        "countries_v1.json",
+        "places_v1.json",
+        "geo_countries_v1.geojson",
+        "time_series_sliders_v1.json",
+        "photo_encyclopedia_v1.json",
+        "mock_questions_v1.json",
+    ):
+        fpath = DATA_DIR / fname
+        if not fpath.exists():
+            continue
+        raw_text = fpath.read_text(encoding="utf-8")
+        hits = subcode_re.findall(raw_text)
         if hits:
             errors.append(f"{fname}: 13区分以外のケッペンコードが残存しています: {sorted(set(hits))}")
+        hype_hits = hype_re.findall(raw_text)
+        if hype_hits:
+            errors.append(f"{fname}: 誇大・不適切表現が残存しています: {sorted(set(hype_hits))}")
 
     # 学習図鑑・統計データブックの検証
-    for guide_name in ("world_rankings_v1.json", "systematic_geography_v1.json", "japan_geography_v1.json"):
+    for guide_name in (
+        "world_rankings_v1.json",
+        "systematic_geography_v1.json",
+        "japan_geography_v1.json",
+        "time_series_sliders_v1.json",
+        "photo_encyclopedia_v1.json",
+        "mock_questions_v1.json",
+    ):
         gp = DATA_DIR / guide_name
         if not gp.exists() or gp.stat().st_size < 5_000:
             errors.append(f"学習データファイルが不足または空です: {guide_name}")
@@ -267,6 +291,66 @@ def main() -> None:
         if not sk.get("checkPoints"):
             errors.append(f"japan mapSkill {sk.get('id')}: checkPoints が空または欠落しています")
 
+    # 造山帯テーマレイヤーの検証
+    orogenic_png = DATA_DIR / "thematic_orogenic_v1.png"
+    if not orogenic_png.exists() or orogenic_png.stat().st_size < 10_000:
+        errors.append("thematic_orogenic_v1.png が存在しないか小さすぎます")
+    thematic_reg_path = DATA_DIR / "thematic_regions_v1.geojson"
+    thematic_grid_path = DATA_DIR / "thematic_grid_v1.json"
+    orogenic_zones = 0
+    if thematic_reg_path.exists():
+        reg_feats = json.loads(thematic_reg_path.read_text(encoding="utf-8")).get("features", [])
+        orogenic_zones = sum(1 for f in reg_feats if f.get("properties", {}).get("mode") == "orogenic")
+        if orogenic_zones < 30:
+            errors.append(f"thematic_regions_v1.geojson の orogenic 領域数が不足しています ({orogenic_zones}<30)")
+    else:
+        errors.append("thematic_regions_v1.geojson が存在しません")
+    if thematic_grid_path.exists():
+        tgrid = json.loads(thematic_grid_path.read_text(encoding="utf-8"))
+        if not tgrid.get("orogenic"):
+            errors.append("thematic_grid_v1.json に 'orogenic' グリッドが含まれていません")
+    else:
+        errors.append("thematic_grid_v1.json が存在しません")
+
+    # 時代変化スライダーの検証
+    time_sliders = []
+    ts_path = DATA_DIR / "time_series_sliders_v1.json"
+    if ts_path.exists():
+        ts_data = json.loads(ts_path.read_text(encoding="utf-8"))
+        time_sliders = ts_data.get("sliders", [])
+        if len(time_sliders) < 24:
+            errors.append(f"time_series_sliders_v1.json のテーマ数が不足しています ({len(time_sliders)}<24)")
+        for sl in time_sliders:
+            if len(sl.get("frames", [])) < 4 or not sl.get("shiftSummary"):
+                errors.append(f"time_slider {sl.get('id')}: frames(4以上) または shiftSummary が不足しています")
+
+    # 写真・景観推論図鑑の検証
+    photo_entries = []
+    pe_path = DATA_DIR / "photo_encyclopedia_v1.json"
+    if pe_path.exists():
+        pe_data = json.loads(pe_path.read_text(encoding="utf-8"))
+        photo_entries = pe_data.get("entries", [])
+        if len(photo_entries) < 40:
+            errors.append(f"photo_encyclopedia_v1.json の収録数が不足しています ({len(photo_entries)}<40)")
+        for pe in photo_entries:
+            purl = str(pe.get("photoUrl") or "")
+            if not purl.startswith("http") or not pe.get("visualClues") or not pe.get("relatedIso3s"):
+                errors.append(f"photo_encyclopedia {pe.get('id')}: photoUrl / visualClues / relatedIso3s が不備です")
+
+    # 共テ風演習問題の検証
+    mock_questions = []
+    mq_path = DATA_DIR / "mock_questions_v1.json"
+    if mq_path.exists():
+        mq_data = json.loads(mq_path.read_text(encoding="utf-8"))
+        mock_questions = mq_data.get("questions", [])
+        if len(mock_questions) < 30:
+            errors.append(f"mock_questions_v1.json の問題数が不足しています ({len(mock_questions)}<30)")
+        for mq in mock_questions:
+            choices = mq.get("choices", [])
+            cidx = mq.get("correctIndex", -1)
+            if len(choices) < 4 or not (0 <= cidx < len(choices)) or not mq.get("explanation") or not mq.get("keyTakeaway"):
+                errors.append(f"mock_question {mq.get('id')}: 選択肢数・correctIndex・解説・要点に不備があります")
+
     if errors:
         print("VALIDATION FAILED:")
         for e in errors:
@@ -279,7 +363,8 @@ def main() -> None:
         f"cities={total_cities}, questions={len(questions)}, geo_countries={len(geo_iso3_set)}, "
         f"geo_layers={len(layer_feats)}, plate_boundaries={len(plate_feats)}, "
         f"capitals={len(capitals_json['features'])}, volcanoes={len(volcanoes_json['features'])}, "
-        f"places={len(places_json['places'])}"
+        f"places={len(places_json['places'])}, orogenic_zones={orogenic_zones}, "
+        f"time_sliders={len(time_sliders)}, photo_entries={len(photo_entries)}, mock_questions={len(mock_questions)}"
     )
 
 

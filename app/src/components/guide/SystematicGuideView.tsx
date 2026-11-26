@@ -2,6 +2,7 @@ import {
   AlertTriangle,
   BarChart3,
   BookOpen,
+  Camera,
   CheckCircle2,
   ChevronRight,
   Globe2,
@@ -14,6 +15,7 @@ import {
 import { useMemo, useState } from 'react';
 import type {
   CountryData,
+  PhotoEncyclopediaEntry,
   PlaceEntry,
   SystematicGuideDataset,
 } from '../../types/schema_v1';
@@ -21,9 +23,11 @@ import type { PlaceMatcher } from '../../utils/places';
 import { RichGeoText } from '../study/RichGeoText';
 import { GeoDiagramRenderer } from './GeoDiagrams';
 import { GuideChartCard } from './GuideChartCard';
+import { PhotoInferenceGallery } from './PhotoInferenceGallery';
 
 interface SystematicGuideViewProps {
   dataset: SystematicGuideDataset | null;
+  photoEncyclopedia?: PhotoEncyclopediaEntry[];
   countriesData: Record<string, CountryData>;
   placeMatcher: PlaceMatcher | null;
   focusedTopicId?: string | null;
@@ -32,17 +36,18 @@ interface SystematicGuideViewProps {
 }
 
 /**
- * 系統地理・地図/GIS・防災・農林水・工業・宗教文化マスター図鑑ビュー
- * （7大カテゴリ × 45+トピック ＋ 軽量SVG模式図19種 ＋ ECharts統計グラフ ＋ 比較表 ＋ 深掘り解説）
+ * 系統地理・地図/GIS・防災・農林水・工業・宗教文化マスター図鑑 ＋ 景観写真推論図鑑ビュー
  */
 export function SystematicGuideView({
   dataset,
+  photoEncyclopedia = [],
   countriesData,
   placeMatcher,
   focusedTopicId,
   onFocusPlace,
   onSelectCountry,
 }: SystematicGuideViewProps) {
+  const [subView, setSubView] = useState<'topics' | 'photos'>('topics');
   const initialCat = useMemo(() => {
     if (!dataset) return 'map_gis';
     if (focusedTopicId) {
@@ -86,8 +91,56 @@ export function SystematicGuideView({
 
   return (
     <div className="flex h-full flex-col bg-slate-50">
-      {/* 上部カテゴリ＆検索バー */}
-      <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2.5 md:px-6">
+      {/* 上部 系統解説 ⇄ 景観写真推論図鑑 切替バー */}
+      <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2 md:px-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-2">
+          <div className="inline-flex items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5 text-xs">
+            <button
+              type="button"
+              onClick={() => setSubView('topics')}
+              className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1 font-extrabold transition ${
+                subView === 'topics'
+                  ? 'bg-white text-indigo-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <BookOpen className="h-3.5 w-3.5" />
+              系統テーマ解説（{dataset.topics.length}）
+            </button>
+            <button
+              type="button"
+              onClick={() => setSubView('photos')}
+              className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1 font-extrabold transition ${
+                subView === 'photos'
+                  ? 'bg-white text-indigo-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <Camera className="h-3.5 w-3.5" />
+              写真・景観推論図鑑（{photoEncyclopedia.length}）
+            </button>
+          </div>
+          <span className="hidden text-[11px] text-slate-500 sm:inline">
+            {subView === 'topics'
+              ? '自然・産業・文化の因果を模式図と統計で体系整理'
+              : '伝統住居・農牧・地形・都市写真から地理的背景を読み解く'}
+          </span>
+        </div>
+      </div>
+
+      {subView === 'photos' ? (
+        <div className="min-h-0 flex-1 overflow-hidden">
+          <PhotoInferenceGallery
+            entries={photoEncyclopedia}
+            countriesData={countriesData}
+            onFocusPlace={onFocusPlace}
+            onSelectCountry={onSelectCountry}
+          />
+        </div>
+      ) : (
+        <>
+          {/* 上部カテゴリ＆検索バー */}
+          <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2 md:px-6">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
           <div className="flex min-w-0 flex-1 items-center gap-1.5 overflow-x-auto pb-0.5">
             {dataset.categories.map((cat) => {
@@ -397,6 +450,8 @@ export function SystematicGuideView({
           </div>
         </div>
       </div>
+        </>
+      )}
     </div>
   );
 }

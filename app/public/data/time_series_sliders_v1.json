@@ -1,0 +1,3663 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-26",
+  "sliders": [
+    {
+      "id": "ts_jpn_trade_partners",
+      "category": "trade",
+      "title": "日本の輸入先国シェア・輸入品目構成の変化",
+      "subtitle": "加工貿易の相手国と資源・製品の移り変わり（輸入総額比・%）",
+      "displayMode": "ranking_bar",
+      "unit": "%",
+      "source": "財務省貿易統計ほか",
+      "shiftSummary": "1960〜70年代は米国と中東原油が主軸だったが、1990年代以降は中国・ASEAN・韓国など東アジアからの工業製品・衣類・電子部品輸入が大きく拡大し、現在トップは中国。",
+      "relatedIso3s": [
+        "JPN",
+        "CHN",
+        "USA",
+        "AUS",
+        "SAU"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1965年",
+          "periodNote": "高度経済成長期：綿花・鉄鉱石・原油と米国製機械の輸入が中心",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 29.0,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 6.8,
+              "iso3": "AUS",
+              "color": "#16a34a"
+            },
+            {
+              "label": "カナダ",
+              "value": 4.4,
+              "iso3": "CAN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "クウェート・中東",
+              "value": 3.8,
+              "iso3": "KWT",
+              "color": "#d97706"
+            },
+            {
+              "label": "中国",
+              "value": 2.8,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "資源価格上昇後：原油（中東・尼）と対米輸入が高水準、中国も浮上",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 20.0,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "サウジアラビア・UAE",
+              "value": 12.8,
+              "iso3": "SAU",
+              "color": "#d97706"
+            },
+            {
+              "label": "インドネシア",
+              "value": 7.8,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 5.8,
+              "iso3": "AUS",
+              "color": "#0891b2"
+            },
+            {
+              "label": "中国",
+              "value": 5.0,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "アジア分業の深化：中国が米国を抜き輸入相手1位へ",
+          "items": [
+            {
+              "label": "中国",
+              "value": 21.0,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 12.4,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "サウジアラビア・UAE",
+              "value": 9.7,
+              "iso3": "SAU",
+              "color": "#d97706"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 4.8,
+              "iso3": "AUS",
+              "color": "#0891b2"
+            },
+            {
+              "label": "韓国",
+              "value": 4.7,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "中国が2割超で不動の1位、米・豪(資源LNG/石炭)・中東(原油)が上位",
+          "items": [
+            {
+              "label": "中国",
+              "value": 22.1,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 10.6,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 7.8,
+              "iso3": "AUS",
+              "color": "#0891b2"
+            },
+            {
+              "label": "UAE・サウジ合計",
+              "value": 9.6,
+              "iso3": "ARE",
+              "color": "#d97706"
+            },
+            {
+              "label": "台湾・韓国合計",
+              "value": 9.0,
+              "iso3": "TWN",
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_kor_export_mix",
+      "category": "trade",
+      "title": "韓国の輸出品目構成の高度化（繊維→重化学→半導体・EV）",
+      "subtitle": "「漢江の奇跡」からハイテク輸出国家への転換（輸出構成比・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "韓国貿易統計・日本国勢図会ベース概算",
+      "shiftSummary": "1970年はかつら・合板・繊維など軽工業が過半だったが、財閥育成と技術投資により造船・自動車を経て現在は半導体（IC）と自動車が中核を占める。",
+      "relatedIso3s": [
+        "KOR",
+        "TWN",
+        "JPN",
+        "CHN"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "軽工業主体：衣類・かつら・合板・生糸など労働集約製品が約7割",
+          "items": [
+            {
+              "label": "繊維・衣類・軽工業",
+              "value": 68,
+              "color": "#f59e0b"
+            },
+            {
+              "label": "農水産・鉱物等",
+              "value": 18,
+              "color": "#16a34a"
+            },
+            {
+              "label": "機械・電子・輸送機器",
+              "value": 14,
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "重化学シフト：鉄鋼（ポスコ）・造船・家電輸出が急拡大",
+          "items": [
+            {
+              "label": "船舶・自動車・機械",
+              "value": 32,
+              "color": "#2563eb"
+            },
+            {
+              "label": "繊維・履物等軽工業",
+              "value": 34,
+              "color": "#f59e0b"
+            },
+            {
+              "label": "電子部品・家電・鉄鋼",
+              "value": 34,
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "IT・自動車全盛：半導体メモリー・液晶・携帯電話・自動車",
+          "items": [
+            {
+              "label": "半導体・電子・通信",
+              "value": 38,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "自動車・船舶・機械",
+              "value": 35,
+              "color": "#2563eb"
+            },
+            {
+              "label": "石油化学・鉄鋼・他",
+              "value": 27,
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "先端半導体(IC)・乗用車(EV含む)・石油化学が輸出の大黒柱",
+          "items": [
+            {
+              "label": "半導体・電子・精密",
+              "value": 34,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "自動車・船舶・機械",
+              "value": 32,
+              "color": "#2563eb"
+            },
+            {
+              "label": "石油製品・化学・鉄鋼・他",
+              "value": 34,
+              "color": "#0891b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_mys_export_shift",
+      "category": "trade",
+      "title": "マレーシアの脱一次産品モノカルチャー化（ゴム・スズ→電子・パーム油）",
+      "subtitle": "東南アジア中進国の輸出多角化推移（構成比・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "UN Comtrade / 貿易統計",
+      "shiftSummary": "独立期は天然ゴムとスズの二大一次産品に依存したが、パーム油転換・LNG開発・ペナン等の電機誘致を経て現在は集積回路(IC)等工業品が主力。",
+      "relatedIso3s": [
+        "MYS",
+        "IDN",
+        "SGP",
+        "THA"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1965年",
+          "periodNote": "旧英領プランテーション型：天然ゴムとスズだけで輸出の約7割",
+          "items": [
+            {
+              "label": "天然ゴム・スズ・木材",
+              "value": 78,
+              "color": "#d97706"
+            },
+            {
+              "label": "パーム油・農産他",
+              "value": 14,
+              "color": "#16a34a"
+            },
+            {
+              "label": "工業製品",
+              "value": 8,
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "ルックイースト初期：原油・LNG・パーム油と電子部品工場が出現",
+          "items": [
+            {
+              "label": "電子・電機・工業品",
+              "value": 32,
+              "color": "#2563eb"
+            },
+            {
+              "label": "原油・LNG",
+              "value": 31,
+              "color": "#ef4444"
+            },
+            {
+              "label": "天然ゴム・スズ・木材・パーム油",
+              "value": 37,
+              "color": "#d97706"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "ASEANの半導体後工程拠点へ：電気・電子が過半を占める",
+          "items": [
+            {
+              "label": "集積回路(IC)・電機・機械",
+              "value": 58,
+              "color": "#2563eb"
+            },
+            {
+              "label": "原油・LNG・化学",
+              "value": 24,
+              "color": "#ef4444"
+            },
+            {
+              "label": "パーム油・農産・木材",
+              "value": 18,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "IC輸出とLNG・パーム油が並立するバランス中進国",
+          "items": [
+            {
+              "label": "IC・電気電子・工業製品",
+              "value": 52,
+              "color": "#2563eb"
+            },
+            {
+              "label": "石油製品・LNG・化学",
+              "value": 30,
+              "color": "#ef4444"
+            },
+            {
+              "label": "パーム油・ゴム製品等",
+              "value": 18,
+              "color": "#16a34a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_aus_export_partners",
+      "category": "trade",
+      "title": "オーストラリアの最大輸出相手国シフト（英国→日本→中国）",
+      "subtitle": "脱「白豪主義」とアジア太平洋統合を映す輸出シェア推移（%）",
+      "displayMode": "ranking_bar",
+      "unit": "%",
+      "source": "豪州外務貿易省 / UN Comtrade",
+      "shiftSummary": "1973年の英国EC加盟を転機に日本向け鉱物輸出が拡大し、2000年代後半以降は中国が鉄鉱石・石炭・LNG・農産を買い支え圧倒的1位へ。",
+      "relatedIso3s": [
+        "AUS",
+        "CHN",
+        "JPN",
+        "GBR",
+        "KOR"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1960年",
+          "periodNote": "英連邦ブロック：旧宗主国・英国へ羊毛・小麦・牛肉を輸送",
+          "items": [
+            {
+              "label": "イギリス",
+              "value": 27.0,
+              "iso3": "GBR",
+              "color": "#2563eb"
+            },
+            {
+              "label": "日本",
+              "value": 14.5,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 8.2,
+              "iso3": "USA",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ニュージーランド",
+              "value": 6.0,
+              "iso3": "NZL",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 1.8,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "高度成長後の日本が1位：鉄鉱石・原料炭・羊毛の安定供給先",
+          "items": [
+            {
+              "label": "日本",
+              "value": 27.9,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 10.6,
+              "iso3": "USA",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ニュージーランド",
+              "value": 4.9,
+              "iso3": "NZL",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 3.6,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "イギリス",
+              "value": 3.5,
+              "iso3": "GBR",
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "日本1位を維持しつつ中国が猛追、韓国も上位定着",
+          "items": [
+            {
+              "label": "日本",
+              "value": 20.1,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "中国",
+              "value": 11.4,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "韓国",
+              "value": 7.8,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "アメリカ",
+              "value": 7.4,
+              "iso3": "USA",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ニュージーランド",
+              "value": 6.9,
+              "iso3": "NZL",
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "中国が3割超で独走、日本・韓国・インドと完全アジア圏化",
+          "items": [
+            {
+              "label": "中国",
+              "value": 32.8,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "日本",
+              "value": 14.5,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "韓国",
+              "value": 6.9,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インド",
+              "value": 5.2,
+              "iso3": "IND",
+              "color": "#d97706"
+            },
+            {
+              "label": "アメリカ",
+              "value": 4.0,
+              "iso3": "USA",
+              "color": "#0891b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_chn_export_upgrade",
+      "category": "trade",
+      "title": "中国の輸出品目変化（原油・繊維→組立IT→EV・電池・機械）",
+      "subtitle": "「世界の工場」の中身の変化（輸出商品構成比・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "中国税関総署 / WTO統計",
+      "shiftSummary": "改革開放直後は原油すら輸出したが、1990年代に衣類雑貨で世界を席巻、2010年代はスマホ組立、近年はEV・太陽光パネル・産業機械へ上昇。",
+      "relatedIso3s": [
+        "CHN",
+        "VNM",
+        "BGD",
+        "DEU"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1985年",
+          "periodNote": "改革開放初期：大慶等の原油輸出と農産・軽工業が主軸",
+          "items": [
+            {
+              "label": "原油・石炭・一次産品",
+              "value": 50,
+              "color": "#d97706"
+            },
+            {
+              "label": "繊維・衣類・軽工業品",
+              "value": 38,
+              "color": "#f59e0b"
+            },
+            {
+              "label": "機械・電機製品",
+              "value": 12,
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1995年",
+          "periodNote": "沿海輸出加工の開花：衣類・履物・玩具と一部電子組立",
+          "items": [
+            {
+              "label": "繊維・衣類・雑製品",
+              "value": 52,
+              "color": "#f59e0b"
+            },
+            {
+              "label": "電機・事務機器等",
+              "value": 28,
+              "color": "#2563eb"
+            },
+            {
+              "label": "金属・化学・一次産品",
+              "value": 20,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "世界の組立工場：PC・携帯・家電等機械電機が約半数へ",
+          "items": [
+            {
+              "label": "ICT・電子・機械設備",
+              "value": 50,
+              "color": "#2563eb"
+            },
+            {
+              "label": "繊維・雑貨・家具等",
+              "value": 30,
+              "color": "#f59e0b"
+            },
+            {
+              "label": "鉄鋼・化学・他",
+              "value": 20,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "衣料はASEAN等に譲り、自動車(EV)・蓄電池・太陽光・機械が牽引",
+          "items": [
+            {
+              "label": "機械・電機・自動車(EV)・電池",
+              "value": 59,
+              "color": "#2563eb"
+            },
+            {
+              "label": "金属・化学・先端素材",
+              "value": 20,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "繊維・衣類・日用品等",
+              "value": 21,
+              "color": "#f59e0b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_bra_export_shift",
+      "category": "trade",
+      "title": "ブラジルの輸出品目・先変遷（コーヒー単作→工業→対中資源穀物）",
+      "subtitle": "ラテンアメリカ最大経済の構造変化（主な輸出品割合・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "ブラジル開発商工省・UN Comtrade",
+      "shiftSummary": "かつて輸出の半分以上を占めたコーヒー単作から工業品へ拡大した一方、2000年代後半以降は中国向け需要により大豆・鉄鉱石・原油へ回帰。",
+      "relatedIso3s": [
+        "BRA",
+        "CHN",
+        "ARG",
+        "USA"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1965年",
+          "periodNote": "モノカルチャー色濃い時代：コーヒーだけで輸出の約4割超",
+          "items": [
+            {
+              "label": "コーヒー・砂糖・綿花",
+              "value": 68,
+              "color": "#16a34a"
+            },
+            {
+              "label": "鉄鉱石等鉱産物",
+              "value": 14,
+              "color": "#d97706"
+            },
+            {
+              "label": "工業製品・輸送機等",
+              "value": 18,
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1990年",
+          "periodNote": "輸入代替工業化の成果：自動車・航空機・鉄鋼製品が過半へ",
+          "items": [
+            {
+              "label": "工業製品（自動車・航空機等）",
+              "value": 52,
+              "color": "#2563eb"
+            },
+            {
+              "label": "鉄鉱石等鉱物資源",
+              "value": 20,
+              "color": "#d97706"
+            },
+            {
+              "label": "コーヒー・大豆・オレンジ等",
+              "value": 28,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "セラード開発と中国資源ブーム：鉄鉱石と大豆が急伸",
+          "items": [
+            {
+              "label": "鉄鉱石・原油等資源",
+              "value": 34,
+              "color": "#d97706"
+            },
+            {
+              "label": "大豆・肉類・砂糖・コーヒー",
+              "value": 32,
+              "color": "#16a34a"
+            },
+            {
+              "label": "工業製品",
+              "value": 34,
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "大豆(1位)・原油(プレソルト)・鉄鉱石・牛肉が上位（最大先＝中国）",
+          "items": [
+            {
+              "label": "原油・鉄鉱石等一次資源",
+              "value": 36,
+              "color": "#d97706"
+            },
+            {
+              "label": "大豆・トウモロコシ・牛肉・砂糖",
+              "value": 41,
+              "color": "#16a34a"
+            },
+            {
+              "label": "機械・輸送機器等工業品",
+              "value": 23,
+              "color": "#2563eb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_jpn_power_mix",
+      "category": "energy",
+      "title": "日本の発電電力量構成の歴史的変化",
+      "subtitle": "水主火従→石油危機→原発・LNG→震災後の再エネ拡大（構成比・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "資源エネルギー庁 エネルギー白書",
+      "shiftSummary": "高度成長期の石油依存、オイルショック後の原発・LNG・石炭への分散、2011年震災後の原発激減と近年の太陽光等再エネ拡大が一目で分かる。",
+      "relatedIso3s": [
+        "JPN",
+        "DEU",
+        "FRA",
+        "AUS"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1960年",
+          "periodNote": "戦後復興期：国産石炭火力と各地のダム水力が中心（水主火従）",
+          "items": [
+            {
+              "label": "水力",
+              "value": 51,
+              "color": "#0284c7"
+            },
+            {
+              "label": "石炭・石油火力",
+              "value": 49,
+              "color": "#78350f"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1973年",
+          "periodNote": "第1次オイルショック直前：安価な中東石油火力が約7割超に集中",
+          "items": [
+            {
+              "label": "石油火力",
+              "value": 73,
+              "color": "#ea580c"
+            },
+            {
+              "label": "水力",
+              "value": 15,
+              "color": "#0284c7"
+            },
+            {
+              "label": "石炭・LNG・原子力",
+              "value": 12,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2000年",
+          "periodNote": "電源ベストミックス期：原発約3割＋LNG・石炭のバランス分散",
+          "items": [
+            {
+              "label": "原子力",
+              "value": 30,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "LNG火力",
+              "value": 24,
+              "color": "#0891b2"
+            },
+            {
+              "label": "石炭・石油火力",
+              "value": 35,
+              "color": "#78350f"
+            },
+            {
+              "label": "水力・再エネ",
+              "value": 11,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2014年",
+          "periodNote": "東日本大震災後：原発ゼロでLNG・石炭火力が約9割を穴埋め",
+          "items": [
+            {
+              "label": "LNG火力",
+              "value": 46,
+              "color": "#0891b2"
+            },
+            {
+              "label": "石炭・石油火力",
+              "value": 42,
+              "color": "#78350f"
+            },
+            {
+              "label": "水力・太陽光等再エネ",
+              "value": 12,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "再エネ(太陽光中心)が2割超へ拡大、原発一部再稼働・火力約7割弱",
+          "items": [
+            {
+              "label": "LNG火力",
+              "value": 33,
+              "color": "#0891b2"
+            },
+            {
+              "label": "石炭・石油等火力",
+              "value": 36,
+              "color": "#78350f"
+            },
+            {
+              "label": "再生可能エネルギー(水力含)",
+              "value": 23,
+              "color": "#16a34a"
+            },
+            {
+              "label": "原子力",
+              "value": 8,
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_deu_power_mix",
+      "category": "energy",
+      "title": "ドイツの電源転換（石炭・原発→再エネ過半・脱原発完了）",
+      "subtitle": "エネルギーヴェンデ（Energiewende）の軌跡（%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "独AGEB / Ember",
+      "shiftSummary": "かつて石炭（褐炭）・原子力で8割を賄った工業大国が、風力・太陽光を急速に伸ばし2023年4月に脱原発を完了（再エネ5割超へ）。",
+      "relatedIso3s": [
+        "DEU",
+        "FRA",
+        "DNK",
+        "POL"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1990年",
+          "periodNote": "東西統一時：石炭・褐炭と原子力の両輪（再エネは数%台）",
+          "items": [
+            {
+              "label": "石炭・褐炭",
+              "value": 57,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 28,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "天然ガス・他",
+              "value": 11,
+              "color": "#0891b2"
+            },
+            {
+              "label": "再生可能エネルギー",
+              "value": 4,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "固定価格買取制度(FIT)効果で風力・バイオマス等が17%へ",
+          "items": [
+            {
+              "label": "石炭・褐炭",
+              "value": 42,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 22,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "天然ガス・他",
+              "value": 19,
+              "color": "#0891b2"
+            },
+            {
+              "label": "再生可能エネルギー",
+              "value": 17,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2018年",
+          "periodNote": "福島原発事故後の段階的廃炉と再エネ35%超達成",
+          "items": [
+            {
+              "label": "再生可能エネルギー",
+              "value": 35,
+              "color": "#16a34a"
+            },
+            {
+              "label": "石炭・褐炭",
+              "value": 35,
+              "color": "#78350f"
+            },
+            {
+              "label": "天然ガス・他",
+              "value": 18,
+              "color": "#0891b2"
+            },
+            {
+              "label": "原子力",
+              "value": 12,
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "脱原発完了！再エネが半数を超え、ロシアガス停止で石炭一時併用",
+          "items": [
+            {
+              "label": "再生可能エネルギー",
+              "value": 53,
+              "color": "#16a34a"
+            },
+            {
+              "label": "石炭・褐炭",
+              "value": 26,
+              "color": "#78350f"
+            },
+            {
+              "label": "天然ガス・他",
+              "value": 20,
+              "color": "#0891b2"
+            },
+            {
+              "label": "原子力",
+              "value": 1,
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_fra_power_mix",
+      "category": "energy",
+      "title": "フランスの原子力シフトと欧州最大の電力輸出体制",
+      "subtitle": "資源小国が選択した原子力集中（発電比率・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "IEA / RTE France",
+      "shiftSummary": "1970年代オイルショックを受けメスメル計画で一気に原発比率を75%前後へ引き上げ、現在は約65%を原発、残りを水力・風力で賄い脱石炭を達成。",
+      "relatedIso3s": [
+        "FRA",
+        "DEU",
+        "BEL",
+        "SVK"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "石油危機前：石炭・石油火力とアルプス水力が中心",
+          "items": [
+            {
+              "label": "石油・石炭・ガス火力",
+              "value": 57,
+              "color": "#78350f"
+            },
+            {
+              "label": "水力等再エネ",
+              "value": 39,
+              "color": "#0284c7"
+            },
+            {
+              "label": "原子力",
+              "value": 4,
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "メスメル計画による原子力発電所一斉稼働で原発65%へ急上昇",
+          "items": [
+            {
+              "label": "原子力",
+              "value": 65,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "水力等再エネ",
+              "value": 19,
+              "color": "#0284c7"
+            },
+            {
+              "label": "石炭・石油・ガス火力",
+              "value": 16,
+              "color": "#78350f"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "原発比率約78%のピーク（電力の純輸出国として独伊へ供給）",
+          "items": [
+            {
+              "label": "原子力",
+              "value": 78,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "水力・風力・太陽光",
+              "value": 11,
+              "color": "#16a34a"
+            },
+            {
+              "label": "火力",
+              "value": 11,
+              "color": "#78350f"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "石炭火力ほぼゼロ・原発約65%＋再エネ約28%の低炭素電源",
+          "items": [
+            {
+              "label": "原子力",
+              "value": 65,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "再エネ(水力・風力・太陽)",
+              "value": 28,
+              "color": "#16a34a"
+            },
+            {
+              "label": "天然ガス等火力",
+              "value": 7,
+              "color": "#0891b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_gbr_power_mix",
+      "category": "energy",
+      "title": "イギリスの脱石炭完了と北海ガス・洋上風力シフト",
+      "subtitle": "産業革命発祥国が石炭火力を終焉させた転換（%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "英国DESNZ / Ember",
+      "shiftSummary": "1990年に約7割あった石炭火力を「ダッシュ・フォー・ガス」で減らし、2010年代後半から北海洋上風力の急拡大で2024年石炭火力ゼロを達成。",
+      "relatedIso3s": [
+        "GBR",
+        "DNK",
+        "NOR",
+        "NLD"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1990年",
+          "periodNote": "炭鉱閉山後も石炭火力が約67%を占めていた時代",
+          "items": [
+            {
+              "label": "石炭",
+              "value": 67,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 19,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "天然ガス・石油・他",
+              "value": 12,
+              "color": "#0891b2"
+            },
+            {
+              "label": "再エネ",
+              "value": 2,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "北海ガス田活用により天然ガスが約4割へ増加",
+          "items": [
+            {
+              "label": "天然ガス・石油",
+              "value": 41,
+              "color": "#0891b2"
+            },
+            {
+              "label": "石炭",
+              "value": 34,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 20,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "再エネ",
+              "value": 5,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2015年",
+          "periodNote": "炭素税導入と洋上風力投資で石炭と再エネが逆転",
+          "items": [
+            {
+              "label": "天然ガス・他",
+              "value": 32,
+              "color": "#0891b2"
+            },
+            {
+              "label": "再エネ(風力・バイオ等)",
+              "value": 25,
+              "color": "#16a34a"
+            },
+            {
+              "label": "石炭",
+              "value": 22,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 21,
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "洋上風力など再エネ約45%、石炭はわずか1%（2024年全廃）",
+          "items": [
+            {
+              "label": "再生可能エネルギー(風力中心)",
+              "value": 45,
+              "color": "#16a34a"
+            },
+            {
+              "label": "天然ガス等",
+              "value": 39,
+              "color": "#0891b2"
+            },
+            {
+              "label": "原子力",
+              "value": 15,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "石炭",
+              "value": 1,
+              "color": "#78350f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_usa_power_mix",
+      "category": "energy",
+      "title": "アメリカのシェール革命に伴う電源構成の激変",
+      "subtitle": "石炭大国から安価なシェールガス＋再エネ主導へ（%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "米エネルギー情報局(EIA)",
+      "shiftSummary": "水圧破砕等のシェール革命で天然ガス価格が急落した結果、石炭火力が約5割→約16%へ激減し、天然ガス火力が4割超へ浮上。",
+      "relatedIso3s": [
+        "USA",
+        "CAN",
+        "QAT",
+        "RUS"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1990年",
+          "periodNote": "アパラチア・西部炭田の安価な石炭が電力の過半を供給",
+          "items": [
+            {
+              "label": "石炭",
+              "value": 52,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 19,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "天然ガス・石油",
+              "value": 16,
+              "color": "#0891b2"
+            },
+            {
+              "label": "水力・再エネ",
+              "value": 13,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2008年",
+          "periodNote": "シェール革命勃興前夜：まだ石炭が約半数を維持",
+          "items": [
+            {
+              "label": "石炭",
+              "value": 48,
+              "color": "#78350f"
+            },
+            {
+              "label": "天然ガス",
+              "value": 21,
+              "color": "#0891b2"
+            },
+            {
+              "label": "原子力",
+              "value": 20,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "水力・風力等再エネ",
+              "value": 11,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2016年",
+          "periodNote": "歴史的転換点：天然ガスが初めて石炭を抜き電源1位に",
+          "items": [
+            {
+              "label": "天然ガス",
+              "value": 34,
+              "color": "#0891b2"
+            },
+            {
+              "label": "石炭",
+              "value": 30,
+              "color": "#78350f"
+            },
+            {
+              "label": "原子力",
+              "value": 20,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "再エネ(風力・水力・太陽)",
+              "value": 16,
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "シェールガスが約43%、再エネ(風・太陽・水)が石炭を抜く22%へ",
+          "items": [
+            {
+              "label": "天然ガス",
+              "value": 43,
+              "color": "#0891b2"
+            },
+            {
+              "label": "再エネ(風力・太陽・水力)",
+              "value": 22,
+              "color": "#16a34a"
+            },
+            {
+              "label": "原子力",
+              "value": 19,
+              "color": "#7c3aed"
+            },
+            {
+              "label": "石炭",
+              "value": 16,
+              "color": "#78350f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_coffee_producers",
+      "category": "agriculture",
+      "title": "世界のコーヒー豆生産トップ5の交代（ベトナムの躍進）",
+      "subtitle": "中南米中心から東南アジア(ロブスタ)大増産へ（万トン概算）",
+      "displayMode": "ranking_bar",
+      "unit": "万t",
+      "source": "FAOSTAT",
+      "shiftSummary": "1980年代まで中南米とアフリカの作物だったが、ドイモイ政策後のベトナムがロブスタ種で急拡大しコロンビアを抜いて世界2位へ定着。",
+      "relatedIso3s": [
+        "BRA",
+        "VNM",
+        "COL",
+        "IDN",
+        "ETH"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "ブラジル・コロンビアにコートジボワール・アンゴラ等が続いた時代",
+          "items": [
+            {
+              "label": "ブラジル",
+              "value": 75,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "コロンビア",
+              "value": 50,
+              "iso3": "COL",
+              "color": "#2563eb"
+            },
+            {
+              "label": "コートジボワール",
+              "value": 28,
+              "iso3": "CIV",
+              "color": "#d97706"
+            },
+            {
+              "label": "アンゴラ",
+              "value": 20,
+              "iso3": "AGO",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "エチオピア",
+              "value": 17,
+              "iso3": "ETH",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1990年",
+          "periodNote": "コロンビア絶頂期、インドネシア・メキシコ上位、ベトナムはまだ圏外",
+          "items": [
+            {
+              "label": "ブラジル",
+              "value": 146,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "コロンビア",
+              "value": 84,
+              "iso3": "COL",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア",
+              "value": 41,
+              "iso3": "IDN",
+              "color": "#ea580c"
+            },
+            {
+              "label": "メキシコ",
+              "value": 38,
+              "iso3": "MEX",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "ベトナム",
+              "value": 9,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "ベトナム中部高原の開拓で一躍コロンビアを抜き世界2位へ",
+          "items": [
+            {
+              "label": "ブラジル",
+              "value": 214,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ベトナム",
+              "value": 83,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            },
+            {
+              "label": "コロンビア",
+              "value": 67,
+              "iso3": "COL",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア",
+              "value": 64,
+              "iso3": "IDN",
+              "color": "#ea580c"
+            },
+            {
+              "label": "インド",
+              "value": 28,
+              "iso3": "IND",
+              "color": "#d97706"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2022年",
+          "periodNote": "ブラジル1位(アラビカ)・ベトナム2位(ロブスタ)の2強体制確立",
+          "items": [
+            {
+              "label": "ブラジル",
+              "value": 317,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ベトナム",
+              "value": 195,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            },
+            {
+              "label": "インドネシア",
+              "value": 79,
+              "iso3": "IDN",
+              "color": "#ea580c"
+            },
+            {
+              "label": "コロンビア",
+              "value": 66,
+              "iso3": "COL",
+              "color": "#2563eb"
+            },
+            {
+              "label": "エチオピア",
+              "value": 49,
+              "iso3": "ETH",
+              "color": "#0891b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_soybean_producers",
+      "category": "agriculture",
+      "title": "世界の大豆生産・輸出構造（米国一強→ブラジル逆転）",
+      "subtitle": "セラード農業開発と中国の豚肉飼料爆増が変えた勢力図（百万トン）",
+      "displayMode": "ranking_bar",
+      "unit": "百万t",
+      "source": "FAOSTAT / USDA",
+      "shiftSummary": "1970年代まで米国の独占に近かった大豆市場に、日伯協力のセラード開発でブラジルとアルゼンチンが参入し現在はブラジルが世界1位。",
+      "relatedIso3s": [
+        "BRA",
+        "USA",
+        "ARG",
+        "CHN",
+        "PRY"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "アメリカが世界生産の約7割・中国が原産地2位の時代",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 30.7,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "中国",
+              "value": 8.7,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "ブラジル",
+              "value": 1.5,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ソ連",
+              "value": 0.6,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 0.3,
+              "iso3": "CAN",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1990年",
+          "periodNote": "セラードの酸性土壌改良進みブラジル・アルゼンチンが急拡大",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 52.4,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ブラジル",
+              "value": 19.9,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 11.0,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アルゼンチン",
+              "value": 10.7,
+              "iso3": "ARG",
+              "color": "#0891b2"
+            },
+            {
+              "label": "インド",
+              "value": 2.6,
+              "iso3": "IND",
+              "color": "#d97706"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "米伯2強とアルゼンチンの南米トライアングル形成",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 90.6,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ブラジル",
+              "value": 68.8,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アルゼンチン",
+              "value": 52.7,
+              "iso3": "ARG",
+              "color": "#0891b2"
+            },
+            {
+              "label": "中国",
+              "value": 15.1,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "インド",
+              "value": 12.7,
+              "iso3": "IND",
+              "color": "#d97706"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "ブラジルが生産・輸出とも完全世界1位（中国向け飼料が大半）",
+          "items": [
+            {
+              "label": "ブラジル",
+              "value": 154.0,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アメリカ",
+              "value": 113.0,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "アルゼンチン",
+              "value": 48.0,
+              "iso3": "ARG",
+              "color": "#0891b2"
+            },
+            {
+              "label": "中国",
+              "value": 20.8,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "インド",
+              "value": 14.9,
+              "iso3": "IND",
+              "color": "#d97706"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_fishery_shift",
+      "category": "agriculture",
+      "title": "世界の漁業・養殖生産量上位の変遷（遠洋日本→アジア養殖）",
+      "subtitle": "200海里時代と養殖普及による水産大国の交代（百万トン概算）",
+      "displayMode": "ranking_bar",
+      "unit": "百万t",
+      "source": "FAO 世界漁業・養殖白書",
+      "shiftSummary": "1980年代まで遠洋・沖合漁業の日本とソ連・ペルーが上位だったが、EEZ規制で日本が激減し、現在は養殖生産の中国・インドネシア・インドが上位。",
+      "relatedIso3s": [
+        "CHN",
+        "IDN",
+        "IND",
+        "VNM",
+        "JPN"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1975年",
+          "periodNote": "日本・ソ連の遠洋漁船団とペルー・アンチョビが上位独占",
+          "items": [
+            {
+              "label": "日本",
+              "value": 10.5,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "ソ連",
+              "value": 9.9,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "中国",
+              "value": 5.8,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "ペルー",
+              "value": 3.4,
+              "iso3": "PER",
+              "color": "#2563eb"
+            },
+            {
+              "label": "アメリカ",
+              "value": 2.9,
+              "iso3": "USA",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1990年",
+          "periodNote": "中国が養殖拡大で首位奪取、日本はイワシ減少とEEZで下降開始",
+          "items": [
+            {
+              "label": "中国",
+              "value": 14.7,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "日本",
+              "value": 11.1,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "ソ連",
+              "value": 10.4,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "ペルー",
+              "value": 6.9,
+              "iso3": "PER",
+              "color": "#2563eb"
+            },
+            {
+              "label": "アメリカ",
+              "value": 5.9,
+              "iso3": "USA",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "中国独走・ペルー(魚粉)・インド・インドネシアの時代へ",
+          "items": [
+            {
+              "label": "中国",
+              "value": 44.0,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "ペルー",
+              "value": 9.4,
+              "iso3": "PER",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インド",
+              "value": 6.7,
+              "iso3": "IND",
+              "color": "#d97706"
+            },
+            {
+              "label": "インドネシア",
+              "value": 6.1,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "日本",
+              "value": 5.6,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2022年",
+          "periodNote": "養殖中心の中国・尼・印・越がトップ4、日本は約3分の1へ低下",
+          "items": [
+            {
+              "label": "中国",
+              "value": 68.5,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "インドネシア",
+              "value": 22.0,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "インド",
+              "value": 16.0,
+              "iso3": "IND",
+              "color": "#d97706"
+            },
+            {
+              "label": "ベトナム",
+              "value": 8.8,
+              "iso3": "VNM",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "日本",
+              "value": 3.9,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_oil_production_shift",
+      "category": "agriculture",
+      "title": "世界の原油生産量トップ国の変遷（シェール革命の衝撃）",
+      "subtitle": "中東・露2強時代からアメリカ首位復帰までの推移（百万バレル/日概算）",
+      "displayMode": "ranking_bar",
+      "unit": "百万b/d",
+      "source": "Energy Institute Statistical Review",
+      "shiftSummary": "1970年代以降サウジアラビアとソ連/ロシアの2強が争ったが、2010年代後半に米国がシェールオイル増産で圧倒的世界1位へ復帰。",
+      "relatedIso3s": [
+        "USA",
+        "SAU",
+        "RUS",
+        "CAN",
+        "IRQ"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1980年",
+          "periodNote": "第2次石油危機期：サウジ・ソ連・米の3強とイラン・イラク",
+          "items": [
+            {
+              "label": "ソ連",
+              "value": 12.1,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "サウジアラビア",
+              "value": 10.3,
+              "iso3": "SAU",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アメリカ",
+              "value": 10.2,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "イラク",
+              "value": 2.7,
+              "iso3": "IRQ",
+              "color": "#d97706"
+            },
+            {
+              "label": "メキシコ",
+              "value": 2.1,
+              "iso3": "MEX",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2000年",
+          "periodNote": "サウジ首位＋ロシア回復＋米減産で純輸入拡大期",
+          "items": [
+            {
+              "label": "サウジアラビア",
+              "value": 9.5,
+              "iso3": "SAU",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アメリカ",
+              "value": 7.7,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ロシア",
+              "value": 6.5,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "イラン",
+              "value": 3.8,
+              "iso3": "IRN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "メキシコ",
+              "value": 3.5,
+              "iso3": "MEX",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2012年",
+          "periodNote": "OPECサウジ・ロシアの僅差競合にシェール発進直前の米国",
+          "items": [
+            {
+              "label": "サウジアラビア",
+              "value": 11.6,
+              "iso3": "SAU",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ロシア",
+              "value": 10.6,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 8.9,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "中国",
+              "value": 4.2,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "カナダ",
+              "value": 3.7,
+              "iso3": "CAN",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "シェール開発＋加オイルサンドで北米2国が大きく伸長（米断トツ1位）",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 19.4,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "サウジアラビア",
+              "value": 11.1,
+              "iso3": "SAU",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ロシア",
+              "value": 10.7,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 5.7,
+              "iso3": "CAN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "イラク",
+              "value": 4.3,
+              "iso3": "IRQ",
+              "color": "#d97706"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_nickel_bauxite_shift",
+      "category": "agriculture",
+      "title": "ニッケル・ボーキサイト供給の資源ナショナリズム推移",
+      "subtitle": "インドネシアとギニアの世界シェア急拡大（世界シェア概算・%）",
+      "displayMode": "ranking_bar",
+      "unit": "%",
+      "source": "USGS / JOGMEC",
+      "shiftSummary": "かつてニッケルはカナダ・露・ニューカレドニアだったが、近年インドネシアが原鉱禁輸＋国内精製義務化で世界5割超を握り、ボーキサイトもギニア・豪が中心。",
+      "relatedIso3s": [
+        "IDN",
+        "PHL",
+        "NCL",
+        "CAN",
+        "GIN"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1985年",
+          "periodNote": "ニッケル生産はソ連・カナダ・ニューカレドニア・豪の安定時代",
+          "items": [
+            {
+              "label": "ソ連",
+              "value": 24,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 22,
+              "iso3": "CAN",
+              "color": "#2563eb"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 11,
+              "iso3": "AUS",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ニューカレドニア",
+              "value": 9,
+              "iso3": "NCL",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インドネシア",
+              "value": 6,
+              "iso3": "IDN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "ロシア・加・豪にインドネシアとニューカレドニアが続く",
+          "items": [
+            {
+              "label": "ロシア",
+              "value": 21,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 13,
+              "iso3": "CAN",
+              "color": "#2563eb"
+            },
+            {
+              "label": "オーストラリア",
+              "value": 12,
+              "iso3": "AUS",
+              "color": "#0891b2"
+            },
+            {
+              "label": "インドネシア",
+              "value": 11,
+              "iso3": "IDN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "ニューカレドニア",
+              "value": 8,
+              "iso3": "NCL",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2016年",
+          "periodNote": "インドネシア一時原鉱輸出禁止でフィリピンが一時1位浮上",
+          "items": [
+            {
+              "label": "フィリピン",
+              "value": 17,
+              "iso3": "PHL",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ロシア",
+              "value": 12,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 11,
+              "iso3": "CAN",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ニューカレドニア",
+              "value": 10,
+              "iso3": "NCL",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インドネシア",
+              "value": 9,
+              "iso3": "IDN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "インドネシア国内EV電池精製誘致で大増産し世界の半数超を独占",
+          "items": [
+            {
+              "label": "インドネシア",
+              "value": 51,
+              "iso3": "IDN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "フィリピン",
+              "value": 11,
+              "iso3": "PHL",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ニューカレドニア",
+              "value": 6,
+              "iso3": "NCL",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "ロシア",
+              "value": 6,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "カナダ",
+              "value": 5,
+              "iso3": "CAN",
+              "color": "#2563eb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_rubber_palmoil_shift",
+      "category": "agriculture",
+      "title": "東南アジア植物油脂・ゴムの主役交代（ゴム→パーム油2強）",
+      "subtitle": "天然ゴム生産国の推移とパーム油世界支配（世界生産量・百万t概算）",
+      "displayMode": "ranking_bar",
+      "unit": "百万t",
+      "source": "FAOSTAT / ANRPC",
+      "shiftSummary": "植民地期のマレーシアは天然ゴム世界1位だったが労賃上昇と収益差からアブラヤシへ転換し、ゴムはタイ・インドネシア・ベトナムが上位へ。",
+      "relatedIso3s": [
+        "THA",
+        "IDN",
+        "VNM",
+        "MYS",
+        "CIV"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "マレーシアの天然ゴムが世界生産の約4割を占めて独走",
+          "items": [
+            {
+              "label": "マレーシア（天然ゴム）",
+              "value": 1.27,
+              "iso3": "MYS",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インドネシア（天然ゴム）",
+              "value": 0.82,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "タイ（天然ゴム）",
+              "value": 0.29,
+              "iso3": "THA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "スリランカ（天然ゴム）",
+              "value": 0.16,
+              "iso3": "LKA",
+              "color": "#d97706"
+            },
+            {
+              "label": "リベリア（天然ゴム）",
+              "value": 0.08,
+              "iso3": "LBR",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1995年",
+          "periodNote": "タイ南部開拓とマレーシアのパーム油転換でタイがゴム首位",
+          "items": [
+            {
+              "label": "タイ（天然ゴム）",
+              "value": 1.8,
+              "iso3": "THA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア（天然ゴム）",
+              "value": 1.46,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "マレーシア（天然ゴム）",
+              "value": 1.09,
+              "iso3": "MYS",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インド（天然ゴム）",
+              "value": 0.5,
+              "iso3": "IND",
+              "color": "#d97706"
+            },
+            {
+              "label": "中国（天然ゴム）",
+              "value": 0.42,
+              "iso3": "CHN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "タイ・尼の2強にベトナムが急接近、マレーシアはゴムから大きく縮小",
+          "items": [
+            {
+              "label": "タイ（天然ゴム）",
+              "value": 3.25,
+              "iso3": "THA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア（天然ゴム）",
+              "value": 2.74,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "マレーシア（天然ゴム）",
+              "value": 0.94,
+              "iso3": "MYS",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "インド（天然ゴム）",
+              "value": 0.85,
+              "iso3": "IND",
+              "color": "#d97706"
+            },
+            {
+              "label": "ベトナム（天然ゴム）",
+              "value": 0.75,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2022年",
+          "periodNote": "ベトナム3位、さらに西アフリカ（コートジボワール）が4位圏内へ",
+          "items": [
+            {
+              "label": "タイ（天然ゴム）",
+              "value": 4.8,
+              "iso3": "THA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア（天然ゴム）",
+              "value": 3.1,
+              "iso3": "IDN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ベトナム（天然ゴム）",
+              "value": 1.34,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            },
+            {
+              "label": "コートジボワール（天然ゴム）",
+              "value": 1.28,
+              "iso3": "CIV",
+              "color": "#d97706"
+            },
+            {
+              "label": "中国（天然ゴム）",
+              "value": 0.85,
+              "iso3": "CHN",
+              "color": "#64748b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_crude_steel_shift",
+      "category": "industry",
+      "title": "世界の粗鋼生産量の歴史的推移（米欧→日本→中国5割・インド2位）",
+      "subtitle": "産業の米「鉄鋼」の生産国交代（万トン概算）",
+      "displayMode": "ranking_bar",
+      "unit": "万t",
+      "source": "世界鉄鋼協会(WSA)",
+      "shiftSummary": "1970年代は米ソ日、1990年代に中国が急追、2000年代以降中国が世界5割超を握り、近年インドが日本を抜いて世界2位へ浮上。",
+      "relatedIso3s": [
+        "CHN",
+        "IND",
+        "JPN",
+        "USA",
+        "RUS"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "米ソ2強に臨海製鉄所投資の日本が迫る構図",
+          "items": [
+            {
+              "label": "ソ連",
+              "value": 11589,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 11931,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "日本",
+              "value": 9332,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "西ドイツ",
+              "value": 4504,
+              "iso3": "DEU",
+              "color": "#d97706"
+            },
+            {
+              "label": "イギリス",
+              "value": 2832,
+              "iso3": "GBR",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1995年",
+          "periodNote": "日本がソ連崩壊後の1位維持、中国と韓国が急速追走",
+          "items": [
+            {
+              "label": "日本",
+              "value": 10164,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "中国",
+              "value": 9536,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 9519,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ロシア",
+              "value": 5159,
+              "iso3": "RUS",
+              "color": "#64748b"
+            },
+            {
+              "label": "ドイツ",
+              "value": 4205,
+              "iso3": "DEU",
+              "color": "#d97706"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "中国が単独で世界の約44%に達し、日本・米を大きく引き離す",
+          "items": [
+            {
+              "label": "中国",
+              "value": 62670,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "日本",
+              "value": 10960,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 8050,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インド",
+              "value": 6830,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ロシア",
+              "value": 6690,
+              "iso3": "RUS",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "中国54%・インドが日本を抜き2位定着、4位米・5位露",
+          "items": [
+            {
+              "label": "中国",
+              "value": 101910,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "インド",
+              "value": 14020,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "日本",
+              "value": 8700,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 8070,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ロシア",
+              "value": 7580,
+              "iso3": "RUS",
+              "color": "#64748b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_auto_production",
+      "category": "industry",
+      "title": "世界の自動車生産台数の歴史的変化（日米→中国・インド・メキシコ）",
+      "subtitle": "戦後からEV時代の生産拠点シフト（万台概算）",
+      "displayMode": "ranking_bar",
+      "unit": "万台",
+      "source": "OICA / 日本自動車工業会",
+      "shiftSummary": "1980年に日本が米国を抜き長らく首位争いを演じたが、2009年以降は巨大内需とEV投資の中国が世界約3分の1を占めて圧倒、インドも日独に迫る。",
+      "relatedIso3s": [
+        "CHN",
+        "USA",
+        "JPN",
+        "IND",
+        "MEX"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1965年",
+          "periodNote": "アメリカ圧倒的1位、西欧(独英仏)が続き日本はまだ5位前後",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 1114,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "西ドイツ",
+              "value": 298,
+              "iso3": "DEU",
+              "color": "#78350f"
+            },
+            {
+              "label": "イギリス",
+              "value": 218,
+              "iso3": "GBR",
+              "color": "#0891b2"
+            },
+            {
+              "label": "日本",
+              "value": 188,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "フランス",
+              "value": 164,
+              "iso3": "FRA",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "石油危機後に燃費性能で日本が世界1位、欧米では貿易摩擦発生",
+          "items": [
+            {
+              "label": "日本",
+              "value": 1227,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 1165,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "西ドイツ",
+              "value": 445,
+              "iso3": "DEU",
+              "color": "#78350f"
+            },
+            {
+              "label": "フランス",
+              "value": 302,
+              "iso3": "FRA",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "ソ連",
+              "value": 220,
+              "iso3": "RUS",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "日米2強時代終盤、中国が4位へ急浮上・韓国5位",
+          "items": [
+            {
+              "label": "アメリカ",
+              "value": 1195,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "日本",
+              "value": 1080,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "ドイツ",
+              "value": 576,
+              "iso3": "DEU",
+              "color": "#78350f"
+            },
+            {
+              "label": "中国",
+              "value": 571,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "韓国",
+              "value": 370,
+              "iso3": "KOR",
+              "color": "#0891b2"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "中国がEV含め約3,000万台、インド4位、メキシコ7位へ躍進",
+          "items": [
+            {
+              "label": "中国",
+              "value": 3016,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 1061,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "日本",
+              "value": 900,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "インド",
+              "value": 585,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "メキシコ",
+              "value": 400,
+              "iso3": "MEX",
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_apparel_flying_geese",
+      "category": "industry",
+      "title": "衣類・繊維輸出の雁行形態発展（日→NIES→中国→南/東南アジア）",
+      "subtitle": "労働賃金の上昇とともに移動する労働集約工業（世界シェア概算・%）",
+      "displayMode": "ranking_bar",
+      "unit": "%",
+      "source": "WTO World Trade Statistical Review",
+      "shiftSummary": "1960〜70年代の日本・香港から韓国・台湾へ、90年代に中国が席巻、現在は高賃金化した中国からバングラデシュ・ベトナム等へ生産が移動中。",
+      "relatedIso3s": [
+        "CHN",
+        "BGD",
+        "VNM",
+        "TUR",
+        "IND"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1970年",
+          "periodNote": "香港・イタリア・日本・西独が世界衣類輸出の上位",
+          "items": [
+            {
+              "label": "香港",
+              "value": 12,
+              "iso3": "HKG",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "イタリア",
+              "value": 11,
+              "iso3": "ITA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "日本",
+              "value": 9,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "韓国・台湾合計",
+              "value": 8,
+              "iso3": "KOR",
+              "color": "#0891b2"
+            },
+            {
+              "label": "中国",
+              "value": 2,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1990年",
+          "periodNote": "アジアNIES(港韓台)が世界市場をリード、中国の追い上げ開始",
+          "items": [
+            {
+              "label": "香港(再輸出含)",
+              "value": 14,
+              "iso3": "HKG",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "イタリア",
+              "value": 11,
+              "iso3": "ITA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "中国",
+              "value": 9,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "韓国",
+              "value": 7,
+              "iso3": "KOR",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ドイツ",
+              "value": 7,
+              "iso3": "DEU",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "「世界の縫製工場」中国が単独シェア約37%で圧倒",
+          "items": [
+            {
+              "label": "中国",
+              "value": 37,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "イタリア",
+              "value": 6,
+              "iso3": "ITA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "バングラデシュ",
+              "value": 4,
+              "iso3": "BGD",
+              "color": "#16a34a"
+            },
+            {
+              "label": "トルコ",
+              "value": 4,
+              "iso3": "TUR",
+              "color": "#d97706"
+            },
+            {
+              "label": "インド・ベトナム合計",
+              "value": 6,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "中国シェアが3割前後に低下し、バングラデシュ・ベトナムが肉薄",
+          "items": [
+            {
+              "label": "中国",
+              "value": 29,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "バングラデシュ",
+              "value": 8,
+              "iso3": "BGD",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ベトナム",
+              "value": 7,
+              "iso3": "VNM",
+              "color": "#ef4444"
+            },
+            {
+              "label": "トルコ",
+              "value": 4,
+              "iso3": "TUR",
+              "color": "#d97706"
+            },
+            {
+              "label": "インド",
+              "value": 3,
+              "iso3": "IND",
+              "color": "#0891b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_semiconductor_shift",
+      "category": "industry",
+      "title": "世界の半導体製造（ウェハ能力/IC生産）重心の移動",
+      "subtitle": "米→日本絶頂→台湾・韓国・中国の東アジア集中と欧州/米の回帰投資（%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "SEMI / SIA / BCG報告概算",
+      "shiftSummary": "1980年代末に日本が世界半数を占めたが日米摩擦と投資変化で低下、以降は台湾ファウンドリ(TSMC)と韓国メモリーに製造が集中。",
+      "relatedIso3s": [
+        "TWN",
+        "KOR",
+        "CHN",
+        "JPN",
+        "USA"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1990年",
+          "periodNote": "日米2強時代（日本DRAMが世界シェア約半分を占めた時代）",
+          "items": [
+            {
+              "label": "日本",
+              "value": 49,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 37,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ヨーロッパ",
+              "value": 10,
+              "iso3": "DEU",
+              "color": "#64748b"
+            },
+            {
+              "label": "台湾・韓国他",
+              "value": 4,
+              "iso3": "TWN",
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2000年",
+          "periodNote": "台湾の受託製造(TSMC等)と韓国サムスンが急速シェア拡大",
+          "items": [
+            {
+              "label": "日本",
+              "value": 28,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 24,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "韓国・台湾合計",
+              "value": 26,
+              "iso3": "TWN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ヨーロッパ・他",
+              "value": 22,
+              "iso3": "DEU",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "東アジア集中完成：台湾・韓国・日本の3地域で6割超",
+          "items": [
+            {
+              "label": "台湾・韓国",
+              "value": 43,
+              "iso3": "TWN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "日本",
+              "value": 21,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ",
+              "value": 14,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "中国・欧州・他",
+              "value": 22,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "台湾(先端ロジック)・韓国(メモリー)・中国の比重極めて大（米日欧は補助金で誘致中）",
+          "items": [
+            {
+              "label": "台湾・韓国",
+              "value": 42,
+              "iso3": "TWN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 19,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "日本",
+              "value": 15,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "アメリカ・欧州・他",
+              "value": 24,
+              "iso3": "USA",
+              "color": "#2563eb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_world_top_population",
+      "category": "population",
+      "title": "世界の人口ランキング上位国の変化（1960→2023→2050予測）",
+      "subtitle": "日本の後退・インドの首位奪取・アフリカ急増（百万人）",
+      "displayMode": "ranking_bar",
+      "unit": "百万人",
+      "source": "国連 World Population Prospects",
+      "shiftSummary": "1960年に世界5〜6位だった日本や欧州は減少・停滞し、2023年にインドが中国を抜き、2050年に向けてナイジェリア・パキスタン・エチオピア等が急伸。",
+      "relatedIso3s": [
+        "IND",
+        "CHN",
+        "USA",
+        "IDN",
+        "NGA"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1960年",
+          "periodNote": "中印ソ米の4強に日本・インドネシア・ドイツが続く時代",
+          "items": [
+            {
+              "label": "中国",
+              "value": 654,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "インド",
+              "value": 446,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アメリカ",
+              "value": 181,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア",
+              "value": 88,
+              "iso3": "IDN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "日本",
+              "value": 94,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1995年",
+          "periodNote": "中印が10億突破・ブラジル台頭・日本は10位圏外が近づく",
+          "items": [
+            {
+              "label": "中国",
+              "value": 1218,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "インド",
+              "value": 965,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アメリカ",
+              "value": 266,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア",
+              "value": 198,
+              "iso3": "IDN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "ブラジル",
+              "value": 164,
+              "iso3": "BRA",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "インドがついに中国を抜いて世界1位、パキスタン・ナイジェリア急上位",
+          "items": [
+            {
+              "label": "インド",
+              "value": 1429,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 1425,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 340,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "インドネシア",
+              "value": 278,
+              "iso3": "IDN",
+              "color": "#0891b2"
+            },
+            {
+              "label": "パキスタン・ナイジェリア(各2.2-2.4億)",
+              "value": 240,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2050年予測",
+          "periodNote": "中国大幅減・インド16.7億、ナイジェリアが米国と世界3位争い",
+          "items": [
+            {
+              "label": "インド",
+              "value": 1670,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 1313,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アメリカ",
+              "value": 375,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ナイジェリア",
+              "value": 377,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            },
+            {
+              "label": "パキスタン",
+              "value": 368,
+              "iso3": "PAK",
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_tfr_transition",
+      "category": "population",
+      "title": "主要国の合計特殊出生率(TFR)の低下と地域差",
+      "subtitle": "アジア・中南米の急速な少子化とアフリカの多産持続（人/女性）",
+      "displayMode": "ranking_bar",
+      "unit": "人",
+      "source": "国連人口統計 / World Bank",
+      "shiftSummary": "1965年は東アジア・中南米もTFR5前後だったが、教育・都市化で日本・韓国・中国・タイ・イランが一気に2.1(人口置換水準)を割り込んだ一方、ニジェール等は高水準。",
+      "relatedIso3s": [
+        "NER",
+        "NGA",
+        "IND",
+        "BRA",
+        "KOR"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1965年",
+          "periodNote": "途上国ほぼ全域がTFR5〜7の多産時代（日本のみ2.1前後）",
+          "items": [
+            {
+              "label": "ニジェール",
+              "value": 7.3,
+              "iso3": "NER",
+              "color": "#dc2626"
+            },
+            {
+              "label": "ケニア",
+              "value": 8.1,
+              "iso3": "KEN",
+              "color": "#ea580c"
+            },
+            {
+              "label": "韓国",
+              "value": 5.1,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "中国",
+              "value": 6.1,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "日本",
+              "value": 2.1,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "東アジア(中韓)で人口抑制と経済成長により劇的に低下",
+          "items": [
+            {
+              "label": "ニジェール",
+              "value": 7.8,
+              "iso3": "NER",
+              "color": "#dc2626"
+            },
+            {
+              "label": "ケニア",
+              "value": 6.9,
+              "iso3": "KEN",
+              "color": "#ea580c"
+            },
+            {
+              "label": "ブラジル",
+              "value": 3.5,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "中国",
+              "value": 2.6,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "韓国",
+              "value": 1.7,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "ブラジル・イラン・タイも置換水準2.1前後へ急下降",
+          "items": [
+            {
+              "label": "ニジェール",
+              "value": 7.6,
+              "iso3": "NER",
+              "color": "#dc2626"
+            },
+            {
+              "label": "ナイジェリア",
+              "value": 6.0,
+              "iso3": "NGA",
+              "color": "#ea580c"
+            },
+            {
+              "label": "インド",
+              "value": 3.0,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ブラジル",
+              "value": 2.0,
+              "iso3": "BRA",
+              "color": "#0891b2"
+            },
+            {
+              "label": "韓国",
+              "value": 1.1,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "インドも2.0へ低下、韓国0.7台・中国1.0前後とサヘルの二極化",
+          "items": [
+            {
+              "label": "ニジェール",
+              "value": 6.6,
+              "iso3": "NER",
+              "color": "#dc2626"
+            },
+            {
+              "label": "ナイジェリア",
+              "value": 5.1,
+              "iso3": "NGA",
+              "color": "#ea580c"
+            },
+            {
+              "label": "インド",
+              "value": 2.0,
+              "iso3": "IND",
+              "color": "#16a34a"
+            },
+            {
+              "label": "日本",
+              "value": 1.2,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "韓国",
+              "value": 0.72,
+              "iso3": "KOR",
+              "color": "#7c3aed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_urban_rate_regions",
+      "category": "population",
+      "title": "大陸・地域別の都市人口率の変化（早熟南米 vs 急速アジア）",
+      "subtitle": "過都市化が進んだラテンアメリカとアジア・アフリカの追い上げ（%）",
+      "displayMode": "ranking_bar",
+      "unit": "%",
+      "source": "UN World Urbanization Prospects",
+      "shiftSummary": "ラテンアメリカは所得水準に比して早くから都市人口率が8割を超えたのが特徴（プライメートシティ・スラム拡大）。現在はアジア・アフリカが急速追走。",
+      "relatedIso3s": [
+        "ARG",
+        "BRA",
+        "JPN",
+        "CHN",
+        "KEN"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1960年",
+          "periodNote": "北米・欧州がすでに6〜7割、南米が約5割、アジア・アフリカは2割前後",
+          "items": [
+            {
+              "label": "北アメリカ",
+              "value": 69.9,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ヨーロッパ",
+              "value": 57.2,
+              "iso3": "DEU",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "ラテンアメリカ",
+              "value": 49.3,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アジア",
+              "value": 21.1,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アフリカ",
+              "value": 18.7,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "ラテンアメリカが約68%で欧州に迫り過密都市化が顕著に",
+          "items": [
+            {
+              "label": "北アメリカ",
+              "value": 74.7,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ヨーロッパ",
+              "value": 69.0,
+              "iso3": "DEU",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "ラテンアメリカ",
+              "value": 67.6,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "アジア",
+              "value": 29.8,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アフリカ",
+              "value": 29.3,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2010年",
+          "periodNote": "ラテンアメリカが約79%で世界トップクラス、中国主導でアジアも急伸",
+          "items": [
+            {
+              "label": "北アメリカ",
+              "value": 80.8,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ラテンアメリカ",
+              "value": 78.6,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ヨーロッパ",
+              "value": 72.8,
+              "iso3": "DEU",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "アジア",
+              "value": 44.8,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アフリカ",
+              "value": 38.9,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2024年",
+          "periodNote": "世界全体が約57%、アジア53%超、アフリカ約45%（今後最大増加地域）",
+          "items": [
+            {
+              "label": "北アメリカ",
+              "value": 83.4,
+              "iso3": "USA",
+              "color": "#2563eb"
+            },
+            {
+              "label": "ラテンアメリカ",
+              "value": 81.9,
+              "iso3": "BRA",
+              "color": "#16a34a"
+            },
+            {
+              "label": "ヨーロッパ",
+              "value": 75.8,
+              "iso3": "DEU",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "アジア",
+              "value": 53.3,
+              "iso3": "CHN",
+              "color": "#f59e0b"
+            },
+            {
+              "label": "アフリカ",
+              "value": 45.2,
+              "iso3": "NGA",
+              "color": "#dc2626"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_jpn_metro_migration",
+      "category": "population",
+      "title": "日本の三大都市圏別 人口移動（高度成長期の3極→東京一極集中）",
+      "subtitle": "東京圏・名古屋圏・大阪圏の純転入数推移（万人/年概算）",
+      "displayMode": "ranking_bar",
+      "unit": "万人",
+      "source": "総務省 住民基本台帳人口移動報告",
+      "shiftSummary": "1960年代は三大都市圏すべて大幅な転入超だったが、1975年頃から大阪・名古屋が流出〜均衡へ転じ、現在は東京圏のみへの極端な一極集中が継続。",
+      "relatedIso3s": [
+        "JPN"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1962年",
+          "periodNote": "高度成長期ピーク：全国から若年層が三大都市圏すべてに殺到",
+          "items": [
+            {
+              "label": "東京圏（転入超）",
+              "value": 36.4,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "大阪圏（転入超）",
+              "value": 19.6,
+              "iso3": "JPN",
+              "color": "#2563eb"
+            },
+            {
+              "label": "名古屋圏（転入超）",
+              "value": 7.1,
+              "iso3": "JPN",
+              "color": "#16a34a"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1975年",
+          "periodNote": "オイルショック後：地方定住（U・Jターン）により都市集中が一時停止",
+          "items": [
+            {
+              "label": "東京圏（転入超）",
+              "value": 6.6,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "名古屋圏（転入超）",
+              "value": 0.5,
+              "iso3": "JPN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "大阪圏（転出超に転落）",
+              "value": -3.0,
+              "iso3": "JPN",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "バブル後〜2000年代：本社・大学集中で「東京一極集中」が加速",
+          "items": [
+            {
+              "label": "東京圏（転入超）",
+              "value": 13.0,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "名古屋圏（均衡〜微増）",
+              "value": 0.6,
+              "iso3": "JPN",
+              "color": "#16a34a"
+            },
+            {
+              "label": "大阪圏（転出超継続）",
+              "value": -1.4,
+              "iso3": "JPN",
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2023年",
+          "periodNote": "コロナ禍の減速を経て再び東京圏のみ年間約12万人以上の大幅転入超",
+          "items": [
+            {
+              "label": "東京圏（転入超）",
+              "value": 12.6,
+              "iso3": "JPN",
+              "color": "#ef4444"
+            },
+            {
+              "label": "大阪圏（ほぼ均衡）",
+              "value": -0.2,
+              "iso3": "JPN",
+              "color": "#64748b"
+            },
+            {
+              "label": "名古屋圏（微減）",
+              "value": -1.1,
+              "iso3": "JPN",
+              "color": "#64748b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ts_jpn_agri_sector_shift",
+      "category": "population",
+      "title": "日本の農業産出額構成の変化（米主軸→畜産・野菜・果実中心）",
+      "subtitle": "食生活の洋風化と高付加価値園芸へのシフト（構成比・%）",
+      "displayMode": "stacked_share",
+      "unit": "%",
+      "source": "農林水産省 生産農業所得統計",
+      "shiftSummary": "1960年は米が農業産出額の半分近くを占めたが、米消費減少と肉・乳製品・野菜需要増により、現在は畜産約4割・野菜約2.5割で米は2割未満。",
+      "relatedIso3s": [
+        "JPN",
+        "THA",
+        "USA"
+      ],
+      "frames": [
+        {
+          "yearLabel": "1960年",
+          "periodNote": "「主食は米」の時代：米だけで日本の農業生産額の約47%",
+          "items": [
+            {
+              "label": "米",
+              "value": 47,
+              "color": "#eab308"
+            },
+            {
+              "label": "野菜・果実",
+              "value": 15,
+              "color": "#16a34a"
+            },
+            {
+              "label": "畜産（肉・乳・卵）",
+              "value": 15,
+              "color": "#ef4444"
+            },
+            {
+              "label": "麦・豆・いも・繭等",
+              "value": 23,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "1985年",
+          "periodNote": "畜産と施設野菜が急拡大し、米は3割台へ低下",
+          "items": [
+            {
+              "label": "米",
+              "value": 33,
+              "color": "#eab308"
+            },
+            {
+              "label": "畜産",
+              "value": 27,
+              "color": "#ef4444"
+            },
+            {
+              "label": "野菜・果実",
+              "value": 25,
+              "color": "#16a34a"
+            },
+            {
+              "label": "その他耕種・花き",
+              "value": 15,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2005年",
+          "periodNote": "米と畜産が逆転し、園芸（野菜・果実・花き）が大きな柱に",
+          "items": [
+            {
+              "label": "畜産",
+              "value": 29,
+              "color": "#ef4444"
+            },
+            {
+              "label": "野菜・果実",
+              "value": 34,
+              "color": "#16a34a"
+            },
+            {
+              "label": "米",
+              "value": 23,
+              "color": "#eab308"
+            },
+            {
+              "label": "その他",
+              "value": 14,
+              "color": "#64748b"
+            }
+          ]
+        },
+        {
+          "yearLabel": "2022年",
+          "periodNote": "畜産約38%・野菜約25%が主役、米は約16%まで比重縮小",
+          "items": [
+            {
+              "label": "畜産（乳・肉牛・豚・鶏）",
+              "value": 38,
+              "color": "#ef4444"
+            },
+            {
+              "label": "野菜・果実",
+              "value": 35,
+              "color": "#16a34a"
+            },
+            {
+              "label": "米",
+              "value": 16,
+              "color": "#eab308"
+            },
+            {
+              "label": "花き・その他",
+              "value": 11,
+              "color": "#64748b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
