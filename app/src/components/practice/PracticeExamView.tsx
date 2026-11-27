@@ -29,6 +29,7 @@ import {
   generateDrillQuestion,
   type DrillGenre,
   type GeneratedDrillQuestion,
+  type LineTrendDrillSpec,
   type ScatterDrillSpec,
   type StackedBarDrillSpec,
 } from './drillGenerator';
@@ -294,6 +295,124 @@ function MiniStackedBarSvg({ spec }: { spec: StackedBarDrillSpec }) {
           );
         })}
       </div>
+    </div>
+  );
+}
+
+function MiniLineTrendSvg({ spec }: { spec: LineTrendDrillSpec }) {
+  const allVals = spec.series.flatMap((s) => s.values);
+  const rawMin = Math.min(...allVals);
+  const rawMax = Math.max(...allVals);
+  const span = Math.max(1e-6, rawMax - rawMin);
+  const yMin = rawMin >= 0 ? 0 : rawMin - span * 0.08;
+  const yMax = rawMax + span * 0.12;
+
+  const W = 390;
+  const H = 225;
+  const padL = 44;
+  const padR = 36;
+  const padT = 26;
+  const padB = 30;
+  const plotW = W - padL - padR;
+  const plotH = H - padT - padB;
+  const n = Math.max(2, spec.xLabels.length);
+
+  const toX = (idx: number) => padL + (idx / (n - 1)) * plotW;
+  const toY = (v: number) => padT + ((yMax - v) / Math.max(1e-6, yMax - yMin)) * plotH;
+  const yTicks = [0, 0.25, 0.5, 0.75, 1];
+
+  // 右端ラベルの縦重なり回避
+  const endSorted = spec.series
+    .map((s) => ({
+      code: s.code,
+      color: s.color,
+      rawY: toY(s.values[s.values.length - 1] ?? 0),
+    }))
+    .sort((a, b) => a.rawY - b.rawY);
+  const placedY = new Map<string, number>();
+  let prevY = -Infinity;
+  for (const item of endSorted) {
+    const adjusted = Math.max(padT + 8, Math.min(padT + plotH - 4, Math.max(item.rawY, prevY + 13)));
+    placedY.set(item.code, adjusted);
+    prevY = adjusted;
+  }
+
+  return (
+    <div className="mx-auto max-w-lg rounded-xl border border-slate-200 bg-white p-3">
+      <div className="mb-1 flex items-center justify-between text-[11px] font-bold text-slate-700">
+        <span>{spec.title}</span>
+        <span className="text-[10px] font-medium text-slate-400">単位：{spec.unit}</span>
+      </div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full select-none">
+        {yTicks.map((ratio) => {
+          const val = yMin + (yMax - yMin) * ratio;
+          const py = padT + plotH * (1 - ratio);
+          return (
+            <g key={ratio}>
+              <line
+                x1={padL}
+                y1={py}
+                x2={W - padR}
+                y2={py}
+                stroke={ratio === 0 ? '#94a3b8' : '#e2e8f0'}
+                strokeWidth={ratio === 0 ? 1 : 0.7}
+                strokeDasharray={ratio === 0 ? undefined : '2 2'}
+              />
+              <text x={padL - 4} y={py + 3} textAnchor="end" fontSize="8" fill="#64748b">
+                {formatAxisTick(val)}
+              </text>
+            </g>
+          );
+        })}
+
+        {spec.xLabels.map((lbl, i) => {
+          const show =
+            n <= 7 || i === 0 || i === n - 1 || i % 2 === 0;
+          if (!show) return null;
+          return (
+            <text
+              key={`${lbl}-${i}`}
+              x={toX(i)}
+              y={padT + plotH + 13}
+              textAnchor="middle"
+              fontSize="8"
+              fill="#64748b"
+            >
+              {lbl}
+            </text>
+          );
+        })}
+
+        {spec.series.map((s) => {
+          const pts = s.values.map((v, i) => `${toX(i).toFixed(1)},${toY(v).toFixed(1)}`).join(' ');
+          const ly = placedY.get(s.code) ?? toY(s.values[s.values.length - 1] ?? 0);
+          return (
+            <g key={s.code}>
+              <polyline fill="none" stroke={s.color} strokeWidth={2.2} points={pts} />
+              {s.values.map((v, i) => (
+                <circle
+                  key={`${s.code}-${i}`}
+                  cx={toX(i)}
+                  cy={toY(v)}
+                  r={2.5}
+                  fill={s.color}
+                  stroke="#ffffff"
+                  strokeWidth={0.8}
+                />
+              ))}
+              <text
+                x={W - padR + 6}
+                y={ly + 3}
+                fontSize="10.5"
+                fontWeight="900"
+                fill={s.color}
+              >
+                {s.code}
+              </text>
+            </g>
+          );
+        })}
+      </svg>
     </div>
   );
 }
@@ -710,7 +829,14 @@ export function PracticeExamView({
                       </p>
 
                       {/* 選択肢 */}
-                      <div className="mt-3 space-y-2">
+                      <div
+                        className={
+                          activeBankQ.choices.length >= 6 &&
+                          activeBankQ.choices.every((c) => c.length <= 42)
+                            ? 'mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2'
+                            : 'mt-3 space-y-2'
+                        }
+                      >
                         {activeBankQ.choices.map((ch, idx) => {
                           const selectedIdx = bankAnswers[activeBankQ.id];
                           const isAnswered = selectedIdx != null;
@@ -928,6 +1054,12 @@ export function PracticeExamView({
                   </div>
                 )}
 
+                {currentDrill.lineTrend && (
+                  <div className="mt-3">
+                    <MiniLineTrendSvg spec={currentDrill.lineTrend} />
+                  </div>
+                )}
+
                 {currentDrill.climateCities && sharedClimateScale && (
                   <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
                     {currentDrill.climateCities.map((entry) => (
@@ -1033,7 +1165,14 @@ export function PracticeExamView({
                 )}
 
                 {/* 選択肢 */}
-                <div className="mt-4 space-y-2">
+                <div
+                  className={
+                    currentDrill.choices.length >= 6 &&
+                    currentDrill.choices.every((c) => c.length <= 42)
+                      ? 'mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2'
+                      : 'mt-4 space-y-2'
+                  }
+                >
                   {currentDrill.choices.map((ch, idx) => {
                     const isAnswered = drillChoice !== null;
                     const isTarget = idx === currentDrill.correctIndex;

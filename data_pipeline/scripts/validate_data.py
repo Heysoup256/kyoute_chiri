@@ -343,8 +343,8 @@ def main() -> None:
     if mq_path.exists():
         mq_data = json.loads(mq_path.read_text(encoding="utf-8"))
         mock_questions = mq_data.get("questions", [])
-        if len(mock_questions) < 38:
-            errors.append(f"mock_questions_v1.json の問題数が不足しています ({len(mock_questions)}<38)")
+        if len(mock_questions) < 42:
+            errors.append(f"mock_questions_v1.json の問題数が不足しています ({len(mock_questions)}<42)")
         idx_set = set()
         for mq in mock_questions:
             choices = mq.get("choices", [])
