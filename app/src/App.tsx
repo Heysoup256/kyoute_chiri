@@ -22,7 +22,8 @@ import { JapanAndMapView } from './components/guide/JapanAndMapView';
 import { SystematicGuideView } from './components/guide/SystematicGuideView';
 import { WorldRankingsView } from './components/guide/WorldRankingsView';
 import { WorldMap, type ThematicGridData } from './components/map/WorldMap';
-import { PracticeExamView } from './components/practice/PracticeExamView';
+import { PracticeExamView, type PracticeExamHandle } from './components/practice/PracticeExamView';
+import type { DrillFocusFilter } from './components/practice/drillTypes';
 import { ReverseSearchDrawer } from './components/study/ReverseSearchDrawer';
 import { useMarkedCountries } from './hooks/useMarkedCountries';
 import type {
@@ -145,6 +146,13 @@ export function App() {
   const [isDiceRolling, setIsDiceRolling] = useState<boolean>(false);
   const recentRandomIso3sRef = useRef<string[]>([]);
   const diceTimerRef = useRef<number | null>(null);
+  const practiceRef = useRef<PracticeExamHandle | null>(null);
+
+  const handleStartTargetedPractice = useCallback((filter: DrillFocusFilter) => {
+    setReturnView(null);
+    setActiveView('practice');
+    practiceRef.current?.startFocusedDrill(filter);
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -839,6 +847,12 @@ export function App() {
                 setFocusedPlace(null);
               }}
               onOpenExamModal={IS_PUBLIC_MODE ? undefined : handleOpenCountryExamModal}
+              onPracticeCountry={(targetIso, countryLabel) =>
+                handleStartTargetedPractice({
+                  iso3: targetIso,
+                  label: `${countryLabel} 関連問題`,
+                })
+              }
             />
           )}
         </div>
@@ -867,12 +881,23 @@ export function App() {
           }
         >
           <PracticeExamView
+            ref={practiceRef}
             mockQuestions={mockQuestionsData?.questions ?? []}
             worldRankings={worldRankingsData}
             countriesData={countriesData.countries}
+            countriesGeoJson={countriesGeoJson}
+            japanData={japanData}
             timeSliders={timeSlidersData?.sliders ?? []}
             photoEncyclopedia={photoEncyclopediaData?.entries ?? []}
             onSelectCountry={handleJumpToCountry}
+            onOpenRanking={(rankingId) => {
+              setFocusedRankingId(rankingId);
+              setActiveView('rankings');
+            }}
+            onOpenSystematic={(topicId) => {
+              setFocusedSystematicId(topicId);
+              setActiveView('systematic');
+            }}
           />
         </div>
 
@@ -889,6 +914,7 @@ export function App() {
               focusedItemId={focusedRankingId}
               onSelectCountry={handleJumpToCountry}
               onHighlightCountries={handleHighlightFromRanking}
+              onPracticeCategory={(opts) => handleStartTargetedPractice(opts)}
             />
           </div>
         )}
@@ -905,6 +931,7 @@ export function App() {
               focusedTopicId={focusedSystematicId}
               onFocusPlace={handleFocusPlace}
               onSelectCountry={handleJumpToCountry}
+              onPracticeTopic={(opts) => handleStartTargetedPractice(opts)}
             />
           </div>
         )}

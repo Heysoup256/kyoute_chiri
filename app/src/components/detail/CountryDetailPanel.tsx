@@ -73,6 +73,7 @@ interface CountryDetailPanelProps {
   onFlyToCountry?: (iso3: string) => void;
   onClose: () => void;
   onOpenExamModal?: (initialQuestionId?: string) => void;
+  onPracticeCountry?: (iso3: string, label: string) => void;
 }
 
 type DetailTab = 'overview' | 'regions' | 'nature' | 'climate' | 'industry' | 'population' | 'culture';
@@ -330,6 +331,7 @@ export function CountryDetailPanel({
   onFlyToCountry,
   onClose,
   onOpenExamModal,
+  onPracticeCountry,
 }: CountryDetailPanelProps) {
   const [activeTab, setActiveTab] = useState<DetailTab>('overview');
   const [selectedCityId, setSelectedCityId] = useState<string>(
@@ -590,6 +592,17 @@ export function CountryDetailPanel({
               >
                 <LocateFixed className="h-3.5 w-3.5" />
                 <span className="hidden md:inline">場所へ</span>
+              </button>
+            )}
+            {country && !country.isBasicEntry && onPracticeCountry && (
+              <button
+                type="button"
+                onClick={() => onPracticeCountry(country.iso3, country.nameJa.split('（')[0])}
+                className="inline-flex items-center gap-1 rounded-lg border border-emerald-200 bg-emerald-50 px-1.5 py-1 text-xs font-bold text-emerald-700 transition hover:bg-emerald-100 md:px-2.5"
+                title="この国に関連する実戦問題を解く"
+              >
+                <Sparkles className="h-3.5 w-3.5" />
+                <span className="hidden md:inline">演習</span>
               </button>
             )}
             {country && allCountries && (

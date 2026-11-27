@@ -33,6 +33,7 @@ interface SystematicGuideViewProps {
   focusedTopicId?: string | null;
   onFocusPlace: (place: PlaceEntry) => void;
   onSelectCountry: (iso3: string) => void;
+  onPracticeTopic?: (opts: { category: string; label: string }) => void;
 }
 
 /**
@@ -46,6 +47,7 @@ export function SystematicGuideView({
   focusedTopicId,
   onFocusPlace,
   onSelectCountry,
+  onPracticeTopic,
 }: SystematicGuideViewProps) {
   const [subView, setSubView] = useState<'topics' | 'photos'>('topics');
   const initialCat = useMemo(() => {
@@ -417,6 +419,27 @@ export function SystematicGuideView({
                       ))}
                     </ul>
                   </section>
+                )}
+
+                {onPracticeTopic && (
+                  <div className="flex items-center justify-between gap-2 rounded-2xl border border-indigo-200 bg-indigo-50/70 p-3.5 shadow-2xs">
+                    <div className="text-xs font-bold text-indigo-950">
+                      この分野（{activeTopic.title}）の理解度を演習問題で確認する
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        onPracticeTopic({
+                          category: activeTopic.categoryId,
+                          label: activeTopic.title,
+                        })
+                      }
+                      className="inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-indigo-600 px-3.5 py-1.5 text-xs font-extrabold text-white transition hover:bg-indigo-700"
+                    >
+                      <Sparkles className="h-3.5 w-3.5" />
+                      この分野を演習
+                    </button>
+                  </div>
                 )}
 
                 {/* 代表国ショートカット */}

@@ -7,6 +7,24 @@ import type {
   WorldRankingsDataset,
 } from '../../types/schema_v1';
 import {
+  buildStepByStepExplanation,
+  makeClimateMapLinkedQuestion,
+  makeCuratedStatTwistQuestion,
+  makeMapChoroplethQuestion,
+  makeSubnationalAndJapanQuestion,
+  makeUnseenInferQuestion,
+} from './advancedDrillBuilders';
+import {
+  DRILL_GENRE_OPTIONS,
+  type DrillFocusFilter,
+  type DrillGeneratorParams,
+  type DrillGenre,
+  type GeneratedDrillQuestion,
+  type LineTrendDrillSpec,
+  type ScatterDrillSpec,
+  type StackedBarDrillSpec,
+} from './drillTypes';
+import {
   buildDynamicPercentCountryMatrix,
   CLIMATE_COHORT_SPECS,
   COUNTRY_ARCHETYPE_MAP,
@@ -23,89 +41,34 @@ import {
   type StatMatrixSpec,
 } from './statMatrices';
 
-export type DrillGenre =
-  | 'all'
-  | 'stat_country'
-  | 'stat_double_blind'
-  | 'stat_item'
-  | 'scatter_plot'
-  | 'composition_bar'
-  | 'time_shift'
-  | 'climate_coords'
-  | 'pyramid_match'
-  | 'photo_infer';
-
-export interface ScatterDrillSpec {
-  title: string;
-  xLabel: string;
-  yLabel: string;
-  backgroundPoints: { x: number; y: number }[];
-  targetPoints: { code: string; x: number; y: number; color: string }[];
-  showDiagonal?: boolean;
-  diagonalLabel?: string;
-}
-
-export interface StackedBarDrillSpec {
-  caption: string;
-  unit: string;
-  series: { name: string; color: string }[];
-  rows: { label: string; values: number[] }[];
-}
-
-export interface LineTrendDrillSpec {
-  title: string;
-  unit: string;
-  xLabels: string[];
-  series: { code: string; values: number[]; color: string }[];
-}
-
-export interface GeneratedDrillQuestion {
-  id: string;
-  genre: Exclude<DrillGenre, 'all'>;
-  genreLabel: string;
-  promptTitle: string;
-  promptBody: string;
-  table?: { caption?: string; headers: string[]; rows: string[][] };
-  scatterPlot?: ScatterDrillSpec;
-  stackedBars?: StackedBarDrillSpec;
-  lineTrend?: LineTrendDrillSpec;
-  climateCity?: ClimateCity;
-  climateCities?: { label: string; city: ClimateCity; metaText: string }[];
-  climateChartType?: 'climograph' | 'hythergraph';
-  pyramidBins?: AgePyramidBin[];
-  pyramidPair?: { label: string; bins: AgePyramidBin[] }[];
-  photoUrl?: string;
-  choices: string[];
-  correctIndex: number;
-  explanation: string;
-  detailNotes?: string[];
-  relatedIso3s: string[];
-}
-
-export const DRILL_GENRE_OPTIONS: { id: DrillGenre; label: string }[] = [
-  { id: 'all', label: '全ジャンルおまかせ' },
-  { id: 'stat_country', label: '統計数値 → 国を当てる' },
-  { id: 'stat_double_blind', label: '国名×項目 両方ブラインド' },
-  { id: 'stat_item', label: '統計数値 → 項目を当てる' },
-  { id: 'scatter_plot', label: '散布図・2指標分析' },
-  { id: 'composition_bar', label: '構成比グラフ読取' },
-  { id: 'time_shift', label: '時系列・推移グラフ読取' },
-  { id: 'climate_coords', label: '雨温図・ハイサーグラフ' },
-  { id: 'pyramid_match', label: '人口ピラミッド判別' },
-  { id: 'photo_infer', label: '景観写真・地域推論' },
-];
+export { DRILL_GENRE_OPTIONS };
+export type {
+  DrillFocusFilter,
+  DrillGeneratorParams,
+  DrillGenre,
+  GeneratedDrillQuestion,
+  LineTrendDrillSpec,
+  ScatterDrillSpec,
+  StackedBarDrillSpec,
+};
 
 const ALL_WEIGHTED_GENRES: Exclude<DrillGenre, 'all'>[] = [
+  'unseen_infer',
+  'unseen_infer',
+  'unseen_infer',
+  'map_choropleth',
+  'map_choropleth',
+  'subnational_jpn',
+  'subnational_jpn',
   'stat_country',
   'stat_country',
   'stat_double_blind',
   'stat_double_blind',
   'stat_item',
-  'stat_item',
-  'scatter_plot',
   'scatter_plot',
   'composition_bar',
   'time_shift',
+  'climate_coords',
   'climate_coords',
   'pyramid_match',
   'photo_infer',
@@ -1679,7 +1642,14 @@ function makeTimeShiftQuestion(
 function makeClimateCoordsQuestion(
   countries: Record<string, CountryData>,
   nonce: number,
+  focusIso3?: string,
 ): GeneratedDrillQuestion | null {
+  // 約55%: 世界地図上の地点(A〜C)と3都市雨温図/ハイサーグラフ(ア〜ウ)を結び付ける共テ実戦問題
+  if (Math.random() < 0.55) {
+    const mapLinked = makeClimateMapLinkedQuestion(countries, nonce, focusIso3);
+    if (mapLinked) return mapLinked;
+  }
+
   const cityById = new Map<string, { country: CountryData; city: ClimateCity }>();
   for (const c of Object.values(countries)) {
     if (c.isBasicEntry) continue;
@@ -1914,64 +1884,205 @@ function makePhotoInferQuestion(
   };
 }
 
+const DOMAIN_BY_GENRE: Record<Exclude<DrillGenre, 'all'>, string> = {
+  unseen_infer: '初見統計推論',
+  map_choropleth: '地図統計読取',
+  subnational_jpn: '地誌・国内統計',
+  stat_country: '統計・経済貿易',
+  stat_double_blind: '統計・経済貿易',
+  stat_item: '農産・工業生産',
+  scatter_plot: '経済・人口指標',
+  composition_bar: '構成比・貿易',
+  time_shift: '時系列変化',
+  climate_coords: '自然・気候',
+  pyramid_match: '人口構造',
+  photo_infer: '景観・地誌',
+};
+
+const CATEGORY_TO_GENRES: Record<string, Exclude<DrillGenre, 'all'>[]> = {
+  climate: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
+  nature_climate: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
+  climate_soil_env: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
+  map_gis: ['map_choropleth', 'climate_coords', 'subnational_jpn'],
+  landform_disaster: ['unseen_infer', 'photo_infer', 'map_choropleth', 'subnational_jpn'],
+  agriculture: ['stat_item', 'unseen_infer', 'stat_double_blind', 'subnational_jpn'],
+  agriculture_primary: ['stat_item', 'unseen_infer', 'stat_double_blind', 'subnational_jpn'],
+  resource: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
+  industry: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
+  industry_economy: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
+  resource_industry: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift'],
+  society: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
+  urban_population: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
+  population_urban: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
+  religion_culture: ['unseen_infer', 'subnational_jpn', 'photo_infer', 'map_choropleth'],
+  culture_regional: ['unseen_infer', 'subnational_jpn', 'photo_infer', 'map_choropleth'],
+  subnational: ['subnational_jpn'],
+  japan: ['subnational_jpn'],
+  map_disaster: ['map_choropleth', 'unseen_infer', 'climate_coords'],
+};
+
+function finalizeDrillQuestion(q: GeneratedDrillQuestion): GeneratedDrillQuestion {
+  const sig =
+    q.signature ??
+    `${q.genre}:${q.promptTitle}:${[...q.relatedIso3s].sort().join(',')}:${q.choices[q.correctIndex] ?? ''}`;
+  const steps = buildStepByStepExplanation(q);
+  return {
+    ...q,
+    signature: sig,
+    domainTag: q.domainTag ?? DOMAIN_BY_GENRE[q.genre] ?? q.genreLabel,
+    steps,
+  };
+}
+
 /**
- * 指定ジャンル（または全ジャンルおまかせ）の実戦問題をデータから自動生成する
+ * 指定ジャンル（または全ジャンルおまかせ）の実戦問題をデータから自動生成する。
+ * recentSignatures で直近25問の重複を抑制し、focusFilter による国・分野絞り込みにも対応する。
  */
 export function generateDrillQuestion(
   genre: DrillGenre,
-  params: {
-    worldRankings: WorldRankingsDataset | null;
-    countriesData: Record<string, CountryData>;
-    timeSliders: TimeSeriesSliderItem[];
-    photoEncyclopedia: PhotoEncyclopediaEntry[];
-  },
+  params: DrillGeneratorParams,
   nonce: number,
 ): GeneratedDrillQuestion | null {
+  const focusIso3 = params.focusFilter?.iso3;
+  const recentSet = new Set(params.recentSignatures ?? []);
+
   const tryGenre = (g: Exclude<DrillGenre, 'all'>, seed: number): GeneratedDrillQuestion | null => {
-    if (g === 'stat_country') {
-      return makeStatCountryQuestion(params.worldRankings, params.countriesData, seed);
-    }
-    if (g === 'stat_double_blind') {
-      return makeStatDoubleBlindQuestion(params.worldRankings, params.countriesData, seed);
-    }
-    if (g === 'stat_item') {
-      return makeStatItemQuestion(params.worldRankings, params.countriesData, seed);
-    }
-    if (g === 'scatter_plot') {
-      return makeScatterPlotQuestion(params.worldRankings, params.countriesData, seed);
-    }
-    if (g === 'composition_bar') {
-      return makeCompositionBarQuestion(params.worldRankings, params.countriesData, seed);
-    }
-    if (g === 'time_shift') {
-      return makeTimeShiftQuestion(
+    let raw: GeneratedDrillQuestion | null = null;
+    if (g === 'unseen_infer') {
+      raw = makeUnseenInferQuestion(seed, focusIso3);
+    } else if (g === 'map_choropleth') {
+      raw = makeMapChoroplethQuestion(params.countriesData, params.worldRankings, seed, focusIso3);
+    } else if (g === 'subnational_jpn') {
+      raw = makeSubnationalAndJapanQuestion(params.countriesData, params.japanData, seed, focusIso3);
+    } else if (g === 'stat_country') {
+      if (Math.random() < 0.34) {
+        raw = makeCuratedStatTwistQuestion(params.countriesData, seed, focusIso3);
+      }
+      if (!raw) {
+        raw = makeStatCountryQuestion(params.worldRankings, params.countriesData, seed);
+      }
+    } else if (g === 'stat_double_blind') {
+      raw = makeStatDoubleBlindQuestion(params.worldRankings, params.countriesData, seed);
+    } else if (g === 'stat_item') {
+      raw = makeStatItemQuestion(params.worldRankings, params.countriesData, seed);
+    } else if (g === 'scatter_plot') {
+      raw = makeScatterPlotQuestion(params.worldRankings, params.countriesData, seed);
+    } else if (g === 'composition_bar') {
+      raw = makeCompositionBarQuestion(params.worldRankings, params.countriesData, seed);
+    } else if (g === 'time_shift') {
+      raw = makeTimeShiftQuestion(
         params.worldRankings,
         params.countriesData,
         params.timeSliders,
         seed,
       );
+    } else if (g === 'climate_coords') {
+      raw = makeClimateCoordsQuestion(params.countriesData, seed, focusIso3);
+    } else if (g === 'pyramid_match') {
+      raw = makePyramidQuestion(params.countriesData, seed);
+    } else {
+      raw = makePhotoInferQuestion(params.photoEncyclopedia, seed);
     }
-    if (g === 'climate_coords') {
-      return makeClimateCoordsQuestion(params.countriesData, seed);
-    }
-    if (g === 'pyramid_match') {
-      return makePyramidQuestion(params.countriesData, seed);
-    }
-    return makePhotoInferQuestion(params.photoEncyclopedia, seed);
+
+    return raw ? finalizeDrillQuestion(raw) : null;
   };
 
+  // focusFilter がある場合の優先ジャンル列
+  const focusGenres =
+    params.focusFilter?.category && CATEGORY_TO_GENRES[params.focusFilter.category]
+      ? CATEGORY_TO_GENRES[params.focusFilter.category]
+      : null;
+
+  let fallbackBest: GeneratedDrillQuestion | null = null;
+
   if (genre !== 'all') {
-    for (let attempt = 0; attempt < 20; attempt++) {
-      const q = tryGenre(genre, nonce);
-      if (q) return q;
+    for (let attempt = 0; attempt < 24; attempt++) {
+      const q = tryGenre(genre, nonce * 31 + attempt);
+      if (!q) continue;
+      const matchesIso = !focusIso3 || q.relatedIso3s.includes(focusIso3);
+      const isFresh = !q.signature || !recentSet.has(q.signature);
+      if (matchesIso && isFresh) return q;
+      if (matchesIso && !fallbackBest) fallbackBest = q;
+      if (!fallbackBest) fallbackBest = q;
+    }
+    if (fallbackBest) return fallbackBest;
+  }
+
+  // 'all' または対象ジャンルで再探索
+  const baseGenres = focusGenres
+    ? [...focusGenres, ...ALL_WEIGHTED_GENRES]
+    : ALL_WEIGHTED_GENRES;
+
+  for (let round = 0; round < 3; round++) {
+    const order = focusGenres && round === 0 ? baseGenres : shuffle(baseGenres);
+    for (let i = 0; i < order.length; i++) {
+      const q = tryGenre(order[i], nonce * 97 + round * 37 + i);
+      if (!q) continue;
+      const matchesIso = !focusIso3 || q.relatedIso3s.includes(focusIso3);
+      const isFresh = !q.signature || !recentSet.has(q.signature);
+      if (matchesIso && isFresh) return q;
+      if (matchesIso && !fallbackBest) fallbackBest = q;
+      if (!fallbackBest) fallbackBest = q;
+    }
+  }
+  return fallbackBest;
+}
+
+/**
+ * 共通テスト本番形式（全10問バランス構成）の「実戦ミニ模試」セットを生成する。
+ * 初見統計推論・地図統計・国内/日本地理・グラフ読取・気候・人口・景観を網羅。
+ */
+export function generateMiniMockSet(
+  params: DrillGeneratorParams,
+  nonceBase: number,
+): GeneratedDrillQuestion[] {
+  const blueprint: Exclude<DrillGenre, 'all'>[] = [
+    'map_choropleth',
+    'climate_coords',
+    'unseen_infer',
+    'unseen_infer',
+    'subnational_jpn',
+    'subnational_jpn',
+    'stat_double_blind',
+    'stat_country',
+    'scatter_plot',
+    'pyramid_match',
+  ];
+
+  // Q9, Q10 は出題バリエーションを持たせる（構成比・推移・景観写真も織り交ぜる）
+  const altQ9: Exclude<DrillGenre, 'all'>[] = ['scatter_plot', 'composition_bar', 'time_shift'];
+  const altQ10: Exclude<DrillGenre, 'all'>[] = ['pyramid_match', 'photo_infer'];
+  blueprint[8] = altQ9[nonceBase % altQ9.length];
+  blueprint[9] = altQ10[nonceBase % altQ10.length];
+
+  const usedSigs: string[] = [...(params.recentSignatures ?? [])];
+  const results: GeneratedDrillQuestion[] = [];
+
+  for (let i = 0; i < blueprint.length; i++) {
+    const targetGenre = blueprint[i];
+    let q = generateDrillQuestion(
+      targetGenre,
+      { ...params, recentSignatures: usedSigs, focusFilter: null },
+      nonceBase * 100 + i + 1,
+    );
+    if (!q || (q.signature && usedSigs.includes(q.signature))) {
+      const alt = generateDrillQuestion(
+        'all',
+        { ...params, recentSignatures: usedSigs, focusFilter: null },
+        nonceBase * 100 + 50 + i,
+      );
+      if (alt && !usedSigs.includes(alt.signature ?? '')) {
+        q = alt;
+      }
+    }
+    if (q) {
+      results.push({
+        ...q,
+        id: `minimock_${nonceBase}_q${i + 1}_${q.genre}`,
+      });
+      if (q.signature) usedSigs.push(q.signature);
     }
   }
 
-  for (let round = 0; round < 3; round++) {
-    for (const g of shuffle(ALL_WEIGHTED_GENRES)) {
-      const q = tryGenre(g, nonce);
-      if (q) return q;
-    }
-  }
-  return null;
+  return results;
 }

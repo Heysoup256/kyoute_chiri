@@ -11,6 +11,7 @@ import {
   MapPin,
   Route,
   Search,
+  Sparkles,
   Users,
   Wheat,
 } from 'lucide-react';
@@ -40,6 +41,7 @@ interface WorldRankingsViewProps {
   focusedItemId?: string | null;
   onSelectCountry: (iso3: string) => void;
   onHighlightCountries: (label: string, iso3s: string[]) => void;
+  onPracticeCategory?: (opts: { category: string; label: string }) => void;
 }
 
 type RankingsMainTab = 'rankings' | 'charts' | 'sliders' | 'flows' | 'japan_stats';
@@ -352,11 +354,13 @@ function RankingCard({
   isFocused,
   onSelectCountry,
   onHighlightCountries,
+  onPracticeCategory,
 }: {
   item: WorldRankingItem;
   isFocused: boolean;
   onSelectCountry: (iso3: string) => void;
   onHighlightCountries: (label: string, iso3s: string[]) => void;
+  onPracticeCategory?: (opts: { category: string; label: string }) => void;
 }) {
   const [viewSet, setViewSet] = useState<'primary' | 'secondary'>('primary');
   const meta = CATEGORY_META[item.category] ?? CATEGORY_META.industry;
@@ -391,20 +395,38 @@ function RankingCard({
             </h3>
           </div>
 
-          <button
-            type="button"
-            onClick={() =>
-              onHighlightCountries(
-                `${item.title.split('（')[0]}：${currentLabel}`,
-                Array.from(new Set(currentEntries.map((e) => e.iso3))),
-              )
-            }
-            className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-cyan-300 bg-cyan-50 px-2.5 py-1 text-[11px] font-bold text-cyan-800 hover:bg-cyan-100"
-            title="上位国を世界地図上でハイライト表示"
-          >
-            <MapPin className="h-3 w-3" />
-            地図で分布
-          </button>
+          <div className="flex shrink-0 items-center gap-1">
+            {onPracticeCategory && (
+              <button
+                type="button"
+                onClick={() =>
+                  onPracticeCategory({
+                    category: item.category,
+                    label: `${meta.label}（${item.title.split('（')[0]}）`,
+                  })
+                }
+                className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-2 py-1 text-[11px] font-bold text-indigo-800 hover:bg-indigo-100"
+                title="この統計分野の演習問題へ進む"
+              >
+                <Sparkles className="h-3 w-3" />
+                演習
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() =>
+                onHighlightCountries(
+                  `${item.title.split('（')[0]}：${currentLabel}`,
+                  Array.from(new Set(currentEntries.map((e) => e.iso3))),
+                )
+              }
+              className="inline-flex items-center gap-1 rounded-lg border border-cyan-300 bg-cyan-50 px-2.5 py-1 text-[11px] font-bold text-cyan-800 hover:bg-cyan-100"
+              title="上位国を世界地図上でハイライト表示"
+            >
+              <MapPin className="h-3 w-3" />
+              地図で分布
+            </button>
+          </div>
         </div>
 
         {/* 生産 vs 輸出 等の切替 */}
@@ -470,6 +492,7 @@ export function WorldRankingsView({
   focusedItemId,
   onSelectCountry,
   onHighlightCountries,
+  onPracticeCategory,
 }: WorldRankingsViewProps) {
   const [mainTab, setMainTab] = useState<RankingsMainTab>('rankings');
   const [catFilter, setCatFilter] = useState<CategoryFilter>('all');
@@ -616,6 +639,7 @@ export function WorldRankingsView({
                       isFocused={focusedItemId === item.id}
                       onSelectCountry={onSelectCountry}
                       onHighlightCountries={onHighlightCountries}
+                      onPracticeCategory={onPracticeCategory}
                     />
                   ))}
                 </div>

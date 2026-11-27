@@ -1,6 +1,8 @@
 import { ArrowLeftRight, ExternalLink, GitCompareArrows, Sparkles, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import type { CountryData } from '../../types/schema_v1';
+import { ClimateMiniChart } from '../blankmap/ClimateMiniChart';
+import { EqualScalePyramidSvg } from '../charts/EqualScalePyramidSvg';
 
 interface CountryCompareModalProps {
   initialLeftIso3: string;
@@ -145,6 +147,9 @@ export function CountryCompareModal({
 
   const [leftIso3, setLeftIso3] = useState(initialLeftIso3);
   const [rightIso3, setRightIso3] = useState(defaultRight);
+  const [climateChartType, setClimateChartType] = useState<'climograph' | 'hythergraph'>('climograph');
+  const [leftCityIdx, setLeftCityIdx] = useState(0);
+  const [rightCityIdx, setRightCityIdx] = useState(0);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -166,6 +171,48 @@ export function CountryCompareModal({
   const left = allCountries[leftIso3];
   const right = allCountries[rightIso3];
 
+  const leftCities = useMemo(
+    () =>
+      (left?.climate.cities ?? []).filter(
+        (c) => c.monthlyTempC.length === 12 && c.monthlyPrecipMm.length === 12,
+      ),
+    [left],
+  );
+  const rightCities = useMemo(
+    () =>
+      (right?.climate.cities ?? []).filter(
+        (c) => c.monthlyTempC.length === 12 && c.monthlyPrecipMm.length === 12,
+      ),
+    [right],
+  );
+
+  const leftCity = leftCities[Math.min(leftCityIdx, Math.max(0, leftCities.length - 1))] ?? null;
+  const rightCity =
+    rightCities[Math.min(rightCityIdx, Math.max(0, rightCities.length - 1))] ?? null;
+
+  const sharedClimateScale = useMemo(() => {
+    const active = [leftCity, rightCity].filter((c): c is NonNullable<typeof c> => Boolean(c));
+    if (active.length === 0) return null;
+    const allTemps = active.flatMap((c) => c.monthlyTempC);
+    const allPrecips = active.flatMap((c) => c.monthlyPrecipMm);
+    return {
+      tempRange: [
+        Math.floor(Math.min(-10, ...allTemps) / 5) * 5,
+        Math.ceil(Math.max(30, ...allTemps) / 5) * 5,
+      ] as [number, number],
+      precipMax: Math.ceil(Math.max(200, ...allPrecips) / 50) * 50,
+    };
+  }, [leftCity, rightCity]);
+
+  const sharedPyramidMaxPct = useMemo(() => {
+    const bins = [
+      ...(left?.stats?.agePyramid ?? []),
+      ...(right?.stats?.agePyramid ?? []),
+    ];
+    if (bins.length === 0) return undefined;
+    return Math.max(8, ...bins.flatMap((b) => [b.malePct, b.femalePct]));
+  }, [left, right]);
+
   const directMatchHint = useMemo(() => {
     const fromLeft = left?.examCheatSheet?.commonConfusions?.find(
       (c) => c.partnerIso3 === rightIso3,
@@ -180,6 +227,8 @@ export function CountryCompareModal({
   const handleSwap = () => {
     setLeftIso3(rightIso3);
     setRightIso3(leftIso3);
+    setLeftCityIdx(rightCityIdx);
+    setRightCityIdx(leftCityIdx);
   };
 
   return (
@@ -483,6 +532,150 @@ export function CountryCompareModal({
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          )}
+
+          {/* 等スケール 気候グラフ並列比較（雨温図 / ハイサーグラフ） */}
+          {(leftCity || rightCity) && sharedClimateScale && (
+            <div className="rounded-xl border border-slate-200 bg-white p-3.5">
+              <div className="mb-2.5 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h3 className="text-xs font-extrabold text-slate-800">
+                    気候グラフ 並列比較（共通縦横スケール）
+                  </h3>
+                  <p className="text-[10.5px] text-slate-500">
+                    気温軸（{sharedClimateScale.tempRange[0]}〜{sharedClimateScale.tempRange[1]}℃）・降水量軸（0〜{sharedClimateScale.precipMax}mm）を統一して比較
+                  </p>
+                </div>
+                <div className="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-0.5 text-[11px] font-bold">
+                  <button
+                    type="button"
+                    onClick={() => setClimateChartType('climograph')}
+                    className={`rounded-md px-2.5 py-1 transition ${
+                      climateChartType === 'climograph'
+                        ? 'bg-white text-indigo-700 shadow-2xs'
+                        : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                  >
+                    雨温図
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setClimateChartType('hythergraph')}
+                    className={`rounded-md px-2.5 py-1 transition ${
+                      climateChartType === 'hythergraph'
+                        ? 'bg-white text-indigo-700 shadow-2xs'
+                        : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                  >
+                    ハイサーグラフ
+                  </button>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                {[
+                  {
+                    sideLabel: left?.nameJa.split('（')[0] ?? leftIso3,
+                    cities: leftCities,
+                    city: leftCity,
+                    cityIdx: leftCities.indexOf(leftCity as NonNullable<typeof leftCity>),
+                    onChangeIdx: setLeftCityIdx,
+                    badgeClass: 'bg-sky-100 text-sky-800',
+                  },
+                  {
+                    sideLabel: right?.nameJa.split('（')[0] ?? rightIso3,
+                    cities: rightCities,
+                    city: rightCity,
+                    cityIdx: rightCities.indexOf(rightCity as NonNullable<typeof rightCity>),
+                    onChangeIdx: setRightCityIdx,
+                    badgeClass: 'bg-amber-100 text-amber-800',
+                  },
+                ].map((pane, idx) => (
+                  <div key={idx} className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5">
+                    <div className="mb-1.5 flex flex-wrap items-center justify-between gap-1.5">
+                      <div className="flex items-center gap-1.5 text-xs font-extrabold text-slate-900">
+                        <span className={`rounded px-1.5 py-0.5 text-[10px] ${pane.badgeClass}`}>
+                          {pane.sideLabel}
+                        </span>
+                        {pane.city ? (
+                          <span>
+                            {pane.city.nameJa}（{pane.city.koppenCode}）
+                          </span>
+                        ) : (
+                          <span className="text-slate-400">気象データ未登録</span>
+                        )}
+                      </div>
+                      {pane.cities.length > 1 && (
+                        <select
+                          value={Math.max(0, pane.cityIdx)}
+                          onChange={(e) => pane.onChangeIdx(Number(e.target.value))}
+                          className="rounded-md border border-slate-200 bg-white px-2 py-0.5 text-[11px] font-bold text-slate-700"
+                        >
+                          {pane.cities.map((ct, cIdx) => (
+                            <option key={ct.cityId} value={cIdx}>
+                              {ct.nameJa} ({ct.koppenCode})
+                            </option>
+                          ))}
+                        </select>
+                      )}
+                    </div>
+                    {pane.city ? (
+                      <ClimateMiniChart
+                        city={pane.city}
+                        chartType={climateChartType}
+                        tempRange={sharedClimateScale.tempRange}
+                        precipMax={sharedClimateScale.precipMax}
+                      />
+                    ) : (
+                      <div className="flex h-36 items-center justify-center text-xs text-slate-400">
+                        データがありません
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* 等スケール 人口ピラミッド並列比較 */}
+          {(left?.stats?.agePyramid?.length || right?.stats?.agePyramid?.length) && (
+            <div className="rounded-xl border border-slate-200 bg-white p-3.5">
+              <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-xs font-extrabold text-slate-800">
+                  人口ピラミッド 並列比較（共通横軸スケール）
+                </h3>
+                <span className="text-[10.5px] text-slate-500">
+                  少子高齢化・人口ボーナス・ピラミッド型の違いを同一尺度で対比
+                </span>
+              </div>
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                <div>
+                  {left?.stats?.agePyramid && left.stats.agePyramid.length > 0 ? (
+                    <EqualScalePyramidSvg
+                      bins={left.stats.agePyramid}
+                      fixedMaxPct={sharedPyramidMaxPct}
+                      title={`${left.nameJa.split('（')[0]}（${left.stats.pyramidType}）`}
+                    />
+                  ) : (
+                    <div className="flex h-48 items-center justify-center rounded-xl border border-dashed border-slate-200 text-xs text-slate-400">
+                      {left?.nameJa.split('（')[0] ?? leftIso3}：人口ピラミッド未登録
+                    </div>
+                  )}
+                </div>
+                <div>
+                  {right?.stats?.agePyramid && right.stats.agePyramid.length > 0 ? (
+                    <EqualScalePyramidSvg
+                      bins={right.stats.agePyramid}
+                      fixedMaxPct={sharedPyramidMaxPct}
+                      title={`${right.nameJa.split('（')[0]}（${right.stats.pyramidType}）`}
+                    />
+                  ) : (
+                    <div className="flex h-48 items-center justify-center rounded-xl border border-dashed border-slate-200 text-xs text-slate-400">
+                      {right?.nameJa.split('（')[0] ?? rightIso3}：人口ピラミッド未登録
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           )}

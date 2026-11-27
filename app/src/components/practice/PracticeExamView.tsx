@@ -1,20 +1,29 @@
+import type { FeatureCollection, Geometry } from 'geojson';
 import {
+  ArrowLeft,
   ArrowRight,
   Award,
+  BarChart3,
   BookOpen,
   CheckCircle2,
   ClipboardCheck,
+  Flag,
+  Layers,
+  ListChecks,
   MapPin,
   MessageSquare,
   RefreshCw,
   RotateCcw,
   Sparkles,
+  Target,
+  X,
   XCircle,
 } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useImperativeHandle, useMemo, useState, type Ref } from 'react';
 import type {
-  AgePyramidBin,
   CountryData,
+  GeoCountryProperties,
+  JapanGeographyDataset,
   MockQuestion,
   MockQuestionCategory,
   PhotoEncyclopediaEntry,
@@ -22,9 +31,13 @@ import type {
   WorldRankingsDataset,
 } from '../../types/schema_v1';
 import { ClimateMiniChart } from '../blankmap/ClimateMiniChart';
+import { EqualScalePyramidSvg } from '../charts/EqualScalePyramidSvg';
+import { MiniWorldMapDrillSvg } from './MiniWorldMapDrillSvg';
 import {
   DRILL_GENRE_OPTIONS,
   generateDrillQuestion,
+  generateMiniMockSet,
+  type DrillFocusFilter,
   type DrillGenre,
   type GeneratedDrillQuestion,
   type LineTrendDrillSpec,
@@ -32,16 +45,25 @@ import {
   type StackedBarDrillSpec,
 } from './drillGenerator';
 
+export interface PracticeExamHandle {
+  startFocusedDrill: (filter: DrillFocusFilter) => void;
+}
+
 interface PracticeExamViewProps {
+  ref?: Ref<PracticeExamHandle>;
   mockQuestions: MockQuestion[];
   worldRankings: WorldRankingsDataset | null;
   countriesData: Record<string, CountryData>;
+  countriesGeoJson?: FeatureCollection<Geometry, GeoCountryProperties> | null;
+  japanData?: JapanGeographyDataset | null;
   timeSliders: TimeSeriesSliderItem[];
   photoEncyclopedia: PhotoEncyclopediaEntry[];
   onSelectCountry: (iso3: string) => void;
+  onOpenRanking?: (rankingId: string) => void;
+  onOpenSystematic?: (topicId: string) => void;
 }
 
-type PracticeMode = 'bank' | 'drill';
+type PracticeMode = 'bank' | 'drill' | 'minimock';
 type BankCategoryFilter = 'all' | MockQuestionCategory;
 
 const BANK_CAT_OPTIONS: { id: BankCategoryFilter; label: string }[] = [
@@ -439,85 +461,205 @@ function MiniLineTrendSvg({ spec }: { spec: LineTrendDrillSpec }) {
   );
 }
 
-function MiniPopulationPyramidSvg({
-  bins,
-  fixedMaxPct,
+function DrillQuestionVisuals({
+  question,
+  countriesGeoJson,
 }: {
-  bins: AgePyramidBin[];
-  fixedMaxPct?: number;
+  question: GeneratedDrillQuestion;
+  countriesGeoJson?: FeatureCollection<Geometry, GeoCountryProperties> | null;
 }) {
-  const maxPct =
-    fixedMaxPct ??
-    Math.max(
-      8,
-      ...bins.flatMap((b) => [b.malePct, b.femalePct]),
-    );
-  const rows = [...bins].reverse();
-  const rowH = 14;
-  const H = rows.length * rowH + 22;
-  const W = 280;
-  const centerX = W / 2;
-  const halfPlot = 104;
+  const sharedClimateScale = useMemo(() => {
+    const list = question.climateCities;
+    if (!list || list.length === 0) return null;
+    const allTemps = list.flatMap((it) => it.city.monthlyTempC);
+    const allPrecips = list.flatMap((it) => it.city.monthlyPrecipMm);
+    return {
+      tempRange: [
+        Math.floor(Math.min(-10, ...allTemps) / 5) * 5,
+        Math.ceil(Math.max(30, ...allTemps) / 5) * 5,
+      ] as [number, number],
+      precipMax: Math.ceil(Math.max(200, ...allPrecips) / 50) * 50,
+    };
+  }, [question.climateCities]);
+
+  const sharedPyramidMaxPct = useMemo(() => {
+    const pair = question.pyramidPair;
+    if (!pair || pair.length === 0) return undefined;
+    return Math.max(8, ...pair.flatMap((p) => p.bins.flatMap((b) => [b.malePct, b.femalePct])));
+  }, [question.pyramidPair]);
 
   return (
-    <div className="mx-auto max-w-sm rounded-xl border border-slate-200 bg-white p-3">
-      <div className="mb-1 flex items-center justify-between text-[10.5px] font-bold text-slate-600">
-        <span className="text-sky-700">← 男性 (%)</span>
-        <span className="text-slate-400">年齢階級</span>
-        <span className="text-rose-700">女性 (%) →</span>
-      </div>
-      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full select-none">
-        <line x1={centerX} y1={0} x2={centerX} y2={H - 16} stroke="#94a3b8" strokeWidth={1} />
-        {rows.map((b, idx) => {
-          const y = idx * rowH;
-          const mW = (b.malePct / maxPct) * halfPlot;
-          const fW = (b.femalePct / maxPct) * halfPlot;
-          return (
-            <g key={b.ageGroup}>
-              <rect x={centerX - mW} y={y + 1} width={mW} height={rowH - 2} fill="#0284c7" rx={1} />
-              <rect x={centerX} y={y + 1} width={fW} height={rowH - 2} fill="#e11d48" rx={1} />
-              {idx % 2 === 0 && (
-                <text
-                  x={centerX}
-                  y={y + rowH - 3}
-                  textAnchor="middle"
-                  fontSize="7.5"
-                  fill="#0f172a"
-                  fontWeight="bold"
-                  stroke="#ffffff"
-                  strokeWidth="2.4"
-                  paintOrder="stroke"
-                >
-                  {b.ageGroup}
-                </text>
-              )}
-            </g>
-          );
-        })}
-        <text x={centerX - halfPlot} y={H - 3} fontSize="8" fill="#64748b">
-          {Math.round(maxPct)}%
-        </text>
-        <text x={centerX} y={H - 3} textAnchor="middle" fontSize="8" fill="#64748b">
-          0
-        </text>
-        <text x={centerX + halfPlot} y={H - 3} textAnchor="end" fontSize="8" fill="#64748b">
-          {Math.round(maxPct)}%
-        </text>
-      </svg>
-    </div>
+    <>
+      {question.dialogues && question.dialogues.length > 0 && (
+        <div className="mt-3 space-y-2 rounded-xl border border-slate-200 bg-slate-50/80 p-3">
+          <div className="flex items-center gap-1 text-[11px] font-bold text-slate-700">
+            <MessageSquare className="h-3.5 w-3.5 text-indigo-600" />
+            会話・考察メモ
+          </div>
+          {question.dialogues.map((d, i) => (
+            <div
+              key={i}
+              className="rounded-lg border border-slate-200/80 bg-white px-3 py-2 text-xs text-slate-800"
+            >
+              <span className="mr-1.5 font-extrabold text-indigo-700">{d.speaker}:</span>
+              <span>{d.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {question.mapSpec && (
+        <div className="mt-3">
+          <MiniWorldMapDrillSvg spec={question.mapSpec} countriesGeoJson={countriesGeoJson} />
+        </div>
+      )}
+
+      {question.table && (
+        <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200">
+          {question.table.caption && (
+            <div className="border-b border-slate-200 bg-slate-50 px-3 py-1.5 text-[11px] font-bold text-slate-700">
+              {question.table.caption}
+            </div>
+          )}
+          <table className="w-full text-left text-xs">
+            <thead className="bg-slate-100 text-slate-700">
+              <tr>
+                {question.table.headers.map((h) => (
+                  <th key={h} className="whitespace-nowrap px-2.5 py-2 font-bold">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100 bg-white">
+              {question.table.rows.map((r, ri) => (
+                <tr key={ri}>
+                  {r.map((cell, ci) => (
+                    <td
+                      key={ci}
+                      className={`px-2.5 py-2 ${ci === 0 ? 'font-bold text-slate-900' : 'text-slate-700'}`}
+                    >
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {question.scatterPlot && (
+        <div className="mt-3">
+          <MiniScatterPlotSvg spec={question.scatterPlot} />
+        </div>
+      )}
+
+      {question.stackedBars && (
+        <div className="mt-3">
+          <MiniStackedBarSvg spec={question.stackedBars} />
+        </div>
+      )}
+
+      {question.lineTrend && (
+        <div className="mt-3">
+          <MiniLineTrendSvg spec={question.lineTrend} />
+        </div>
+      )}
+
+      {question.climateCities && sharedClimateScale && (
+        <div
+          className={`mt-3 grid grid-cols-1 gap-3 ${
+            question.climateCities.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
+          }`}
+        >
+          {question.climateCities.map((entry) => (
+            <div key={entry.label} className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5">
+              <div className="mb-1.5 flex items-center justify-between text-xs font-extrabold text-slate-800">
+                <span>{entry.label}</span>
+                {entry.metaText && (
+                  <span className="font-mono text-[10.5px] font-semibold text-slate-500">
+                    {entry.metaText}
+                  </span>
+                )}
+              </div>
+              <ClimateMiniChart
+                city={entry.city}
+                chartType={question.climateChartType ?? 'climograph'}
+                tempRange={sharedClimateScale.tempRange}
+                precipMax={sharedClimateScale.precipMax}
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {question.climateCity && !question.climateCities && (
+        <div className="mx-auto mt-3 max-w-xs rounded-xl border border-slate-200 bg-slate-50/70 p-3">
+          <ClimateMiniChart
+            city={question.climateCity}
+            chartType={question.climateChartType ?? 'climograph'}
+            tempRange={[
+              Math.floor(Math.min(-10, ...question.climateCity.monthlyTempC) / 5) * 5,
+              Math.ceil(Math.max(30, ...question.climateCity.monthlyTempC) / 5) * 5,
+            ]}
+            precipMax={Math.ceil(Math.max(200, ...question.climateCity.monthlyPrecipMm) / 50) * 50}
+          />
+        </div>
+      )}
+
+      {question.pyramidPair && (
+        <div
+          className={`mt-3 grid grid-cols-1 gap-3 ${
+            question.pyramidPair.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
+          }`}
+        >
+          {question.pyramidPair.map((p) => (
+            <div key={p.label} className="space-y-1">
+              <div className="text-center text-xs font-extrabold text-slate-800">{p.label}</div>
+              <EqualScalePyramidSvg bins={p.bins} fixedMaxPct={sharedPyramidMaxPct} />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {question.pyramidBins && !question.pyramidPair && (
+        <div className="mt-3">
+          <EqualScalePyramidSvg bins={question.pyramidBins} />
+        </div>
+      )}
+
+      {question.photoUrl && (
+        <div className="mt-3">
+          <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-900">
+            <img
+              src={question.photoUrl}
+              alt="地理推論対象景観写真"
+              referrerPolicy="no-referrer"
+              className="mx-auto max-h-64 w-full object-contain"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 
 /**
- * 共テ風オリジナル実戦問題モード（厳選思考力バンク＋データ連動無限ドリル）
+ * 共テ風オリジナル実戦問題モード（厳選思考力バンク＋無限実戦ドリル＋実戦ミニ模試10問）
  */
 export function PracticeExamView({
+  ref,
   mockQuestions,
   worldRankings,
   countriesData,
+  countriesGeoJson,
+  japanData,
   timeSliders,
   photoEncyclopedia,
   onSelectCountry,
+  onOpenRanking,
+  onOpenSystematic,
 }: PracticeExamViewProps) {
   const [mode, setMode] = useState<PracticeMode>('bank');
 
@@ -529,10 +671,21 @@ export function PracticeExamView({
   // --- Mode 1: 無限ランダム生成実戦図表ドリル ---
   const [drillGenre, setDrillGenre] = useState<DrillGenre>('all');
   const [drillSeed, setDrillSeed] = useState<number>(1);
+  const [recentSignatures, setRecentSignatures] = useState<string[]>([]);
+  const [missedDrills, setMissedDrills] = useState<GeneratedDrillQuestion[]>([]);
+  const [isReviewQueueMode, setIsReviewQueueMode] = useState<boolean>(false);
+  const [focusFilter, setFocusFilter] = useState<DrillFocusFilter | null>(null);
   const [currentDrill, setCurrentDrill] = useState<GeneratedDrillQuestion | null>(() =>
     generateDrillQuestion(
       'all',
-      { worldRankings, countriesData, timeSliders, photoEncyclopedia },
+      {
+        worldRankings,
+        countriesData,
+        countriesGeoJson,
+        japanData,
+        timeSliders,
+        photoEncyclopedia,
+      },
       1,
     ),
   );
@@ -548,6 +701,14 @@ export function PracticeExamView({
     streak: 0,
     bestStreak: 0,
   });
+
+  // --- Mode 3: 10問 実戦ミニ模試（セッション完結） ---
+  const [mockNonce, setMockNonce] = useState<number>(1);
+  const [mockSet, setMockSet] = useState<GeneratedDrillQuestion[]>([]);
+  const [mockIndex, setMockIndex] = useState<number>(0);
+  const [mockAnswers, setMockAnswers] = useState<Record<string, number>>({});
+  const [mockFlags, setMockFlags] = useState<Record<string, boolean>>({});
+  const [mockSubmitted, setMockSubmitted] = useState<boolean>(false);
 
   const filteredBank = useMemo(() => {
     if (bankCategory === 'all') return mockQuestions;
@@ -573,45 +734,64 @@ export function PracticeExamView({
     return { correct, answered };
   }, [mockQuestions, bankAnswers]);
 
-  // 2都市比較用の共通スケール計算（雨温図／ハイサーグラフ）
-  const sharedClimateScale = useMemo(() => {
-    const list = currentDrill?.climateCities;
-    if (!list || list.length === 0) return null;
-    const allTemps = list.flatMap((it) => it.city.monthlyTempC);
-    const allPrecips = list.flatMap((it) => it.city.monthlyPrecipMm);
-    return {
-      tempRange: [
-        Math.floor(Math.min(-10, ...allTemps) / 5) * 5,
-        Math.ceil(Math.max(30, ...allTemps) / 5) * 5,
-      ] as [number, number],
-      precipMax: Math.ceil(Math.max(200, ...allPrecips) / 50) * 50,
-    };
-  }, [currentDrill]);
-
-  // 2国並列人口ピラミッドの共通横軸最大値
-  const sharedPyramidMaxPct = useMemo(() => {
-    const pair = currentDrill?.pyramidPair;
-    if (!pair || pair.length === 0) return undefined;
-    return Math.max(
-      8,
-      ...pair.flatMap((p) => p.bins.flatMap((b) => [b.malePct, b.femalePct])),
+  const generateWithHistory = (
+    targetGenre: DrillGenre,
+    seed: number,
+    overrideFocus: DrillFocusFilter | null = focusFilter,
+  ) => {
+    const q = generateDrillQuestion(
+      targetGenre,
+      {
+        worldRankings,
+        countriesData,
+        countriesGeoJson,
+        japanData,
+        timeSliders,
+        photoEncyclopedia,
+        recentSignatures,
+        focusFilter: overrideFocus,
+      },
+      seed,
     );
-  }, [currentDrill]);
+    if (q?.signature) {
+      setRecentSignatures((prev) => [...prev.slice(-24), q.signature!]);
+    }
+    return q;
+  };
 
-  const handleNextDrill = (overrideGenre?: DrillGenre) => {
+  const handleNextDrill = (
+    overrideGenre?: DrillGenre,
+    overrideFocus: DrillFocusFilter | null = focusFilter,
+  ) => {
     const targetGenre = overrideGenre ?? drillGenre;
     const nextSeed = drillSeed + 1;
     setDrillSeed(nextSeed);
     setDrillChoice(null);
-    const nextQ = generateDrillQuestion(
-      targetGenre,
-      { worldRankings, countriesData, timeSliders, photoEncyclopedia },
-      nextSeed,
-    );
+
+    if (isReviewQueueMode && missedDrills.length > 0 && overrideGenre === undefined) {
+      setCurrentDrill(missedDrills[0]);
+      return;
+    }
+
+    const nextQ = generateWithHistory(targetGenre, nextSeed, overrideFocus);
     if (nextQ) {
       setCurrentDrill(nextQ);
     }
   };
+
+  useImperativeHandle(ref, () => ({
+    startFocusedDrill: (filter: DrillFocusFilter) => {
+      setMode('drill');
+      setIsReviewQueueMode(false);
+      setFocusFilter(filter);
+      setDrillGenre('all');
+      const nextSeed = drillSeed + 1;
+      setDrillSeed(nextSeed);
+      setDrillChoice(null);
+      const q = generateWithHistory('all', nextSeed, filter);
+      if (q) setCurrentDrill(q);
+    },
+  }));
 
   const handleAnswerDrill = (idx: number) => {
     if (!currentDrill || drillChoice !== null) return;
@@ -626,18 +806,81 @@ export function PracticeExamView({
         bestStreak: Math.max(prev.bestStreak, nextStreak),
       };
     });
+
+    if (ok) {
+      if (isReviewQueueMode) {
+        setMissedDrills((prev) => {
+          const filtered = prev.filter((item) => item.id !== currentDrill.id);
+          if (filtered.length === 0) setIsReviewQueueMode(false);
+          return filtered;
+        });
+      }
+    } else {
+      setMissedDrills((prev) => {
+        if (prev.some((item) => item.signature === currentDrill.signature)) return prev;
+        return [...prev.slice(-29), currentDrill];
+      });
+    }
   };
+
+  const handleStartMiniMock = () => {
+    const nextNonce = mockNonce + 1;
+    setMockNonce(nextNonce);
+    const qs = generateMiniMockSet(
+      {
+        worldRankings,
+        countriesData,
+        countriesGeoJson,
+        japanData,
+        timeSliders,
+        photoEncyclopedia,
+        recentSignatures,
+      },
+      nextNonce,
+    );
+    setMockSet(qs);
+    setMockIndex(0);
+    setMockAnswers({});
+    setMockFlags({});
+    setMockSubmitted(false);
+    const newSigs = qs.map((q) => q.signature).filter((s): s is string => Boolean(s));
+    if (newSigs.length > 0) {
+      setRecentSignatures((prev) => [...prev, ...newSigs].slice(-25));
+    }
+  };
+
+  const mockSummary = useMemo(() => {
+    if (mockSet.length === 0) return null;
+    let totalCorrect = 0;
+    const byDomain = new Map<string, { total: number; correct: number }>();
+    for (const q of mockSet) {
+      const dom = q.domainTag ?? q.genreLabel;
+      const cur = byDomain.get(dom) ?? { total: 0, correct: 0 };
+      cur.total += 1;
+      if (mockAnswers[q.id] === q.correctIndex) {
+        totalCorrect += 1;
+        cur.correct += 1;
+      }
+      byDomain.set(dom, cur);
+    }
+    return {
+      total: mockSet.length,
+      answered: Object.keys(mockAnswers).length,
+      correct: totalCorrect,
+      domains: Array.from(byDomain.entries()).map(([label, stat]) => ({ label, ...stat })),
+    };
+  }, [mockSet, mockAnswers]);
 
   return (
     <div className="flex h-full flex-col bg-slate-50">
       {/* 上部 モード切替バー */}
       <div className="shrink-0 border-b border-slate-200 bg-white px-3 py-2.5 md:px-6">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
-          <div className="inline-flex items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5 text-xs">
+          <div className="inline-flex flex-wrap items-center rounded-xl border border-slate-200 bg-slate-100 p-0.5 text-xs">
             <button
               type="button"
               onClick={() => setMode('bank')}
-              className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-extrabold transition ${
+              className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-extrabold transition md:px-3 ${
                 mode === 'bank'
                   ? 'bg-white text-indigo-700 shadow-2xs'
                   : 'text-slate-600 hover:text-slate-900'
@@ -652,19 +895,34 @@ export function PracticeExamView({
                 setMode('drill');
                 if (!currentDrill) handleNextDrill();
               }}
-              className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 font-extrabold transition ${
+              className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-extrabold transition md:px-3 ${
                 mode === 'drill'
                   ? 'bg-white text-indigo-700 shadow-2xs'
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              データ連動・無限実戦ドリル
+              データ連動・無限ドリル
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setMode('minimock');
+                if (mockSet.length === 0) handleStartMiniMock();
+              }}
+              className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-extrabold transition md:px-3 ${
+                mode === 'minimock'
+                  ? 'bg-white text-indigo-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <ListChecks className="h-3.5 w-3.5" />
+              実戦ミニ模試（10問）
             </button>
           </div>
 
-          <div className="flex items-center gap-2 text-xs font-bold text-slate-600">
-            {mode === 'bank' ? (
+          <div className="flex flex-wrap items-center gap-2 text-xs font-bold text-slate-600">
+            {mode === 'bank' && (
               <>
                 <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-800">
                   正答: {bankStats.correct} / {bankStats.answered}問
@@ -679,7 +937,8 @@ export function PracticeExamView({
                   </button>
                 )}
               </>
-            ) : (
+            )}
+            {mode === 'drill' && (
               <>
                 <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-emerald-800">
                   正答: {drillStats.correct} / {drillStats.total}問
@@ -688,6 +947,29 @@ export function PracticeExamView({
                   <span className="rounded-full bg-amber-50 px-2.5 py-1 text-amber-800">
                     連続 {drillStats.streak}問
                   </span>
+                )}
+                {missedDrills.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const nextMode = !isReviewQueueMode;
+                      setIsReviewQueueMode(nextMode);
+                      setDrillChoice(null);
+                      if (nextMode && missedDrills[0]) {
+                        setCurrentDrill(missedDrills[0]);
+                      } else {
+                        const q = generateWithHistory(drillGenre, drillSeed + 1);
+                        if (q) setCurrentDrill(q);
+                      }
+                    }}
+                    className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1 text-[11px] font-extrabold transition ${
+                      isReviewQueueMode
+                        ? 'border-rose-500 bg-rose-600 text-white'
+                        : 'border-rose-200 bg-rose-50 text-rose-700 hover:bg-rose-100'
+                    }`}
+                  >
+                    ミス復習 ({missedDrills.length}問)
+                  </button>
                 )}
                 {drillStats.total > 0 && (
                   <button
@@ -699,6 +981,24 @@ export function PracticeExamView({
                   </button>
                 )}
               </>
+            )}
+            {mode === 'minimock' && mockSummary && (
+              <div className="flex items-center gap-2">
+                <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-indigo-800">
+                  {mockSubmitted
+                    ? `得点: ${mockSummary.correct} / ${mockSummary.total}問（${Math.round(
+                        (mockSummary.correct / Math.max(1, mockSummary.total)) * 100,
+                      )}%）`
+                    : `解答済: ${mockSummary.answered} / ${mockSummary.total}問`}
+                </span>
+                <button
+                  type="button"
+                  onClick={handleStartMiniMock}
+                  className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700 hover:bg-slate-100"
+                >
+                  <RefreshCw className="h-3 w-3" /> 新しい10問セット
+                </button>
+              </div>
             )}
           </div>
         </div>
@@ -979,35 +1279,65 @@ export function PracticeExamView({
       {mode === 'drill' && (
         <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
           <div className="shrink-0 border-b border-slate-200 bg-white/90 px-3 py-2 md:px-6">
-            <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
-                {DRILL_GENRE_OPTIONS.map((g) => (
-                  <button
-                    key={g.id}
-                    type="button"
-                    onClick={() => {
-                      setDrillGenre(g.id);
-                      handleNextDrill(g.id);
-                    }}
-                    className={`shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-bold transition ${
-                      drillGenre === g.id
-                        ? 'border-indigo-600 bg-indigo-600 text-white'
-                        : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
-                    }`}
-                  >
-                    {g.label}
-                  </button>
-                ))}
+            <div className="mx-auto flex max-w-6xl flex-col gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
+                  {DRILL_GENRE_OPTIONS.map((g) => (
+                    <button
+                      key={g.id}
+                      type="button"
+                      onClick={() => {
+                        setIsReviewQueueMode(false);
+                        setDrillGenre(g.id);
+                        handleNextDrill(g.id, focusFilter);
+                      }}
+                      className={`shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-bold transition ${
+                        !isReviewQueueMode && drillGenre === g.id
+                          ? 'border-indigo-600 bg-indigo-600 text-white'
+                          : 'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      {g.label}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => handleNextDrill()}
+                  className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-extrabold text-indigo-800 hover:bg-indigo-100"
+                >
+                  <RefreshCw className="h-3.5 w-3.5" />
+                  {isReviewQueueMode ? '次のミス問題へ' : '新しい問題を生成'}
+                </button>
               </div>
 
-              <button
-                type="button"
-                onClick={() => handleNextDrill()}
-                className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-extrabold text-indigo-800 hover:bg-indigo-100"
-              >
-                <RefreshCw className="h-3.5 w-3.5" />
-                新しい問題を生成
-              </button>
+              {(focusFilter || isReviewQueueMode) && (
+                <div className="flex flex-wrap items-center gap-2 text-[11px]">
+                  {focusFilter && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-sky-200 bg-sky-50 px-2.5 py-0.5 font-bold text-sky-900">
+                      <Target className="h-3 w-3 text-sky-600" />
+                      絞り込み出題中：{focusFilter.label ?? focusFilter.iso3 ?? focusFilter.category}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setFocusFilter(null);
+                          handleNextDrill(drillGenre, null);
+                        }}
+                        className="ml-0.5 rounded-full bg-sky-200/70 p-0.5 text-sky-900 hover:bg-sky-300"
+                        title="絞り込みを解除"
+                      >
+                        <X className="h-2.5 w-2.5" />
+                      </button>
+                    </span>
+                  )}
+                  {isReviewQueueMode && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-rose-200 bg-rose-50 px-2.5 py-0.5 font-bold text-rose-800">
+                      ミス復習キュー（残り {missedDrills.length}問・正解するとキューから完了）
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
@@ -1019,6 +1349,11 @@ export function PracticeExamView({
                     <Sparkles className="h-3 w-3 text-indigo-600" />
                     {currentDrill.genreLabel}
                   </span>
+                  {currentDrill.domainTag && (
+                    <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-[10.5px] font-bold text-indigo-700">
+                      {currentDrill.domainTag}
+                    </span>
+                  )}
                 </div>
 
                 <h2 className="mt-2 text-base font-black text-slate-900 md:text-lg">
@@ -1028,144 +1363,7 @@ export function PracticeExamView({
                   {currentDrill.promptBody}
                 </p>
 
-                {currentDrill.table && (
-                  <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200">
-                    {currentDrill.table.caption && (
-                      <div className="border-b border-slate-200 bg-slate-50 px-3 py-1.5 text-[11px] font-bold text-slate-700">
-                        {currentDrill.table.caption}
-                      </div>
-                    )}
-                    <table className="w-full text-left text-xs">
-                      <thead className="bg-slate-100 text-slate-700">
-                        <tr>
-                          {currentDrill.table.headers.map((h) => (
-                            <th key={h} className="whitespace-nowrap px-2.5 py-2 font-bold">
-                              {h}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-slate-100 bg-white">
-                        {currentDrill.table.rows.map((r, ri) => (
-                          <tr key={ri}>
-                            {r.map((cell, ci) => (
-                              <td
-                                key={ci}
-                                className={`px-2.5 py-2 ${ci === 0 ? 'font-bold text-slate-900' : 'text-slate-700'}`}
-                              >
-                                {cell}
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-
-                {currentDrill.scatterPlot && (
-                  <div className="mt-3">
-                    <MiniScatterPlotSvg spec={currentDrill.scatterPlot} />
-                  </div>
-                )}
-
-                {currentDrill.stackedBars && (
-                  <div className="mt-3">
-                    <MiniStackedBarSvg spec={currentDrill.stackedBars} />
-                  </div>
-                )}
-
-                {currentDrill.lineTrend && (
-                  <div className="mt-3">
-                    <MiniLineTrendSvg spec={currentDrill.lineTrend} />
-                  </div>
-                )}
-
-                {currentDrill.climateCities && sharedClimateScale && (
-                  <div
-                    className={`mt-3 grid grid-cols-1 gap-3 ${
-                      currentDrill.climateCities.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
-                    }`}
-                  >
-                    {currentDrill.climateCities.map((entry) => (
-                      <div
-                        key={entry.label}
-                        className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5"
-                      >
-                        <div className="mb-1.5 flex items-center justify-between text-xs font-extrabold text-slate-800">
-                          <span>{entry.label}</span>
-                          {entry.metaText && (
-                            <span className="font-mono text-[10.5px] font-semibold text-slate-500">
-                              {entry.metaText}
-                            </span>
-                          )}
-                        </div>
-                        <ClimateMiniChart
-                          city={entry.city}
-                          chartType={currentDrill.climateChartType ?? 'climograph'}
-                          tempRange={sharedClimateScale.tempRange}
-                          precipMax={sharedClimateScale.precipMax}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {currentDrill.climateCity && !currentDrill.climateCities && (
-                  <div className="mx-auto mt-3 max-w-xs rounded-xl border border-slate-200 bg-slate-50/70 p-3">
-                    <ClimateMiniChart
-                      city={currentDrill.climateCity}
-                      chartType={currentDrill.climateChartType ?? 'climograph'}
-                      tempRange={[
-                        Math.floor(Math.min(-10, ...currentDrill.climateCity.monthlyTempC) / 5) * 5,
-                        Math.ceil(Math.max(30, ...currentDrill.climateCity.monthlyTempC) / 5) * 5,
-                      ]}
-                      precipMax={
-                        Math.ceil(Math.max(200, ...currentDrill.climateCity.monthlyPrecipMm) / 50) *
-                        50
-                      }
-                    />
-                  </div>
-                )}
-
-                {currentDrill.pyramidPair && (
-                  <div
-                    className={`mt-3 grid grid-cols-1 gap-3 ${
-                      currentDrill.pyramidPair.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
-                    }`}
-                  >
-                    {currentDrill.pyramidPair.map((p) => (
-                      <div key={p.label} className="space-y-1">
-                        <div className="text-center text-xs font-extrabold text-slate-800">
-                          {p.label}
-                        </div>
-                        <MiniPopulationPyramidSvg
-                          bins={p.bins}
-                          fixedMaxPct={sharedPyramidMaxPct}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {currentDrill.pyramidBins && !currentDrill.pyramidPair && (
-                  <div className="mt-3">
-                    <MiniPopulationPyramidSvg bins={currentDrill.pyramidBins} />
-                  </div>
-                )}
-
-                {currentDrill.photoUrl && (
-                  <div className="mt-3">
-                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-900">
-                      <img
-                        src={currentDrill.photoUrl}
-                        alt="地理推論対象景観写真"
-                        referrerPolicy="no-referrer"
-                        className="mx-auto max-h-64 w-full object-contain"
-                      />
-                    </div>
-                  </div>
-                )}
+                <DrillQuestionVisuals question={currentDrill} countriesGeoJson={countriesGeoJson} />
 
                 {/* 選択肢 */}
                 <div
@@ -1235,6 +1433,19 @@ export function PracticeExamView({
                       {currentDrill.explanation}
                     </div>
 
+                    {currentDrill.steps && currentDrill.steps.length > 0 && (
+                      <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-3 text-xs leading-relaxed text-slate-800">
+                        <div className="mb-1 font-extrabold text-emerald-950">
+                          思考プロセス（消去法・段階的解法）
+                        </div>
+                        <ul className="space-y-1">
+                          {currentDrill.steps.map((s, si) => (
+                            <li key={si}>{s}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
                     {currentDrill.detailNotes && currentDrill.detailNotes.length > 0 && (
                       <div className="rounded-xl border border-slate-200 border-l-2 border-l-indigo-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-700">
                         <div className="mb-1 font-extrabold text-slate-900">各項目・選択肢の実データ</div>
@@ -1259,6 +1470,26 @@ export function PracticeExamView({
                             {countriesData[iso]?.nameJa.split('（')[0] ?? iso}
                           </button>
                         ))}
+                        {currentDrill.relatedRankingId && onOpenRanking && (
+                          <button
+                            type="button"
+                            onClick={() => onOpenRanking(currentDrill.relatedRankingId!)}
+                            className="inline-flex items-center gap-1 rounded-lg border border-cyan-200 bg-cyan-50 px-2.5 py-1 text-[11px] font-bold text-cyan-800 hover:bg-cyan-100"
+                          >
+                            <BarChart3 className="h-3 w-3" />
+                            世界統計で確認
+                          </button>
+                        )}
+                        {currentDrill.relatedSystematicId && onOpenSystematic && (
+                          <button
+                            type="button"
+                            onClick={() => onOpenSystematic(currentDrill.relatedSystematicId!)}
+                            className="inline-flex items-center gap-1 rounded-lg border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-bold text-amber-800 hover:bg-amber-100"
+                          >
+                            <Layers className="h-3 w-3" />
+                            系統・日本図鑑で確認
+                          </button>
+                        )}
                       </div>
 
                       <button
@@ -1267,7 +1498,7 @@ export function PracticeExamView({
                         className="inline-flex items-center gap-1 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-extrabold text-white hover:bg-indigo-700"
                       >
                         <RefreshCw className="h-3.5 w-3.5" />
-                        次の問題へ（再生成）
+                        {isReviewQueueMode ? '次のミス問題へ' : '次の問題へ（再生成）'}
                       </button>
                     </div>
                   </div>
@@ -1279,6 +1510,337 @@ export function PracticeExamView({
               </div>
             )}
           </div>
+        </div>
+      )}
+
+      {/* Mode 3: 10問 実戦ミニ模試 */}
+      {mode === 'minimock' && (
+        <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+          {mockSet.length === 0 ? (
+            <div className="flex flex-1 flex-col items-center justify-center p-6 text-center">
+              <ListChecks className="h-10 w-10 text-indigo-600" />
+              <h2 className="mt-3 text-base font-black text-slate-900">
+                共通テスト形式 実戦ミニ模試（全10問）
+              </h2>
+              <p className="mt-1 max-w-md text-xs leading-relaxed text-slate-600">
+                地図統計・雨温図×地点・初見統計推論・世界20カ国の国内地域/日本統計・グラフ読取・人口ピラミッドからバランス良く10問を出題します。全問回答後に一括採点と分野別診断を行います。
+              </p>
+              <button
+                type="button"
+                onClick={handleStartMiniMock}
+                className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-extrabold text-white shadow hover:bg-indigo-700"
+              >
+                <Sparkles className="h-4 w-4" />
+                ミニ模試10問を作成する
+              </button>
+            </div>
+          ) : (
+            <>
+              {/* 問題ナビゲーションバー */}
+              <div className="shrink-0 border-b border-slate-200 bg-white/95 px-3 py-2 md:px-6">
+                <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5">
+                    {mockSet.map((q, idx) => {
+                      const isCur = idx === mockIndex;
+                      const chosen = mockAnswers[q.id];
+                      const flagged = Boolean(mockFlags[q.id]);
+                      let pillClass =
+                        'border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100';
+                      if (mockSubmitted) {
+                        pillClass =
+                          chosen === q.correctIndex
+                            ? 'border-emerald-400 bg-emerald-50 text-emerald-800'
+                            : 'border-rose-400 bg-rose-50 text-rose-800';
+                      } else if (chosen !== undefined) {
+                        pillClass = 'border-indigo-300 bg-indigo-50 text-indigo-800';
+                      }
+                      if (isCur) {
+                        pillClass += ' ring-2 ring-indigo-600 ring-offset-1';
+                      }
+                      return (
+                        <button
+                          key={q.id}
+                          type="button"
+                          onClick={() => setMockIndex(idx)}
+                          className={`relative inline-flex shrink-0 items-center gap-1 rounded-lg border px-2.5 py-1 text-[11px] font-extrabold transition ${pillClass}`}
+                        >
+                          Q{idx + 1}
+                          {flagged && <Flag className="h-2.5 w-2.5 fill-amber-500 text-amber-500" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {!mockSubmitted ? (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setMockSubmitted(true);
+                        const missedFromMock = mockSet.filter(
+                          (q) => mockAnswers[q.id] !== q.correctIndex,
+                        );
+                        if (missedFromMock.length > 0) {
+                          setMissedDrills((prev) => {
+                            const sigs = new Set(prev.map((x) => x.signature));
+                            const added = missedFromMock.filter((m) => !sigs.has(m.signature));
+                            return [...prev, ...added].slice(-30);
+                          });
+                        }
+                      }}
+                      className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-emerald-600 px-3.5 py-1.5 text-xs font-extrabold text-white hover:bg-emerald-700"
+                    >
+                      <CheckCircle2 className="h-3.5 w-3.5" />
+                      採点して解説を見る（{mockSummary?.answered ?? 0}/{mockSet.length}問解答）
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsReviewQueueMode(true);
+                        setMode('drill');
+                        if (missedDrills[0]) setCurrentDrill(missedDrills[0]);
+                      }}
+                      disabled={missedDrills.length === 0}
+                      className="inline-flex shrink-0 items-center gap-1 rounded-xl border border-rose-200 bg-rose-50 px-3 py-1.5 text-xs font-extrabold text-rose-700 hover:bg-rose-100 disabled:opacity-40"
+                    >
+                      誤答問題を復習キューで解き直す ({missedDrills.length}問)
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex-1 overflow-y-auto p-3.5 md:p-6">
+                <div className="mx-auto max-w-3xl space-y-4">
+                  {/* 採点完了後の全体結果・分野別診断カード */}
+                  {mockSubmitted && mockSummary && (
+                    <div className="rounded-2xl border border-indigo-200 bg-white p-4 shadow-2xs">
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <div>
+                          <div className="text-[11px] font-bold text-indigo-700">
+                            ミニ模試 採点結果サマリー
+                          </div>
+                          <div className="mt-0.5 text-xl font-black text-slate-900">
+                            {mockSummary.correct} / {mockSummary.total} 問正解（正答率{' '}
+                            {Math.round(
+                              (mockSummary.correct / Math.max(1, mockSummary.total)) * 100,
+                            )}
+                            %）
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={handleStartMiniMock}
+                          className="inline-flex items-center gap-1 rounded-xl bg-indigo-600 px-3.5 py-2 text-xs font-extrabold text-white hover:bg-indigo-700"
+                        >
+                          <RefreshCw className="h-3.5 w-3.5" />
+                          新しい10問で再挑戦
+                        </button>
+                      </div>
+                      <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+                        {mockSummary.domains.map((dom) => {
+                          const rate = Math.round((dom.correct / Math.max(1, dom.total)) * 100);
+                          return (
+                            <div
+                              key={dom.label}
+                              className="rounded-xl border border-slate-200 bg-slate-50/70 p-2 text-[11px]"
+                            >
+                              <div className="truncate font-bold text-slate-700">{dom.label}</div>
+                              <div className="mt-1 flex items-baseline justify-between font-black">
+                                <span
+                                  className={
+                                    rate >= 70
+                                      ? 'text-emerald-700'
+                                      : rate >= 40
+                                        ? 'text-amber-700'
+                                        : 'text-rose-700'
+                                  }
+                                >
+                                  {dom.correct}/{dom.total}問
+                                </span>
+                                <span className="text-[10px] text-slate-500">{rate}%</span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 現在選択中の問題カード */}
+                  {(() => {
+                    const curQ = mockSet[mockIndex];
+                    if (!curQ) return null;
+                    const curAns = mockAnswers[curQ.id];
+                    const isFlag = Boolean(mockFlags[curQ.id]);
+                    return (
+                      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs md:p-5">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <div className="flex items-center gap-2">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-black text-indigo-800">
+                              第 {mockIndex + 1} 問 / {mockSet.length}
+                            </span>
+                            <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-bold text-slate-700">
+                              {curQ.genreLabel}
+                            </span>
+                          </div>
+                          {!mockSubmitted && (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setMockFlags((prev) => ({ ...prev, [curQ.id]: !prev[curQ.id] }))
+                              }
+                              className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1 text-[11px] font-bold transition ${
+                                isFlag
+                                  ? 'border-amber-400 bg-amber-50 text-amber-800'
+                                  : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                              }`}
+                            >
+                              <Flag className="h-3 w-3" />
+                              {isFlag ? '要確認済み' : 'あとで見直す'}
+                            </button>
+                          )}
+                        </div>
+
+                        <h2 className="mt-2 text-base font-black text-slate-900 md:text-lg">
+                          {curQ.promptTitle}
+                        </h2>
+                        <p className="mt-1 text-xs font-semibold leading-relaxed text-slate-700 md:text-[13px]">
+                          {curQ.promptBody}
+                        </p>
+
+                        <DrillQuestionVisuals
+                          question={curQ}
+                          countriesGeoJson={countriesGeoJson}
+                        />
+
+                        {/* 選択肢（採点前は選び直し可） */}
+                        <div
+                          className={
+                            curQ.choices.length >= 6 &&
+                            curQ.choices.every((c) => c.length <= 42)
+                              ? 'mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2'
+                              : 'mt-4 space-y-2'
+                          }
+                        >
+                          {curQ.choices.map((ch, idx) => {
+                            const isTarget = idx === curQ.correctIndex;
+                            const isChosen = idx === curAns;
+                            let btnClass =
+                              'border-slate-200 bg-slate-50/70 text-slate-800 hover:border-indigo-300 hover:bg-indigo-50/50';
+                            if (mockSubmitted) {
+                              if (isTarget) {
+                                btnClass = 'border-emerald-500 bg-emerald-50 text-emerald-900';
+                              } else if (isChosen) {
+                                btnClass = 'border-rose-400 bg-rose-50 text-rose-900';
+                              } else {
+                                btnClass = 'border-slate-200 bg-white text-slate-400';
+                              }
+                            } else if (isChosen) {
+                              btnClass = 'border-indigo-500 bg-indigo-50 text-indigo-900';
+                            }
+
+                            return (
+                              <button
+                                key={idx}
+                                type="button"
+                                disabled={mockSubmitted}
+                                onClick={() =>
+                                  setMockAnswers((prev) => ({ ...prev, [curQ.id]: idx }))
+                                }
+                                className={`flex w-full items-start gap-2 rounded-xl border px-3 py-2.5 text-left text-xs font-bold transition md:text-[13px] ${btnClass}`}
+                              >
+                                <span className="shrink-0 font-black">
+                                  {CHOICE_LABELS[idx] ?? `${idx + 1}.`}
+                                </span>
+                                <span className="flex-1">{ch}</span>
+                                {mockSubmitted && isTarget && (
+                                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
+                                )}
+                                {mockSubmitted && isChosen && !isTarget && (
+                                  <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-rose-500" />
+                                )}
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        {/* 採点後解説 */}
+                        {mockSubmitted && (
+                          <div className="mt-4 space-y-3 border-t border-slate-200 pt-4">
+                            <div
+                              className={`text-xs font-black ${
+                                curAns === curQ.correctIndex ? 'text-emerald-700' : 'text-rose-700'
+                              }`}
+                            >
+                              {curAns === undefined
+                                ? `未回答（正解は ${CHOICE_LABELS[curQ.correctIndex] ?? curQ.correctIndex + 1}）`
+                                : curAns === curQ.correctIndex
+                                  ? '正解です'
+                                  : `不正解（正解は ${CHOICE_LABELS[curQ.correctIndex] ?? curQ.correctIndex + 1}）`}
+                            </div>
+
+                            <div className="rounded-xl border border-slate-200 border-l-2 border-l-sky-500 bg-slate-50/70 p-3 text-xs leading-relaxed text-slate-800">
+                              <div className="mb-1 font-extrabold text-slate-900">根拠・判別ポイント</div>
+                              {curQ.explanation}
+                            </div>
+
+                            {curQ.steps && curQ.steps.length > 0 && (
+                              <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-3 text-xs leading-relaxed text-slate-800">
+                                <div className="mb-1 font-extrabold text-emerald-950">
+                                  思考プロセス（消去法・段階的解法）
+                                </div>
+                                <ul className="space-y-1">
+                                  {curQ.steps.map((s, si) => (
+                                    <li key={si}>{s}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+
+                            <div className="flex flex-wrap gap-1.5">
+                              {curQ.relatedIso3s.map((iso) => (
+                                <button
+                                  key={iso}
+                                  type="button"
+                                  onClick={() => onSelectCountry(iso)}
+                                  className="inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700"
+                                >
+                                  <MapPin className="h-3 w-3 text-indigo-600" />
+                                  {countriesData[iso]?.nameJa.split('（')[0] ?? iso}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* 前後送りフッター */}
+                        <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3">
+                          <button
+                            type="button"
+                            disabled={mockIndex === 0}
+                            onClick={() => setMockIndex((i) => Math.max(0, i - 1))}
+                            className="inline-flex items-center gap-1 rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40"
+                          >
+                            <ArrowLeft className="h-3.5 w-3.5" /> 前の問題
+                          </button>
+                          <button
+                            type="button"
+                            disabled={mockIndex >= mockSet.length - 1}
+                            onClick={() =>
+                              setMockIndex((i) => Math.min(mockSet.length - 1, i + 1))
+                            }
+                            className="inline-flex items-center gap-1 rounded-xl bg-indigo-600 px-3.5 py-1.5 text-xs font-extrabold text-white hover:bg-indigo-700 disabled:opacity-40"
+                          >
+                            次の問題 <ArrowRight className="h-3.5 w-3.5" />
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })()}
+                </div>
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>
