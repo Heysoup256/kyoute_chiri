@@ -4,8 +4,6 @@ import {
   BookOpen,
   CheckCircle2,
   ClipboardCheck,
-  Eye,
-  EyeOff,
   MapPin,
   MessageSquare,
   RefreshCw,
@@ -515,7 +513,6 @@ export function PracticeExamView({
     ),
   );
   const [drillChoice, setDrillChoice] = useState<number | null>(null);
-  const [showPhotoHint, setShowPhotoHint] = useState<boolean>(false);
   const [drillStats, setDrillStats] = useState<{
     total: number;
     correct: number;
@@ -582,14 +579,14 @@ export function PracticeExamView({
     const nextSeed = drillSeed + 1;
     setDrillSeed(nextSeed);
     setDrillChoice(null);
-    setShowPhotoHint(false);
-    setCurrentDrill(
-      generateDrillQuestion(
-        targetGenre,
-        { worldRankings, countriesData, timeSliders, photoEncyclopedia },
-        nextSeed,
-      ),
+    const nextQ = generateDrillQuestion(
+      targetGenre,
+      { worldRankings, countriesData, timeSliders, photoEncyclopedia },
+      nextSeed,
     );
+    if (nextQ) {
+      setCurrentDrill(nextQ);
+    }
   };
 
   const handleAnswerDrill = (idx: number) => {
@@ -1102,7 +1099,11 @@ export function PracticeExamView({
                 )}
 
                 {currentDrill.pyramidPair && (
-                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div
+                    className={`mt-3 grid grid-cols-1 gap-3 ${
+                      currentDrill.pyramidPair.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
+                    }`}
+                  >
                     {currentDrill.pyramidPair.map((p) => (
                       <div key={p.label} className="space-y-1">
                         <div className="text-center text-xs font-extrabold text-slate-800">
@@ -1124,7 +1125,7 @@ export function PracticeExamView({
                 )}
 
                 {currentDrill.photoUrl && (
-                  <div className="mt-3 space-y-2">
+                  <div className="mt-3">
                     <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-900">
                       <img
                         src={currentDrill.photoUrl}
@@ -1133,34 +1134,6 @@ export function PracticeExamView({
                         className="mx-auto max-h-64 w-full object-contain"
                       />
                     </div>
-                    {currentDrill.visualClues && currentDrill.visualClues.length > 0 && (
-                      <div>
-                        <button
-                          type="button"
-                          onClick={() => setShowPhotoHint((v) => !v)}
-                          className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-bold text-slate-600 hover:border-indigo-300 hover:text-indigo-700"
-                        >
-                          {showPhotoHint ? (
-                            <EyeOff className="h-3.5 w-3.5" />
-                          ) : (
-                            <Eye className="h-3.5 w-3.5" />
-                          )}
-                          {showPhotoHint
-                            ? '観察のヒントを隠す'
-                            : `観察のヒントを見る（${currentDrill.visualClues.length}件）`}
-                        </button>
-                        {showPhotoHint && (
-                          <div className="mt-2 rounded-xl border border-slate-200 bg-slate-50 p-2.5 text-xs">
-                            <div className="mb-1 font-bold text-slate-700">着眼点ヒント</div>
-                            <ul className="space-y-0.5 text-slate-600">
-                              {currentDrill.visualClues.map((cl) => (
-                                <li key={cl}>・{cl}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    )}
                   </div>
                 )}
 

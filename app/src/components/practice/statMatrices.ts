@@ -17,8 +17,8 @@ export interface StatMatrixSpec {
 }
 
 /**
- * 新課程共通テスト型の「統計数値→国」「統計数値→項目」「二重ブラインド」用の実数値マトリクス16表
- * 全16表は同一単位 (sameUnitAcrossCols: true) かつ上位国〜中堅国まで幅広く収録
+ * 新課程共通テスト型の「統計数値→国」「統計数値→項目」「二重ブラインド」用の実数値マトリクス（全28表）
+ * 全列ラベルは「〇〇の生産量」「〇〇の輸出量」「〇〇の発電割合」等の完全明示表記に統一
  */
 export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
   {
@@ -26,7 +26,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の主要穀物生産量',
     unit: '百万t',
     sameUnitAcrossCols: true,
-    colLabels: ['小麦', '米（籾）', 'トウモロコシ'],
+    colLabels: ['小麦の生産量', '米（籾換算）の生産量', 'トウモロコシの生産量'],
     rows: [
       { iso3: 'CHN', countryName: '中国', values: [137, 208, 289] },
       { iso3: 'IND', countryName: 'インド', values: [110, 206, 36] },
@@ -47,7 +47,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の穀物・大豆輸出量',
     unit: '百万t',
     sameUnitAcrossCols: true,
-    colLabels: ['小麦輸出', '米輸出（精米）', 'トウモロコシ輸出', '大豆輸出'],
+    colLabels: ['小麦の輸出量', '米（精米換算）の輸出量', 'トウモロコシの輸出量', '大豆の輸出量'],
     rows: [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [19, 3, 53, 49] },
       { iso3: 'BRA', countryName: 'ブラジル', values: [3, 1, 55, 101] },
@@ -63,11 +63,51 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       '生産首位の中国は輸出リストにほぼ現れず（国内消費・純輸入）、米はインド・タイ・ベトナムが輸出上位、大豆・トウモロコシはブラジル・米国が突出し、小麦はロシア・豪・加・米が中心。',
   },
   {
+    id: 'mat_wheat_balance',
+    title: '主要国の小麦の生産量・輸出量・輸入量',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['小麦の生産量', '小麦の輸出量', '小麦の輸入量'],
+    rows: [
+      { iso3: 'RUS', countryName: 'ロシア', values: [9200, 5000, 20] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [4900, 1900, 350] },
+      { iso3: 'AUS', countryName: 'オーストラリア', values: [3600, 2800, 2] },
+      { iso3: 'FRA', countryName: 'フランス', values: [3500, 1700, 50] },
+      { iso3: 'CHN', countryName: '中国', values: [13700, 20, 1200] },
+      { iso3: 'IND', countryName: 'インド', values: [11000, 100, 10] },
+      { iso3: 'EGY', countryName: 'エジプト', values: [950, 5, 1150] },
+      { iso3: 'IDN', countryName: 'インドネシア', values: [0, 0, 1080] },
+      { iso3: 'JPN', countryName: '日本', values: [110, 0, 530] },
+      { iso3: 'TUR', countryName: 'トルコ', values: [2100, 600, 1050] },
+    ],
+    examPoint:
+      '中国・インドは生産量世界1・2位だが内需が大きく輸出はわずか（中国は大輸入国でもある）。ロシア・豪州・フランス・米国が主要輸出国、エジプト・インドネシア・日本が大輸入国。',
+  },
+  {
+    id: 'mat_soy_maize_trade',
+    title: '主要国の大豆・トウモロコシ輸出入量',
+    unit: '百万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['大豆の輸出量', '大豆の輸入量', 'トウモロコシの輸出量', 'トウモロコシの輸入量'],
+    rows: [
+      { iso3: 'BRA', countryName: 'ブラジル', values: [101, 0, 55, 2] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [49, 1, 53, 1] },
+      { iso3: 'ARG', countryName: 'アルゼンチン', values: [5, 7, 36, 0] },
+      { iso3: 'CHN', countryName: '中国', values: [0, 99, 0, 24] },
+      { iso3: 'JPN', countryName: '日本', values: [0, 3, 0, 15] },
+      { iso3: 'MEX', countryName: 'メキシコ', values: [0, 6, 0, 21] },
+      { iso3: 'EGY', countryName: 'エジプト', values: [0, 3, 0, 7] },
+      { iso3: 'VNM', countryName: 'ベトナム', values: [0, 2, 0, 11] },
+    ],
+    examPoint:
+      '大豆輸入は中国が世界輸入の約6割を占め突出（ブラジル・米国から輸入）。メキシコ・日本・ベトナム等はトウモロコシの飼料・食用輸入が大きい。',
+  },
+  {
     id: 'mat_tubers_prod',
     title: '主要国のイモ類生産量（気候帯・主食の違い）',
     unit: '百万t',
     sameUnitAcrossCols: true,
-    colLabels: ['じゃがいも', 'キャッサバ', 'さつまいも'],
+    colLabels: ['じゃがいもの生産量', 'キャッサバの生産量', 'さつまいもの生産量'],
     rows: [
       { iso3: 'CHN', countryName: '中国', values: [93, 5, 51] },
       { iso3: 'IND', countryName: 'インド', values: [60, 7, 1] },
@@ -82,11 +122,51 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       'じゃがいもは温帯・冷涼気候（中国・インド・東欧/ロシア・ドイツ）、キャッサバは熱帯低緯度（ナイジェリア・コンゴ民・タイ・ブラジル）、さつまいもは温暖湿潤地域中心。',
   },
   {
+    id: 'mat_sugar_cotton',
+    title: '主要国の糖料作物・綿花生産量',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['さとうきびの生産量', 'てんさいの生産量', '綿花の生産量'],
+    rows: [
+      { iso3: 'BRA', countryName: 'ブラジル', values: [72400, 0, 310] },
+      { iso3: 'IND', countryName: 'インド', values: [49000, 0, 560] },
+      { iso3: 'CHN', countryName: '中国', values: [10400, 900, 590] },
+      { iso3: 'THA', countryName: 'タイ', values: [9300, 0, 0] },
+      { iso3: 'RUS', countryName: 'ロシア', values: [0, 4900, 0] },
+      { iso3: 'FRA', countryName: 'フランス', values: [0, 3200, 0] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [0, 2900, 0] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [3000, 2900, 290] },
+      { iso3: 'UZB', countryName: 'ウズベキスタン', values: [0, 0, 75] },
+      { iso3: 'PAK', countryName: 'パキスタン', values: [8800, 4, 140] },
+    ],
+    examPoint:
+      'さとうきびは熱帯〜亜熱帯（ブラジル・インド・タイ）、てんさいは冷涼温帯（ロシア・欧州・米国北部）、中国と米国のみ広い緯度帯により両方を産する。',
+  },
+  {
+    id: 'mat_barley_oilseeds',
+    title: '温帯〜冷涼気候の麦類・油料種子生産量',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['大麦の生産量', 'ライ麦の生産量', '菜種（ナタネ）の生産量', 'ひまわり種子の生産量'],
+    rows: [
+      { iso3: 'RUS', countryName: 'ロシア', values: [2100, 200, 420, 1650] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [1100, 310, 420, 10] },
+      { iso3: 'POL', countryName: 'ポーランド', values: [300, 250, 360, 5] },
+      { iso3: 'CAN', countryName: 'カナダ', values: [890, 40, 1830, 8] },
+      { iso3: 'UKR', countryName: 'ウクライナ', values: [580, 30, 420, 1280] },
+      { iso3: 'FRA', countryName: 'フランス', values: [1220, 15, 430, 200] },
+      { iso3: 'AUS', countryName: 'オーストラリア', values: [1150, 3, 570, 5] },
+      { iso3: 'ARG', countryName: 'アルゼンチン', values: [470, 5, 5, 390] },
+    ],
+    examPoint:
+      'ライ麦はバルト海・北ドイツ〜ロシアの氷食痩せ土地帯（ドイツ・ポーランド・ロシア）、菜種はカナダ・欧州・豪州、ひまわり種子はチェルノーゼム帯のロシア・ウクライナ・アルゼンチンに多い。',
+  },
+  {
     id: 'mat_beverage_percap',
     title: '主要国の嗜好飲料・主食 1人当たり年間消費量',
     unit: 'kg/人・年',
     sameUnitAcrossCols: true,
-    colLabels: ['コーヒー', '茶', '米（精米換算）'],
+    colLabels: ['1人当たりコーヒー消費量', '1人当たり茶消費量', '1人当たり米消費量'],
     rows: [
       { iso3: 'FIN', countryName: 'フィンランド', values: [12.0, 0.2, 5] },
       { iso3: 'GBR', countryName: 'イギリス', values: [3.2, 1.9, 6] },
@@ -106,7 +186,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の果樹・植物油脂生産量',
     unit: '万t',
     sameUnitAcrossCols: true,
-    colLabels: ['パーム油', 'オリーブ生産', 'オレンジ', 'りんご'],
+    colLabels: ['パーム油の生産量', 'オリーブの生産量', 'オレンジの生産量', 'りんごの生産量'],
     rows: [
       { iso3: 'IDN', countryName: 'インドネシア', values: [4700, 0, 260, 0] },
       { iso3: 'MYS', countryName: 'マレーシア', values: [1900, 0, 2, 0] },
@@ -126,7 +206,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '熱帯・亜熱帯 商品作物生産量',
     unit: '万t',
     sameUnitAcrossCols: true,
-    colLabels: ['コーヒー豆', 'カカオ豆', '茶（製茶）', '天然ゴム'],
+    colLabels: ['コーヒー豆の生産量', 'カカオ豆の生産量', '茶の生産量', '天然ゴムの生産量'],
     rows: [
       { iso3: 'BRA', countryName: 'ブラジル', values: [317, 27, 0, 25] },
       { iso3: 'VNM', countryName: 'ベトナム', values: [195, 0, 19, 130] },
@@ -143,11 +223,94 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       'カカオは西アフリカ（コートジボワール・ガーナ）、天然ゴムは東南アジア（タイ・インドネシア・ベトナム＋コートジボワール急増）、茶は中国・インド・ケニア、コーヒーはブラジル・ベトナムが中心。',
   },
   {
+    id: 'mat_livestock_heads',
+    title: '主要国の主要家畜飼育頭数',
+    unit: '万頭',
+    sameUnitAcrossCols: true,
+    colLabels: ['牛の飼育頭数', '豚の飼育頭数', '羊の飼育頭数'],
+    rows: [
+      { iso3: 'IND', countryName: 'インド', values: [19300, 900, 7500] },
+      { iso3: 'BRA', countryName: 'ブラジル', values: [23400, 4400, 2100] },
+      { iso3: 'CHN', countryName: '中国', values: [6300, 45200, 19400] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [8900, 7400, 520] },
+      { iso3: 'AUS', countryName: 'オーストラリア', values: [2600, 250, 7800] },
+      { iso3: 'NZL', countryName: 'ニュージーランド', values: [1000, 25, 2500] },
+      { iso3: 'IDN', countryName: 'インドネシア', values: [1860, 780, 1750] },
+      { iso3: 'IRN', countryName: 'イラン', values: [550, 0, 4700] },
+      { iso3: 'NGA', countryName: 'ナイジェリア', values: [2100, 800, 4900] },
+      { iso3: 'ESP', countryName: 'スペイン', values: [640, 3400, 1450] },
+    ],
+    examPoint:
+      'イスラム圏（イラン等）では豚飼育がゼロ、ヒンドゥー文化圏のインドは牛飼育世界有数だが牛肉輸出は主に水牛肉。中国は豚飼育が世界の約半分を占め、豪州・NZ・中国・イランは羊が多い。',
+  },
+  {
+    id: 'mat_meat_export',
+    title: '主要国の食肉輸出量比較',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['牛肉・水牛肉の輸出量', '豚肉の輸出量', '鶏肉の輸出量'],
+    rows: [
+      { iso3: 'BRA', countryName: 'ブラジル', values: [290, 120, 490] },
+      { iso3: 'AUS', countryName: 'オーストラリア', values: [150, 5, 5] },
+      { iso3: 'IND', countryName: 'インド', values: [145, 0, 2] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [135, 300, 330] },
+      { iso3: 'ESP', countryName: 'スペイン', values: [25, 290, 25] },
+      { iso3: 'DNK', countryName: 'デンマーク', values: [15, 140, 15] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [40, 190, 60] },
+      { iso3: 'THA', countryName: 'タイ', values: [1, 3, 110] },
+      { iso3: 'POL', countryName: 'ポーランド', values: [40, 65, 170] },
+    ],
+    examPoint:
+      '鶏肉は宗教タブーがなくブラジル・米国・タイ・ポーランドから広く輸出される。豚肉輸出はEU（スペイン・ドイツ・デンマーク）と米国が大きい。牛肉・水牛肉輸出上位はブラジル・豪州・インド・米国。',
+  },
+  {
+    id: 'mat_fishery_aqua',
+    title: '主要国の海面天然漁獲量と水産養殖生産量',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['海面天然漁獲量', '水産養殖の生産量'],
+    rows: [
+      { iso3: 'CHN', countryName: '中国', values: [1180, 5280] },
+      { iso3: 'IDN', countryName: 'インドネシア', values: [690, 550] },
+      { iso3: 'IND', countryName: 'インド', values: [370, 1020] },
+      { iso3: 'VNM', countryName: 'ベトナム', values: [360, 510] },
+      { iso3: 'PER', countryName: 'ペルー', values: [540, 15] },
+      { iso3: 'RUS', countryName: 'ロシア', values: [510, 35] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [420, 48] },
+      { iso3: 'JPN', countryName: '日本', values: [290, 58] },
+      { iso3: 'NOR', countryName: 'ノルウェー', values: [250, 165] },
+      { iso3: 'CHL', countryName: 'チリ', values: [220, 150] },
+    ],
+    examPoint:
+      '中国・インド・インドネシア・ベトナムのアジア諸国は水産養殖の比率が極めて高い。一方、ペルー（アンチョビ湧昇漁業）やロシア・米国は天然漁獲が中心。ノルウェーとチリはサーモン養殖が突出。',
+  },
+  {
+    id: 'mat_forestry_paper',
+    title: '主要国の木材パルプ輸出量と紙・板紙生産量',
+    unit: '万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['木材パルプの輸出量', '紙・板紙の生産量'],
+    rows: [
+      { iso3: 'BRA', countryName: 'ブラジル', values: [1880, 1080] },
+      { iso3: 'CAN', countryName: 'カナダ', values: [940, 880] },
+      { iso3: 'SWE', countryName: 'スウェーデン', values: [460, 860] },
+      { iso3: 'FIN', countryName: 'フィンランド', values: [420, 740] },
+      { iso3: 'CHL', countryName: 'チリ', values: [460, 130] },
+      { iso3: 'CHN', countryName: '中国', values: [15, 12900] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [720, 6200] },
+      { iso3: 'JPN', countryName: '日本', values: [30, 2240] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [85, 1950] },
+      { iso3: 'IDN', countryName: 'インドネシア', values: [530, 1320] },
+    ],
+    examPoint:
+      'パルプ輸出は広大な森林を持つブラジル（ユーカリ早生樹）・カナダ・北欧・チリ・インドネシアが大きい。紙・板紙生産は大量需要市場を持つ中国・米国・日本・ドイツが上位。',
+  },
+  {
     id: 'mat_bauxite_al',
     title: 'アルミニウム原料と精錬生産の地域ギャップ',
     unit: '万t',
     sameUnitAcrossCols: true,
-    colLabels: ['ボーキサイト産出', 'アルミナ（中間）', 'アルミニウム新地金'],
+    colLabels: ['ボーキサイトの産出量', 'アルミナ（中間製品）の生産量', 'アルミニウム新地金の精錬量'],
     rows: [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [10000, 1900, 156] },
       { iso3: 'GIN', countryName: 'ギニア', values: [9700, 30, 0] },
@@ -167,7 +330,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の一次化石燃料 生産量（熱量換算）',
     unit: 'Mtoe（石油換算百万t）',
     sameUnitAcrossCols: true,
-    colLabels: ['原油・NGL生産', '石炭生産', '天然ガス生産'],
+    colLabels: ['原油・NGLの産出量', '石炭の産出量', '天然ガスの産出量'],
     rows: [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [860, 290, 910] },
       { iso3: 'RUS', countryName: 'ロシア', values: [540, 220, 530] },
@@ -188,7 +351,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の化石燃料輸出・輸入量（熱量換算）',
     unit: 'Mtoe（石油換算百万t）',
     sameUnitAcrossCols: true,
-    colLabels: ['原油輸出', '原油輸入', '石炭輸出', 'LNG輸出'],
+    colLabels: ['原油の輸出量', '原油の輸入量', '石炭の輸出量', 'LNGの輸出量'],
     rows: [
       { iso3: 'SAU', countryName: 'サウジアラビア', values: [340, 0, 0, 0] },
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [200, 320, 58, 115] },
@@ -208,7 +371,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '鉄鋼原料・粗鋼生産・貿易量',
     unit: '百万t',
     sameUnitAcrossCols: true,
-    colLabels: ['鉄鉱石産出', '粗鋼生産', '鉄鋼製品輸出', '鉄鋼製品輸入'],
+    colLabels: ['鉄鉱石の産出量', '粗鋼の生産量', '鉄鋼製品の輸出量', '鉄鋼製品の輸入量'],
     rows: [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [960, 5, 1, 2] },
       { iso3: 'BRA', countryName: 'ブラジル', values: [440, 32, 12, 5] },
@@ -228,7 +391,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '非鉄・先端鉱物資源の世界生産シェア',
     unit: '世界生産シェア (%)',
     sameUnitAcrossCols: true,
-    colLabels: ['銅鉱石', 'ニッケル鉱', 'リチウム', 'コバルト'],
+    colLabels: ['銅鉱石の産出シェア', 'ニッケル鉱の産出シェア', 'リチウムの産出シェア', 'コバルトの産出シェア'],
     rows: [
       { iso3: 'CHL', countryName: 'チリ', values: [24, 0, 24, 0] },
       { iso3: 'PER', countryName: 'ペルー', values: [12, 0, 0, 0] },
@@ -243,11 +406,74 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       '銅＝チリ・ペルー・コンゴ民、ニッケル＝インドネシア過半＋フィリピン、リチウム＝豪州＋リチウムトライアングル（チリ・アルゼンチン）＋中国、コバルト＝コンゴ民主共和国が世界7割超を独占。',
   },
   {
+    id: 'mat_gold_silver',
+    title: '主要国の金・銀産出量比較',
+    unit: 't/年',
+    sameUnitAcrossCols: true,
+    colLabels: ['金の産出量', '銀の産出量'],
+    rows: [
+      { iso3: 'CHN', countryName: '中国', values: [370, 3400] },
+      { iso3: 'AUS', countryName: 'オーストラリア', values: [310, 1200] },
+      { iso3: 'RUS', countryName: 'ロシア', values: [310, 1200] },
+      { iso3: 'CAN', countryName: 'カナダ', values: [200, 300] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [170, 1000] },
+      { iso3: 'MEX', countryName: 'メキシコ', values: [120, 6400] },
+      { iso3: 'PER', countryName: 'ペルー', values: [100, 3100] },
+      { iso3: 'GHA', countryName: 'ガーナ', values: [130, 10] },
+      { iso3: 'ZAF', countryName: '南アフリカ', values: [100, 35] },
+      { iso3: 'POL', countryName: 'ポーランド', values: [0, 1300] },
+    ],
+    examPoint:
+      '金産出の現在の上位は中国・豪州・ロシア・カナダ・ガーナ・南アフリカ（かつての首位南アは順位低下）。銀産出はメキシコ（1位）・中国・ペルー・ポーランド等が多い。',
+  },
+  {
+    id: 'mat_power_clean_ratios',
+    title: '特徴的な非化石電源の総発電量比（%）',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['水力の発電割合', '風力の発電割合', '原子力の発電割合'],
+    rows: [
+      { iso3: 'NOR', countryName: 'ノルウェー', values: [88, 10, 0] },
+      { iso3: 'PRY', countryName: 'パラグアイ', values: [99, 0, 0] },
+      { iso3: 'BRA', countryName: 'ブラジル', values: [60, 13, 2] },
+      { iso3: 'DNK', countryName: 'デンマーク', values: [0, 56, 0] },
+      { iso3: 'GBR', countryName: 'イギリス', values: [2, 29, 14] },
+      { iso3: 'URY', countryName: 'ウルグアイ', values: [39, 36, 0] },
+      { iso3: 'FRA', countryName: 'フランス', values: [11, 9, 65] },
+      { iso3: 'SWE', countryName: 'スウェーデン', values: [40, 21, 29] },
+      { iso3: 'SVK', countryName: 'スロバキア', values: [15, 0, 61] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [4, 27, 1] },
+    ],
+    examPoint:
+      'パラグアイ・ノルウェーは水力9割前後、デンマークは風力過半、フランス・スロバキアは原子力6割超、イギリス・ドイツ・ウルグアイは風力比率が高くドイツは脱原発完了済み。',
+  },
+  {
+    id: 'mat_cement_steel',
+    title: '主要国の基礎工業素材生産量',
+    unit: '百万t',
+    sameUnitAcrossCols: true,
+    colLabels: ['セメントの生産量', '粗鋼の生産量'],
+    rows: [
+      { iso3: 'CHN', countryName: '中国', values: [2100, 1019] },
+      { iso3: 'IND', countryName: 'インド', values: [410, 140] },
+      { iso3: 'VNM', countryName: 'ベトナム', values: [110, 20] },
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [91, 81] },
+      { iso3: 'TUR', countryName: 'トルコ', values: [79, 34] },
+      { iso3: 'IDN', countryName: 'インドネシア', values: [62, 16] },
+      { iso3: 'JPN', countryName: '日本', values: [49, 87] },
+      { iso3: 'KOR', countryName: '韓国', values: [48, 67] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [29, 35] },
+      { iso3: 'BRA', countryName: 'ブラジル', values: [63, 32] },
+    ],
+    examPoint:
+      'セメントは重量当たりの輸送費が高く石灰石原料も各地に得られるため、建設需要が大きい新興国（中国・インド・ベトナム・トルコ・インドネシア）の生産が大きい。日本・韓国・ドイツは粗鋼生産規模がセメントを大きく上回る。',
+  },
+  {
     id: 'mat_land_use',
     title: '主要国の国土利用割合',
     unit: '国土面積比 (%)',
     sameUnitAcrossCols: true,
-    colLabels: ['森林面積率', '耕地・永年作物地率', '永久牧草・放牧地率'],
+    colLabels: ['森林面積の割合', '耕地・永年作物地の割合', '永久牧草・放牧地の割合'],
     rows: [
       { iso3: 'JPN', countryName: '日本', values: [68, 12, 2] },
       { iso3: 'FIN', countryName: 'フィンランド', values: [74, 7, 0] },
@@ -268,7 +494,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '主要国の国際観光収入と支出（国際観光収支）',
     unit: '十億USD',
     sameUnitAcrossCols: true,
-    colLabels: ['国際観光収入（受入）', '国際観光支出（海外旅行）'],
+    colLabels: ['国際観光収入（受入額）', '国際観光支出（海外旅行支払額）'],
     rows: [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [176, 151] },
       { iso3: 'ESP', countryName: 'スペイン', values: [92, 25] },
@@ -285,11 +511,32 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       '南欧（スペイン・イタリア）やタイ・トルコ・近年の日本は観光収入が支出を大きく上回る大幅黒字。一方、寒冷・高所得で海外旅行熱の高いドイツ・英国・中国は大幅赤字（支出＞収入）。',
   },
   {
+    id: 'mat_remit_tourism',
+    title: '主要国の外貨獲得構造（観光収入 vs 出稼ぎ個人送金）',
+    unit: '十億USD',
+    sameUnitAcrossCols: true,
+    colLabels: ['国際観光収入（受入額）', '出稼ぎ個人送金の受取総額'],
+    rows: [
+      { iso3: 'USA', countryName: 'アメリカ合衆国', values: [176, 7] },
+      { iso3: 'ESP', countryName: 'スペイン', values: [92, 9] },
+      { iso3: 'THA', countryName: 'タイ', values: [48, 10] },
+      { iso3: 'JPN', countryName: '日本', values: [39, 5] },
+      { iso3: 'IND', countryName: 'インド', values: [32, 125] },
+      { iso3: 'MEX', countryName: 'メキシコ', values: [31, 66] },
+      { iso3: 'PHL', countryName: 'フィリピン', values: [9, 39] },
+      { iso3: 'EGY', countryName: 'エジプト', values: [14, 24] },
+      { iso3: 'PAK', countryName: 'パキスタン', values: [1, 27] },
+      { iso3: 'TUR', countryName: 'トルコ', values: [50, 1] },
+    ],
+    examPoint:
+      'インド（世界1位約1250億ドル）・メキシコ・フィリピン・パキスタン・エジプトは海外就労者からの個人送金受取が観光収入を大きく上回る。先進観光国（スペイン・米国・トルコ・タイ・日本）は観光収入が突出。',
+  },
+  {
     id: 'mat_gender_labor',
     title: '各国の女性労働力率・産業構成・議会参画指標',
     unit: '%',
     sameUnitAcrossCols: true,
-    colLabels: ['女性労働力率（15歳+）', '第3次産業就業率', '女性国会議員比率'],
+    colLabels: ['15歳以上女性労働力率', '第3次産業就業率', '女性国会議員比率'],
     rows: [
       { iso3: 'SWE', countryName: 'スウェーデン', values: [63, 81, 47] },
       { iso3: 'NOR', countryName: 'ノルウェー', values: [62, 79, 46] },
@@ -310,7 +557,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '国際人口移動・送金・都市人口率の対比',
     unit: '%',
     sameUnitAcrossCols: true,
-    colLabels: ['外国人・移民比率', '個人送金受取（対GDP比）', '都市人口率'],
+    colLabels: ['外国人・移民の居住割合', '出稼ぎ個人送金受取の対GDP比', '都市人口率'],
     rows: [
       { iso3: 'ARE', countryName: 'アラブ首長国連邦', values: [88, 0, 88] },
       { iso3: 'SGP', countryName: 'シンガポール', values: [43, 0, 100] },
@@ -330,7 +577,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: '輸送機械分野の世界生産シェア',
     unit: '世界生産シェア (%)',
     sameUnitAcrossCols: true,
-    colLabels: ['四輪自動車生産', '二輪車生産・販売', '新造船竣工量'],
+    colLabels: ['四輪自動車の世界生産シェア', '二輪車の世界生産・販売シェア', '新造船の世界竣工量シェア'],
     rows: [
       { iso3: 'CHN', countryName: '中国', values: [32, 26, 50] },
       { iso3: 'IND', countryName: 'インド', values: [6, 30, 0] },
@@ -348,6 +595,677 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
   },
 ];
 
+interface ManualComparisonChartConfig {
+  title: string;
+  unit: string;
+  sameUnitAcrossCols: boolean;
+  colLabels: string[];
+}
+
+const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> = {
+  cmp_power_mix: {
+    title: '主要国の発電電力量構成比',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: [
+      '石炭火力の発電割合',
+      '石油・ガス火力の割合',
+      '原子力の発電割合',
+      '水力の発電割合',
+      '太陽光・風力等の割合',
+    ],
+  },
+  cmp_sector_share: {
+    title: '主要国の産業別就業人口割合',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['第1次産業の就業率', '第2次産業の就業率', '第3次産業の就業率'],
+  },
+  cmp_export_mix: {
+    title: '主要国の輸出品目構成比',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: [
+      '機械・輸送機等の輸出割合',
+      'その他工業品の輸出割合',
+      '燃料・鉱産資源の輸出割合',
+      '農林水産・食料品の輸出割合',
+    ],
+  },
+  cmp_age_structure: {
+    title: '主要国の年齢3区分別人口割合',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['年少人口(0〜14歳)割合', '生産年齢人口(15〜64歳)割合', '老年人口(65歳以上)割合'],
+  },
+  cmp_meat_mix: {
+    title: '主要国の食肉消費構成割合',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['牛肉・水牛肉の消費割合', '豚肉の消費割合', '鶏肉等家禽類の消費割合', '羊・山羊肉の消費割合'],
+  },
+  cmp_water_use_sector: {
+    title: '主要国の用途別淡水取水割合',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['農業用水の取水割合', '工業用水の取水割合', '生活用水の取水割合'],
+  },
+  cmp_renewable_breakdown: {
+    title: '再生可能エネルギー発電の内訳構成比',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['水力の発電内訳割合', '風力の発電内訳割合', '太陽光の発電内訳割合', '地熱・バイオ等の割合'],
+  },
+  cmp_trade_balance_major: {
+    title: '主要国の商品輸出額・輸入額',
+    unit: '十億USD',
+    sameUnitAcrossCols: true,
+    colLabels: ['商品輸出額', '商品輸入額'],
+  },
+  cmp_grain_export_import: {
+    title: '主要国の小麦・トウモロコシ純輸出入量',
+    unit: '百万t（＋輸出超 / －輸入超）',
+    sameUnitAcrossCols: true,
+    colLabels: ['小麦の純輸出入量', 'トウモロコシの純輸出入量'],
+  },
+  cmp_religion_livestock: {
+    title: '主要国の家畜種別頭数構成比',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['牛・水牛の頭数割合', '豚の頭数割合', '羊の頭数割合', 'ヤギの頭数割合'],
+  },
+  cmp_primate_vs_polycentric: {
+    title: '第1位都市圏と第2位都市圏の人口規模比較',
+    unit: '万人',
+    sameUnitAcrossCols: true,
+    colLabels: ['第1位都市圏の人口', '第2位都市圏の人口'],
+  },
+  cmp_asian_nie_shift: {
+    title: 'アジア諸国の輸出品目構成比',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: [
+      '機械・電子・輸送機の輸出割合',
+      '衣類・繊維・軽工業品の輸出割合',
+      '鉱産・燃料・金属資源の輸出割合',
+      '農林水産・化学等の輸出割合',
+    ],
+  },
+  cmp_energy_special_nations: {
+    title: '特徴的な発電構成比の国際比較',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: [
+      '水力の発電割合',
+      '地熱・風力・太陽光等の割合',
+      '原子力の発電割合',
+      '石炭・石油火力の割合',
+      '天然ガス火力の割合',
+    ],
+  },
+};
+
+export interface ManualRankingLabelSpec {
+  label: string;
+  unit: string;
+}
+
+/**
+ * world_rankings_v1.json 用の100%手動定義ラベル辞書。
+ * ここに明示的に登録されていない指標・混合リスト・日本語曖昧表現はドリル生成から完全除外される。
+ */
+export const MANUAL_RANKING_METRIC_LABELS: Record<
+  string,
+  { primary?: ManualRankingLabelSpec; secondary?: ManualRankingLabelSpec }
+> = {
+  ag_wheat: {
+    primary: { label: '小麦の生産量', unit: '万t' },
+    secondary: { label: '小麦の輸出量', unit: '万t' },
+  },
+  ag_rice: {
+    primary: { label: '米（籾換算）の生産量', unit: '万t' },
+    secondary: { label: '米（精米換算）の輸出量', unit: '万t' },
+  },
+  ag_maize: {
+    primary: { label: 'トウモロコシの生産量', unit: '万t' },
+    secondary: { label: 'トウモロコシの輸出量', unit: '万t' },
+  },
+  ag_soybean: {
+    primary: { label: '大豆の生産量', unit: '万t' },
+    secondary: { label: '大豆の輸出量', unit: '万t' },
+  },
+  ag_potato_cassava: {
+    primary: { label: 'じゃがいもの生産量', unit: '万t' },
+    secondary: { label: 'キャッサバの生産量', unit: '万t' },
+  },
+  ag_coffee: {
+    primary: { label: 'コーヒー豆の生産量', unit: '万t' },
+  },
+  ag_cacao: {
+    primary: { label: 'カカオ豆の生産量', unit: '万t' },
+  },
+  ag_tea: {
+    primary: { label: '茶の生産量', unit: '万t' },
+    secondary: { label: '茶の輸出量', unit: '万t' },
+  },
+  ag_cotton: {
+    primary: { label: '綿花の生産量', unit: '万t' },
+    secondary: { label: '綿花の輸出量', unit: '万t' },
+  },
+  ag_rubber: {
+    primary: { label: '天然ゴムの生産量', unit: '万t' },
+  },
+  ag_palmoil: {
+    primary: { label: 'パーム油の生産量', unit: '万t' },
+  },
+  ag_olive_grape: {
+    primary: { label: 'オリーブの生産量', unit: '万t' },
+    secondary: { label: 'ワインの生産量', unit: '万hL' },
+  },
+  ag_livestock: {
+    primary: { label: '牛肉の生産量', unit: '万t' },
+    secondary: { label: '豚肉の生産量', unit: '万t' },
+  },
+  ag_fishery_forestry: {
+    primary: { label: '海面天然漁獲量', unit: '万t' },
+    secondary: { label: '水産養殖の生産量', unit: '万t' },
+  },
+  res_oil: {
+    primary: { label: '原油の産出量', unit: '万バレル/日' },
+  },
+  res_gas: {
+    primary: { label: '天然ガスの産出量', unit: '億m³' },
+    secondary: { label: 'LNGの世界輸出シェア', unit: '%' },
+  },
+  res_coal: {
+    primary: { label: '石炭の産出量', unit: '億t' },
+    secondary: { label: '石炭の世界輸出シェア', unit: '%' },
+  },
+  res_iron: {
+    primary: { label: '鉄鉱石（粗鉱）の産出量', unit: '万t' },
+  },
+  res_copper: {
+    primary: { label: '銅鉱（銅含有量）の産出量', unit: '万t' },
+  },
+  res_bauxite_al: {
+    primary: { label: 'ボーキサイトの産出量', unit: '万t' },
+    secondary: { label: 'アルミニウム新地金の精錬量', unit: '万t' },
+  },
+  res_precious: {
+    primary: { label: '金の産出量', unit: 't' },
+    secondary: { label: 'ダイヤモンドの世界産出シェア', unit: '%' },
+  },
+  res_energy_per_cap: {
+    primary: { label: '1人当たり一次エネルギー消費量', unit: 'GJ/人' },
+  },
+  res_renewable_growth: {
+    primary: { label: '風力・太陽光の発電量', unit: 'TWh' },
+  },
+  res_water: {
+    primary: { label: '再生可能水資源総量', unit: '千km³/年' },
+  },
+  ind_auto: {
+    primary: { label: '自動車の生産台数', unit: '万台' },
+  },
+  ind_steel: {
+    primary: { label: '粗鋼の生産量', unit: '万t' },
+  },
+  ind_textile: {
+    primary: { label: '衣料品の輸出額', unit: '億USD' },
+  },
+  ind_ship_plane: {
+    primary: { label: '新造船竣工量の世界シェア', unit: '%' },
+  },
+  ind_tourism: {
+    primary: { label: '外国人観光客の到着数', unit: '万人/年' },
+  },
+  ind_migration: {
+    primary: { label: '外国人・移民の居住割合', unit: '%' },
+    secondary: { label: '出稼ぎ個人送金受取の対GDP比', unit: '%' },
+  },
+  ind_refugee: {
+    primary: { label: '難民・避難民の受入人数', unit: '万人' },
+  },
+  ind_fertility: {
+    primary: { label: '合計特殊出生率', unit: '人/女性1人' },
+  },
+  ind_aging: {
+    primary: { label: '老年人口（65歳以上）割合', unit: '%' },
+  },
+  ag_sugar: {
+    primary: { label: 'さとうきびの生産量', unit: '万t' },
+    secondary: { label: 'てんさいの生産量', unit: '万t' },
+  },
+  ag_fruits: {
+    primary: { label: 'バナナの輸出量', unit: '万t' },
+    secondary: { label: 'ぶどうの生産量', unit: '万t' },
+  },
+  ag_sheep_beef: {
+    primary: { label: '羊の飼育頭数', unit: '万頭' },
+    secondary: { label: '牛肉・水牛肉の輸出量', unit: '万t' },
+  },
+  ag_timber_pulp: {
+    primary: { label: '丸太の総生産量', unit: '百万m³' },
+    secondary: { label: '木材パルプの輸出量', unit: '万t' },
+  },
+  res_uranium_nuclear: {
+    primary: { label: 'ウランの産出量', unit: 'tU' },
+    secondary: { label: '原子力の発電量', unit: '億kWh' },
+  },
+  res_lithium_cobalt: {
+    primary: { label: 'リチウムの生産量', unit: '千t' },
+    secondary: { label: 'コバルトの生産量', unit: '千t' },
+  },
+  res_renewable_ratio: {
+    primary: { label: '再生可能エネルギーの発電割合', unit: '%' },
+  },
+  res_oil_reserves: {
+    primary: { label: '原油の確認埋蔵量', unit: '億バレル' },
+  },
+  ind_robotics_machine: {
+    primary: { label: '産業用ロボットの年間新規導入台数', unit: '万台' },
+  },
+  ind_ports_ships: {
+    primary: { label: 'コンテナ港湾の取扱量', unit: '百万TEU' },
+    secondary: { label: '商船の登録船腹量', unit: '百万総トン' },
+  },
+  ind_ict_service: {
+    primary: { label: 'ICT・デジタルサービスの輸出額', unit: '十億USD' },
+  },
+  soc_urban_rate: {
+    primary: { label: '都市人口率', unit: '%' },
+  },
+  soc_gdp_per_capita: {
+    primary: { label: '1人当たり名目GDP', unit: '千USD/人' },
+  },
+  soc_meat_fish: {
+    primary: { label: '1人当たり年間食肉供給量', unit: 'kg/人・年' },
+    secondary: { label: '1人当たり年間魚介類供給量', unit: 'kg/人・年' },
+  },
+  soc_gender_literacy: {
+    primary: { label: '15歳以上女性労働力率', unit: '%' },
+  },
+  soc_internet_mobile: {
+    primary: { label: 'インターネット人口普及率', unit: '%' },
+  },
+  ag_barley_rye: {
+    primary: { label: '大麦の生産量', unit: '万t' },
+    secondary: { label: 'ライ麦の生産量', unit: '万t' },
+  },
+  ag_rapeseed_sunflower: {
+    primary: { label: '菜種（ナタネ）の生産量', unit: '万t' },
+    secondary: { label: 'ひまわり種子の生産量', unit: '万t' },
+  },
+  ag_potato_sweet: {
+    secondary: { label: 'さつまいもの生産量', unit: '万t' },
+  },
+  ag_citrus_apple: {
+    primary: { label: 'オレンジの生産量', unit: '万t' },
+    secondary: { label: 'りんごの生産量', unit: '万t' },
+  },
+  ag_milk_dairy: {
+    primary: { label: '生乳（牛・水牛）の生産量', unit: '万t' },
+    secondary: { label: '乳製品（チーズ・全粉乳等）の輸出量', unit: '万t' },
+  },
+  ag_poultry_egg: {
+    primary: { label: '鶏肉の輸出量', unit: '万t' },
+    secondary: { label: '鶏肉の生産量', unit: '万t' },
+  },
+  ag_food_self_suff: {
+    primary: { label: 'カロリーベース食料自給率', unit: '%' },
+  },
+  res_nickel_tin: {
+    primary: { label: 'ニッケル鉱の産出量', unit: '万t' },
+    secondary: { label: 'すず鉱の産出量', unit: '千t' },
+  },
+  res_zinc_lead: {
+    primary: { label: '亜鉛鉱の産出量', unit: '万t' },
+  },
+  res_platinum_chrome: {
+    primary: { label: 'プラチナの世界産出シェア', unit: '%' },
+    secondary: { label: 'クロム鉱の世界産出シェア', unit: '%' },
+  },
+  res_silver_phosphate: {
+    primary: { label: '銀の産出量', unit: 't' },
+    secondary: { label: 'リン鉱石の産出量', unit: '万t' },
+  },
+  res_rare_earth: {
+    primary: { label: '希土類（レアアース）の産出量', unit: '万t' },
+  },
+  res_energy_self_suff: {
+    primary: { label: '一次エネルギー自給率', unit: '%' },
+  },
+  res_hydro_geothermal: {
+    primary: { label: '水力の発電量', unit: '億kWh' },
+    secondary: { label: '地熱発電の設備容量', unit: '万kW' },
+  },
+  res_nuclear_share: {
+    primary: { label: '原子力の発電割合', unit: '%' },
+  },
+  ind_cement_chem: {
+    primary: { label: 'セメントの生産量', unit: '百万t' },
+  },
+  ind_paper_pulp: {
+    primary: { label: '紙・板紙の生産量', unit: '万t' },
+  },
+  ind_ev_battery: {
+    primary: { label: 'EVの世界生産シェア', unit: '%' },
+    secondary: { label: '国内新車販売におけるEV比率', unit: '%' },
+  },
+  ind_solar_wind_mfg: {
+    primary: { label: '太陽光パネルの世界製造能力シェア', unit: '%' },
+  },
+  ind_pharma_watch: {
+    primary: { label: '医薬品の輸出額', unit: '十億USD' },
+  },
+  ind_gdp_nominal_ppp: {
+    primary: { label: '名目GDP総額', unit: '兆USD' },
+    secondary: { label: '購買力平価（PPP）GDP総額', unit: '兆国際$' },
+  },
+  ind_aviation_rail: {
+    primary: { label: '高速鉄道の営業延長距離', unit: '千km' },
+  },
+  soc_higher_edu: {
+    primary: { label: '研究開発費（R&D）の対GDP比', unit: '%' },
+  },
+  soc_forest_ratio: {
+    primary: { label: '国土面積に占める森林面積率', unit: '%' },
+  },
+  soc_forest_change: {
+    primary: { label: '年間森林面積の増加量', unit: '万ha/年' },
+    secondary: { label: '年間森林面積の減少量', unit: '万ha/年' },
+  },
+  soc_oda_donors: {
+    primary: { label: 'ODA（政府開発援助）の拠出総額', unit: '十億USD' },
+    secondary: { label: 'ODA拠出額の対GNI比', unit: '%' },
+  },
+  soc_tourism_revenue: {
+    primary: { label: '国際観光収入（受入額）', unit: '十億USD' },
+    secondary: { label: '観光関連産業の対GDP寄与率', unit: '%' },
+  },
+  soc_waste_water_stress: {
+    primary: { label: '年間淡水取水率（水ストレス）', unit: '%' },
+  },
+  ag_wheat_exports: {
+    secondary: { label: '小麦の輸入量', unit: '万t' },
+  },
+  ag_maize_exports: {
+    secondary: { label: 'トウモロコシの輸入量', unit: '万t' },
+  },
+  ag_rice_exports: {
+    secondary: { label: '米（精米換算）の輸入量', unit: '万t' },
+  },
+  ag_soybean_trade: {
+    primary: { label: '大豆の輸入量', unit: '万t' },
+  },
+  ag_banana_prod_vs_exp: {
+    primary: { label: 'バナナの生産量', unit: '万t' },
+  },
+  ag_tomato: {
+    primary: { label: 'トマトの生産量', unit: '万t' },
+    secondary: { label: '生鮮トマトの輸出量', unit: '万t' },
+  },
+  ag_peanut: {
+    primary: { label: '落花生の生産量', unit: '万t' },
+  },
+  ag_cattle_head: {
+    primary: { label: '牛の飼育頭数', unit: '万頭' },
+  },
+  ag_pig_head: {
+    primary: { label: '豚の飼育頭数', unit: '万頭' },
+  },
+  ag_sheep_goat_buffalo: {
+    secondary: { label: '水牛の飼育頭数', unit: '万頭' },
+  },
+  ag_wool_prod: {
+    primary: { label: '羊毛（原毛）の生産量', unit: '万t' },
+  },
+  ag_salmon_shrimp_aquaculture: {
+    primary: { label: 'サケ・マス類の養殖生産量', unit: '万t' },
+    secondary: { label: 'エビ類の養殖輸出量', unit: '万t' },
+  },
+  res_oil_exports_imports: {
+    primary: { label: '原油の輸出量', unit: '百万t/年' },
+    secondary: { label: '原油の輸入量', unit: '百万t/年' },
+  },
+  res_coal_exports_imports: {
+    primary: { label: '石炭の輸出量', unit: '百万t/年' },
+    secondary: { label: '石炭の輸入量', unit: '百万t/年' },
+  },
+  res_lng_pipeline_exports: {
+    primary: { label: 'LNG（液化天然ガス）の輸出量', unit: '百万t' },
+  },
+  res_diamond_prod: {
+    primary: { label: 'ダイヤモンドの産出量', unit: '万カラット/年' },
+  },
+  res_manganese_chrome: {
+    primary: { label: 'マンガン鉱の産出量', unit: '万t' },
+    secondary: { label: 'クロム鉱の産出量', unit: '万t' },
+  },
+  res_tungsten_tin: {
+    secondary: { label: 'タングステン鉱の産出量', unit: '万t' },
+  },
+  res_wind_power_share: {
+    primary: { label: '風力の発電割合', unit: '%' },
+  },
+  res_hydro_power_share: {
+    primary: { label: '水力の発電割合', unit: '%' },
+  },
+  ind_synthetic_fiber: {
+    primary: { label: '合成繊維の生産量', unit: '万t' },
+  },
+  ind_motorcycle_prod: {
+    primary: { label: '二輪車の生産・販売台数', unit: '万台/年' },
+  },
+  ind_wine_prod: {
+    primary: { label: 'ワインの生産量', unit: '百万L' },
+  },
+  ind_beer_prod: {
+    primary: { label: 'ビールの総生産量', unit: '万kL' },
+    secondary: { label: '1人当たり年間ビール消費量', unit: 'L/人・年' },
+  },
+  ind_hub_airports_passenger: {
+    primary: { label: '国際線の旅客数', unit: '万人/年' },
+  },
+  ind_air_cargo_hub: {
+    primary: { label: '国際航空貨物の取扱量', unit: '万t/年' },
+  },
+  ind_steel_exports_ratio: {
+    primary: { label: '鉄鋼製品の輸出量', unit: '万t/年' },
+    secondary: { label: '鉄鋼製品の輸入量', unit: '万t/年' },
+  },
+  soc_primate_city_ratio: {
+    primary: { label: '第1位都市圏の人口集中率', unit: '%' },
+  },
+  soc_remittances: {
+    primary: { label: '出稼ぎ個人送金の受取総額', unit: '億USD' },
+  },
+  soc_female_parliament: {
+    primary: { label: '女性国会議員比率', unit: '%' },
+  },
+  soc_physicians_per1k: {
+    primary: { label: '人口1,000人当たり医師数', unit: '人/1,000人' },
+  },
+  soc_co2_total_vs_percap: {
+    primary: { label: 'CO₂の総排出量', unit: '億t' },
+    secondary: { label: '1人当たり年間CO₂排出量', unit: 't/人・年' },
+  },
+  soc_hdi_extreme: {
+    primary: { label: '人間開発指数（HDI）', unit: '指数' },
+  },
+  soc_world_heritage: {
+    primary: { label: '世界遺産の登録件数', unit: '件' },
+  },
+};
+
+export interface ManualSliderQuizSpec {
+  id: string;
+  mode: 'country' | 'metric';
+  promptSubject: string;
+  answerLabel: string;
+  choicesPool: string[];
+}
+
+/**
+ * time_series_sliders_v1.json 用 100%手動定義（問題側ネタバレゼロ）
+ */
+export const MANUAL_SLIDER_QUIZ_SPECS: Record<string, ManualSliderQuizSpec> = {
+  // 国を当てる（同じ主題グループから紛らわしい4カ国を選ぶ）
+  ts_kor_export_mix: {
+    id: 'ts_kor_export_mix',
+    mode: 'country',
+    promptSubject: '輸出品目構成比の推移（%）',
+    answerLabel: '韓国',
+    choicesPool: ['韓国', 'マレーシア', '中国', 'ブラジル', '日本', 'ベトナム'],
+  },
+  ts_mys_export_shift: {
+    id: 'ts_mys_export_shift',
+    mode: 'country',
+    promptSubject: '輸出品目構成比の推移（%）',
+    answerLabel: 'マレーシア',
+    choicesPool: ['マレーシア', '韓国', '中国', 'ブラジル', 'タイ', 'インドネシア'],
+  },
+  ts_chn_export_upgrade: {
+    id: 'ts_chn_export_upgrade',
+    mode: 'country',
+    promptSubject: '輸出品目構成比の推移（%）',
+    answerLabel: '中国',
+    choicesPool: ['中国', '韓国', 'マレーシア', 'ブラジル', 'タイ', 'インド'],
+  },
+  ts_bra_export_shift: {
+    id: 'ts_bra_export_shift',
+    mode: 'country',
+    promptSubject: '輸出品目構成比の推移（%）',
+    answerLabel: 'ブラジル',
+    choicesPool: ['ブラジル', 'オーストラリア', 'マレーシア', '韓国', '中国', 'アルゼンチン'],
+  },
+  ts_jpn_power_mix: {
+    id: 'ts_jpn_power_mix',
+    mode: 'country',
+    promptSubject: '発電電力量構成比の推移（%）',
+    answerLabel: '日本',
+    choicesPool: ['日本', 'ドイツ', 'フランス', 'イギリス', 'アメリカ合衆国', '韓国'],
+  },
+  ts_deu_power_mix: {
+    id: 'ts_deu_power_mix',
+    mode: 'country',
+    promptSubject: '発電電力量構成比の推移（%）',
+    answerLabel: 'ドイツ',
+    choicesPool: ['ドイツ', 'フランス', 'イギリス', '日本', 'アメリカ合衆国', 'ポーランド'],
+  },
+  ts_fra_power_mix: {
+    id: 'ts_fra_power_mix',
+    mode: 'country',
+    promptSubject: '発電電力量構成比の推移（%）',
+    answerLabel: 'フランス',
+    choicesPool: ['フランス', 'ドイツ', 'イギリス', '日本', 'アメリカ合衆国', 'ノルウェー'],
+  },
+  ts_gbr_power_mix: {
+    id: 'ts_gbr_power_mix',
+    mode: 'country',
+    promptSubject: '発電電力量構成比の推移（%）',
+    answerLabel: 'イギリス',
+    choicesPool: ['イギリス', 'ドイツ', 'フランス', '日本', 'アメリカ合衆国', 'デンマーク'],
+  },
+  ts_usa_power_mix: {
+    id: 'ts_usa_power_mix',
+    mode: 'country',
+    promptSubject: '発電電力量構成比の推移（%）',
+    answerLabel: 'アメリカ合衆国',
+    choicesPool: ['アメリカ合衆国', 'ドイツ', 'フランス', 'イギリス', '日本', 'ロシア'],
+  },
+  // 指標・品目を当てる（推移する上位国の顔ぶれだけで推論させる）
+  ts_coffee_producers: {
+    id: 'ts_coffee_producers',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: 'コーヒー豆の生産量',
+    choicesPool: ['コーヒー豆の生産量', 'カカオ豆の生産量', '天然ゴムの生産量', '大豆の生産量', '茶の生産量'],
+  },
+  ts_soybean_producers: {
+    id: 'ts_soybean_producers',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '大豆の生産量',
+    choicesPool: ['大豆の生産量', '小麦の生産量', 'コーヒー豆の生産量', 'トウモロコシの生産量', 'さとうきびの生産量'],
+  },
+  ts_fishery_shift: {
+    id: 'ts_fishery_shift',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '漁業・水産養殖の生産量',
+    choicesPool: ['漁業・水産養殖の生産量', '米（籾換算）の生産量', '丸太の総生産量', '粗鋼の生産量', '豚肉の生産量'],
+  },
+  ts_oil_production_shift: {
+    id: 'ts_oil_production_shift',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '原油の産出量',
+    choicesPool: ['原油の産出量', '石炭の産出量', '天然ガスの産出量', '鉄鉱石の産出量', '銅鉱の産出量'],
+  },
+  ts_crude_steel_shift: {
+    id: 'ts_crude_steel_shift',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '粗鋼の生産量',
+    choicesPool: ['粗鋼の生産量', 'アルミニウム新地金の精錬量', '自動車の生産台数', '石炭の産出量', 'セメントの生産量'],
+  },
+  ts_auto_production: {
+    id: 'ts_auto_production',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '自動車の生産台数',
+    choicesPool: ['自動車の生産台数', '粗鋼の生産量', '新造船の竣工量', '二輪車の生産台数', '衣料品の輸出額'],
+  },
+  ts_world_top_population: {
+    id: 'ts_world_top_population',
+    mode: 'metric',
+    promptSubject: '上位国の数値推移',
+    answerLabel: '総人口',
+    choicesPool: ['総人口', '都市人口', 'CO₂の総排出量', '名目GDP総額', '再生可能水資源総量'],
+  },
+  ts_tfr_transition: {
+    id: 'ts_tfr_transition',
+    mode: 'metric',
+    promptSubject: '主要国の数値推移',
+    answerLabel: '合計特殊出生率',
+    choicesPool: ['合計特殊出生率', '1人当たり名目GDP（千USD）', '老年人口割合（%）', '乳児死亡率（‰）', '女性労働力率（%）'],
+  },
+  ts_urban_rate_regions: {
+    id: 'ts_urban_rate_regions',
+    mode: 'metric',
+    promptSubject: '世界地域別の数値推移',
+    answerLabel: '都市人口率',
+    choicesPool: ['都市人口率', '第3次産業就業率', '15歳以上識字率', 'インターネット普及率', '合計特殊出生率（×10）'],
+  },
+  ts_apparel_flying_geese: {
+    id: 'ts_apparel_flying_geese',
+    mode: 'metric',
+    promptSubject: '主要国・地域別の世界シェア推移',
+    answerLabel: '衣料品・繊維製品の世界輸出シェア',
+    choicesPool: [
+      '衣料品・繊維製品の世界輸出シェア',
+      '自動車の世界生産シェア',
+      '半導体の世界製造シェア',
+      '粗鋼の世界生産シェア',
+      '原油の世界輸出シェア',
+    ],
+  },
+  ts_semiconductor_shift: {
+    id: 'ts_semiconductor_shift',
+    mode: 'metric',
+    promptSubject: '国・地域別の世界シェア推移',
+    answerLabel: '半導体の世界製造能力シェア',
+    choicesPool: [
+      '半導体の世界製造能力シェア',
+      '衣料品の世界輸出シェア',
+      '粗鋼の世界生産シェア',
+      '太陽光発電量の世界シェア',
+      'LNGの世界輸出シェア',
+    ],
+  },
+};
+
 function cleanName(name: string): string {
   return name.split('（')[0].trim();
 }
@@ -364,23 +1282,17 @@ export function extractComparisonMatrices(
 
   const out: StatMatrixSpec[] = [];
   for (const ch of worldRankings.comparisonCharts) {
-    if (ch.kind !== 'stacked_bar' && ch.kind !== 'grouped_bar') continue;
+    const manual = MANUAL_COMPARISON_CHART_MAP[ch.id];
+    if (!manual) continue;
     const cats = ch.categories;
-    if (!cats || cats.length < 4 || ch.series.length < 1) continue;
-    if (cats.some((c) => /^\d{4}/.test(c) || c.includes('(粗鋼)'))) continue;
-
-    // 1系列のみの grouped_bar (食料自給率・エネルギー自給率) も国→単数値比較には使えるが、列比較/二重ブラインドには2列以上が必要
-    const sameUnitAcrossCols =
-      ch.series.length >= 2 &&
-      !ch.title.includes('歴史的変化') &&
-      !ch.unit.includes(' / ');
+    if (!cats || cats.length < 4 || ch.series.length !== manual.colLabels.length) continue;
 
     out.push({
       id: `cmp_${ch.id}`,
-      title: ch.title.split('（')[0].trim(),
-      unit: ch.unit,
-      sameUnitAcrossCols,
-      colLabels: ch.series.map((s) => s.name.split('（')[0].trim()),
+      title: manual.title,
+      unit: manual.unit,
+      sameUnitAcrossCols: manual.sameUnitAcrossCols,
+      colLabels: manual.colLabels,
       rows: cats.map((cat, ri) => {
         const cn = cleanName(cat);
         return {
@@ -389,7 +1301,7 @@ export function extractComparisonMatrices(
           values: ch.series.map((s) => s.values[ri] ?? 0),
         };
       }),
-      examPoint: ch.examPoint ?? ch.note ?? `${ch.title} の比較から国別特徴を読み取る。`,
+      examPoint: ch.examPoint ?? ch.note ?? `${manual.title}の比較から国別特徴を読み取る。`,
     });
   }
   return out;
@@ -434,7 +1346,7 @@ export function buildDynamicPercentCountryMatrix(
   if (pool.length < 6) return null;
 
   let chosenPool = pool;
-  let title = '非上位・中堅国を含む人口・労働・送金指標（%）';
+  let title = '中堅・途上国を含む社会・産業構造指標（%）';
 
   if (scope === 'regional') {
     const byRegion = new Map<string, CountryData[]>();
@@ -462,8 +1374,8 @@ export function buildDynamicPercentCountryMatrix(
       '第1次産業就業率',
       '第3次産業就業率',
       '60歳以上人口割合',
-      '女性労働力率',
-      '個人送金対GDP比',
+      '15歳以上女性労働力率',
+      '出稼ぎ個人送金受取の対GDP比',
     ],
     rows: chosenPool.map((c) => {
       const st = c.stats!;

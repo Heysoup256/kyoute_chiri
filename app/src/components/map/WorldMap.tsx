@@ -714,45 +714,53 @@ export function WorldMap({
     if (flyRafRef.current !== null) {
       window.cancelAnimationFrame(flyRafRef.current);
     }
-    flyRafRef.current = window.requestAnimationFrame(() => {
-      flyRafRef.current = null;
-      const m = mapRef.current;
-      const c = mapContainerRef.current;
-      if (!m || !c || !isStyleReadyRef.current) return;
+    const scheduleFly = (attempt: number) => {
+      flyRafRef.current = window.requestAnimationFrame(() => {
+        flyRafRef.current = null;
+        const m = mapRef.current;
+        const c = mapContainerRef.current;
+        if (!m || !c || !isStyleReadyRef.current) return;
+        // 練習・他ビューの hidden 解除直後はレイアウト幅が 0 のことがあるため数フレーム待機
+        if ((c.clientWidth === 0 || c.clientHeight === 0) && attempt < 5) {
+          scheduleFly(attempt + 1);
+          return;
+        }
 
-      m.resize();
-      const curCenter = m.getCenter();
-      const bestLng = resolveShortestWorldLng(curCenter.lng, target.lng);
-      const distDeg = Math.hypot(bestLng - curCenter.lng, target.lat - curCenter.lat);
-      const duration = Math.round(Math.min(1800, Math.max(950, 850 + distDeg * 7)));
+        m.resize();
+        const curCenter = m.getCenter();
+        const bestLng = resolveShortestWorldLng(curCenter.lng, target.lng);
+        const distDeg = Math.hypot(bestLng - curCenter.lng, target.lat - curCenter.lat);
+        const duration = Math.round(Math.min(1800, Math.max(950, 850 + distDeg * 7)));
 
-      const isMobile = c.clientWidth < 768;
-      const padding = isMobile
-        ? {
-            top: 48,
-            left: 24,
-            right: 24,
-            bottom: Math.min(
-              Math.round(c.clientHeight * 0.62),
-              Math.round((window.innerHeight * mobileBottomOffsetVhRef.current) / 100) + 12,
-            ),
-          }
-        : {
-            top: 48,
-            bottom: 40,
-            left: controlsOpenRef.current ? 310 : 40,
-            right: 40,
-          };
+        const isMobile = c.clientWidth < 768;
+        const padding = isMobile
+          ? {
+              top: 48,
+              left: 24,
+              right: 24,
+              bottom: Math.min(
+                Math.round(c.clientHeight * 0.62),
+                Math.round((window.innerHeight * mobileBottomOffsetVhRef.current) / 100) + 12,
+              ),
+            }
+          : {
+              top: 48,
+              bottom: 40,
+              left: controlsOpenRef.current ? 310 : 40,
+              right: 40,
+            };
 
-      m.flyTo({
-        center: [bestLng, target.lat],
-        zoom: target.zoom,
-        padding,
-        duration,
-        curve: 1.45,
-        essential: true,
+        m.flyTo({
+          center: [bestLng, target.lat],
+          zoom: target.zoom,
+          padding,
+          duration,
+          curve: 1.45,
+          essential: true,
+        });
       });
-    });
+    };
+    scheduleFly(0);
   };
   const executeFlyToCountryRef = useRef(executeFlyToCountry);
   useEffect(() => {

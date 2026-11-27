@@ -1,5 +1,6 @@
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import {
+  ArrowLeft,
   BarChart3,
   BookOpen,
   ClipboardCheck,
@@ -10,6 +11,7 @@ import {
   MapPin,
   PenTool,
   Search,
+  X,
 } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { z } from 'zod';
@@ -135,6 +137,7 @@ export function App() {
   } | null>(null);
   const [examModalMode, setExamModalMode] = useState<'closed' | 'country' | 'archive'>('closed');
   const [examModalInitialId, setExamModalInitialId] = useState<string | undefined>(undefined);
+  const [returnView, setReturnView] = useState<'practice' | 'blank' | null>(null);
   const [flyToCountryRequest, setFlyToCountryRequest] = useState<{
     iso3: string;
     nonce: number;
@@ -338,12 +341,38 @@ export function App() {
     }));
   }, []);
 
-  const handleSelectCountry = useCallback((iso3: string, nameEn?: string) => {
+  const triggerFlyToCountry = useCallback((iso3: string) => {
+    setFlyToCountryRequest((prev) => ({
+      iso3,
+      nonce: Math.max(Date.now(), (prev?.nonce ?? 0) + 1),
+    }));
+  }, []);
+
+  // 地図上の国ポリゴン直接クリック時（カメラを強制移動せず選択だけ更新）
+  const handleSelectCountryFromMap = useCallback((iso3: string, nameEn?: string) => {
     setSelectedIso3(iso3);
     setFallbackNameEn(nameEn);
     setFocusedPlace(null);
     setActiveView('map');
   }, []);
+
+  // 演習・統計・系統・検索・関連国リンクから国へジャンプ（カメラも自動追従し、演習/白地図なら戻り導線を残す）
+  const handleJumpToCountry = useCallback(
+    (iso3: string, nameEn?: string) => {
+      if (activeView === 'practice' || activeView === 'blank') {
+        setReturnView(activeView);
+      }
+      setSelectedIso3(iso3);
+      setFallbackNameEn(nameEn);
+      setFocusedPlace(null);
+      setActiveView('map');
+      if (typeof window !== 'undefined' && window.innerWidth < 768) {
+        setMobileSheetVh((prev) => (prev > 48 ? 44 : prev));
+      }
+      triggerFlyToCountry(iso3);
+    },
+    [activeView, triggerFlyToCountry],
+  );
 
   const handleRandomCountry = useCallback(() => {
     if (!countriesData) return;
@@ -578,7 +607,12 @@ export function App() {
                 <button
                   key={tab.id}
                   type="button"
-                  onClick={() => setActiveView(tab.id)}
+                  onClick={() => {
+                    if (tab.id !== 'map') {
+                      setReturnView(null);
+                    }
+                    setActiveView(tab.id);
+                  }}
                   className={`inline-flex items-center gap-1 rounded-lg px-1.5 py-1 text-[10px] font-extrabold transition sm:px-2 md:px-2.5 md:py-1.5 md:text-xs ${
                     active
                       ? 'bg-white text-indigo-700 shadow-xs'
@@ -684,23 +718,26 @@ export function App() {
           }}
           onChangeFilters={handleChangeFilters}
           onSelectCountry={(iso) => {
-            handleSelectCountry(iso);
+            handleJumpToCountry(iso);
             if (typeof window !== 'undefined' && window.innerWidth < 768) {
               setSearchOpen(false);
             }
           }}
           onSelectPlace={handleSelectPlaceFromSearch}
           onSelectRanking={(itemId) => {
+            setReturnView(null);
             setFocusedRankingId(itemId);
             setActiveView('rankings');
             setSearchOpen(false);
           }}
           onSelectSystematic={(topicId) => {
+            setReturnView(null);
             setFocusedSystematicId(topicId);
             setActiveView('systematic');
             setSearchOpen(false);
           }}
           onSelectJapanRegion={(regionId) => {
+            setReturnView(null);
             setFocusedJapanRegionId(regionId);
             setActiveView('japan');
             setSearchOpen(false);
@@ -717,6 +754,30 @@ export function App() {
           }
         >
           <div className="relative h-full min-w-0 flex-1">
+            {returnView && (
+              <div className="pointer-events-auto absolute left-1/2 top-3 z-20 flex -translate-x-1/2 items-center gap-1 rounded-full border border-indigo-300 bg-white/95 p-1 shadow-lg backdrop-blur-xs">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const target = returnView;
+                    setReturnView(null);
+                    setActiveView(target);
+                  }}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-indigo-600 px-3 py-1 text-xs font-extrabold text-white transition hover:bg-indigo-700"
+                >
+                  <ArrowLeft className="h-3.5 w-3.5" />
+                  {returnView === 'practice' ? '演習に戻る' : '白地図クイズに戻る'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setReturnView(null)}
+                  className="rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-700"
+                  aria-label="戻るボタンを閉じる"
+                >
+                  <X className="h-3.5 w-3.5" />
+                </button>
+              </div>
+            )}
             <WorldMap
               countriesGeoJson={countriesGeoJson}
               layersGeoJson={layersGeoJson}
@@ -746,7 +807,7 @@ export function App() {
                 setFilters(EMPTY_FILTERS);
                 setRankingHighlight(null);
               }}
-              onSelectCountry={handleSelectCountry}
+              onSelectCountry={handleSelectCountryFromMap}
             />
           </div>
 
@@ -765,7 +826,14 @@ export function App() {
               onFocusPlace={handleFocusPlace}
               onClearSubnationalOverlay={handleClearSubnationalPlace}
               onToggleMark={toggleMark}
-              onSelectCountry={(targetIso) => handleSelectCountry(targetIso)}
+              onSelectCountry={(targetIso) => handleJumpToCountry(targetIso)}
+              onFlyToCountry={(targetIso) => {
+                setFocusedPlace(null);
+                if (typeof window !== 'undefined' && window.innerWidth < 768) {
+                  setMobileSheetVh((prev) => (prev > 50 ? 45 : prev));
+                }
+                triggerFlyToCountry(targetIso);
+              }}
               onClose={() => {
                 setSelectedIso3(null);
                 setFocusedPlace(null);
@@ -775,40 +843,38 @@ export function App() {
           )}
         </div>
 
-        {/* 2. 白地図クイズ＆ケッペン塗り絵ビュー */}
-        {activeView === 'blank' && (
-          <div className="h-full min-w-0 flex-1">
-            <BlankMapView
-              countriesData={countriesData}
-              countriesGeoJson={countriesGeoJson}
-              layersGeoJson={layersGeoJson}
-              capitalsGeoJson={capitalsGeoJson}
-              volcanoesGeoJson={volcanoesGeoJson}
-              thematicGrid={thematicGrid}
-              onOpenCountryInMap={(targetIso) => {
-                handleSelectCountry(targetIso);
-                setFlyToCountryRequest((prev) => ({
-                  iso3: targetIso,
-                  nonce: Math.max(Date.now(), (prev?.nonce ?? 0) + 1),
-                }));
-              }}
-            />
-          </div>
-        )}
+        {/* 2. 白地図クイズ＆ケッペン塗り絵ビュー（地図へ確認に飛んでもクイズ状態が消えないよう常時マウント） */}
+        <div
+          className={
+            activeView === 'blank' ? 'h-full min-w-0 flex-1' : 'hidden'
+          }
+        >
+          <BlankMapView
+            countriesData={countriesData}
+            countriesGeoJson={countriesGeoJson}
+            layersGeoJson={layersGeoJson}
+            capitalsGeoJson={capitalsGeoJson}
+            volcanoesGeoJson={volcanoesGeoJson}
+            thematicGrid={thematicGrid}
+            onOpenCountryInMap={(targetIso) => handleJumpToCountry(targetIso)}
+          />
+        </div>
 
-        {/* 2.5. 共テ風オリジナル実戦問題＆自動ドリルビュー */}
-        {activeView === 'practice' && (
-          <div className="h-full min-w-0 flex-1">
-            <PracticeExamView
-              mockQuestions={mockQuestionsData?.questions ?? []}
-              worldRankings={worldRankingsData}
-              countriesData={countriesData.countries}
-              timeSliders={timeSlidersData?.sliders ?? []}
-              photoEncyclopedia={photoEncyclopediaData?.entries ?? []}
-              onSelectCountry={handleSelectCountry}
-            />
-          </div>
-        )}
+        {/* 2.5. 共テ風オリジナル実戦問題＆自動ドリルビュー（国確認のために地図へ飛んでも演習状態が途切れないよう常時マウント） */}
+        <div
+          className={
+            activeView === 'practice' ? 'h-full min-w-0 flex-1' : 'hidden'
+          }
+        >
+          <PracticeExamView
+            mockQuestions={mockQuestionsData?.questions ?? []}
+            worldRankings={worldRankingsData}
+            countriesData={countriesData.countries}
+            timeSliders={timeSlidersData?.sliders ?? []}
+            photoEncyclopedia={photoEncyclopediaData?.entries ?? []}
+            onSelectCountry={handleJumpToCountry}
+          />
+        </div>
 
         {/* 3. 世界統計ランキング＆データブックビュー */}
         {activeView === 'rankings' && (
@@ -821,7 +887,7 @@ export function App() {
               timeSliders={timeSlidersData?.sliders ?? []}
               japanDomesticStats={japanData?.domesticStats ?? null}
               focusedItemId={focusedRankingId}
-              onSelectCountry={handleSelectCountry}
+              onSelectCountry={handleJumpToCountry}
               onHighlightCountries={handleHighlightFromRanking}
             />
           </div>
@@ -838,7 +904,7 @@ export function App() {
               placeMatcher={placeMatcher}
               focusedTopicId={focusedSystematicId}
               onFocusPlace={handleFocusPlace}
-              onSelectCountry={handleSelectCountry}
+              onSelectCountry={handleJumpToCountry}
             />
           </div>
         )}
@@ -852,7 +918,7 @@ export function App() {
               placeMatcher={placeMatcher}
               focusedRegionId={focusedJapanRegionId}
               onFocusPlace={handleFocusPlace}
-              onOpenJapanCountry={() => handleSelectCountry('JPN')}
+              onOpenJapanCountry={() => handleJumpToCountry('JPN')}
             />
           </div>
         )}

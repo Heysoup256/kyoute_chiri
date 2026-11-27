@@ -13,6 +13,7 @@ import {
   Home,
   Landmark,
   Layers,
+  LocateFixed,
   MapPin,
   Maximize2,
   Mountain,
@@ -69,6 +70,7 @@ interface CountryDetailPanelProps {
   onClearSubnationalOverlay?: () => void;
   onToggleMark: (iso3: string) => void;
   onSelectCountry: (iso3: string) => void;
+  onFlyToCountry?: (iso3: string) => void;
   onClose: () => void;
   onOpenExamModal?: (initialQuestionId?: string) => void;
 }
@@ -325,6 +327,7 @@ export function CountryDetailPanel({
   onClearSubnationalOverlay,
   onToggleMark,
   onSelectCountry,
+  onFlyToCountry,
   onClose,
   onOpenExamModal,
 }: CountryDetailPanelProps) {
@@ -577,6 +580,18 @@ export function CountryDetailPanel({
           </div>
 
           <div className="flex shrink-0 items-center gap-0.5 md:gap-1">
+            {iso3 && onFlyToCountry && (
+              <button
+                type="button"
+                onClick={() => onFlyToCountry(iso3)}
+                className="inline-flex items-center gap-1 rounded-lg border border-sky-200 bg-sky-50 px-1.5 py-1 text-xs font-bold text-sky-700 transition hover:bg-sky-100 md:px-2.5"
+                title="地図上でこの国の位置へ移動する"
+                aria-label="地図上でこの国の位置へ移動"
+              >
+                <LocateFixed className="h-3.5 w-3.5" />
+                <span className="hidden md:inline">場所へ</span>
+              </button>
+            )}
             {country && allCountries && (
               <button
                 type="button"
