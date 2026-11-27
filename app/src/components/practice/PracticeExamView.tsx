@@ -73,10 +73,18 @@ function MiniScatterPlotSvg({ spec }: { spec: ScatterDrillSpec }) {
 
   const xSpan = Math.max(1e-6, rawXMax - rawXMin);
   const ySpan = Math.max(1e-6, rawYMax - rawYMin);
-  const xMin = rawXMin >= 0 ? Math.max(0, rawXMin - xSpan * 0.08) : rawXMin - xSpan * 0.08;
-  const xMax = rawXMax + xSpan * 0.1;
-  const yMin = rawYMin >= 0 ? Math.max(0, rawYMin - ySpan * 0.08) : rawYMin - ySpan * 0.08;
-  const yMax = rawYMax + ySpan * 0.12;
+  const baseXMin = rawXMin >= 0 ? Math.max(0, rawXMin - xSpan * 0.12) : rawXMin - xSpan * 0.1;
+  const baseXMax = rawXMax + xSpan * 0.14;
+  const baseYMin = rawYMin >= 0 ? Math.max(0, rawYMin - ySpan * 0.12) : rawYMin - ySpan * 0.1;
+  const baseYMax = rawYMax + ySpan * 0.15;
+
+  // 同一単位の y=x 等値線（収支均衡線等）を引くときは両軸スケールを揃える
+  const sharedMin = spec.showDiagonal ? Math.min(baseXMin, baseYMin) : 0;
+  const sharedMax = spec.showDiagonal ? Math.max(baseXMax, baseYMax) : 0;
+  const xMin = spec.showDiagonal ? sharedMin : baseXMin;
+  const xMax = spec.showDiagonal ? sharedMax : baseXMax;
+  const yMin = spec.showDiagonal ? sharedMin : baseYMin;
+  const yMax = spec.showDiagonal ? sharedMax : baseYMax;
 
   const W = 380;
   const H = 240;
@@ -142,7 +150,11 @@ function MiniScatterPlotSvg({ spec }: { spec: ScatterDrillSpec }) {
     <div className="mx-auto max-w-lg rounded-xl border border-slate-200 bg-white p-3">
       <div className="mb-1 flex items-center justify-between text-[11px] font-bold text-slate-700">
         <span>{spec.title}</span>
-        <span className="text-[10px] font-medium text-slate-400">灰色点＝他国データ</span>
+        {spec.showDiagonal && spec.diagonalLabel ? (
+          <span className="text-[10px] font-medium text-slate-500">破線：{spec.diagonalLabel}</span>
+        ) : spec.backgroundPoints.length > 0 ? (
+          <span className="text-[10px] font-medium text-slate-400">灰色点＝他国データ</span>
+        ) : null}
       </div>
       <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full select-none">
         <text x={8} y={13} fontSize="9.5" fontWeight="700" fill="#475569">
@@ -183,6 +195,18 @@ function MiniScatterPlotSvg({ spec }: { spec: ScatterDrillSpec }) {
             </g>
           );
         })}
+
+        {spec.showDiagonal && (
+          <line
+            x1={padL}
+            y1={padT + plotH}
+            x2={W - padR}
+            y2={padT}
+            stroke="#94a3b8"
+            strokeWidth={1.1}
+            strokeDasharray="4 3"
+          />
+        )}
 
         {spec.backgroundPoints.map((bp, idx) => (
           <circle
@@ -1058,17 +1082,23 @@ export function PracticeExamView({
                 )}
 
                 {currentDrill.climateCities && sharedClimateScale && (
-                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div
+                    className={`mt-3 grid grid-cols-1 gap-3 ${
+                      currentDrill.climateCities.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
+                    }`}
+                  >
                     {currentDrill.climateCities.map((entry) => (
                       <div
                         key={entry.label}
-                        className="rounded-xl border border-slate-200 bg-slate-50/70 p-3"
+                        className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5"
                       >
                         <div className="mb-1.5 flex items-center justify-between text-xs font-extrabold text-slate-800">
                           <span>{entry.label}</span>
-                          <span className="font-mono text-[10.5px] font-semibold text-slate-500">
-                            {entry.metaText}
-                          </span>
+                          {entry.metaText && (
+                            <span className="font-mono text-[10.5px] font-semibold text-slate-500">
+                              {entry.metaText}
+                            </span>
+                          )}
                         </div>
                         <ClimateMiniChart
                           city={entry.city}

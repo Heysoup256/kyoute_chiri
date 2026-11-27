@@ -14,16 +14,131 @@ export interface StatMatrixSpec {
   colLabels: string[];
   rows: StatMatrixRow[];
   examPoint: string;
+  // 散布図での y=x 等値線対応用（同一単位で直接比較する2列がある場合）
+  diagonalCols?: { xCol: number; yCol: number; label: string };
 }
 
 /**
- * 新課程共通テスト型の「統計数値→国」「統計数値→項目」「二重ブラインド」用の実数値マトリクス（全28表）
- * 全列ラベルは「〇〇の生産量」「〇〇の輸出量」「〇〇の発電割合」等の完全明示表記に統一
+ * 共通テスト頻出の標準68カ国（ソマリランドやプエルトリコ等マイナー地域を除外するためのホワイトリスト）
+ */
+export const EXAM_STANDARD_ISO3_SET = new Set<string>([
+  'JPN', 'CHN', 'KOR', 'TWN', 'SGP', 'IDN', 'THA', 'VNM', 'PHL', 'MYS', 'IND', 'BGD', 'PAK', 'LKA', 'NPL', 'KHM',
+  'DEU', 'FRA', 'GBR', 'ITA', 'ESP', 'NLD', 'BEL', 'CHE', 'AUT', 'PRT', 'GRC', 'IRL',
+  'SWE', 'NOR', 'FIN', 'DNK', 'ISL', 'POL', 'CZE', 'HUN', 'ROU', 'SVK', 'UKR', 'RUS',
+  'USA', 'CAN', 'MEX', 'BRA', 'ARG', 'CHL', 'PER', 'COL', 'BOL', 'URY', 'PRY', 'ECU', 'GTM', 'CUB',
+  'EGY', 'TUR', 'IRN', 'SAU', 'ARE', 'QAT', 'KWT', 'MAR', 'DZA', 'ISR', 'JOR', 'KAZ',
+  'ZAF', 'NGA', 'ETH', 'KEN', 'COD', 'GHA', 'CIV', 'TZA', 'SDN', 'GIN', 'BWA', 'NER',
+  'AUS', 'NZL',
+]);
+
+/**
+ * 国ごとの経済・人口構造類型タグ（同類国の根拠薄弱な競合を防止）
+ */
+export const COUNTRY_ARCHETYPE_MAP: Record<string, string> = {
+  JPN: 'east_asia_aging',
+  KOR: 'east_asia_aging',
+  TWN: 'east_asia_aging',
+  CHN: 'east_asia_giant',
+  SGP: 'city_trade_hub',
+  DEU: 'west_eu_ind',
+  GBR: 'west_eu_svc',
+  FRA: 'west_eu_svc',
+  ITA: 'south_eu',
+  ESP: 'south_eu',
+  NLD: 'west_eu_ind',
+  BEL: 'west_eu_ind',
+  CHE: 'alpine_high_inc',
+  AUT: 'west_eu_ind',
+  PRT: 'south_eu',
+  GRC: 'south_eu',
+  IRL: 'west_eu_svc',
+  SWE: 'nordic_welfare',
+  NOR: 'nordic_oil',
+  FIN: 'nordic_welfare',
+  DNK: 'nordic_welfare',
+  ISL: 'nordic_welfare',
+  POL: 'east_eu',
+  CZE: 'east_eu',
+  HUN: 'east_eu',
+  ROU: 'east_eu',
+  SVK: 'east_eu',
+  UKR: 'east_eu_agr',
+  RUS: 'rus_resource',
+  USA: 'settler_giant',
+  CAN: 'settler_resource',
+  AUS: 'settler_resource',
+  NZL: 'settler_agr',
+  MEX: 'latin_ind',
+  BRA: 'latin_giant',
+  ARG: 'latin_urban_agr',
+  CHL: 'latin_urban_res',
+  URY: 'latin_urban_agr',
+  PER: 'latin_andies',
+  COL: 'latin_andies',
+  BOL: 'latin_andies_low',
+  PRY: 'latin_agr',
+  ECU: 'latin_andies',
+  GTM: 'central_am_low',
+  CUB: 'caribbean_low',
+  ARE: 'gulf_oil',
+  QAT: 'gulf_oil',
+  SAU: 'gulf_oil_mid',
+  KWT: 'gulf_oil',
+  TUR: 'mena_ind',
+  IRN: 'mena_oil_ind',
+  EGY: 'mena_populous',
+  MAR: 'mena_maghreb',
+  DZA: 'mena_oil_ind',
+  ISR: 'mena_high_tech',
+  JOR: 'mena_remit',
+  KAZ: 'central_asia_res',
+  IDN: 'asean_archipelago',
+  THA: 'asean_upper_mid',
+  MYS: 'asean_upper_mid',
+  VNM: 'asean_mfg',
+  PHL: 'asean_remit',
+  KHM: 'asean_agr',
+  IND: 'south_asia_giant',
+  BGD: 'south_asia_garment',
+  PAK: 'south_asia_agr',
+  LKA: 'south_asia_island',
+  NPL: 'south_asia_remit',
+  ZAF: 'africa_mid_ind',
+  BWA: 'africa_mid_res',
+  NGA: 'africa_oil_pop',
+  ETH: 'africa_highland_agr',
+  KEN: 'africa_east_mix',
+  COD: 'africa_mineral_poor',
+  GHA: 'africa_west_cacao',
+  CIV: 'africa_west_cacao',
+  TZA: 'africa_east_mix',
+  SDN: 'africa_sahel',
+  GIN: 'africa_mineral_poor',
+  NER: 'africa_sahel',
+};
+
+/**
+ * 共通テストの大問（地誌・テーマ）に即した比較国コホート
+ */
+export const REGIONAL_COUNTRY_COHORTS: { label: string; iso3s: string[] }[] = [
+  { label: '東・東南アジア諸国', iso3s: ['JPN', 'CHN', 'KOR', 'SGP', 'THA', 'IDN', 'VNM', 'PHL', 'KHM'] },
+  { label: 'アジア・大洋州諸国', iso3s: ['JPN', 'IND', 'IDN', 'BGD', 'PAK', 'AUS', 'SGP', 'ARE'] },
+  { label: 'ヨーロッパ・ロシア周辺', iso3s: ['DEU', 'FRA', 'NOR', 'POL', 'UKR', 'ROU', 'ESP', 'RUS'] },
+  { label: '南北アメリカ諸国', iso3s: ['USA', 'MEX', 'BRA', 'ARG', 'PER', 'BOL', 'GTM', 'CHL'] },
+  { label: '西アジア・北アフリカ諸国', iso3s: ['TUR', 'EGY', 'ARE', 'SAU', 'MAR', 'ISR', 'IRN', 'JOR'] },
+  { label: 'アフリカ諸国', iso3s: ['ZAF', 'BWA', 'EGY', 'MAR', 'NGA', 'KEN', 'ETH', 'NER'] },
+  { label: '国際移動・労働構造の対比', iso3s: ['ARE', 'SGP', 'JPN', 'DEU', 'PHL', 'PAK', 'MEX', 'ETH'] },
+  { label: '環太平洋の主要国', iso3s: ['USA', 'JPN', 'CHN', 'AUS', 'CHL', 'IDN', 'VNM', 'PER'] },
+];
+
+/**
+ * 新課程共通テスト型の実数値マトリクス（28表）
+ * スパース行を整理し、常に複数列で識別可能な構造を保証
  */
 export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
   {
     id: 'mat_grains_prod',
-    title: '主要国の主要穀物生産量',
+    title: '主要国の穀物生産量',
     unit: '百万t',
     sameUnitAcrossCols: true,
     colLabels: ['小麦の生産量', '米（籾換算）の生産量', 'トウモロコシの生産量'],
@@ -34,7 +149,6 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'BRA', countryName: 'ブラジル', values: [8, 10, 132] },
       { iso3: 'RUS', countryName: 'ロシア', values: [92, 1, 16] },
       { iso3: 'IDN', countryName: 'インドネシア', values: [0, 54, 20] },
-      { iso3: 'THA', countryName: 'タイ', values: [0, 33, 5] },
       { iso3: 'FRA', countryName: 'フランス', values: [35, 0, 12] },
       { iso3: 'ARG', countryName: 'アルゼンチン', values: [13, 1, 41] },
       { iso3: 'EGY', countryName: 'エジプト', values: [10, 6, 7] },
@@ -60,14 +174,15 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'CAN', countryName: 'カナダ', values: [24, 0, 2, 5] },
     ],
     examPoint:
-      '生産首位の中国は輸出リストにほぼ現れず（国内消費・純輸入）、米はインド・タイ・ベトナムが輸出上位、大豆・トウモロコシはブラジル・米国が突出し、小麦はロシア・豪・加・米が中心。',
+      '生産首位の中国は輸出上位に現れず、米はインド・タイ・ベトナムが輸出上位、大豆・トウモロコシはブラジル・米国が突出し、小麦はロシア・豪・加・米が中心。',
   },
   {
     id: 'mat_wheat_balance',
-    title: '主要国の小麦の生産量・輸出量・輸入量',
+    title: '主要国の小麦需給比較',
     unit: '万t',
     sameUnitAcrossCols: true,
     colLabels: ['小麦の生産量', '小麦の輸出量', '小麦の輸入量'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '生産＝輸出' },
     rows: [
       { iso3: 'RUS', countryName: 'ロシア', values: [9200, 5000, 20] },
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [4900, 1900, 350] },
@@ -81,7 +196,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'TUR', countryName: 'トルコ', values: [2100, 600, 1050] },
     ],
     examPoint:
-      '中国・インドは生産量世界1・2位だが内需が大きく輸出はわずか（中国は大輸入国でもある）。ロシア・豪州・フランス・米国が主要輸出国、エジプト・インドネシア・日本が大輸入国。',
+      '中国・インドは生産世界1・2位だが内需が大きく輸出はわずか（中国は大輸入国）。ロシア・豪州・フランス・米国が主要輸出国、エジプト・インドネシア・日本が大輸入国。',
   },
   {
     id: 'mat_soy_maize_trade',
@@ -100,11 +215,11 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'VNM', countryName: 'ベトナム', values: [0, 2, 0, 11] },
     ],
     examPoint:
-      '大豆輸入は中国が世界輸入の約6割を占め突出（ブラジル・米国から輸入）。メキシコ・日本・ベトナム等はトウモロコシの飼料・食用輸入が大きい。',
+      '大豆輸入は中国が世界の約6割を占め突出（ブラジル・米国から輸入）。メキシコ・日本・ベトナム等はトウモロコシの飼料・食用輸入が大きい。',
   },
   {
     id: 'mat_tubers_prod',
-    title: '主要国のイモ類生産量（気候帯・主食の違い）',
+    title: '主要国のイモ類生産量比較',
     unit: '百万t',
     sameUnitAcrossCols: true,
     colLabels: ['じゃがいもの生産量', 'キャッサバの生産量', 'さつまいもの生産量'],
@@ -117,9 +232,10 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'THA', countryName: 'タイ', values: [0, 31, 0] },
       { iso3: 'BRA', countryName: 'ブラジル', values: [4, 18, 1] },
       { iso3: 'DEU', countryName: 'ドイツ', values: [12, 0, 0] },
+      { iso3: 'RUS', countryName: 'ロシア', values: [20, 0, 0] },
     ],
     examPoint:
-      'じゃがいもは温帯・冷涼気候（中国・インド・東欧/ロシア・ドイツ）、キャッサバは熱帯低緯度（ナイジェリア・コンゴ民・タイ・ブラジル）、さつまいもは温暖湿潤地域中心。',
+      'じゃがいもは温帯・冷涼気候（中国・インド・東欧/ロシア・ドイツ）、キャッサバは熱帯低緯度（ナイジェリア・コンゴ民・タイ・ブラジル）、さつまいもは中国・熱帯アフリカに多い。',
   },
   {
     id: 'mat_sugar_cotton',
@@ -136,11 +252,10 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'FRA', countryName: 'フランス', values: [0, 3200, 0] },
       { iso3: 'DEU', countryName: 'ドイツ', values: [0, 2900, 0] },
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [3000, 2900, 290] },
-      { iso3: 'UZB', countryName: 'ウズベキスタン', values: [0, 0, 75] },
       { iso3: 'PAK', countryName: 'パキスタン', values: [8800, 4, 140] },
     ],
     examPoint:
-      'さとうきびは熱帯〜亜熱帯（ブラジル・インド・タイ）、てんさいは冷涼温帯（ロシア・欧州・米国北部）、中国と米国のみ広い緯度帯により両方を産する。',
+      'さとうきびは熱帯〜亜熱帯（ブラジル・インド・タイ・パキスタン）、てんさいは冷涼温帯（ロシア・フランス・ドイツ・米国北部）、中国と米国は広い緯度帯により両方を産する。',
   },
   {
     id: 'mat_barley_oilseeds',
@@ -179,7 +294,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'IND', countryName: 'インド', values: [0.1, 0.8, 70] },
     ],
     examPoint:
-      '1人あたりコーヒー消費は北欧（フィンランド約12kg）が突出、茶はトルコ（世界1位級）・イギリスが多い。米はインドネシア・中国・インド・日本が高く、欧米は極めて少ない。',
+      '1人当たりコーヒー消費は北欧（フィンランド約12kg）が突出、茶はトルコ（世界1位級）・イギリスが多い。米はインドネシア・中国・インド・日本が高く、欧米は極めて少ない。',
   },
   {
     id: 'mat_fruits_oils',
@@ -269,6 +384,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     unit: '万t',
     sameUnitAcrossCols: true,
     colLabels: ['海面天然漁獲量', '水産養殖の生産量'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '漁獲＝養殖' },
     rows: [
       { iso3: 'CHN', countryName: '中国', values: [1180, 5280] },
       { iso3: 'IDN', countryName: 'インドネシア', values: [690, 550] },
@@ -282,7 +398,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'CHL', countryName: 'チリ', values: [220, 150] },
     ],
     examPoint:
-      '中国・インド・インドネシア・ベトナムのアジア諸国は水産養殖の比率が極めて高い。一方、ペルー（アンチョビ湧昇漁業）やロシア・米国は天然漁獲が中心。ノルウェーとチリはサーモン養殖が突出。',
+      '中国・インド・インドネシア・ベトナムのアジア諸国は水産養殖の比率が極めて高い。一方、ペルー（アンチョビ湧昇漁業）やロシア・米国・日本は天然漁獲が中心。ノルウェーとチリはサーモン養殖が突出。',
   },
   {
     id: 'mat_forestry_paper',
@@ -310,7 +426,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     title: 'アルミニウム原料と精錬生産の地域ギャップ',
     unit: '万t',
     sameUnitAcrossCols: true,
-    colLabels: ['ボーキサイトの産出量', 'アルミナ（中間製品）の生産量', 'アルミニウム新地金の精錬量'],
+    colLabels: ['ボーキサイトの産出量', 'アルミナの生産量', 'アルミニウム新地金の精錬量'],
     rows: [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [10000, 1900, 156] },
       { iso3: 'GIN', countryName: 'ギニア', values: [9700, 30, 0] },
@@ -352,6 +468,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     unit: 'Mtoe（石油換算百万t）',
     sameUnitAcrossCols: true,
     colLabels: ['原油の輸出量', '原油の輸入量', '石炭の輸出量', 'LNGの輸出量'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '原油 輸出＝輸入' },
     rows: [
       { iso3: 'SAU', countryName: 'サウジアラビア', values: [340, 0, 0, 0] },
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [200, 320, 58, 115] },
@@ -372,6 +489,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
     unit: '百万t',
     sameUnitAcrossCols: true,
     colLabels: ['鉄鉱石の産出量', '粗鋼の生産量', '鉄鋼製品の輸出量', '鉄鋼製品の輸入量'],
+    diagonalCols: { xCol: 2, yCol: 3, label: '鉄鋼 輸出＝輸入' },
     rows: [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [960, 5, 1, 2] },
       { iso3: 'BRA', countryName: 'ブラジル', values: [440, 32, 12, 5] },
@@ -400,10 +518,10 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [4, 4, 47, 2] },
       { iso3: 'COD', countryName: 'コンゴ民主共和国', values: [11, 0, 0, 74] },
       { iso3: 'CHN', countryName: '中国', values: [8, 3, 18, 1] },
-      { iso3: 'ARG', countryName: 'アルゼンチン', values: [0, 0, 5, 0] },
+      { iso3: 'RUS', countryName: 'ロシア', values: [4, 6, 0, 4] },
     ],
     examPoint:
-      '銅＝チリ・ペルー・コンゴ民、ニッケル＝インドネシア過半＋フィリピン、リチウム＝豪州＋リチウムトライアングル（チリ・アルゼンチン）＋中国、コバルト＝コンゴ民主共和国が世界7割超を独占。',
+      '銅＝チリ・ペルー・コンゴ民、ニッケル＝インドネシア過半＋フィリピン、リチウム＝豪州＋チリ＋中国、コバルト＝コンゴ民主共和国が世界7割超を独占。',
   },
   {
     id: 'mat_gold_silver',
@@ -421,14 +539,13 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'PER', countryName: 'ペルー', values: [100, 3100] },
       { iso3: 'GHA', countryName: 'ガーナ', values: [130, 10] },
       { iso3: 'ZAF', countryName: '南アフリカ', values: [100, 35] },
-      { iso3: 'POL', countryName: 'ポーランド', values: [0, 1300] },
     ],
     examPoint:
-      '金産出の現在の上位は中国・豪州・ロシア・カナダ・ガーナ・南アフリカ（かつての首位南アは順位低下）。銀産出はメキシコ（1位）・中国・ペルー・ポーランド等が多い。',
+      '金産出の上位は中国・豪州・ロシア・カナダ・ガーナ・南アフリカ（かつての首位南アは順位低下）。銀産出はメキシコ（1位）・中国・ペルーが多い。',
   },
   {
     id: 'mat_power_clean_ratios',
-    title: '特徴的な非化石電源の総発電量比（%）',
+    title: '非化石電源の総発電電力量比（%）',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: ['水力の発電割合', '風力の発電割合', '原子力の発電割合'],
@@ -466,7 +583,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'BRA', countryName: 'ブラジル', values: [63, 32] },
     ],
     examPoint:
-      'セメントは重量当たりの輸送費が高く石灰石原料も各地に得られるため、建設需要が大きい新興国（中国・インド・ベトナム・トルコ・インドネシア）の生産が大きい。日本・韓国・ドイツは粗鋼生産規模がセメントを大きく上回る。',
+      'セメントは重量当たりの輸送費が高く石灰石原料も各地で採れるため、建設需要が大きい新興国（中国・インド・ベトナム・トルコ・インドネシア）の生産が大きい。日本・韓国・ドイツは粗鋼生産がセメントを上回る。',
   },
   {
     id: 'mat_land_use',
@@ -483,18 +600,18 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'AUS', countryName: 'オーストラリア', values: [17, 4, 44] },
       { iso3: 'SAU', countryName: 'サウジアラビア', values: [0, 2, 81] },
       { iso3: 'ARG', countryName: 'アルゼンチン', values: [10, 12, 40] },
-      { iso3: 'EGY', countryName: 'エジプト', values: [0, 4, 0] },
       { iso3: 'UKR', countryName: 'ウクライナ', values: [17, 57, 13] },
     ],
     examPoint:
-      '森林率高＝日本・フィンランド（約7割）・ブラジル（熱帯林6割）、耕地率高＝インド・ウクライナ（約6割）、牧草地率高＝豪州・英国・アルゼンチン・サウジ、エジプトはナイル川外はほぼ砂漠で農林計4%。',
+      '森林率高＝日本・フィンランド（約7割）・ブラジル（熱帯林6割）、耕地率高＝インド・ウクライナ（約6割）、牧草地率高＝豪州・英国・アルゼンチン・サウジ。',
   },
   {
     id: 'mat_tourism_balance',
-    title: '主要国の国際観光収入と支出（国際観光収支）',
+    title: '主要国の国際観光収入と支出',
     unit: '十億USD',
     sameUnitAcrossCols: true,
     colLabels: ['国際観光収入（受入額）', '国際観光支出（海外旅行支払額）'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '収入＝支出' },
     rows: [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [176, 151] },
       { iso3: 'ESP', countryName: 'スペイン', values: [92, 25] },
@@ -508,14 +625,15 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'JPN', countryName: '日本', values: [39, 17] },
     ],
     examPoint:
-      '南欧（スペイン・イタリア）やタイ・トルコ・近年の日本は観光収入が支出を大きく上回る大幅黒字。一方、寒冷・高所得で海外旅行熱の高いドイツ・英国・中国は大幅赤字（支出＞収入）。',
+      '南欧（スペイン・イタリア）やタイ・トルコ・日本は観光収入が支出を大きく上回る大幅黒字。一方、寒冷・高所得で海外旅行熱の高いドイツ・英国・中国は大幅赤字（支出＞収入）。',
   },
   {
     id: 'mat_remit_tourism',
-    title: '主要国の外貨獲得構造（観光収入 vs 出稼ぎ個人送金）',
+    title: '主要国の観光収入と出稼ぎ個人送金受取',
     unit: '十億USD',
     sameUnitAcrossCols: true,
     colLabels: ['国際観光収入（受入額）', '出稼ぎ個人送金の受取総額'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '観光収入＝送金受取' },
     rows: [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [176, 7] },
       { iso3: 'ESP', countryName: 'スペイン', values: [92, 9] },
@@ -529,11 +647,11 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'TUR', countryName: 'トルコ', values: [50, 1] },
     ],
     examPoint:
-      'インド（世界1位約1250億ドル）・メキシコ・フィリピン・パキスタン・エジプトは海外就労者からの個人送金受取が観光収入を大きく上回る。先進観光国（スペイン・米国・トルコ・タイ・日本）は観光収入が突出。',
+      'インド（世界1位約1250億ドル）・メキシコ・フィリピン・パキスタン・エジプトは海外就労者からの個人送金受取が観光収入を上回る。先進観光国・タイ・トルコは観光収入が大きい。',
   },
   {
     id: 'mat_gender_labor',
-    title: '各国の女性労働力率・産業構成・議会参画指標',
+    title: '主要国の女性労働力率・産業構成・議会参画指標',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: ['15歳以上女性労働力率', '第3次産業就業率', '女性国会議員比率'],
@@ -542,7 +660,6 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'NOR', countryName: 'ノルウェー', values: [62, 79, 46] },
       { iso3: 'KHM', countryName: 'カンボジア', values: [73, 28, 13] },
       { iso3: 'VNM', countryName: 'ベトナム', values: [69, 39, 31] },
-      { iso3: 'RWA', countryName: 'ルワンダ', values: [54, 34, 64] },
       { iso3: 'JPN', countryName: '日本', values: [55, 73, 16] },
       { iso3: 'KOR', countryName: '韓国', values: [56, 71, 20] },
       { iso3: 'EGY', countryName: 'エジプト', values: [16, 51, 28] },
@@ -550,7 +667,7 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [57, 79, 29] },
     ],
     examPoint:
-      '女性労働力率は東南アジア・サハラ以南アフリカでも農村・軽工業労働を反映して高く（7割前後）、3次産業率は低め。北欧は3次産業率8割かつ議員比率も約半分と高い。イスラム圏（エジプト・パキスタン）は労働力率が低い。',
+      '女性労働力率は東南アジアでも農村・軽工業労働を反映して高く（7割前後）、3次産業率は低め。北欧は3次産業率8割かつ議員比率も約半分と高い。イスラム圏（エジプト・パキスタン）は労働力率が低い。',
   },
   {
     id: 'mat_migration_remit',
@@ -562,19 +679,19 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'ARE', countryName: 'アラブ首長国連邦', values: [88, 0, 88] },
       { iso3: 'SGP', countryName: 'シンガポール', values: [43, 0, 100] },
       { iso3: 'SAU', countryName: 'サウジアラビア', values: [39, 0, 85] },
-      { iso3: 'TJK', countryName: 'タジキスタン', values: [3, 48, 28] },
-      { iso3: 'NPL', countryName: 'ネパール', values: [2, 27, 22] },
-      { iso3: 'PHL', countryName: 'フィリピン', values: [0, 9, 48] },
-      { iso3: 'MEX', countryName: 'メキシコ', values: [1, 4, 82] },
-      { iso3: 'DEU', countryName: 'ドイツ', values: [19, 0, 78] },
+      { iso3: 'EGY', countryName: 'エジプト', values: [1, 11, 43] },
+      { iso3: 'PAK', countryName: 'パキスタン', values: [1, 10, 40] },
+      { iso3: 'PHL', countryName: 'フィリピン', values: [0, 9, 56] },
+      { iso3: 'MEX', countryName: 'メキシコ', values: [1, 4, 80] },
+      { iso3: 'DEU', countryName: 'ドイツ', values: [19, 0, 82] },
       { iso3: 'JPN', countryName: '日本', values: [3, 0, 92] },
     ],
     examPoint:
-      '中東産油国（UAE・サウジ）や都市国家（シンガポール）は外国人比率が4〜9割と極めて高く送金は送出側。タジキスタン・ネパールは都市率3割未満の農村国で海外出稼ぎ送金がGDPの3〜5割を支える。',
+      '中東産油国（UAE・サウジ）や都市国家（シンガポール）は外国人比率が4〜9割と極めて高く送金は送出側。パキスタン・エジプト・フィリピンは都市率4〜6割で海外出稼ぎ送金がGDPの1割前後を支える。',
   },
   {
     id: 'mat_auto_ship_mfg',
-    title: '輸送機械分野の世界生産シェア',
+    title: '主要国の自動車生産台数と二輪車生産・新造船割合',
     unit: '世界生産シェア (%)',
     sameUnitAcrossCols: true,
     colLabels: ['四輪自動車の世界生産シェア', '二輪車の世界生産・販売シェア', '新造船の世界竣工量シェア'],
@@ -584,14 +701,12 @@ export const CURATED_STAT_MATRICES: StatMatrixSpec[] = [
       { iso3: 'JPN', countryName: '日本', values: [10, 1, 14] },
       { iso3: 'KOR', countryName: '韓国', values: [4, 0, 29] },
       { iso3: 'USA', countryName: 'アメリカ合衆国', values: [11, 1, 0] },
-      { iso3: 'DEU', countryName: 'ドイツ', values: [4, 0, 1] },
-      { iso3: 'MEX', countryName: 'メキシコ', values: [4, 2, 0] },
-      { iso3: 'THA', countryName: 'タイ', values: [2, 3, 0] },
       { iso3: 'IDN', countryName: 'インドネシア', values: [2, 10, 0] },
-      { iso3: 'CZE', countryName: 'チェコ', values: [2, 0, 0] },
+      { iso3: 'THA', countryName: 'タイ', values: [2, 3, 0] },
+      { iso3: 'BRA', countryName: 'ブラジル', values: [3, 3, 0] },
     ],
     examPoint:
-      '新造船は中国(5割)・韓国(3割)・日本(1.4割)の日中韓3国で9割超を寡占。二輪車はインド・中国・インドネシア等アジア中心。四輪車は中国・米国・日本のほか、ニアショア基地メキシコや東欧（チェコ）も目立つ。',
+      '新造船は中国(5割)・韓国(3割)・日本(1.4割)の日中韓3国で9割超を寡占。二輪車はインド・中国・インドネシア等アジア中心。四輪車は中国・米国・日本・インドが大きい。',
   },
 ];
 
@@ -600,6 +715,7 @@ interface ManualComparisonChartConfig {
   unit: string;
   sameUnitAcrossCols: boolean;
   colLabels: string[];
+  diagonalCols?: { xCol: number; yCol: number; label: string };
 }
 
 const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> = {
@@ -616,7 +732,7 @@ const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> =
     ],
   },
   cmp_sector_share: {
-    title: '主要国の産業別就業人口割合',
+    title: '主要国の産業別就業人口構成比',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: ['第1次産業の就業率', '第2次産業の就業率', '第3次産業の就業率'],
@@ -633,7 +749,7 @@ const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> =
     ],
   },
   cmp_age_structure: {
-    title: '主要国の年齢3区分別人口割合',
+    title: '主要国の年齢3区分別人口構成比',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: ['年少人口(0〜14歳)割合', '生産年齢人口(15〜64歳)割合', '老年人口(65歳以上)割合'],
@@ -661,6 +777,7 @@ const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> =
     unit: '十億USD',
     sameUnitAcrossCols: true,
     colLabels: ['商品輸出額', '商品輸入額'],
+    diagonalCols: { xCol: 0, yCol: 1, label: '輸出＝輸入' },
   },
   cmp_grain_export_import: {
     title: '主要国の小麦・トウモロコシ純輸出入量',
@@ -675,13 +792,13 @@ const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> =
     colLabels: ['牛・水牛の頭数割合', '豚の頭数割合', '羊の頭数割合', 'ヤギの頭数割合'],
   },
   cmp_primate_vs_polycentric: {
-    title: '第1位都市圏と第2位都市圏の人口規模比較',
+    title: '第1位都市圏と第2位都市圏の人口規模',
     unit: '万人',
     sameUnitAcrossCols: true,
     colLabels: ['第1位都市圏の人口', '第2位都市圏の人口'],
   },
   cmp_asian_nie_shift: {
-    title: 'アジア諸国の輸出品目構成比',
+    title: 'アジア諸国等の輸出品目構成比',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: [
@@ -692,7 +809,7 @@ const MANUAL_COMPARISON_CHART_MAP: Record<string, ManualComparisonChartConfig> =
     ],
   },
   cmp_energy_special_nations: {
-    title: '特徴的な発電構成比の国際比較',
+    title: '特徴的な発電電力量構成比',
     unit: '%',
     sameUnitAcrossCols: true,
     colLabels: [
@@ -711,8 +828,7 @@ export interface ManualRankingLabelSpec {
 }
 
 /**
- * world_rankings_v1.json 用の100%手動定義ラベル辞書。
- * ここに明示的に登録されていない指標・混合リスト・日本語曖昧表現はドリル生成から完全除外される。
+ * world_rankings_v1.json 用の100%手動定義ラベル辞書
  */
 export const MANUAL_RANKING_METRIC_LABELS: Record<
   string,
@@ -1098,6 +1214,144 @@ export const MANUAL_RANKING_METRIC_LABELS: Record<
   },
 };
 
+/**
+ * 項目当て「上位実績3指標比較」用の同テーマ・紛らわしい3指標セット（22組）
+ */
+export const CURATED_ITEM_TRIOS: [string, string, string][] = [
+  ['小麦の生産量', '小麦の輸出量', '小麦の輸入量'],
+  ['米（籾換算）の生産量', '米（精米換算）の輸出量', '米（精米換算）の輸入量'],
+  ['小麦の輸出量', '米（精米換算）の輸出量', 'トウモロコシの輸出量'],
+  ['小麦の生産量', 'トウモロコシの生産量', '大豆の生産量'],
+  ['大豆の生産量', '大豆の輸出量', '大豆の輸入量'],
+  ['じゃがいもの生産量', 'キャッサバの生産量', 'さつまいもの生産量'],
+  ['さとうきびの生産量', 'てんさいの生産量', '綿花の生産量'],
+  ['コーヒー豆の生産量', 'カカオ豆の生産量', '茶の生産量'],
+  ['茶の生産量', '茶の輸出量', '天然ゴムの生産量'],
+  ['パーム油の生産量', 'オリーブの生産量', '菜種（ナタネ）の生産量'],
+  ['牛の飼育頭数', '豚の飼育頭数', '羊の飼育頭数'],
+  ['牛肉・水牛肉の輸出量', '鶏肉の輸出量', '生乳（牛・水牛）の生産量'],
+  ['海面天然漁獲量', '水産養殖の生産量', 'サケ・マス類の養殖生産量'],
+  ['丸太の総生産量', '木材パルプの輸出量', '紙・板紙の生産量'],
+  ['ボーキサイトの産出量', 'アルミニウム新地金の精錬量', '鉄鉱石（粗鉱）の産出量'],
+  ['銅鉱（銅含有量）の産出量', 'ニッケル鉱の産出量', 'リチウムの生産量'],
+  ['金の産出量', '銀の産出量', 'ダイヤモンドの産出量'],
+  ['原油の輸出量', '石炭の輸出量', 'LNG（液化天然ガス）の輸出量'],
+  ['原油の産出量', '天然ガスの産出量', '石炭の産出量'],
+  ['水力の発電割合', '風力の発電割合', '原子力の発電割合'],
+  ['自動車の生産台数', '粗鋼の生産量', '二輪車の生産・販売台数'],
+  ['外国人・移民の居住割合', '出稼ぎ個人送金受取の対GDP比', '合計特殊出生率'],
+];
+
+/**
+ * 共通テスト形式「気候比較コホート」（16組：同一国・同緯度・南北対比・高地対比）
+ */
+export interface ClimateCohortSpec {
+  theme: string;
+  cityIds: [string, string, string, string];
+  examPoint: string;
+}
+
+export const CLIMATE_COHORT_SPECS: ClimateCohortSpec[] = [
+  {
+    theme: 'オーストラリアの異なる気候帯（北部・中部・南西部・南東部）',
+    cityIds: ['AUS_DARWIN', 'AUS_ALICE', 'AUS_PERTH', 'AUS_SYDNEY'],
+    examPoint:
+      'サバナ気候Aw（ダーウィン＝1月夏に極端な雨季）、砂漠BW（アリススプリングス＝年間極少雨）、地中海性Cs（パース＝夏1月少雨・冬7月多雨）、温暖湿潤Cfa（シドニー＝通年降水・夏高温）。',
+  },
+  {
+    theme: 'アメリカ合衆国の東西・南北気候対比',
+    cityIds: ['USA_SF', 'USA_PHOENIX', 'USA_CHICAGO', 'USA_NYC'],
+    examPoint:
+      '地中海性Cs（サンフランシスコ＝夏少雨・寒流で夏涼しい）、砂漠BW（フェニックス＝極めて高温少雨）、冷帯Df（シカゴ＝冬氷点下で年較差大）、温暖湿潤Cfa（ニューヨーク＝通年適度な降水量）。',
+  },
+  {
+    theme: '中国の沿岸〜内陸〜高地の気候対比',
+    cityIds: ['CHN_GUANGZHOU', 'CHN_SHANGHAI', 'CHN_BEIJING', 'CHN_URUMQI'],
+    examPoint:
+      '温帯冬季少雨Cw（広州＝最寒月13℃前後・夏多雨）、温暖湿潤Cfa（上海＝夏多雨・冬温和）、冷帯冬季少雨Dw（北京＝冬0℃以下・夏集中豪雨）、ステップBS（ウルムチ＝極端な大陸性較差・年降水300mm未満）。',
+  },
+  {
+    theme: 'ヨーロッパ東西〜南北の海洋性・大陸性・地中海性比較',
+    cityIds: ['NOR_BERGEN', 'GBR_LONDON', 'ITA_ROME', 'UKR_KYIV'],
+    examPoint:
+      '西岸海洋性Cfb多雨（ベルゲン＝年2,000mm超・暖流効果）、西岸海洋性Cfb標準（ロンドン＝年600mm均等）、地中海性Cs（ローマ＝夏極乾燥・冬雨）、冷帯Df（キーウ＝1月-5℃・夏やや多雨）。',
+  },
+  {
+    theme: '同緯度・大洋東岸（西岸）と西岸（東岸）や高緯度寒暖比較',
+    cityIds: ['NOR_BERGEN', 'SWE_STOCKHOLM', 'RUS_YAKUTSK', 'ESP_MADRID'],
+    examPoint:
+      'ノルウェー西岸（ベルゲン＝冬不凍・多雨）、バルト海沿岸（ストックホルム＝やや冬寒冷）、内陸シベリア（ヤクーツク＝1月-38℃・年較差60℃近く）、イベリア半島内陸（マドリード＝夏乾燥・冬やや寒冷）。',
+  },
+  {
+    theme: '南半球の中低緯度比較（西岸砂漠・東岸湿潤・Cs・高原）',
+    cityIds: ['NAM_WALVIS', 'ZAF_CAPETOWN', 'ZAF_JHB', 'ARG_BA'],
+    examPoint:
+      'ナミビア海岸砂漠BW（ワルビスベイ＝年降水極少・冷涼）、ケープタウンCs（南半球のため6〜8月多雨・1月乾燥）、高原Cw（ヨハネスブルグ＝夏多雨・冬乾季・標高1750mで涼しい）、パンパCfa（ブエノスアイレス＝通年降水・温和）。',
+  },
+  {
+    theme: '南アメリカの低地熱帯・寒流海岸砂漠・高地・温帯比較',
+    cityIds: ['BRA_MANAUS', 'PER_LIMA', 'BOL_LAPAZ', 'CHL_SANTIAGO'],
+    examPoint:
+      'アマゾン熱帯雨林Af（マナウス＝年中26〜28℃・年降水2000mm超）、寒流海岸砂漠BW（リマ＝年降水10mm台）、アンデス高山ET/CW（ラパス＝年中気温10℃前後・夏雨冬乾）、南米西岸Cs（サンティアゴ＝南半球の冬6〜8月多雨）。',
+  },
+  {
+    theme: '赤道〜低緯度付近の低地・高山・モンスーン対比',
+    cityIds: ['SGP_SINGAPORE', 'KEN_NAIROBI', 'COL_BOGOTA', 'EGY_CAIRO'],
+    examPoint:
+      'シンガポールAf（年中27℃・通年多雨）、ケニア高原Cw（ナイロビ＝赤道直下だが標高1660mで年平均18℃・乾季あり）、アンデス常春Cfb（ボゴタ＝標高2550mで年中13〜14℃）、サハラ北縁BW（カイロ＝夏季30℃超・年間極少雨）。',
+  },
+  {
+    theme: '日本・東アジアの季節風と日本海側・太平洋側・亜寒帯比較',
+    cityIds: ['JPN_NAHA', 'JPN_TOKYO', 'JPN_KANAZAWA', 'JPN_SAPPORO'],
+    examPoint:
+      '那覇（冬季も17℃前後・年降水2000mm超）、東京（太平洋側＝冬少雨・夏〜秋多雨）、金沢（日本海側＝12〜1月冬季降水量ピーク）、札幌（冷帯Df＝1月氷点下）。',
+  },
+  {
+    theme: 'ユーラシアの熱帯モンスーン〜乾燥ステップ〜地中海対比',
+    cityIds: ['IND_MUMBAI', 'IND_DELHI', 'PAK_KARACHI', 'TUR_ISTANBUL'],
+    examPoint:
+      'ムンバイAw/Am（6〜8月に1ヶ月600mm以上の極端な南西モンスーン集中雨季）、デリーBS〜Cw（内陸で年較差拡大・夏雨）、カラチBW（インダス河口で年200mm前後の乾燥）、イスタンブールCs（冬多雨・夏乾燥・温和）。',
+  },
+  {
+    theme: '東南アジア〜南アジア〜西アジアの乾湿コントラスト',
+    cityIds: ['MYS_KL', 'THA_BANGKOK', 'SAU_RIYADH', 'VNM_HANOI'],
+    examPoint:
+      'クアラルンプールAf（赤道近く年中多雨27℃）、バンコクAw（夏雨季・12〜2月明確な乾季）、リヤドBW（夏35℃超・年間極乾燥）、ハノイCw（冬16℃前後まで下がり明確な季節差＋夏多雨）。',
+  },
+  {
+    theme: '北米・中南米の高地都市・砂漠・温帯・冷帯比較',
+    cityIds: ['CAN_TORONTO', 'MEX_CITY', 'USA_MIAMI', 'BRA_BRASILIA'],
+    examPoint:
+      'トロントDf（1月氷点下・年較差大）、メキシコシティCw（標高2240mで夏20℃未満の常春・夏雨冬乾）、マイアミAm（年中温暖〜暑熱・夏秋極多雨）、ブラジリアAw（南半球の1月夏雨季・7月冬乾季）。',
+  },
+];
+
+/**
+ * 人口ピラミッド判別用の5大類型・厳選32カ国
+ */
+export const PYRAMID_COHORT_ARCHETYPES: { groupLabel: string; iso3s: string[] }[] = [
+  {
+    groupLabel: '富士山型（多産・若年人口極めて厚い）',
+    iso3s: ['NGA', 'KEN', 'ETH', 'COD', 'TZA', 'AFG', 'CIV'],
+  },
+  {
+    groupLabel: '釣鐘〜人口ボーナス期（出生率低下途上・生産年齢拡大）',
+    iso3s: ['MAR', 'DZA', 'KHM', 'NPL', 'MEX', 'BRA', 'PER'],
+  },
+  {
+    groupLabel: '先進国・緩やか移行型（出生率1.4〜1.6台・高齢層厚い）',
+    iso3s: ['USA', 'FRA', 'GBR', 'AUS', 'NZL', 'SWE', 'NOR'],
+  },
+  {
+    groupLabel: '超少子高齢・つぼ型（少子化顕著・65歳以上高割合）',
+    iso3s: ['JPN', 'KOR', 'DEU', 'ITA', 'ESP', 'POL', 'UKR'],
+  },
+  {
+    groupLabel: '湾岸産油国型（20〜40代男性の極端な超過）',
+    iso3s: ['QAT', 'ARE', 'SAU', 'KWT', 'OMN'],
+  },
+];
+
 export interface ManualSliderQuizSpec {
   id: string;
   mode: 'country' | 'metric';
@@ -1106,11 +1360,7 @@ export interface ManualSliderQuizSpec {
   choicesPool: string[];
 }
 
-/**
- * time_series_sliders_v1.json 用 100%手動定義（問題側ネタバレゼロ）
- */
 export const MANUAL_SLIDER_QUIZ_SPECS: Record<string, ManualSliderQuizSpec> = {
-  // 国を当てる（同じ主題グループから紛らわしい4カ国を選ぶ）
   ts_kor_export_mix: {
     id: 'ts_kor_export_mix',
     mode: 'country',
@@ -1174,7 +1424,6 @@ export const MANUAL_SLIDER_QUIZ_SPECS: Record<string, ManualSliderQuizSpec> = {
     answerLabel: 'アメリカ合衆国',
     choicesPool: ['アメリカ合衆国', 'ドイツ', 'フランス', 'イギリス', '日本', 'ロシア'],
   },
-  // 指標・品目を当てる（推移する上位国の顔ぶれだけで推論させる）
   ts_coffee_producers: {
     id: 'ts_coffee_producers',
     mode: 'metric',
@@ -1293,6 +1542,7 @@ export function extractComparisonMatrices(
       unit: manual.unit,
       sameUnitAcrossCols: manual.sameUnitAcrossCols,
       colLabels: manual.colLabels,
+      diagonalCols: manual.diagonalCols,
       rows: cats.map((cat, ri) => {
         const cn = cleanName(cat);
         return {
@@ -1319,48 +1569,33 @@ export function getAge60PlusPct(c: CountryData): number | null {
   return Number(sum.toFixed(1));
 }
 
-function normalizeMacroRegion(region: string): string {
-  if (region.includes('ヨーロッパ') || region.includes('ロシア')) return 'ヨーロッパ・旧ソ連圏';
-  if (region.includes('アフリカ')) return 'アフリカ';
-  if (region.includes('アメリカ') || region.includes('ラテン')) return '南北アメリカ';
-  return 'アジア・大洋州';
-}
-
-/**
- * 全159カ国（詳細121＋基礎収録38、人口100万人以上）の同一単位（%）指標マトリクスを動的生成
- * 国当て・項目当て・二重ブラインドのいずれにも使用可能
- */
 export function buildDynamicPercentCountryMatrix(
   countries: Record<string, CountryData>,
-  scope: 'non_s' | 'regional',
+  scope: 'standard' | 'regional',
 ): StatMatrixSpec | null {
   const pool = Object.values(countries).filter((c) => {
+    if (!EXAM_STANDARD_ISO3_SET.has(c.iso3) || c.isBasicEntry) return false;
     const st = c.stats;
     if (!st || st.population < 1_000_000) return false;
     if (st.femaleLaborPct == null || st.remittanceGdpPct == null) return false;
     if (getAge60PlusPct(c) == null) return false;
-    if (scope === 'non_s') return c.examSummary.rank !== 'S';
     return true;
   });
 
   if (pool.length < 6) return null;
 
   let chosenPool = pool;
-  let title = '中堅・途上国を含む社会・産業構造指標（%）';
+  let title = '主要国の社会・産業・年齢構造指標（%）';
 
   if (scope === 'regional') {
-    const byRegion = new Map<string, CountryData[]>();
-    for (const c of pool) {
-      const mr = normalizeMacroRegion(c.region);
-      const list = byRegion.get(mr) ?? [];
-      list.push(c);
-      byRegion.set(mr, list);
-    }
-    const candidates = Array.from(byRegion.entries()).filter(([, list]) => list.length >= 6);
-    if (candidates.length > 0) {
-      const [mr, list] = candidates[Math.floor(Math.random() * candidates.length)];
-      chosenPool = list;
-      title = `${mr}諸国の社会・労働・年齢指標比較（%）`;
+    const cohorts = [...REGIONAL_COUNTRY_COHORTS].sort(() => Math.random() - 0.5);
+    for (const coh of cohorts) {
+      const sub = pool.filter((c) => coh.iso3s.includes(c.iso3));
+      if (sub.length >= 4) {
+        chosenPool = sub;
+        title = `${coh.label}の社会・産業・年齢指標（%）`;
+        break;
+      }
     }
   }
 
@@ -1394,6 +1629,6 @@ export function buildDynamicPercentCountryMatrix(
       };
     }),
     examPoint:
-      '1次産業率（農村主体か都市サービス主体か）、60歳以上割合（高齢化の進行度）、女性労働力率（文化・宗教圏と産業形態の差）、個人送金GDP比（出稼ぎ送出依存度）の組合せから識別する。',
+      '第1次産業就業率（農村主体か都市サービス主体か）、60歳以上人口割合（高齢化段階）、女性労働力率、個人送金対GDP比の組み合わせから発展段階と地域特徴を論理的に特定する。',
   };
 }
