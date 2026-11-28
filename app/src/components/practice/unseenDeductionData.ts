@@ -391,98 +391,386 @@ export const UNSEEN_DEDUCTION_MATRICES: UnseenDeductionSpec[] = [
 export interface ChoroplethIndicatorSpec {
   id: string;
   label: string;
-  unit: string;
-  questionStem: string;
   explanation: string;
-  palette: [string, string, string, string];
-  breaks: [number, number, number];
-  legendLabels: [string, string, string, string];
   excludeIso3?: string[];
   extractValue: (c: CountryData) => number | null;
 }
 
 /**
- * ミニ世界地図 SVG で階級区分図（コロプレス図）を出題するための実データ直結指標
+ * 共通テスト実戦用の「単色濃淡・低位〜高位」4段階パレットおよび共通凡例（単位・数値非表示）
+ */
+export const CHOROPLETH_SHARED_PALETTE: [string, string, string, string] = [
+  '#e2e8f0',
+  '#93c5fd',
+  '#2563eb',
+  '#1e3a8a',
+];
+
+export const CHOROPLETH_SHARED_LEGEND: { color: string; label: string }[] = [
+  { color: '#e2e8f0', label: '低位' },
+  { color: '#93c5fd', label: '中低位' },
+  { color: '#2563eb', label: '中高位' },
+  { color: '#1e3a8a', label: '高位' },
+];
+
+/**
+ * 実データ値の四分位点（25%, 50%, 75%）を算出し、均等な「低位〜高位」階級色マップを返す
+ */
+export function buildQuartileFillMap(
+  countries: CountryData[],
+  spec: ChoroplethIndicatorSpec,
+): Record<string, string> {
+  const excl = new Set(spec.excludeIso3 ?? []);
+  const pairs: { iso3: string; val: number }[] = [];
+  for (const c of countries) {
+    if (excl.has(c.iso3)) continue;
+    const val = spec.extractValue(c);
+    if (val != null && Number.isFinite(val)) {
+      pairs.push({ iso3: c.iso3, val });
+    }
+  }
+  if (pairs.length < 8) return {};
+  const sorted = [...pairs].sort((a, b) => a.val - b.val);
+  const q1 = sorted[Math.floor(sorted.length * 0.25)].val;
+  const q2 = sorted[Math.floor(sorted.length * 0.5)].val;
+  const q3 = sorted[Math.floor(sorted.length * 0.75)].val;
+
+  const map: Record<string, string> = {};
+  for (const { iso3, val } of pairs) {
+    const tier = val <= q1 ? 0 : val <= q2 ? 1 : val <= q3 ? 2 : 3;
+    map[iso3] = CHOROPLETH_SHARED_PALETTE[tier];
+  }
+  return map;
+}
+
+/**
+ * ミニ世界地図 SVG で階級区分図（3枚比較／単図）を出題するための実データ直結9指標
  */
 export const CHOROPLETH_MAP_INDICATORS: ChoroplethIndicatorSpec[] = [
   {
     id: 'choro_gdp_per_capita',
-    label: '1人当たりGDP（米ドル）',
-    unit: 'ドル',
-    questionStem:
-      '図1は、世界の各国におけるある経済指標の階級区分を示したものである。この地図が表す指標として最も適当なものを、次の①〜④のうちから1つ選べ。',
+    label: '1人当たりGDP',
     explanation:
-      '北米・西欧・北欧・日本・オーストラリア・湾岸産油国が最も濃い階級となり、サハラ以南のアフリカや南アジアが薄い階級となる典型的な「1人当たりGDP（所得水準）」の分布である。',
-    palette: ['#e0f2fe', '#7dd3fc', '#0284c7', '#1e3a8a'],
-    breaks: [3000, 12000, 35000],
-    legendLabels: ['3,000未満', '3,000〜1.2万', '1.2万〜3.5万', '3.5万以上'],
+      '北米・西欧・北欧・日本・オーストラリア・湾岸産油国が「高位（濃青）」となり、サハラ以南のアフリカや南アジアが「低位（薄灰）」となる分布が「1人当たりGDP」である。',
     extractValue: (c) => c.stats?.gdpPerCapitaUsd ?? null,
   },
   {
     id: 'choro_fertility_rate',
     label: '合計特殊出生率',
-    unit: '人',
-    questionStem:
-      '図1は、世界の国別のある人口統計指標の階級区分図である。濃い色ほど値が高いことを示す。この指標として最も適当なものを選べ。',
     explanation:
-      'サハラ以南のアフリカ（特にニジェール・コンゴ民主共和国・ナイジェリア等）が突出して濃く、東アジア・欧州で極めて低くなる分布は「合計特殊出生率」である（1人当たりGDPとは概ね逆相関）。',
-    palette: ['#fef3c7', '#fbbf24', '#ea580c', '#991b1b'],
-    breaks: [1.7, 2.5, 4.0],
-    legendLabels: ['1.7未満', '1.7〜2.5', '2.5〜4.0', '4.0以上'],
+      'サハラ以南のアフリカが極めて濃い「高位」に集中し、東アジア・欧州・ロシアなどが最も薄い「低位」になる（1人当たりGDPと概ね逆相関）のが「合計特殊出生率」である。',
     extractValue: (c) => c.stats?.fertilityRate ?? null,
   },
   {
     id: 'choro_primary_sector',
-    label: '第1次産業就業者割合（%）',
-    unit: '%',
-    questionStem:
-      '図1は、各国の就業人口に占めるある指標の割合を階級区分した地図である。濃い色ほど割合が高い。この地図が示すものを選べ。',
+    label: '第1次産業就業者割合',
     explanation:
-      'サハラ以南アフリカや南アジア・東南アジアの一部で40%以上と濃くなり、北米・西欧・日本・豪州では1〜5%程度と最も薄い階級となる「第1次産業就業者割合」である。',
-    palette: ['#dcfce7', '#86efac', '#16a34a', '#14532d'],
-    breaks: [6, 20, 40],
-    legendLabels: ['6%未満', '6〜20%', '20〜40%', '40%以上'],
+      'サハラ以南アフリカ・南アジア・東南アジアの一部が高位となり、北米・西欧・日本・豪州など先進国が最も低い「低位」となるのが「第1次産業就業者割合」である。',
     extractValue: (c) => c.stats?.sectorShare?.primaryPct ?? null,
   },
   {
-    id: 'choro_urban_rate',
-    label: '都市人口率（%）',
-    unit: '%',
-    questionStem:
-      '図1は、世界の国・地域におけるある社会・居住統計の階級区分図である。南米（ブラジル・アルゼンチン等）も先進国と同様に高い値となる点に着目し、該当する指標を選べ。',
+    id: 'choro_secondary_sector',
+    label: '第2次産業就業者割合',
     explanation:
-      '欧米・日本・豪州に加えて南米諸国（ブラジル・アルゼンチン・チリ等）がいずれも75〜90%台の高い階級に入り、サハラ以南アフリカや南アジアが低くなる特徴は「都市人口率」である。',
-    palette: ['#f3e8ff', '#c084fc', '#9333ea', '#581c87'],
-    breaks: [45, 65, 80],
-    legendLabels: ['45%未満', '45〜65%', '65〜80%', '80%以上'],
+      '中国・ベトナム・東欧（チェコ・ポーランド等）・ドイツなど製造業・建設業の集積地域が「高位〜中高位」となり、脱工業化が進んだ一部サービス中心国や未工業化地域が低位寄りとなるのが「第2次産業就業者割合」である。',
+    extractValue: (c) => c.stats?.sectorShare?.secondaryPct ?? null,
+  },
+  {
+    id: 'choro_tertiary_sector',
+    label: '第3次産業就業者割合',
+    explanation:
+      '西欧・北欧・北米・日本・豪州のほか、都市化の進んだラテンアメリカ諸国や産油都市国家で「高位〜中高位」となるのが「第3次産業就業者割合」である。',
+    extractValue: (c) => c.stats?.sectorShare?.tertiaryPct ?? null,
+  },
+  {
+    id: 'choro_urban_rate',
+    label: '都市人口率',
+    explanation:
+      '欧米・日本・豪州に加えて南米諸国（ブラジル・アルゼンチン・チリ等）が高い階級に入り、サハラ以南アフリカや南アジアが低位となる特徴は「都市人口率」である。',
     excludeIso3: ['NPL'],
     extractValue: (c) => c.stats?.urbanPopRatePct ?? null,
   },
   {
     id: 'choro_precip',
-    label: '年平均降水量（mm）',
-    unit: 'mm',
-    questionStem:
-      '図1は、各国代表地域の年間に関するある自然環境指標を階級区分したものである。最も適当な指標を選べ。',
+    label: '年平均降水量',
     explanation:
-      '東南アジア島嶼部・アマゾン流域・中部アフリカなど赤道・モンスーン地域が最も濃く（2,000mm超）、北アフリカ〜西アジア・中央アジア・豪州内陸（砂漠気候B）が最も薄くなる（500mm未満）「年平均降水量」の分布である。',
-    palette: ['#fef9c3', '#a5f3fc', '#0ea5e9', '#0369a1'],
-    breaks: [500, 1000, 1800],
-    legendLabels: ['500未満', '500〜1000', '1000〜1800', '1800以上'],
+      '東南アジア・アマゾン流域・中部アフリカなど赤道〜モンスーン地域が「高位」となり、北アフリカ〜西アジア・中央アジア・豪州内陸の乾燥帯が「低位」となるのが「年平均降水量」である。',
     extractValue: (c) => c.thematic?.annualPrecipMm ?? null,
   },
   {
     id: 'choro_elevation',
-    label: '平均標高（m）',
-    unit: 'm',
-    questionStem:
-      '図1は、世界各国の土地・地形に関するある指標の階級区分図である。内陸の山岳・高原国家で極端に濃い点に注目し、最も適当な指標を選べ。',
+    label: '国の平均標高',
     explanation:
-      'ヒマラヤ〜チベットを抱えるネパール・中国西部やアンデス山脈のボリビア・ペルー、アルプスのスイス、アフリカ高地のエチオピアが高くなり、オランダ・バングラデシュ等の低地が最も低くなる「国の平均標高」である。',
-    palette: ['#f1f5f9', '#cbd5e1', '#d97706', '#78350f'],
-    breaks: [250, 600, 1200],
-    legendLabels: ['250m未満', '250〜600m', '600〜1200m', '1200m以上'],
+      'ヒマラヤ〜チベット（中国・ネパール）やアンデス山脈（ボリビア・ペルー）、スイス、エチオピア、イラン・トルコなどの山岳・高原国家が「高位」となり、低平国が低位となるのが「国の平均標高」である。',
     extractValue: (c) => c.thematic?.meanElevationM ?? null,
+  },
+  {
+    id: 'choro_pop_density',
+    label: '人口密度',
+    explanation:
+      'バングラデシュ・インド・日本・韓国・西欧（オランダ等）・都市国家が「高位」となる一方、ロシア・カナダ・オーストラリア・モンゴル・ブラジル等の広大な国土を持つ国が「低位」となるのが「人口密度」である。',
+    extractValue: (c) => c.stats?.populationDensity ?? null,
+  },
+];
+
+export interface SubnationalStatRow {
+  zoneId: string;
+  values: number[];
+}
+
+export interface SubnationalStatMatrix {
+  iso3: string;
+  title: string;
+  unitNote: string;
+  colLabels: string[];
+  rows: SubnationalStatRow[];
+  examPoint: string;
+}
+
+/**
+ * 世界12カ国の実在国内地域ゾーン（countries_v1.json subnational.zones[].id）に対応した
+ * 地域別統計データセット（地図上の記号 A〜C と 統計表 ア〜ウ を対応させる推論問題用）
+ */
+export const SUBNATIONAL_STAT_MATRICES: SubnationalStatMatrix[] = [
+  {
+    iso3: 'USA',
+    title: 'アメリカ合衆国の地域別経済・気候指標',
+    unitNote: '人口密度(人/km²)・1人GRDP指数・年降水量(mm)・1月平均気温(℃)',
+    colLabels: ['人口密度(人/km²)', '1人GRDP指数(全国=100)', '年降水量(mm)', '1月気温(℃)'],
+    rows: [
+      { zoneId: 'usa_northeast_rust', values: [145, 118, 1080, -3.0] },
+      { zoneId: 'usa_corn_wheat', values: [28, 94, 860, -5.5] },
+      { zoneId: 'usa_great_plains_west', values: [7, 92, 340, -2.0] },
+      { zoneId: 'usa_south_sunbelt', values: [48, 91, 1250, 9.5] },
+      { zoneId: 'usa_pacific_coast', values: [54, 124, 620, 10.5] },
+    ],
+    examPoint:
+      '北東部は人口密度突出・冬寒冷、西経100度以西は年降水量500mm未満・極低密度、南部サンベルトは温暖多雨、西海岸は温暖かつIT集積で1人GRDP指数最高、中央平原は冬最寒の穀倉地帯。',
+  },
+  {
+    iso3: 'CHN',
+    title: '中国の地域別経済・自然指標',
+    unitNote: '人口密度(人/km²)・1人GRDP指数・年降水量(mm)・第1次産業割合(%)',
+    colLabels: ['人口密度(人/km²)', '1人GRDP指数(全国=100)', '年降水量(mm)', '第1次産業(%)'],
+    rows: [
+      { zoneId: 'chn_northeast', values: [124, 76, 610, 26] },
+      { zoneId: 'chn_north_plain', values: [520, 112, 580, 16] },
+      { zoneId: 'chn_yangtze', values: [460, 125, 1280, 15] },
+      { zoneId: 'chn_pearl_south', values: [410, 121, 1720, 14] },
+      { zoneId: 'chn_west_frontier', values: [18, 72, 210, 34] },
+    ],
+    examPoint:
+      '西北内陸は極低人口密度（18人）かつ少雨（210mm）・1次割合高、華北は高密度（520人）かつ年降水800mm未満（畑作中心）、長江デルタと珠江デルタは高GRDPかつ1200mm超（さらに南の珠江は1700mm超）、東北は重工業再編で低GRDP帯。',
+  },
+  {
+    iso3: 'BRA',
+    title: 'ブラジルの地域別人口・所得・降水指標',
+    unitNote: '人口密度(人/km²)・年降水量(mm)・1人GRDP指数・穀物/大豆面積割合(%)',
+    colLabels: ['人口密度(人/km²)', '年降水量(mm)', '1人GRDP指数(全国=100)', '大豆・穀物割合(%)'],
+    rows: [
+      { zoneId: 'bra_amazon', values: [5, 2300, 68, 6] },
+      { zoneId: 'bra_nordeste', values: [37, 790, 52, 8] },
+      { zoneId: 'bra_cerrado', values: [10, 1480, 118, 48] },
+      { zoneId: 'bra_southeast_south', values: [77, 1380, 126, 38] },
+    ],
+    examPoint:
+      '北部アマゾンは密度5人かつ降水2300mm、北東部ノルデステは1人所得最低（52）かつ半乾燥セルタンを含み降水少なめ（790mm）、中西部カンポ・セラードは低密度（10人）ながら企業的農業で大農産シェア48%＆高GRDP、南東部・南部は密度・所得とも最高。',
+  },
+  {
+    iso3: 'IND',
+    title: 'インドの地域別降水・経済・IT指標',
+    unitNote: '年降水量(mm)・1人GRDP指数・ITサービス輸出指数・人口密度(人/km²)',
+    colLabels: ['年降水量(mm)', '1人GRDP指数(全国=100)', 'IT・先端指数', '人口密度(人/km²)'],
+    rows: [
+      { zoneId: 'ind_north_west_punjab', values: [640, 118, 45, 580] },
+      { zoneId: 'ind_east_ganges_assam', values: [1650, 58, 16, 980] },
+      { zoneId: 'ind_west_deccan', values: [880, 128, 76, 365] },
+      { zoneId: 'ind_south_it', values: [1180, 134, 96, 420] },
+    ],
+    examPoint:
+      '南インド（ベンガルール・チェンナイ）はIT輸出指数突出＆高1人GRDP、東部ガンジス下流は多雨（1650mm）かつ人口稠密（980人）だが所得は低位、北西部パンジャーブは相対的少雨（640mm）の小麦・首都圏域。',
+  },
+  {
+    iso3: 'ITA',
+    title: 'イタリアの地域別経済・気候指標（南北格差）',
+    unitNote: '1人GRDP指数・失業率(%)・年降水量(mm)・第3次産業割合(%)',
+    colLabels: ['1人GRDP指数(全国=100)', '失業率(%)', '年降水量(mm)', '第1次産業割合(%)'],
+    rows: [
+      { zoneId: 'ita_triangle', values: [128, 6.2, 980, 4] },
+      { zoneId: 'ita_third_italy', values: [114, 4.8, 780, 5] },
+      { zoneId: 'ita_mezzogiorno', values: [65, 16.0, 520, 9] },
+    ],
+    examPoint:
+      '北西部（工業三角地帯）は1人GRDP最高（128）でアルプス南麓の影響から降水量も最多。第三のイタリアは中小企業集積により失業率が最も低い（4.8%）。南部メッツォジョルノは1人GRDPが北部の約半分・高失業・高農業比率。',
+  },
+  {
+    iso3: 'DEU',
+    title: 'ドイツの地域別社会・経済指標',
+    unitNote: '人口密度(人/km²)・1人GRDP指数・失業率(%)',
+    colLabels: ['人口密度(人/km²)', '1人GRDP指数(全国=100)', '失業率(%)'],
+    rows: [
+      { zoneId: 'deu_north', values: [185, 98, 6.4] },
+      { zoneId: 'deu_west_ruhr', values: [525, 104, 7.1] },
+      { zoneId: 'deu_south_bavaria', values: [205, 118, 3.8] },
+      { zoneId: 'deu_east_former_gdr', values: [115, 76, 8.4] },
+    ],
+    examPoint:
+      '中西部ルール周辺は人口密度（525人）が突出。南部バイエルン等は先端・自動車産業で1人GRDP最高（118）＆最低失業率（3.8%）。旧東ドイツはなお人口密度最小（115人）・1人GRDP最低（76）・高失業（8.4%）。',
+  },
+  {
+    iso3: 'AUS',
+    title: 'オーストラリアの地域別人口・資源経済指標',
+    unitNote: '全国人口シェア(%)・1人GRDP指数・年降水量(mm)',
+    colLabels: ['全国人口シェア(%)', '1人GRDP指数(全国=100)', '年降水量(mm)'],
+    rows: [
+      { zoneId: 'aus_east_coast_qld_nsw', values: [78, 101, 1150] },
+      { zoneId: 'aus_interior_basin', values: [11, 88, 280] },
+      { zoneId: 'aus_west_pilbara_perth', values: [11, 135, 520] },
+    ],
+    examPoint:
+      'シドニー・メルボルン・ブリスベンを擁する東部・南東部に全人口の約8割が集中し降水も多い。西オーストラリアは人口シェア約1割ながらピルバラ鉄鉱石・LNG資源により1人当たりGRDPが135と突出。内陸は極少雨（280mm）。',
+  },
+  {
+    iso3: 'FRA',
+    title: 'フランスの地域別都市・気候指標',
+    unitNote: '人口密度(人/km²)・1人GRDP指数・年降水量(mm)・7月平均気温(℃)',
+    colLabels: ['人口密度(人/km²)', '1人GRDP指数(全国=100)', '年降水量(mm)', '7月平均気温(℃)'],
+    rows: [
+      { zoneId: 'fra_paris_basin', values: [320, 136, 640, 20] },
+      { zoneId: 'fra_west_brittany', values: [98, 86, 940, 18] },
+      { zoneId: 'fra_south_toulouse_med', values: [105, 91, 620, 24] },
+    ],
+    examPoint:
+      '一極集中型のパリ盆地は人口密度・1人GRDPが圧倒的最高。大西洋岸ブルターニュ周辺は偏西風を直接受ける西岸海洋性で多雨（940mm）・夏冷涼（18℃）。南部・地中海岸は夏高温（24℃）。',
+  },
+  {
+    iso3: 'RUS',
+    title: 'ロシアの地域別人口・気候・資源指標',
+    unitNote: '全国人口シェア(%)・気温年較差(℃)・原油/天然ガス生産シェア(%)',
+    colLabels: ['全国人口シェア(%)', '気温年較差(℃)', '原油・ガス生産シェア(%)'],
+    rows: [
+      { zoneId: 'rus_european_moscow_south', values: [72, 27, 22] },
+      { zoneId: 'rus_west_siberia_ural', values: [16, 38, 66] },
+      { zoneId: 'rus_east_siberia_fareast', values: [12, 46, 12] },
+    ],
+    examPoint:
+      '欧州ロシアに総人口の約7割が集中し年較差が最も小さい。ウラル〜西シベリア低地はロシア最大の原油・天然ガス産出コア（66%）。東シベリア・極東は内陸極寒の大陸性気候で気温年較差が45℃超に達する。',
+  },
+  {
+    iso3: 'NGA',
+    title: 'ナイジェリアの地域別自然・社会・経済指標',
+    unitNote: '年降水量(mm)・イスラム教徒割合(%)・1人GRDP指数',
+    colLabels: ['年降水量(mm)', 'イスラム教徒割合(%)', '1人GRDP指数(全国=100)'],
+    rows: [
+      { zoneId: 'nga_north_sahel', values: [580, 86, 54] },
+      { zoneId: 'nga_southwest_lagos', values: [1480, 45, 138] },
+      { zoneId: 'nga_niger_delta', values: [2450, 6, 112] },
+    ],
+    examPoint:
+      '北部サヘル帯は少雨（580mm）・イスラム教徒優位（86%）・低所得。南西部（ラゴス等）は商業金融により1人GRDP最高（138）でキリスト・イスラム混在。南東部ニジェールデルタは熱帯多雨（2450mm）でキリスト教主体・油田地域。',
+  },
+  {
+    iso3: 'MEX',
+    title: 'メキシコの地域別経済・人口・気候指標',
+    unitNote: '人口密度(人/km²)・年降水量(mm)・製造業割合(%)・1人GRDP指数',
+    colLabels: ['人口密度(人/km²)', '年降水量(mm)', '製造業割合(%)', '1人GRDP指数'],
+    rows: [
+      { zoneId: 'mex_north_maquiladora', values: [32, 350, 41, 118] },
+      { zoneId: 'mex_central_highland', values: [240, 780, 29, 112] },
+      { zoneId: 'mex_south_yucatan', values: [58, 1680, 14, 72] },
+    ],
+    examPoint:
+      '北部国境帯は乾燥（350mm）・低密度だがマキラドーラにより製造業割合が最高（41%）。中央高原は首都圏を含み人口密度突出（240人）。南部・ユカタンは多雨（1680mm）ながら工業化が遅れ低1人GRDP。',
+  },
+  {
+    iso3: 'ESP',
+    title: 'スペインの地域別気候・産業指標',
+    unitNote: '年降水量(mm)・7月平均気温(℃)・第2次産業割合(%)・1人GRDP指数',
+    colLabels: ['年降水量(mm)', '7月気温(℃)', '第2次産業(%)', '1人GRDP指数'],
+    rows: [
+      { zoneId: 'esp_north_basque_galicia', values: [1180, 20, 24, 104] },
+      { zoneId: 'esp_meseta_catalonia', values: [480, 25, 25, 112] },
+      { zoneId: 'esp_med_andalusia', values: [420, 28, 12, 78] },
+    ],
+    examPoint:
+      '北部大西洋岸（バスク等）は偏西風を受けスペイン国内で突出して多雨（1180mm）・夏冷涼。中央メセタ〜カタルーニャはマドリード・バルセロナを擁し1人GRDP最高。南部アンダルシア等は夏高温乾燥・農業観光中心で2次産業低い。',
+  },
+];
+
+/**
+ * 日本国内統計（japan_geography_v1.json 実数値準拠）の都道府県・貿易港・特産品クロス統計表。
+ * 純粋に都道府県名（ア〜ウ）・項目名（カ〜ク）を推測させる問題に使用する。
+ */
+export const JAPAN_PREF_STAT_MATRICES: StatMatrixSpec[] = [
+  {
+    id: 'jp_cross_pop_socio',
+    title: '主要都道府県の人口密度・昼夜間人口比率・高齢化率・外国人比率',
+    unit: '各指標単位',
+    sameUnitAcrossCols: false,
+    colLabels: ['人口密度(人/km²)', '昼夜間人口比率(%)', '高齢化率(%)', '外国人比率(%)'],
+    rows: [
+      { countryName: '東京都', values: [6430, 120.7, 22.7, 4.7] },
+      { countryName: '愛知県', values: [1450, 101.6, 25.3, 4.0] },
+      { countryName: '千葉県', values: [1215, 90.0, 28.0, 3.1] },
+      { countryName: '埼玉県', values: [1930, 89.2, 27.6, 3.0] },
+      { countryName: '大阪府', values: [4600, 104.2, 27.9, 3.2] },
+      { countryName: '秋田県', values: [81, 100.1, 39.0, 0.5] },
+      { countryName: '北海道', values: [65, 100.0, 32.8, 0.9] },
+      { countryName: '沖縄県', values: [642, 99.8, 23.1, 1.5] },
+    ],
+    examPoint:
+      '東京都は人口密度（6430人）・昼夜間比率（120.7%）・外国人比率とも突出し高齢化率最低。千葉・埼玉は東京への通勤ベッドタウンのため昼夜間人口比率が90%前後と低い。愛知県は自動車関連で外国人比率・昼夜間101%超。秋田県は高齢化率全国首位（39%）、北海道は人口密度全国最下位（65人）。',
+  },
+  {
+    id: 'jp_cross_econ_sector',
+    title: '都道府県別の第1次・第2次・第3次産業割合と1人あたり県民所得',
+    unit: '各指標単位',
+    sameUnitAcrossCols: false,
+    colLabels: ['第1次産業(%)', '第2次産業(%)', '第3次産業(%)', '1人県民所得(万円)'],
+    rows: [
+      { countryName: '東京都', values: [0.4, 14.5, 85.1, 576] },
+      { countryName: '沖縄県', values: [3.8, 14.8, 81.4, 216] },
+      { countryName: '愛知県', values: [1.9, 34.4, 63.7, 367] },
+      { countryName: '群馬県', values: [4.3, 32.1, 63.6, 315] },
+      { countryName: '北海道', values: [6.2, 17.5, 76.3, 278] },
+      { countryName: '青森県', values: [11.4, 22.1, 66.5, 254] },
+    ],
+    examPoint:
+      '東京と沖縄はともに第3次産業が8割超・第2次産業14%台と酷似しているが、1人あたり県民所得（東京576万円＝1位 vs 沖縄216万円＝低位）で明瞭に識別できる！愛知・群馬は第2次産業30%超の製造集積県、青森・北海道は第1次産業割合が高い。',
+  },
+  {
+    id: 'jp_cross_agri_ind_forest',
+    title: '都道府県の農業産出額・製造品出荷額・森林率',
+    unit: '各指標単位',
+    sameUnitAcrossCols: false,
+    colLabels: ['農業産出額(億円)', '製造品出荷額(兆円)', '森林率(%)'],
+    rows: [
+      { countryName: '北海道', values: [13538, 7.2, 71] },
+      { countryName: '愛知県', values: [2950, 51.4, 42] },
+      { countryName: '鹿児島県', values: [5192, 2.4, 64] },
+      { countryName: '静岡県', values: [2180, 18.2, 64] },
+      { countryName: '高知県', values: [1180, 0.6, 84] },
+      { countryName: '千葉県', values: [3992, 16.1, 31] },
+    ],
+    examPoint:
+      '農業産出額全国1位は北海道（1.3兆円超）、2位は南九州畜産の鹿児島県（5192億円）。製造品出荷額1位は愛知県（51兆円超）、京葉・首都近郊の千葉県は製造16兆円かつ近郊農業約4千億円、森林率全国1位は高知県（84%）。',
+  },
+  {
+    id: 'jp_cross_specialty_crops',
+    title: '日本の主要農産物・品目別 都道府県生産シェア(%)',
+    unit: '%',
+    sameUnitAcrossCols: true,
+    colLabels: ['りんご(%)', 'レタス(%)', 'キャベツ(%)', 'みかん(%)', '米(%)'],
+    rows: [
+      { countryName: '青森県', values: [63, 1, 1, 0, 5] },
+      { countryName: '長野県', values: [19, 36, 5, 0, 3] },
+      { countryName: '愛知県', values: [0, 2, 20, 2, 1] },
+      { countryName: '群馬県', values: [1, 4, 19, 0, 1] },
+      { countryName: '和歌山県', values: [0, 0, 0, 21, 1] },
+      { countryName: '新潟県', values: [0, 1, 1, 0, 9] },
+    ],
+    examPoint:
+      'りんご約6割＝青森県、冷涼高冷地を活かした抑制栽培レタス首位（36%）＝長野県、冬春キャベツ（20%）＝愛知県、嬬恋村の夏秋キャベツ（19%）＝群馬県、温州みかん首位＝和歌山県、米の単県首位＝新潟県。',
   },
 ];
 

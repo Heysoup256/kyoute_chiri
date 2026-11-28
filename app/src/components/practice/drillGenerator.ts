@@ -9,7 +9,6 @@ import type {
 import {
   buildStepByStepExplanation,
   makeClimateMapLinkedQuestion,
-  makeCuratedStatTwistQuestion,
   makeMapChoroplethQuestion,
   makeSubnationalAndJapanQuestion,
   makeUnseenInferQuestion,
@@ -55,28 +54,35 @@ export type {
 const ALL_WEIGHTED_GENRES: Exclude<DrillGenre, 'all'>[] = [
   'unseen_infer',
   'unseen_infer',
-  'unseen_infer',
-  'map_choropleth',
-  'map_choropleth',
-  'subnational_jpn',
-  'subnational_jpn',
-  'stat_country',
-  'stat_country',
-  'stat_double_blind',
-  'stat_double_blind',
-  'stat_item',
-  'scatter_plot',
-  'composition_bar',
-  'time_shift',
+  'map_regional',
+  'map_regional',
+  'stat_table',
+  'stat_table',
+  'graph_analysis',
+  'graph_analysis',
   'climate_coords',
-  'climate_coords',
-  'pyramid_match',
-  'photo_infer',
+  'visual_infer',
 ];
 
 const POINT_COLORS = ['#4f46e5', '#e11d48', '#059669', '#d97706'];
-const LINE_COLORS = ['#2563eb', '#e11d48', '#059669'];
+const LINE_COLORS = ['#2563eb', '#e11d48', '#059669', '#d97706'];
 const STACK_PALETTE = ['#2563eb', '#10b981', '#f59e0b', '#e11d48', '#8b5cf6', '#64748b'];
+
+function sortScatterPointsTopLeft<T extends { x: number; y: number }>(pts: T[]): T[] {
+  if (pts.length === 0) return pts;
+  const xs = pts.map((p) => p.x);
+  const ys = pts.map((p) => p.y);
+  const xMin = Math.min(...xs);
+  const xSpan = Math.max(1e-6, Math.max(...xs) - xMin);
+  const yMax = Math.max(...ys);
+  const ySpan = Math.max(1e-6, yMax - Math.min(...ys));
+  return [...pts].sort((a, b) => {
+    const scoreA = (a.x - xMin) / xSpan + (yMax - a.y) / ySpan;
+    const scoreB = (b.x - xMin) / xSpan + (yMax - b.y) / ySpan;
+    if (Math.abs(scoreA - scoreB) > 1e-9) return scoreA - scoreB;
+    return a.x !== b.x ? a.x - b.x : b.y - a.y;
+  });
+}
 
 function shuffle<T>(arr: T[]): T[] {
   const copy = [...arr];
@@ -514,7 +520,7 @@ function makeExamCohortProfileCountryQuestion(
 
         return {
           id: `drill_scn_${nonce}`,
-          genre: 'stat_country',
+          genre: 'stat_table',
           genreLabel: '統計数値 → 国を当てる',
           promptTitle: `${coh.label}：経済・人口・社会指標の判別`,
           promptBody: `次の表中の ア〜エ は、${candStr}のいずれかを示したものである。「${targetName}」に該当するものを、以下の ①〜④ のうちから一つ選びなさい。`,
@@ -544,7 +550,7 @@ function makeExamCohortProfileCountryQuestion(
 
       return {
         id: `drill_scn_${nonce}`,
-        genre: 'stat_country',
+        genre: 'stat_table',
         genreLabel: '統計数値 → 国を当てる',
         promptTitle: `${coh.label}：3カ国の社会・産業構造比較`,
         promptBody: `次の表中の ア〜ウ は、${sortJa(names3).join('、')}のいずれかである。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -618,7 +624,7 @@ function makeStatCountryQuestion(
 
       return {
         id: `drill_scn_${nonce}`,
-        genre: 'stat_country',
+        genre: 'stat_table',
         genreLabel: '統計数値 → 国を当てる',
         promptTitle: `${mat.title}に関する統計判別`,
         promptBody: `次の表中の ア〜エ は、${candStr}のいずれかにおける「${mat.title}」（単位：${mat.unit}）を示している。「${targetName}」に該当するものを、以下の ①〜④ のうちから一つ選びなさい。`,
@@ -644,7 +650,7 @@ function makeStatCountryQuestion(
 
     return {
       id: `drill_scn_${nonce}`,
-      genre: 'stat_country',
+      genre: 'stat_table',
       genreLabel: '統計数値 → 国を当てる',
       promptTitle: `${mat.title}の3カ国比較`,
       promptBody: `次の表中の ア〜ウ は、${sortJa(names).join('、')}のいずれかである。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -726,7 +732,7 @@ function makeStatDoubleBlindQuestion(
 
         return {
           id: `drill_db_${nonce}`,
-          genre: 'stat_double_blind',
+          genre: 'stat_table',
           genreLabel: '国名×項目 両方ブラインド',
           promptTitle: `${mat.title}（国名・項目ブラインド）`,
           promptBody: `次の表は、${countryCandStr} のいずれかの国（${rowCodes.join('・')}）における、${colCandStr} のいずれかの項目（${colCodes.join('・')}、単位：${mat.unit}）の数値を示したものである。「${targetCountry}」と「${targetCol}」の組合せとして正しいものを一つ選びなさい。`,
@@ -805,7 +811,7 @@ function makeStatItemQuestion(
 
       return {
         id: `drill_it_${nonce}`,
-        genre: 'stat_item',
+        genre: 'stat_table',
         genreLabel: '統計数値 → 項目を当てる',
         promptTitle: `${mat.title}の統計項目特定`,
         promptBody: `次の表中の カ〜ク は、${sortJa(selectedCols).join('、')}のいずれか（単位：${mat.unit}）を示している。項目名と カ〜ク との正しい組合せを一つ選びなさい。`,
@@ -864,7 +870,7 @@ function makeStatItemQuestion(
 
       return {
         id: `drill_it_${nonce}`,
-        genre: 'stat_item',
+        genre: 'stat_table',
         genreLabel: '統計数値 → 項目を当てる',
         promptTitle: '統計指標別の上位3カ国実績特定',
         promptBody: `次の表中の カ〜ク は、${sortJa(metricNames).join('、')}のいずれかの統計指標について上位3カ国と実績値を示したものである。項目名と カ〜ク との正しい組合せを一つ選びなさい。`,
@@ -1013,9 +1019,91 @@ function makeScatterPlotQuestion(
   countries: Record<string, CountryData>,
   nonce: number,
 ): GeneratedDrillQuestion | null {
-  const roll = Math.random();
+  const buildScatterOutput = (params: {
+    title: string;
+    xLabel: string;
+    yLabel: string;
+    targets: { iso3: string; nameJa: string; x: number; y: number; note?: string }[];
+    showDiagonal?: boolean;
+    diagonalLabel?: string;
+    explanationText: string;
+    detailFormat: (t: { nameJa: string; x: number; y: number; note?: string }, code: string) => string;
+  }): GeneratedDrillQuestion => {
+    // 必ず左上から右下の順で ア, イ, ウ (, エ) を割り当てる
+    const sorted = sortScatterPointsTopLeft(params.targets);
+    if (sorted.length === 3) {
+      const codes: [string, string, string] = ['ア', 'イ', 'ウ'];
+      const names = sorted.map((t) => t.nameJa) as [string, string, string];
+      const { choices, correctIndex } = makeAll6Permutations(codes, names);
+      return {
+        id: `drill_sc_${nonce}`,
+        genre: 'graph_analysis',
+        genreLabel: '散布図・2指標分析',
+        promptTitle: `散布図「${params.title}」からの3カ国特定`,
+        promptBody: `次の図中の ア〜ウ は、${sortJa(names).join('、')}のいずれかを示したものである${
+          params.showDiagonal && params.diagonalLabel ? `（破線は ${params.diagonalLabel} を表す）` : ''
+        }。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
+        scatterPlot: {
+          title: params.title,
+          xLabel: params.xLabel,
+          yLabel: params.yLabel,
+          backgroundPoints: [],
+          showDiagonal: params.showDiagonal,
+          diagonalLabel: params.diagonalLabel,
+          targetPoints: sorted.map((t, i) => ({
+            code: codes[i],
+            x: t.x,
+            y: t.y,
+            color: POINT_COLORS[i],
+          })),
+        },
+        choices,
+        correctIndex,
+        explanation: params.explanationText,
+        detailNotes: sorted.map((t, i) => params.detailFormat(t, codes[i])),
+        relatedIso3s: sorted.map((t) => t.iso3),
+      };
+    }
 
-  // 約40%: 同一単位マトリクスから y=x 等値線付きの共テ風散布図を生成（例：観光収入×支出、漁獲×養殖、貿易収支）
+    const codes = ['ア', 'イ', 'ウ', 'エ'];
+    const targetIdx = Math.floor(Math.random() * sorted.length);
+    const target = sorted[targetIdx];
+    const candStr = sortJa(sorted.map((t) => t.nameJa)).join('、');
+
+    return {
+      id: `drill_sc_${nonce}`,
+      genre: 'graph_analysis',
+      genreLabel: '散布図・2指標分析',
+      promptTitle: `散布図「${params.title}」からの国特定`,
+      promptBody: `次の図中の ア〜エ は、${candStr}のいずれかを示したものである${
+        params.showDiagonal && params.diagonalLabel ? `（破線は ${params.diagonalLabel} を表す）` : ''
+      }。「${target.nameJa}」に該当する点を一つ選びなさい。`,
+      scatterPlot: {
+        title: params.title,
+        xLabel: params.xLabel,
+        yLabel: params.yLabel,
+        backgroundPoints: [],
+        showDiagonal: params.showDiagonal,
+        diagonalLabel: params.diagonalLabel,
+        targetPoints: sorted.map((t, i) => ({
+          code: codes[i],
+          x: t.x,
+          y: t.y,
+          color: POINT_COLORS[i % POINT_COLORS.length],
+        })),
+      },
+      choices: codes.slice(0, sorted.length),
+      correctIndex: targetIdx,
+      explanation: `正解は ${codes[targetIdx]}（${target.nameJa}）。${params.explanationText}`,
+      detailNotes: sorted.map((t, i) => params.detailFormat(t, codes[i])),
+      relatedIso3s: sorted.map((t) => t.iso3),
+    };
+  };
+
+  const roll = Math.random();
+  const countPick = Math.random() < 0.55 ? 3 : 4;
+
+  // 約40%: 同一単位マトリクスから y=x 等値線付きの共テ風散布図を生成
   if (roll < 0.4) {
     const diagMats: StatMatrixSpec[] = [
       ...CURATED_STAT_MATRICES,
@@ -1035,47 +1123,24 @@ function makeScatterPlotQuestion(
           y: r.values[dc.yCol],
         }));
 
-      const targets = selectSpreadTargetsStandard(pts, 4);
+      const targets = selectSpreadTargetsStandard(pts, countPick);
       if (!targets) continue;
 
-      const codes = ['ア', 'イ', 'ウ', 'エ'];
-      const targetIdx = Math.floor(Math.random() * 4);
-      const target = targets[targetIdx];
-      const candStr = sortJa(targets.map((t) => t.nameJa)).join('、');
-
-      return {
-        id: `drill_sc_${nonce}`,
-        genre: 'scatter_plot',
-        genreLabel: '散布図・2指標分析',
-        promptTitle: `散布図「${mat.title}」からの国特定`,
-        promptBody: `次の図中の ア〜エ は、${candStr}のいずれかを示したものである（破線は ${dc.label} を表す）。「${target.nameJa}」に該当する点を一つ選びなさい。`,
-        scatterPlot: {
-          title: `${mat.title}（単位：${mat.unit}）`,
-          xLabel: `${mat.colLabels[dc.xCol]}（${mat.unit}）`,
-          yLabel: `${mat.colLabels[dc.yCol]}（${mat.unit}）`,
-          backgroundPoints: [],
-          showDiagonal: true,
-          diagonalLabel: dc.label,
-          targetPoints: targets.map((t, i) => ({
-            code: codes[i],
-            x: t.x,
-            y: t.y,
-            color: POINT_COLORS[i],
-          })),
-        },
-        choices: codes.map((c) => c),
-        correctIndex: targetIdx,
-        explanation: `正解は ${codes[targetIdx]}（${target.nameJa}）。${mat.examPoint}`,
-        detailNotes: targets.map(
-          (t, i) =>
-            `${codes[i]}＝${t.nameJa}（${mat.colLabels[dc.xCol]} ${formatNum(t.x)} / ${mat.colLabels[dc.yCol]} ${formatNum(t.y)} ${mat.unit}）`,
-        ),
-        relatedIso3s: targets.map((t) => t.iso3),
-      };
+      return buildScatterOutput({
+        title: `${mat.title}（単位：${mat.unit}）`,
+        xLabel: `${mat.colLabels[dc.xCol]}（${mat.unit}）`,
+        yLabel: `${mat.colLabels[dc.yCol]}（${mat.unit}）`,
+        targets,
+        showDiagonal: true,
+        diagonalLabel: dc.label,
+        explanationText: mat.examPoint,
+        detailFormat: (t, code) =>
+          `${code}＝${t.nameJa}（${mat.colLabels[dc.xCol]} ${formatNum(t.x)} / ${mat.colLabels[dc.yCol]} ${formatNum(t.y)} ${mat.unit}）`,
+      });
     }
   }
 
-  // 約30%: world_rankings_v1.json の厳選テーマ散布図（農業生産性4象限・GDP×CO2等、背景ノイズ点なし）
+  // 約30%: world_rankings_v1.json の厳選テーマ散布図
   const scatters = worldRankings?.scatters ?? [];
   if (scatters.length > 0 && roll < 0.72) {
     const sc = shuffle(scatters)[0];
@@ -1085,39 +1150,16 @@ function makeScatterPlotQuestion(
         ...pt,
         nameJa: cleanCountryName(pt.nameJa),
       }));
-    const targets = selectSpreadTargetsStandard(pts, 4);
+    const targets = selectSpreadTargetsStandard(pts, countPick);
     if (targets) {
-      const codes = ['ア', 'イ', 'ウ', 'エ'];
-      const targetIdx = Math.floor(Math.random() * 4);
-      const target = targets[targetIdx];
-
-      return {
-        id: `drill_sc_${nonce}`,
-        genre: 'scatter_plot',
-        genreLabel: '散布図・2指標分析',
-        promptTitle: `散布図「${sc.title.split('（')[0]}」の4カ国特定`,
-        promptBody: `次の図中の ア〜エ は、${sortJa(targets.map((t) => t.nameJa)).join('、')}のいずれかである。「${target.nameJa}」に該当する点を一つ選びなさい。`,
-        scatterPlot: {
-          title: sc.title.split('（')[0],
-          xLabel: sc.xLabel,
-          yLabel: sc.yLabel,
-          backgroundPoints: [],
-          targetPoints: targets.map((t, i) => ({
-            code: codes[i],
-            x: t.x,
-            y: t.y,
-            color: POINT_COLORS[i],
-          })),
-        },
-        choices: codes.map((c) => c),
-        correctIndex: targetIdx,
-        explanation: `正解は ${codes[targetIdx]}（${target.nameJa}）。${sc.examPoint}`,
-        detailNotes: targets.map(
-          (t, i) =>
-            `${codes[i]}＝${t.nameJa}（${t.x} / ${t.y}${t.note ? `：${t.note}` : ''}）`,
-        ),
-        relatedIso3s: targets.map((t) => t.iso3),
-      };
+      return buildScatterOutput({
+        title: sc.title.split('（')[0],
+        xLabel: sc.xLabel,
+        yLabel: sc.yLabel,
+        targets,
+        explanationText: sc.examPoint,
+        detailFormat: (t, code) => `${code}＝${t.nameJa}（${t.x} / ${t.y}${t.note ? `：${t.note}` : ''}）`,
+      });
     }
   }
 
@@ -1137,39 +1179,19 @@ function makeScatterPlotQuestion(
       });
     }
 
-    const targets = selectSpreadTargetsStandard(allPts, 4);
+    const targets = selectSpreadTargetsStandard(allPts, countPick);
     if (!targets) continue;
 
-    const codes = ['ア', 'イ', 'ウ', 'エ'];
-    const targetIdx = Math.floor(Math.random() * 4);
-    const target = targets[targetIdx];
-
-    return {
-      id: `drill_sc_${nonce}`,
-      genre: 'scatter_plot',
-      genreLabel: '散布図・2指標分析',
-      promptTitle: `散布図「${def.title}」の4カ国特定`,
-      promptBody: `次の図中の ア〜エ は、${sortJa(targets.map((t) => t.nameJa)).join('、')}のいずれかである。「${target.nameJa}」に該当する点を一つ選びなさい。`,
-      scatterPlot: {
-        title: def.title,
-        xLabel: def.xLabel,
-        yLabel: def.yLabel,
-        backgroundPoints: [],
-        showDiagonal: def.showDiagonal,
-        diagonalLabel: def.diagonalLabel,
-        targetPoints: targets.map((t, i) => ({
-          code: codes[i],
-          x: t.x,
-          y: t.y,
-          color: POINT_COLORS[i],
-        })),
-      },
-      choices: codes.map((c) => c),
-      correctIndex: targetIdx,
-      explanation: `正解は ${codes[targetIdx]}（${target.nameJa}）。横軸（${def.xLabel}）と縦軸（${def.yLabel}）の相対位置から発展段階・地域構造を比較して特定する。`,
-      detailNotes: targets.map((t, i) => `${codes[i]}：${t.note}`),
-      relatedIso3s: targets.map((t) => t.iso3),
-    };
+    return buildScatterOutput({
+      title: def.title,
+      xLabel: def.xLabel,
+      yLabel: def.yLabel,
+      targets,
+      showDiagonal: def.showDiagonal,
+      diagonalLabel: def.diagonalLabel,
+      explanationText: `横軸（${def.xLabel}）と縦軸（${def.yLabel}）の相対位置から発展段階・地域構造を比較して特定する。`,
+      detailFormat: (t, code) => `${code}：${t.note ?? t.nameJa}`,
+    });
   }
 
   return null;
@@ -1246,7 +1268,6 @@ function makeCompositionBarQuestion(
       }
       if (pickedIndices.length < 3) continue;
 
-      // 選択した3カ国すべてで1%未満となる死んだ凡例項目を自動除外
       const activeSeriesIdx = ch.series
         .map((_, si) => si)
         .filter((si) => pickedIndices.some((ci) => (ch.series[si].values[ci] ?? 0) >= 1));
@@ -1258,15 +1279,136 @@ function makeCompositionBarQuestion(
         string,
         string,
       ];
-      const { choices, correctIndex } = makeAll6Permutations(labels, chosenNames);
       const findIso = (n: string) =>
         Object.values(countries).find((c) => cleanCountryName(c.nameJa) === n)?.iso3;
-
       const cleanTitle = ch.title.replace(/^主要\d+カ国の/, '').split('（')[0].trim() || ch.title;
 
+      // 4項目以上ある場合：約65%で「注目2〜3項目のみ抜粋（isPartial: true または その他統合）」で共テ式に難度アップ
+      const variantRoll = Math.random();
+      if (activeSeriesIdx.length >= 4 && variantRoll < 0.65) {
+        // 最も行間の分散が大きい2〜3系列を抜粋
+        const sortedSeries = [...activeSeriesIdx].sort((a, b) => {
+          const va = pickedIndices.map((ci) => ch.series[a].values[ci] ?? 0);
+          const vb = pickedIndices.map((ci) => ch.series[b].values[ci] ?? 0);
+          const spanA = Math.max(...va) - Math.min(...va);
+          const spanB = Math.max(...vb) - Math.min(...vb);
+          return spanB - spanA;
+        });
+        const keepCount = activeSeriesIdx.length >= 5 ? 3 : 2;
+        const keptIdx = sortedSeries.slice(0, keepCount);
+        const hiddenIdx = sortedSeries.slice(keepCount);
+
+        const partialDist = Math.min(
+          ...pickedIndices.flatMap((ci1, i) =>
+            pickedIndices.slice(i + 1).map((ci2) =>
+              keptIdx.reduce(
+                (acc, si) => acc + Math.abs((ch.series[si].values[ci1] ?? 0) - (ch.series[si].values[ci2] ?? 0)),
+                0,
+              ),
+            ),
+          ),
+        );
+
+        if (partialDist >= 18) {
+          const usePartialOnly = Math.random() < 0.55;
+          const askLegendNames = !usePartialOnly && keptIdx.length === 2 && Math.random() < 0.35;
+
+          if (askLegendNames && keptIdx.length === 2) {
+            // 国名を開示して、抜粋された2項目の凡例「カ・キ」を当てる
+            const itemCodes: [string, string, string] = ['カ', 'キ', 'その他'];
+            const kNames = keptIdx.map((si) => ch.series[si].name);
+            const c0 = `カ：${kNames[0]} ／ キ：${kNames[1]}`;
+            const c1 = `カ：${kNames[1]} ／ キ：${kNames[0]}`;
+            const extraName = ch.series[hiddenIdx[0]]?.name ?? '農林水産品';
+            const c2 = `カ：${kNames[0]} ／ キ：${extraName}`;
+            const c3 = `カ：${extraName} ／ キ：${kNames[1]}`;
+            const choices = shuffle([c0, c1, c2, c3]);
+            if (new Set(choices).size === 4) {
+              return {
+                id: `drill_cb_${nonce}`,
+                genre: 'graph_analysis',
+                genreLabel: '構成比グラフ読取（抜粋項目当て）',
+                promptTitle: `${cleanTitle}の項目特定`,
+                promptBody: `次の帯グラフは、3カ国の「${cleanTitle}」から主要2項目（カ・キ）を抜粋して示したもの（残りは「その他」に統合）である。カ・キ に当てはまる項目の正しい組合せを一つ選びなさい。`,
+                stackedBars: {
+                  caption: `${cleanTitle}（一部項目抜粋・単位：${ch.unit}）`,
+                  unit: ch.unit,
+                  series: [
+                    { name: itemCodes[0], color: STACK_PALETTE[0] },
+                    { name: itemCodes[1], color: STACK_PALETTE[1] },
+                    { name: itemCodes[2], color: '#94a3b8' },
+                  ],
+                  rows: pickedIndices.map((ci, idx) => {
+                    const v0 = ch.series[keptIdx[0]].values[ci] ?? 0;
+                    const v1 = ch.series[keptIdx[1]].values[ci] ?? 0;
+                    const vRest = hiddenIdx.reduce((acc, si) => acc + (ch.series[si].values[ci] ?? 0), 0);
+                    return { label: chosenNames[idx], values: [v0, v1, Number(vRest.toFixed(1))] };
+                  }),
+                },
+                choices,
+                correctIndex: choices.indexOf(c0),
+                explanation: ch.examPoint ?? ch.note ?? `${cleanTitle}の品目別構成から判別する。`,
+                detailNotes: [
+                  `カ＝${kNames[0]} ／ キ＝${kNames[1]}`,
+                  ...pickedIndices.map(
+                    (ci, idx) =>
+                      `${chosenNames[idx]}：${kNames[0]}(${ch.series[keptIdx[0]].values[ci] ?? 0}%) / ${kNames[1]}(${ch.series[keptIdx[1]].values[ci] ?? 0}%)`,
+                  ),
+                ],
+                relatedIso3s: chosenNames.map(findIso).filter((id): id is string => Boolean(id)),
+              };
+            }
+          }
+
+          const { choices, correctIndex } = makeAll6Permutations(labels, chosenNames);
+          return {
+            id: `drill_cb_${nonce}`,
+            genre: 'graph_analysis',
+            genreLabel: '構成比グラフ読取（抜粋版）',
+            promptTitle: `${cleanTitle}の構成比比較（主要項目抜粋）`,
+            promptBody: `次の帯グラフ（ア〜ウ）は、${sortJa(chosenNames).join('、')}における「${cleanTitle}」について、${
+              usePartialOnly
+                ? `主要${keptIdx.length}項目のみを抜粋し、残りの項目を非表示として`
+                : `主要${keptIdx.length}項目と「その他」に整理して`
+            }示したものである。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
+            stackedBars: {
+              caption: `${cleanTitle}（主要${keptIdx.length}項目抜粋・単位：${ch.unit}）`,
+              unit: ch.unit,
+              isPartial: usePartialOnly,
+              series: [
+                ...keptIdx.map((si, pos) => ({
+                  name: ch.series[si].name,
+                  color: ch.series[si].color ?? STACK_PALETTE[pos % STACK_PALETTE.length],
+                })),
+                ...(usePartialOnly ? [] : [{ name: 'その他（残余合算）', color: '#94a3b8' }]),
+              ],
+              rows: pickedIndices.map((ci, idx) => {
+                const vals = keptIdx.map((si) => ch.series[si].values[ci] ?? 0);
+                if (!usePartialOnly) {
+                  const rest = hiddenIdx.reduce((acc, si) => acc + (ch.series[si].values[ci] ?? 0), 0);
+                  vals.push(Number(rest.toFixed(1)));
+                }
+                return { label: labels[idx], values: vals };
+              }),
+            },
+            choices,
+            correctIndex,
+            explanation: ch.examPoint ?? ch.note ?? `${cleanTitle}の特徴から3カ国を識別する。`,
+            detailNotes: pickedIndices.map((ci, idx) => {
+              const vals = activeSeriesIdx
+                .map((si) => `${ch.series[si].name}:${ch.series[si].values[ci] ?? 0}${ch.unit}`)
+                .join('・');
+              return `${labels[idx]}（${chosenNames[idx]}）：${vals}`;
+            }),
+            relatedIso3s: chosenNames.map(findIso).filter((id): id is string => Boolean(id)),
+          };
+        }
+      }
+
+      const { choices, correctIndex } = makeAll6Permutations(labels, chosenNames);
       return {
         id: `drill_cb_${nonce}`,
-        genre: 'composition_bar',
+        genre: 'graph_analysis',
         genreLabel: '構成比グラフ読取',
         promptTitle: `${cleanTitle}の構成比比較`,
         promptBody: `次の帯グラフ（ア〜ウ）は、${sortJa(chosenNames).join('、')}における「${cleanTitle}」の構成比を示している。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -1351,7 +1493,6 @@ function makeCompositionBarQuestion(
         { name: '仏教', color: '#8b5cf6' },
         { name: 'その他・無宗教等', color: '#94a3b8' },
       ];
-      // 3カ国すべてで1%未満となる宗教は凡例に表示しない
       const activeIdx = baseSeries
         .map((_, i) => i)
         .filter((i) => picked.some((p) => p.vec[i] >= 1));
@@ -1362,7 +1503,7 @@ function makeCompositionBarQuestion(
 
       return {
         id: `drill_cb_${nonce}`,
-        genre: 'composition_bar',
+        genre: 'graph_analysis',
         genreLabel: '構成比グラフ読取',
         promptTitle: '宗教別人口構成比の国名判別',
         promptBody: `次の帯グラフ（ア〜ウ）は、${sortJa(names).join('、')}の主な宗教別人口割合（%）を示している。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -1417,24 +1558,37 @@ function makeCompositionBarQuestion(
   const labels: [string, string, string] = ['ア', 'イ', 'ウ'];
   const names = pickedSec.map((c) => cleanCountryName(c.nameJa)) as [string, string, string];
   const { choices, correctIndex } = makeAll6Permutations(labels, names);
+  const hideTertiary = Math.random() < 0.45;
 
   return {
     id: `drill_cb_${nonce}`,
-    genre: 'composition_bar',
+    genre: 'graph_analysis',
     genreLabel: '構成比グラフ読取',
-    promptTitle: '産業部門別就業人口構成比の判別',
-    promptBody: `次の帯グラフ（ア〜ウ）は、${sortJa(names).join('、')}の産業部門別就業人口割合（%）を示している。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
+    promptTitle: hideTertiary
+      ? '産業別就業人口構成比の判別（第1次・第2次抜粋）'
+      : '産業部門別就業人口構成比の判別',
+    promptBody: `次の帯グラフ（ア〜ウ）は、${sortJa(names).join('、')}の産業部門別就業人口割合（%）を示している${
+      hideTertiary ? '（第3次産業は非表示）' : ''
+    }。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
     stackedBars: {
-      caption: '第1次・第2次・第3次産業別 就業人口構成比（%）',
+      caption: hideTertiary
+        ? '第1次・第2次産業 就業人口割合（第3次産業非表示・%）'
+        : '第1次・第2次・第3次産業別 就業人口構成比（%）',
       unit: '%',
+      isPartial: hideTertiary,
       series: [
         { name: '第1次産業（農林水産）', color: '#16a34a' },
         { name: '第2次産業（鉱工業・建設）', color: '#f59e0b' },
-        { name: '第3次産業（商業・サービス等）', color: '#2563eb' },
+        ...(hideTertiary ? [] : [{ name: '第3次産業（商業・サービス等）', color: '#2563eb' }]),
       ],
       rows: pickedSec.map((c, i) => {
         const sh = c.stats!.sectorShare;
-        return { label: labels[i], values: [sh.primaryPct, sh.secondaryPct, sh.tertiaryPct] };
+        return {
+          label: labels[i],
+          values: hideTertiary
+            ? [sh.primaryPct, sh.secondaryPct]
+            : [sh.primaryPct, sh.secondaryPct, sh.tertiaryPct],
+        };
       }),
     },
     choices,
@@ -1469,57 +1623,124 @@ function makeTimeShiftQuestion(
 
   const roll = Math.random();
 
-  // 約45%: 複数年推移折れ線グラフ（サ・シ・ス 6択）
-  if (lineCharts.length > 0 && roll < 0.45) {
+  // 約48%: 複数年推移折れ線グラフ（直近値が大きい順に上から 1, 2, 3 (, 4) を付与）
+  if (lineCharts.length > 0 && roll < 0.48) {
     for (const ch of shuffle(lineCharts)) {
       const isRegionalChart = ch.series.some((s) => s.name === '世界平均' || s.name === '北アメリカ');
       const eligibleSeries = isRegionalChart
         ? ch.series.filter((s) => s.name !== '世界平均')
         : ch.series.filter((s) => s.name !== 'EU27合計' && s.name !== '世界平均');
 
-      if (eligibleSeries.length < 3) continue;
+      const wantCount = eligibleSeries.length >= 4 && Math.random() < 0.5 ? 4 : 3;
+      if (eligibleSeries.length < wantCount) continue;
+
       const scale = Math.max(1e-6, ...eligibleSeries.flatMap((s) => s.values.map(Math.abs)));
       const picked: typeof eligibleSeries = [];
       for (const s of shuffle(eligibleSeries)) {
         const distinct = picked.every((p) => {
           const maxD = Math.max(...s.values.map((v, i) => Math.abs(v - p.values[i]) / scale));
-          return maxD >= 0.16;
+          return maxD >= 0.14;
         });
         if (distinct) {
           picked.push(s);
-          if (picked.length === 3) break;
+          if (picked.length === wantCount) break;
         }
       }
-      if (picked.length < 3) continue;
+      if (picked.length < wantCount) continue;
 
-      const codes: [string, string, string] = ['サ', 'シ', 'ス'];
-      const names = picked.map((s) => cleanCountryName(s.name)) as [string, string, string];
-      const { choices, correctIndex } = makeAll6Permutations(codes, names);
+      // 一番直近（最終年次）の値が大きいものから順に 1, 2, 3, 4 を割り当てる
+      const sortedPicked = [...picked].sort((a, b) => {
+        const lastA = a.values[a.values.length - 1] ?? 0;
+        const lastB = b.values[b.values.length - 1] ?? 0;
+        if (Math.abs(lastB - lastA) > 1e-6) return lastB - lastA;
+        const prevA = a.values[Math.max(0, a.values.length - 2)] ?? 0;
+        const prevB = b.values[Math.max(0, b.values.length - 2)] ?? 0;
+        return prevB - prevA;
+      });
+
+      const names = sortedPicked.map((s) => cleanCountryName(s.name));
       const cleanTitle = ch.title.replace(/^主要\d+カ国の?\s*/, '').split('（')[0].trim();
+
+      if (sortedPicked.length === 3) {
+        const codes: [string, string, string] = ['1', '2', '3'];
+        const names3 = names as [string, string, string];
+        const { choices, correctIndex } = makeAll6Permutations(codes, names3);
+
+        return {
+          id: `drill_ts_${nonce}`,
+          genre: 'graph_analysis',
+          genreLabel: '時系列・推移グラフ読取',
+          promptTitle: `推移グラフ「${cleanTitle}」の判別`,
+          promptBody: `次のグラフ中の 1〜3 は、${sortJa(names3).join('、')}のいずれかの${
+            isRegionalChart ? '地域' : '国'
+          }における「${cleanTitle}」（単位：${ch.unit}）の推移を示している。名称と 1〜3 との正しい組合せを一つ選びなさい。`,
+          lineTrend: {
+            title: cleanTitle,
+            unit: ch.unit,
+            xLabels: ch.categories!,
+            series: sortedPicked.map((s, i) => ({
+              code: codes[i],
+              values: s.values,
+              color: LINE_COLORS[i],
+            })),
+          },
+          choices,
+          correctIndex,
+          explanation: ch.examPoint ?? ch.note ?? `${cleanTitle}の変化傾向や逆転時期を手がかりに判別する。`,
+          detailNotes: sortedPicked.map((s, i) => {
+            const first = s.values[0];
+            const last = s.values[s.values.length - 1];
+            return `${codes[i]}＝${names3[i]}：${ch.categories![0]}(${first}) → ${ch.categories![ch.categories!.length - 1]}(${last}${ch.unit})`;
+          }),
+          relatedIso3s: names3
+            .map((n) => nameToIso.get(n))
+            .filter((id): id is string => Boolean(id)),
+        };
+      }
+
+      // 4本時：2カ国の番号組合せ4択
+      const codes4 = ['1', '2', '3', '4'];
+      const pairIdx = shuffle([0, 1, 2, 3]).slice(0, 2);
+      const iA = pairIdx[0];
+      const iB = pairIdx[1];
+      const nameA = names[iA];
+      const nameB = names[iB];
+      const ansText = `${nameA}：${codes4[iA]}　／　${nameB}：${codes4[iB]}`;
+      const altPairs = shuffle([
+        `${nameA}：${codes4[iB]}　／　${nameB}：${codes4[iA]}`,
+        `${nameA}：${codes4[iA]}　／　${nameB}：${codes4[(iB + 1) % 4 === iA ? (iB + 2) % 4 : (iB + 1) % 4]}`,
+        `${nameA}：${codes4[(iA + 1) % 4 === iB ? (iA + 2) % 4 : (iA + 1) % 4]}　／　${nameB}：${codes4[iB]}`,
+        `${nameA}：${codes4[(iA + 2) % 4]}　／　${nameB}：${codes4[(iB + 2) % 4]}`,
+      ]);
+      const uniqueChoices = Array.from(new Set([ansText, ...altPairs])).slice(0, 4);
+      if (uniqueChoices.length < 4) continue;
+      const choices = shuffle(uniqueChoices);
 
       return {
         id: `drill_ts_${nonce}`,
-        genre: 'time_shift',
+        genre: 'graph_analysis',
         genreLabel: '時系列・推移グラフ読取',
-        promptTitle: `推移グラフ「${cleanTitle}」の判別`,
-        promptBody: `次のグラフ中の サ〜ス は、${sortJa(names).join('、')}のいずれかの${isRegionalChart ? '地域' : '国'}における「${cleanTitle}」（単位：${ch.unit}）の推移を示している。名称と サ〜ス との正しい組合せを一つ選びなさい。`,
+        promptTitle: `推移グラフ「${cleanTitle}」（4地域・4カ国）判別`,
+        promptBody: `次のグラフ中の 1〜4 は、${sortJa(names).join('、')}のいずれかの${
+          isRegionalChart ? '地域' : '国'
+        }における「${cleanTitle}」（単位：${ch.unit}）の推移を示している。「${nameA}」と「${nameB}」に該当する番号の組合せを一つ選びなさい。`,
         lineTrend: {
           title: cleanTitle,
           unit: ch.unit,
           xLabels: ch.categories!,
-          series: picked.map((s, i) => ({
-            code: codes[i],
+          series: sortedPicked.map((s, i) => ({
+            code: codes4[i],
             values: s.values,
             color: LINE_COLORS[i],
           })),
         },
         choices,
-        correctIndex,
+        correctIndex: choices.indexOf(ansText),
         explanation: ch.examPoint ?? ch.note ?? `${cleanTitle}の変化傾向や逆転時期を手がかりに判別する。`,
-        detailNotes: picked.map((s, i) => {
+        detailNotes: sortedPicked.map((s, i) => {
           const first = s.values[0];
           const last = s.values[s.values.length - 1];
-          return `${codes[i]}＝${names[i]}：${ch.categories![0]}(${first}) → ${ch.categories![ch.categories!.length - 1]}(${last}${ch.unit})`;
+          return `${codes4[i]}＝${names[i]}：${ch.categories![0]}(${first}) → ${ch.categories![ch.categories!.length - 1]}(${last}${ch.unit})`;
         }),
         relatedIso3s: names
           .map((n) => nameToIso.get(n))
@@ -1529,7 +1750,7 @@ function makeTimeShiftQuestion(
   }
 
   // 約22%: 3時点数値比較表（3カ国ア〜ウの長期変化を6択判別）
-  if (lineCharts.length > 0 && roll >= 0.45 && roll < 0.67) {
+  if (lineCharts.length > 0 && roll >= 0.48 && roll < 0.7) {
     for (const ch of shuffle(lineCharts)) {
       const eligibleSeries = ch.series.filter(
         (s) => s.name !== 'EU27合計' && s.name !== '世界平均',
@@ -1557,7 +1778,7 @@ function makeTimeShiftQuestion(
 
       return {
         id: `drill_ts_${nonce}`,
-        genre: 'time_shift',
+        genre: 'graph_analysis',
         genreLabel: '時系列・推移グラフ読取',
         promptTitle: `3時点変化「${cleanTitle}」の判別`,
         promptBody: `次の表中の ア〜ウ は、${sortJa(names).join('、')}のいずれかにおける「${cleanTitle}」（単位：${ch.unit}）の3時点の数値を示したものである。名称と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -1583,7 +1804,7 @@ function makeTimeShiftQuestion(
     }
   }
 
-  // 約33%: 構造変化スライダー（背景解説なし・数値のみで国名または指標名を特定）
+  // 約30%: 構造変化スライダー（数値のみで国名または指標名を特定）
   const eligibleSliders = sliders.filter(
     (s) => MANUAL_SLIDER_QUIZ_SPECS[s.id] && s.frames.length >= 2 && s.frames[0].items.length >= 3,
   );
@@ -1609,7 +1830,7 @@ function makeTimeShiftQuestion(
 
     return {
       id: `drill_ts_${nonce}`,
-      genre: 'time_shift',
+      genre: 'graph_analysis',
       genreLabel: '時系列・推移グラフ読取',
       promptTitle:
         spec.mode === 'country'
@@ -1775,7 +1996,7 @@ function makePyramidQuestion(
 
     return {
       id: `drill_pyr_${nonce}`,
-      genre: 'pyramid_match',
+      genre: 'visual_infer',
       genreLabel: '人口ピラミッド判別',
       promptTitle: '3カ国の人口ピラミッド比較（共通横軸スケール）',
       promptBody: `次の3つの人口ピラミッド（ア〜ウ、横軸スケール共通）は、${sortJa(names).join('、')}のいずれかを示している。国名と ア〜ウ との正しい組合せを一つ選びなさい。`,
@@ -1802,7 +2023,7 @@ function makePyramidQuestion(
 
   return {
     id: `drill_pyr_${nonce}`,
-    genre: 'pyramid_match',
+    genre: 'visual_infer',
     genreLabel: '人口ピラミッド判別',
     promptTitle: '人口ピラミッドからの国名特定',
     promptBody: '次の人口ピラミッドに当てはまる国を、以下の ①〜④ のうちから一つ選びなさい。',
@@ -1819,7 +2040,7 @@ function makePyramidQuestion(
 }
 
 // ============================================================================
-// 9. 景観写真・地域推論（問題側ヒント完全ゼロ＋共テ形式の因果文選択も出題）
+// 9. 景観写真・地域推論（問題側ヒントなし・説明文選択を廃止し純粋に地域/景観特定のみ出題）
 // ============================================================================
 
 function makePhotoInferQuestion(
@@ -1832,93 +2053,63 @@ function makePhotoInferQuestion(
   const sameCat = shuffle(
     entries.filter((e) => e.id !== target.id && e.category === target.category),
   );
-  const picked = [target, ...sameCat].slice(0, 4);
+  const diffCat = shuffle(entries.filter((e) => e.id !== target.id && e.category !== target.category));
+  const picked = [target, ...sameCat, ...diffCat].slice(0, 4);
   if (picked.length < 4) return null;
 
-  // 約55%: 共通テスト本試スタイル（景観に対応する自然・生活の因果説明文を4択から選ぶ）
-  if (Math.random() < 0.55) {
-    const answerText = target.inferenceSummary;
-    const choices = shuffle(picked.map((e) => e.inferenceSummary));
-    if (new Set(choices).size === 4) {
-      return {
-        id: `drill_ph_${nonce}`,
-        genre: 'photo_infer',
-        genreLabel: '景観写真・地域推論',
-        promptTitle: '景観写真からの自然環境・人間生活推論',
-        promptBody:
-          '下の写真に見られる景観や地域の特徴について述べた文として最も適当なものを、以下の ①〜④ のうちから一つ選びなさい。',
-        photoUrl: target.photoUrl,
-        choices,
-        correctIndex: choices.indexOf(answerText),
-        explanation: `正解は「${target.title}（${target.locationLabel}、気候 ${target.koppenCodes.join('/')}）」。`,
-        detailNotes: [
-          `着眼点：${target.visualClues.join('／')}`,
-          `試験での整理：${target.examPoint}`,
-        ],
-        relatedIso3s: target.relatedIso3s,
-      };
-    }
-  }
-
-  // 約45%: 簡潔な景観・地域名4択（二重括弧を整理）
   const formatChoice = (e: PhotoEncyclopediaEntry) =>
     `${e.title}（${cleanCountryName(e.locationLabel)}）`;
   const answer = formatChoice(target);
   const choices = shuffle(picked.map(formatChoice));
+  if (new Set(choices).size < 4) return null;
 
   return {
     id: `drill_ph_${nonce}`,
-    genre: 'photo_infer',
+    genre: 'visual_infer',
     genreLabel: '景観写真・地域推論',
     promptTitle: '景観写真からの地域・土地利用推論',
-    promptBody: '下の写真に見られる景観・土地利用・建築様式に該当するものを一つ選びなさい。',
+    promptBody: '下の写真に見られる景観・土地利用・建築様式に該当する地域を一つ選びなさい。',
     photoUrl: target.photoUrl,
     choices,
     correctIndex: choices.indexOf(answer),
     explanation: `正解は「${answer}」（代表気候 ${target.koppenCodes.join('/')}）。因果：${target.inferenceSummary}`,
     detailNotes: [
       `着眼点：${target.visualClues.join('／')}`,
-      `試験での見分け方：${target.examPoint}`,
+      `見分けのポイント：${target.examPoint}`,
     ],
     relatedIso3s: target.relatedIso3s,
   };
 }
 
 const DOMAIN_BY_GENRE: Record<Exclude<DrillGenre, 'all'>, string> = {
+  stat_table: '統計・経済貿易',
   unseen_infer: '初見統計推論',
-  map_choropleth: '地図統計読取',
-  subnational_jpn: '地誌・国内統計',
-  stat_country: '統計・経済貿易',
-  stat_double_blind: '統計・経済貿易',
-  stat_item: '農産・工業生産',
-  scatter_plot: '経済・人口指標',
-  composition_bar: '構成比・貿易',
-  time_shift: '時系列変化',
+  graph_analysis: 'グラフ・推移分析',
+  map_regional: '地図統計・国内地誌',
   climate_coords: '自然・気候',
-  pyramid_match: '人口構造',
-  photo_infer: '景観・地誌',
+  visual_infer: '人口・景観推論',
 };
 
 const CATEGORY_TO_GENRES: Record<string, Exclude<DrillGenre, 'all'>[]> = {
-  climate: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
-  nature_climate: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
-  climate_soil_env: ['climate_coords', 'map_choropleth', 'unseen_infer', 'photo_infer'],
-  map_gis: ['map_choropleth', 'climate_coords', 'subnational_jpn'],
-  landform_disaster: ['unseen_infer', 'photo_infer', 'map_choropleth', 'subnational_jpn'],
-  agriculture: ['stat_item', 'unseen_infer', 'stat_double_blind', 'subnational_jpn'],
-  agriculture_primary: ['stat_item', 'unseen_infer', 'stat_double_blind', 'subnational_jpn'],
-  resource: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
-  industry: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
-  industry_economy: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift', 'stat_item'],
-  resource_industry: ['unseen_infer', 'composition_bar', 'stat_country', 'time_shift'],
-  society: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
-  urban_population: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
-  population_urban: ['pyramid_match', 'scatter_plot', 'unseen_infer', 'map_choropleth'],
-  religion_culture: ['unseen_infer', 'subnational_jpn', 'photo_infer', 'map_choropleth'],
-  culture_regional: ['unseen_infer', 'subnational_jpn', 'photo_infer', 'map_choropleth'],
-  subnational: ['subnational_jpn'],
-  japan: ['subnational_jpn'],
-  map_disaster: ['map_choropleth', 'unseen_infer', 'climate_coords'],
+  climate: ['climate_coords', 'map_regional', 'unseen_infer', 'visual_infer'],
+  nature_climate: ['climate_coords', 'map_regional', 'unseen_infer', 'visual_infer'],
+  climate_soil_env: ['climate_coords', 'map_regional', 'unseen_infer', 'visual_infer'],
+  map_gis: ['map_regional', 'climate_coords'],
+  landform_disaster: ['unseen_infer', 'visual_infer', 'map_regional'],
+  agriculture: ['stat_table', 'unseen_infer', 'map_regional'],
+  agriculture_primary: ['stat_table', 'unseen_infer', 'map_regional'],
+  resource: ['unseen_infer', 'graph_analysis', 'stat_table'],
+  industry: ['unseen_infer', 'graph_analysis', 'stat_table', 'map_regional'],
+  industry_economy: ['unseen_infer', 'graph_analysis', 'stat_table', 'map_regional'],
+  resource_industry: ['unseen_infer', 'graph_analysis', 'stat_table'],
+  society: ['visual_infer', 'graph_analysis', 'unseen_infer', 'map_regional'],
+  urban_population: ['visual_infer', 'graph_analysis', 'unseen_infer', 'map_regional'],
+  population_urban: ['visual_infer', 'graph_analysis', 'unseen_infer', 'map_regional'],
+  religion_culture: ['unseen_infer', 'graph_analysis', 'map_regional', 'visual_infer'],
+  culture_regional: ['unseen_infer', 'graph_analysis', 'map_regional', 'visual_infer'],
+  subnational: ['map_regional'],
+  japan: ['map_regional'],
+  map_disaster: ['map_regional', 'unseen_infer', 'climate_coords'],
 };
 
 function finalizeDrillQuestion(q: GeneratedDrillQuestion): GeneratedDrillQuestion {
@@ -1950,44 +2141,63 @@ export function generateDrillQuestion(
     let raw: GeneratedDrillQuestion | null = null;
     if (g === 'unseen_infer') {
       raw = makeUnseenInferQuestion(seed, focusIso3);
-    } else if (g === 'map_choropleth') {
-      raw = makeMapChoroplethQuestion(params.countriesData, params.worldRankings, seed, focusIso3);
-    } else if (g === 'subnational_jpn') {
-      raw = makeSubnationalAndJapanQuestion(params.countriesData, params.japanData, seed, focusIso3);
-    } else if (g === 'stat_country') {
-      if (Math.random() < 0.34) {
-        raw = makeCuratedStatTwistQuestion(params.countriesData, seed, focusIso3);
+    } else if (g === 'map_regional') {
+      if (focusIso3 === 'JPN') {
+        raw = makeSubnationalAndJapanQuestion(params.countriesData, params.japanData, seed, focusIso3);
+      } else if (Math.random() < 0.48) {
+        raw = makeMapChoroplethQuestion(params.countriesData, seed, focusIso3);
+      }
+      if (!raw) {
+        raw = makeSubnationalAndJapanQuestion(params.countriesData, params.japanData, seed, focusIso3);
+      }
+      if (!raw) {
+        raw = makeMapChoroplethQuestion(params.countriesData, seed, focusIso3);
+      }
+    } else if (g === 'stat_table') {
+      const r = Math.random();
+      if (r < 0.38) {
+        raw = makeStatCountryQuestion(params.worldRankings, params.countriesData, seed);
+      } else if (r < 0.72) {
+        raw = makeStatDoubleBlindQuestion(params.worldRankings, params.countriesData, seed);
+      } else {
+        raw = makeStatItemQuestion(params.worldRankings, params.countriesData, seed);
       }
       if (!raw) {
         raw = makeStatCountryQuestion(params.worldRankings, params.countriesData, seed);
       }
-    } else if (g === 'stat_double_blind') {
-      raw = makeStatDoubleBlindQuestion(params.worldRankings, params.countriesData, seed);
-    } else if (g === 'stat_item') {
-      raw = makeStatItemQuestion(params.worldRankings, params.countriesData, seed);
-    } else if (g === 'scatter_plot') {
-      raw = makeScatterPlotQuestion(params.worldRankings, params.countriesData, seed);
-    } else if (g === 'composition_bar') {
-      raw = makeCompositionBarQuestion(params.worldRankings, params.countriesData, seed);
-    } else if (g === 'time_shift') {
-      raw = makeTimeShiftQuestion(
-        params.worldRankings,
-        params.countriesData,
-        params.timeSliders,
-        seed,
-      );
+    } else if (g === 'graph_analysis') {
+      const builders = shuffle([
+        () => makeScatterPlotQuestion(params.worldRankings, params.countriesData, seed),
+        () => makeCompositionBarQuestion(params.worldRankings, params.countriesData, seed),
+        () =>
+          makeTimeShiftQuestion(
+            params.worldRankings,
+            params.countriesData,
+            params.timeSliders,
+            seed,
+          ),
+      ]);
+      for (const b of builders) {
+        raw = b();
+        if (raw) break;
+      }
     } else if (g === 'climate_coords') {
       raw = makeClimateCoordsQuestion(params.countriesData, seed, focusIso3);
-    } else if (g === 'pyramid_match') {
-      raw = makePyramidQuestion(params.countriesData, seed);
     } else {
-      raw = makePhotoInferQuestion(params.photoEncyclopedia, seed);
+      raw =
+        Math.random() < 0.58
+          ? makePyramidQuestion(params.countriesData, seed)
+          : makePhotoInferQuestion(params.photoEncyclopedia, seed);
+      if (!raw) {
+        raw =
+          makePyramidQuestion(params.countriesData, seed) ??
+          makePhotoInferQuestion(params.photoEncyclopedia, seed);
+      }
     }
 
     return raw ? finalizeDrillQuestion(raw) : null;
   };
 
-  // focusFilter がある場合の優先ジャンル列
   const focusGenres =
     params.focusFilter?.category && CATEGORY_TO_GENRES[params.focusFilter.category]
       ? CATEGORY_TO_GENRES[params.focusFilter.category]
@@ -1996,7 +2206,7 @@ export function generateDrillQuestion(
   let fallbackBest: GeneratedDrillQuestion | null = null;
 
   if (genre !== 'all') {
-    for (let attempt = 0; attempt < 24; attempt++) {
+    for (let attempt = 0; attempt < 28; attempt++) {
       const q = tryGenre(genre, nonce * 31 + attempt);
       if (!q) continue;
       const matchesIso = !focusIso3 || q.relatedIso3s.includes(focusIso3);
@@ -2008,7 +2218,6 @@ export function generateDrillQuestion(
     if (fallbackBest) return fallbackBest;
   }
 
-  // 'all' または対象ジャンルで再探索
   const baseGenres = focusGenres
     ? [...focusGenres, ...ALL_WEIGHTED_GENRES]
     : ALL_WEIGHTED_GENRES;
@@ -2030,30 +2239,28 @@ export function generateDrillQuestion(
 
 /**
  * 共通テスト本番形式（全10問バランス構成）の「実戦ミニ模試」セットを生成する。
- * 初見統計推論・地図統計・国内/日本地理・グラフ読取・気候・人口・景観を網羅。
+ * 6大実戦ジャンル（初見推論・地図統計/国内・気候・統計表・グラフ分析・視覚推論）から網羅出題。
  */
 export function generateMiniMockSet(
   params: DrillGeneratorParams,
   nonceBase: number,
 ): GeneratedDrillQuestion[] {
   const blueprint: Exclude<DrillGenre, 'all'>[] = [
-    'map_choropleth',
+    'map_regional',
     'climate_coords',
     'unseen_infer',
     'unseen_infer',
-    'subnational_jpn',
-    'subnational_jpn',
-    'stat_double_blind',
-    'stat_country',
-    'scatter_plot',
-    'pyramid_match',
+    'map_regional',
+    'map_regional',
+    'stat_table',
+    'stat_table',
+    'graph_analysis',
+    'visual_infer',
   ];
-
-  // Q9, Q10 は出題バリエーションを持たせる（構成比・推移・景観写真も織り交ぜる）
-  const altQ9: Exclude<DrillGenre, 'all'>[] = ['scatter_plot', 'composition_bar', 'time_shift'];
-  const altQ10: Exclude<DrillGenre, 'all'>[] = ['pyramid_match', 'photo_infer'];
-  blueprint[8] = altQ9[nonceBase % altQ9.length];
-  blueprint[9] = altQ10[nonceBase % altQ10.length];
+  // Q9, Q10 バランス調整
+  if (nonceBase % 2 === 1) {
+    blueprint[7] = 'graph_analysis';
+  }
 
   const usedSigs: string[] = [...(params.recentSignatures ?? [])];
   const results: GeneratedDrillQuestion[] = [];

@@ -9,22 +9,16 @@ import type {
   TimeSeriesSliderItem,
   WorldRankingsDataset,
 } from '../../types/schema_v1';
-import type { MapDrillSpec } from './MiniWorldMapDrillSvg';
+import type { MapDrillLegendItem, MapDrillSpec } from './MiniWorldMapDrillSvg';
 
 export type DrillGenre =
   | 'all'
+  | 'stat_table'
   | 'unseen_infer'
-  | 'map_choropleth'
-  | 'subnational_jpn'
-  | 'stat_country'
-  | 'stat_double_blind'
-  | 'stat_item'
-  | 'scatter_plot'
-  | 'composition_bar'
-  | 'time_shift'
+  | 'graph_analysis'
+  | 'map_regional'
   | 'climate_coords'
-  | 'pyramid_match'
-  | 'photo_infer';
+  | 'visual_infer';
 
 export interface ScatterDrillSpec {
   title: string;
@@ -39,6 +33,8 @@ export interface ScatterDrillSpec {
 export interface StackedBarDrillSpec {
   caption: string;
   unit: string;
+  /** true のとき抜粋項目のみ描画し、100%に対する実幅を残余グレー付きで表示する */
+  isPartial?: boolean;
   series: { name: string; color: string }[];
   rows: { label: string; values: number[] }[];
 }
@@ -68,6 +64,9 @@ export interface GeneratedDrillQuestion {
   dialogues?: DrillDialogueLine[];
   table?: { caption?: string; headers: string[]; rows: string[][] };
   mapSpec?: MapDrillSpec;
+  /** 3枚並列の階級区分図比較問題用 */
+  mapSpecs?: MapDrillSpec[];
+  sharedMapLegend?: MapDrillLegendItem[];
   scatterPlot?: ScatterDrillSpec;
   stackedBars?: StackedBarDrillSpec;
   lineTrend?: LineTrendDrillSpec;
@@ -107,16 +106,10 @@ export interface DrillGeneratorParams {
 
 export const DRILL_GENRE_OPTIONS: { id: DrillGenre; label: string }[] = [
   { id: 'all', label: '全ジャンルおまかせ' },
-  { id: 'unseen_infer', label: '初見統計・論理推論' },
-  { id: 'map_choropleth', label: '地図統計・階級区分' },
-  { id: 'subnational_jpn', label: '国内地域・日本統計' },
-  { id: 'stat_country', label: '統計数値 → 国を当てる' },
-  { id: 'stat_double_blind', label: '国名×項目 両方ブラインド' },
-  { id: 'stat_item', label: '統計数値 → 項目を当てる' },
-  { id: 'scatter_plot', label: '散布図・2指標分析' },
-  { id: 'composition_bar', label: '構成比グラフ読取' },
-  { id: 'time_shift', label: '時系列・推移グラフ読取' },
+  { id: 'stat_table', label: '統計表・両ブラインド' },
+  { id: 'unseen_infer', label: '初見統計推論' },
+  { id: 'graph_analysis', label: 'グラフ分析（散布・構成・推移）' },
+  { id: 'map_regional', label: '地図統計・国内/日本' },
   { id: 'climate_coords', label: '雨温図・ハイサー・地図' },
-  { id: 'pyramid_match', label: '人口ピラミッド判別' },
-  { id: 'photo_infer', label: '景観写真・地域推論' },
+  { id: 'visual_infer', label: '人口ピラミッド・景観写真' },
 ];

@@ -289,7 +289,9 @@ function MiniStackedBarSvg({ spec }: { spec: StackedBarDrillSpec }) {
     <div className="rounded-xl border border-slate-200 bg-white p-3.5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <span className="text-xs font-extrabold text-slate-800">{spec.caption}</span>
-        <span className="text-[10.5px] text-slate-400">単位：{spec.unit}</span>
+        <span className="text-[10.5px] text-slate-500">
+          {spec.isPartial ? `全体100%中の抜粋項目（単位：${spec.unit}）` : `単位：${spec.unit}`}
+        </span>
       </div>
 
       <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
@@ -302,14 +304,18 @@ function MiniStackedBarSvg({ spec }: { spec: StackedBarDrillSpec }) {
             <span>{s.name}</span>
           </div>
         ))}
+        {spec.isPartial && (
+          <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-400">
+            <span className="h-2.5 w-2.5 shrink-0 rounded-xs border border-dashed border-slate-300 bg-slate-100" />
+            <span>その他（非表示）</span>
+          </div>
+        )}
       </div>
 
       <div className="mt-3 space-y-2.5">
         {spec.rows.map((row) => {
-          const sum = Math.max(
-            1e-6,
-            row.values.reduce((a, b) => a + Math.max(0, b), 0),
-          );
+          const rawSum = row.values.reduce((a, b) => a + Math.max(0, b), 0);
+          const denom = spec.isPartial ? Math.max(100, rawSum) : Math.max(1e-6, rawSum);
           return (
             <div key={row.label} className="flex items-center gap-2.5">
               <span className="w-6 shrink-0 text-center text-xs font-black text-slate-900">
@@ -317,7 +323,7 @@ function MiniStackedBarSvg({ spec }: { spec: StackedBarDrillSpec }) {
               </span>
               <div className="flex h-7 flex-1 overflow-hidden rounded-lg border border-slate-200 bg-slate-100">
                 {row.values.map((val, si) => {
-                  const pct = (Math.max(0, val) / sum) * 100;
+                  const pct = (Math.max(0, val) / denom) * 100;
                   if (pct <= 0.3) return null;
                   const sMeta = spec.series[si];
                   return (
@@ -508,7 +514,37 @@ function DrillQuestionVisuals({
         </div>
       )}
 
-      {question.mapSpec && (
+      {question.mapSpecs && question.mapSpecs.length > 0 && (
+        <div className="mt-3 space-y-2">
+          <div className="grid grid-cols-1 gap-2.5 md:grid-cols-3">
+            {question.mapSpecs.map((ms, idx) => (
+              <MiniWorldMapDrillSvg
+                key={ms.title ?? idx}
+                spec={ms}
+                countriesGeoJson={countriesGeoJson}
+                compact
+                hideLegend
+              />
+            ))}
+          </div>
+          {question.sharedMapLegend && question.sharedMapLegend.length > 0 && (
+            <div className="flex flex-wrap items-center justify-center gap-3 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-[11px] font-bold text-slate-700">
+              <span className="text-slate-500">凡例（階級区分）：</span>
+              {question.sharedMapLegend.map((lg) => (
+                <span key={lg.label} className="inline-flex items-center gap-1.5">
+                  <span
+                    className="inline-block h-3 w-4 rounded-sm border border-slate-300"
+                    style={{ backgroundColor: lg.color }}
+                  />
+                  {lg.label}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {question.mapSpec && !question.mapSpecs && (
         <div className="mt-3">
           <MiniWorldMapDrillSvg spec={question.mapSpec} countriesGeoJson={countriesGeoJson} />
         </div>

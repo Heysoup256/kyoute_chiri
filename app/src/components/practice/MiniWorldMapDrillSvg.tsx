@@ -1,5 +1,5 @@
 import type { FeatureCollection, Geometry } from 'geojson';
-import { useMemo } from 'react';
+import { useId, useMemo } from 'react';
 import type { GeoCountryProperties } from '../../types/schema_v1';
 
 export interface MapDrillMarker {
@@ -151,18 +151,23 @@ function unwrapRingAroundCenter(ring: number[][], centerLng: number): [number, n
 interface MiniWorldMapDrillSvgProps {
   spec: MapDrillSpec;
   countriesGeoJson?: FeatureCollection<Geometry, GeoCountryProperties> | null;
+  compact?: boolean;
+  hideLegend?: boolean;
 }
 
 /**
  * 共通テスト実戦問題・無限演習用の軽量 SVG 地図レンダラー。
- * 1) choropleth: 世界の階級区分図（+ 注目国強調）
- * 2) point_markers: 世界の各地点（ア〜エ）と緯線（赤道・回帰線）
- * 3) subnational: 世界主要20カ国の国内地域区分ポリゴン・境界線のズーム表示
+ * 1) choropleth: 世界の階級区分図（単色濃淡・低位〜高位、並列比較対応）
+ * 2) point_markers: 世界の各地点（A〜C / ア〜エ）と緯線（赤道・回帰線）
+ * 3) subnational: 世界主要カ国の国内地域区分ポリゴン・境界線のズーム表示
  */
 export function MiniWorldMapDrillSvg({
   spec,
   countriesGeoJson,
+  compact = false,
+  hideLegend = false,
 }: MiniWorldMapDrillSvgProps) {
+  const reactClipId = useId();
   const centerMode = spec.centerMode ?? 'pacific';
 
   // --- subnational ズーム計算 ---
@@ -351,11 +356,17 @@ export function MiniWorldMapDrillSvg({
   }, [spec.mode, spec.fillByIso3, spec.highlightIso3s, countriesGeoJson, centerMode]);
 
   if (spec.mode === 'subnational' && subnationalRender) {
-    const clipId = 'subnational-drill-clip';
+    const clipId = `subnat-clip-${reactClipId.replace(/[^a-zA-Z0-9_-]/g, '')}`;
     return (
-      <div className="mb-3 rounded-xl border border-slate-200 bg-sky-50/35 p-3">
+      <div
+        className={
+          compact
+            ? 'rounded-xl border border-slate-200 bg-sky-50/35 p-2'
+            : 'mb-3 rounded-xl border border-slate-200 bg-sky-50/35 p-3'
+        }
+      >
         {spec.title && (
-          <div className="mb-1.5 text-[11px] font-bold text-slate-700">{spec.title}</div>
+          <div className="mb-1.5 text-center text-xs font-black text-slate-800">{spec.title}</div>
         )}
         <svg
           viewBox={`0 0 ${subnationalRender.W} ${subnationalRender.H}`}
@@ -411,7 +422,7 @@ export function MiniWorldMapDrillSvg({
                 strokeDasharray="6 4"
               />
             ))}
-            {/* 記号バッジ（ア・イ・ウ・エ） */}
+            {/* 記号バッジ（A・B・C） */}
             {subnationalRender.zoneShapes.map((z) => (
               <g key={`zl-${z.label}`} transform={`translate(${z.cx},${z.cy})`}>
                 <circle r={12.5} fill={z.color} stroke="#ffffff" strokeWidth={2} />
@@ -428,7 +439,7 @@ export function MiniWorldMapDrillSvg({
             ))}
           </g>
         </svg>
-        {spec.legend && spec.legend.length > 0 && (
+        {!hideLegend && spec.legend && spec.legend.length > 0 && (
           <div className="mt-2 flex flex-wrap items-center justify-center gap-3 text-[10.5px] font-bold text-slate-700">
             {spec.legend.map((lg) => (
               <span key={lg.label} className="inline-flex items-center gap-1">
@@ -450,9 +461,15 @@ export function MiniWorldMapDrillSvg({
   const tropicSY = projectWorld(0, -23.43, centerMode)[1];
 
   return (
-    <div className="mb-3 rounded-xl border border-slate-200 bg-sky-50/35 p-3">
+    <div
+      className={
+        compact
+          ? 'rounded-xl border border-slate-200 bg-sky-50/35 p-2'
+          : 'mb-3 rounded-xl border border-slate-200 bg-sky-50/35 p-3'
+      }
+    >
       {spec.title && (
-        <div className="mb-1.5 text-[11px] font-bold text-slate-700">{spec.title}</div>
+        <div className="mb-1.5 text-center text-xs font-black text-slate-800">{spec.title}</div>
       )}
       <svg
         viewBox={`0 0 ${WORLD_W} ${WORLD_H}`}
@@ -511,7 +528,7 @@ export function MiniWorldMapDrillSvg({
           />
         ))}
 
-        {/* 注目地点マーカー（ア〜エ） */}
+        {/* 注目地点マーカー（A〜C / ア〜エ） */}
         {(spec.markers ?? []).map((m) => {
           const [mx, my] = projectWorld(m.lng, m.lat, centerMode);
           return (
@@ -532,7 +549,7 @@ export function MiniWorldMapDrillSvg({
       </svg>
 
       {/* 凡例 */}
-      {spec.legend && spec.legend.length > 0 && (
+      {!hideLegend && spec.legend && spec.legend.length > 0 && (
         <div className="mt-2 flex flex-wrap items-center justify-center gap-3 text-[10.5px] font-bold text-slate-700">
           {spec.legend.map((lg) => (
             <span key={lg.label} className="inline-flex items-center gap-1.5">
